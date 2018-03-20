@@ -6,7 +6,7 @@
 - 使用IDE导入本项目，使用maven方式导入项目
 - 配置`jdbc.properties`下面的数据库相关信息（如果你需要使用mybitis逆向插件，也需要配置`generatorConfig.xml`这个文件中的数据库信息）
 - 配置tomcat， 使用maven编译后
-- 启动项目
+- 启动项目,访问http://10.1.1.175:8080/v1/user/list?limit=1测试接口
 
 ### 建表语句
 ```sql
