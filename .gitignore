@@ -27,6 +27,7 @@ hs_err_pid*
 /dist
 /tmp
 /out-tsc
+/target
 
 # dependencies
 /node_modules
