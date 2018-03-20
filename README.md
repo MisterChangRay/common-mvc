@@ -22,3 +22,9 @@
    phone varchar(100)
  ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 ```
+
+### 相关环境
+- OS Microsoft Windows 10 Pro
+- mysql 5.5.50
+- spring 4.3
+- mybitis 3.4
