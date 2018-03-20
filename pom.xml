@@ -132,6 +132,14 @@
     <!--表示把java目录下的有关xml文件,properties文件编译/打包的时候放在resource目录下-->
     <resources>
       <resource>
+        <directory>src/main/resources</directory>
+        <includes>
+          <include>**/*.properties</include>
+          <include>**/*.xml</include>
+        </includes>
+        <filtering>false</filtering>
+      </resource>
+      <resource>
         <directory>src/main/java</directory>
         <includes>
           <include>**/*.properties</include>
