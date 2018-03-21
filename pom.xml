@@ -78,11 +78,12 @@
     </dependency>
     <!--spring相关包 end-->
 
-    <!-- c3P0 JDBC连接池 -->
+
+    <!--druid 数据库连接池-->
     <dependency>
-      <groupId>com.mchange</groupId>
-      <artifactId>c3p0</artifactId>
-      <version>0.9.5.2</version>
+      <groupId>com.alibaba</groupId>
+      <artifactId>druid</artifactId>
+      <version>1.1.9</version>
     </dependency>
 
 
