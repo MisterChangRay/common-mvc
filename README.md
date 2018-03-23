@@ -1,6 +1,10 @@
 # common-core
 基于maven的spring4.3+mybatis3.4的后台整合，方便快速进行后台接口开发。
 
+### 新功能
+- 增加权限统一拦截注解`@Authentication`
+- 实现了简单的权限系统
+
 ### 安装步骤
 - clone本项目，创建下面的数据库和表
 - 使用IDE导入本项目，使用maven方式导入项目
@@ -18,10 +22,42 @@
    id int unsigned  primary key AUTO_INCREMENT,
    username varchar(100),
    password varchar(100),
+   idcard varchar(100),
+   email varchar(100),
    name varchar(100),
-   address varchar(500),
-   sex tinyint,
-   phone varchar(100)
+   sex tinyint, --性别0女2男
+   phone varchar(100),
+   enable tinyint, --是否启用0false，1true
+   isdel tinyint --是否删除0false, 1true
+ ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+ create table role (
+   id int unsigned  primary key AUTO_INCREMENT,
+   name varchar(100),
+   enable tinyint,
+   isdel tinyint
+ ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+  create table permission (
+   id int unsigned  primary key AUTO_INCREMENT,
+   name varchar(100),
+   isdeal tinyint
+ ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+
+ create table role_permission_map (
+   id int unsigned  primary key AUTO_INCREMENT,
+   role_id int unsigned,
+   permission_id int unsigned,
+   isdel tinyint
+ ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+
+ create table user_role_map (
+   id int unsigned  primary key AUTO_INCREMENT,
+   user_id int unsigned,
+   role_id int unsigned,
+   isdel tinyint
  ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 ```
 
