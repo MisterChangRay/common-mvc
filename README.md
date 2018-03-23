@@ -66,3 +66,17 @@
 - mysql 5.5.50
 - spring 4.3
 - mybitis 3.4
+- tomecat 7.0.85
+
+### 注意事项
+- 下载后请修改`pom.xml`里面的,这里需要引入你的tomcat下的servlet.api.jar
+```xml 
+<!-- 添加tomcat/bin下servlet-api.jar 注意你tomcat下这个jar包版本-->
+    <dependency>
+      <groupId>javax.servlet</groupId>
+      <artifactId>servlet-api</artifactId>
+      <version>2.5</version>
+      <scope>provided</scope>
+    </dependency>
+```
+- mybaitis-generator插件生成时请先删除文件,不然生的的内容会追加到源文件中,出现代码重复
