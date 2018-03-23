@@ -79,4 +79,4 @@
       <scope>provided</scope>
     </dependency>
 ```
-- mybaitis-generator插件生成时请先删除文件,不然生的的内容会追加到源文件中,出现代码重复
+- 使用mybaitis-generator插件生成dao层时请先删除原来的文件,不然生的的内容会追加到源文件中,出现代码重复
