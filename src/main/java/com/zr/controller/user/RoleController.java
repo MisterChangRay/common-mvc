@@ -34,7 +34,7 @@ public class RoleController {
     @ResponseBody
     public NormalResponse getById(@PathVariable Integer roleId) {
         NormalResponse res = new NormalResponse();
-        res.setErrorcode(ErrorCodeEnum.OK);
+        res.setErrorCode(ErrorCodeEnum.OK);
         return res;
     }
 
@@ -49,7 +49,7 @@ public class RoleController {
     @ResponseBody
     public NormalResponse list(@RequestParam Integer limit) {
         NormalResponse res = new NormalResponse();
-        res.setErrorcode(ErrorCodeEnum.OK);
+        res.setErrorCode(ErrorCodeEnum.OK);
         return res;
     }
 
@@ -68,7 +68,7 @@ public class RoleController {
         list.add(user);
 
         res.setData(list);
-        res.setErrorcode(ErrorCodeEnum.OK);
+        res.setErrorCode(ErrorCodeEnum.OK);
         return res;
     }
 
@@ -83,7 +83,7 @@ public class RoleController {
     @ResponseBody
     public NormalResponse delete(@RequestBody User user) {
         NormalResponse res = new NormalResponse();
-        res.setErrorcode(ErrorCodeEnum.OK);
+        res.setErrorCode(ErrorCodeEnum.OK);
         ArrayList list = new ArrayList();
         list.add(user);
         res.setData(list);
@@ -101,7 +101,7 @@ public class RoleController {
     @ResponseBody
     public NormalResponse edit(@RequestBody User user) {
         NormalResponse res = new NormalResponse();
-        res.setErrorcode(ErrorCodeEnum.OK);
+        res.setErrorCode(ErrorCodeEnum.OK);
         ArrayList list = new ArrayList();
         list.add(user);
         res.setData(list);

@@ -9,8 +9,9 @@ public enum ErrorCodeEnum {
     UPDATE_OK(202), //修改正常
     DELETE_OK(203), //删除正常
 
-    INVALID_REQUEST(400), //无效请求,请求有格式错误
+    INVALID_REQUEST(400), //无效请求,请求有格式或数据错误
     NEED_AUTH(401), //需要认证,没有权限
+    INVALID_USER(402),//无效用户
 
     GONE(410), //资源已经被删除
 

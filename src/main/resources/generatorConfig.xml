@@ -11,7 +11,7 @@
             <property name="searchString" value="Example$" />
             <property name="replaceString" value="Query" />
         </plugin>
-        <!-- 为生成的实体类增加tostring 方法-->
+        <!-- -->
         <plugin type="org.mybatis.generator.plugins.ToStringPlugin"></plugin>
 
         <commentGenerator>

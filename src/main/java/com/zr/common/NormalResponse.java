@@ -9,15 +9,15 @@ public class NormalResponse {
     /**
      * 错误信息
      */
-    private String errormsg;
+    private String errorMsg;
     /**
      * 错误代码,参见 ErrorCodeEnum
      */
-    private ErrorCodeEnum errorcode;
+    private Integer errorCode;
     /**
      * 返回的数据
      */
-    private List data;
+    private Object data;
     /**
      * 快捷访问接口
      */
@@ -36,28 +36,28 @@ public class NormalResponse {
         this.pageInfo = pageInfo;
     }
 
-    public ErrorCodeEnum getErrorcode() {
-        return errorcode;
+    public Integer getErrorCode() {
+        return errorCode;
     }
 
-    public void setErrorcode(ErrorCodeEnum errorcode) {
-        this.errorcode = errorcode;
+    public void setErrorCode(ErrorCodeEnum errorCode) {
+        this.errorCode = errorCode.getCode();
     }
 
-    public List getData() {
+    public Object getData() {
         return data;
     }
 
-    public void setData(List data) {
+    public void setData(Object data) {
         this.data = data;
     }
 
-    public String getErrormsg() {
-        return errormsg;
+    public String getErrorMsg() {
+        return errorMsg;
     }
 
-    public void setErrormsg(String errormsg) {
-        this.errormsg = errormsg;
+    public void setErrorMsg(String errorMsg) {
+        this.errorMsg = errorMsg;
     }
 
 

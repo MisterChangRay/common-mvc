@@ -40,7 +40,7 @@ public class UserController {
     @ResponseBody
     public NormalResponse getById(@PathVariable Integer userId) {
         NormalResponse res = new NormalResponse();
-        res.setErrorcode(ErrorCodeEnum.OK);
+        res.setErrorCode(ErrorCodeEnum.OK);
         res.setData(userService.list(10));
         return res;
     }
@@ -56,7 +56,7 @@ public class UserController {
     @ResponseBody
     public NormalResponse list(@RequestParam Integer limit) {
         NormalResponse res = new NormalResponse();
-        res.setErrorcode(ErrorCodeEnum.OK);
+        res.setErrorCode(ErrorCodeEnum.OK);
         res.setData(userService.list(10));
         return res;
     }
@@ -77,7 +77,7 @@ public class UserController {
         list.add(user);
 
         res.setData(list);
-        res.setErrorcode(ErrorCodeEnum.OK);
+        res.setErrorCode(ErrorCodeEnum.OK);
         return res;
     }
 
@@ -92,7 +92,7 @@ public class UserController {
     @ResponseBody
     public NormalResponse delete(@RequestBody User user) {
         NormalResponse res = new NormalResponse();
-        res.setErrorcode(ErrorCodeEnum.OK);
+        res.setErrorCode(ErrorCodeEnum.OK);
         ArrayList list = new ArrayList();
         list.add(user);
         res.setData(list);
@@ -110,7 +110,7 @@ public class UserController {
     @ResponseBody
     public NormalResponse edit(@RequestBody User user) {
         NormalResponse res = new NormalResponse();
-        res.setErrorcode(ErrorCodeEnum.OK);
+        res.setErrorCode(ErrorCodeEnum.OK);
         ArrayList list = new ArrayList();
         list.add(user);
         res.setData(list);
