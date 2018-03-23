@@ -11,9 +11,9 @@ public class NormalResponse {
      */
     private String errormsg;
     /**
-     * 错误代码,参见 ResponseErrorCode
+     * 错误代码,参见 ErrorCodeEnum
      */
-    private ResponseErrorCode errorcode;
+    private ErrorCodeEnum errorcode;
     /**
      * 返回的数据
      */
@@ -36,11 +36,11 @@ public class NormalResponse {
         this.pageInfo = pageInfo;
     }
 
-    public ResponseErrorCode getErrorcode() {
+    public ErrorCodeEnum getErrorcode() {
         return errorcode;
     }
 
-    public void setErrorcode(ResponseErrorCode errorcode) {
+    public void setErrorcode(ErrorCodeEnum errorcode) {
         this.errorcode = errorcode;
     }
 

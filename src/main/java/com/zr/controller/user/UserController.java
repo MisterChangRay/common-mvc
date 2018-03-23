@@ -2,7 +2,7 @@ package com.zr.controller.user;
 
 import com.zr.common.Authentication;
 import com.zr.common.NormalResponse;
-import com.zr.common.ResponseErrorCode;
+import com.zr.common.ErrorCodeEnum;
 import com.zr.dao.entity.User;
 import com.zr.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -16,6 +16,7 @@ import java.util.ArrayList;
  * 用户管理控制器
  *
  * 提供用户管理以下用能
+ * -根据ID获取指定用户
  * -用户列表
  * -用户新增
  * -用户删除
@@ -29,6 +30,21 @@ public class UserController {
     @Autowired
     UserService userService;
 
+    /**
+     * 用户列表
+     * @param userId
+     * @return
+     */
+    @Authentication
+    @RequestMapping(value="/{userId}", method = RequestMethod.GET)
+    @ResponseBody
+    public NormalResponse getById(@PathVariable Integer userId) {
+        NormalResponse res = new NormalResponse();
+        res.setErrorcode(ErrorCodeEnum.OK);
+        res.setData(userService.list(10));
+        return res;
+    }
+
 
     /**
      * 用户列表
@@ -40,7 +56,7 @@ public class UserController {
     @ResponseBody
     public NormalResponse list(@RequestParam Integer limit) {
         NormalResponse res = new NormalResponse();
-        res.setErrorcode(ResponseErrorCode.OK);
+        res.setErrorcode(ErrorCodeEnum.OK);
         res.setData(userService.list(10));
         return res;
     }
@@ -61,7 +77,7 @@ public class UserController {
         list.add(user);
 
         res.setData(list);
-        res.setErrorcode(ResponseErrorCode.OK);
+        res.setErrorcode(ErrorCodeEnum.OK);
         return res;
     }
 
@@ -76,7 +92,7 @@ public class UserController {
     @ResponseBody
     public NormalResponse delete(@RequestBody User user) {
         NormalResponse res = new NormalResponse();
-        res.setErrorcode(ResponseErrorCode.OK);
+        res.setErrorcode(ErrorCodeEnum.OK);
         ArrayList list = new ArrayList();
         list.add(user);
         res.setData(list);
@@ -94,7 +110,7 @@ public class UserController {
     @ResponseBody
     public NormalResponse edit(@RequestBody User user) {
         NormalResponse res = new NormalResponse();
-        res.setErrorcode(ResponseErrorCode.OK);
+        res.setErrorcode(ErrorCodeEnum.OK);
         ArrayList list = new ArrayList();
         list.add(user);
         res.setData(list);

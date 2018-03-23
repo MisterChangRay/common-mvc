@@ -2,7 +2,7 @@ package com.zr.controller.user;
 
 import com.zr.common.Authentication;
 import com.zr.common.NormalResponse;
-import com.zr.common.ResponseErrorCode;
+import com.zr.common.ErrorCodeEnum;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -32,7 +32,7 @@ public class AuthController {
     @ResponseBody
     public NormalResponse login(@RequestParam Integer limit) {
         NormalResponse res = new NormalResponse();
-        res.setErrorcode(ResponseErrorCode.OK);
+        res.setErrorcode(ErrorCodeEnum.OK);
         return res;
     }
 
@@ -52,7 +52,7 @@ public class AuthController {
                                     @RequestParam(required = false) String idcard,
                                     @RequestParam(required = false) String email) {
         NormalResponse res = new NormalResponse();
-        res.setErrorcode(ResponseErrorCode.OK);
+        res.setErrorcode(ErrorCodeEnum.OK);
         return res;
     }
 

@@ -6,6 +6,14 @@
 <generatorConfiguration>
     <classPathEntry location="D:/ProgramsForDev/mysql-connector-java-5.1.26-bin.jar"/>
     <context id="testTables" targetRuntime="MyBatis3" >
+        <!-- 重命名插件 更名为query-->
+        <plugin type="org.mybatis.generator.plugins.RenameExampleClassPlugin">
+            <property name="searchString" value="Example$" />
+            <property name="replaceString" value="Query" />
+        </plugin>
+        <!-- 为生成的实体类增加tostring 方法-->
+        <plugin type="org.mybatis.generator.plugins.ToStringPlugin"></plugin>
+
         <commentGenerator>
             <!-- 是否去除自动生成的注释 true：是 ： false:否 -->
             <property name="suppressAllComments" value="true" />
@@ -45,6 +53,11 @@
 
         <!-- 指定数据库表 -->
         <table tableName="user"></table>
+        <table tableName="role"></table>
+        <table tableName="permission"></table>
+        <table tableName="role_permission_map"></table>
+        <table tableName="user_role_map"></table>
+
 
         <!-- 有些表的字段需要指定java类型
          <table schema="" tableName="">

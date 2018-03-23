@@ -1,15 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.zr.dao.mapper.UserMapper">
-  <resultMap id="BaseResultMap" type="com.zr.dao.entity.User">
+<mapper namespace="com.zr.dao.mapper.RoleMapper">
+  <resultMap id="BaseResultMap" type="com.zr.dao.entity.Role">
     <id column="id" jdbcType="INTEGER" property="id" />
-    <result column="username" jdbcType="VARCHAR" property="username" />
-    <result column="password" jdbcType="VARCHAR" property="password" />
-    <result column="idcard" jdbcType="VARCHAR" property="idcard" />
-    <result column="email" jdbcType="VARCHAR" property="email" />
     <result column="name" jdbcType="VARCHAR" property="name" />
-    <result column="sex" jdbcType="TINYINT" property="sex" />
-    <result column="phone" jdbcType="VARCHAR" property="phone" />
     <result column="enable" jdbcType="TINYINT" property="enable" />
     <result column="isdel" jdbcType="TINYINT" property="isdel" />
   </resultMap>
@@ -72,15 +66,15 @@
     </where>
   </sql>
   <sql id="Base_Column_List">
-    id, username, password, idcard, email, name, sex, phone, enable, isdel
+    id, name, enable, isdel
   </sql>
-  <select id="selectByExample" parameterType="com.zr.dao.entity.UserQuery" resultMap="BaseResultMap">
+  <select id="selectByExample" parameterType="com.zr.dao.entity.RoleQuery" resultMap="BaseResultMap">
     select
     <if test="distinct">
       distinct
     </if>
     <include refid="Base_Column_List" />
-    from user
+    from role
     <if test="_parameter != null">
       <include refid="Example_Where_Clause" />
     </if>
@@ -91,55 +85,33 @@
   <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
     select 
     <include refid="Base_Column_List" />
-    from user
+    from role
     where id = #{id,jdbcType=INTEGER}
   </select>
   <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
-    delete from user
+    delete from role
     where id = #{id,jdbcType=INTEGER}
   </delete>
-  <delete id="deleteByExample" parameterType="com.zr.dao.entity.UserQuery">
-    delete from user
+  <delete id="deleteByExample" parameterType="com.zr.dao.entity.RoleQuery">
+    delete from role
     <if test="_parameter != null">
       <include refid="Example_Where_Clause" />
     </if>
   </delete>
-  <insert id="insert" parameterType="com.zr.dao.entity.User">
-    insert into user (id, username, password, 
-      idcard, email, name, 
-      sex, phone, enable, 
+  <insert id="insert" parameterType="com.zr.dao.entity.Role">
+    insert into role (id, name, enable, 
       isdel)
-    values (#{id,jdbcType=INTEGER}, #{username,jdbcType=VARCHAR}, #{password,jdbcType=VARCHAR}, 
-      #{idcard,jdbcType=VARCHAR}, #{email,jdbcType=VARCHAR}, #{name,jdbcType=VARCHAR}, 
-      #{sex,jdbcType=TINYINT}, #{phone,jdbcType=VARCHAR}, #{enable,jdbcType=TINYINT}, 
+    values (#{id,jdbcType=INTEGER}, #{name,jdbcType=VARCHAR}, #{enable,jdbcType=TINYINT}, 
       #{isdel,jdbcType=TINYINT})
   </insert>
-  <insert id="insertSelective" parameterType="com.zr.dao.entity.User">
-    insert into user
+  <insert id="insertSelective" parameterType="com.zr.dao.entity.Role">
+    insert into role
     <trim prefix="(" suffix=")" suffixOverrides=",">
       <if test="id != null">
         id,
       </if>
-      <if test="username != null">
-        username,
-      </if>
-      <if test="password != null">
-        password,
-      </if>
-      <if test="idcard != null">
-        idcard,
-      </if>
-      <if test="email != null">
-        email,
-      </if>
       <if test="name != null">
         name,
-      </if>
-      <if test="sex != null">
-        sex,
-      </if>
-      <if test="phone != null">
-        phone,
       </if>
       <if test="enable != null">
         enable,
@@ -152,26 +124,8 @@
       <if test="id != null">
         #{id,jdbcType=INTEGER},
       </if>
-      <if test="username != null">
-        #{username,jdbcType=VARCHAR},
-      </if>
-      <if test="password != null">
-        #{password,jdbcType=VARCHAR},
-      </if>
-      <if test="idcard != null">
-        #{idcard,jdbcType=VARCHAR},
-      </if>
-      <if test="email != null">
-        #{email,jdbcType=VARCHAR},
-      </if>
       <if test="name != null">
         #{name,jdbcType=VARCHAR},
-      </if>
-      <if test="sex != null">
-        #{sex,jdbcType=TINYINT},
-      </if>
-      <if test="phone != null">
-        #{phone,jdbcType=VARCHAR},
       </if>
       <if test="enable != null">
         #{enable,jdbcType=TINYINT},
@@ -181,38 +135,20 @@
       </if>
     </trim>
   </insert>
-  <select id="countByExample" parameterType="com.zr.dao.entity.UserQuery" resultType="java.lang.Long">
-    select count(*) from user
+  <select id="countByExample" parameterType="com.zr.dao.entity.RoleQuery" resultType="java.lang.Long">
+    select count(*) from role
     <if test="_parameter != null">
       <include refid="Example_Where_Clause" />
     </if>
   </select>
   <update id="updateByExampleSelective" parameterType="map">
-    update user
+    update role
     <set>
       <if test="record.id != null">
         id = #{record.id,jdbcType=INTEGER},
       </if>
-      <if test="record.username != null">
-        username = #{record.username,jdbcType=VARCHAR},
-      </if>
-      <if test="record.password != null">
-        password = #{record.password,jdbcType=VARCHAR},
-      </if>
-      <if test="record.idcard != null">
-        idcard = #{record.idcard,jdbcType=VARCHAR},
-      </if>
-      <if test="record.email != null">
-        email = #{record.email,jdbcType=VARCHAR},
-      </if>
       <if test="record.name != null">
         name = #{record.name,jdbcType=VARCHAR},
-      </if>
-      <if test="record.sex != null">
-        sex = #{record.sex,jdbcType=TINYINT},
-      </if>
-      <if test="record.phone != null">
-        phone = #{record.phone,jdbcType=VARCHAR},
       </if>
       <if test="record.enable != null">
         enable = #{record.enable,jdbcType=TINYINT},
@@ -226,44 +162,20 @@
     </if>
   </update>
   <update id="updateByExample" parameterType="map">
-    update user
+    update role
     set id = #{record.id,jdbcType=INTEGER},
-      username = #{record.username,jdbcType=VARCHAR},
-      password = #{record.password,jdbcType=VARCHAR},
-      idcard = #{record.idcard,jdbcType=VARCHAR},
-      email = #{record.email,jdbcType=VARCHAR},
       name = #{record.name,jdbcType=VARCHAR},
-      sex = #{record.sex,jdbcType=TINYINT},
-      phone = #{record.phone,jdbcType=VARCHAR},
       enable = #{record.enable,jdbcType=TINYINT},
       isdel = #{record.isdel,jdbcType=TINYINT}
     <if test="_parameter != null">
       <include refid="Update_By_Example_Where_Clause" />
     </if>
   </update>
-  <update id="updateByPrimaryKeySelective" parameterType="com.zr.dao.entity.User">
-    update user
+  <update id="updateByPrimaryKeySelective" parameterType="com.zr.dao.entity.Role">
+    update role
     <set>
-      <if test="username != null">
-        username = #{username,jdbcType=VARCHAR},
-      </if>
-      <if test="password != null">
-        password = #{password,jdbcType=VARCHAR},
-      </if>
-      <if test="idcard != null">
-        idcard = #{idcard,jdbcType=VARCHAR},
-      </if>
-      <if test="email != null">
-        email = #{email,jdbcType=VARCHAR},
-      </if>
       <if test="name != null">
         name = #{name,jdbcType=VARCHAR},
-      </if>
-      <if test="sex != null">
-        sex = #{sex,jdbcType=TINYINT},
-      </if>
-      <if test="phone != null">
-        phone = #{phone,jdbcType=VARCHAR},
       </if>
       <if test="enable != null">
         enable = #{enable,jdbcType=TINYINT},
@@ -274,28 +186,16 @@
     </set>
     where id = #{id,jdbcType=INTEGER}
   </update>
-  <update id="updateByPrimaryKey" parameterType="com.zr.dao.entity.User">
-    update user
-    set username = #{username,jdbcType=VARCHAR},
-      password = #{password,jdbcType=VARCHAR},
-      idcard = #{idcard,jdbcType=VARCHAR},
-      email = #{email,jdbcType=VARCHAR},
-      name = #{name,jdbcType=VARCHAR},
-      sex = #{sex,jdbcType=TINYINT},
-      phone = #{phone,jdbcType=VARCHAR},
+  <update id="updateByPrimaryKey" parameterType="com.zr.dao.entity.Role">
+    update role
+    set name = #{name,jdbcType=VARCHAR},
       enable = #{enable,jdbcType=TINYINT},
       isdel = #{isdel,jdbcType=TINYINT}
     where id = #{id,jdbcType=INTEGER}
   </update>
-  <resultMap id="BaseResultMap" type="com.zr.dao.entity.User">
+  <resultMap id="BaseResultMap" type="com.zr.dao.entity.Role">
     <id column="id" jdbcType="INTEGER" property="id" />
-    <result column="username" jdbcType="VARCHAR" property="username" />
-    <result column="password" jdbcType="VARCHAR" property="password" />
-    <result column="idcard" jdbcType="VARCHAR" property="idcard" />
-    <result column="email" jdbcType="VARCHAR" property="email" />
     <result column="name" jdbcType="VARCHAR" property="name" />
-    <result column="sex" jdbcType="TINYINT" property="sex" />
-    <result column="phone" jdbcType="VARCHAR" property="phone" />
     <result column="enable" jdbcType="TINYINT" property="enable" />
     <result column="isdel" jdbcType="TINYINT" property="isdel" />
   </resultMap>
@@ -358,15 +258,15 @@
     </where>
   </sql>
   <sql id="Base_Column_List">
-    id, username, password, idcard, email, name, sex, phone, enable, isdel
+    id, name, enable, isdel
   </sql>
-  <select id="selectByExample" parameterType="com.zr.dao.entity.UserQuery" resultMap="BaseResultMap">
+  <select id="selectByExample" parameterType="com.zr.dao.entity.RoleQuery" resultMap="BaseResultMap">
     select
     <if test="distinct">
       distinct
     </if>
     <include refid="Base_Column_List" />
-    from user
+    from role
     <if test="_parameter != null">
       <include refid="Example_Where_Clause" />
     </if>
@@ -377,55 +277,33 @@
   <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
     select 
     <include refid="Base_Column_List" />
-    from user
+    from role
     where id = #{id,jdbcType=INTEGER}
   </select>
   <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
-    delete from user
+    delete from role
     where id = #{id,jdbcType=INTEGER}
   </delete>
-  <delete id="deleteByExample" parameterType="com.zr.dao.entity.UserQuery">
-    delete from user
+  <delete id="deleteByExample" parameterType="com.zr.dao.entity.RoleQuery">
+    delete from role
     <if test="_parameter != null">
       <include refid="Example_Where_Clause" />
     </if>
   </delete>
-  <insert id="insert" parameterType="com.zr.dao.entity.User">
-    insert into user (id, username, password, 
-      idcard, email, name, 
-      sex, phone, enable, 
+  <insert id="insert" parameterType="com.zr.dao.entity.Role">
+    insert into role (id, name, enable, 
       isdel)
-    values (#{id,jdbcType=INTEGER}, #{username,jdbcType=VARCHAR}, #{password,jdbcType=VARCHAR}, 
-      #{idcard,jdbcType=VARCHAR}, #{email,jdbcType=VARCHAR}, #{name,jdbcType=VARCHAR}, 
-      #{sex,jdbcType=TINYINT}, #{phone,jdbcType=VARCHAR}, #{enable,jdbcType=TINYINT}, 
+    values (#{id,jdbcType=INTEGER}, #{name,jdbcType=VARCHAR}, #{enable,jdbcType=TINYINT}, 
       #{isdel,jdbcType=TINYINT})
   </insert>
-  <insert id="insertSelective" parameterType="com.zr.dao.entity.User">
-    insert into user
+  <insert id="insertSelective" parameterType="com.zr.dao.entity.Role">
+    insert into role
     <trim prefix="(" suffix=")" suffixOverrides=",">
       <if test="id != null">
         id,
       </if>
-      <if test="username != null">
-        username,
-      </if>
-      <if test="password != null">
-        password,
-      </if>
-      <if test="idcard != null">
-        idcard,
-      </if>
-      <if test="email != null">
-        email,
-      </if>
       <if test="name != null">
         name,
-      </if>
-      <if test="sex != null">
-        sex,
-      </if>
-      <if test="phone != null">
-        phone,
       </if>
       <if test="enable != null">
         enable,
@@ -438,26 +316,8 @@
       <if test="id != null">
         #{id,jdbcType=INTEGER},
       </if>
-      <if test="username != null">
-        #{username,jdbcType=VARCHAR},
-      </if>
-      <if test="password != null">
-        #{password,jdbcType=VARCHAR},
-      </if>
-      <if test="idcard != null">
-        #{idcard,jdbcType=VARCHAR},
-      </if>
-      <if test="email != null">
-        #{email,jdbcType=VARCHAR},
-      </if>
       <if test="name != null">
         #{name,jdbcType=VARCHAR},
-      </if>
-      <if test="sex != null">
-        #{sex,jdbcType=TINYINT},
-      </if>
-      <if test="phone != null">
-        #{phone,jdbcType=VARCHAR},
       </if>
       <if test="enable != null">
         #{enable,jdbcType=TINYINT},
@@ -467,38 +327,20 @@
       </if>
     </trim>
   </insert>
-  <select id="countByExample" parameterType="com.zr.dao.entity.UserQuery" resultType="java.lang.Long">
-    select count(*) from user
+  <select id="countByExample" parameterType="com.zr.dao.entity.RoleQuery" resultType="java.lang.Long">
+    select count(*) from role
     <if test="_parameter != null">
       <include refid="Example_Where_Clause" />
     </if>
   </select>
   <update id="updateByExampleSelective" parameterType="map">
-    update user
+    update role
     <set>
       <if test="record.id != null">
         id = #{record.id,jdbcType=INTEGER},
       </if>
-      <if test="record.username != null">
-        username = #{record.username,jdbcType=VARCHAR},
-      </if>
-      <if test="record.password != null">
-        password = #{record.password,jdbcType=VARCHAR},
-      </if>
-      <if test="record.idcard != null">
-        idcard = #{record.idcard,jdbcType=VARCHAR},
-      </if>
-      <if test="record.email != null">
-        email = #{record.email,jdbcType=VARCHAR},
-      </if>
       <if test="record.name != null">
         name = #{record.name,jdbcType=VARCHAR},
-      </if>
-      <if test="record.sex != null">
-        sex = #{record.sex,jdbcType=TINYINT},
-      </if>
-      <if test="record.phone != null">
-        phone = #{record.phone,jdbcType=VARCHAR},
       </if>
       <if test="record.enable != null">
         enable = #{record.enable,jdbcType=TINYINT},
@@ -512,44 +354,20 @@
     </if>
   </update>
   <update id="updateByExample" parameterType="map">
-    update user
+    update role
     set id = #{record.id,jdbcType=INTEGER},
-      username = #{record.username,jdbcType=VARCHAR},
-      password = #{record.password,jdbcType=VARCHAR},
-      idcard = #{record.idcard,jdbcType=VARCHAR},
-      email = #{record.email,jdbcType=VARCHAR},
       name = #{record.name,jdbcType=VARCHAR},
-      sex = #{record.sex,jdbcType=TINYINT},
-      phone = #{record.phone,jdbcType=VARCHAR},
       enable = #{record.enable,jdbcType=TINYINT},
       isdel = #{record.isdel,jdbcType=TINYINT}
     <if test="_parameter != null">
       <include refid="Update_By_Example_Where_Clause" />
     </if>
   </update>
-  <update id="updateByPrimaryKeySelective" parameterType="com.zr.dao.entity.User">
-    update user
+  <update id="updateByPrimaryKeySelective" parameterType="com.zr.dao.entity.Role">
+    update role
     <set>
-      <if test="username != null">
-        username = #{username,jdbcType=VARCHAR},
-      </if>
-      <if test="password != null">
-        password = #{password,jdbcType=VARCHAR},
-      </if>
-      <if test="idcard != null">
-        idcard = #{idcard,jdbcType=VARCHAR},
-      </if>
-      <if test="email != null">
-        email = #{email,jdbcType=VARCHAR},
-      </if>
       <if test="name != null">
         name = #{name,jdbcType=VARCHAR},
-      </if>
-      <if test="sex != null">
-        sex = #{sex,jdbcType=TINYINT},
-      </if>
-      <if test="phone != null">
-        phone = #{phone,jdbcType=VARCHAR},
       </if>
       <if test="enable != null">
         enable = #{enable,jdbcType=TINYINT},
@@ -560,15 +378,9 @@
     </set>
     where id = #{id,jdbcType=INTEGER}
   </update>
-  <update id="updateByPrimaryKey" parameterType="com.zr.dao.entity.User">
-    update user
-    set username = #{username,jdbcType=VARCHAR},
-      password = #{password,jdbcType=VARCHAR},
-      idcard = #{idcard,jdbcType=VARCHAR},
-      email = #{email,jdbcType=VARCHAR},
-      name = #{name,jdbcType=VARCHAR},
-      sex = #{sex,jdbcType=TINYINT},
-      phone = #{phone,jdbcType=VARCHAR},
+  <update id="updateByPrimaryKey" parameterType="com.zr.dao.entity.Role">
+    update role
+    set name = #{name,jdbcType=VARCHAR},
       enable = #{enable,jdbcType=TINYINT},
       isdel = #{isdel,jdbcType=TINYINT}
     where id = #{id,jdbcType=INTEGER}

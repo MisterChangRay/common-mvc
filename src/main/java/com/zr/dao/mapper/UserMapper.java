@@ -1,14 +1,14 @@
 package com.zr.dao.mapper;
 
 import com.zr.dao.entity.User;
-import com.zr.dao.entity.UserExample;
+import com.zr.dao.entity.UserQuery;
 import java.util.List;
 import org.apache.ibatis.annotations.Param;
 
 public interface UserMapper {
-    long countByExample(UserExample example);
+    long countByExample(UserQuery example);
 
-    int deleteByExample(UserExample example);
+    int deleteByExample(UserQuery example);
 
     int deleteByPrimaryKey(Integer id);
 
@@ -16,13 +16,13 @@ public interface UserMapper {
 
     int insertSelective(User record);
 
-    List<User> selectByExample(UserExample example);
+    List<User> selectByExample(UserQuery example);
 
     User selectByPrimaryKey(Integer id);
 
-    int updateByExampleSelective(@Param("record") User record, @Param("example") UserExample example);
+    int updateByExampleSelective(@Param("record") User record, @Param("example") UserQuery example);
 
-    int updateByExample(@Param("record") User record, @Param("example") UserExample example);
+    int updateByExample(@Param("record") User record, @Param("example") UserQuery example);
 
     int updateByPrimaryKeySelective(User record);
 
