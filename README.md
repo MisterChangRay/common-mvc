@@ -40,19 +40,24 @@
 
   create table permission (
    id int unsigned  primary key AUTO_INCREMENT,
-   name varchar(100)
+   name varchar(100),
+   isdeal tinyint
  ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 
  create table role_permission_map (
+   id int unsigned  primary key AUTO_INCREMENT,
    role_id int unsigned,
-   permission_id int unsigned
+   permission_id int unsigned,
+   isdel tinyint
  ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 
  create table user_role_map (
+   id int unsigned  primary key AUTO_INCREMENT,
+   user_id int unsigned,
    role_id int unsigned,
-   permission_id int unsigned
+   isdel tinyint
  ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 ```
 
