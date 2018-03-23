@@ -1,5 +1,6 @@
 package com.zr.service;
 
+import com.zr.common.Authentication;
 import com.zr.dao.entity.User;
 import com.zr.dao.entity.UserExample;
 import com.zr.dao.mapper.UserMapper;
@@ -15,7 +16,6 @@ import java.util.List;
 public class UserService {
     @Autowired
     UserMapper userMapper;
-
     public User add(User userInfo) {
         userMapper.insert(userInfo);
         return userInfo;
