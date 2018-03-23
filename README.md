@@ -25,10 +25,10 @@
    idcard varchar(100),
    email varchar(100),
    name varchar(100),
-   sex tinyint,
+   sex tinyint, --性别0女2男
    phone varchar(100),
-   enable tinyint,
-   isdel tinyint
+   enable tinyint, --是否启用0false，1true
+   isdel tinyint --是否删除0false, 1true
  ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
  create table role (
@@ -44,13 +44,13 @@
  ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 
- create table role_permission (
+ create table role_permission_map (
    role_id int unsigned,
    permission_id int unsigned
  ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 
- create table user_role (
+ create table user_role_map (
    role_id int unsigned,
    permission_id int unsigned
  ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
