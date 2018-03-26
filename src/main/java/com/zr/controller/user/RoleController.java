@@ -1,6 +1,6 @@
 package com.zr.controller.user;
 
-import com.zr.common.Authentication;
+import com.zr.common.annotation.Authentication;
 import com.zr.common.ErrorCodeEnum;
 import com.zr.common.NormalResponse;
 import com.zr.dao.entity.User;

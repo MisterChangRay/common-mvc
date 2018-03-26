@@ -40,4 +40,11 @@ public interface UserService {
      */
     User update(User user);
 
+    /**
+     * 根据Id获取用户
+     * @param id
+     * @return
+     */
+    User getById(Integer id);
+
 }

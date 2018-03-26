@@ -61,5 +61,8 @@
         <property name="resolveLazily" value="true"/>
     </bean>
 
+    <mvc:interceptors>
+        <bean class="com.zr.common.AuthInterceptor"></bean>
+    </mvc:interceptors>
 
 </beans>

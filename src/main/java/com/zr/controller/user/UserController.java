@@ -1,8 +1,9 @@
 package com.zr.controller.user;
 
-import com.zr.common.Authentication;
+import com.zr.common.annotation.Authentication;
 import com.zr.common.NormalResponse;
 import com.zr.common.ErrorCodeEnum;
+import com.zr.common.annotation.PrintRunTime;
 import com.zr.dao.entity.User;
 import com.zr.dao.entity.UserQuery;
 import com.zr.service.user.UserService;
@@ -52,6 +53,7 @@ public class UserController {
      * @param limit
      * @return
      */
+    @PrintRunTime
     @Authentication
     @RequestMapping(method = RequestMethod.GET)
     @ResponseBody

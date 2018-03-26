@@ -1,6 +1,6 @@
 package com.zr.controller.user;
 
-import com.zr.common.Authentication;
+import com.zr.common.annotation.Authentication;
 import com.zr.common.NormalResponse;
 import com.zr.common.ErrorCodeEnum;
 import com.zr.dao.entity.User;
@@ -49,7 +49,7 @@ public class AuthController {
         UserQuery.Criteria criteria = userQuery.createCriteria();
         criteria.andUsernameEqualTo(username).andPasswordEqualTo(password);
 
-        List<User> userList = userMapper.selectByExample(userQuery);
+        List<User> userList = userMapper.selectByQuery(userQuery);
         if(0 < userList.size()) {
             UUID token = UUID.randomUUID();
             httpSession.setAttribute("Authentication", UUID.randomUUID());
@@ -93,7 +93,7 @@ public class AuthController {
         userQuery.or().andIdcardEqualTo(idcard);
         userQuery.or().andEmailEqualTo(email);
 
-        List<User> userList = userMapper.selectByExample(userQuery);
+        List<User> userList = userMapper.selectByQuery(userQuery);
         if(0 < userList.size()) {
             res.setErrorCode(ErrorCodeEnum.OK);
         } else {

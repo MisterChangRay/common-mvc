@@ -19,6 +19,10 @@ public class UserServiceImpl implements UserService{
     UserMapper userMapper;
 
 
+    public User getById(Integer id) {
+        return  null;
+    };
+
     public List<User> list(UserQuery userQuery) {
         return null;
     }
