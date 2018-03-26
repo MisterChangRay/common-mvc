@@ -6,9 +6,9 @@ import java.util.List;
 import org.apache.ibatis.annotations.Param;
 
 public interface RolePermissionMapMapper {
-    long countByExample(RolePermissionMapQuery example);
+    long countByQuery(RolePermissionMapQuery query);
 
-    int deleteByExample(RolePermissionMapQuery example);
+    int deleteByQuery(RolePermissionMapQuery query);
 
     int deleteByPrimaryKey(Integer id);
 
@@ -16,13 +16,13 @@ public interface RolePermissionMapMapper {
 
     int insertSelective(RolePermissionMap record);
 
-    List<RolePermissionMap> selectByExample(RolePermissionMapQuery example);
+    List<RolePermissionMap> selectByQuery(RolePermissionMapQuery query);
 
     RolePermissionMap selectByPrimaryKey(Integer id);
 
-    int updateByExampleSelective(@Param("record") RolePermissionMap record, @Param("example") RolePermissionMapQuery example);
+    int updateByQuerySelective(@Param("record") RolePermissionMap record, @Param("example") RolePermissionMapQuery query);
 
-    int updateByExample(@Param("record") RolePermissionMap record, @Param("example") RolePermissionMapQuery example);
+    int updateByQuery(@Param("record") RolePermissionMap record, @Param("example") RolePermissionMapQuery query);
 
     int updateByPrimaryKeySelective(RolePermissionMap record);
 

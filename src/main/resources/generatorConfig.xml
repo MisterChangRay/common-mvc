@@ -7,11 +7,14 @@
     <classPathEntry location="D:/ProgramsForDev/mysql-connector-java-5.1.26-bin.jar"/>
     <context id="testTables" targetRuntime="MyBatis3" >
         <!-- 重命名插件 更名为query-->
-        <plugin type="org.mybatis.generator.plugins.RenameExampleClassPlugin">
-            <property name="searchString" value="Example$" />
-            <property name="replaceString" value="Query" />
-        </plugin>
-        <!-- -->
+         <plugin type="com.github.dcendents.mybatis.generator.plugin.rename.RenameExampleClassAndMethodsPlugin">
+             <property name="classMethodSearchString" value="Example" />
+             <property name="classMethodReplaceString" value="Query" />
+             <property name="parameterSearchString" value="example" />
+             <property name="parameterReplaceString" value="query" />
+         </plugin>
+
+         <!-- 自动生成实体类得toString方法-->
         <plugin type="org.mybatis.generator.plugins.ToStringPlugin"></plugin>
 
         <commentGenerator>

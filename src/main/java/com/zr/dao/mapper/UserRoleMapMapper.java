@@ -6,9 +6,9 @@ import java.util.List;
 import org.apache.ibatis.annotations.Param;
 
 public interface UserRoleMapMapper {
-    long countByExample(UserRoleMapQuery example);
+    long countByQuery(UserRoleMapQuery query);
 
-    int deleteByExample(UserRoleMapQuery example);
+    int deleteByQuery(UserRoleMapQuery query);
 
     int deleteByPrimaryKey(Integer id);
 
@@ -16,13 +16,13 @@ public interface UserRoleMapMapper {
 
     int insertSelective(UserRoleMap record);
 
-    List<UserRoleMap> selectByExample(UserRoleMapQuery example);
+    List<UserRoleMap> selectByQuery(UserRoleMapQuery query);
 
     UserRoleMap selectByPrimaryKey(Integer id);
 
-    int updateByExampleSelective(@Param("record") UserRoleMap record, @Param("example") UserRoleMapQuery example);
+    int updateByQuerySelective(@Param("record") UserRoleMap record, @Param("example") UserRoleMapQuery query);
 
-    int updateByExample(@Param("record") UserRoleMap record, @Param("example") UserRoleMapQuery example);
+    int updateByQuery(@Param("record") UserRoleMap record, @Param("example") UserRoleMapQuery query);
 
     int updateByPrimaryKeySelective(UserRoleMap record);
 

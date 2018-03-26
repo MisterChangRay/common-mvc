@@ -6,9 +6,9 @@ import java.util.List;
 import org.apache.ibatis.annotations.Param;
 
 public interface PermissionMapper {
-    long countByExample(PermissionQuery example);
+    long countByQuery(PermissionQuery query);
 
-    int deleteByExample(PermissionQuery example);
+    int deleteByQuery(PermissionQuery query);
 
     int deleteByPrimaryKey(Integer id);
 
@@ -16,13 +16,13 @@ public interface PermissionMapper {
 
     int insertSelective(Permission record);
 
-    List<Permission> selectByExample(PermissionQuery example);
+    List<Permission> selectByQuery(PermissionQuery query);
 
     Permission selectByPrimaryKey(Integer id);
 
-    int updateByExampleSelective(@Param("record") Permission record, @Param("example") PermissionQuery example);
+    int updateByQuerySelective(@Param("record") Permission record, @Param("example") PermissionQuery query);
 
-    int updateByExample(@Param("record") Permission record, @Param("example") PermissionQuery example);
+    int updateByQuery(@Param("record") Permission record, @Param("example") PermissionQuery query);
 
     int updateByPrimaryKeySelective(Permission record);
 

@@ -4,7 +4,8 @@ import com.zr.common.Authentication;
 import com.zr.common.NormalResponse;
 import com.zr.common.ErrorCodeEnum;
 import com.zr.dao.entity.User;
-import com.zr.service.UserService;
+import com.zr.dao.entity.UserQuery;
+import com.zr.service.user.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
@@ -31,7 +32,7 @@ public class UserController {
     UserService userService;
 
     /**
-     * 用户列表
+     * 根据ID获取用户
      * @param userId
      * @return
      */
@@ -41,7 +42,7 @@ public class UserController {
     public NormalResponse getById(@PathVariable Integer userId) {
         NormalResponse res = new NormalResponse();
         res.setErrorCode(ErrorCodeEnum.OK);
-        res.setData(userService.list(10));
+        res.setData(userService.list(new UserQuery()));
         return res;
     }
 
@@ -57,7 +58,7 @@ public class UserController {
     public NormalResponse list(@RequestParam Integer limit) {
         NormalResponse res = new NormalResponse();
         res.setErrorCode(ErrorCodeEnum.OK);
-        res.setData(userService.list(10));
+        res.setData(userService.list(new UserQuery()));
         return res;
     }
 
@@ -73,10 +74,7 @@ public class UserController {
         NormalResponse res = new NormalResponse();
         userService.add(user);
 
-        ArrayList list = new ArrayList();
-        list.add(user);
-
-        res.setData(list);
+        res.setData(user);
         res.setErrorCode(ErrorCodeEnum.OK);
         return res;
     }

@@ -74,7 +74,7 @@
   <sql id="Base_Column_List">
     id, username, password, idcard, email, name, sex, phone, enable, isdel
   </sql>
-  <select id="selectByExample" parameterType="com.zr.dao.entity.UserQuery" resultMap="BaseResultMap">
+  <select id="selectByQuery" parameterType="com.zr.dao.entity.UserQuery" resultMap="BaseResultMap">
     select
     <if test="distinct">
       distinct
@@ -98,7 +98,7 @@
     delete from user
     where id = #{id,jdbcType=INTEGER}
   </delete>
-  <delete id="deleteByExample" parameterType="com.zr.dao.entity.UserQuery">
+  <delete id="deleteByQuery" parameterType="com.zr.dao.entity.UserQuery">
     delete from user
     <if test="_parameter != null">
       <include refid="Example_Where_Clause" />
@@ -181,17 +181,17 @@
       </if>
     </trim>
   </insert>
-  <select id="countByExample" parameterType="com.zr.dao.entity.UserQuery" resultType="java.lang.Long">
+  <select id="countByQuery" parameterType="com.zr.dao.entity.UserQuery" resultType="java.lang.Long">
     select count(*) from user
     <if test="_parameter != null">
       <include refid="Example_Where_Clause" />
     </if>
   </select>
-  <update id="updateByExampleSelective" parameterType="map">
+  <update id="updateByQuerySelective" parameterType="map">
     update user
     <set>
       <if test="record.id != null">
-        id = #{record.id,jdbcType=INTEGER},
+        
       </if>
       <if test="record.username != null">
         username = #{record.username,jdbcType=VARCHAR},
@@ -225,9 +225,9 @@
       <include refid="Update_By_Example_Where_Clause" />
     </if>
   </update>
-  <update id="updateByExample" parameterType="map">
+  <update id="updateByQuery" parameterType="map">
     update user
-    set id = #{record.id,jdbcType=INTEGER},
+    set 
       username = #{record.username,jdbcType=VARCHAR},
       password = #{record.password,jdbcType=VARCHAR},
       idcard = #{record.idcard,jdbcType=VARCHAR},

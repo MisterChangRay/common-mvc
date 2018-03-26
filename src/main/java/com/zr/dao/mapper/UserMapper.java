@@ -6,9 +6,9 @@ import java.util.List;
 import org.apache.ibatis.annotations.Param;
 
 public interface UserMapper {
-    long countByExample(UserQuery example);
+    long countByQuery(UserQuery query);
 
-    int deleteByExample(UserQuery example);
+    int deleteByQuery(UserQuery query);
 
     int deleteByPrimaryKey(Integer id);
 
@@ -16,13 +16,13 @@ public interface UserMapper {
 
     int insertSelective(User record);
 
-    List<User> selectByExample(UserQuery example);
+    List<User> selectByQuery(UserQuery query);
 
     User selectByPrimaryKey(Integer id);
 
-    int updateByExampleSelective(@Param("record") User record, @Param("example") UserQuery example);
+    int updateByQuerySelective(@Param("record") User record, @Param("example") UserQuery query);
 
-    int updateByExample(@Param("record") User record, @Param("example") UserQuery example);
+    int updateByQuery(@Param("record") User record, @Param("example") UserQuery query);
 
     int updateByPrimaryKeySelective(User record);
 

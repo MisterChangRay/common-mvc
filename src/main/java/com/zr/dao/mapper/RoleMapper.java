@@ -6,9 +6,9 @@ import java.util.List;
 import org.apache.ibatis.annotations.Param;
 
 public interface RoleMapper {
-    long countByExample(RoleQuery example);
+    long countByQuery(RoleQuery query);
 
-    int deleteByExample(RoleQuery example);
+    int deleteByQuery(RoleQuery query);
 
     int deleteByPrimaryKey(Integer id);
 
@@ -16,13 +16,13 @@ public interface RoleMapper {
 
     int insertSelective(Role record);
 
-    List<Role> selectByExample(RoleQuery example);
+    List<Role> selectByQuery(RoleQuery query);
 
     Role selectByPrimaryKey(Integer id);
 
-    int updateByExampleSelective(@Param("record") Role record, @Param("example") RoleQuery example);
+    int updateByQuerySelective(@Param("record") Role record, @Param("example") RoleQuery query);
 
-    int updateByExample(@Param("record") Role record, @Param("example") RoleQuery example);
+    int updateByQuery(@Param("record") Role record, @Param("example") RoleQuery query);
 
     int updateByPrimaryKeySelective(Role record);
 
