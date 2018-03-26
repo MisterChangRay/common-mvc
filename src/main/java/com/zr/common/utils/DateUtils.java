@@ -1,4 +1,4 @@
-package com.zr.common;
+package com.zr.common.utils;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -8,7 +8,7 @@ import java.util.Date;
  * Created by Miste on 3/26/2018.
  * 常用静态工具类
  */
-public class Utils {
+public class DateUtils {
 
     /**
      * 字符串到日期

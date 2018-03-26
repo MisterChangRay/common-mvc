@@ -1,6 +1,5 @@
 package com.zr.common.utils;
 
-import com.zr.common.Utils;
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.Around;
 import org.aspectj.lang.annotation.Aspect;
@@ -8,8 +7,6 @@ import org.aspectj.lang.annotation.Pointcut;
 import org.aspectj.lang.reflect.MethodSignature;
 import org.springframework.stereotype.Component;
 
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpSession;
 import java.lang.reflect.Method;
 import java.util.Date;
 
@@ -41,7 +38,7 @@ public class PrintRunTime {
         MethodSignature signature = (MethodSignature) point.getSignature();
         Method method = signature.getMethod();
 
-        System.out.println("[" + Utils.dateToStr(new Date()) + "] " + method + "- has spend " + ((time2 - time) / 1000) + "s");
+        System.out.println("[" + DateUtils.dateToStr(new Date()) + "] " + method + "- has spend " + ((time2 - time) / 1000) + "s");
 
         return  res;
     }
