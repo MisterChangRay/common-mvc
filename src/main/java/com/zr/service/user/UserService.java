@@ -2,49 +2,13 @@ package com.zr.service.user;
 
 import com.zr.dao.entity.User;
 import com.zr.dao.entity.UserQuery;
-
-
-import java.util.List;
+import com.zr.service.BaseService;
 
 /**
  * Created by Miste on 3/20/2018.
  *
- * 用户服务定义类
+ * 用户服务
  */
-public interface UserService {
-    /**
-     * 列表
-     * @param userQuery
-     * @return
-     */
-    List<User> list(UserQuery userQuery);
-
-    /**
-     * 新增
-     * @param user
-     * @return
-     */
-    User add(User user);
-
-    /**
-     * 删除
-     * @param user
-     * @return
-     */
-    User delete(User user);
-
-    /**
-     * 编辑
-     * @param user
-     * @return
-     */
-    User update(User user);
-
-    /**
-     * 根据Id获取用户
-     * @param id
-     * @return
-     */
-    User getById(Integer id);
+public interface UserService extends BaseService<User, UserQuery> {
 
 }

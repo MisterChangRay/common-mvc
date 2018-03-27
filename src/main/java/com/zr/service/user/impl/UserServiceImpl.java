@@ -1,9 +1,11 @@
 package com.zr.service.user.impl;
 
 import com.zr.common.DBEnum;
+import com.zr.dao.entity.Role;
 import com.zr.dao.entity.User;
 import com.zr.dao.entity.UserQuery;
 import com.zr.dao.mapper.UserMapper;
+import com.zr.dao.mapper.UserRoleMapMapper;
 import com.zr.service.user.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -18,6 +20,22 @@ import java.util.List;
 public class UserServiceImpl implements UserService{
     @Autowired
     UserMapper userMapper;
+    @Autowired
+    UserRoleMapMapper userRoleMapMapper;
+
+
+    /**
+     * 更新用户下的角色信息
+     * @param userId 被更新的用户ID
+     * @param roles 更新的角色信息
+     * @return
+     */
+    public boolean updateRole(Integer userId, List<Integer> roles) {
+        return  false;
+    }
+
+
+
 
 
     public User getById(Integer id) {
@@ -30,6 +48,7 @@ public class UserServiceImpl implements UserService{
     public List<User> list(UserQuery userQuery) {
         return userMapper.selectByQuery(userQuery);
     }
+
 
     public User add(User user) {
         if(null != user.getName() && null != user.getUsername() && null != user.getPassword()) {
