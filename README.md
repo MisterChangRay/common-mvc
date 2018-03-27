@@ -1,8 +1,9 @@
 # common-core
 基于maven的spring4.3+mybatis3.4的后台整合，方便快速进行后台接口开发。
 
-### 新功能
+### 已完成功能
 - 增加权限统一拦截注解`@Authentication`
+- 增加方法性能统计注解`@printRunTime`
 - 实现了简单的权限系统
 
 ### 安装步骤
