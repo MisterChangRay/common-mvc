@@ -12,8 +12,8 @@
 - 配置`jdbc.properties`下面的数据库相关信息（如果你需要使用mybitis逆向插件，也需要配置`generatorConfig.xml`这个文件中的数据库信息）
 - 使用maven编译后，配置tomcat并部署
 - 启动tomcat,访问以下链接测试接口；
-- `get http://localhost:8080/v1/user/list?limit=1` 查询用户列表
-- `post http://localhost:8080/v1/user/add` 新增用户
+- `get http://localhost:8080/v1/user/list?limit=1&page=0` 查询用户列表，第1页每页1条
+- `post http://localhost:8080/v1/user` 新增用户
 
 ### 建表语句
 ```sql
