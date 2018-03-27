@@ -88,17 +88,17 @@ public class AuthController {
          * 生成的sql为 select * from user where username = '%username' or phone = '%phone' or idcard = '%idcard' or email = '%email'
          */
         UserQuery userQuery = new UserQuery();
-        userQuery.or().andUsernameEqualTo(username);
-        userQuery.or().andPhoneEqualTo(phone);
-        userQuery.or().andIdcardEqualTo(idcard);
-        userQuery.or().andEmailEqualTo(email);
+        if(null != username) userQuery.or().andUsernameEqualTo(username);
+        if(null != phone) userQuery.or().andPhoneEqualTo(phone);
+        if(null != idcard) userQuery.or().andIdcardEqualTo(idcard);
+        if(null != email) userQuery.or().andEmailEqualTo(email);
 
         List<User> userList = userMapper.selectByQuery(userQuery);
         if(0 < userList.size()) {
-            res.setErrorCode(ErrorCodeEnum.OK);
-        } else {
             res.setErrorMsg("资料已经存在");
             res.setErrorCode(ErrorCodeEnum.INVALID_USER);
+        } else {
+            res.setErrorCode(ErrorCodeEnum.OK);
         }
         return res;
 
