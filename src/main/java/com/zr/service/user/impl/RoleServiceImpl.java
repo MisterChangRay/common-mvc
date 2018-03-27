@@ -1,14 +1,15 @@
 package com.zr.service.user.impl;
 
-import com.zr.dao.entity.Permission;
-import com.zr.dao.entity.Role;
-import com.zr.dao.entity.RoleQuery;
+import com.zr.common.DBEnum;
+import com.zr.dao.entity.*;
 import com.zr.dao.mapper.PermissionMapper;
 import com.zr.dao.mapper.RolePermissionMapMapper;
+import com.zr.service.user.PermissionService;
 import com.zr.service.user.RoleService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -21,6 +22,12 @@ public class RoleServiceImpl implements RoleService{
     RoleService roleService;
     @Autowired
     RolePermissionMapMapper rolePermissionMapMapper;
+    @Autowired
+    PermissionService permissionService;
+
+    public boolean exist(List<Integer> ids) {
+        return false;
+    }
 
     public List<Role> list(RoleQuery entityQuery) {
         return null;
@@ -50,7 +57,31 @@ public class RoleServiceImpl implements RoleService{
      * @return
      */
     public boolean updatePermission(Integer roleId, List<Integer> permissions) {
-        return false;
+        if(null == roleId || null == permissions) return  false;
+
+        if(permissionService.exist(permissions)) {
+            //删除老数据
+            RolePermissionMap rolePermissionMap = new RolePermissionMap();
+            rolePermissionMap.setIsdel((byte) DBEnum.TRUE.getCode());
+
+            RolePermissionMapQuery rolePermissionMapQuery = new RolePermissionMapQuery();
+            RolePermissionMapQuery.Criteria criteria = rolePermissionMapQuery.createCriteria();
+            criteria.andRoleIdEqualTo(roleId);
+            rolePermissionMapMapper.updateByQuerySelective(rolePermissionMap, rolePermissionMapQuery);
+
+            //插入新的映射数据
+            List<RolePermissionMap> rolePermissionMaps = new ArrayList<RolePermissionMap>();
+            RolePermissionMap tmp;
+            for(Integer i=permissions.size(); i<0; i--) {
+                tmp = new RolePermissionMap();
+                tmp.setRoleId(roleId);
+                tmp.setPermissionId(permissions.get(i));
+                rolePermissionMaps.add(tmp);
+            }
+            rolePermissionMapMapper.batchInsert(rolePermissionMaps);
+            return  true;
+        }
+        return  false;
     }
 
 

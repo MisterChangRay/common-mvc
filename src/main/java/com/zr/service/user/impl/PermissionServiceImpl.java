@@ -1,5 +1,6 @@
 package com.zr.service.user.impl;
 
+import com.zr.common.DBEnum;
 import com.zr.dao.entity.Permission;
 import com.zr.dao.entity.PermissionQuery;
 
@@ -20,6 +21,18 @@ public class PermissionServiceImpl implements PermissionService{
     PermissionMapper permissionMapper;
 
 
+    public boolean exist(List<Integer> ids) {
+        PermissionQuery permissionQuery = new PermissionQuery();
+        PermissionQuery.Criteria criteria = permissionQuery.createCriteria();
+        criteria.andIdIn(ids);
+        criteria.andIsdealEqualTo((byte)DBEnum.FALSE.getCode());
+        Long count = permissionMapper.countByQuery(permissionQuery);
+        if(count != ids.size()) {
+            return  false;
+        } else {
+            return  true;
+        }
+    }
 
     public List<Permission> list(PermissionQuery entityQuery) {
         return null;

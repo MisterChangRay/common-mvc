@@ -3,11 +3,18 @@ package com.zr.controller.user;
 import com.zr.common.annotation.Authentication;
 import com.zr.common.ErrorCodeEnum;
 import com.zr.common.NormalResponse;
+import com.zr.dao.entity.Permission;
+import com.zr.dao.entity.PermissionQuery;
 import com.zr.dao.entity.User;
+import com.zr.dao.entity.UserQuery;
+import com.zr.service.user.PermissionService;
+import com.zr.service.user.RoleService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Created by Miste on 3/23/2018.
@@ -19,22 +26,34 @@ import java.util.ArrayList;
  * -角色编辑
  * -角色启用/停用
  * -角色删除
+ * -角色权限编辑
  */
 @Controller
 @RequestMapping("/v1/role")
 public class RoleController {
+    @Autowired
+    PermissionService permissionService;
+    @Autowired
+    RoleService roleService;
 
     /**
-     * 获取角色
+     * 编辑角色权限
      * @param roleId
      * @return
      */
     @Authentication
-    @RequestMapping(value="/{roleId}", method = RequestMethod.GET)
+    @RequestMapping(value="/{roleId}/permission", method = RequestMethod.PATCH)
     @ResponseBody
-    public NormalResponse getById(@PathVariable Integer roleId) {
+    public NormalResponse getById(@PathVariable Integer roleId, @RequestParam List permissionIds) {
         NormalResponse res = new NormalResponse();
-        res.setErrorCode(ErrorCodeEnum.OK);
+
+        if(null != roleId && null != permissionIds && 0 < permissionIds.size()) {
+            if(roleService.updatePermission(roleId,permissionIds)) {
+                res.setErrorCode(ErrorCodeEnum.OK);
+            } else {
+                res.setErrorCode(ErrorCodeEnum.SERVER_ERROR);
+            }
+        }
         return res;
     }
 

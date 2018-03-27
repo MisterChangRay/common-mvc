@@ -18,6 +18,10 @@
         <plugin type="org.mybatis.generator.plugins.ToStringPlugin"></plugin>
         <!-- 分页插件 -->
         <plugin type="com.itfsw.mybatis.generator.plugins.LimitPlugin"/>
+        <!-- 批量插入插件 -->
+        <plugin type="com.itfsw.mybatis.generator.plugins.BatchInsertPlugin"/>
+        <!-- 数据Model属性对应Column获取插件 -->
+        <plugin type="com.itfsw.mybatis.generator.plugins.ModelColumnPlugin"/>
 
         <commentGenerator>
             <!-- 是否去除自动生成的注释 true：是 ： false:否 -->

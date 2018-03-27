@@ -7,6 +7,15 @@ import java.util.List;
  * Created by Miste on 3/27/2018.
  */
 public interface BaseService<T, K> {
+
+    /**
+     * 查询ID是否存在
+     * @param ids
+     * @return
+     */
+    boolean exist(List<Integer> ids);
+
+
     /**
      * 列表
      * @param entityQuery

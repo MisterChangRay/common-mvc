@@ -45,6 +45,10 @@ public class UserServiceImpl implements UserService{
         return  null;
     }
 
+    public boolean exist(List<Integer> ids) {
+        return false;
+    }
+
     public List<User> list(UserQuery userQuery) {
         return userMapper.selectByQuery(userQuery);
     }

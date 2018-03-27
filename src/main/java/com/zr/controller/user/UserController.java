@@ -25,13 +25,28 @@ import java.util.List;
  * -用户删除
  * -用户启用/停用
  * -用户编辑
- *
+ * -用户角色编辑
  */
 @Controller
 @RequestMapping("/v1/user")
 public class UserController {
     @Autowired
     UserService userService;
+
+    /**
+     * 编辑用户角色
+     * @param userId 用户id
+     * @param roleIds 角色Id集合
+     * @return
+     */
+    @Authentication
+    @RequestMapping(value="/{userId}/role", method = RequestMethod.PATCH)
+    @ResponseBody
+    public NormalResponse getById(@PathVariable Integer userId, @RequestParam List roleIds) {
+        NormalResponse res = new NormalResponse();
+        res.setErrorCode(ErrorCodeEnum.OK);
+        return res;
+    }
 
     /**
      * 根据ID获取用户
