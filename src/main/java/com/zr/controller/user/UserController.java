@@ -12,6 +12,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Created by Miste on 3/23/2018.
@@ -42,8 +43,9 @@ public class UserController {
     @ResponseBody
     public NormalResponse getById(@PathVariable Integer userId) {
         NormalResponse res = new NormalResponse();
+        User user = userService.getById(userId);
         res.setErrorCode(ErrorCodeEnum.OK);
-        res.setData(userService.list(new UserQuery()));
+        res.setData(user);
         return res;
     }
 
@@ -53,14 +55,15 @@ public class UserController {
      * @param limit
      * @return
      */
-    @PrintRunTime
     @Authentication
     @RequestMapping(method = RequestMethod.GET)
     @ResponseBody
-    public NormalResponse list(@RequestParam Integer limit) {
+    public NormalResponse list(@RequestParam(required =  false) Integer page, @RequestParam(required = false) Integer limit) {
         NormalResponse res = new NormalResponse();
+        List users = userService.list(new UserQuery().page(page, limit));
+
         res.setErrorCode(ErrorCodeEnum.OK);
-        res.setData(userService.list(new UserQuery()));
+        res.setData(users);
         return res;
     }
 
@@ -93,9 +96,8 @@ public class UserController {
     public NormalResponse delete(@RequestBody User user) {
         NormalResponse res = new NormalResponse();
         res.setErrorCode(ErrorCodeEnum.OK);
-        ArrayList list = new ArrayList();
-        list.add(user);
-        res.setData(list);
+
+        userService.delete(user);
         return res;
     }
 
@@ -111,9 +113,9 @@ public class UserController {
     public NormalResponse edit(@RequestBody User user) {
         NormalResponse res = new NormalResponse();
         res.setErrorCode(ErrorCodeEnum.OK);
-        ArrayList list = new ArrayList();
-        list.add(user);
-        res.setData(list);
+       userService.update(user);
+
+        res.setData(user);
         return res;
     }
 }

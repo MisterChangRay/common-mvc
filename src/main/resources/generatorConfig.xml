@@ -16,6 +16,8 @@
 
          <!-- 自动生成实体类得toString方法-->
         <plugin type="org.mybatis.generator.plugins.ToStringPlugin"></plugin>
+        <!-- 分页插件 -->
+        <plugin type="com.itfsw.mybatis.generator.plugins.LimitPlugin"/>
 
         <commentGenerator>
             <!-- 是否去除自动生成的注释 true：是 ： false:否 -->
@@ -55,9 +57,9 @@
         </javaClientGenerator>
 
         <!-- 指定数据库表 -->
-        <table tableName="user"></table>
-        <table tableName="role"></table>
-        <table tableName="permission"></table>
+        <table tableName="user"><generatedKey column="id" sqlStatement="MySql" identity="true" /></table>
+        <table tableName="role"><generatedKey column="id" sqlStatement="MySql" identity="true" /></table>
+        <table tableName="permission"><generatedKey column="id" sqlStatement="MySql" identity="true" /></table>
         <table tableName="role_permission_map"></table>
         <table tableName="user_role_map"></table>
 

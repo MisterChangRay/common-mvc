@@ -87,6 +87,14 @@
     <if test="orderByClause != null">
       order by ${orderByClause}
     </if>
+    <if test="rows != null">
+      <if test="offset != null">
+        limit ${offset}, ${rows}
+      </if>
+      <if test="offset == null">
+        limit ${rows}
+      </if>
+    </if>
   </select>
   <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
     select 
@@ -105,21 +113,22 @@
     </if>
   </delete>
   <insert id="insert" parameterType="com.zr.dao.entity.User">
-    insert into user (id, username, password, 
-      idcard, email, name, 
-      sex, phone, enable, 
-      isdel)
-    values (#{id,jdbcType=INTEGER}, #{username,jdbcType=VARCHAR}, #{password,jdbcType=VARCHAR}, 
-      #{idcard,jdbcType=VARCHAR}, #{email,jdbcType=VARCHAR}, #{name,jdbcType=VARCHAR}, 
-      #{sex,jdbcType=TINYINT}, #{phone,jdbcType=VARCHAR}, #{enable,jdbcType=TINYINT}, 
-      #{isdel,jdbcType=TINYINT})
+    <selectKey keyProperty="id" order="AFTER" resultType="java.lang.Integer">
+      SELECT LAST_INSERT_ID()
+    </selectKey>
+    insert into user (username, password, idcard, 
+      email, name, sex, phone, 
+      enable, isdel)
+    values (#{username,jdbcType=VARCHAR}, #{password,jdbcType=VARCHAR}, #{idcard,jdbcType=VARCHAR}, 
+      #{email,jdbcType=VARCHAR}, #{name,jdbcType=VARCHAR}, #{sex,jdbcType=TINYINT}, #{phone,jdbcType=VARCHAR}, 
+      #{enable,jdbcType=TINYINT}, #{isdel,jdbcType=TINYINT})
   </insert>
   <insert id="insertSelective" parameterType="com.zr.dao.entity.User">
+    <selectKey keyProperty="id" order="AFTER" resultType="java.lang.Integer">
+      SELECT LAST_INSERT_ID()
+    </selectKey>
     insert into user
     <trim prefix="(" suffix=")" suffixOverrides=",">
-      <if test="id != null">
-        id,
-      </if>
       <if test="username != null">
         username,
       </if>
@@ -149,9 +158,6 @@
       </if>
     </trim>
     <trim prefix="values (" suffix=")" suffixOverrides=",">
-      <if test="id != null">
-        #{id,jdbcType=INTEGER},
-      </if>
       <if test="username != null">
         #{username,jdbcType=VARCHAR},
       </if>

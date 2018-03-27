@@ -1,5 +1,6 @@
 package com.zr.service.user.impl;
 
+import com.zr.common.DBEnum;
 import com.zr.dao.entity.User;
 import com.zr.dao.entity.UserQuery;
 import com.zr.dao.mapper.UserMapper;
@@ -20,23 +21,39 @@ public class UserServiceImpl implements UserService{
 
 
     public User getById(Integer id) {
+        if(null != id) {
+            return  userMapper.selectByPrimaryKey(id);
+        }
         return  null;
-    };
+    }
 
     public List<User> list(UserQuery userQuery) {
-        return null;
+        return userMapper.selectByQuery(userQuery);
     }
 
     public User add(User user) {
-        return null;
+        if(null != user.getName() && null != user.getUsername() && null != user.getPassword()) {
+            user.setIsdel((byte) DBEnum.FALSE.getCode());
+            user.setEnable((byte) DBEnum.TRUE.getCode());
+            userMapper.insert(user);
+        }
+        return user;
     }
 
     public User delete(User user) {
-        return null;
+        if(null != user && null != user.getId()) {
+            user.setIsdel((byte)DBEnum.TRUE.getCode());
+        }
+        userMapper.updateByPrimaryKey(user);
+        return  user;
     }
 
     public User update(User user) {
-        return null;
+        if(null != user.getId() &&
+                null != user.getName() && null != user.getUsername() && null != user.getPassword()) {
+            userMapper.updateByPrimaryKeySelective(user);
+        }
+        return  user;
     }
 
 }
