@@ -8,6 +8,7 @@ public enum ErrorCodeEnum {
     CREATE_OK(201), //新增正常
     UPDATE_OK(202), //修改正常
     DELETE_OK(203), //删除正常
+    QUERY_OK(204),//查询正常
 
     INVALID_REQUEST(400), //无效请求,请求有格式或数据错误
     NEED_AUTH(401), //需要认证,没有权限

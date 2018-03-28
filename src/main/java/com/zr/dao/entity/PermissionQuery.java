@@ -336,63 +336,63 @@ public class PermissionQuery {
             return (Criteria) this;
         }
 
-        public Criteria andIsdealIsNull() {
-            addCriterion("isdeal is null");
+        public Criteria andIsdelIsNull() {
+            addCriterion("isdel is null");
             return (Criteria) this;
         }
 
-        public Criteria andIsdealIsNotNull() {
-            addCriterion("isdeal is not null");
+        public Criteria andIsdelIsNotNull() {
+            addCriterion("isdel is not null");
             return (Criteria) this;
         }
 
-        public Criteria andIsdealEqualTo(Byte value) {
-            addCriterion("isdeal =", value, "isdeal");
+        public Criteria andIsdelEqualTo(Integer value) {
+            addCriterion("isdel =", value, "isdel");
             return (Criteria) this;
         }
 
-        public Criteria andIsdealNotEqualTo(Byte value) {
-            addCriterion("isdeal <>", value, "isdeal");
+        public Criteria andIsdelNotEqualTo(Integer value) {
+            addCriterion("isdel <>", value, "isdel");
             return (Criteria) this;
         }
 
-        public Criteria andIsdealGreaterThan(Byte value) {
-            addCriterion("isdeal >", value, "isdeal");
+        public Criteria andIsdelGreaterThan(Integer value) {
+            addCriterion("isdel >", value, "isdel");
             return (Criteria) this;
         }
 
-        public Criteria andIsdealGreaterThanOrEqualTo(Byte value) {
-            addCriterion("isdeal >=", value, "isdeal");
+        public Criteria andIsdelGreaterThanOrEqualTo(Integer value) {
+            addCriterion("isdel >=", value, "isdel");
             return (Criteria) this;
         }
 
-        public Criteria andIsdealLessThan(Byte value) {
-            addCriterion("isdeal <", value, "isdeal");
+        public Criteria andIsdelLessThan(Integer value) {
+            addCriterion("isdel <", value, "isdel");
             return (Criteria) this;
         }
 
-        public Criteria andIsdealLessThanOrEqualTo(Byte value) {
-            addCriterion("isdeal <=", value, "isdeal");
+        public Criteria andIsdelLessThanOrEqualTo(Integer value) {
+            addCriterion("isdel <=", value, "isdel");
             return (Criteria) this;
         }
 
-        public Criteria andIsdealIn(List<Byte> values) {
-            addCriterion("isdeal in", values, "isdeal");
+        public Criteria andIsdelIn(List<Integer> values) {
+            addCriterion("isdel in", values, "isdel");
             return (Criteria) this;
         }
 
-        public Criteria andIsdealNotIn(List<Byte> values) {
-            addCriterion("isdeal not in", values, "isdeal");
+        public Criteria andIsdelNotIn(List<Integer> values) {
+            addCriterion("isdel not in", values, "isdel");
             return (Criteria) this;
         }
 
-        public Criteria andIsdealBetween(Byte value1, Byte value2) {
-            addCriterion("isdeal between", value1, value2, "isdeal");
+        public Criteria andIsdelBetween(Integer value1, Integer value2) {
+            addCriterion("isdel between", value1, value2, "isdel");
             return (Criteria) this;
         }
 
-        public Criteria andIsdealNotBetween(Byte value1, Byte value2) {
-            addCriterion("isdeal not between", value1, value2, "isdeal");
+        public Criteria andIsdelNotBetween(Integer value1, Integer value2) {
+            addCriterion("isdel not between", value1, value2, "isdel");
             return (Criteria) this;
         }
     }

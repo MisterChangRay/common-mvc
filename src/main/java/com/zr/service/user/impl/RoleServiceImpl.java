@@ -1,6 +1,8 @@
 package com.zr.service.user.impl;
 
 import com.zr.common.DBEnum;
+import com.zr.common.ErrorCodeEnum;
+import com.zr.common.NormalResponse;
 import com.zr.dao.entity.*;
 import com.zr.dao.mapper.RoleMapper;
 import com.zr.dao.mapper.RolePermissionMapMapper;
@@ -32,8 +34,8 @@ public class RoleServiceImpl implements RoleService{
         RoleQuery roleQuery = new RoleQuery();
         RoleQuery.Criteria criteria = roleQuery.createCriteria();
         criteria.andIdIn(ids);
-        criteria.andIsdelEqualTo((byte) DBEnum.FALSE.getCode());
-        criteria.andEnableEqualTo((byte) DBEnum.FALSE.getCode());
+        criteria.andIsdelEqualTo(DBEnum.FALSE.getCode());
+        criteria.andEnableEqualTo(DBEnum.FALSE.getCode());
         Long count = roleMapper.countByQuery(roleQuery);
         if(count != ids.size()) {
             return  false;
@@ -42,35 +44,64 @@ public class RoleServiceImpl implements RoleService{
         }
     }
 
-    public List<Role> getByIds(List<Integer> ids) {
+    public NormalResponse getByIds(List<Integer> ids) {
+        NormalResponse normalResponse = new NormalResponse();
         if(null == ids) return null;
 
         RoleQuery roleQuery = new RoleQuery();
         RoleQuery.Criteria criteria = roleQuery.createCriteria();
         criteria.andIdIn(ids);
-        criteria.andIsdelEqualTo((byte) DBEnum.FALSE.getCode());
-        criteria.andEnableEqualTo((byte) DBEnum.FALSE.getCode());
-        return roleMapper.selectByQuery(roleQuery);
+        criteria.andIsdelEqualTo(DBEnum.FALSE.getCode());
+        criteria.andEnableEqualTo(DBEnum.FALSE.getCode());
+        List<Role>  roles = roleMapper.selectByQuery(roleQuery);
+
+        return normalResponse.setData(roles).setErrorCode(ErrorCodeEnum.CREATE_OK.getCode()).setErrorMsg("成功");
     }
 
-    public List<Role> list(Role role) {
+    public NormalResponse list(Role role) {
         return null;
     }
 
-    public Role add(Role entity) {
-        return null;
+    public NormalResponse add(Role entity) {
+        NormalResponse normalResponse = NormalResponse.newInstance();
+        if(null == entity) return normalResponse.setErrorCode(ErrorCodeEnum.INVALID_REQUEST.getCode()).setErrorMsg("参数不能为空");
+        if(null == entity.getId()) return normalResponse.setErrorCode(ErrorCodeEnum.INVALID_REQUEST.getCode()).setErrorMsg("id不能为空");
+
+        entity.setIsdel(DBEnum.FALSE.getCode());
+
+        return normalResponse.setData(entity).setErrorCode(ErrorCodeEnum.CREATE_OK.getCode()).setErrorMsg("成功");
     }
 
-    public Role delete(Role entity) {
-        return null;
+    public NormalResponse delete(Role entity) {
+        NormalResponse normalResponse = NormalResponse.newInstance();
+        if(null == entity) return normalResponse.setErrorCode(ErrorCodeEnum.INVALID_REQUEST.getCode()).setErrorMsg("参数不能为空");
+        if(null == entity.getId()) return normalResponse.setErrorCode(ErrorCodeEnum.INVALID_REQUEST.getCode()).setErrorMsg("id不能为空");
+
+        entity.setIsdel(DBEnum.TRUE.getCode());
+        roleMapper.updateByPrimaryKey(entity);
+
+        return normalResponse.setData(entity).setErrorCode(ErrorCodeEnum.DELETE_OK.getCode()).setErrorMsg("成功");
     }
 
-    public Role update(Role entity) {
-        return null;
+    public NormalResponse update(Role entity) {
+        NormalResponse normalResponse = NormalResponse.newInstance();
+        if(null == entity) return normalResponse.setErrorCode(ErrorCodeEnum.INVALID_REQUEST.getCode()).setErrorMsg("参数不能为空");
+        if(null == entity.getId()) return normalResponse.setErrorCode(ErrorCodeEnum.INVALID_REQUEST.getCode()).setErrorMsg("id不能为空");
+
+        roleMapper.updateByPrimaryKeySelective(entity);
+        return normalResponse.setData(entity).setErrorCode(ErrorCodeEnum.UPDATE_OK.getCode()).setErrorMsg("成功");
     }
 
-    public Role getById(Integer id) {
-        return null;
+    public NormalResponse getById(Integer id) {
+        NormalResponse normalResponse = NormalResponse.newInstance();
+        if(null == id) return normalResponse.setErrorCode(ErrorCodeEnum.INVALID_REQUEST.getCode()).setErrorMsg("ID参数不能为空");
+
+        Role role = roleMapper.selectByPrimaryKey(id);
+        if(null == role) return normalResponse.setErrorCode(ErrorCodeEnum.INVALID_USER.getCode()).setErrorMsg("用户不存在");
+        if(role.getIsdel().equals(DBEnum.TRUE.getCode())) return normalResponse.setErrorCode(ErrorCodeEnum.GONE.getCode()).setErrorMsg("用户已经被删除");
+        if(role.getEnable().equals(DBEnum.FALSE.getCode())) return normalResponse.setErrorCode(ErrorCodeEnum.INVALID_USER.getCode()).setErrorMsg("用户被禁用");
+
+        return normalResponse.setData(role).setErrorCode(ErrorCodeEnum.UPDATE_OK.getCode()).setErrorMsg("成功");
     }
 
 
@@ -84,10 +115,10 @@ public class RoleServiceImpl implements RoleService{
         if(null == roleId || null == permissions) return  false;
 
         //判断ID是否都存在
-        if(permissions.size() == permissionService.getByIds(permissions).size()) {
+        if(permissions.size() == ((List)permissionService.getByIds(permissions)).size()) {
             //老数据标记为无效
             RolePermissionMap rolePermissionMap = new RolePermissionMap();
-            rolePermissionMap.setIsdel((byte) DBEnum.TRUE.getCode());
+            rolePermissionMap.setIsdel(DBEnum.TRUE.getCode());
 
             RolePermissionMapQuery rolePermissionMapQuery = new RolePermissionMapQuery();
             RolePermissionMapQuery.Criteria criteria = rolePermissionMapQuery.createCriteria();

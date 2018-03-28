@@ -626,52 +626,52 @@ public class UserQuery {
             return (Criteria) this;
         }
 
-        public Criteria andSexEqualTo(Byte value) {
+        public Criteria andSexEqualTo(Integer value) {
             addCriterion("sex =", value, "sex");
             return (Criteria) this;
         }
 
-        public Criteria andSexNotEqualTo(Byte value) {
+        public Criteria andSexNotEqualTo(Integer value) {
             addCriterion("sex <>", value, "sex");
             return (Criteria) this;
         }
 
-        public Criteria andSexGreaterThan(Byte value) {
+        public Criteria andSexGreaterThan(Integer value) {
             addCriterion("sex >", value, "sex");
             return (Criteria) this;
         }
 
-        public Criteria andSexGreaterThanOrEqualTo(Byte value) {
+        public Criteria andSexGreaterThanOrEqualTo(Integer value) {
             addCriterion("sex >=", value, "sex");
             return (Criteria) this;
         }
 
-        public Criteria andSexLessThan(Byte value) {
+        public Criteria andSexLessThan(Integer value) {
             addCriterion("sex <", value, "sex");
             return (Criteria) this;
         }
 
-        public Criteria andSexLessThanOrEqualTo(Byte value) {
+        public Criteria andSexLessThanOrEqualTo(Integer value) {
             addCriterion("sex <=", value, "sex");
             return (Criteria) this;
         }
 
-        public Criteria andSexIn(List<Byte> values) {
+        public Criteria andSexIn(List<Integer> values) {
             addCriterion("sex in", values, "sex");
             return (Criteria) this;
         }
 
-        public Criteria andSexNotIn(List<Byte> values) {
+        public Criteria andSexNotIn(List<Integer> values) {
             addCriterion("sex not in", values, "sex");
             return (Criteria) this;
         }
 
-        public Criteria andSexBetween(Byte value1, Byte value2) {
+        public Criteria andSexBetween(Integer value1, Integer value2) {
             addCriterion("sex between", value1, value2, "sex");
             return (Criteria) this;
         }
 
-        public Criteria andSexNotBetween(Byte value1, Byte value2) {
+        public Criteria andSexNotBetween(Integer value1, Integer value2) {
             addCriterion("sex not between", value1, value2, "sex");
             return (Criteria) this;
         }
@@ -756,52 +756,52 @@ public class UserQuery {
             return (Criteria) this;
         }
 
-        public Criteria andEnableEqualTo(Byte value) {
+        public Criteria andEnableEqualTo(Integer value) {
             addCriterion("enable =", value, "enable");
             return (Criteria) this;
         }
 
-        public Criteria andEnableNotEqualTo(Byte value) {
+        public Criteria andEnableNotEqualTo(Integer value) {
             addCriterion("enable <>", value, "enable");
             return (Criteria) this;
         }
 
-        public Criteria andEnableGreaterThan(Byte value) {
+        public Criteria andEnableGreaterThan(Integer value) {
             addCriterion("enable >", value, "enable");
             return (Criteria) this;
         }
 
-        public Criteria andEnableGreaterThanOrEqualTo(Byte value) {
+        public Criteria andEnableGreaterThanOrEqualTo(Integer value) {
             addCriterion("enable >=", value, "enable");
             return (Criteria) this;
         }
 
-        public Criteria andEnableLessThan(Byte value) {
+        public Criteria andEnableLessThan(Integer value) {
             addCriterion("enable <", value, "enable");
             return (Criteria) this;
         }
 
-        public Criteria andEnableLessThanOrEqualTo(Byte value) {
+        public Criteria andEnableLessThanOrEqualTo(Integer value) {
             addCriterion("enable <=", value, "enable");
             return (Criteria) this;
         }
 
-        public Criteria andEnableIn(List<Byte> values) {
+        public Criteria andEnableIn(List<Integer> values) {
             addCriterion("enable in", values, "enable");
             return (Criteria) this;
         }
 
-        public Criteria andEnableNotIn(List<Byte> values) {
+        public Criteria andEnableNotIn(List<Integer> values) {
             addCriterion("enable not in", values, "enable");
             return (Criteria) this;
         }
 
-        public Criteria andEnableBetween(Byte value1, Byte value2) {
+        public Criteria andEnableBetween(Integer value1, Integer value2) {
             addCriterion("enable between", value1, value2, "enable");
             return (Criteria) this;
         }
 
-        public Criteria andEnableNotBetween(Byte value1, Byte value2) {
+        public Criteria andEnableNotBetween(Integer value1, Integer value2) {
             addCriterion("enable not between", value1, value2, "enable");
             return (Criteria) this;
         }
@@ -816,52 +816,52 @@ public class UserQuery {
             return (Criteria) this;
         }
 
-        public Criteria andIsdelEqualTo(Byte value) {
+        public Criteria andIsdelEqualTo(Integer value) {
             addCriterion("isdel =", value, "isdel");
             return (Criteria) this;
         }
 
-        public Criteria andIsdelNotEqualTo(Byte value) {
+        public Criteria andIsdelNotEqualTo(Integer value) {
             addCriterion("isdel <>", value, "isdel");
             return (Criteria) this;
         }
 
-        public Criteria andIsdelGreaterThan(Byte value) {
+        public Criteria andIsdelGreaterThan(Integer value) {
             addCriterion("isdel >", value, "isdel");
             return (Criteria) this;
         }
 
-        public Criteria andIsdelGreaterThanOrEqualTo(Byte value) {
+        public Criteria andIsdelGreaterThanOrEqualTo(Integer value) {
             addCriterion("isdel >=", value, "isdel");
             return (Criteria) this;
         }
 
-        public Criteria andIsdelLessThan(Byte value) {
+        public Criteria andIsdelLessThan(Integer value) {
             addCriterion("isdel <", value, "isdel");
             return (Criteria) this;
         }
 
-        public Criteria andIsdelLessThanOrEqualTo(Byte value) {
+        public Criteria andIsdelLessThanOrEqualTo(Integer value) {
             addCriterion("isdel <=", value, "isdel");
             return (Criteria) this;
         }
 
-        public Criteria andIsdelIn(List<Byte> values) {
+        public Criteria andIsdelIn(List<Integer> values) {
             addCriterion("isdel in", values, "isdel");
             return (Criteria) this;
         }
 
-        public Criteria andIsdelNotIn(List<Byte> values) {
+        public Criteria andIsdelNotIn(List<Integer> values) {
             addCriterion("isdel not in", values, "isdel");
             return (Criteria) this;
         }
 
-        public Criteria andIsdelBetween(Byte value1, Byte value2) {
+        public Criteria andIsdelBetween(Integer value1, Integer value2) {
             addCriterion("isdel between", value1, value2, "isdel");
             return (Criteria) this;
         }
 
-        public Criteria andIsdelNotBetween(Byte value1, Byte value2) {
+        public Criteria andIsdelNotBetween(Integer value1, Integer value2) {
             addCriterion("isdel not between", value1, value2, "isdel");
             return (Criteria) this;
         }

@@ -32,32 +32,36 @@ public class NormalResponse {
         return pageInfo;
     }
 
-    public void setPageInfo(PageInfo pageInfo) {
+    public NormalResponse setPageInfo(PageInfo pageInfo) {
         this.pageInfo = pageInfo;
+        return this;
     }
 
     public Integer getErrorCode() {
         return errorCode;
     }
 
-    public void setErrorCode(ErrorCodeEnum errorCode) {
-        this.errorCode = errorCode.getCode();
+    public NormalResponse setErrorCode(Integer errorCode) {
+        this.errorCode = errorCode;
+        return this;
     }
 
     public Object getData() {
         return data;
     }
 
-    public void setData(Object data) {
+    public NormalResponse setData(Object data) {
         this.data = data;
+        return this;
     }
 
     public String getErrorMsg() {
         return errorMsg;
     }
 
-    public void setErrorMsg(String errorMsg) {
+    public NormalResponse setErrorMsg(String errorMsg) {
         this.errorMsg = errorMsg;
+        return  this;
     }
 
 
@@ -65,9 +69,15 @@ public class NormalResponse {
         return href;
     }
 
-    public void setHref(List href) {
+    public NormalResponse setHref(List href) {
         this.href = href;
+        return this;
     }
+
+    public static  NormalResponse  newInstance() {
+        return new NormalResponse();
+    }
+
 }
 
 

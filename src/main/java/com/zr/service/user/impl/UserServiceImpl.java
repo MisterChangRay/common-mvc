@@ -1,6 +1,8 @@
 package com.zr.service.user.impl;
 
 import com.zr.common.DBEnum;
+import com.zr.common.ErrorCodeEnum;
+import com.zr.common.NormalResponse;
 import com.zr.dao.entity.*;
 import com.zr.dao.mapper.RoleMapper;
 import com.zr.dao.mapper.UserMapper;
@@ -40,7 +42,7 @@ public class UserServiceImpl implements UserService{
         if(roleService.exist(roles)) {
             //老数据标记为无效
             UserRoleMap userRoleMap= new UserRoleMap();
-            userRoleMap.setIsdel((byte) DBEnum.TRUE.getCode());
+            userRoleMap.setIsdel(DBEnum.TRUE.getCode());
 
             UserRoleMapQuery userRoleMapQuery = new UserRoleMapQuery();
             UserRoleMapQuery.Criteria criteria = userRoleMapQuery.createCriteria();
@@ -68,11 +70,17 @@ public class UserServiceImpl implements UserService{
      * @param id
      * @return
      */
-    public User getById(Integer id) {
-        if(null != id) {
-            return  userMapper.selectByPrimaryKey(id);
-        }
-        return  null;
+    public NormalResponse getById(Integer id) {
+        NormalResponse normalResponse = NormalResponse.newInstance();
+        if(null == id) return normalResponse.setErrorCode(ErrorCodeEnum.INVALID_REQUEST.getCode()).setErrorMsg("ID不能为空");
+
+        User user = userMapper.selectByPrimaryKey(id);
+        if(null == user) return normalResponse.setErrorCode(ErrorCodeEnum.INVALID_REQUEST.getCode()).setErrorMsg("ID无效");
+
+        if(user.getIsdel().equals(DBEnum.TRUE.getCode())) return normalResponse.setErrorCode(ErrorCodeEnum.GONE.getCode()).setErrorMsg("用户已经被删除");
+        if(user.getEnable().equals(DBEnum.FALSE.getCode())) return normalResponse.setErrorCode(ErrorCodeEnum.INVALID_USER.getCode()).setErrorMsg("用户被禁用");
+
+        return normalResponse.setData(user).setErrorCode(ErrorCodeEnum.CREATE_OK.getCode()).setErrorMsg("成功");
     }
 
 
@@ -87,8 +95,8 @@ public class UserServiceImpl implements UserService{
         UserQuery userQuery = new UserQuery();
         UserQuery.Criteria criteria = userQuery.createCriteria();
         criteria.andIdIn(ids);
-        criteria.andIsdelEqualTo((byte) DBEnum.FALSE.getCode());
-        criteria.andEnableEqualTo((byte) DBEnum.TRUE.getCode());
+        criteria.andIsdelEqualTo(DBEnum.FALSE.getCode());
+        criteria.andEnableEqualTo(DBEnum.TRUE.getCode());
 
         Long count = userMapper.countByQuery(userQuery);
         if(count != ids.size()) {
@@ -103,29 +111,33 @@ public class UserServiceImpl implements UserService{
      * @param ids
      * @return
      */
-    public List<User> getByIds(List<Integer> ids) {
-        if(null == ids) return null;
+    public NormalResponse getByIds(List<Integer> ids) {
+        NormalResponse normalResponse = NormalResponse.newInstance();
+        if(null == ids) return normalResponse.setErrorCode(ErrorCodeEnum.INVALID_REQUEST.getCode()).setErrorMsg("参数不能为空");
 
         UserQuery userQuery = new UserQuery();
         UserQuery.Criteria criteria = userQuery.createCriteria();
         criteria.andIdIn(ids);
-        criteria.andIsdelEqualTo((byte) DBEnum.FALSE.getCode());
-        criteria.andEnableEqualTo((byte) DBEnum.TRUE.getCode());
+        criteria.andIsdelEqualTo(DBEnum.FALSE.getCode());
+        criteria.andEnableEqualTo(DBEnum.TRUE.getCode());
 
-        return userMapper.selectByQuery(userQuery);
+        List<User> users = userMapper.selectByQuery(userQuery);
+        return normalResponse.setData(users).setErrorCode(ErrorCodeEnum.CREATE_OK.getCode()).setErrorMsg("成功");
     }
 
     /**
      * 根据用户信息查询用户列表
-     * @param user
+     * @param entity
      * @return
      */
-    public List<User> list(User user) {
-        if(null == user) return null;
+    public NormalResponse list(User entity) {
+        NormalResponse normalResponse = NormalResponse.newInstance();
+        if(null == entity) return normalResponse.setErrorCode(ErrorCodeEnum.INVALID_REQUEST.getCode()).setErrorMsg("参数不能为空");
 
         UserQuery userQuery =  new UserQuery();
-        userQuery.page(user.getPage(), user.getLimit());
-        return userMapper.selectByQuery(userQuery);
+        userQuery.page(entity.getPage(), entity.getLimit());
+        List<User> users = userMapper.selectByQuery(userQuery);
+        return normalResponse.setData(users).setErrorCode(ErrorCodeEnum.CREATE_OK.getCode()).setErrorMsg("成功");
     }
 
 
@@ -134,42 +146,50 @@ public class UserServiceImpl implements UserService{
      * -name
      * -username
      * -password
-     * @param user
+     * @param entity
      * @return
      */
-    public User add(User user) {
-        if(null != user.getName() && null != user.getUsername() && null != user.getPassword()) {
-            user.setIsdel((byte) DBEnum.FALSE.getCode());
-            user.setEnable((byte) DBEnum.TRUE.getCode());
-            userMapper.insert(user);
-        }
-        return user;
+    public NormalResponse add(User entity) {
+        NormalResponse normalResponse = NormalResponse.newInstance();
+        if(null == entity) return normalResponse.setErrorCode(ErrorCodeEnum.INVALID_REQUEST.getCode()).setErrorMsg("参数不能为空");
+        if(null == entity.getName()) return normalResponse.setErrorCode(ErrorCodeEnum.INVALID_REQUEST.getCode()).setErrorMsg("name不能为空");
+        if(null == entity.getUsername()) return normalResponse.setErrorCode(ErrorCodeEnum.INVALID_REQUEST.getCode()).setErrorMsg("username不能为空");
+        if(null == entity.getPassword()) return normalResponse.setErrorCode(ErrorCodeEnum.INVALID_REQUEST.getCode()).setErrorMsg("password不能为空");
+
+        entity.setIsdel(DBEnum.FALSE.getCode());
+        entity.setEnable(DBEnum.TRUE.getCode());
+        userMapper.insert(entity);
+        return normalResponse.setData(entity).setErrorCode(ErrorCodeEnum.CREATE_OK.getCode()).setErrorMsg("成功");
     }
 
     /**
      * 根据ID删除用户
-     * @param user
+     * @param entity
      * @return
      */
-    public User delete(User user) {
-        if(null != user && null != user.getId()) {
-            user.setIsdel((byte)DBEnum.TRUE.getCode());
-        }
-        userMapper.updateByPrimaryKey(user);
-        return  user;
+    public NormalResponse delete(User entity) {
+        NormalResponse normalResponse = NormalResponse.newInstance();
+        if(null == entity) return normalResponse.setErrorCode(ErrorCodeEnum.INVALID_REQUEST.getCode()).setErrorMsg("参数不能为空");
+        if(null == entity.getId()) return normalResponse.setErrorCode(ErrorCodeEnum.INVALID_REQUEST.getCode()).setErrorMsg("id不能为空");
+
+        entity.setIsdel(DBEnum.TRUE.getCode());
+        userMapper.updateByPrimaryKey(entity);
+        return normalResponse.setData(entity).setErrorCode(ErrorCodeEnum.UPDATE_OK.getCode()).setErrorMsg("成功");
     }
 
     /**
      * 根据用户ID修改用户信息
-     * @param user
+     * @param entity
      * @return
      */
-    public User update(User user) {
-        if(null != user.getId() &&
-                null != user.getName() && null != user.getUsername() && null != user.getPassword()) {
-            userMapper.updateByPrimaryKeySelective(user);
-        }
-        return  user;
+    public NormalResponse update(User entity) {
+        NormalResponse normalResponse = NormalResponse.newInstance();
+        if(null == entity) return normalResponse.setErrorCode(ErrorCodeEnum.INVALID_REQUEST.getCode()).setErrorMsg("参数不能为空");
+        if(null == entity.getId()) return normalResponse.setErrorCode(ErrorCodeEnum.INVALID_REQUEST.getCode()).setErrorMsg("id不能为空");
+
+
+        userMapper.updateByPrimaryKeySelective(entity);
+        return normalResponse.setData(entity).setErrorCode(ErrorCodeEnum.UPDATE_OK.getCode()).setErrorMsg("成功");
     }
 
 }

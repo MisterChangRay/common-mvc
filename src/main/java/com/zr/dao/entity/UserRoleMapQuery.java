@@ -396,52 +396,52 @@ public class UserRoleMapQuery {
             return (Criteria) this;
         }
 
-        public Criteria andIsdelEqualTo(Byte value) {
+        public Criteria andIsdelEqualTo(Integer value) {
             addCriterion("isdel =", value, "isdel");
             return (Criteria) this;
         }
 
-        public Criteria andIsdelNotEqualTo(Byte value) {
+        public Criteria andIsdelNotEqualTo(Integer value) {
             addCriterion("isdel <>", value, "isdel");
             return (Criteria) this;
         }
 
-        public Criteria andIsdelGreaterThan(Byte value) {
+        public Criteria andIsdelGreaterThan(Integer value) {
             addCriterion("isdel >", value, "isdel");
             return (Criteria) this;
         }
 
-        public Criteria andIsdelGreaterThanOrEqualTo(Byte value) {
+        public Criteria andIsdelGreaterThanOrEqualTo(Integer value) {
             addCriterion("isdel >=", value, "isdel");
             return (Criteria) this;
         }
 
-        public Criteria andIsdelLessThan(Byte value) {
+        public Criteria andIsdelLessThan(Integer value) {
             addCriterion("isdel <", value, "isdel");
             return (Criteria) this;
         }
 
-        public Criteria andIsdelLessThanOrEqualTo(Byte value) {
+        public Criteria andIsdelLessThanOrEqualTo(Integer value) {
             addCriterion("isdel <=", value, "isdel");
             return (Criteria) this;
         }
 
-        public Criteria andIsdelIn(List<Byte> values) {
+        public Criteria andIsdelIn(List<Integer> values) {
             addCriterion("isdel in", values, "isdel");
             return (Criteria) this;
         }
 
-        public Criteria andIsdelNotIn(List<Byte> values) {
+        public Criteria andIsdelNotIn(List<Integer> values) {
             addCriterion("isdel not in", values, "isdel");
             return (Criteria) this;
         }
 
-        public Criteria andIsdelBetween(Byte value1, Byte value2) {
+        public Criteria andIsdelBetween(Integer value1, Integer value2) {
             addCriterion("isdel between", value1, value2, "isdel");
             return (Criteria) this;
         }
 
-        public Criteria andIsdelNotBetween(Byte value1, Byte value2) {
+        public Criteria andIsdelNotBetween(Integer value1, Integer value2) {
             addCriterion("isdel not between", value1, value2, "isdel");
             return (Criteria) this;
         }

@@ -1,8 +1,8 @@
 package com.zr.dao.entity;
 
-import com.zr.common.PageInfo;
+import com.zr.common.BaseEntity;
 
-public class User extends PageInfo {
+public class User extends BaseEntity {
     private Integer id;
 
     private String username;
@@ -15,13 +15,13 @@ public class User extends PageInfo {
 
     private String name;
 
-    private Byte sex;
+    private Integer sex;
 
     private String phone;
 
-    private Byte enable;
+    private Integer enable;
 
-    private Byte isdel;
+    private Integer isdel;
 
     public Integer getId() {
         return id;
@@ -71,11 +71,11 @@ public class User extends PageInfo {
         this.name = name == null ? null : name.trim();
     }
 
-    public Byte getSex() {
+    public Integer getSex() {
         return sex;
     }
 
-    public void setSex(Byte sex) {
+    public void setSex(Integer sex) {
         this.sex = sex;
     }
 
@@ -87,19 +87,19 @@ public class User extends PageInfo {
         this.phone = phone == null ? null : phone.trim();
     }
 
-    public Byte getEnable() {
+    public Integer getEnable() {
         return enable;
     }
 
-    public void setEnable(Byte enable) {
+    public void setEnable(Integer enable) {
         this.enable = enable;
     }
 
-    public Byte getIsdel() {
+    public Integer getIsdel() {
         return isdel;
     }
 
-    public void setIsdel(Byte isdel) {
+    public void setIsdel(Integer isdel) {
         this.isdel = isdel;
     }
 

@@ -1,6 +1,8 @@
 package com.zr.service;
 
 
+import com.zr.common.NormalResponse;
+
 import java.util.List;
 
 /**
@@ -21,7 +23,7 @@ public interface BaseService<T> {
      * @param ids
      * @return
      */
-    List<T> getByIds(List<Integer> ids);
+    NormalResponse getByIds(List<Integer> ids);
 
 
     /**
@@ -29,33 +31,33 @@ public interface BaseService<T> {
      * @param entity
      * @return
      */
-    List<T> list(T entity);
+    NormalResponse list(T entity);
 
     /**
      * 新增
      * @param entity
      * @return
      */
-    T add(T entity);
+    NormalResponse add(T entity);
 
     /**
      * 删除
      * @param entity
      * @return
      */
-    T delete(T entity);
+    NormalResponse delete(T entity);
 
     /**
      * 编辑
      * @param entity
      * @return
      */
-    T update(T entity);
+    NormalResponse update(T entity);
 
     /**
-     * 根据Id获取权限
+     * 根据Id获取对象
      * @param id
      * @return
      */
-    T getById(Integer id);
+    NormalResponse getById(Integer id);
 }

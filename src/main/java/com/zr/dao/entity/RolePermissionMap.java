@@ -1,15 +1,15 @@
 package com.zr.dao.entity;
 
-import com.zr.common.PageInfo;
+import com.zr.common.BaseEntity;
 
-public class RolePermissionMap extends PageInfo {
+public class RolePermissionMap extends BaseEntity {
     private Integer id;
 
     private Integer roleId;
 
     private Integer permissionId;
 
-    private Byte isdel;
+    private Integer isdel;
 
     public Integer getId() {
         return id;
@@ -35,11 +35,11 @@ public class RolePermissionMap extends PageInfo {
         this.permissionId = permissionId;
     }
 
-    public Byte getIsdel() {
+    public Integer getIsdel() {
         return isdel;
     }
 
-    public void setIsdel(Byte isdel) {
+    public void setIsdel(Integer isdel) {
         this.isdel = isdel;
     }
 

@@ -1,15 +1,15 @@
 package com.zr.dao.entity;
 
-import com.zr.common.PageInfo;
+import com.zr.common.BaseEntity;
 
-public class Role extends PageInfo {
+public class Role extends BaseEntity {
     private Integer id;
 
     private String name;
 
-    private Byte enable;
+    private Integer enable;
 
-    private Byte isdel;
+    private Integer isdel;
 
     public Integer getId() {
         return id;
@@ -27,19 +27,19 @@ public class Role extends PageInfo {
         this.name = name == null ? null : name.trim();
     }
 
-    public Byte getEnable() {
+    public Integer getEnable() {
         return enable;
     }
 
-    public void setEnable(Byte enable) {
+    public void setEnable(Integer enable) {
         this.enable = enable;
     }
 
-    public Byte getIsdel() {
+    public Integer getIsdel() {
         return isdel;
     }
 
-    public void setIsdel(Byte isdel) {
+    public void setIsdel(Integer isdel) {
         this.isdel = isdel;
     }
 
