@@ -1,6 +1,8 @@
 package com.zr.dao.entity;
 
-public class User {
+import com.zr.common.PageInfo;
+
+public class User extends PageInfo {
     private Integer id;
 
     private String username;

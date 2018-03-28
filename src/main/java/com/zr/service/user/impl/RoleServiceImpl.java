@@ -2,7 +2,7 @@ package com.zr.service.user.impl;
 
 import com.zr.common.DBEnum;
 import com.zr.dao.entity.*;
-import com.zr.dao.mapper.PermissionMapper;
+import com.zr.dao.mapper.RoleMapper;
 import com.zr.dao.mapper.RolePermissionMapMapper;
 import com.zr.service.user.PermissionService;
 import com.zr.service.user.RoleService;
@@ -19,17 +19,41 @@ import java.util.List;
 @Service
 public class RoleServiceImpl implements RoleService{
     @Autowired
-    RoleService roleService;
+    RoleMapper roleMapper;
     @Autowired
     RolePermissionMapMapper rolePermissionMapMapper;
     @Autowired
     PermissionService permissionService;
 
+
     public boolean exist(List<Integer> ids) {
-        return false;
+        if(null == ids) return false;
+
+        RoleQuery roleQuery = new RoleQuery();
+        RoleQuery.Criteria criteria = roleQuery.createCriteria();
+        criteria.andIdIn(ids);
+        criteria.andIsdelEqualTo((byte) DBEnum.FALSE.getCode());
+        criteria.andEnableEqualTo((byte) DBEnum.FALSE.getCode());
+        Long count = roleMapper.countByQuery(roleQuery);
+        if(count != ids.size()) {
+            return  false;
+        } else {
+            return  true;
+        }
     }
 
-    public List<Role> list(RoleQuery entityQuery) {
+    public List<Role> getByIds(List<Integer> ids) {
+        if(null == ids) return null;
+
+        RoleQuery roleQuery = new RoleQuery();
+        RoleQuery.Criteria criteria = roleQuery.createCriteria();
+        criteria.andIdIn(ids);
+        criteria.andIsdelEqualTo((byte) DBEnum.FALSE.getCode());
+        criteria.andEnableEqualTo((byte) DBEnum.FALSE.getCode());
+        return roleMapper.selectByQuery(roleQuery);
+    }
+
+    public List<Role> list(Role role) {
         return null;
     }
 
@@ -59,8 +83,9 @@ public class RoleServiceImpl implements RoleService{
     public boolean updatePermission(Integer roleId, List<Integer> permissions) {
         if(null == roleId || null == permissions) return  false;
 
-        if(permissionService.exist(permissions)) {
-            //删除老数据
+        //判断ID是否都存在
+        if(permissions.size() == permissionService.getByIds(permissions).size()) {
+            //老数据标记为无效
             RolePermissionMap rolePermissionMap = new RolePermissionMap();
             rolePermissionMap.setIsdel((byte) DBEnum.TRUE.getCode());
 

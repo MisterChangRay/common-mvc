@@ -1,6 +1,8 @@
 package com.zr.dao.entity;
 
-public class RolePermissionMap {
+import com.zr.common.PageInfo;
+
+public class RolePermissionMap extends PageInfo {
     private Integer id;
 
     private Integer roleId;

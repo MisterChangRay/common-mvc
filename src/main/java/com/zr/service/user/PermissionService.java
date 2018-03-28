@@ -13,5 +13,5 @@ import java.util.List;
  *
  * 用户权限服务
  */
-public interface PermissionService extends BaseService<Permission, PermissionQuery> {
+public interface PermissionService extends BaseService<Permission> {
 }

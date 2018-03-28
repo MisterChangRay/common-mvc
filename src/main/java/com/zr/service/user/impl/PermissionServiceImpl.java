@@ -22,6 +22,8 @@ public class PermissionServiceImpl implements PermissionService{
 
 
     public boolean exist(List<Integer> ids) {
+        if(null == ids) return false;
+
         PermissionQuery permissionQuery = new PermissionQuery();
         PermissionQuery.Criteria criteria = permissionQuery.createCriteria();
         criteria.andIdIn(ids);
@@ -34,7 +36,17 @@ public class PermissionServiceImpl implements PermissionService{
         }
     }
 
-    public List<Permission> list(PermissionQuery entityQuery) {
+    public List<Permission> getByIds(List<Integer> ids) {
+        if(null == ids) return null;
+
+        PermissionQuery permissionQuery = new PermissionQuery();
+        PermissionQuery.Criteria criteria = permissionQuery.createCriteria();
+        criteria.andIdIn(ids);
+        criteria.andIsdealEqualTo((byte)DBEnum.FALSE.getCode());
+        return permissionMapper.selectByQuery(permissionQuery);
+    }
+
+    public List<Permission> list(Permission permission) {
         return null;
     }
 

@@ -1,6 +1,8 @@
 package com.zr.dao.entity;
 
-public class Role {
+import com.zr.common.PageInfo;
+
+public class Role extends PageInfo {
     private Integer id;
 
     private String name;

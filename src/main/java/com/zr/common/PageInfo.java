@@ -10,7 +10,7 @@ public class PageInfo {
     /**
      * 当前第几页
      */
-    private Integer currentPage;
+    private Integer page;
     /**
      * 总共用多少条记录
      */
@@ -21,18 +21,21 @@ public class PageInfo {
     private Integer limit;
 
 
-    public PageInfo(Integer currentPage, Integer count, Integer limit) {
-        this.currentPage = currentPage;
+    public PageInfo(Integer page, Integer count, Integer limit) {
+        this.page = page;
         this.count = count;
         this.limit = limit;
     }
 
-    public Integer getCurrentPage() {
-        return currentPage;
+    public PageInfo() {
     }
 
-    public void setCurrentPage(Integer currentPage) {
-        this.currentPage = currentPage;
+    public Integer getPage() {
+        return page;
+    }
+
+    public void setPage(Integer page) {
+        this.page = page;
     }
 
     public Integer getCount() {

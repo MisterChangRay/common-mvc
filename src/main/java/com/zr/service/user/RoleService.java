@@ -11,7 +11,7 @@ import java.util.List;
  *
  * 用户角色服务
  */
-public interface RoleService extends BaseService<Role, RoleQuery> {
+public interface RoleService extends BaseService<Role> {
     boolean updatePermission(Integer roleId, List<Integer> permissions) ;
 
 }
