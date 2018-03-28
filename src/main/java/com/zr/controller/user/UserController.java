@@ -45,9 +45,9 @@ public class UserController {
     public NormalResponse getById(@PathVariable Integer userId, @RequestParam List roleIds) {
         NormalResponse res = new NormalResponse();
         if(userService.updateRole(userId, roleIds)) {
-            res.setErrorCode(ErrorCodeEnum.OK);
+            res.setErrorCode(ErrorCodeEnum.OK.getCode());
         } else {
-            res.setErrorCode(ErrorCodeEnum.INVALID_REQUEST);
+            res.setErrorCode(ErrorCodeEnum.INVALID_REQUEST.getCode());
         }
         return res;
     }
@@ -61,10 +61,7 @@ public class UserController {
     @RequestMapping(value="/{userId}", method = RequestMethod.GET)
     @ResponseBody
     public NormalResponse getById(@PathVariable Integer userId) {
-        NormalResponse res = new NormalResponse();
-        User user = userService.getById(userId);
-        res.setErrorCode(ErrorCodeEnum.OK);
-        res.setData(user);
+        NormalResponse res = userService.getById(userId);
         return res;
     }
 
@@ -80,7 +77,7 @@ public class UserController {
     public NormalResponse list(@RequestParam(required =  false) Integer page, @RequestParam(required = false) Integer limit) {
         NormalResponse res = new NormalResponse();
 
-        res.setErrorCode(ErrorCodeEnum.OK);
+        res.setErrorCode(ErrorCodeEnum.OK.getCode());
         return res;
     }
 
@@ -97,7 +94,7 @@ public class UserController {
         userService.add(user);
 
         res.setData(user);
-        res.setErrorCode(ErrorCodeEnum.OK);
+        res.setErrorCode(ErrorCodeEnum.OK.getCode());
         return res;
     }
 
@@ -112,7 +109,7 @@ public class UserController {
     @ResponseBody
     public NormalResponse delete(@RequestBody User user) {
         NormalResponse res = new NormalResponse();
-        res.setErrorCode(ErrorCodeEnum.OK);
+        res.setErrorCode(ErrorCodeEnum.OK.getCode());
 
         userService.delete(user);
         return res;
@@ -129,7 +126,7 @@ public class UserController {
     @ResponseBody
     public NormalResponse edit(@RequestBody User user) {
         NormalResponse res = new NormalResponse();
-        res.setErrorCode(ErrorCodeEnum.OK);
+        res.setErrorCode(ErrorCodeEnum.OK.getCode());
        userService.update(user);
 
         res.setData(user);

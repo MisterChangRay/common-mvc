@@ -58,10 +58,10 @@ public class AuthController {
             result.put("Authentication", token.toString());
 
             res.setData(result);
-            res.setErrorCode(ErrorCodeEnum.OK);
+            res.setErrorCode(ErrorCodeEnum.OK.getCode());
         } else {
             res.setErrorMsg("无效用户名或密码");
-            res.setErrorCode(ErrorCodeEnum.INVALID_USER);
+            res.setErrorCode(ErrorCodeEnum.INVALID_USER.getCode());
         }
         return res;
     }
@@ -96,9 +96,9 @@ public class AuthController {
         List<User> userList = userMapper.selectByQuery(userQuery);
         if(0 < userList.size()) {
             res.setErrorMsg("资料已经存在");
-            res.setErrorCode(ErrorCodeEnum.INVALID_USER);
+            res.setErrorCode(ErrorCodeEnum.INVALID_USER.getCode());
         } else {
-            res.setErrorCode(ErrorCodeEnum.OK);
+            res.setErrorCode(ErrorCodeEnum.OK.getCode());
         }
         return res;
 
