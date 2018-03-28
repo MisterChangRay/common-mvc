@@ -59,7 +59,7 @@ public class RoleController {
 
 
     /**
-     * 角色列表
+     * 获取角色列表
      * @param limit
      * @return
      */
