@@ -17,32 +17,32 @@
 
 ### 建表语句
 ```sql
- create database playground;
+create database playground;
  
- create table user (
+create table user (
    id int unsigned  primary key AUTO_INCREMENT,
    username varchar(100),
    password varchar(100),
    idcard varchar(100),
    email varchar(100),
    name varchar(100),
-   sex tinyint, --性别0女2男
+   sex int, --性别0女2男
    phone varchar(100),
-   enable tinyint, --是否启用0false，1true
-   isdel tinyint --是否删除0false, 1true
+   enable int, --是否启用0false，1true
+   isdel int --是否删除0false, 1true
  ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
  create table role (
    id int unsigned  primary key AUTO_INCREMENT,
    name varchar(100),
-   enable tinyint,
-   isdel tinyint
+   enable int,
+   isdel int
  ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
   create table permission (
    id int unsigned  primary key AUTO_INCREMENT,
    name varchar(100),
-   isdeal tinyint
+   isdel int
  ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 
@@ -50,7 +50,7 @@
    id int unsigned  primary key AUTO_INCREMENT,
    role_id int unsigned,
    permission_id int unsigned,
-   isdel tinyint
+   isdel int
  ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 
@@ -58,7 +58,7 @@
    id int unsigned  primary key AUTO_INCREMENT,
    user_id int unsigned,
    role_id int unsigned,
-   isdel tinyint
+   isdel int
  ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 ```
 
