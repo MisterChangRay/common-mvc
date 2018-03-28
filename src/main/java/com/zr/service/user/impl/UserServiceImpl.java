@@ -80,7 +80,7 @@ public class UserServiceImpl implements UserService{
         if(user.getIsdel().equals(DBEnum.TRUE.getCode())) return normalResponse.setErrorCode(ErrorCodeEnum.GONE.getCode()).setErrorMsg("用户已经被删除");
         if(user.getEnable().equals(DBEnum.FALSE.getCode())) return normalResponse.setErrorCode(ErrorCodeEnum.INVALID_USER.getCode()).setErrorMsg("用户被禁用");
 
-        return normalResponse.setData(user).setErrorCode(ErrorCodeEnum.CREATE_OK.getCode()).setErrorMsg("成功");
+        return normalResponse.setData(user).setErrorCode(ErrorCodeEnum.QUERY_OK.getCode()).setErrorMsg("成功");
     }
 
 
@@ -122,7 +122,7 @@ public class UserServiceImpl implements UserService{
         criteria.andEnableEqualTo(DBEnum.TRUE.getCode());
 
         List<User> users = userMapper.selectByQuery(userQuery);
-        return normalResponse.setData(users).setErrorCode(ErrorCodeEnum.CREATE_OK.getCode()).setErrorMsg("成功");
+        return normalResponse.setData(users).setErrorCode(ErrorCodeEnum.QUERY_OK.getCode()).setErrorMsg("成功");
     }
 
     /**
@@ -137,7 +137,7 @@ public class UserServiceImpl implements UserService{
         UserQuery userQuery =  new UserQuery();
         userQuery.page(entity.getPage(), entity.getLimit());
         List<User> users = userMapper.selectByQuery(userQuery);
-        return normalResponse.setData(users).setErrorCode(ErrorCodeEnum.CREATE_OK.getCode()).setErrorMsg("成功");
+        return normalResponse.setData(users).setErrorCode(ErrorCodeEnum.QUERY_OK.getCode()).setErrorMsg("成功");
     }
 
 
@@ -174,7 +174,7 @@ public class UserServiceImpl implements UserService{
 
         entity.setIsdel(DBEnum.TRUE.getCode());
         userMapper.updateByPrimaryKey(entity);
-        return normalResponse.setData(entity).setErrorCode(ErrorCodeEnum.UPDATE_OK.getCode()).setErrorMsg("成功");
+        return normalResponse.setData(entity).setErrorCode(ErrorCodeEnum.DELETE_OK.getCode()).setErrorMsg("成功");
     }
 
     /**

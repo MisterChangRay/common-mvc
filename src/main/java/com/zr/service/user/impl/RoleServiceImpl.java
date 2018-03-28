@@ -55,7 +55,7 @@ public class RoleServiceImpl implements RoleService{
         criteria.andEnableEqualTo(DBEnum.FALSE.getCode());
         List<Role>  roles = roleMapper.selectByQuery(roleQuery);
 
-        return normalResponse.setData(roles).setErrorCode(ErrorCodeEnum.CREATE_OK.getCode()).setErrorMsg("成功");
+        return normalResponse.setData(roles).setErrorCode(ErrorCodeEnum.QUERY_OK.getCode()).setErrorMsg("成功");
     }
 
     public NormalResponse list(Role role) {
@@ -101,7 +101,7 @@ public class RoleServiceImpl implements RoleService{
         if(role.getIsdel().equals(DBEnum.TRUE.getCode())) return normalResponse.setErrorCode(ErrorCodeEnum.GONE.getCode()).setErrorMsg("用户已经被删除");
         if(role.getEnable().equals(DBEnum.FALSE.getCode())) return normalResponse.setErrorCode(ErrorCodeEnum.INVALID_USER.getCode()).setErrorMsg("用户被禁用");
 
-        return normalResponse.setData(role).setErrorCode(ErrorCodeEnum.UPDATE_OK.getCode()).setErrorMsg("成功");
+        return normalResponse.setData(role).setErrorCode(ErrorCodeEnum.QUERY_OK.getCode()).setErrorMsg("成功");
     }
 
 

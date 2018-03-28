@@ -12,6 +12,12 @@ import java.util.List;
  * 用户服务
  */
 public interface UserService extends BaseService<User> {
+    /**
+     * 更新用户所绑定的角色
+     * @param userId 用户ID
+     * @param roles 角色id集合
+     * @return
+     */
     boolean updateRole(Integer userId, List<Integer> roles);
 
 }

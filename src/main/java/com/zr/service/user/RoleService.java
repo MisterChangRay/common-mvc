@@ -12,6 +12,12 @@ import java.util.List;
  * 用户角色服务
  */
 public interface RoleService extends BaseService<Role> {
+    /**
+     * 更新角色绑定的权限
+     * @param roleId 角色ID
+     * @param permissions 更新权限id集合
+     * @return
+     */
     boolean updatePermission(Integer roleId, List<Integer> permissions) ;
 
 }

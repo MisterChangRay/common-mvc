@@ -80,7 +80,7 @@ public class PermissionServiceImpl implements PermissionService{
 
         entity.setIsdel(DBEnum.TRUE.getCode());
         permissionMapper.updateByPrimaryKey(entity);
-        return normalResponse.setData(entity).setErrorCode(ErrorCodeEnum.CREATE_OK.getCode()).setErrorMsg("成功");
+        return normalResponse.setData(entity).setErrorCode(ErrorCodeEnum.DELETE_OK.getCode()).setErrorMsg("成功");
     }
 
     public NormalResponse update(Permission entity) {
@@ -90,7 +90,7 @@ public class PermissionServiceImpl implements PermissionService{
 
         entity.setIsdel(DBEnum.TRUE.getCode());
         permissionMapper.updateByPrimaryKey(entity);
-        return normalResponse.setData(entity).setErrorCode(ErrorCodeEnum.CREATE_OK.getCode()).setErrorMsg("成功");
+        return normalResponse.setData(entity).setErrorCode(ErrorCodeEnum.UPDATE_OK.getCode()).setErrorMsg("成功");
     }
 
     public NormalResponse getById(Integer id) {
@@ -101,6 +101,6 @@ public class PermissionServiceImpl implements PermissionService{
         if(null == permission)  return normalResponse.setErrorCode(ErrorCodeEnum.INVALID_REQUEST.getCode()).setErrorMsg("权限不存在");
         if(permission.getIsdel().equals(DBEnum.TRUE.getCode())) return normalResponse.setErrorCode(ErrorCodeEnum.GONE.getCode()).setErrorMsg("用户已经被删除");
 
-        return normalResponse.setData(permission).setErrorCode(ErrorCodeEnum.CREATE_OK.getCode()).setErrorMsg("成功");
+        return normalResponse.setData(permission).setErrorCode(ErrorCodeEnum.QUERY_OK.getCode()).setErrorMsg("成功");
     }
 }
