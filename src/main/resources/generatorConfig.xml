@@ -46,7 +46,7 @@
             <!-- 从数据库返回的值被清理前后的空格 -->
             <property name="trimStrings" value="true" />
             <!-- 所有实体类继承PageInfo -->
-            <property name="rootClass" value="com.zr.common.BaseEntity" />
+            <property name="rootClass" value="com.zr.common.PageInfo" />
         </javaModelGenerator>
         <!-- targetProject:mapper映射文件生成的位置 -->
         <sqlMapGenerator targetPackage="com.zr.dao.xml"
