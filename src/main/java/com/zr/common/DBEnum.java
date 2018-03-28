@@ -3,7 +3,7 @@ package com.zr.common;
 /**
  * Created by Miste on 3/27/2018.
  * 设置数据库中的一些枚举
- * 0-127
+ * 请注意数据库中设置的数据类型
  */
 public enum DBEnum {
     TRUE(1), //表肯定
