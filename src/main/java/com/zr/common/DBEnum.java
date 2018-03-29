@@ -6,18 +6,31 @@ package com.zr.common;
  * 请注意数据库中设置的数据类型
  */
 public enum DBEnum {
-    TRUE(1), //表肯定
-    FALSE(0), //表否定
+    TRUE(1, "true"), //表肯定
+    FALSE(0, "false"), //表否定
 
-    MAN(1), //男
-    WOMAN(0);//女
+    MAN(1, "男"), //男
+    WOMAN(0, "女");//女
 
-    private int code;
+    private Integer code;
+    private String desc;
 
-    public int getCode() {
+    public void setCode(Integer code) {
+        this.code = code;
+    }
+
+    public String getDesc() {
+        return desc;
+    }
+
+    public void setDesc(String desc) {
+        this.desc = desc;
+    }
+
+    public Integer getCode() {
         return code;
     }
-    private DBEnum(int code) {
+    private DBEnum(Integer code, String desc) {
         this.code = code;
     }
 }
