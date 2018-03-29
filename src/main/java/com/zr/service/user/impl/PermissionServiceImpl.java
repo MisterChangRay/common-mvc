@@ -42,14 +42,14 @@ public class PermissionServiceImpl implements PermissionService{
 
     public NormalResponse getByIds(List<Integer> ids) {
         NormalResponse normalResponse = NormalResponse.newInstance();
-        if(null == ids) return normalResponse.setErrorCode(ErrorCodeEnum.INVALID_REQUEST.getCode()).setErrorMsg("ID不能为空");
+        if(null == ids) return normalResponse.setErrorCode(ErrorCodeEnum.INVALID_REQUEST);
 
         PermissionQuery permissionQuery = new PermissionQuery();
         PermissionQuery.Criteria criteria = permissionQuery.createCriteria();
         criteria.andIdIn(ids);
         criteria.andIsdelEqualTo(DBEnum.FALSE.getCode());
         List<Permission> permissions = permissionMapper.selectByQuery(permissionQuery);
-        return normalResponse.setData(permissions).setErrorCode(ErrorCodeEnum.QUERY_OK.getCode()).setErrorMsg("成功");
+        return normalResponse.setData(permissions).setErrorCode(ErrorCodeEnum.QUERY_OK);
     }
 
     public NormalResponse list(Permission permission) {
@@ -59,7 +59,7 @@ public class PermissionServiceImpl implements PermissionService{
         permissionQuery.page(permission.getPage(), permission.getLimit());
 
         List<Permission> permissions = permissionMapper.selectByQuery(permissionQuery);
-        return normalResponse.setData(permissions).setErrorCode(ErrorCodeEnum.QUERY_OK.getCode()).setErrorMsg("成功");
+        return normalResponse.setData(permissions).setErrorCode(ErrorCodeEnum.QUERY_OK);
 
     }
 
@@ -69,38 +69,38 @@ public class PermissionServiceImpl implements PermissionService{
         entity.setIsdel(DBEnum.FALSE.getCode());
         permissionMapper.insert(entity);
 
-        return normalResponse.setData(entity).setErrorCode(ErrorCodeEnum.CREATE_OK.getCode()).setErrorMsg("成功");
+        return normalResponse.setData(entity).setErrorCode(ErrorCodeEnum.CREATE_OK);
 
     }
 
     public NormalResponse delete(Permission entity) {
         NormalResponse normalResponse = NormalResponse.newInstance();
-        if(null == entity) return normalResponse.setErrorCode(ErrorCodeEnum.INVALID_REQUEST.getCode()).setErrorMsg("参数不能为空");
-        if(null == entity.getId()) return normalResponse.setErrorCode(ErrorCodeEnum.INVALID_REQUEST.getCode()).setErrorMsg("ID无效");
+        if(null == entity) return normalResponse.setErrorCode(ErrorCodeEnum.INVALID_REQUEST);
+        if(null == entity.getId()) return normalResponse.setErrorCode(ErrorCodeEnum.INVALID_REQUEST);
 
         entity.setIsdel(DBEnum.TRUE.getCode());
         permissionMapper.updateByPrimaryKey(entity);
-        return normalResponse.setData(entity).setErrorCode(ErrorCodeEnum.DELETE_OK.getCode()).setErrorMsg("成功");
+        return normalResponse.setData(entity).setErrorCode(ErrorCodeEnum.DELETE_OK);
     }
 
     public NormalResponse update(Permission entity) {
         NormalResponse normalResponse = NormalResponse.newInstance();
-        if(null == entity) return normalResponse.setErrorCode(ErrorCodeEnum.INVALID_REQUEST.getCode()).setErrorMsg("参数不能为空");
-        if(null == entity.getId()) return normalResponse.setErrorCode(ErrorCodeEnum.INVALID_REQUEST.getCode()).setErrorMsg("ID无效");
+        if(null == entity) return normalResponse.setErrorCode(ErrorCodeEnum.INVALID_REQUEST);
+        if(null == entity.getId()) return normalResponse.setErrorCode(ErrorCodeEnum.INVALID_REQUEST);
 
         entity.setIsdel(DBEnum.TRUE.getCode());
         permissionMapper.updateByPrimaryKey(entity);
-        return normalResponse.setData(entity).setErrorCode(ErrorCodeEnum.UPDATE_OK.getCode()).setErrorMsg("成功");
+        return normalResponse.setData(entity).setErrorCode(ErrorCodeEnum.UPDATE_OK);
     }
 
     public NormalResponse getById(Integer id) {
         NormalResponse normalResponse = NormalResponse.newInstance();
-        if(null == id) return normalResponse.setErrorCode(ErrorCodeEnum.INVALID_REQUEST.getCode()).setErrorMsg("参数不能为空");
+        if(null == id) return normalResponse.setErrorCode(ErrorCodeEnum.INVALID_REQUEST);
 
         Permission permission = permissionMapper.selectByPrimaryKey(id);
-        if(null == permission)  return normalResponse.setErrorCode(ErrorCodeEnum.INVALID_REQUEST.getCode()).setErrorMsg("权限不存在");
-        if(permission.getIsdel().equals(DBEnum.TRUE.getCode())) return normalResponse.setErrorCode(ErrorCodeEnum.GONE.getCode()).setErrorMsg("用户已经被删除");
+        if(null == permission)  return normalResponse.setErrorCode(ErrorCodeEnum.INVALID_REQUEST);
+        if(permission.getIsdel().equals(DBEnum.TRUE.getCode())) return normalResponse.setErrorCode(ErrorCodeEnum.GONE);
 
-        return normalResponse.setData(permission).setErrorCode(ErrorCodeEnum.QUERY_OK.getCode()).setErrorMsg("成功");
+        return normalResponse.setData(permission).setErrorCode(ErrorCodeEnum.QUERY_OK);
     }
 }

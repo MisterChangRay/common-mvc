@@ -55,7 +55,7 @@ public class RoleServiceImpl implements RoleService{
         criteria.andEnableEqualTo(DBEnum.FALSE.getCode());
         List<Role>  roles = roleMapper.selectByQuery(roleQuery);
 
-        return normalResponse.setData(roles).setErrorCode(ErrorCodeEnum.QUERY_OK.getCode()).setErrorMsg("成功");
+        return normalResponse.setData(roles).setErrorCode(ErrorCodeEnum.QUERY_OK);
     }
 
     public NormalResponse list(Role role) {
@@ -64,44 +64,44 @@ public class RoleServiceImpl implements RoleService{
 
     public NormalResponse add(Role entity) {
         NormalResponse normalResponse = NormalResponse.newInstance();
-        if(null == entity) return normalResponse.setErrorCode(ErrorCodeEnum.INVALID_REQUEST.getCode()).setErrorMsg("参数不能为空");
-        if(null == entity.getId()) return normalResponse.setErrorCode(ErrorCodeEnum.INVALID_REQUEST.getCode()).setErrorMsg("id不能为空");
+        if(null == entity) return normalResponse.setErrorCode(ErrorCodeEnum.INVALID_REQUEST);
+        if(null == entity.getId()) return normalResponse.setErrorCode(ErrorCodeEnum.INVALID_REQUEST);
 
         entity.setIsdel(DBEnum.FALSE.getCode());
 
-        return normalResponse.setData(entity).setErrorCode(ErrorCodeEnum.CREATE_OK.getCode()).setErrorMsg("成功");
+        return normalResponse.setData(entity).setErrorCode(ErrorCodeEnum.CREATE_OK);
     }
 
     public NormalResponse delete(Role entity) {
         NormalResponse normalResponse = NormalResponse.newInstance();
-        if(null == entity) return normalResponse.setErrorCode(ErrorCodeEnum.INVALID_REQUEST.getCode()).setErrorMsg("参数不能为空");
-        if(null == entity.getId()) return normalResponse.setErrorCode(ErrorCodeEnum.INVALID_REQUEST.getCode()).setErrorMsg("id不能为空");
+        if(null == entity) return normalResponse.setErrorCode(ErrorCodeEnum.INVALID_REQUEST);
+        if(null == entity.getId()) return normalResponse.setErrorCode(ErrorCodeEnum.INVALID_REQUEST);
 
         entity.setIsdel(DBEnum.TRUE.getCode());
         roleMapper.updateByPrimaryKey(entity);
 
-        return normalResponse.setData(entity).setErrorCode(ErrorCodeEnum.DELETE_OK.getCode()).setErrorMsg("成功");
+        return normalResponse.setData(entity).setErrorCode(ErrorCodeEnum.DELETE_OK);
     }
 
     public NormalResponse update(Role entity) {
         NormalResponse normalResponse = NormalResponse.newInstance();
-        if(null == entity) return normalResponse.setErrorCode(ErrorCodeEnum.INVALID_REQUEST.getCode()).setErrorMsg("参数不能为空");
-        if(null == entity.getId()) return normalResponse.setErrorCode(ErrorCodeEnum.INVALID_REQUEST.getCode()).setErrorMsg("id不能为空");
+        if(null == entity) return normalResponse.setErrorCode(ErrorCodeEnum.INVALID_REQUEST);
+        if(null == entity.getId()) return normalResponse.setErrorCode(ErrorCodeEnum.INVALID_REQUEST);
 
         roleMapper.updateByPrimaryKeySelective(entity);
-        return normalResponse.setData(entity).setErrorCode(ErrorCodeEnum.UPDATE_OK.getCode()).setErrorMsg("成功");
+        return normalResponse.setData(entity).setErrorCode(ErrorCodeEnum.UPDATE_OK);
     }
 
     public NormalResponse getById(Integer id) {
         NormalResponse normalResponse = NormalResponse.newInstance();
-        if(null == id) return normalResponse.setErrorCode(ErrorCodeEnum.INVALID_REQUEST.getCode()).setErrorMsg("ID参数不能为空");
+        if(null == id) return normalResponse.setErrorCode(ErrorCodeEnum.INVALID_REQUEST);
 
         Role role = roleMapper.selectByPrimaryKey(id);
-        if(null == role) return normalResponse.setErrorCode(ErrorCodeEnum.INVALID_USER.getCode()).setErrorMsg("用户不存在");
-        if(role.getIsdel().equals(DBEnum.TRUE.getCode())) return normalResponse.setErrorCode(ErrorCodeEnum.GONE.getCode()).setErrorMsg("用户已经被删除");
-        if(role.getEnable().equals(DBEnum.FALSE.getCode())) return normalResponse.setErrorCode(ErrorCodeEnum.INVALID_USER.getCode()).setErrorMsg("用户被禁用");
+        if(null == role) return normalResponse.setErrorCode(ErrorCodeEnum.INVALID_USER);
+        if(role.getIsdel().equals(DBEnum.TRUE.getCode())) return normalResponse.setErrorCode(ErrorCodeEnum.GONE);
+        if(role.getEnable().equals(DBEnum.FALSE.getCode())) return normalResponse.setErrorCode(ErrorCodeEnum.INVALID_USER);
 
-        return normalResponse.setData(role).setErrorCode(ErrorCodeEnum.QUERY_OK.getCode()).setErrorMsg("成功");
+        return normalResponse.setData(role).setErrorCode(ErrorCodeEnum.QUERY_OK);
     }
 
 

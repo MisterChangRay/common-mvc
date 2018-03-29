@@ -4,6 +4,8 @@ import java.util.List;
 
 /**
  * Created by Miste on 3/20/2018.
+ *
+ * 用于通用函数返回，包括
  */
 public class NormalResponse {
     /**
@@ -41,8 +43,9 @@ public class NormalResponse {
         return errorCode;
     }
 
-    public NormalResponse setErrorCode(Integer errorCode) {
-        this.errorCode = errorCode;
+    public NormalResponse setErrorCode(ErrorCodeEnum errorCode) {
+        this.errorCode = errorCode.getCode();
+        this.errorMsg = errorCode.getMsg();
         return this;
     }
 

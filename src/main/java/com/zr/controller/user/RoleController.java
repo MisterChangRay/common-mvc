@@ -49,9 +49,9 @@ public class RoleController {
 
         if(null != roleId && null != permissionIds && 0 < permissionIds.size()) {
             if(roleService.updatePermission(roleId,permissionIds)) {
-                res.setErrorCode(ErrorCodeEnum.OK.getCode());
+                res.setErrorCode(ErrorCodeEnum.QUERY_OK);
             } else {
-                res.setErrorCode(ErrorCodeEnum.SERVER_ERROR.getCode());
+                res.setErrorCode(ErrorCodeEnum.SERVER_ERROR);
             }
         }
         return res;
@@ -68,7 +68,7 @@ public class RoleController {
     @ResponseBody
     public NormalResponse list(@RequestParam Integer limit) {
         NormalResponse res = new NormalResponse();
-        res.setErrorCode(ErrorCodeEnum.OK.getCode());
+        res.setErrorCode(ErrorCodeEnum.QUERY_OK);
         return res;
     }
 
@@ -87,7 +87,7 @@ public class RoleController {
         list.add(user);
 
         res.setData(list);
-        res.setErrorCode(ErrorCodeEnum.OK.getCode());
+        res.setErrorCode(ErrorCodeEnum.CREATE_OK);
         return res;
     }
 
@@ -102,7 +102,7 @@ public class RoleController {
     @ResponseBody
     public NormalResponse delete(@RequestBody User user) {
         NormalResponse res = new NormalResponse();
-        res.setErrorCode(ErrorCodeEnum.OK.getCode());
+        res.setErrorCode(ErrorCodeEnum.DELETE_OK);
         ArrayList list = new ArrayList();
         list.add(user);
         res.setData(list);
@@ -120,7 +120,7 @@ public class RoleController {
     @ResponseBody
     public NormalResponse edit(@RequestBody User user) {
         NormalResponse res = new NormalResponse();
-        res.setErrorCode(ErrorCodeEnum.OK.getCode());
+        res.setErrorCode(ErrorCodeEnum.UPDATE_OK);
         ArrayList list = new ArrayList();
         list.add(user);
         res.setData(list);

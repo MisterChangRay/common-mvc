@@ -53,7 +53,7 @@ public class PermissionController {
     public NormalResponse list(@RequestParam() Integer page, @RequestParam() Integer limit) {
         NormalResponse res = new NormalResponse();
 
-        res.setErrorCode(ErrorCodeEnum.OK.getCode());
+        res.setErrorCode(ErrorCodeEnum.QUERY_OK);
         return res;
     }
 
@@ -70,7 +70,7 @@ public class PermissionController {
         permissionService.add(permission);
 
         res.setData(permission);
-        res.setErrorCode(ErrorCodeEnum.OK.getCode());
+        res.setErrorCode(ErrorCodeEnum.CREATE_OK);
         return res;
     }
 
@@ -85,7 +85,7 @@ public class PermissionController {
     @ResponseBody
     public NormalResponse delete(@RequestBody Permission permission) {
         NormalResponse res = new NormalResponse();
-        res.setErrorCode(ErrorCodeEnum.OK.getCode());
+        res.setErrorCode(ErrorCodeEnum.DELETE_OK);
 
         permissionService.delete(permission);
         return res;
@@ -102,7 +102,7 @@ public class PermissionController {
     @ResponseBody
     public NormalResponse edit(@RequestBody Permission permission) {
         NormalResponse res = new NormalResponse();
-        res.setErrorCode(ErrorCodeEnum.OK.getCode());
+        res.setErrorCode(ErrorCodeEnum.UPDATE_OK);
         permissionService.update(permission);
 
         return res;

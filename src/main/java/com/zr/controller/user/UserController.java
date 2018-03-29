@@ -45,9 +45,9 @@ public class UserController {
     public NormalResponse getById(@PathVariable Integer userId, @RequestParam List roleIds) {
         NormalResponse res = new NormalResponse();
         if(userService.updateRole(userId, roleIds)) {
-            res.setErrorCode(ErrorCodeEnum.OK.getCode());
+            res.setErrorCode(ErrorCodeEnum.UPDATE_OK);
         } else {
-            res.setErrorCode(ErrorCodeEnum.INVALID_REQUEST.getCode());
+            res.setErrorCode(ErrorCodeEnum.INVALID_REQUEST);
         }
         return res;
     }
@@ -77,7 +77,7 @@ public class UserController {
     public NormalResponse list(@RequestParam(required =  false) Integer page, @RequestParam(required = false) Integer limit) {
         NormalResponse res = new NormalResponse();
 
-        res.setErrorCode(ErrorCodeEnum.OK.getCode());
+        res.setErrorCode(ErrorCodeEnum.QUERY_OK);
         return res;
     }
 
@@ -94,7 +94,7 @@ public class UserController {
         userService.add(user);
 
         res.setData(user);
-        res.setErrorCode(ErrorCodeEnum.OK.getCode());
+        res.setErrorCode(ErrorCodeEnum.CREATE_OK);
         return res;
     }
 
@@ -109,7 +109,7 @@ public class UserController {
     @ResponseBody
     public NormalResponse delete(@RequestBody User user) {
         NormalResponse res = new NormalResponse();
-        res.setErrorCode(ErrorCodeEnum.OK.getCode());
+        res.setErrorCode(ErrorCodeEnum.DELETE_OK);
 
         userService.delete(user);
         return res;
@@ -126,7 +126,7 @@ public class UserController {
     @ResponseBody
     public NormalResponse edit(@RequestBody User user) {
         NormalResponse res = new NormalResponse();
-        res.setErrorCode(ErrorCodeEnum.OK.getCode());
+        res.setErrorCode(ErrorCodeEnum.UPDATE_OK);
        userService.update(user);
 
         res.setData(user);
