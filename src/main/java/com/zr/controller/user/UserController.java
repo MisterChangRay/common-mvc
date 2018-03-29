@@ -2,16 +2,12 @@ package com.zr.controller.user;
 
 import com.zr.common.annotation.Authentication;
 import com.zr.common.NormalResponse;
-import com.zr.common.ErrorCodeEnum;
-import com.zr.common.annotation.PrintRunTime;
 import com.zr.dao.entity.User;
-import com.zr.dao.entity.UserQuery;
 import com.zr.service.user.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -43,13 +39,7 @@ public class UserController {
     @RequestMapping(value="/{userId}/role", method = RequestMethod.PATCH)
     @ResponseBody
     public NormalResponse getById(@PathVariable Integer userId, @RequestParam List roleIds) {
-        NormalResponse res = new NormalResponse();
-        if(userService.updateRole(userId, roleIds)) {
-            res.setErrorCode(ErrorCodeEnum.UPDATE_OK);
-        } else {
-            res.setErrorCode(ErrorCodeEnum.INVALID_REQUEST);
-        }
-        return res;
+        return userService.updateRole(userId, roleIds);
     }
 
     /**
@@ -61,8 +51,7 @@ public class UserController {
     @RequestMapping(value="/{userId}", method = RequestMethod.GET)
     @ResponseBody
     public NormalResponse getById(@PathVariable Integer userId) {
-        NormalResponse res = userService.getById(userId);
-        return res;
+        return userService.getById(userId);
     }
 
 
@@ -75,10 +64,11 @@ public class UserController {
     @RequestMapping(method = RequestMethod.GET)
     @ResponseBody
     public NormalResponse list(@RequestParam(required =  false) Integer page, @RequestParam(required = false) Integer limit) {
-        NormalResponse res = new NormalResponse();
+        User user = new User();
+        user.setPage(page);
+        user.setLimit(limit);
 
-        res.setErrorCode(ErrorCodeEnum.QUERY_OK);
-        return res;
+        return userService.list(user);
     }
 
     /**
@@ -90,12 +80,7 @@ public class UserController {
     @RequestMapping(method = RequestMethod.POST)
     @ResponseBody
     public NormalResponse add(@RequestBody User user) {
-        NormalResponse res = new NormalResponse();
-        userService.add(user);
-
-        res.setData(user);
-        res.setErrorCode(ErrorCodeEnum.CREATE_OK);
-        return res;
+        return userService.add(user);
     }
 
 
@@ -108,11 +93,7 @@ public class UserController {
     @RequestMapping(method = RequestMethod.DELETE)
     @ResponseBody
     public NormalResponse delete(@RequestBody User user) {
-        NormalResponse res = new NormalResponse();
-        res.setErrorCode(ErrorCodeEnum.DELETE_OK);
-
-        userService.delete(user);
-        return res;
+        return userService.delete(user);
     }
 
 
@@ -125,11 +106,6 @@ public class UserController {
     @RequestMapping(method = RequestMethod.PUT)
     @ResponseBody
     public NormalResponse edit(@RequestBody User user) {
-        NormalResponse res = new NormalResponse();
-        res.setErrorCode(ErrorCodeEnum.UPDATE_OK);
-       userService.update(user);
-
-        res.setData(user);
-        return res;
+       return userService.update(user);
     }
 }

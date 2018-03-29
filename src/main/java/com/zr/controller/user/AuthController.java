@@ -2,7 +2,7 @@ package com.zr.controller.user;
 
 import com.zr.common.annotation.Authentication;
 import com.zr.common.NormalResponse;
-import com.zr.common.ErrorCodeEnum;
+import com.zr.common.ResultEnum;
 import com.zr.dao.entity.User;
 import com.zr.dao.entity.UserQuery;
 import com.zr.dao.mapper.UserMapper;
@@ -58,10 +58,10 @@ public class AuthController {
             result.put("Authentication", token.toString());
 
             res.setData(result);
-            res.setErrorCode(ErrorCodeEnum.OK);
+            res.setResult(ResultEnum.OK);
         } else {
-            res.setErrorMsg("无效用户名或密码");
-            res.setErrorCode(ErrorCodeEnum.INVALID_USER);
+            res.setResultMsg("无效用户名或密码");
+            res.setResult(ResultEnum.INVALID);
         }
         return res;
     }
@@ -95,10 +95,10 @@ public class AuthController {
 
         List<User> userList = userMapper.selectByQuery(userQuery);
         if(0 < userList.size()) {
-            res.setErrorMsg("资料已经存在");
-            res.setErrorCode(ErrorCodeEnum.INVALID_USER);
+            res.setResultMsg("资料已经存在");
+            res.setResult(ResultEnum.INVALID);
         } else {
-            res.setErrorCode(ErrorCodeEnum.OK);
+            res.setResult(ResultEnum.OK);
         }
         return res;
 

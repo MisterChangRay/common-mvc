@@ -1,5 +1,6 @@
 package com.zr.service.user;
 
+import com.zr.common.NormalResponse;
 import com.zr.dao.entity.Role;
 import com.zr.dao.entity.RoleQuery;
 import com.zr.service.BaseService;
@@ -18,6 +19,6 @@ public interface RoleService extends BaseService<Role> {
      * @param permissions 更新权限id集合
      * @return
      */
-    boolean updatePermission(Integer roleId, List<Integer> permissions) ;
+    NormalResponse updatePermission(Integer roleId, List<Integer> permissions) ;
 
 }

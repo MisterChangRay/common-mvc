@@ -1,10 +1,9 @@
 package com.zr.controller.user;
 
-import com.zr.common.ErrorCodeEnum;
+import com.zr.common.ResultEnum;
 import com.zr.common.NormalResponse;
 import com.zr.common.annotation.Authentication;
 import com.zr.dao.entity.Permission;
-import com.zr.dao.entity.User;
 import com.zr.service.user.PermissionService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -53,7 +52,7 @@ public class PermissionController {
     public NormalResponse list(@RequestParam() Integer page, @RequestParam() Integer limit) {
         NormalResponse res = new NormalResponse();
 
-        res.setErrorCode(ErrorCodeEnum.QUERY_OK);
+        res.setResult(ResultEnum.QUERY_OK);
         return res;
     }
 
@@ -70,7 +69,7 @@ public class PermissionController {
         permissionService.add(permission);
 
         res.setData(permission);
-        res.setErrorCode(ErrorCodeEnum.CREATE_OK);
+        res.setResult(ResultEnum.CREATE_OK);
         return res;
     }
 
@@ -85,7 +84,7 @@ public class PermissionController {
     @ResponseBody
     public NormalResponse delete(@RequestBody Permission permission) {
         NormalResponse res = new NormalResponse();
-        res.setErrorCode(ErrorCodeEnum.DELETE_OK);
+        res.setResult(ResultEnum.DELETE_OK);
 
         permissionService.delete(permission);
         return res;
@@ -102,7 +101,7 @@ public class PermissionController {
     @ResponseBody
     public NormalResponse edit(@RequestBody Permission permission) {
         NormalResponse res = new NormalResponse();
-        res.setErrorCode(ErrorCodeEnum.UPDATE_OK);
+        res.setResult(ResultEnum.UPDATE_OK);
         permissionService.update(permission);
 
         return res;

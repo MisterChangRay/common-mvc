@@ -1,5 +1,6 @@
 package com.zr.service.user;
 
+import com.zr.common.NormalResponse;
 import com.zr.dao.entity.User;
 import com.zr.dao.entity.UserQuery;
 import com.zr.service.BaseService;
@@ -18,6 +19,6 @@ public interface UserService extends BaseService<User> {
      * @param roles 角色id集合
      * @return
      */
-    boolean updateRole(Integer userId, List<Integer> roles);
+    NormalResponse updateRole(Integer userId, List<Integer> roles);
 
 }

@@ -15,7 +15,7 @@ public interface BaseService<T> {
      * @param ids
      * @return
      */
-    boolean exist(List<Integer> ids);
+    NormalResponse exist(List<Integer> ids);
 
 
     /**
