@@ -40,7 +40,7 @@ public class UserServiceImpl implements UserService{
         if(null == roles) return normalResponse.setResult(ResultEnum.INVALID_REQUEST);
 
         //判断ID是否都存在
-        if(roleService.exist(roles).isSuccess()) {
+        if(((Boolean)roleService.exist(roles).getData())) {
             //老数据标记为无效
             UserRoleMap userRoleMap= new UserRoleMap();
             userRoleMap.setIsdel(DBEnum.TRUE.getCode());
@@ -60,7 +60,7 @@ public class UserServiceImpl implements UserService{
                 userRoleMaps.add(tmp);
             }
             userRoleMapMapper.batchInsert(userRoleMaps);
-            return normalResponse.setResult(ResultEnum.UPDATE_OK);
+            return normalResponse.setResult(ResultEnum.UPDATE_SUCCESS);
         }
         return normalResponse.setResult(ResultEnum.INVALID);
     }
@@ -69,7 +69,7 @@ public class UserServiceImpl implements UserService{
     /**
      * 根据用户id获取用户信息
      * @param id
-     * @return
+     * @return User
      */
     public NormalResponse getById(Integer id) {
         NormalResponse normalResponse = NormalResponse.newInstance();
@@ -81,14 +81,14 @@ public class UserServiceImpl implements UserService{
         if(user.getIsdel().equals(DBEnum.TRUE.getCode())) return normalResponse.setResult(ResultEnum.GONE);
         if(user.getEnable().equals(DBEnum.FALSE.getCode())) return normalResponse.setResult(ResultEnum.INVALID);
 
-        return normalResponse.setData(user).setResult(ResultEnum.QUERY_OK);
+        return normalResponse.setData(user).setResult(ResultEnum.QUERY_SUCCESS);
     }
 
 
     /**
      * 测试id集合是否都存在
      * @param ids
-     * @return
+     * @return true/false
      */
     public NormalResponse exist(List<Integer> ids) {
         NormalResponse normalResponse = NormalResponse.newInstance();
@@ -102,16 +102,16 @@ public class UserServiceImpl implements UserService{
 
         Long count = userMapper.countByQuery(userQuery);
         if(count != ids.size()) {
-            return normalResponse.setResult(ResultEnum.FALSE);
+            return normalResponse.setResult(false, ResultEnum.SUCCESS);
         } else {
-            return normalResponse.setResult(ResultEnum.TRUE);
+            return normalResponse.setResult(true, ResultEnum.SUCCESS);
         }
     }
 
     /**
      * 根据ID获取用户列表
      * @param ids
-     * @return
+     * @return List<User>
      */
     public NormalResponse getByIds(List<Integer> ids) {
         NormalResponse normalResponse = NormalResponse.newInstance();
@@ -124,13 +124,13 @@ public class UserServiceImpl implements UserService{
         criteria.andEnableEqualTo(DBEnum.TRUE.getCode());
 
         List<User> users = userMapper.selectByQuery(userQuery);
-        return normalResponse.setData(users).setResult(ResultEnum.QUERY_OK);
+        return normalResponse.setData(users).setResult(ResultEnum.QUERY_SUCCESS);
     }
 
     /**
      * 根据用户信息查询用户列表
      * @param entity
-     * @return
+     * @return List<User>
      */
     public NormalResponse list(User entity) {
         NormalResponse normalResponse = NormalResponse.newInstance();
@@ -139,7 +139,7 @@ public class UserServiceImpl implements UserService{
         UserQuery userQuery =  new UserQuery();
         userQuery.page(entity.getPage(), entity.getLimit());
         List<User> users = userMapper.selectByQuery(userQuery);
-        return normalResponse.setData(users).setResult(ResultEnum.QUERY_OK);
+        return normalResponse.setData(users).setResult(ResultEnum.QUERY_SUCCESS);
     }
 
 
@@ -149,7 +149,7 @@ public class UserServiceImpl implements UserService{
      * -username
      * -password
      * @param entity
-     * @return
+     * @return User
      */
     public NormalResponse add(User entity) {
         NormalResponse normalResponse = NormalResponse.newInstance();
@@ -161,13 +161,13 @@ public class UserServiceImpl implements UserService{
         entity.setIsdel(DBEnum.FALSE.getCode());
         entity.setEnable(DBEnum.TRUE.getCode());
         userMapper.insert(entity);
-        return normalResponse.setData(entity).setResult(ResultEnum.CREATE_OK);
+        return normalResponse.setData(entity).setResult(ResultEnum.CREATE_SUCCESS);
     }
 
     /**
      * 根据ID删除用户
      * @param entity
-     * @return
+     * @return User
      */
     public NormalResponse delete(User entity) {
         NormalResponse normalResponse = NormalResponse.newInstance();
@@ -176,13 +176,13 @@ public class UserServiceImpl implements UserService{
 
         entity.setIsdel(DBEnum.TRUE.getCode());
         userMapper.updateByPrimaryKey(entity);
-        return normalResponse.setData(entity).setResult(ResultEnum.DELETE_OK);
+        return normalResponse.setData(entity).setResult(ResultEnum.DELETE_SUCCESS);
     }
 
     /**
      * 根据用户ID修改用户信息
      * @param entity
-     * @return
+     * @return User
      */
     public NormalResponse update(User entity) {
         NormalResponse normalResponse = NormalResponse.newInstance();
@@ -191,7 +191,7 @@ public class UserServiceImpl implements UserService{
 
 
         userMapper.updateByPrimaryKeySelective(entity);
-        return normalResponse.setData(entity).setResult(ResultEnum.UPDATE_OK);
+        return normalResponse.setData(entity).setResult(ResultEnum.UPDATE_SUCCESS);
     }
 
 }

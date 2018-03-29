@@ -11,15 +11,11 @@ package com.zr.common;
 public enum ResultEnum {
     SUCCESS(1, "成功"), //成功
     FAIL(1001, "失败"), //失败
-    FALSE(1002, "表否定"), //表否定
-    TRUE(1, "表肯定"), //表肯定
 
-    OK(200, "正常"), //一切正常
-    CREATE_OK(201, "创建成功"), //新增正常
-    UPDATE_OK(202, "更新成功"), //修改正常
-    DELETE_OK(203, "删除成功"), //删除正常
-    QUERY_OK(204, "查询成功"),//查询正常
-
+    CREATE_SUCCESS(201, "创建成功"), //新增正常
+    UPDATE_SUCCESS(202, "更新成功"), //修改正常
+    DELETE_SUCCESS(203, "删除成功"), //删除正常
+    QUERY_SUCCESS(204, "查询成功"),//查询正常
 
     INVALID_REQUEST(1003, "参数错误或格式错误"), //无效请求,请求有格式或数据错误
     NEED_AUTH(1004, "需要权限认证"), //需要认证,没有权限

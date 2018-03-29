@@ -60,7 +60,7 @@ public class RoleController {
     @ResponseBody
     public NormalResponse list(@RequestParam Integer limit) {
         NormalResponse res = new NormalResponse();
-        res.setResult(ResultEnum.QUERY_OK);
+        res.setResult(ResultEnum.QUERY_SUCCESS);
         return res;
     }
 
@@ -79,7 +79,7 @@ public class RoleController {
         list.add(user);
 
         res.setData(list);
-        res.setResult(ResultEnum.CREATE_OK);
+        res.setResult(ResultEnum.CREATE_SUCCESS);
         return res;
     }
 
@@ -94,7 +94,7 @@ public class RoleController {
     @ResponseBody
     public NormalResponse delete(@RequestBody User user) {
         NormalResponse res = new NormalResponse();
-        res.setResult(ResultEnum.DELETE_OK);
+        res.setResult(ResultEnum.DELETE_SUCCESS);
         ArrayList list = new ArrayList();
         list.add(user);
         res.setData(list);
@@ -112,7 +112,7 @@ public class RoleController {
     @ResponseBody
     public NormalResponse edit(@RequestBody User user) {
         NormalResponse res = new NormalResponse();
-        res.setResult(ResultEnum.UPDATE_OK);
+        res.setResult(ResultEnum.UPDATE_SUCCESS);
         ArrayList list = new ArrayList();
         list.add(user);
         res.setData(list);

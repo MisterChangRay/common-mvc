@@ -28,6 +28,11 @@ public class RoleServiceImpl implements RoleService{
     PermissionService permissionService;
 
 
+    /**
+     * 查询id是否存在
+     * @param ids
+     * @return true/false
+     */
     public NormalResponse exist(List<Integer> ids) {
         NormalResponse normalResponse = NormalResponse.newInstance();
         if(null == ids) return normalResponse.setResult(ResultEnum.INVALID_REQUEST);
@@ -39,12 +44,17 @@ public class RoleServiceImpl implements RoleService{
         criteria.andEnableEqualTo(DBEnum.FALSE.getCode());
         Long count = roleMapper.countByQuery(roleQuery);
         if(count != ids.size()) {
-            return normalResponse.setResult(ResultEnum.TRUE);
+            return normalResponse.setResult(false, ResultEnum.SUCCESS);
         } else {
-            return normalResponse.setResult(ResultEnum.FALSE);
+            return normalResponse.setResult(true, ResultEnum.SUCCESS);
         }
     }
 
+    /**
+     * 根据id获取角色
+     * @param ids
+     * @return List<Role>
+     */
     public NormalResponse getByIds(List<Integer> ids) {
         NormalResponse normalResponse = new NormalResponse();
         if(null == ids) return null;
@@ -56,13 +66,23 @@ public class RoleServiceImpl implements RoleService{
         criteria.andEnableEqualTo(DBEnum.FALSE.getCode());
         List<Role>  roles = roleMapper.selectByQuery(roleQuery);
 
-        return normalResponse.setData(roles).setResult(ResultEnum.QUERY_OK);
+        return normalResponse.setData(roles).setResult(ResultEnum.QUERY_SUCCESS);
     }
 
+    /**
+     * 返回角色列表
+     * @param role
+     * @return List<Role>
+     */
     public NormalResponse list(Role role) {
         return null;
     }
 
+    /**
+     *
+     * @param entity
+     * @return Role
+     */
     public NormalResponse add(Role entity) {
         NormalResponse normalResponse = NormalResponse.newInstance();
         if(null == entity) return normalResponse.setResult(ResultEnum.INVALID_REQUEST);
@@ -70,9 +90,14 @@ public class RoleServiceImpl implements RoleService{
 
         entity.setIsdel(DBEnum.FALSE.getCode());
 
-        return normalResponse.setData(entity).setResult(ResultEnum.CREATE_OK);
+        return normalResponse.setData(entity).setResult(ResultEnum.CREATE_SUCCESS);
     }
 
+    /**
+     * 删除角色
+     * @param entity
+     * @return Role
+     */
     public NormalResponse delete(Role entity) {
         NormalResponse normalResponse = NormalResponse.newInstance();
         if(null == entity) return normalResponse.setResult(ResultEnum.INVALID_REQUEST);
@@ -81,18 +106,28 @@ public class RoleServiceImpl implements RoleService{
         entity.setIsdel(DBEnum.TRUE.getCode());
         roleMapper.updateByPrimaryKey(entity);
 
-        return normalResponse.setData(entity).setResult(ResultEnum.DELETE_OK);
+        return normalResponse.setData(entity).setResult(ResultEnum.DELETE_SUCCESS);
     }
 
+    /**
+     * 更新角色
+     * @param entity
+     * @return Role
+     */
     public NormalResponse update(Role entity) {
         NormalResponse normalResponse = NormalResponse.newInstance();
         if(null == entity) return normalResponse.setResult(ResultEnum.INVALID_REQUEST);
         if(null == entity.getId()) return normalResponse.setResult(ResultEnum.INVALID_REQUEST);
 
         roleMapper.updateByPrimaryKeySelective(entity);
-        return normalResponse.setData(entity).setResult(ResultEnum.UPDATE_OK);
+        return normalResponse.setData(entity).setResult(ResultEnum.UPDATE_SUCCESS);
     }
 
+    /**
+     * 给句ID获取角色
+     * @param id
+     * @return Role
+     */
     public NormalResponse getById(Integer id) {
         NormalResponse normalResponse = NormalResponse.newInstance();
         if(null == id) return normalResponse.setResult(ResultEnum.INVALID_REQUEST);
@@ -102,7 +137,7 @@ public class RoleServiceImpl implements RoleService{
         if(role.getIsdel().equals(DBEnum.TRUE.getCode())) return normalResponse.setResult(ResultEnum.GONE);
         if(role.getEnable().equals(DBEnum.FALSE.getCode())) return normalResponse.setResult(ResultEnum.INVALID);
 
-        return normalResponse.setData(role).setResult(ResultEnum.QUERY_OK);
+        return normalResponse.setData(role).setResult(ResultEnum.QUERY_SUCCESS);
     }
 
 
@@ -118,7 +153,7 @@ public class RoleServiceImpl implements RoleService{
         if(null == permissions) return normalResponse.setResult(ResultEnum.INVALID_REQUEST);
 
         //判断ID是否都存在
-        if(permissions.size() == ((List)permissionService.getByIds(permissions)).size()) {
+        if(permissions.size() == ((List<Permission>)permissionService.getByIds(permissions)).size()) {
             //老数据标记为无效
             RolePermissionMap rolePermissionMap = new RolePermissionMap();
             rolePermissionMap.setIsdel(DBEnum.TRUE.getCode());
@@ -138,7 +173,7 @@ public class RoleServiceImpl implements RoleService{
                 rolePermissionMaps.add(tmp);
             }
             rolePermissionMapMapper.batchInsert(rolePermissionMaps);
-            return normalResponse.setResult(ResultEnum.UPDATE_OK);
+            return normalResponse.setResult(ResultEnum.UPDATE_SUCCESS);
         }
         return normalResponse.setResult(ResultEnum.INVALID);
     }

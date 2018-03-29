@@ -58,7 +58,7 @@ public class AuthController {
             result.put("Authentication", token.toString());
 
             res.setData(result);
-            res.setResult(ResultEnum.OK);
+            res.setResult(ResultEnum.SUCCESS);
         } else {
             res.setResultMsg("无效用户名或密码");
             res.setResult(ResultEnum.INVALID);
@@ -98,7 +98,7 @@ public class AuthController {
             res.setResultMsg("资料已经存在");
             res.setResult(ResultEnum.INVALID);
         } else {
-            res.setResult(ResultEnum.OK);
+            res.setResult(ResultEnum.SUCCESS);
         }
         return res;
 
