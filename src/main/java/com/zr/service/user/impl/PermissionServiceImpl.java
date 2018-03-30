@@ -37,9 +37,9 @@ public class PermissionServiceImpl implements PermissionService{
         criteria.andIsdelEqualTo(DBEnum.FALSE.getCode());
         Long count = permissionMapper.countByQuery(permissionQuery);
         if(count != ids.size()) {
-            return normalResponse.setResult(false, ResultEnum.SUCCESS);
+            return normalResponse.setResult(false, ResultEnum.INVALID).setResultMsg("存在无效ID");
         } else {
-            return normalResponse.setResult(true, ResultEnum.SUCCESS);
+            return normalResponse.setResult(true, ResultEnum.EXIST);
         }
     }
 

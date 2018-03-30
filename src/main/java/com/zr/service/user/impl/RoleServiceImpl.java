@@ -44,9 +44,9 @@ public class RoleServiceImpl implements RoleService{
         criteria.andEnableEqualTo(DBEnum.FALSE.getCode());
         Long count = roleMapper.countByQuery(roleQuery);
         if(count != ids.size()) {
-            return normalResponse.setResult(false, ResultEnum.SUCCESS);
+            return normalResponse.setResult(false, ResultEnum.INVALID).setResultMsg("存在无效ID");
         } else {
-            return normalResponse.setResult(true, ResultEnum.SUCCESS);
+            return normalResponse.setResult(true, ResultEnum.EXIST);
         }
     }
 

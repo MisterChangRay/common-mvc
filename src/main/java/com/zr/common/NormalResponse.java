@@ -9,11 +9,6 @@ import java.util.List;
  */
 public class NormalResponse {
     /**
-     * 处理结果是否正常,该值只有true和false
-     * 请注意，这里只会在正常返回结果的情况下为true
-     */
-    private Boolean isSuccess;
-    /**
      * 结果消息
      */
     private String resultMsg;
@@ -22,19 +17,17 @@ public class NormalResponse {
      */
     private Integer resultCode;
     /**
-     * 返回的数据
+     * 返回的数据,这里一般是函数的返回值
      */
     private Object data;
     /**
-     * 快捷访问接口
+     * 快捷访问接口,帮助提示接口
      */
     private List href;
     /**
      * 页码信息
      */
     private PageInfo pageInfo;
-
-
 
 
 
@@ -47,11 +40,7 @@ public class NormalResponse {
         if(null != this.resultMsg) {
             this.resultMsg = resultCode.getMsg();
         }
-        if(null != this.resultCode && this.resultCode < 999) {
-            this.isSuccess = true;
-        } else {
-            this.isSuccess = false;
-        }
+
         return this;
     }
 
@@ -67,11 +56,7 @@ public class NormalResponse {
         if(null != this.resultMsg) {
             this.resultMsg = resultCode.getMsg();
         }
-        if(null != this.resultCode && this.resultCode < 999) {
-            this.isSuccess = true;
-        } else {
-            this.isSuccess = false;
-        }
+
         return this;
     }
 
@@ -81,9 +66,6 @@ public class NormalResponse {
         return pageInfo;
     }
 
-    public Boolean isSuccess() {
-        return isSuccess;
-    }
 
     public NormalResponse setPageInfo(PageInfo pageInfo) {
         this.pageInfo = pageInfo;

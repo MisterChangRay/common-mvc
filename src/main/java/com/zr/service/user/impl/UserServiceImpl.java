@@ -11,8 +11,7 @@ import com.zr.service.user.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.*;
 
 /**
  * Created by Miste on 3/26/2018.
@@ -26,6 +25,29 @@ public class UserServiceImpl implements UserService{
     UserRoleMapMapper userRoleMapMapper;
     @Autowired
     RoleService roleService;
+
+
+
+    public NormalResponse checkUserInfo(String username, String email, String phone, String idcard) {
+        NormalResponse res = NormalResponse.newInstance();
+
+        /**
+         * 生成的sql为 select * from user where username = '%username' or phone = '%phone' or idcard = '%idcard' or email = '%email'
+         */
+        UserQuery userQuery = new UserQuery();
+        if(null != username) userQuery.or().andUsernameEqualTo(username);
+        if(null != phone) userQuery.or().andPhoneEqualTo(phone);
+        if(null != idcard) userQuery.or().andIdcardEqualTo(idcard);
+        if(null != email) userQuery.or().andEmailEqualTo(email);
+
+        List<User> userList = userMapper.selectByQuery(userQuery);
+        if(0 < userList.size()) {
+            res.setResult(ResultEnum.EXIST);
+        } else {
+            res.setResult(ResultEnum.SUCCESS);
+        }
+        return res;
+    }
 
 
     /**
@@ -66,6 +88,7 @@ public class UserServiceImpl implements UserService{
     }
 
 
+
     /**
      * 根据用户id获取用户信息
      * @param id
@@ -102,9 +125,9 @@ public class UserServiceImpl implements UserService{
 
         Long count = userMapper.countByQuery(userQuery);
         if(count != ids.size()) {
-            return normalResponse.setResult(false, ResultEnum.SUCCESS);
+            return normalResponse.setResult(false, ResultEnum.INVALID).setResultMsg("存在无效Id");
         } else {
-            return normalResponse.setResult(true, ResultEnum.SUCCESS);
+            return normalResponse.setResult(true, ResultEnum.EXIST);
         }
     }
 

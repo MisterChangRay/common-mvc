@@ -21,4 +21,15 @@ public interface UserService extends BaseService<User> {
      */
     NormalResponse updateRole(Integer userId, List<Integer> roles);
 
+
+    /**
+     * 检查用户信息是否已注册
+     * @param username
+     * @param email
+     * @param phone
+     * @param idcard
+     * @return
+     */
+    NormalResponse checkUserInfo(String username, String email, String phone, String idcard);
+
 }
