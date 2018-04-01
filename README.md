@@ -1,6 +1,15 @@
 # common-core
 基于maven的spring4.3+mybatis3.4的后台整合，方便快速进行后台接口开发。
 
+### 项目包含一些什么
+- Java 8
+- springMVC 4.3
+- Mybitis 3.4
+- Mysql 5.5.50
+- Restful interface
+- Maven 3.5.3
+- Git 2.14.1
+
 ### 已完成功能
 - 增加权限统一拦截注解`@Authentication`
 - 增加方法性能统计注解`@printRunTime`
