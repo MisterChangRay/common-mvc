@@ -1,7 +1,7 @@
 package com.zr.service.user.impl;
 
 import com.zr.common.DBEnum;
-import com.zr.common.ResultEnum;
+import com.zr.common.ErrorEnum;
 import com.zr.common.NormalResponse;
 import com.zr.dao.entity.*;
 import com.zr.dao.mapper.RoleMapper;
@@ -31,11 +31,11 @@ public class RoleServiceImpl implements RoleService{
     /**
      * 查询id是否存在
      * @param ids
-     * @return true/false
+     * @return true id全都存在/false id全部不能存在或部分id不存在
      */
     public NormalResponse exist(List<Integer> ids) {
         NormalResponse normalResponse = NormalResponse.newInstance();
-        if(null == ids) return normalResponse.setResult(ResultEnum.INVALID_REQUEST);
+        if(null == ids) return normalResponse.setErrorCode(ErrorEnum.INVALID_REQUEST);
 
         RoleQuery roleQuery = new RoleQuery();
         RoleQuery.Criteria criteria = roleQuery.createCriteria();
@@ -44,9 +44,9 @@ public class RoleServiceImpl implements RoleService{
         criteria.andEnableEqualTo(DBEnum.FALSE.getCode());
         Long count = roleMapper.countByQuery(roleQuery);
         if(count != ids.size()) {
-            return normalResponse.setResult(false, ResultEnum.INVALID).setResultMsg("存在无效ID");
+            return normalResponse.setData(false);
         } else {
-            return normalResponse.setResult(true, ResultEnum.EXIST);
+            return normalResponse.setData(true);
         }
     }
 
@@ -66,7 +66,7 @@ public class RoleServiceImpl implements RoleService{
         criteria.andEnableEqualTo(DBEnum.FALSE.getCode());
         List<Role>  roles = roleMapper.selectByQuery(roleQuery);
 
-        return normalResponse.setData(roles).setResult(ResultEnum.QUERY_SUCCESS);
+        return normalResponse.setData(roles);
     }
 
     /**
@@ -85,12 +85,12 @@ public class RoleServiceImpl implements RoleService{
      */
     public NormalResponse add(Role entity) {
         NormalResponse normalResponse = NormalResponse.newInstance();
-        if(null == entity) return normalResponse.setResult(ResultEnum.INVALID_REQUEST);
-        if(null == entity.getId()) return normalResponse.setResult(ResultEnum.INVALID_REQUEST);
+        if(null == entity) return normalResponse.setErrorCode(ErrorEnum.INVALID_REQUEST);
+        if(null == entity.getId()) return normalResponse.setErrorCode(ErrorEnum.INVALID_REQUEST);
 
         entity.setIsdel(DBEnum.FALSE.getCode());
 
-        return normalResponse.setData(entity).setResult(ResultEnum.CREATE_SUCCESS);
+        return normalResponse.setData(entity);
     }
 
     /**
@@ -100,13 +100,13 @@ public class RoleServiceImpl implements RoleService{
      */
     public NormalResponse delete(Role entity) {
         NormalResponse normalResponse = NormalResponse.newInstance();
-        if(null == entity) return normalResponse.setResult(ResultEnum.INVALID_REQUEST);
-        if(null == entity.getId()) return normalResponse.setResult(ResultEnum.INVALID_REQUEST);
+        if(null == entity) return normalResponse.setErrorCode(ErrorEnum.INVALID_REQUEST);
+        if(null == entity.getId()) return normalResponse.setErrorCode(ErrorEnum.INVALID_REQUEST);
 
         entity.setIsdel(DBEnum.TRUE.getCode());
         roleMapper.updateByPrimaryKey(entity);
 
-        return normalResponse.setData(entity).setResult(ResultEnum.DELETE_SUCCESS);
+        return normalResponse.setData(entity);
     }
 
     /**
@@ -116,11 +116,11 @@ public class RoleServiceImpl implements RoleService{
      */
     public NormalResponse update(Role entity) {
         NormalResponse normalResponse = NormalResponse.newInstance();
-        if(null == entity) return normalResponse.setResult(ResultEnum.INVALID_REQUEST);
-        if(null == entity.getId()) return normalResponse.setResult(ResultEnum.INVALID_REQUEST);
+        if(null == entity) return normalResponse.setErrorCode(ErrorEnum.INVALID_REQUEST);
+        if(null == entity.getId()) return normalResponse.setErrorCode(ErrorEnum.INVALID_REQUEST);
 
         roleMapper.updateByPrimaryKeySelective(entity);
-        return normalResponse.setData(entity).setResult(ResultEnum.UPDATE_SUCCESS);
+        return normalResponse.setData(entity);
     }
 
     /**
@@ -130,14 +130,14 @@ public class RoleServiceImpl implements RoleService{
      */
     public NormalResponse getById(Integer id) {
         NormalResponse normalResponse = NormalResponse.newInstance();
-        if(null == id) return normalResponse.setResult(ResultEnum.INVALID_REQUEST);
+        if(null == id) return normalResponse.setErrorCode(ErrorEnum.INVALID_REQUEST);
 
         Role role = roleMapper.selectByPrimaryKey(id);
-        if(null == role) return normalResponse.setResult(ResultEnum.INVALID);
-        if(role.getIsdel().equals(DBEnum.TRUE.getCode())) return normalResponse.setResult(ResultEnum.GONE);
-        if(role.getEnable().equals(DBEnum.FALSE.getCode())) return normalResponse.setResult(ResultEnum.INVALID);
+        if(null == role) return normalResponse.setErrorCode(ErrorEnum.INVALID);
+        if(role.getIsdel().equals(DBEnum.TRUE.getCode())) return normalResponse.setErrorCode(ErrorEnum.GONE);
+        if(role.getEnable().equals(DBEnum.FALSE.getCode())) return normalResponse.setErrorCode(ErrorEnum.INVALID);
 
-        return normalResponse.setData(role).setResult(ResultEnum.QUERY_SUCCESS);
+        return normalResponse.setData(role);
     }
 
 
@@ -149,8 +149,8 @@ public class RoleServiceImpl implements RoleService{
      */
     public NormalResponse updatePermission(Integer roleId, List<Integer> permissions) {
         NormalResponse normalResponse = NormalResponse.newInstance();
-        if(null == roleId) return normalResponse.setResult(ResultEnum.INVALID_REQUEST);
-        if(null == permissions) return normalResponse.setResult(ResultEnum.INVALID_REQUEST);
+        if(null == roleId) return normalResponse.setErrorCode(ErrorEnum.INVALID_REQUEST);
+        if(null == permissions) return normalResponse.setErrorCode(ErrorEnum.INVALID_REQUEST);
 
         //判断ID是否都存在
         if(permissions.size() == ((List<Permission>)permissionService.getByIds(permissions)).size()) {
@@ -173,9 +173,9 @@ public class RoleServiceImpl implements RoleService{
                 rolePermissionMaps.add(tmp);
             }
             rolePermissionMapMapper.batchInsert(rolePermissionMaps);
-            return normalResponse.setResult(ResultEnum.UPDATE_SUCCESS);
+            return normalResponse;
         }
-        return normalResponse.setResult(ResultEnum.INVALID);
+        return normalResponse.setErrorCode(ErrorEnum.INVALID);
     }
 
 

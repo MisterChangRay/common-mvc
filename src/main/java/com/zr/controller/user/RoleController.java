@@ -1,6 +1,6 @@
 package com.zr.controller.user;
 
-import com.zr.common.ResultEnum;
+import com.zr.common.ErrorEnum;
 import com.zr.common.annotation.Authentication;
 import com.zr.common.NormalResponse;
 import com.zr.dao.entity.User;
@@ -46,7 +46,7 @@ public class RoleController {
         if(null != roleId && null != permissionIds && 0 < permissionIds.size()) {
             return roleService.updatePermission(roleId, permissionIds);
         }
-        return normalResponse.setResult(ResultEnum.INVALID_REQUEST);
+        return normalResponse.setErrorCode(ErrorEnum.INVALID_REQUEST);
     }
 
 
@@ -60,7 +60,6 @@ public class RoleController {
     @ResponseBody
     public NormalResponse list(@RequestParam Integer limit) {
         NormalResponse res = new NormalResponse();
-        res.setResult(ResultEnum.QUERY_SUCCESS);
         return res;
     }
 
@@ -79,7 +78,6 @@ public class RoleController {
         list.add(user);
 
         res.setData(list);
-        res.setResult(ResultEnum.CREATE_SUCCESS);
         return res;
     }
 
@@ -94,7 +92,6 @@ public class RoleController {
     @ResponseBody
     public NormalResponse delete(@RequestBody User user) {
         NormalResponse res = new NormalResponse();
-        res.setResult(ResultEnum.DELETE_SUCCESS);
         ArrayList list = new ArrayList();
         list.add(user);
         res.setData(list);
@@ -112,7 +109,6 @@ public class RoleController {
     @ResponseBody
     public NormalResponse edit(@RequestBody User user) {
         NormalResponse res = new NormalResponse();
-        res.setResult(ResultEnum.UPDATE_SUCCESS);
         ArrayList list = new ArrayList();
         list.add(user);
         res.setData(list);

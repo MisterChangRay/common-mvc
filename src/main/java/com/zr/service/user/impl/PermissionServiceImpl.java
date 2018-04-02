@@ -1,7 +1,7 @@
 package com.zr.service.user.impl;
 
 import com.zr.common.DBEnum;
-import com.zr.common.ResultEnum;
+import com.zr.common.ErrorEnum;
 import com.zr.common.NormalResponse;
 import com.zr.dao.entity.Permission;
 import com.zr.dao.entity.PermissionQuery;
@@ -23,13 +23,13 @@ public class PermissionServiceImpl implements PermissionService{
     PermissionMapper permissionMapper;
 
     /**
-     * 查询ID是否存在
+     * 查询ID是否全存在
      * @param ids
-     * @return true/false
+     * @return true id全都存在/false id全部不能存在或部分id不存在
      */
     public NormalResponse exist(List<Integer> ids) {
         NormalResponse normalResponse = NormalResponse.newInstance();
-        if(null == ids) return normalResponse.setResult(ResultEnum.INVALID_REQUEST);
+        if(null == ids) return normalResponse.setErrorCode(ErrorEnum.INVALID_REQUEST);
 
         PermissionQuery permissionQuery = new PermissionQuery();
         PermissionQuery.Criteria criteria = permissionQuery.createCriteria();
@@ -37,9 +37,9 @@ public class PermissionServiceImpl implements PermissionService{
         criteria.andIsdelEqualTo(DBEnum.FALSE.getCode());
         Long count = permissionMapper.countByQuery(permissionQuery);
         if(count != ids.size()) {
-            return normalResponse.setResult(false, ResultEnum.INVALID).setResultMsg("存在无效ID");
+            return normalResponse.setData(false);
         } else {
-            return normalResponse.setResult(true, ResultEnum.EXIST);
+            return normalResponse.setData(true);
         }
     }
 
@@ -50,14 +50,14 @@ public class PermissionServiceImpl implements PermissionService{
      */
     public NormalResponse getByIds(List<Integer> ids) {
         NormalResponse normalResponse = NormalResponse.newInstance();
-        if(null == ids) return normalResponse.setResult(ResultEnum.INVALID_REQUEST);
+        if(null == ids) return normalResponse.setErrorCode(ErrorEnum.INVALID_REQUEST);
 
         PermissionQuery permissionQuery = new PermissionQuery();
         PermissionQuery.Criteria criteria = permissionQuery.createCriteria();
         criteria.andIdIn(ids);
         criteria.andIsdelEqualTo(DBEnum.FALSE.getCode());
         List<Permission> permissions = permissionMapper.selectByQuery(permissionQuery);
-        return normalResponse.setData(permissions).setResult(ResultEnum.QUERY_SUCCESS);
+        return normalResponse.setData(permissions);
     }
 
     /**
@@ -72,7 +72,7 @@ public class PermissionServiceImpl implements PermissionService{
         permissionQuery.page(permission.getPage(), permission.getLimit());
 
         List<Permission> permissions = permissionMapper.selectByQuery(permissionQuery);
-        return normalResponse.setData(permissions).setResult(ResultEnum.QUERY_SUCCESS);
+        return normalResponse.setData(permissions);
 
     }
 
@@ -87,7 +87,7 @@ public class PermissionServiceImpl implements PermissionService{
         entity.setIsdel(DBEnum.FALSE.getCode());
         permissionMapper.insert(entity);
 
-        return normalResponse.setResult(entity, ResultEnum.CREATE_SUCCESS);
+        return normalResponse.setData(entity);
 
     }
 
@@ -98,12 +98,12 @@ public class PermissionServiceImpl implements PermissionService{
      */
     public NormalResponse delete(Permission entity) {
         NormalResponse normalResponse = NormalResponse.newInstance();
-        if(null == entity) return normalResponse.setResult(ResultEnum.INVALID_REQUEST);
-        if(null == entity.getId()) return normalResponse.setResult(ResultEnum.INVALID_REQUEST);
+        if(null == entity) return normalResponse.setErrorCode(ErrorEnum.INVALID_REQUEST);
+        if(null == entity.getId()) return normalResponse.setErrorCode(ErrorEnum.INVALID_REQUEST);
 
         entity.setIsdel(DBEnum.TRUE.getCode());
         permissionMapper.updateByPrimaryKey(entity);
-        return normalResponse.setData(entity).setResult(ResultEnum.DELETE_SUCCESS);
+        return normalResponse.setData(entity);
     }
 
     /**
@@ -113,12 +113,12 @@ public class PermissionServiceImpl implements PermissionService{
      */
     public NormalResponse update(Permission entity) {
         NormalResponse normalResponse = NormalResponse.newInstance();
-        if(null == entity) return normalResponse.setResult(ResultEnum.INVALID_REQUEST);
-        if(null == entity.getId()) return normalResponse.setResult(ResultEnum.INVALID_REQUEST);
+        if(null == entity) return normalResponse.setErrorCode(ErrorEnum.INVALID_REQUEST);
+        if(null == entity.getId()) return normalResponse.setErrorCode(ErrorEnum.INVALID_REQUEST);
 
         entity.setIsdel(DBEnum.TRUE.getCode());
         permissionMapper.updateByPrimaryKey(entity);
-        return normalResponse.setData(entity).setResult(ResultEnum.UPDATE_SUCCESS);
+        return normalResponse.setData(entity);
     }
 
     /**
@@ -128,12 +128,12 @@ public class PermissionServiceImpl implements PermissionService{
      */
     public NormalResponse getById(Integer id) {
         NormalResponse normalResponse = NormalResponse.newInstance();
-        if(null == id) return normalResponse.setResult(ResultEnum.INVALID_REQUEST);
+        if(null == id) return normalResponse.setErrorCode(ErrorEnum.INVALID_REQUEST);
 
         Permission permission = permissionMapper.selectByPrimaryKey(id);
-        if(null == permission)  return normalResponse.setResult(ResultEnum.INVALID_REQUEST);
-        if(permission.getIsdel().equals(DBEnum.TRUE.getCode())) return normalResponse.setResult(ResultEnum.GONE);
+        if(null == permission)  return normalResponse.setErrorCode(ErrorEnum.INVALID_REQUEST);
+        if(permission.getIsdel().equals(DBEnum.TRUE.getCode())) return normalResponse.setErrorCode(ErrorEnum.GONE);
 
-        return normalResponse.setData(permission).setResult(ResultEnum.QUERY_SUCCESS);
+        return normalResponse.setData(permission);
     }
 }

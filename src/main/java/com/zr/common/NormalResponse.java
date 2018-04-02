@@ -9,13 +9,19 @@ import java.util.List;
  */
 public class NormalResponse {
     /**
-     * 结果消息
+     * 是否成功,不成功时参见错误代码
+     * false/ true
      */
-    private String resultMsg;
+    private boolean success = true;
     /**
-     * 结果代码,参见 ResultEnum
+     * 错误消息
      */
-    private Integer resultCode;
+    private String errorMsg;
+    /**
+     * 结果代码,参见 ErrorCodeEnum
+     * 注意，这里只是有业务错误的时候才会有
+     */
+    private Integer errorCode;
     /**
      * 返回的数据,这里一般是函数的返回值
      */
@@ -30,31 +36,24 @@ public class NormalResponse {
     private PageInfo pageInfo;
 
 
-
-    /**
-     * 设置resultcode的时候同时设置resultMsg和isSuccess
-     * @param resultCode
-     */
-    public NormalResponse setResult(ResultEnum resultCode) {
-        this.resultCode = resultCode.getCode();
-        if(null != this.resultMsg) {
-            this.resultMsg = resultCode.getMsg();
-        }
-
-        return this;
+    public boolean isSuccess() {
+        return success;
     }
 
+    public void setSuccess(boolean success) {
+        this.success = success;
+    }
 
     /**
      * 设置resultcode的时候同时设置resultMsg和isSuccess
-     * @param data
      * @param resultCode
      */
-    public NormalResponse setResult(Object data, ResultEnum resultCode) {
-        this.data = data;
-        this.resultCode = resultCode.getCode();
-        if(null != this.resultMsg) {
-            this.resultMsg = resultCode.getMsg();
+    public NormalResponse setErrorCode(ErrorEnum resultCode) {
+        this.errorCode = resultCode.getCode();
+        this.success = false;
+
+        if(null != this.errorMsg) {
+            this.errorMsg = resultCode.getMsg();
         }
 
         return this;
@@ -73,17 +72,17 @@ public class NormalResponse {
     }
 
 
-    public String getResultMsg() {
-        return resultMsg;
+    public String getErrorMsg() {
+        return errorMsg;
     }
 
-    public NormalResponse setResultMsg(String resultMsg) {
-        this.resultMsg = resultMsg;
+    public NormalResponse setErrorMsg(String errorMsg) {
+        this.errorMsg = errorMsg;
         return this;
     }
 
-    public Integer getResultCode() {
-        return resultCode;
+    public Integer getErrorCode() {
+        return errorCode;
     }
 
     public Object getData() {

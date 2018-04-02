@@ -1,7 +1,7 @@
 package com.zr.service.user.impl;
 
 import com.zr.common.DBEnum;
-import com.zr.common.ResultEnum;
+import com.zr.common.ErrorEnum;
 import com.zr.common.NormalResponse;
 import com.zr.dao.entity.*;
 import com.zr.dao.mapper.UserMapper;
@@ -42,9 +42,9 @@ public class UserServiceImpl implements UserService{
 
         List<User> userList = userMapper.selectByQuery(userQuery);
         if(0 < userList.size()) {
-            res.setResult(ResultEnum.EXIST);
+            res.setData(true);
         } else {
-            res.setResult(ResultEnum.SUCCESS);
+            res.setData(false);
         }
         return res;
     }
@@ -58,8 +58,8 @@ public class UserServiceImpl implements UserService{
      */
     public NormalResponse updateRole(Integer userId, List<Integer> roles) {
         NormalResponse normalResponse = NormalResponse.newInstance();
-        if(null == userId) return normalResponse.setResult(ResultEnum.INVALID_REQUEST);
-        if(null == roles) return normalResponse.setResult(ResultEnum.INVALID_REQUEST);
+        if(null == userId) return normalResponse.setErrorCode(ErrorEnum.INVALID_REQUEST);
+        if(null == roles) return normalResponse.setErrorCode(ErrorEnum.INVALID_REQUEST);
 
         //判断ID是否都存在
         if(((Boolean)roleService.exist(roles).getData())) {
@@ -82,9 +82,9 @@ public class UserServiceImpl implements UserService{
                 userRoleMaps.add(tmp);
             }
             userRoleMapMapper.batchInsert(userRoleMaps);
-            return normalResponse.setResult(ResultEnum.UPDATE_SUCCESS);
+            return normalResponse;
         }
-        return normalResponse.setResult(ResultEnum.INVALID);
+        return normalResponse.setErrorCode(ErrorEnum.INVALID);
     }
 
 
@@ -96,26 +96,26 @@ public class UserServiceImpl implements UserService{
      */
     public NormalResponse getById(Integer id) {
         NormalResponse normalResponse = NormalResponse.newInstance();
-        if(null == id) return normalResponse.setResult(ResultEnum.INVALID_REQUEST);
+        if(null == id) return normalResponse.setErrorCode(ErrorEnum.INVALID_REQUEST);
 
         User user = userMapper.selectByPrimaryKey(id);
-        if(null == user) return normalResponse.setResult(ResultEnum.INVALID_REQUEST);
+        if(null == user) return normalResponse.setErrorCode(ErrorEnum.INVALID_REQUEST);
 
-        if(user.getIsdel().equals(DBEnum.TRUE.getCode())) return normalResponse.setResult(ResultEnum.GONE);
-        if(user.getEnable().equals(DBEnum.FALSE.getCode())) return normalResponse.setResult(ResultEnum.INVALID);
+        if(user.getIsdel().equals(DBEnum.TRUE.getCode())) return normalResponse.setErrorCode(ErrorEnum.GONE);
+        if(user.getEnable().equals(DBEnum.FALSE.getCode())) return normalResponse.setErrorCode(ErrorEnum.INVALID);
 
-        return normalResponse.setData(user).setResult(ResultEnum.QUERY_SUCCESS);
+        return normalResponse.setData(user);
     }
 
 
     /**
      * 测试id集合是否都存在
      * @param ids
-     * @return true/false
+     * @return true id全都存在/false id全部不能存在或部分id不存在
      */
     public NormalResponse exist(List<Integer> ids) {
         NormalResponse normalResponse = NormalResponse.newInstance();
-        if(null == ids) return normalResponse.setResult(ResultEnum.INVALID_REQUEST);
+        if(null == ids) return normalResponse.setErrorCode(ErrorEnum.INVALID_REQUEST);
 
         UserQuery userQuery = new UserQuery();
         UserQuery.Criteria criteria = userQuery.createCriteria();
@@ -125,9 +125,9 @@ public class UserServiceImpl implements UserService{
 
         Long count = userMapper.countByQuery(userQuery);
         if(count != ids.size()) {
-            return normalResponse.setResult(false, ResultEnum.INVALID).setResultMsg("存在无效Id");
+            return normalResponse.setData(false);
         } else {
-            return normalResponse.setResult(true, ResultEnum.EXIST);
+            return normalResponse.setData(true);
         }
     }
 
@@ -138,7 +138,7 @@ public class UserServiceImpl implements UserService{
      */
     public NormalResponse getByIds(List<Integer> ids) {
         NormalResponse normalResponse = NormalResponse.newInstance();
-        if(null == ids) return normalResponse.setResult(ResultEnum.INVALID_REQUEST);
+        if(null == ids) return normalResponse.setErrorCode(ErrorEnum.INVALID_REQUEST);
 
         UserQuery userQuery = new UserQuery();
         UserQuery.Criteria criteria = userQuery.createCriteria();
@@ -147,7 +147,7 @@ public class UserServiceImpl implements UserService{
         criteria.andEnableEqualTo(DBEnum.TRUE.getCode());
 
         List<User> users = userMapper.selectByQuery(userQuery);
-        return normalResponse.setData(users).setResult(ResultEnum.QUERY_SUCCESS);
+        return normalResponse.setData(users);
     }
 
     /**
@@ -157,12 +157,12 @@ public class UserServiceImpl implements UserService{
      */
     public NormalResponse list(User entity) {
         NormalResponse normalResponse = NormalResponse.newInstance();
-        if(null == entity) return normalResponse.setResult(ResultEnum.INVALID_REQUEST);
+        if(null == entity) return normalResponse.setErrorCode(ErrorEnum.INVALID_REQUEST);
 
         UserQuery userQuery =  new UserQuery();
         userQuery.page(entity.getPage(), entity.getLimit());
         List<User> users = userMapper.selectByQuery(userQuery);
-        return normalResponse.setData(users).setResult(ResultEnum.QUERY_SUCCESS);
+        return normalResponse.setData(users);
     }
 
 
@@ -176,15 +176,15 @@ public class UserServiceImpl implements UserService{
      */
     public NormalResponse add(User entity) {
         NormalResponse normalResponse = NormalResponse.newInstance();
-        if(null == entity) return normalResponse.setResult(ResultEnum.INVALID_REQUEST);
-        if(null == entity.getName()) return normalResponse.setResult(ResultEnum.INVALID_REQUEST);
-        if(null == entity.getUsername()) return normalResponse.setResult(ResultEnum.INVALID_REQUEST);
-        if(null == entity.getPassword()) return normalResponse.setResult(ResultEnum.INVALID_REQUEST);
+        if(null == entity) return normalResponse.setErrorCode(ErrorEnum.INVALID_REQUEST);
+        if(null == entity.getName()) return normalResponse.setErrorCode(ErrorEnum.INVALID_REQUEST);
+        if(null == entity.getUsername()) return normalResponse.setErrorCode(ErrorEnum.INVALID_REQUEST);
+        if(null == entity.getPassword()) return normalResponse.setErrorCode(ErrorEnum.INVALID_REQUEST);
 
         entity.setIsdel(DBEnum.FALSE.getCode());
         entity.setEnable(DBEnum.TRUE.getCode());
         userMapper.insert(entity);
-        return normalResponse.setData(entity).setResult(ResultEnum.CREATE_SUCCESS);
+        return normalResponse.setData(entity);
     }
 
     /**
@@ -194,12 +194,12 @@ public class UserServiceImpl implements UserService{
      */
     public NormalResponse delete(User entity) {
         NormalResponse normalResponse = NormalResponse.newInstance();
-        if(null == entity) return normalResponse.setResult(ResultEnum.INVALID_REQUEST);
-        if(null == entity.getId()) return normalResponse.setResult(ResultEnum.INVALID_REQUEST);
+        if(null == entity) return normalResponse.setErrorCode(ErrorEnum.INVALID_REQUEST);
+        if(null == entity.getId()) return normalResponse.setErrorCode(ErrorEnum.INVALID_REQUEST);
 
         entity.setIsdel(DBEnum.TRUE.getCode());
         userMapper.updateByPrimaryKey(entity);
-        return normalResponse.setData(entity).setResult(ResultEnum.DELETE_SUCCESS);
+        return normalResponse.setData(entity);
     }
 
     /**
@@ -209,12 +209,12 @@ public class UserServiceImpl implements UserService{
      */
     public NormalResponse update(User entity) {
         NormalResponse normalResponse = NormalResponse.newInstance();
-        if(null == entity) return normalResponse.setResult(ResultEnum.INVALID_REQUEST);
-        if(null == entity.getId()) return normalResponse.setResult(ResultEnum.INVALID_REQUEST);
+        if(null == entity) return normalResponse.setErrorCode(ErrorEnum.INVALID_REQUEST);
+        if(null == entity.getId()) return normalResponse.setErrorCode(ErrorEnum.INVALID_REQUEST);
 
 
         userMapper.updateByPrimaryKeySelective(entity);
-        return normalResponse.setData(entity).setResult(ResultEnum.UPDATE_SUCCESS);
+        return normalResponse.setData(entity);
     }
 
 }
