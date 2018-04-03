@@ -1,5 +1,5 @@
 # common-core
-基于maven的spring4.3+mybatis3.4的后台整合，方便快速进行后台接口开发。
+基于maven的spring4.3+mybatis3.4+swagger2.6的后台整合，方便快速进行后台接口开发。
 
 ### 相关环境
 - Java 8
