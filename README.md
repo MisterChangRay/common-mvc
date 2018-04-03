@@ -1,7 +1,7 @@
 # common-core
 基于maven的spring4.3+mybatis3.4的后台整合，方便快速进行后台接口开发。
 
-### 项目包含一些什么
+### 相关环境
 - Java 8
 - springMVC 4.3
 - Mybitis 3.4
@@ -9,6 +9,7 @@
 - Restful interface
 - Maven 3.5.3
 - Git 2.14.1
+- Swagger 2.6.1
 
 ### 已完成功能
 - 增加权限统一拦截注解`@Authentication`
@@ -21,8 +22,7 @@
 - 配置`jdbc.properties`下面的数据库相关信息（如果你需要使用mybitis逆向插件，也需要配置`generatorConfig.xml`这个文件中的数据库信息）
 - 使用maven编译后，配置tomcat并部署
 - 启动tomcat,访问以下链接测试接口；
-- `get http://localhost:8080/v1/user/list?limit=1&page=0` 查询用户列表，第1页每页1条
-- `post http://localhost:8080/v1/user` 新增用户
+- 访问`http://localhost:8080/docs/index.html` Api文档信息
 
 ### 建表语句
 ```sql
@@ -71,12 +71,6 @@ create table user (
  ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 ```
 
-### 相关环境
-- OS Microsoft Windows 10 Pro
-- mysql 5.5.50
-- spring 4.3
-- mybitis 3.4
-- tomecat 7.0.85
 
 ### 注意事项
 - 下载后请修改`pom.xml`里面的,这里需要引入你的tomcat下的servlet.api.jar
@@ -90,3 +84,4 @@ create table user (
     </dependency>
 ```
 - 使用mybaitis-generator插件生成dao层时请先删除原来的文件,不然生的的内容会追加到源文件中,出现代码重复
+- 下载后可能需要修改/webapp/swagger-ui/index.html文件中的url地址.
