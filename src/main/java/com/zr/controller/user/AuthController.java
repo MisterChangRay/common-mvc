@@ -6,6 +6,7 @@ import com.zr.common.ErrorEnum;
 import com.zr.dao.entity.User;
 import com.zr.dao.entity.UserQuery;
 import com.zr.dao.mapper.UserMapper;
+import io.swagger.annotations.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -26,6 +27,7 @@ import java.util.*;
  * -检查用户信息是否存在
  *
  */
+@Api(value ="用户权限中心", description = "提供用户登陆和用户信息校验")
 @Controller
 @RequestMapping("/v1/auth")
 public class AuthController {
@@ -40,6 +42,11 @@ public class AuthController {
      * @param password
      * @return
      */
+    @ApiOperation(value = "用户登陆接口", notes = "提供用户登陆接口")
+    @ApiImplicitParams({
+        @ApiImplicitParam(name="username", value = "用户名", required = true, paramType = "String"),
+        @ApiImplicitParam(name="password", value = "密码", required = true, paramType = "String"),
+    })
     @RequestMapping(value = "/login", method = RequestMethod.POST)
     @ResponseBody
     public NormalResponse login(@RequestParam String username, @RequestParam String password, HttpServletRequest httpRequest, HttpSession httpSession) {
@@ -72,6 +79,13 @@ public class AuthController {
      * @param email 邮箱
      * @return
      */
+    @ApiOperation(value = "用户信息校验接口", notes = "检查用户信息是否已经注册")
+    @ApiImplicitParams({
+            @ApiImplicitParam(name="username", value = "用户名", required = false, paramType = "String"),
+            @ApiImplicitParam(name="phone", value = "手机号", required = false, paramType = "String"),
+            @ApiImplicitParam(name="idcard", value = "身份证", required = false, paramType = "String"),
+            @ApiImplicitParam(name="email", value = "邮箱", required = false, paramType = "String"),
+    })
     @Authentication
     @RequestMapping(value = "/checkUserInfo", method = RequestMethod.POST)
     @ResponseBody

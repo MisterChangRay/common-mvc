@@ -63,7 +63,8 @@
 
     <!--如果你的DispatcherServlet拦截"/"，为了实现REST风格，拦截了所有的请求，那么同时对*.js,*.jpg等静态文件的访问也就被拦截了。-->
     <!--方案一：激活Tomcat的defaultServlet来处理静态文件-->
-    <!--要写在DispatcherServlet的前面，让defaultServlet先拦截请求，这样请求就不会进入Spring了-->
+    <!--要写在DispatcherServlet的前面，让defaultServlet先拦截请求，这样请求就不会进入Spring了 -->
+    <!-- 因为使用swagger所以关闭此拦截器
     <servlet-mapping>
         <servlet-name>default</servlet-name>
         <url-pattern>*.css</url-pattern>
@@ -104,6 +105,7 @@
         <servlet-name>default</servlet-name>
         <url-pattern>*.map</url-pattern>
     </servlet-mapping>
+    -->
 
     <!--使用Spring MVC,配置DispatcherServlet是第一步。DispatcherServlet是一个Servlet,,所以可以配置多个DispatcherServlet-->
     <!--DispatcherServlet是前置控制器，配置在web.xml文件中的。拦截匹配的请求，Servlet拦截匹配规则要自已定义，把拦截下来的请求，依据某某规则分发到目标Controller(我们写的Action)来处理。-->
