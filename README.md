@@ -2,6 +2,7 @@
 基于maven的spring4.3+mybatis3.4+swagger2.6的后台整合，方便快速进行后台接口开发。
 
 ### 相关环境
+- OS Microsoft Windows 10 Pro
 - Java 8
 - springMVC 4.3
 - Mybitis 3.4
