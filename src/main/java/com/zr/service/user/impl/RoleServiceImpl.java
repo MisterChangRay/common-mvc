@@ -3,11 +3,14 @@ package com.zr.service.user.impl;
 import com.zr.common.DBEnum;
 import com.zr.common.ErrorEnum;
 import com.zr.common.NormalResponse;
+import com.zr.common.PageInfo;
 import com.zr.dao.entity.*;
 import com.zr.dao.mapper.RoleMapper;
 import com.zr.dao.mapper.RolePermissionMapMapper;
 import com.zr.service.user.PermissionService;
 import com.zr.service.user.RoleService;
+import com.zr.service.user.vo.RoleVO;
+import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -53,7 +56,7 @@ public class RoleServiceImpl implements RoleService{
     /**
      * 根据id获取角色
      * @param ids
-     * @return List<Role>
+     * @return List<RoleVO>
      */
     public NormalResponse getByIds(List<Integer> ids) {
         NormalResponse normalResponse = new NormalResponse();
@@ -71,62 +74,68 @@ public class RoleServiceImpl implements RoleService{
 
     /**
      * 返回角色列表
-     * @param role
-     * @return List<Role>
+     * @param vo
+     * @return List<RoleVO>
      */
-    public NormalResponse list(Role role) {
+    public NormalResponse list(RoleVO vo, PageInfo pageInfo) {
         return null;
     }
 
     /**
      *
-     * @param entity
-     * @return Role
+     * @param vo
+     * @return RoleVO
      */
-    public NormalResponse add(Role entity) {
+    public NormalResponse add(RoleVO vo) {
         NormalResponse normalResponse = NormalResponse.newInstance();
-        if(null == entity) return normalResponse.setErrorCode(ErrorEnum.INVALID_REQUEST);
-        if(null == entity.getId()) return normalResponse.setErrorCode(ErrorEnum.INVALID_REQUEST);
+        if(null == vo) return normalResponse.setErrorCode(ErrorEnum.INVALID_REQUEST);
+        if(null == vo.getId()) return normalResponse.setErrorCode(ErrorEnum.INVALID_REQUEST);
 
-        entity.setIsdel(DBEnum.FALSE.getCode());
+        Role role = new Role();
+        BeanUtils.copyProperties(vo, role);
+        role.setIsdel(DBEnum.FALSE.getCode());
 
-        return normalResponse.setData(entity);
+        return normalResponse.setData(role);
     }
 
     /**
      * 删除角色
-     * @param entity
-     * @return Role
+     * @param id
+     * @return RoleVO
      */
-    public NormalResponse delete(Role entity) {
+    public NormalResponse delete(Integer id) {
         NormalResponse normalResponse = NormalResponse.newInstance();
-        if(null == entity) return normalResponse.setErrorCode(ErrorEnum.INVALID_REQUEST);
-        if(null == entity.getId()) return normalResponse.setErrorCode(ErrorEnum.INVALID_REQUEST);
+        if(null == id) return normalResponse.setErrorCode(ErrorEnum.INVALID_REQUEST);
 
-        entity.setIsdel(DBEnum.TRUE.getCode());
-        roleMapper.updateByPrimaryKey(entity);
+        Role role = new Role();
+        role.setId(id);
+        role.setIsdel(DBEnum.TRUE.getCode());
+        roleMapper.updateByPrimaryKey(role);
 
-        return normalResponse.setData(entity);
+        return normalResponse.setData(role);
     }
 
     /**
      * 更新角色
-     * @param entity
-     * @return Role
+     * @param vo
+     * @return RoleVO
      */
-    public NormalResponse update(Role entity) {
+    public NormalResponse update(RoleVO vo) {
         NormalResponse normalResponse = NormalResponse.newInstance();
-        if(null == entity) return normalResponse.setErrorCode(ErrorEnum.INVALID_REQUEST);
-        if(null == entity.getId()) return normalResponse.setErrorCode(ErrorEnum.INVALID_REQUEST);
+        if(null == vo) return normalResponse.setErrorCode(ErrorEnum.INVALID_REQUEST);
+        if(null == vo.getId()) return normalResponse.setErrorCode(ErrorEnum.INVALID_REQUEST);
 
-        roleMapper.updateByPrimaryKeySelective(entity);
-        return normalResponse.setData(entity);
+        Role role = new Role();
+        BeanUtils.copyProperties(vo, role);
+
+        roleMapper.updateByPrimaryKeySelective(role);
+        return normalResponse.setData(role);
     }
 
     /**
      * 给句ID获取角色
      * @param id
-     * @return Role
+     * @return RoleVO
      */
     public NormalResponse getById(Integer id) {
         NormalResponse normalResponse = NormalResponse.newInstance();

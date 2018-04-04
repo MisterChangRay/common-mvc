@@ -2,6 +2,7 @@ package com.zr.service;
 
 
 import com.zr.common.NormalResponse;
+import com.zr.common.PageInfo;
 
 import java.util.List;
 
@@ -28,31 +29,31 @@ public interface BaseService<T> {
 
     /**
      * 列表
-     * @param entity
+     * @param vo
      * @return
      */
-    NormalResponse list(T entity);
+    NormalResponse list(T vo, PageInfo pageInfo);
 
     /**
      * 新增
-     * @param entity
+     * @param vo
      * @return
      */
-    NormalResponse add(T entity);
+    NormalResponse add(T vo);
 
     /**
      * 删除
-     * @param entity
+     * @param id
      * @return
      */
-    NormalResponse delete(T entity);
+    NormalResponse delete(Integer id);
 
     /**
      * 编辑
-     * @param entity
+     * @param vo
      * @return
      */
-    NormalResponse update(T entity);
+    NormalResponse update(T vo);
 
     /**
      * 根据Id获取对象

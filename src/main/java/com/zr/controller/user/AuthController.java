@@ -27,7 +27,7 @@ import java.util.*;
  * -检查用户信息是否存在
  *
  */
-@Api(value ="用户权限中心", description = "提供用户登陆和用户信息校验")
+@Api(tags ="用户认证", description = "AuthController")
 @Controller
 @RequestMapping("/v1/auth")
 public class AuthController {
@@ -42,10 +42,10 @@ public class AuthController {
      * @param password
      * @return
      */
-    @ApiOperation(value = "用户登陆接口", notes = "提供用户登陆接口")
+    @ApiOperation(value = "用户登陆", notes = "提供用户登陆接口,登陆成功后返回 Authentication ,在以后的请求中应该把此字段增加到请求头中")
     @ApiImplicitParams({
-        @ApiImplicitParam(name="username", value = "用户名", required = true, paramType = "String"),
-        @ApiImplicitParam(name="password", value = "密码", required = true, paramType = "String"),
+        @ApiImplicitParam(name="username", value = "用户名", required = true, paramType = "query", dataType = "String"),
+        @ApiImplicitParam(name="password", value = "密码", required = true, paramType = "query", dataType = "String"),
     })
     @RequestMapping(value = "/login", method = RequestMethod.POST)
     @ResponseBody
@@ -79,12 +79,12 @@ public class AuthController {
      * @param email 邮箱
      * @return
      */
-    @ApiOperation(value = "用户信息校验接口", notes = "检查用户信息是否已经注册")
+    @ApiOperation(value = "用户信息校验", notes = "检查用户信息是否已经注册,true表示已经注册,false为未注册")
     @ApiImplicitParams({
-            @ApiImplicitParam(name="username", value = "用户名", required = false, paramType = "String"),
-            @ApiImplicitParam(name="phone", value = "手机号", required = false, paramType = "String"),
-            @ApiImplicitParam(name="idcard", value = "身份证", required = false, paramType = "String"),
-            @ApiImplicitParam(name="email", value = "邮箱", required = false, paramType = "String"),
+            @ApiImplicitParam(name="username", value = "用户名", required = false, paramType = "query", dataType = "String"),
+            @ApiImplicitParam(name="phone", value = "手机号", required = false, paramType = "query", dataType = "String"),
+            @ApiImplicitParam(name="idcard", value = "身份证", required = false, paramType = "query", dataType = "String"),
+            @ApiImplicitParam(name="email", value = "邮箱", required = false, paramType = "query", dataType = "String"),
     })
     @Authentication
     @RequestMapping(value = "/checkUserInfo", method = RequestMethod.POST)

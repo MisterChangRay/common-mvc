@@ -1,8 +1,6 @@
 package com.zr.dao.entity;
 
-import com.zr.common.PageInfo;
-
-public class Permission extends PageInfo {
+public class Permission {
     private Integer id;
 
     private String name;

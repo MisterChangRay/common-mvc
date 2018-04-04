@@ -1,5 +1,8 @@
 package com.zr.common;
 
+import io.swagger.annotations.ApiModel;
+import io.swagger.annotations.ApiModelProperty;
+
 import java.util.List;
 
 /**
@@ -7,32 +10,39 @@ import java.util.List;
  *
  * 用于通用函数返回，包括
  */
+@ApiModel(value = "标准返回封装-NormalResponse")
 public class NormalResponse {
     /**
      * 是否成功,不成功时参见错误代码
      * false/ true
      */
+    @ApiModelProperty(value = "处理是否成功，如果失败参见errorMsg", dataType = "boolean")
     private boolean success = true;
     /**
      * 错误消息
      */
+    @ApiModelProperty(value = "此值只有在success为false时才有参考价值", dataType = "Integer")
     private String errorMsg;
     /**
      * 结果代码,参见 ErrorCodeEnum
      * 注意，这里只是有业务错误的时候才会有
      */
+    @ApiModelProperty(value = "此值只有在success为false时才有参考价值", dataType = "Integer")
     private Integer errorCode;
     /**
      * 返回的数据,这里一般是函数的返回值
      */
+    @ApiModelProperty(value = "结果返回 JSON 格式", dataType = "JSON")
     private Object data;
     /**
      * 快捷访问接口,帮助提示接口
      */
+    @ApiModelProperty(value = "帮助接口", dataType = "Array")
     private List href;
     /**
      * 页码信息
      */
+    @ApiModelProperty(value = "页码信息", dataType = "PageInfo")
     private PageInfo pageInfo;
 
 

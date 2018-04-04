@@ -3,11 +3,14 @@ package com.zr.service.user.impl;
 import com.zr.common.DBEnum;
 import com.zr.common.ErrorEnum;
 import com.zr.common.NormalResponse;
+import com.zr.common.PageInfo;
 import com.zr.dao.entity.Permission;
 import com.zr.dao.entity.PermissionQuery;
 
 import com.zr.dao.mapper.PermissionMapper;
 import com.zr.service.user.PermissionService;
+import com.zr.service.user.vo.PermissionVO;
+import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -46,7 +49,7 @@ public class PermissionServiceImpl implements PermissionService{
     /**
      * 根据id获取权限
      * @param ids
-     * @return List<Permission>
+     * @return List<PermissionVO>
      */
     public NormalResponse getByIds(List<Integer> ids) {
         NormalResponse normalResponse = NormalResponse.newInstance();
@@ -63,13 +66,13 @@ public class PermissionServiceImpl implements PermissionService{
     /**
      * 查询权限列表
      * @param permission
-     * @return  List<Permission>
+     * @return  List<PermissionVO>
      */
-    public NormalResponse list(Permission permission) {
+    public NormalResponse list(PermissionVO permission, PageInfo pageInfo) {
         NormalResponse normalResponse = NormalResponse.newInstance();
 
         PermissionQuery permissionQuery =  new PermissionQuery();
-        permissionQuery.page(permission.getPage(), permission.getLimit());
+        permissionQuery.page(pageInfo.getPage(), pageInfo.getLimit());
 
         List<Permission> permissions = permissionMapper.selectByQuery(permissionQuery);
         return normalResponse.setData(permissions);
@@ -78,53 +81,59 @@ public class PermissionServiceImpl implements PermissionService{
 
     /**
      * 增加权限
-     * @param entity
-     * @return Permission
+     * @param vo
+     * @return
      */
-    public NormalResponse add(Permission entity) {
+    public NormalResponse add(PermissionVO vo) {
         NormalResponse normalResponse = NormalResponse.newInstance();
 
-        entity.setIsdel(DBEnum.FALSE.getCode());
-        permissionMapper.insert(entity);
+        Permission permission = new Permission();
 
-        return normalResponse.setData(entity);
+        permission.setIsdel(DBEnum.FALSE.getCode());
+        permissionMapper.insert(permission);
+
+        return normalResponse.setData(permission);
 
     }
 
     /**
      * 删除权限
-     * @param entity
-     * @return Permission
+     * @param id
+     * @return
      */
-    public NormalResponse delete(Permission entity) {
+    public NormalResponse delete(Integer id) {
         NormalResponse normalResponse = NormalResponse.newInstance();
-        if(null == entity) return normalResponse.setErrorCode(ErrorEnum.INVALID_REQUEST);
-        if(null == entity.getId()) return normalResponse.setErrorCode(ErrorEnum.INVALID_REQUEST);
+        if(null == id) return normalResponse.setErrorCode(ErrorEnum.INVALID_REQUEST);
 
-        entity.setIsdel(DBEnum.TRUE.getCode());
-        permissionMapper.updateByPrimaryKey(entity);
-        return normalResponse.setData(entity);
+        Permission permission = new Permission();
+        permission.setIsdel(DBEnum.TRUE.getCode());
+        permission.setId(id);
+
+        permissionMapper.updateByPrimaryKeySelective(permission);
+        return normalResponse.setData(permission);
     }
 
     /**
      * 更新权限
-     * @param entity
-     * @return Permission
+     * @param vo
+     * @return
      */
-    public NormalResponse update(Permission entity) {
+    public NormalResponse update(PermissionVO vo) {
         NormalResponse normalResponse = NormalResponse.newInstance();
-        if(null == entity) return normalResponse.setErrorCode(ErrorEnum.INVALID_REQUEST);
-        if(null == entity.getId()) return normalResponse.setErrorCode(ErrorEnum.INVALID_REQUEST);
+        if(null == vo) return normalResponse.setErrorCode(ErrorEnum.INVALID_REQUEST);
+        if(null == vo.getId()) return normalResponse.setErrorCode(ErrorEnum.INVALID_REQUEST);
 
-        entity.setIsdel(DBEnum.TRUE.getCode());
-        permissionMapper.updateByPrimaryKey(entity);
-        return normalResponse.setData(entity);
+        Permission permission = new Permission();
+        BeanUtils.copyProperties(vo, permission);
+        permission.setIsdel(DBEnum.TRUE.getCode());
+        permissionMapper.updateByPrimaryKey(permission);
+        return normalResponse.setData(permission);
     }
 
     /**
      * 根据id获取权限
      * @param id
-     * @return Permission
+     * @return
      */
     public NormalResponse getById(Integer id) {
         NormalResponse normalResponse = NormalResponse.newInstance();

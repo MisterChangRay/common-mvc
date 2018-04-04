@@ -1,23 +1,30 @@
 package com.zr.common;
 
+import io.swagger.annotations.ApiModel;
+import io.swagger.annotations.ApiModelProperty;
+
 /**
  * Created by Miste on 3/23/2018.
  *
  * 页码信息类
  * 用于返回页码信息
  */
+@ApiModel("页码信息封装对象-PageInfo")
 public class PageInfo {
     /**
      * 当前第几页
      */
+    @ApiModelProperty(value = "当前第几页", dataType = "Integer")
     private Integer page;
     /**
-     * 总共用多少条记录
+     * 总共有多少条记录
      */
+    @ApiModelProperty(value = "总共有多少条记录", dataType = "Integer")
     private Integer count;
     /**
      * 每页多少数据
      */
+    @ApiModelProperty(value = "每页多少数据", dataType = "Integer")
     private Integer limit;
 
 
@@ -27,30 +34,44 @@ public class PageInfo {
         this.limit = limit;
     }
 
+    public static PageInfo newInstance(Integer page, Integer limit) {
+        return  new PageInfo().setPage(page).setLimit(limit);
+    }
+    public static PageInfo newInstance() {
+        return  new PageInfo();
+    }
+
     public PageInfo() {
+    }
+    public PageInfo(Integer page, Integer limit) {
+        this.page = page;
+        this.limit = limit;
     }
 
     public Integer getPage() {
         return page;
     }
 
-    public void setPage(Integer page) {
+    public PageInfo setPage(Integer page) {
         this.page = page;
+        return  this;
     }
 
     public Integer getCount() {
         return count;
     }
 
-    public void setCount(Integer count) {
+    public PageInfo setCount(Integer count) {
         this.count = count;
+        return this;
     }
 
     public Integer getLimit() {
         return limit;
     }
 
-    public void setLimit(Integer limit) {
+    public PageInfo setLimit(Integer limit) {
         this.limit = limit;
+        return this;
     }
 }

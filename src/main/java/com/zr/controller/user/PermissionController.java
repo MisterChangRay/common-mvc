@@ -1,10 +1,14 @@
 package com.zr.controller.user;
 
-import com.zr.common.ErrorEnum;
 import com.zr.common.NormalResponse;
 import com.zr.common.annotation.Authentication;
+import com.zr.service.user.vo.PermissionVO;
 import com.zr.dao.entity.Permission;
 import com.zr.service.user.PermissionService;
+import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiImplicitParam;
+import io.swagger.annotations.ApiImplicitParams;
+import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
@@ -19,6 +23,7 @@ import org.springframework.web.bind.annotation.*;
  * -权限编辑
  * -权限删除
  */
+@Api(tags ="权限控制", description = "PermissionController")
 @Controller
 @RequestMapping("/v1/permission")
 public class PermissionController {
@@ -31,6 +36,10 @@ public class PermissionController {
      * @param permissionId
      * @return
      */
+    @ApiOperation(value = "根据ID获取权限", notes = "根据ID获取权限")
+    @ApiImplicitParams({
+            @ApiImplicitParam(name="permissionId", value = "权限ID", required = true, paramType = "query", dataType = "Integer"),
+    })
     @Authentication
     @RequestMapping(value="/{permissionId}", method = RequestMethod.GET)
     @ResponseBody
@@ -46,6 +55,11 @@ public class PermissionController {
      * @param limit
      * @return
      */
+    @ApiOperation(value = "权限列表", notes = "获取权限列表")
+    @ApiImplicitParams({
+            @ApiImplicitParam(name="page", value = "页码", required = true, paramType = "query", dataType = "Integer"),
+            @ApiImplicitParam(name="limit", value = "每页条数", required = true, paramType = "query", dataType = "Integer"),
+    })
     @Authentication
     @RequestMapping(method = RequestMethod.GET)
     @ResponseBody
@@ -57,34 +71,39 @@ public class PermissionController {
 
     /**
      * 新增权限
-     * @param permission
+     * @param permissionVO
      * @return
      */
+    @ApiOperation(value = "新增权限", notes = "新增权限")
+    @ApiImplicitParams({
+            @ApiImplicitParam(name="permissionVO", value = "权限实体JSON对象", required = true, paramType = "body", dataType = "PermissionVO"),
+    })
     @Authentication
     @RequestMapping(method = RequestMethod.POST)
     @ResponseBody
-    public NormalResponse add(@RequestBody Permission permission) {
+    public NormalResponse add(@RequestBody PermissionVO permissionVO) {
         NormalResponse res = new NormalResponse();
-        permissionService.add(permission);
+        permissionService.add(permissionVO);
 
-        res.setData(permission);
+        res.setData(permissionVO);
         return res;
     }
 
 
     /**
      * 删除权限
-     * @param permission
+     * @param id
      * @return
      */
+    @ApiOperation(value = "删除权限", notes = "根据ID删除权限")
+    @ApiImplicitParams({
+            @ApiImplicitParam(name="id", value = "权限ID", required = true, paramType = "path", dataType = "Integer"),
+    })
     @Authentication
-    @RequestMapping(method = RequestMethod.DELETE)
+    @RequestMapping(value = "/{id}", method = RequestMethod.DELETE)
     @ResponseBody
-    public NormalResponse delete(@RequestBody Permission permission) {
-        NormalResponse res = new NormalResponse();
-
-        permissionService.delete(permission);
-        return res;
+    public NormalResponse delete(@PathVariable Integer id) {
+        return permissionService.delete(id);
     }
 
 
@@ -93,10 +112,14 @@ public class PermissionController {
      * @param permission
      * @return
      */
+    @ApiOperation(value = "编辑权限", notes = "根据ID编辑权限")
+    @ApiImplicitParams({
+            @ApiImplicitParam(name="permission", value = "权限实体JSON对象", required = true, paramType = "body", dataType = "PermissionVO"),
+    })
     @Authentication
     @RequestMapping(method = RequestMethod.PUT)
     @ResponseBody
-    public NormalResponse edit(@RequestBody Permission permission) {
+    public NormalResponse edit(@RequestBody PermissionVO permission) {
         NormalResponse res = new NormalResponse();
         permissionService.update(permission);
 

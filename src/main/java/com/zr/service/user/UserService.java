@@ -4,6 +4,7 @@ import com.zr.common.NormalResponse;
 import com.zr.dao.entity.User;
 import com.zr.dao.entity.UserQuery;
 import com.zr.service.BaseService;
+import com.zr.service.user.vo.UserVO;
 
 import java.util.List;
 
@@ -12,7 +13,7 @@ import java.util.List;
  *
  * 用户服务
  */
-public interface UserService extends BaseService<User> {
+public interface UserService extends BaseService<UserVO> {
     /**
      * 更新用户所绑定的角色
      * @param userId 用户ID

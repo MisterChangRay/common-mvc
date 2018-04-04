@@ -1,9 +1,15 @@
 package com.zr.controller.user;
 
+import com.zr.common.PageInfo;
 import com.zr.common.annotation.Authentication;
 import com.zr.common.NormalResponse;
 import com.zr.dao.entity.User;
 import com.zr.service.user.UserService;
+import com.zr.service.user.vo.UserVO;
+import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiImplicitParam;
+import io.swagger.annotations.ApiImplicitParams;
+import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
@@ -23,6 +29,7 @@ import java.util.List;
  * -用户编辑
  * -用户角色编辑
  */
+@Api(tags ="用户管理", description = "UserController")
 @Controller
 @RequestMapping("/v1/user")
 public class UserController {
@@ -35,6 +42,11 @@ public class UserController {
      * @param roleIds 角色Id集合
      * @return
      */
+    @ApiOperation(value = "编辑用户角色", notes = "编辑用户下的角色")
+    @ApiImplicitParams({
+            @ApiImplicitParam(name="userId", value = "用户ID", required = true, paramType = "path", dataType = "Integer"),
+            @ApiImplicitParam(name="roleIds", value = "角色ID", required = true, paramType = "query", dataType = "List<Integer>"),
+    })
     @Authentication
     @RequestMapping(value="/{userId}/role", method = RequestMethod.PATCH)
     @ResponseBody
@@ -47,6 +59,10 @@ public class UserController {
      * @param userId
      * @return
      */
+    @ApiOperation(value = "根据ID获取用户", notes = "根据ID获取用户")
+    @ApiImplicitParams({
+            @ApiImplicitParam(name="userId", value = "用户ID", required = true, paramType = "path", dataType = "Integer"),
+    })
     @Authentication
     @RequestMapping(value="/{userId}", method = RequestMethod.GET)
     @ResponseBody
@@ -60,52 +76,67 @@ public class UserController {
      * @param limit
      * @return
      */
+    @ApiOperation(value = "用户列表", notes = "获取用户列表")
+    @ApiImplicitParams({
+            @ApiImplicitParam(name="page", value = "页码", required = true, paramType = "query", dataType = "Integer"),
+            @ApiImplicitParam(name="limit", value = "每页条数", required = true, paramType = "query", dataType = "Integer"),
+    })
     @Authentication
     @RequestMapping(method = RequestMethod.GET)
     @ResponseBody
     public NormalResponse list(@RequestParam(required =  false) Integer page, @RequestParam(required = false) Integer limit) {
-        User user = new User();
-        user.setPage(page);
-        user.setLimit(limit);
+        UserVO user = new UserVO();
 
-        return userService.list(user);
+        return userService.list(user, PageInfo.newInstance(page, limit));
     }
 
     /**
      * 新增用户
-     * @param user
+     * @param userVO
      * @return
      */
+    @ApiOperation(value = "新增用户", notes = "新增用户")
+    @ApiImplicitParams({
+            @ApiImplicitParam(name="userVO", value = "用户实体JSON对象", required = true, paramType = "body", dataType = "UserVO"),
+    })
     @Authentication
     @RequestMapping(method = RequestMethod.POST)
     @ResponseBody
-    public NormalResponse add(@RequestBody User user) {
-        return userService.add(user);
+    public NormalResponse add(@RequestBody UserVO userVO) {
+        return userService.add(userVO);
     }
 
 
     /**
      * 删除用户
-     * @param user
+     * @param id
      * @return
      */
+    @ApiOperation(value = "删除用户", notes = "删除用户")
+    @ApiImplicitParams({
+            @ApiImplicitParam(name="id", value = "根据ID删除用户", required = true, paramType = "path", dataType = "Integer"),
+    })
     @Authentication
-    @RequestMapping(method = RequestMethod.DELETE)
+    @RequestMapping(value = "{id}", method = RequestMethod.DELETE)
     @ResponseBody
-    public NormalResponse delete(@RequestBody User user) {
-        return userService.delete(user);
+    public NormalResponse delete(@PathVariable(value = "id") Integer id) {
+        return userService.delete(id);
     }
 
 
     /**
      * 编辑用户
-     * @param user
+     * @param userVO
      * @return
      */
+    @ApiOperation(value = "编辑用户", notes = "编辑用户")
+    @ApiImplicitParams({
+            @ApiImplicitParam(name="userVO", value = "用户实体JSON对象", required = true, paramType = "body", dataType = "UserVO"),
+    })
     @Authentication
     @RequestMapping(method = RequestMethod.PUT)
     @ResponseBody
-    public NormalResponse edit(@RequestBody User user) {
-       return userService.update(user);
+    public NormalResponse edit(@RequestBody UserVO userVO) {
+       return userService.update(userVO);
     }
 }
