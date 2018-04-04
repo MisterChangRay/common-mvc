@@ -28,36 +28,38 @@
 ### 建表语句
 ```sql
 create database playground;
- 
+
+use playground;
+
 create table user (
-   id int unsigned  primary key AUTO_INCREMENT,
+   id int unsigned  primary key AUTO_INCREMENT comment '用户表',
    username varchar(100),
    password varchar(100),
-   idcard varchar(100),
+   idcard varchar(100) comment '身份证',
    email varchar(100),
    name varchar(100),
-   sex int, --性别0女2男
+   sex int comment '性别0女2男',
    phone varchar(100),
-   enable int, --是否启用0false，1true
-   isdel int --是否删除0false, 1true
+   enable int comment '是否启用0false，1true',
+   isdel int comment '是否删除0false, 1true'
  ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
  create table role (
-   id int unsigned  primary key AUTO_INCREMENT,
+   id int unsigned  primary key AUTO_INCREMENT comment '角色表',
    name varchar(100),
    enable int,
    isdel int
  ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
   create table permission (
-   id int unsigned  primary key AUTO_INCREMENT,
+   id int unsigned  primary key AUTO_INCREMENT comment '权限表',
    name varchar(100),
    isdel int
  ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 
  create table role_permission_map (
-   id int unsigned  primary key AUTO_INCREMENT,
+   id int unsigned  primary key AUTO_INCREMENT comment '角色-权限映射表',
    role_id int unsigned,
    permission_id int unsigned,
    isdel int
@@ -65,7 +67,7 @@ create table user (
 
 
  create table user_role_map (
-   id int unsigned  primary key AUTO_INCREMENT,
+   id int unsigned  primary key AUTO_INCREMENT comment '用户-角色映射表',
    user_id int unsigned,
    role_id int unsigned,
    isdel int
