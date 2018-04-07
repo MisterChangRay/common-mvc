@@ -47,8 +47,8 @@ public class RoleController {
      */
     @ApiOperation(value = "编辑角色权限", notes = "编辑角色下的权限")
     @ApiImplicitParams({
-            @ApiImplicitParam(name="roleId", value = "角色ID", required = true, paramType = "form", dataType = "Integer"),
-            @ApiImplicitParam(name="permissionIds", value = "权限ID", required = true, paramType = "form", dataType = "Integer"),
+            @ApiImplicitParam(name="roleId", value = "角色ID", required = true, paramType = "form", dataType = "int"),
+            @ApiImplicitParam(name="permissionIds", value = "权限ID", required = true, paramType = "form", dataType = "int"),
     })
     @Authentication
     @RequestMapping(value="/{roleId}/permission", method = RequestMethod.PATCH)
@@ -69,8 +69,8 @@ public class RoleController {
      */
     @ApiOperation(value = "获取角色列表", notes = "获取角色列表")
     @ApiImplicitParams({
-            @ApiImplicitParam(name="page", value = "页码", required = true, paramType = "query", dataType = "Integer"),
-            @ApiImplicitParam(name="limit", value = "每页条数", required = true, paramType = "query", dataType = "Integer"),
+            @ApiImplicitParam(name="page", value = "页码", required = true, paramType = "query", dataType = "int"),
+            @ApiImplicitParam(name="limit", value = "每页条数", required = true, paramType = "query", dataType = "int"),
     })
     @Authentication
     @RequestMapping(method = RequestMethod.GET)
@@ -109,7 +109,7 @@ public class RoleController {
      */
     @ApiOperation(value = "删除角色", notes = "根据ID删除角色")
     @ApiImplicitParams({
-            @ApiImplicitParam(name="id", value = "角色ID", required = true, paramType = "query", dataType = "Integer"),
+            @ApiImplicitParam(name="id", value = "角色ID", required = true, paramType = "query", dataType = "int"),
     })
     @Authentication
     @RequestMapping(value = "/{id}", method = RequestMethod.DELETE)
