@@ -2,7 +2,7 @@ package com.zr.service.user.vo;
 
 import io.swagger.annotations.ApiModel;
 
-@ApiModel(value = "权限实体对象-PermissionVO")
+@ApiModel(description = "权限实体对象-PermissionVO")
 public class PermissionVO {
     private Integer id;
     private String name;

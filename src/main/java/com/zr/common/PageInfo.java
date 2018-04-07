@@ -9,7 +9,7 @@ import io.swagger.annotations.ApiModelProperty;
  * 页码信息类
  * 用于返回页码信息
  */
-@ApiModel("页码信息封装对象-PageInfo")
+@ApiModel(description = "页码信息封装对象-PageInfo")
 public class PageInfo {
     /**
      * 当前第几页

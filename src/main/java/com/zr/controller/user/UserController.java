@@ -44,8 +44,8 @@ public class UserController {
      */
     @ApiOperation(value = "编辑用户角色", notes = "编辑用户下的角色")
     @ApiImplicitParams({
-            @ApiImplicitParam(name="userId", value = "用户ID", required = true, paramType = "path", dataType = "Integer"),
-            @ApiImplicitParam(name="roleIds", value = "角色ID", required = true, paramType = "query", dataType = "List<Integer>"),
+            @ApiImplicitParam(name="userId", value = "用户ID", required = true, paramType = "path", dataType = "int"),
+            @ApiImplicitParam(name="roleIds", value = "角色ID", required = true, paramType = "query", dataType = "int", allowMultiple = true),
     })
     @Authentication
     @RequestMapping(value="/{userId}/role", method = RequestMethod.PATCH)
@@ -61,7 +61,7 @@ public class UserController {
      */
     @ApiOperation(value = "根据ID获取用户", notes = "根据ID获取用户")
     @ApiImplicitParams({
-            @ApiImplicitParam(name="userId", value = "用户ID", required = true, paramType = "path", dataType = "Integer"),
+            @ApiImplicitParam(name="userId", value = "用户ID", required = true, paramType = "path", dataType = "int"),
     })
     @Authentication
     @RequestMapping(value="/{userId}", method = RequestMethod.GET)
@@ -78,8 +78,8 @@ public class UserController {
      */
     @ApiOperation(value = "用户列表", notes = "获取用户列表")
     @ApiImplicitParams({
-            @ApiImplicitParam(name="page", value = "页码", required = true, paramType = "query", dataType = "Integer"),
-            @ApiImplicitParam(name="limit", value = "每页条数", required = true, paramType = "query", dataType = "Integer"),
+            @ApiImplicitParam(name="page", value = "页码", required = true, paramType = "query", dataType = "int"),
+            @ApiImplicitParam(name="limit", value = "每页条数", required = true, paramType = "query", dataType = "int"),
     })
     @Authentication
     @RequestMapping(method = RequestMethod.GET)
@@ -114,7 +114,7 @@ public class UserController {
      */
     @ApiOperation(value = "删除用户", notes = "删除用户")
     @ApiImplicitParams({
-            @ApiImplicitParam(name="id", value = "根据ID删除用户", required = true, paramType = "path", dataType = "Integer"),
+            @ApiImplicitParam(name="id", value = "根据ID删除用户", required = true, paramType = "path", dataType = "int"),
     })
     @Authentication
     @RequestMapping(value = "{id}", method = RequestMethod.DELETE)

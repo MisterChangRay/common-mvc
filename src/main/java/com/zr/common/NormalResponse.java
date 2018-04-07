@@ -10,7 +10,7 @@ import java.util.List;
  *
  * 用于通用函数返回，包括
  */
-@ApiModel(value = "标准返回封装-NormalResponse")
+@ApiModel(description = "标准返回封装-NormalResponse")
 public class NormalResponse {
     /**
      * 是否成功,不成功时参见错误代码

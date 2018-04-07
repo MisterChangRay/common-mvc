@@ -2,7 +2,7 @@ package com.zr.service.user.vo;
 
 import io.swagger.annotations.ApiModel;
 
-@ApiModel(value = "用户实体对象-UserVO")
+@ApiModel(description = "用户实体对象-UserVO")
 public class UserVO {
     private Integer id;
 
