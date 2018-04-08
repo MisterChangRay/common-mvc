@@ -1,16 +1,6 @@
 # common-core
 基于maven的spring4.3+mybatis3.4+swagger2.6的后台整合，方便快速进行后台接口开发。
 
-### 相关环境
-- OS Microsoft Windows 10 Pro
-- Java 8
-- springMVC 4.3
-- Mybitis 3.4
-- Mysql 5.5.50
-- Restful interface
-- Maven 3.5.3
-- Git 2.14.1
-- Swagger 2.6.1
 
 ### 已完成功能
 - 增加权限统一拦截注解`@Authentication`
@@ -73,6 +63,18 @@ create table user (
    isdel int
  ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 ```
+
+
+### 相关环境
+- OS Microsoft Windows 10 Pro
+- Java 8
+- springMVC 4.3
+- Mybitis 3.4
+- Mysql 5.5.50
+- Restful interface
+- Maven 3.5.3
+- Git 2.14.1
+- Swagger 2.6.1
 
 
 ### 注意事项
