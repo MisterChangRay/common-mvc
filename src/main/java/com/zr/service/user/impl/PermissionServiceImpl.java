@@ -29,6 +29,10 @@ public class PermissionServiceImpl implements PermissionService{
         return null;
     }
 
+    public NormalResponse getById(Integer id) {
+        return null;
+    }
+
     public NormalResponse getByIds(List<Integer> ids) {
         return null;
     }

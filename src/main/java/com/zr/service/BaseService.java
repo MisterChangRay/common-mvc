@@ -19,6 +19,13 @@ public interface BaseService<Entity> {
      */
     NormalResponse exist(List<Integer> ids);
 
+    /**
+     * 根据实体ID获取对象
+     * @param id
+     * @return
+     */
+    NormalResponse getById(Integer id);
+
 
     /**
      * 根据实体ID获取对象

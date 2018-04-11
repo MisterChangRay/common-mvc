@@ -29,12 +29,11 @@ public class RoleServiceImpl implements RoleService {
     @Autowired
     PermissionService permissionService;
 
-
-    public NormalResponse updatePermission(Integer roleId, List<Integer> permissions) {
+    public NormalResponse exist(List<Integer> ids) {
         return null;
     }
 
-    public NormalResponse exist(List<Integer> ids) {
+    public NormalResponse getById(Integer id) {
         return null;
     }
 
@@ -61,4 +60,43 @@ public class RoleServiceImpl implements RoleService {
     public NormalResponse delete(Role role) {
         return null;
     }
+
+
+    /**
+     * 更新角色的权限信息
+     * @param roleId 被更新角色ID
+     * @param permissions 权限列表
+     * @return
+     */
+    public NormalResponse updatePermission(Integer roleId, List<Integer> permissions) {
+        NormalResponse normalResponse = NormalResponse.newInstance();
+        if(null == roleId) return normalResponse.setErrorCode(ErrorEnum.INVALID_REQUEST);
+        if(null == permissions) return normalResponse.setErrorCode(ErrorEnum.INVALID_REQUEST);
+
+        //判断ID是否都存在
+        if(permissions.size() == ((List<Permission>)permissionService.getByIds(permissions)).size()) {
+            //老数据标记为无效
+            RolePermissionMap rolePermissionMap = new RolePermissionMap();
+            rolePermissionMap.setIsdel(DBEnum.TRUE.getCode());
+
+            RolePermissionMapQuery rolePermissionMapQuery = new RolePermissionMapQuery();
+            RolePermissionMapQuery.Criteria criteria = rolePermissionMapQuery.createCriteria();
+            criteria.andRoleIdEqualTo(roleId);
+            rolePermissionMapMapper.updateByQuerySelective(rolePermissionMap, rolePermissionMapQuery);
+
+            //插入新的映射数据
+            List<RolePermissionMap> rolePermissionMaps = new ArrayList<RolePermissionMap>();
+            RolePermissionMap tmp;
+            for(Integer i=permissions.size(); i<0; i--) {
+                tmp = new RolePermissionMap();
+                tmp.setRoleId(roleId);
+                tmp.setPermissionId(permissions.get(i));
+                rolePermissionMaps.add(tmp);
+            }
+            rolePermissionMapMapper.batchInsert(rolePermissionMaps);
+            return normalResponse;
+        }
+        return normalResponse.setErrorCode(ErrorEnum.INVALID);
+    }
+
 }

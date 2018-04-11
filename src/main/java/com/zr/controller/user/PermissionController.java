@@ -2,7 +2,6 @@ package com.zr.controller.user;
 
 import com.zr.common.NormalResponse;
 import com.zr.common.annotation.Authentication;
-import com.zr.service.user.vo.PermissionVO;
 import com.zr.dao.entity.Permission;
 import com.zr.service.user.PermissionService;
 import io.swagger.annotations.Api;
@@ -71,21 +70,21 @@ public class PermissionController {
 
     /**
      * 新增权限
-     * @param permissionVO
+     * @param permission
      * @return
      */
     @ApiOperation(value = "新增权限", notes = "新增权限")
     @ApiImplicitParams({
-            @ApiImplicitParam(name="permissionVO", value = "权限实体JSON对象", required = true, paramType = "body", dataType = "PermissionVO"),
+            @ApiImplicitParam(name="permission", value = "权限实体JSON对象", required = true, paramType = "body", dataType = "PermissionVO"),
     })
     @Authentication
     @RequestMapping(method = RequestMethod.POST)
     @ResponseBody
-    public NormalResponse add(@RequestBody PermissionVO permissionVO) {
+    public NormalResponse add(@RequestBody Permission permission) {
         NormalResponse res = new NormalResponse();
-        permissionService.add(permissionVO);
+        permissionService.add(permission);
 
-        res.setData(permissionVO);
+        res.setData(permission);
         return res;
     }
 
@@ -103,7 +102,7 @@ public class PermissionController {
     @RequestMapping(value = "/{id}", method = RequestMethod.DELETE)
     @ResponseBody
     public NormalResponse delete(@PathVariable Integer id) {
-        return permissionService.delete(id);
+        return null;
     }
 
 
@@ -119,7 +118,7 @@ public class PermissionController {
     @Authentication
     @RequestMapping(method = RequestMethod.PUT)
     @ResponseBody
-    public NormalResponse edit(@RequestBody PermissionVO permission) {
+    public NormalResponse edit(@RequestBody Permission permission) {
         NormalResponse res = new NormalResponse();
         permissionService.update(permission);
 

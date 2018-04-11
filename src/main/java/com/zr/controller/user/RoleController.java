@@ -3,11 +3,10 @@ package com.zr.controller.user;
 import com.zr.common.ErrorEnum;
 import com.zr.common.annotation.Authentication;
 import com.zr.common.NormalResponse;
+import com.zr.dao.entity.Role;
 import com.zr.dao.entity.User;
 import com.zr.service.user.PermissionService;
 import com.zr.service.user.RoleService;
-import com.zr.service.user.vo.RoleVO;
-import com.zr.service.user.vo.UserVO;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiImplicitParam;
 import io.swagger.annotations.ApiImplicitParams;
@@ -82,17 +81,17 @@ public class RoleController {
 
     /**
      * 新增角色
-     * @param vo
+     * @param role
      * @return
      */
     @ApiOperation(value = "新增角色", notes = "新增角色")
     @ApiImplicitParams({
-            @ApiImplicitParam(name="vo", value = "角色实体对象", required = true, paramType = "query", dataType = "RoleVO"),
+            @ApiImplicitParam(name="role", value = "角色实体对象", required = true, paramType = "query", dataType = "RoleVO"),
     })
     @Authentication
     @RequestMapping(method = RequestMethod.POST)
     @ResponseBody
-    public NormalResponse add(@RequestBody RoleVO roleVO) {
+    public NormalResponse add(@RequestBody Role role) {
         NormalResponse res = new NormalResponse();
 
         ArrayList list = new ArrayList();
@@ -124,17 +123,17 @@ public class RoleController {
 
     /**
      * 编辑角色
-     * @param roleVO
+     * @param role
      * @return
      */
     @ApiOperation(value = "编辑角色", notes = "根据ID编辑角色")
     @ApiImplicitParams({
-            @ApiImplicitParam(name="vo", value = "角色实体对象", required = true, paramType = "query", dataType = "RoleVo"),
+            @ApiImplicitParam(name="role", value = "角色实体对象", required = true, paramType = "query", dataType = "RoleVo"),
     })
     @Authentication
     @RequestMapping(method = RequestMethod.PUT)
     @ResponseBody
-    public NormalResponse edit(@RequestBody RoleVO roleVO) {
+    public NormalResponse edit(@RequestBody Role role) {
         NormalResponse res = new NormalResponse();
         ArrayList list = new ArrayList();
         res.setData(list);
