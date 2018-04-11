@@ -4,7 +4,6 @@ import com.zr.dao.entity.Permission;
 import com.zr.dao.entity.PermissionQuery;
 import com.zr.dao.mapper.PermissionMapper;
 import com.zr.service.BaseService;
-import com.zr.service.user.vo.PermissionVO;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import java.util.List;
@@ -14,5 +13,5 @@ import java.util.List;
  *
  * 用户权限服务
  */
-public interface PermissionService extends BaseService<PermissionVO> {
+public interface PermissionService extends BaseService<Permission> {
 }

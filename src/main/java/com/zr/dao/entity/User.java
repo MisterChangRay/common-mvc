@@ -1,24 +1,38 @@
 package com.zr.dao.entity;
 
+import io.swagger.annotations.ApiModel;
+import io.swagger.annotations.ApiModelProperty;
+
+@ApiModel(value="com.zr.dao.entity.User")
 public class User {
+    @ApiModelProperty(value="id")
     private Integer id;
 
+    @ApiModelProperty(value="username")
     private String username;
 
+    @ApiModelProperty(value="password")
     private String password;
 
+    @ApiModelProperty(value="idcard")
     private String idcard;
 
+    @ApiModelProperty(value="email")
     private String email;
 
+    @ApiModelProperty(value="name")
     private String name;
 
+    @ApiModelProperty(value="sex")
     private Integer sex;
 
+    @ApiModelProperty(value="phone")
     private String phone;
 
+    @ApiModelProperty(value="enable")
     private Integer enable;
 
+    @ApiModelProperty(value="isdel")
     private Integer isdel;
 
     public Integer getId() {

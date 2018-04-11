@@ -1,10 +1,17 @@
 package com.zr.dao.entity;
 
+import io.swagger.annotations.ApiModel;
+import io.swagger.annotations.ApiModelProperty;
+
+@ApiModel(value="com.zr.dao.entity.Permission")
 public class Permission {
+    @ApiModelProperty(value="id")
     private Integer id;
 
+    @ApiModelProperty(value="name")
     private String name;
 
+    @ApiModelProperty(value="isdel")
     private Integer isdel;
 
     public Integer getId() {

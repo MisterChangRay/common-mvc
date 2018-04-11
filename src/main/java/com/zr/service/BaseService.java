@@ -4,15 +4,16 @@ package com.zr.service;
 import com.zr.common.NormalResponse;
 import com.zr.common.PageInfo;
 
+import javax.management.Query;
 import java.util.List;
 
 /**
  * Created by Miste on 3/27/2018.
  */
-public interface BaseService<T> {
+public interface BaseService<Entity> {
 
     /**
-     * 查询ID是否存在
+     * 查询id是否存在
      * @param ids
      * @return
      */
@@ -20,45 +21,46 @@ public interface BaseService<T> {
 
 
     /**
-     * 查询ID集合
+     * 根据实体ID获取对象
      * @param ids
      * @return
      */
     NormalResponse getByIds(List<Integer> ids);
 
-
     /**
-     * 列表
-     * @param vo
+     * 简单列表
+     * @param entity
      * @return
      */
-    NormalResponse list(T vo, PageInfo pageInfo);
+    NormalResponse list(Entity entity, PageInfo pageInfo);
 
     /**
      * 新增
-     * @param vo
+     * @param entity
      * @return
      */
-    NormalResponse add(T vo);
+    NormalResponse add(Entity entity);
 
     /**
-     * 删除
-     * @param id
+     * 批量新增
+     * @param entities
      * @return
      */
-    NormalResponse delete(Integer id);
+    NormalResponse batchInsert(List<Entity> entities);
 
     /**
      * 编辑
-     * @param vo
+     * @param entity
      * @return
      */
-    NormalResponse update(T vo);
+    NormalResponse update(Entity entity);
+
 
     /**
-     * 根据Id获取对象
-     * @param id
+     * 删除实体
+     * @param entity
      * @return
      */
-    NormalResponse getById(Integer id);
+    NormalResponse delete(Entity entity);
+
 }

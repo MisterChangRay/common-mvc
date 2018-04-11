@@ -1,12 +1,20 @@
 package com.zr.dao.entity;
 
+import io.swagger.annotations.ApiModel;
+import io.swagger.annotations.ApiModelProperty;
+
+@ApiModel(value="com.zr.dao.entity.UserRoleMap")
 public class UserRoleMap {
+    @ApiModelProperty(value="id")
     private Integer id;
 
+    @ApiModelProperty(value="userId")
     private Integer userId;
 
+    @ApiModelProperty(value="roleId")
     private Integer roleId;
 
+    @ApiModelProperty(value="isdel")
     private Integer isdel;
 
     public Integer getId() {

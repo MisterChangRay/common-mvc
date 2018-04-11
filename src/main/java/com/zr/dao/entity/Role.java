@@ -1,12 +1,20 @@
 package com.zr.dao.entity;
 
+import io.swagger.annotations.ApiModel;
+import io.swagger.annotations.ApiModelProperty;
+
+@ApiModel(value="com.zr.dao.entity.Role")
 public class Role {
+    @ApiModelProperty(value="id")
     private Integer id;
 
+    @ApiModelProperty(value="name")
     private String name;
 
+    @ApiModelProperty(value="enable")
     private Integer enable;
 
+    @ApiModelProperty(value="isdel")
     private Integer isdel;
 
     public Integer getId() {

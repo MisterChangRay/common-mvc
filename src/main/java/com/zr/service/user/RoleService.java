@@ -4,7 +4,6 @@ import com.zr.common.NormalResponse;
 import com.zr.dao.entity.Role;
 import com.zr.dao.entity.RoleQuery;
 import com.zr.service.BaseService;
-import com.zr.service.user.vo.RoleVO;
 
 import java.util.List;
 
@@ -13,7 +12,7 @@ import java.util.List;
  *
  * 用户角色服务
  */
-public interface RoleService extends BaseService<RoleVO> {
+public interface RoleService extends BaseService<Role> {
     /**
      * 更新角色绑定的权限
      * @param roleId 角色ID
