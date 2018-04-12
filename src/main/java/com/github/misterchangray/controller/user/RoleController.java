@@ -1,5 +1,6 @@
 package com.github.misterchangray.controller.user;
 
+import com.github.misterchangray.common.PageInfo;
 import com.github.misterchangray.common.enums.ErrorEnum;
 import com.github.misterchangray.common.NormalResponse;
 import com.github.misterchangray.service.user.PermissionService;
@@ -52,7 +53,7 @@ public class RoleController {
     @Authentication
     @RequestMapping(value="/{roleId}/permission", method = RequestMethod.PATCH)
     @ResponseBody
-    public NormalResponse getById(@PathVariable Integer roleId, @RequestParam List permissionIds) {
+    public NormalResponse editPermissionOfRole(@PathVariable Integer roleId, @RequestParam List permissionIds) {
         NormalResponse normalResponse = NormalResponse.newInstance();
         if(null != roleId && null != permissionIds && 0 < permissionIds.size()) {
             return roleService.updatePermission(roleId, permissionIds);
@@ -75,8 +76,8 @@ public class RoleController {
     @RequestMapping(method = RequestMethod.GET)
     @ResponseBody
     public NormalResponse list(@RequestParam Integer page, @RequestParam Integer limit) {
-        NormalResponse res = new NormalResponse();
-        return res;
+        Role role = new Role();
+        return roleService.list(role, PageInfo.newInstance(page, limit));
     }
 
     /**
@@ -86,18 +87,13 @@ public class RoleController {
      */
     @ApiOperation(value = "新增角色", notes = "新增角色")
     @ApiImplicitParams({
-            @ApiImplicitParam(name="role", value = "角色实体对象", required = true, paramType = "query", dataType = "RoleVO"),
+            @ApiImplicitParam(name="role", value = "角色实体对象", required = true, paramType = "query", dataType = "com.github.misterchangray.dao.entity.Role"),
     })
     @Authentication
     @RequestMapping(method = RequestMethod.POST)
     @ResponseBody
     public NormalResponse add(@RequestBody Role role) {
-        NormalResponse res = new NormalResponse();
-
-        ArrayList list = new ArrayList();
-
-        res.setData(list);
-        return res;
+       return roleService.add(role);
     }
 
 
@@ -114,10 +110,9 @@ public class RoleController {
     @RequestMapping(value = "/{id}", method = RequestMethod.DELETE)
     @ResponseBody
     public NormalResponse delete(@PathVariable("id") Integer id) {
-        NormalResponse res = new NormalResponse();
-        ArrayList list = new ArrayList();
-        res.setData(list);
-        return res;
+        Role role = new Role();
+        role.setId(id);
+        return roleService.delete(role);
     }
 
 
@@ -128,16 +123,13 @@ public class RoleController {
      */
     @ApiOperation(value = "编辑角色", notes = "根据ID编辑角色")
     @ApiImplicitParams({
-            @ApiImplicitParam(name="role", value = "角色实体对象", required = true, paramType = "query", dataType = "RoleVo"),
+            @ApiImplicitParam(name="role", value = "角色实体对象", required = true, paramType = "query", dataType = "com.github.misterchangray.dao.entity.Role"),
     })
     @Authentication
     @RequestMapping(method = RequestMethod.PUT)
     @ResponseBody
     public NormalResponse edit(@RequestBody Role role) {
-        NormalResponse res = new NormalResponse();
-        ArrayList list = new ArrayList();
-        res.setData(list);
-        return res;
+        return roleService.update(role);
     }
 
 }

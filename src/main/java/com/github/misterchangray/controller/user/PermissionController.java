@@ -1,10 +1,9 @@
 package com.github.misterchangray.controller.user;
 
 import com.github.misterchangray.common.NormalResponse;
+import com.github.misterchangray.common.PageInfo;
 import com.github.misterchangray.dao.entity.Permission;
-import com.github.misterchangray.common.NormalResponse;
 import com.github.misterchangray.common.annotation.Authentication;
-import com.github.misterchangray.dao.entity.Permission;
 import com.github.misterchangray.service.user.PermissionService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiImplicitParam;
@@ -65,9 +64,8 @@ public class PermissionController {
     @RequestMapping(method = RequestMethod.GET)
     @ResponseBody
     public NormalResponse list(@RequestParam() Integer page, @RequestParam() Integer limit) {
-        NormalResponse res = new NormalResponse();
-
-        return res;
+        Permission permission = new Permission();
+        return permissionService.list(permission, PageInfo.newInstance(page, limit));
     }
 
     /**
@@ -77,17 +75,13 @@ public class PermissionController {
      */
     @ApiOperation(value = "新增权限", notes = "新增权限")
     @ApiImplicitParams({
-            @ApiImplicitParam(name="permission", value = "权限实体JSON对象", required = true, paramType = "body", dataType = "PermissionVO"),
+            @ApiImplicitParam(name="permission", value = "权限实体JSON对象", required = true, paramType = "body", dataType = "com.github.misterchangray.dao.entity.Permission"),
     })
     @Authentication
     @RequestMapping(method = RequestMethod.POST)
     @ResponseBody
     public NormalResponse add(@RequestBody Permission permission) {
-        NormalResponse res = new NormalResponse();
-        permissionService.add(permission);
-
-        res.setData(permission);
-        return res;
+       return permissionService.add(permission);
     }
 
 
@@ -104,7 +98,9 @@ public class PermissionController {
     @RequestMapping(value = "/{id}", method = RequestMethod.DELETE)
     @ResponseBody
     public NormalResponse delete(@PathVariable Integer id) {
-        return null;
+        Permission permission = new Permission();
+        permission.setId(id);
+        return permissionService.delete(permission);
     }
 
 
@@ -115,16 +111,13 @@ public class PermissionController {
      */
     @ApiOperation(value = "编辑权限", notes = "根据ID编辑权限")
     @ApiImplicitParams({
-            @ApiImplicitParam(name="permission", value = "权限实体JSON对象", required = true, paramType = "body", dataType = "PermissionVO"),
+            @ApiImplicitParam(name="permission", value = "权限实体JSON对象", required = true, paramType = "body", dataType = "com.github.misterchangray.dao.entity.Permission"),
     })
     @Authentication
     @RequestMapping(method = RequestMethod.PUT)
     @ResponseBody
     public NormalResponse edit(@RequestBody Permission permission) {
-        NormalResponse res = new NormalResponse();
-        permissionService.update(permission);
-
-        return res;
+        return permissionService.update(permission);
     }
 
 }
