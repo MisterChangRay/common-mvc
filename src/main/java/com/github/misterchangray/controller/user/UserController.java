@@ -52,7 +52,7 @@ public class UserController {
     @Authentication
     @RequestMapping(value="/{userId}/role", method = RequestMethod.PATCH)
     @ResponseBody
-    public NormalResponse editRoleOfUser(@PathVariable Integer userId, @RequestParam List roleIds) {
+    public NormalResponse editUserRole(@PathVariable Integer userId, @RequestParam List roleIds) {
         return userService.updateRole(userId, roleIds);
     }
 

@@ -53,7 +53,7 @@ public class RoleController {
     @Authentication
     @RequestMapping(value="/{roleId}/permission", method = RequestMethod.PATCH)
     @ResponseBody
-    public NormalResponse editPermissionOfRole(@PathVariable Integer roleId, @RequestParam List permissionIds) {
+    public NormalResponse editRolePermission(@PathVariable Integer roleId, @RequestParam List permissionIds) {
         NormalResponse normalResponse = NormalResponse.newInstance();
         if(null != roleId && null != permissionIds && 0 < permissionIds.size()) {
             return roleService.updatePermission(roleId, permissionIds);
