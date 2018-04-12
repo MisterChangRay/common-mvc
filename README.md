@@ -6,6 +6,7 @@
 - 增加权限统一拦截注解`@Authentication`
 - 增加方法性能统计注解`@printRunTime`
 - 实现了简单的权限系统
+- 实现了简单的操作日志
 - 生成entity类时自动提取数据库注释生成swagger文档
 - 实现了更漂亮的swagger-ui
 
