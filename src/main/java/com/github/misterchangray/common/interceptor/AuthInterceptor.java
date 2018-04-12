@@ -1,4 +1,4 @@
-package com.github.misterchangray.common;
+package com.github.misterchangray.common.interceptor;
 
 
 import com.github.misterchangray.common.annotation.Authentication;

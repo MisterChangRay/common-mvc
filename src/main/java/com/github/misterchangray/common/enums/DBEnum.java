@@ -1,4 +1,4 @@
-package com.github.misterchangray.common;
+package com.github.misterchangray.common.enums;
 
 /**
  * Created by Miste on 3/27/2018.

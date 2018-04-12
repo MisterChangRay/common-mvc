@@ -2,16 +2,11 @@ package com.github.misterchangray.service.user.impl;
 
 import com.github.misterchangray.common.NormalResponse;
 import com.github.misterchangray.dao.entity.Permission;
-import com.github.misterchangray.common.DBEnum;
-import com.github.misterchangray.common.ErrorEnum;
-import com.github.misterchangray.common.NormalResponse;
 import com.github.misterchangray.common.PageInfo;
-import com.github.misterchangray.dao.entity.Permission;
 import com.github.misterchangray.dao.entity.PermissionQuery;
 
 import com.github.misterchangray.dao.mapper.PermissionMapper;
 import com.github.misterchangray.service.user.PermissionService;
-import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

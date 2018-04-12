@@ -65,7 +65,7 @@
     </bean>
 
     <mvc:interceptors>
-        <bean class="com.github.misterchangray.common.AuthInterceptor"></bean>
+        <bean class="com.github.misterchangray.common.interceptor.AuthInterceptor"></bean>
     </mvc:interceptors>
 
 </beans>

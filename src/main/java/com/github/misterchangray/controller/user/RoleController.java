@@ -1,16 +1,12 @@
 package com.github.misterchangray.controller.user;
 
-import com.github.misterchangray.common.ErrorEnum;
+import com.github.misterchangray.common.enums.ErrorEnum;
 import com.github.misterchangray.common.NormalResponse;
 import com.github.misterchangray.service.user.PermissionService;
 import com.github.misterchangray.service.user.RoleService;
-import com.github.misterchangray.common.ErrorEnum;
 import com.github.misterchangray.common.annotation.Authentication;
-import com.github.misterchangray.common.NormalResponse;
 import com.github.misterchangray.dao.entity.Role;
 import com.github.misterchangray.dao.entity.User;
-import com.github.misterchangray.service.user.PermissionService;
-import com.github.misterchangray.service.user.RoleService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiImplicitParam;
 import io.swagger.annotations.ApiImplicitParams;

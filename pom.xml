@@ -100,18 +100,6 @@
       <version>1.3.1</version>
     </dependency>
 
-    <!-- 支持json start -->
-    <dependency>
-      <groupId>com.fasterxml.jackson.core</groupId>
-      <artifactId>jackson-core</artifactId>
-      <version>2.5.4</version>
-    </dependency>
-    <dependency>
-      <groupId>com.fasterxml.jackson.core</groupId>
-      <artifactId>jackson-databind</artifactId>
-      <version>2.5.4</version>
-    </dependency>
-    <!-- 支持json end -->
 
 
     <!--其他需要的包-->

@@ -1,16 +1,11 @@
 package com.github.misterchangray.controller.user;
 
-import com.github.misterchangray.common.ErrorEnum;
+import com.github.misterchangray.common.enums.ErrorEnum;
 import com.github.misterchangray.common.NormalResponse;
 import com.github.misterchangray.dao.entity.User;
 import com.github.misterchangray.dao.entity.UserQuery;
 import com.github.misterchangray.dao.mapper.UserMapper;
 import com.github.misterchangray.common.annotation.Authentication;
-import com.github.misterchangray.common.NormalResponse;
-import com.github.misterchangray.common.ErrorEnum;
-import com.github.misterchangray.dao.entity.User;
-import com.github.misterchangray.dao.entity.UserQuery;
-import com.github.misterchangray.dao.mapper.UserMapper;
 import io.swagger.annotations.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
