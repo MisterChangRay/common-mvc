@@ -99,7 +99,7 @@ public class UserController {
      */
     @ApiOperation(value = "新增用户", notes = "新增用户")
     @ApiImplicitParams({
-            @ApiImplicitParam(name="user", value = "用户实体JSON对象", required = true, paramType = "body", dataType = "UserVO"),
+            @ApiImplicitParam(name="user", value = "用户实体JSON对象", required = true, paramType = "body", dataType = "com.github.misterchangray.dao.entity.User"),
     })
     @Authentication
     @RequestMapping(method = RequestMethod.POST)
@@ -135,7 +135,7 @@ public class UserController {
      */
     @ApiOperation(value = "编辑用户", notes = "编辑用户")
     @ApiImplicitParams({
-            @ApiImplicitParam(name="user", value = "用户实体JSON对象", required = true, paramType = "body", dataType = "UserVO"),
+            @ApiImplicitParam(name="user", value = "用户实体JSON对象", required = true, paramType = "body", dataType = "com.github.misterchangray.dao.entity.User"),
     })
     @Authentication
     @RequestMapping(method = RequestMethod.PUT)

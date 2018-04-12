@@ -143,14 +143,16 @@ public class UserServiceImpl implements UserService{
 
     public NormalResponse update(User user) {
         if(null == user || null == user.getId()) return NormalResponse.newInstance().setErrorCode(ErrorEnum.INVALID_REQUEST);
+        userMapper.updateByPrimaryKeySelective(user);
 
-        return NormalResponse.newInstance().setData(userMapper.updateByPrimaryKeySelective(user));
+        return NormalResponse.newInstance().setData(user);
     }
 
     public NormalResponse delete(User user) {
         if(null == user || null == user.getId()) return NormalResponse.newInstance().setErrorCode(ErrorEnum.INVALID_REQUEST);
 
         user.setIsdel(DBEnum.TRUE.getCode());
-        return NormalResponse.newInstance().setData(userMapper.updateByPrimaryKeySelective(user));
+        userMapper.updateByPrimaryKeySelective(user);
+        return NormalResponse.newInstance().setData(null);
     }
 }

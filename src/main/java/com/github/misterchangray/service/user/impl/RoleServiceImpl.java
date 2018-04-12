@@ -4,10 +4,7 @@ import com.github.misterchangray.common.enums.DBEnum;
 import com.github.misterchangray.common.enums.ErrorEnum;
 import com.github.misterchangray.common.NormalResponse;
 import com.github.misterchangray.common.PageInfo;
-import com.github.misterchangray.dao.entity.Permission;
-import com.github.misterchangray.dao.entity.Role;
-import com.github.misterchangray.dao.entity.RolePermissionMap;
-import com.github.misterchangray.dao.entity.RolePermissionMapQuery;
+import com.github.misterchangray.dao.entity.*;
 import com.github.misterchangray.service.user.PermissionService;
 import com.github.misterchangray.service.user.RoleService;
 import com.github.misterchangray.dao.mapper.RoleMapper;
@@ -32,35 +29,71 @@ public class RoleServiceImpl implements RoleService {
     PermissionService permissionService;
 
     public NormalResponse exist(List<Integer> ids) {
-        return null;
+        if(null == ids) NormalResponse.newInstance().setErrorCode(ErrorEnum.INVALID_REQUEST);
+
+        RoleQuery roleQuery = new RoleQuery();
+        RoleQuery.Criteria criteria = roleQuery.createCriteria();
+        criteria.andIdIn(ids);
+        if(ids.size() == roleMapper.countByQuery(roleQuery)) {
+            return NormalResponse.newInstance().setData(true);
+        } else {
+            return NormalResponse.newInstance().setData(false);
+        }
     }
 
     public NormalResponse getById(Integer id) {
-        return null;
+        if(null == id) return NormalResponse.newInstance().setErrorCode(ErrorEnum.INVALID_REQUEST);
+        return NormalResponse.newInstance().setData(roleMapper.selectByPrimaryKey(id));
     }
 
     public NormalResponse getByIds(List<Integer> ids) {
-        return null;
+        if(null == ids) NormalResponse.newInstance().setErrorCode(ErrorEnum.INVALID_REQUEST);
+
+        RoleQuery roleQuery = new RoleQuery();
+        roleQuery.createCriteria().andIdIn(ids);
+        return NormalResponse.newInstance().setData(roleMapper.selectByQuery(roleQuery));
     }
 
     public NormalResponse list(Role role, PageInfo pageInfo) {
-        return null;
+        if(null == pageInfo) pageInfo = new PageInfo();
+
+        RoleQuery roleQuery = new RoleQuery();
+        roleQuery.page(pageInfo.getPage(), pageInfo.getLimit());
+
+        RoleQuery.Criteria criteria = roleQuery.createCriteria();
+        criteria.andIsdelEqualTo(DBEnum.FALSE.getCode());
+        criteria.andEnableEqualTo(DBEnum.TRUE.getCode());
+        if(null != role) {
+            if(null != role.getName())criteria.andNameLike(role.getName());
+        }
+
+        return NormalResponse.newInstance().setData(roleMapper.selectByQuery(roleQuery));
     }
 
     public NormalResponse add(Role role) {
-        return null;
+        roleMapper.insert(role);
+        return NormalResponse.newInstance().setData(role);
     }
 
     public NormalResponse batchInsert(List<Role> roles) {
-        return null;
+        if(null == roles) return NormalResponse.newInstance().setErrorCode(ErrorEnum.INVALID_REQUEST);
+
+        return NormalResponse.newInstance().setData(roleMapper.batchInsert(roles));
     }
 
     public NormalResponse update(Role role) {
-        return null;
+        if(null == role || null == role.getId()) return NormalResponse.newInstance().setErrorCode(ErrorEnum.INVALID_REQUEST);
+        roleMapper.updateByPrimaryKeySelective(role);
+
+        return NormalResponse.newInstance().setData(role);
     }
 
     public NormalResponse delete(Role role) {
-        return null;
+        if(null == role || null == role.getId()) return NormalResponse.newInstance().setErrorCode(ErrorEnum.INVALID_REQUEST);
+
+        role.setIsdel(DBEnum.TRUE.getCode());
+        roleMapper.updateByPrimaryKeySelective(role);
+        return NormalResponse.newInstance().setData(null);
     }
 
 
