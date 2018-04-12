@@ -63,7 +63,7 @@ public class NormalResponse {
         this.errorCode = resultCode.getCode();
         this.success = false;
 
-        if(null != this.errorMsg) {
+        if(null == this.errorMsg) {
             this.errorMsg = resultCode.getMsg();
         }
 

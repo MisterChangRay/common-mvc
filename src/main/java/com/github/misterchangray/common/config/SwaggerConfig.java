@@ -27,7 +27,7 @@ import java.util.List;
 @Configuration      //让Spring来加载该类配置
 @EnableWebMvc       //启用Mvc，非springboot框架需要引入注解@EnableWebMvc
 @EnableSwagger2     //启用Swagger2
-@ComponentScan(basePackages = "com.zr")
+@ComponentScan(basePackages = "com.github.misterchangray")
 public class SwaggerConfig {
     @Bean
     public Docket createRestApi() {
@@ -41,7 +41,7 @@ public class SwaggerConfig {
                 new Docket(DocumentationType.SWAGGER_2)
                 .apiInfo(apiInfo()).select()
                         //扫描指定包中的swagger注解
-                        //.apis(RequestHandlerSelectors.basePackage("com.zr.controller"))
+                        //.apis(RequestHandlerSelectors.basePackage("com.github.misterchangray.controller"))
                         //扫描所有有注解的api，用这种方式更灵活
                 .apis(RequestHandlerSelectors.withMethodAnnotation(ApiOperation.class))
                 .paths(PathSelectors.any())

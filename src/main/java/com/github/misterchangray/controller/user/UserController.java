@@ -122,7 +122,9 @@ public class UserController {
     @RequestMapping(value = "{id}", method = RequestMethod.DELETE)
     @ResponseBody
     public NormalResponse delete(@PathVariable(value = "id") Integer id) {
-        return null;
+        User user = new User();
+        user.setId(id);
+        return userService.delete(user);
     }
 
 

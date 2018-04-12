@@ -72,7 +72,7 @@
     <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
         <property name="dataSource" ref="dataSource" />
         <property name="configLocation" value="classpath:mybatis.xml"/>
-        <property name="mapperLocations" value="classpath*:com/zr/dao/xml/*Mapper.xml"/>
+        <property name="mapperLocations" value="classpath*:com/github/misterchangray/dao/xml/*Mapper.xml"/>
     </bean>
 
     <!-- mybatis 配置SqlSessionTemplate -->

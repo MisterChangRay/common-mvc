@@ -4,6 +4,7 @@ import com.github.misterchangray.common.enums.ErrorEnum;
 import com.github.misterchangray.common.NormalResponse;
 import com.github.misterchangray.common.PageInfo;
 import com.github.misterchangray.dao.entity.User;
+import com.github.misterchangray.dao.entity.UserQuery;
 import com.github.misterchangray.dao.entity.UserRoleMap;
 import com.github.misterchangray.dao.entity.UserRoleMapQuery;
 import com.github.misterchangray.dao.mapper.UserMapper;
@@ -69,38 +70,87 @@ public class UserServiceImpl implements UserService{
 
 
     public NormalResponse checkUserInfo(String username, String email, String phone, String idcard) {
-        return null;
+        UserQuery userQuery = new UserQuery();
+        UserQuery.Criteria criteria = userQuery.createCriteria();
+
+        if(null != email) userQuery.or(criteria.andEmailEqualTo(email));
+        if(null != phone) userQuery.or(criteria.andPhoneEqualTo(phone));
+        if(null != idcard) userQuery.or(criteria.andIdcardEqualTo(idcard));
+        if(null != username) userQuery.or(criteria.andUsernameEqualTo(username));
+
+        return NormalResponse.newInstance().setData(userMapper.selectByQuery(userQuery));
     }
 
     public NormalResponse exist(List<Integer> ids) {
-        return null;
+        if(null == ids) NormalResponse.newInstance().setErrorCode(ErrorEnum.INVALID_REQUEST);
+
+        UserQuery userQuery = new UserQuery();
+        UserQuery.Criteria criteria = userQuery.createCriteria();
+        criteria.andIdIn(ids);
+        if(ids.size() == userMapper.countByQuery(userQuery)) {
+           return NormalResponse.newInstance().setData(true);
+        } else {
+           return NormalResponse.newInstance().setData(false);
+        }
     }
 
     public NormalResponse getById(Integer id) {
-        return null;
+        if(null == id) return NormalResponse.newInstance().setErrorCode(ErrorEnum.INVALID_REQUEST);
+        return NormalResponse.newInstance().setData(userMapper.selectByPrimaryKey(id));
     }
 
     public NormalResponse getByIds(List<Integer> ids) {
-        return null;
+        if(null == ids) NormalResponse.newInstance().setErrorCode(ErrorEnum.INVALID_REQUEST);
+
+        UserQuery userQuery = new UserQuery();
+        userQuery.createCriteria().andIdIn(ids);
+        return NormalResponse.newInstance().setData(userMapper.selectByQuery(userQuery));
     }
 
     public NormalResponse list(User user, PageInfo pageInfo) {
-        return null;
+        if(null == pageInfo) pageInfo = new PageInfo();
+
+        UserQuery userQuery = new UserQuery();
+        userQuery.page(pageInfo.getPage(), pageInfo.getLimit());
+
+        UserQuery.Criteria criteria = userQuery.createCriteria();
+        criteria.andIsdelEqualTo(DBEnum.FALSE.getCode());
+        criteria.andEnableEqualTo(DBEnum.TRUE.getCode());
+        if(null != user) {
+            if(null != user.getName())criteria.andNameLike(user.getName());
+            if(null != user.getUsername())criteria.andUsernameLike(user.getUsername());
+            if(null != user.getPhone())criteria.andPhoneLike(user.getPhone());
+            if(null != user.getSex())criteria.andSexEqualTo(user.getSex());
+        }
+
+        return NormalResponse.newInstance().setData(userMapper.selectByQuery(userQuery));
     }
 
     public NormalResponse add(User user) {
-        return null;
+        if(null == user) return NormalResponse.newInstance().setErrorCode(ErrorEnum.INVALID_REQUEST);
+
+        user.setEnable(DBEnum.TRUE.getCode());
+        user.setIsdel(DBEnum.FALSE.getCode());
+        userMapper.insert(user);
+        return NormalResponse.newInstance().setData(user);
     }
 
     public NormalResponse batchInsert(List<User> users) {
-        return null;
+        if(null == users) return NormalResponse.newInstance().setErrorCode(ErrorEnum.INVALID_REQUEST);
+
+        return NormalResponse.newInstance().setData(userMapper.batchInsert(users));
     }
 
     public NormalResponse update(User user) {
-        return null;
+        if(null == user || null == user.getId()) return NormalResponse.newInstance().setErrorCode(ErrorEnum.INVALID_REQUEST);
+
+        return NormalResponse.newInstance().setData(userMapper.updateByPrimaryKeySelective(user));
     }
 
     public NormalResponse delete(User user) {
-        return null;
+        if(null == user || null == user.getId()) return NormalResponse.newInstance().setErrorCode(ErrorEnum.INVALID_REQUEST);
+
+        user.setIsdel(DBEnum.TRUE.getCode());
+        return NormalResponse.newInstance().setData(userMapper.updateByPrimaryKeySelective(user));
     }
 }

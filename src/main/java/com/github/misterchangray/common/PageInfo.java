@@ -42,6 +42,9 @@ public class PageInfo {
     }
 
     public PageInfo() {
+        //        默认每页10条，第一页开始
+        this.page = 0;
+        this.limit = 10;
     }
     public PageInfo(Integer page, Integer limit) {
         this.page = page;
