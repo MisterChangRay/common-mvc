@@ -1,5 +1,5 @@
 # common-core
-基于maven的spring4.3+mybatis3.4+swagger2.6的后台整合，方便快速进行后台接口开发。
+基于maven的spring4.3+mybatis3.4+swagger2.6的后台整合，用于快速构建中小型API、RESTful API项目，该项目稳定、简单、快速，使我们摆脱那些重复劳动，专注于业务代码的编写，减少加班。
 
 
 ### 已完成功能
@@ -10,13 +10,14 @@
 - 生成entity类时自动提取数据库注释生成swagger文档
 - 实现了更漂亮的swagger-ui
 
-### 安装步骤
+### 快速开始
 - clone本项目，创建下面的数据库和表
 - 使用IDE导入本项目，使用maven方式导入项目
 - 配置`jdbc.properties`下面的数据库相关信息（如果你需要使用mybitis逆向插件，也需要配置`generatorConfig.xml`这个文件中的数据库信息）
 - 使用maven编译后，配置tomcat并部署
 - 启动tomcat,访问以下链接测试接口；
 - 访问`http://localhost:8080/docs/index.html` 查看swagger生成的Api文档信息
+
 
 ### 建表语句
 ```sql
@@ -66,6 +67,14 @@ create table user (
    isdel int
  ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 ```
+
+
+### 开发者建议
+- 表名，建议使用小写，多个单词使用下划线拼接
+- entity内成员变量建议与表字段数量对应,`controller`层使用`application/json`传参,参数可以考虑封装成DTO对象
+- 需要工具类的话建议先从`common/utils`中找，实在没有再造轮子或引入类库，尽量精简项目
+- 开发规范建议遵循阿里巴巴Java开发手册（[最新版下载](https://github.com/lihengming/java-codes/blob/master/shared-resources/%E9%98%BF%E9%87%8C%E5%B7%B4%E5%B7%B4Java%E5%BC%80%E5%8F%91%E6%89%8B%E5%86%8CV1.2.0.pdf))
+- 建议在公司内部使用ShowDoc、Swagger2 、RAP等开源项目来编写、管理API文档
 
 
 ### 相关环境
