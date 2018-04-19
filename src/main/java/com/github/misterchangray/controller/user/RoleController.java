@@ -87,7 +87,7 @@ public class RoleController {
      */
     @ApiOperation(value = "新增角色", notes = "新增角色")
     @ApiImplicitParams({
-            @ApiImplicitParam(name="role", value = "角色实体对象", required = true, paramType = "query", dataType = "com.github.misterchangray.dao.entity.Role"),
+            @ApiImplicitParam(name="role", value = "角色实体对象", required = true, paramType = "body",  dataType = "com.github.misterchangray.dao.entity.Role"),
     })
     @Authentication
     @RequestMapping(method = RequestMethod.POST)

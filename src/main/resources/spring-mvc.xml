@@ -32,7 +32,7 @@
     <mvc:resources mapping="/image/**" location="/image/"/>
 
     <!-- 映射docs路径到swagger-ui中 -->
-    <mvc:resources mapping="/docs/**" location="/swagger-ui/" />
+    <mvc:resources mapping="/docs/**" location="/common-core-swagger-ui/" />
 
         <!-- 配置注解驱动 可以将request参数与绑定到controller参数上 -->
     <mvc:annotation-driven>
