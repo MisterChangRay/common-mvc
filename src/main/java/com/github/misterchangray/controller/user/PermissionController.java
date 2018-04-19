@@ -38,7 +38,7 @@ public class PermissionController {
      */
     @ApiOperation(value = "根据ID获取权限", notes = "根据ID获取权限")
     @ApiImplicitParams({
-            @ApiImplicitParam(name="permissionId", value = "权限ID", required = true, paramType = "query", dataType = "Integer"),
+            @ApiImplicitParam(name="permissionId", value = "权限ID", required = true, paramType = "path", dataType = "int"),
     })
     @Authentication
     @RequestMapping(value="/{permissionId}", method = RequestMethod.GET)
@@ -57,8 +57,8 @@ public class PermissionController {
      */
     @ApiOperation(value = "权限列表", notes = "获取权限列表")
     @ApiImplicitParams({
-            @ApiImplicitParam(name="page", value = "页码", required = true, paramType = "query", dataType = "Integer"),
-            @ApiImplicitParam(name="limit", value = "每页条数", required = true, paramType = "query", dataType = "Integer"),
+            @ApiImplicitParam(name="page", value = "页码", required = true, paramType = "query", dataType = "int"),
+            @ApiImplicitParam(name="limit", value = "每页条数", required = true, paramType = "query", dataType = "int"),
     })
     @Authentication
     @RequestMapping(method = RequestMethod.GET)
@@ -92,7 +92,7 @@ public class PermissionController {
      */
     @ApiOperation(value = "删除权限", notes = "根据ID删除权限")
     @ApiImplicitParams({
-            @ApiImplicitParam(name="id", value = "权限ID", required = true, paramType = "path", dataType = "Integer"),
+            @ApiImplicitParam(name="id", value = "权限ID", required = true, paramType = "path", dataType = "int"),
     })
     @Authentication
     @RequestMapping(value = "/{id}", method = RequestMethod.DELETE)

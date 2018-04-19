@@ -47,7 +47,7 @@ public class RoleController {
      */
     @ApiOperation(value = "编辑角色权限", notes = "编辑角色下的权限")
     @ApiImplicitParams({
-            @ApiImplicitParam(name="roleId", value = "角色ID", required = true, paramType = "form", dataType = "int"),
+            @ApiImplicitParam(name="roleId", value = "角色ID", required = true, paramType = "query", dataType = "int"),
             @ApiImplicitParam(name="permissionIds", value = "权限ID", required = true, paramType = "form", dataType = "int"),
     })
     @Authentication
@@ -104,7 +104,7 @@ public class RoleController {
      */
     @ApiOperation(value = "删除角色", notes = "根据ID删除角色")
     @ApiImplicitParams({
-            @ApiImplicitParam(name="id", value = "角色ID", required = true, paramType = "query", dataType = "int"),
+            @ApiImplicitParam(name="id", value = "角色ID", required = true, paramType = "path", dataType = "int"),
     })
     @Authentication
     @RequestMapping(value = "/{id}", method = RequestMethod.DELETE)
@@ -123,7 +123,7 @@ public class RoleController {
      */
     @ApiOperation(value = "编辑角色", notes = "根据ID编辑角色")
     @ApiImplicitParams({
-            @ApiImplicitParam(name="role", value = "角色实体对象", required = true, paramType = "query", dataType = "com.github.misterchangray.dao.entity.Role"),
+            @ApiImplicitParam(name="role", value = "角色实体对象", required = true, paramType = "body", dataType = "com.github.misterchangray.dao.entity.Role"),
     })
     @Authentication
     @RequestMapping(method = RequestMethod.PUT)

@@ -28,11 +28,18 @@ public class RoleServiceImpl implements RoleService {
     @Autowired
     PermissionService permissionService;
 
+
+    /**
+     * 检查角色是否都存在
+     * @param ids 待检测ID集合
+     * @return true/id都存在,false/有部分id不存在
+     */
     public NormalResponse exist(List<Integer> ids) {
         if(null == ids) NormalResponse.newInstance().setErrorCode(ErrorEnum.INVALID_REQUEST);
 
         RoleQuery roleQuery = new RoleQuery();
         RoleQuery.Criteria criteria = roleQuery.createCriteria();
+        criteria.andIsdelEqualTo(DBEnum.FALSE.getCode());
         criteria.andIdIn(ids);
         if(ids.size() == roleMapper.countByQuery(roleQuery)) {
             return NormalResponse.newInstance().setData(true);
@@ -41,11 +48,22 @@ public class RoleServiceImpl implements RoleService {
         }
     }
 
+
+    /**
+     * 根据id获取角色对象
+     * @param id 带获取角色id
+     * @return Role
+     */
     public NormalResponse getById(Integer id) {
         if(null == id) return NormalResponse.newInstance().setErrorCode(ErrorEnum.INVALID_REQUEST);
         return NormalResponse.newInstance().setData(roleMapper.selectByPrimaryKey(id));
     }
 
+    /**
+     * 根据id集合获取多个对象
+     * @param ids  待获取对象的id集合
+     * @return List[Role]
+     */
     public NormalResponse getByIds(List<Integer> ids) {
         if(null == ids) NormalResponse.newInstance().setErrorCode(ErrorEnum.INVALID_REQUEST);
 
@@ -54,6 +72,12 @@ public class RoleServiceImpl implements RoleService {
         return NormalResponse.newInstance().setData(roleMapper.selectByQuery(roleQuery));
     }
 
+    /**
+     * 分页获取角色数据
+     * @param role  筛选条件
+     * @param pageInfo 分页信息
+     * @return  List[Role]
+     */
     public NormalResponse list(Role role, PageInfo pageInfo) {
         if(null == pageInfo) pageInfo = new PageInfo();
 
@@ -70,24 +94,47 @@ public class RoleServiceImpl implements RoleService {
         return NormalResponse.newInstance().setData(roleMapper.selectByQuery(roleQuery));
     }
 
+    /**
+     * 增加角色信息
+     * @param role 增加角色信息
+     * @return  Role
+     */
     public NormalResponse add(Role role) {
+        role.setEnable(DBEnum.TRUE.getCode());
+        role.setIsdel(DBEnum.FALSE.getCode());
         roleMapper.insert(role);
         return NormalResponse.newInstance().setData(role);
     }
 
+    /**
+     * 批量插入角色数据
+     * @param roles List[Role]
+     * @return
+     */
     public NormalResponse batchInsert(List<Role> roles) {
         if(null == roles) return NormalResponse.newInstance().setErrorCode(ErrorEnum.INVALID_REQUEST);
 
         return NormalResponse.newInstance().setData(roleMapper.batchInsert(roles));
     }
 
+    /**
+     * 更新角色数据
+     * @param role 角色对象
+     * @return Role
+     */
     public NormalResponse update(Role role) {
         if(null == role || null == role.getId()) return NormalResponse.newInstance().setErrorCode(ErrorEnum.INVALID_REQUEST);
         roleMapper.updateByPrimaryKeySelective(role);
 
+        roleMapper.selectByPrimaryKey(role.getId());
         return NormalResponse.newInstance().setData(role);
     }
 
+    /**
+     * 删除角色对象
+     * @param role 待删除角色对象
+     * @return null
+     */
     public NormalResponse delete(Role role) {
         if(null == role || null == role.getId()) return NormalResponse.newInstance().setErrorCode(ErrorEnum.INVALID_REQUEST);
 

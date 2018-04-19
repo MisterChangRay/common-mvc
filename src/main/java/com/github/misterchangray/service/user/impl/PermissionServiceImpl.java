@@ -24,12 +24,18 @@ public class PermissionServiceImpl implements PermissionService{
     PermissionMapper permissionMapper;
 
 
+    /**
+     * 检查权限是否存在
+     * @param ids 待检测的ID集合
+     * @return false有部分不存在/true全都存在
+     */
     public NormalResponse exist(List<Integer> ids) {
         if(null == ids) NormalResponse.newInstance().setErrorCode(ErrorEnum.INVALID_REQUEST);
 
         PermissionQuery permissionQuery = new PermissionQuery();
         PermissionQuery.Criteria criteria = permissionQuery.createCriteria();
         criteria.andIdIn(ids);
+        criteria.andIsdelEqualTo(DBEnum.FALSE.getCode());
         if(ids.size() == permissionMapper.countByQuery(permissionQuery)) {
             return NormalResponse.newInstance().setData(true);
         } else {
@@ -37,11 +43,21 @@ public class PermissionServiceImpl implements PermissionService{
         }
     }
 
+    /**
+     * 根据ID获取权限对象
+     * @param id 待获取的id
+     * @return Permission
+     */
     public NormalResponse getById(Integer id) {
         if(null == id) return NormalResponse.newInstance().setErrorCode(ErrorEnum.INVALID_REQUEST);
         return NormalResponse.newInstance().setData(permissionMapper.selectByPrimaryKey(id));
     }
 
+    /**
+     * 根据ID集合获取权限对象
+     * @param ids 待获取的ID集合
+     * @return List[Permission]
+     */
     public NormalResponse getByIds(List<Integer> ids) {
         if(null == ids) NormalResponse.newInstance().setErrorCode(ErrorEnum.INVALID_REQUEST);
 
@@ -50,6 +66,12 @@ public class PermissionServiceImpl implements PermissionService{
         return NormalResponse.newInstance().setData(permissionMapper.selectByQuery(permissionQuery));
     }
 
+    /**
+     *  分页获取权限对象
+     * @param permission 筛选信息
+     * @param pageInfo 分页信息
+     * @return List[Permission]
+     */
     public NormalResponse list(Permission permission, PageInfo pageInfo) {
         if(null == pageInfo) pageInfo = new PageInfo();
 
@@ -65,23 +87,46 @@ public class PermissionServiceImpl implements PermissionService{
         return NormalResponse.newInstance().setData(permissionMapper.selectByQuery(permissionQuery));
     }
 
+    /**
+     * 新增权限对象
+     * @param permission 待新增的对象
+     * @return Permission
+     */
     public NormalResponse add(Permission permission) {
+        permission.setIsdel(DBEnum.FALSE.getCode());
         permissionMapper.insert(permission);
         return NormalResponse.newInstance().setData(permission);
     }
 
+    /**
+     * 批量插入权限对象
+     * @param permissions 待新增的对象集合
+     * @return list[Permission]
+     */
     public NormalResponse batchInsert(List<Permission> permissions) {
         if(null == permissions) return NormalResponse.newInstance().setErrorCode(ErrorEnum.INVALID_REQUEST);
 
         return NormalResponse.newInstance().setData(permissionMapper.batchInsert(permissions));
     }
 
+    /**
+     * 更新权限对象
+     * @param permission 待更新的权限对象
+     * @return Permission
+     */
     public NormalResponse update(Permission permission) {
         if(null == permission || null == permission.getId()) return NormalResponse.newInstance().setErrorCode(ErrorEnum.INVALID_REQUEST);
         permissionMapper.updateByPrimaryKeySelective(permission);
+
+        permission = permissionMapper.selectByPrimaryKey(permission.getId());
         return NormalResponse.newInstance().setData(permission);
     }
 
+    /**
+     * 删除权限对象
+     * @param permission 待删除的权限对象
+     * @return null
+     */
     public NormalResponse delete(Permission permission) {
         if(null == permission || null == permission.getId()) return NormalResponse.newInstance().setErrorCode(ErrorEnum.INVALID_REQUEST);
 

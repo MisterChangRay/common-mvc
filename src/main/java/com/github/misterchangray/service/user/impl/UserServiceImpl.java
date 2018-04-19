@@ -68,7 +68,14 @@ public class UserServiceImpl implements UserService{
         return normalResponse.setErrorCode(ErrorEnum.INVALID);
     }
 
-
+    /**
+     * 检查用户信息是否存在
+     * @param username 用户名
+     * @param email 邮箱
+     * @param phone 电话
+     * @param idcard    身份证
+     * @return true/false
+     */
     public NormalResponse checkUserInfo(String username, String email, String phone, String idcard) {
         UserQuery userQuery = new UserQuery();
         UserQuery.Criteria criteria = userQuery.createCriteria();
@@ -81,6 +88,12 @@ public class UserServiceImpl implements UserService{
         return NormalResponse.newInstance().setData(userMapper.selectByQuery(userQuery));
     }
 
+
+    /**
+     * 检查id集合是否全部存在
+     * @param ids 待检查ID集合
+     * @return true/false
+     */
     public NormalResponse exist(List<Integer> ids) {
         if(null == ids) NormalResponse.newInstance().setErrorCode(ErrorEnum.INVALID_REQUEST);
 
@@ -94,11 +107,22 @@ public class UserServiceImpl implements UserService{
         }
     }
 
+
+    /**
+     * 根据ID获取用户
+     * @param id 待获取ID
+     * @return  User
+     */
     public NormalResponse getById(Integer id) {
         if(null == id) return NormalResponse.newInstance().setErrorCode(ErrorEnum.INVALID_REQUEST);
         return NormalResponse.newInstance().setData(userMapper.selectByPrimaryKey(id));
     }
 
+    /**
+     * 根据ID获取用户
+     * @param ids 待获取的ID集合
+     * @return  List[User]
+     */
     public NormalResponse getByIds(List<Integer> ids) {
         if(null == ids) NormalResponse.newInstance().setErrorCode(ErrorEnum.INVALID_REQUEST);
 
@@ -107,6 +131,12 @@ public class UserServiceImpl implements UserService{
         return NormalResponse.newInstance().setData(userMapper.selectByQuery(userQuery));
     }
 
+    /**
+     * 分页查询用户信息
+     * @param user 筛选条件
+     * @param pageInfo 分页信息
+     * @return List[User]
+     */
     public NormalResponse list(User user, PageInfo pageInfo) {
         if(null == pageInfo) pageInfo = new PageInfo();
 
@@ -126,6 +156,11 @@ public class UserServiceImpl implements UserService{
         return NormalResponse.newInstance().setData(userMapper.selectByQuery(userQuery));
     }
 
+    /**
+     * 增加用户
+     * @param user 待增加用户
+     * @return User
+     */
     public NormalResponse add(User user) {
         if(null == user) return NormalResponse.newInstance().setErrorCode(ErrorEnum.INVALID_REQUEST);
 
@@ -135,19 +170,36 @@ public class UserServiceImpl implements UserService{
         return NormalResponse.newInstance().setData(user);
     }
 
+    /**
+     * 批量插入用户信息
+     * @param users 待增加用户
+     * @return
+     */
     public NormalResponse batchInsert(List<User> users) {
         if(null == users) return NormalResponse.newInstance().setErrorCode(ErrorEnum.INVALID_REQUEST);
 
         return NormalResponse.newInstance().setData(userMapper.batchInsert(users));
     }
 
+    /**
+     * 更新用户信息
+     * @param user 待更新用户
+     * @return User
+     */
     public NormalResponse update(User user) {
         if(null == user || null == user.getId()) return NormalResponse.newInstance().setErrorCode(ErrorEnum.INVALID_REQUEST);
         userMapper.updateByPrimaryKeySelective(user);
 
+        userMapper.selectByPrimaryKey(user.getId());
         return NormalResponse.newInstance().setData(user);
     }
 
+
+    /**
+     *  删除用户
+     * @param user 待删除用户
+     * @return null
+     */
     public NormalResponse delete(User user) {
         if(null == user || null == user.getId()) return NormalResponse.newInstance().setErrorCode(ErrorEnum.INVALID_REQUEST);
 
