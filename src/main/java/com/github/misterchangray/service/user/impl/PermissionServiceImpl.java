@@ -3,6 +3,7 @@ package com.github.misterchangray.service.user.impl;
 import com.github.misterchangray.common.NormalResponse;
 import com.github.misterchangray.common.enums.DBEnum;
 import com.github.misterchangray.common.enums.ErrorEnum;
+import com.github.misterchangray.common.utils.EntityUtils;
 import com.github.misterchangray.dao.entity.Permission;
 import com.github.misterchangray.common.PageInfo;
 import com.github.misterchangray.dao.entity.PermissionQuery;
@@ -50,7 +51,9 @@ public class PermissionServiceImpl implements PermissionService{
      */
     public NormalResponse getById(Integer id) {
         if(null == id) return NormalResponse.newInstance().setErrorCode(ErrorEnum.INVALID_REQUEST);
-        return NormalResponse.newInstance().setData(permissionMapper.selectByPrimaryKey(id));
+        Permission permission = permissionMapper.selectByPrimaryKey(id);
+        if(permission.getIsdel().equals(DBEnum.TRUE.getCode())) return NormalResponse.newInstance().setErrorCode(ErrorEnum.GONE);
+        return NormalResponse.newInstance().setData(permission);
     }
 
     /**
@@ -62,7 +65,7 @@ public class PermissionServiceImpl implements PermissionService{
         if(null == ids) NormalResponse.newInstance().setErrorCode(ErrorEnum.INVALID_REQUEST);
 
         PermissionQuery permissionQuery = new PermissionQuery();
-        permissionQuery.createCriteria().andIdIn(ids);
+        permissionQuery.createCriteria().andIdIn(ids).andIsdelEqualTo(DBEnum.FALSE.getCode());
         return NormalResponse.newInstance().setData(permissionMapper.selectByQuery(permissionQuery));
     }
 
@@ -93,6 +96,7 @@ public class PermissionServiceImpl implements PermissionService{
      * @return Permission
      */
     public NormalResponse add(Permission permission) {
+        permission.setId(null);
         permission.setIsdel(DBEnum.FALSE.getCode());
         permissionMapper.insert(permission);
         return NormalResponse.newInstance().setData(permission);
@@ -116,9 +120,13 @@ public class PermissionServiceImpl implements PermissionService{
      */
     public NormalResponse update(Permission permission) {
         if(null == permission || null == permission.getId()) return NormalResponse.newInstance().setErrorCode(ErrorEnum.INVALID_REQUEST);
-        permissionMapper.updateByPrimaryKeySelective(permission);
 
-        permission = permissionMapper.selectByPrimaryKey(permission.getId());
+        Permission dbPermission = permissionMapper.selectByPrimaryKey(permission.getId());
+        if(DBEnum.FALSE.getCode().equals(dbPermission.getIsdel())) {
+            permissionMapper.updateByPrimaryKeySelective(permission);
+            permission = permissionMapper.selectByPrimaryKey(permission.getId());
+        }
+
         return NormalResponse.newInstance().setData(permission);
     }
 

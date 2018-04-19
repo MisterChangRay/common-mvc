@@ -3,6 +3,7 @@ package com.github.misterchangray.service.user.impl;
 import com.github.misterchangray.common.enums.ErrorEnum;
 import com.github.misterchangray.common.NormalResponse;
 import com.github.misterchangray.common.PageInfo;
+import com.github.misterchangray.common.utils.EntityUtils;
 import com.github.misterchangray.dao.entity.User;
 import com.github.misterchangray.dao.entity.UserQuery;
 import com.github.misterchangray.dao.entity.UserRoleMap;
@@ -12,6 +13,7 @@ import com.github.misterchangray.common.enums.DBEnum;
 import com.github.misterchangray.dao.mapper.UserRoleMapMapper;
 import com.github.misterchangray.service.user.RoleService;
 import com.github.misterchangray.service.user.UserService;
+import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -115,7 +117,10 @@ public class UserServiceImpl implements UserService{
      */
     public NormalResponse getById(Integer id) {
         if(null == id) return NormalResponse.newInstance().setErrorCode(ErrorEnum.INVALID_REQUEST);
-        return NormalResponse.newInstance().setData(userMapper.selectByPrimaryKey(id));
+        User user = userMapper.selectByPrimaryKey(id);
+
+        if(user.getIsdel().equals(DBEnum.TRUE.getCode()))  return NormalResponse.newInstance().setErrorCode(ErrorEnum.GONE);
+        return NormalResponse.newInstance().setData(user);
     }
 
     /**
@@ -127,7 +132,8 @@ public class UserServiceImpl implements UserService{
         if(null == ids) NormalResponse.newInstance().setErrorCode(ErrorEnum.INVALID_REQUEST);
 
         UserQuery userQuery = new UserQuery();
-        userQuery.createCriteria().andIdIn(ids);
+        userQuery.createCriteria().andIdIn(ids).andIsdelEqualTo(DBEnum.FALSE.getCode());
+
         return NormalResponse.newInstance().setData(userMapper.selectByQuery(userQuery));
     }
 
@@ -164,6 +170,7 @@ public class UserServiceImpl implements UserService{
     public NormalResponse add(User user) {
         if(null == user) return NormalResponse.newInstance().setErrorCode(ErrorEnum.INVALID_REQUEST);
 
+        user.setId(null);
         user.setEnable(DBEnum.TRUE.getCode());
         user.setIsdel(DBEnum.FALSE.getCode());
         userMapper.insert(user);
@@ -188,9 +195,13 @@ public class UserServiceImpl implements UserService{
      */
     public NormalResponse update(User user) {
         if(null == user || null == user.getId()) return NormalResponse.newInstance().setErrorCode(ErrorEnum.INVALID_REQUEST);
-        userMapper.updateByPrimaryKeySelective(user);
 
-        userMapper.selectByPrimaryKey(user.getId());
+        User dbUser = userMapper.selectByPrimaryKey(user.getId());
+        if(dbUser.getIsdel().equals(DBEnum.FALSE.getCode())) {
+            userMapper.updateByPrimaryKeySelective(user);
+            user = userMapper.selectByPrimaryKey(user.getId());
+        }
+
         return NormalResponse.newInstance().setData(user);
     }
 
