@@ -10,7 +10,12 @@ public enum DBEnum {
     FALSE(0, "false"), //表否定
 
     MAN(1, "男"), //男
-    WOMAN(0, "女");//女
+    WOMAN(0, "女"),//女
+
+    QUERY(100, "query"), //查询
+    INSERT(101, "insert"),//新增
+    UPDATE(102, "update"),//修改
+    DELETE(103, "delete");//删除
 
     private Integer code;
     private String desc;

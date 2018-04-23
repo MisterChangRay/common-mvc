@@ -70,6 +70,7 @@
         <table tableName="permission"><generatedKey column="id" sqlStatement="MySql" identity="true" /></table>
         <table tableName="role_permission_map"></table>
         <table tableName="user_role_map"></table>
+        <table tableName="business_log"></table>
 
 
         <!-- 有些表的字段需要指定java类型
