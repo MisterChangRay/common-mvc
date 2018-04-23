@@ -1,7 +1,9 @@
 package com.github.misterchangray.controller.user;
 
+import com.github.misterchangray.common.enums.DBEnum;
 import com.github.misterchangray.common.enums.ErrorEnum;
 import com.github.misterchangray.common.NormalResponse;
+import com.github.misterchangray.common.utils.MapBuilder;
 import com.github.misterchangray.dao.entity.User;
 import com.github.misterchangray.dao.entity.UserQuery;
 import com.github.misterchangray.dao.mapper.UserMapper;
@@ -57,17 +59,24 @@ public class AuthController {
         criteria.andUsernameEqualTo(username).andPasswordEqualTo(password);
 
         List<User> userList = userMapper.selectByQuery(userQuery);
-        if(0 < userList.size()) {
-            UUID token = UUID.randomUUID();
-            httpSession.setAttribute("Authentication", UUID.randomUUID());
-
-            Map result = new HashMap();
-            result.put("Authentication", token.toString());
-
-            res.setData(result);
-        } else {
+        if(0 == userList.size()) {
             res.setErrorCode(ErrorEnum.INVALID).setErrorMsg("无效用户名或密码");
+            return res;
         }
+        User user = userList.get(1);
+        if(DBEnum.TRUE.getCode().equals(user.getIsdel())) {
+            res.setErrorCode(ErrorEnum.GONE).setErrorMsg("该用户已被删除");
+            return  res;
+        }
+        if(DBEnum.TRUE.getCode().equals(user.getEnable())) {
+            res.setErrorCode(ErrorEnum.DISABLED).setErrorMsg("该用户已被禁用");
+            return  res;
+        }
+
+        String token = UUID.randomUUID().toString();
+        httpSession.setAttribute("Authentication", token);
+        httpSession.setAttribute("currentUser", user);
+        res.setData(token);
         return res;
     }
 

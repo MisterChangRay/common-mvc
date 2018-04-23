@@ -48,7 +48,7 @@ public interface BaseService<Entity> {
      * @param entity
      * @return
      */
-    NormalResponse add(Entity entity);
+    NormalResponse insert(Entity entity);
 
     /**
      * 批量新增

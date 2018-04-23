@@ -81,7 +81,7 @@ public class PermissionController {
     @RequestMapping(method = RequestMethod.POST)
     @ResponseBody
     public NormalResponse add(@RequestBody Permission permission) {
-       return permissionService.add(permission);
+       return permissionService.insert(permission);
     }
 
 

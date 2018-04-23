@@ -15,7 +15,7 @@ public class MapBuilder extends HashMap {
 
     private MapBuilder() {}
 
-    public static Map<String, Object> build() {
+    public static MapBuilder build() {
         return new MapBuilder();
     }
 
@@ -25,7 +25,7 @@ public class MapBuilder extends HashMap {
      * @param value
      * @return MapBuilder
      */
-    private MapBuilder add(String key, Object value) {
+    public MapBuilder add(String key, Object value) {
         super.put(key, value);
         return  this;
     }
@@ -36,7 +36,7 @@ public class MapBuilder extends HashMap {
      * @param value
      * @return MapBuilder
      */
-    private MapBuilder put(String key, Object value) {
+    public MapBuilder put(String key, Object value) {
         this.add(key, value);
         return  this;
     }

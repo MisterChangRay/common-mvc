@@ -93,7 +93,7 @@ public class RoleController {
     @RequestMapping(method = RequestMethod.POST)
     @ResponseBody
     public NormalResponse add(@RequestBody Role role) {
-       return roleService.add(role);
+       return roleService.insert(role);
     }
 
 

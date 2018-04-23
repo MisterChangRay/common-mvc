@@ -1,5 +1,6 @@
-package com.github.misterchangray.common.utils;
+package com.github.misterchangray.common.aop;
 
+import com.github.misterchangray.common.utils.DateUtils;
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.Around;
 import org.aspectj.lang.annotation.Aspect;
@@ -18,7 +19,7 @@ import java.util.Date;
  */
 @Component
 @Aspect
-public class PrintRunTime {
+public class PrintRunTimeAop {
 
     @Pointcut(value = "@annotation(com.github.misterchangray.common.annotation.PrintRunTime)")
     private void pointcut() {}

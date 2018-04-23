@@ -101,7 +101,7 @@ public class RoleServiceImpl implements RoleService {
      * @param role 增加角色信息
      * @return  Role
      */
-    public NormalResponse add(Role role) {
+    public NormalResponse insert(Role role) {
         role.setId(null);
         role.setEnable(DBEnum.TRUE.getCode());
         role.setIsdel(DBEnum.FALSE.getCode());

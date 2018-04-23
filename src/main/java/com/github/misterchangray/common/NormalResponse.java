@@ -1,8 +1,10 @@
 package com.github.misterchangray.common;
 
 import com.github.misterchangray.common.enums.ErrorEnum;
+import com.github.misterchangray.common.utils.JSONUtils;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
+import org.springframework.web.servlet.view.json.MappingJackson2JsonView;
 
 import java.util.List;
 
@@ -120,6 +122,10 @@ public class NormalResponse {
         return new NormalResponse();
     }
 
+    @Override
+    public String toString() {
+        return JSONUtils.obj2json(this);
+    }
 }
 
 

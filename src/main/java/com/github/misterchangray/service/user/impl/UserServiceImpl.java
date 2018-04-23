@@ -167,7 +167,7 @@ public class UserServiceImpl implements UserService{
      * @param user 待增加用户
      * @return User
      */
-    public NormalResponse add(User user) {
+    public NormalResponse insert(User user) {
         if(null == user) return NormalResponse.newInstance().setErrorCode(ErrorEnum.INVALID_REQUEST);
 
         user.setId(null);

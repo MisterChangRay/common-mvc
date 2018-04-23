@@ -95,7 +95,7 @@ public class PermissionServiceImpl implements PermissionService{
      * @param permission 待新增的对象
      * @return Permission
      */
-    public NormalResponse add(Permission permission) {
+    public NormalResponse insert(Permission permission) {
         permission.setId(null);
         permission.setIsdel(DBEnum.FALSE.getCode());
         permissionMapper.insert(permission);

@@ -52,7 +52,7 @@ public class UserController {
     @Authentication
     @RequestMapping(value="/{userId}/role", method = RequestMethod.PATCH)
     @ResponseBody
-    public NormalResponse editUserRole(@PathVariable Integer userId, @RequestParam List roleIds) {
+    public NormalResponse editUserRole(@PathVariable Integer userId, @RequestParam List<Integer> roleIds) {
         return userService.updateRole(userId, roleIds);
     }
 
@@ -105,7 +105,7 @@ public class UserController {
     @RequestMapping(method = RequestMethod.POST)
     @ResponseBody
     public NormalResponse add(@RequestBody User user) {
-        return userService.add(user);
+        return userService.insert(user);
     }
 
 
