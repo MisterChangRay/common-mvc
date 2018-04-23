@@ -66,6 +66,19 @@ create table user (
    role_id int unsigned,
    isdel int
  ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+ 
+ create table business_log  (
+	id   int unsigned primary key AUTO_INCREMENT comment '业务日志表',
+	table_name varchar(100) comment '表名',
+	business_name varchar(100) comment '业务名称',
+	method varchar(100) comment 'insert,update,delete',
+	user_id varchar(100) comment '操作人ID',
+	user_name varchar(100) comment '操作人名称',
+	create_date timestamp,
+	old_value varchar(500) ,
+	new_value varchar(500)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
 ```
 
 
