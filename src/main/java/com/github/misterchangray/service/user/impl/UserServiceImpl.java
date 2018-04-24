@@ -48,7 +48,7 @@ public class UserServiceImpl implements UserService{
         if(((Boolean)roleService.exist(roles).getData())) {
             //老数据标记为无效
             UserRoleMap userRoleMap= new UserRoleMap();
-            userRoleMap.setIsdel(DBEnum.TRUE.getCode());
+            userRoleMap.setDeleted(DBEnum.TRUE.getCode());
 
             UserRoleMapQuery userRoleMapQuery = new UserRoleMapQuery();
             UserRoleMapQuery.Criteria criteria = userRoleMapQuery.createCriteria();
@@ -119,7 +119,7 @@ public class UserServiceImpl implements UserService{
         if(null == id) return NormalResponse.newInstance().setErrorCode(ErrorEnum.INVALID_REQUEST);
         User user = userMapper.selectByPrimaryKey(id);
 
-        if(user.getIsdel().equals(DBEnum.TRUE.getCode()))  return NormalResponse.newInstance().setErrorCode(ErrorEnum.GONE);
+        if(user.getDeleted().equals(DBEnum.TRUE.getCode()))  return NormalResponse.newInstance().setErrorCode(ErrorEnum.GONE);
         return NormalResponse.newInstance().setData(user);
     }
 
@@ -132,7 +132,7 @@ public class UserServiceImpl implements UserService{
         if(null == ids) NormalResponse.newInstance().setErrorCode(ErrorEnum.INVALID_REQUEST);
 
         UserQuery userQuery = new UserQuery();
-        userQuery.createCriteria().andIdIn(ids).andIsdelEqualTo(DBEnum.FALSE.getCode());
+        userQuery.createCriteria().andIdIn(ids).andDeletedEqualTo(DBEnum.FALSE.getCode());
 
         return NormalResponse.newInstance().setData(userMapper.selectByQuery(userQuery));
     }
@@ -150,8 +150,8 @@ public class UserServiceImpl implements UserService{
         userQuery.page(pageInfo.getPage(), pageInfo.getLimit());
 
         UserQuery.Criteria criteria = userQuery.createCriteria();
-        criteria.andIsdelEqualTo(DBEnum.FALSE.getCode());
-        criteria.andEnableEqualTo(DBEnum.TRUE.getCode());
+        criteria.andDeletedEqualTo(DBEnum.FALSE.getCode());
+        criteria.andEnabledEqualTo(DBEnum.TRUE.getCode());
         if(null != user) {
             if(null != user.getName())criteria.andNameLike(user.getName());
             if(null != user.getUsername())criteria.andUsernameLike(user.getUsername());
@@ -171,8 +171,8 @@ public class UserServiceImpl implements UserService{
         if(null == user) return NormalResponse.newInstance().setErrorCode(ErrorEnum.INVALID_REQUEST);
 
         user.setId(null);
-        user.setEnable(DBEnum.TRUE.getCode());
-        user.setIsdel(DBEnum.FALSE.getCode());
+        user.setEnabled(DBEnum.TRUE.getCode());
+        user.setDeleted(DBEnum.FALSE.getCode());
         userMapper.insert(user);
         return NormalResponse.newInstance().setData(user);
     }
@@ -197,7 +197,7 @@ public class UserServiceImpl implements UserService{
         if(null == user || null == user.getId()) return NormalResponse.newInstance().setErrorCode(ErrorEnum.INVALID_REQUEST);
 
         User dbUser = userMapper.selectByPrimaryKey(user.getId());
-        if(dbUser.getIsdel().equals(DBEnum.FALSE.getCode())) {
+        if(dbUser.getDeleted().equals(DBEnum.FALSE.getCode())) {
             userMapper.updateByPrimaryKeySelective(user);
             user = userMapper.selectByPrimaryKey(user.getId());
         }
@@ -214,7 +214,7 @@ public class UserServiceImpl implements UserService{
     public NormalResponse delete(User user) {
         if(null == user || null == user.getId()) return NormalResponse.newInstance().setErrorCode(ErrorEnum.INVALID_REQUEST);
 
-        user.setIsdel(DBEnum.TRUE.getCode());
+        user.setDeleted(DBEnum.TRUE.getCode());
         userMapper.updateByPrimaryKeySelective(user);
         return NormalResponse.newInstance().setData(null);
     }

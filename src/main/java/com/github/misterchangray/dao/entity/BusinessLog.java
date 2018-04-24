@@ -6,31 +6,31 @@ import java.util.Date;
 
 @ApiModel(value="com.github.misterchangray.dao.entity.BusinessLog")
 public class BusinessLog {
-    @ApiModelProperty(value="id")
+    @ApiModelProperty(value="id业务日志表")
     private Integer id;
 
-    @ApiModelProperty(value="tableName")
+    @ApiModelProperty(value="tableName表名")
     private String tableName;
 
-    @ApiModelProperty(value="businessName")
+    @ApiModelProperty(value="businessName业务名称")
     private String businessName;
 
-    @ApiModelProperty(value="methodinsert,update,delete")
+    @ApiModelProperty(value="method操作方式")
     private String method;
 
-    @ApiModelProperty(value="userId")
+    @ApiModelProperty(value="userId操作人ID")
     private String userId;
 
-    @ApiModelProperty(value="userName")
+    @ApiModelProperty(value="userName操作人名称")
     private String userName;
 
     @ApiModelProperty(value="createDate")
     private Date createDate;
 
-    @ApiModelProperty(value="oldValue")
+    @ApiModelProperty(value="oldValue修改前数据")
     private String oldValue;
 
-    @ApiModelProperty(value="newValue")
+    @ApiModelProperty(value="newValue修改后数据")
     private String newValue;
 
     public Integer getId() {

@@ -39,7 +39,7 @@ public class RoleServiceImpl implements RoleService {
 
         RoleQuery roleQuery = new RoleQuery();
         RoleQuery.Criteria criteria = roleQuery.createCriteria();
-        criteria.andIsdelEqualTo(DBEnum.FALSE.getCode());
+        criteria.andDeletedEqualTo(DBEnum.FALSE.getCode());
         criteria.andIdIn(ids);
         if(ids.size() == roleMapper.countByQuery(roleQuery)) {
             return NormalResponse.newInstance().setData(true);
@@ -57,7 +57,7 @@ public class RoleServiceImpl implements RoleService {
     public NormalResponse getById(Integer id) {
         if(null == id) return NormalResponse.newInstance().setErrorCode(ErrorEnum.INVALID_REQUEST);
         Role role = roleMapper.selectByPrimaryKey(id);
-        if(role.getIsdel().equals(DBEnum.TRUE.getCode())) return NormalResponse.newInstance().setErrorCode(ErrorEnum.GONE);
+        if(role.getDeleted().equals(DBEnum.TRUE.getCode())) return NormalResponse.newInstance().setErrorCode(ErrorEnum.GONE);
         return NormalResponse.newInstance().setData(role);
     }
 
@@ -70,7 +70,7 @@ public class RoleServiceImpl implements RoleService {
         if(null == ids) NormalResponse.newInstance().setErrorCode(ErrorEnum.INVALID_REQUEST);
 
         RoleQuery roleQuery = new RoleQuery();
-        roleQuery.createCriteria().andIdIn(ids).andIsdelEqualTo(DBEnum.FALSE.getCode());
+        roleQuery.createCriteria().andIdIn(ids).andDeletedEqualTo(DBEnum.FALSE.getCode());
         return NormalResponse.newInstance().setData(roleMapper.selectByQuery(roleQuery));
     }
 
@@ -87,8 +87,8 @@ public class RoleServiceImpl implements RoleService {
         roleQuery.page(pageInfo.getPage(), pageInfo.getLimit());
 
         RoleQuery.Criteria criteria = roleQuery.createCriteria();
-        criteria.andIsdelEqualTo(DBEnum.FALSE.getCode());
-        criteria.andEnableEqualTo(DBEnum.TRUE.getCode());
+        criteria.andDeletedEqualTo(DBEnum.FALSE.getCode());
+        criteria.andEnabledEqualTo(DBEnum.TRUE.getCode());
         if(null != role) {
             if(null != role.getName())criteria.andNameLike(role.getName());
         }
@@ -103,8 +103,8 @@ public class RoleServiceImpl implements RoleService {
      */
     public NormalResponse insert(Role role) {
         role.setId(null);
-        role.setEnable(DBEnum.TRUE.getCode());
-        role.setIsdel(DBEnum.FALSE.getCode());
+        role.setEnabled(DBEnum.TRUE.getCode());
+        role.setDeleted(DBEnum.FALSE.getCode());
         roleMapper.insert(role);
         return NormalResponse.newInstance().setData(role);
     }
@@ -129,7 +129,7 @@ public class RoleServiceImpl implements RoleService {
         if(null == role || null == role.getId()) return NormalResponse.newInstance().setErrorCode(ErrorEnum.INVALID_REQUEST);
 
         Role dbRole = roleMapper.selectByPrimaryKey(role.getId());
-        if(DBEnum.FALSE.getCode().equals(dbRole.getIsdel())) {
+        if(DBEnum.FALSE.getCode().equals(dbRole.getDeleted())) {
             roleMapper.updateByPrimaryKeySelective(role);
             role = roleMapper.selectByPrimaryKey(role.getId());
         }
@@ -145,7 +145,7 @@ public class RoleServiceImpl implements RoleService {
     public NormalResponse delete(Role role) {
         if(null == role || null == role.getId()) return NormalResponse.newInstance().setErrorCode(ErrorEnum.INVALID_REQUEST);
 
-        role.setIsdel(DBEnum.TRUE.getCode());
+        role.setDeleted(DBEnum.TRUE.getCode());
         roleMapper.updateByPrimaryKeySelective(role);
         return NormalResponse.newInstance().setData(null);
     }
@@ -166,7 +166,7 @@ public class RoleServiceImpl implements RoleService {
         if(permissions.size() == ((List<Permission>)permissionService.getByIds(permissions)).size()) {
             //老数据标记为无效
             RolePermissionMap rolePermissionMap = new RolePermissionMap();
-            rolePermissionMap.setIsdel(DBEnum.TRUE.getCode());
+            rolePermissionMap.setDeleted(DBEnum.TRUE.getCode());
 
             RolePermissionMapQuery rolePermissionMapQuery = new RolePermissionMapQuery();
             RolePermissionMapQuery.Criteria criteria = rolePermissionMapQuery.createCriteria();

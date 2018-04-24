@@ -9,5 +9,7 @@ import com.github.misterchangray.service.BaseService;
  * AuthService只需要查询
  */
 public interface AuthService {
-    NormalResponse login();
+    NormalResponse loginByUserName(String username, String password);
+    NormalResponse loginByPhone(String phone, String password);
+    NormalResponse loginByEmail(String email, String password);
 }

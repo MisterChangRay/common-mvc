@@ -1,5 +1,6 @@
 package com.github.misterchangray.controller.user;
 
+import com.alibaba.druid.util.Utils;
 import com.github.misterchangray.common.enums.DBEnum;
 import com.github.misterchangray.common.enums.ErrorEnum;
 import com.github.misterchangray.common.NormalResponse;
@@ -8,6 +9,8 @@ import com.github.misterchangray.dao.entity.User;
 import com.github.misterchangray.dao.entity.UserQuery;
 import com.github.misterchangray.dao.mapper.UserMapper;
 import com.github.misterchangray.common.annotation.Authentication;
+import com.github.misterchangray.service.user.AuthService;
+import com.github.misterchangray.service.user.UserService;
 import io.swagger.annotations.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -34,7 +37,10 @@ import java.util.*;
 @RequestMapping("/v1/auth")
 public class AuthController {
     @Autowired
-    UserMapper userMapper;
+    AuthService authService;
+    @Autowired
+    UserService userService;
+
 
 
 
@@ -44,39 +50,28 @@ public class AuthController {
      * @param password
      * @return
      */
-    @ApiOperation(value = "用户登陆", notes = "提供用户登陆接口,登陆成功后返回 Authentication ,在以后的请求中应该把此字段增加到请求头中")
+    @ApiOperation(value = "用户登陆", notes = "提供用户登陆接口,登陆成功后返回 Authentication ,在以后的请求中应该把此字段增加到请求头中,这里可以使用(手机号,帐号,邮箱)+密码进行登录")
     @ApiImplicitParams({
-        @ApiImplicitParam(name="username", value = "用户名", required = true, paramType = "query", dataType = "string"),
-        @ApiImplicitParam(name="password", value = "密码", required = true, paramType = "query", dataType = "string"),
+        @ApiImplicitParam(name="username", value = "用户名", required = false, paramType = "query", dataType = "string"),
+        @ApiImplicitParam(name="email", value = "邮箱", required = false, paramType = "query", dataType = "string"),
+        @ApiImplicitParam(name="phone", value = "手机号", required = false, paramType = "query", dataType = "string"),
+        @ApiImplicitParam(name="password", value = "密码", required = false, paramType = "query", dataType = "string")
     })
     @RequestMapping(value = "/login", method = RequestMethod.POST)
     @ResponseBody
-    public NormalResponse login(@RequestParam String username, @RequestParam String password, HttpServletRequest httpRequest, HttpSession httpSession) {
+    public NormalResponse login(@RequestParam(required = false) String username,
+                                @RequestParam(required = false) String email,
+                                @RequestParam(required = false) String phone,
+                                @RequestParam String password) {
+
         NormalResponse res = new NormalResponse();
-
-        UserQuery userQuery = new UserQuery();
-        UserQuery.Criteria criteria = userQuery.createCriteria();
-        criteria.andUsernameEqualTo(username).andPasswordEqualTo(password);
-
-        List<User> userList = userMapper.selectByQuery(userQuery);
-        if(0 == userList.size()) {
-            res.setErrorCode(ErrorEnum.INVALID).setErrorMsg("无效用户名或密码");
+        if((null == username && null == email && null == phone) || null == password) {
+            res.setErrorCode(ErrorEnum.INVALID_REQUEST);
             return res;
         }
-        User user = userList.get(1);
-        if(DBEnum.TRUE.getCode().equals(user.getIsdel())) {
-            res.setErrorCode(ErrorEnum.GONE).setErrorMsg("该用户已被删除");
-            return  res;
+        if(null != username && null != password) {
+            return authService.loginByUserName(username, password);
         }
-        if(DBEnum.TRUE.getCode().equals(user.getEnable())) {
-            res.setErrorCode(ErrorEnum.DISABLED).setErrorMsg("该用户已被禁用");
-            return  res;
-        }
-
-        String token = UUID.randomUUID().toString();
-        httpSession.setAttribute("Authentication", token);
-        httpSession.setAttribute("currentUser", user);
-        res.setData(token);
         return res;
     }
 
@@ -102,26 +97,8 @@ public class AuthController {
                                     @RequestParam(required = false) String phone,
                                     @RequestParam(required = false) String idcard,
                                     @RequestParam(required = false) String email) {
-        NormalResponse res = new NormalResponse();
 
-
-        /**
-         * 生成的sql为 select * from user where username = '%username' or phone = '%phone' or idcard = '%idcard' or email = '%email'
-         */
-        UserQuery userQuery = new UserQuery();
-        if(null != username) userQuery.or().andUsernameEqualTo(username);
-        if(null != phone) userQuery.or().andPhoneEqualTo(phone);
-        if(null != idcard) userQuery.or().andIdcardEqualTo(idcard);
-        if(null != email) userQuery.or().andEmailEqualTo(email);
-
-        List<User> userList = userMapper.selectByQuery(userQuery);
-        if(0 < userList.size()) {
-            res.setData(true);
-        } else {
-            res.setData(false);
-        }
-        return res;
-
+        return userService.checkUserInfo(username, email, phone, idcard);
     }
 
 

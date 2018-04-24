@@ -386,63 +386,63 @@ public class UserRoleMapQuery {
             return (Criteria) this;
         }
 
-        public Criteria andIsdelIsNull() {
-            addCriterion("isdel is null");
+        public Criteria andDeletedIsNull() {
+            addCriterion("deleted is null");
             return (Criteria) this;
         }
 
-        public Criteria andIsdelIsNotNull() {
-            addCriterion("isdel is not null");
+        public Criteria andDeletedIsNotNull() {
+            addCriterion("deleted is not null");
             return (Criteria) this;
         }
 
-        public Criteria andIsdelEqualTo(Integer value) {
-            addCriterion("isdel =", value, "isdel");
+        public Criteria andDeletedEqualTo(Integer value) {
+            addCriterion("deleted =", value, "deleted");
             return (Criteria) this;
         }
 
-        public Criteria andIsdelNotEqualTo(Integer value) {
-            addCriterion("isdel <>", value, "isdel");
+        public Criteria andDeletedNotEqualTo(Integer value) {
+            addCriterion("deleted <>", value, "deleted");
             return (Criteria) this;
         }
 
-        public Criteria andIsdelGreaterThan(Integer value) {
-            addCriterion("isdel >", value, "isdel");
+        public Criteria andDeletedGreaterThan(Integer value) {
+            addCriterion("deleted >", value, "deleted");
             return (Criteria) this;
         }
 
-        public Criteria andIsdelGreaterThanOrEqualTo(Integer value) {
-            addCriterion("isdel >=", value, "isdel");
+        public Criteria andDeletedGreaterThanOrEqualTo(Integer value) {
+            addCriterion("deleted >=", value, "deleted");
             return (Criteria) this;
         }
 
-        public Criteria andIsdelLessThan(Integer value) {
-            addCriterion("isdel <", value, "isdel");
+        public Criteria andDeletedLessThan(Integer value) {
+            addCriterion("deleted <", value, "deleted");
             return (Criteria) this;
         }
 
-        public Criteria andIsdelLessThanOrEqualTo(Integer value) {
-            addCriterion("isdel <=", value, "isdel");
+        public Criteria andDeletedLessThanOrEqualTo(Integer value) {
+            addCriterion("deleted <=", value, "deleted");
             return (Criteria) this;
         }
 
-        public Criteria andIsdelIn(List<Integer> values) {
-            addCriterion("isdel in", values, "isdel");
+        public Criteria andDeletedIn(List<Integer> values) {
+            addCriterion("deleted in", values, "deleted");
             return (Criteria) this;
         }
 
-        public Criteria andIsdelNotIn(List<Integer> values) {
-            addCriterion("isdel not in", values, "isdel");
+        public Criteria andDeletedNotIn(List<Integer> values) {
+            addCriterion("deleted not in", values, "deleted");
             return (Criteria) this;
         }
 
-        public Criteria andIsdelBetween(Integer value1, Integer value2) {
-            addCriterion("isdel between", value1, value2, "isdel");
+        public Criteria andDeletedBetween(Integer value1, Integer value2) {
+            addCriterion("deleted between", value1, value2, "deleted");
             return (Criteria) this;
         }
 
-        public Criteria andIsdelNotBetween(Integer value1, Integer value2) {
-            addCriterion("isdel not between", value1, value2, "isdel");
+        public Criteria andDeletedNotBetween(Integer value1, Integer value2) {
+            addCriterion("deleted not between", value1, value2, "deleted");
             return (Criteria) this;
         }
     }

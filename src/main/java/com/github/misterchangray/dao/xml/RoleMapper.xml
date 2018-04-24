@@ -4,8 +4,8 @@
   <resultMap id="BaseResultMap" type="com.github.misterchangray.dao.entity.Role">
     <id column="id" jdbcType="INTEGER" property="id" />
     <result column="name" jdbcType="VARCHAR" property="name" />
-    <result column="enable" jdbcType="INTEGER" property="enable" />
-    <result column="isdel" jdbcType="INTEGER" property="isdel" />
+    <result column="enabled" jdbcType="INTEGER" property="enabled" />
+    <result column="deleted" jdbcType="INTEGER" property="deleted" />
   </resultMap>
   <sql id="Example_Where_Clause">
     <where>
@@ -66,7 +66,7 @@
     </where>
   </sql>
   <sql id="Base_Column_List">
-    id, name, enable, isdel
+    id, name, enabled, deleted
   </sql>
   <select id="selectByQuery" parameterType="com.github.misterchangray.dao.entity.RoleQuery" resultMap="BaseResultMap">
     select
@@ -110,9 +110,9 @@
     <selectKey keyProperty="id" order="AFTER" resultType="java.lang.Integer">
       SELECT LAST_INSERT_ID()
     </selectKey>
-    insert into role (name, enable, isdel
+    insert into role (name, enabled, deleted
       )
-    values (#{name,jdbcType=VARCHAR}, #{enable,jdbcType=INTEGER}, #{isdel,jdbcType=INTEGER}
+    values (#{name,jdbcType=VARCHAR}, #{enabled,jdbcType=INTEGER}, #{deleted,jdbcType=INTEGER}
       )
   </insert>
   <insert id="insertSelective" parameterType="com.github.misterchangray.dao.entity.Role">
@@ -124,22 +124,22 @@
       <if test="name != null">
         name,
       </if>
-      <if test="enable != null">
-        enable,
+      <if test="enabled != null">
+        enabled,
       </if>
-      <if test="isdel != null">
-        isdel,
+      <if test="deleted != null">
+        deleted,
       </if>
     </trim>
     <trim prefix="values (" suffix=")" suffixOverrides=",">
       <if test="name != null">
         #{name,jdbcType=VARCHAR},
       </if>
-      <if test="enable != null">
-        #{enable,jdbcType=INTEGER},
+      <if test="enabled != null">
+        #{enabled,jdbcType=INTEGER},
       </if>
-      <if test="isdel != null">
-        #{isdel,jdbcType=INTEGER},
+      <if test="deleted != null">
+        #{deleted,jdbcType=INTEGER},
       </if>
     </trim>
   </insert>
@@ -158,11 +158,11 @@
       <if test="record.name != null">
         name = #{record.name,jdbcType=VARCHAR},
       </if>
-      <if test="record.enable != null">
-        enable = #{record.enable,jdbcType=INTEGER},
+      <if test="record.enabled != null">
+        enabled = #{record.enabled,jdbcType=INTEGER},
       </if>
-      <if test="record.isdel != null">
-        isdel = #{record.isdel,jdbcType=INTEGER},
+      <if test="record.deleted != null">
+        deleted = #{record.deleted,jdbcType=INTEGER},
       </if>
     </set>
     <if test="_parameter != null">
@@ -173,8 +173,8 @@
     update role
     set 
       name = #{record.name,jdbcType=VARCHAR},
-      enable = #{record.enable,jdbcType=INTEGER},
-      isdel = #{record.isdel,jdbcType=INTEGER}
+      enabled = #{record.enabled,jdbcType=INTEGER},
+      deleted = #{record.deleted,jdbcType=INTEGER}
     <if test="_parameter != null">
       <include refid="Update_By_Example_Where_Clause" />
     </if>
@@ -185,11 +185,11 @@
       <if test="name != null">
         name = #{name,jdbcType=VARCHAR},
       </if>
-      <if test="enable != null">
-        enable = #{enable,jdbcType=INTEGER},
+      <if test="enabled != null">
+        enabled = #{enabled,jdbcType=INTEGER},
       </if>
-      <if test="isdel != null">
-        isdel = #{isdel,jdbcType=INTEGER},
+      <if test="deleted != null">
+        deleted = #{deleted,jdbcType=INTEGER},
       </if>
     </set>
     where id = #{id,jdbcType=INTEGER}
@@ -197,8 +197,8 @@
   <update id="updateByPrimaryKey" parameterType="com.github.misterchangray.dao.entity.Role">
     update role
     set name = #{name,jdbcType=VARCHAR},
-      enable = #{enable,jdbcType=INTEGER},
-      isdel = #{isdel,jdbcType=INTEGER}
+      enabled = #{enabled,jdbcType=INTEGER},
+      deleted = #{deleted,jdbcType=INTEGER}
     where id = #{id,jdbcType=INTEGER}
   </update>
   <insert id="batchInsert" keyColumn="id" keyProperty="id" parameterType="map" useGeneratedKeys="true">
@@ -208,10 +208,10 @@
       @project https://github.com/itfsw/mybatis-generator-plugin
     -->
     insert into role
-    (name, enable, isdel)
+    (name, enabled, deleted)
     values
     <foreach collection="list" item="item" separator=",">
-      (#{item.name,jdbcType=VARCHAR}, #{item.enable,jdbcType=INTEGER}, #{item.isdel,jdbcType=INTEGER}
+      (#{item.name,jdbcType=VARCHAR}, #{item.enabled,jdbcType=INTEGER}, #{item.deleted,jdbcType=INTEGER}
         )
     </foreach>
   </insert>
@@ -233,11 +233,11 @@
         <if test="'name' == column.value">
           #{item.name,jdbcType=VARCHAR}
         </if>
-        <if test="'enable' == column.value">
-          #{item.enable,jdbcType=INTEGER}
+        <if test="'enabled' == column.value">
+          #{item.enabled,jdbcType=INTEGER}
         </if>
-        <if test="'isdel' == column.value">
-          #{item.isdel,jdbcType=INTEGER}
+        <if test="'deleted' == column.value">
+          #{item.deleted,jdbcType=INTEGER}
         </if>
       </foreach>
       )

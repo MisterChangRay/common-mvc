@@ -5,7 +5,7 @@
     <id column="id" jdbcType="INTEGER" property="id" />
     <result column="role_id" jdbcType="INTEGER" property="roleId" />
     <result column="permission_id" jdbcType="INTEGER" property="permissionId" />
-    <result column="isdel" jdbcType="INTEGER" property="isdel" />
+    <result column="deleted" jdbcType="INTEGER" property="deleted" />
   </resultMap>
   <sql id="Example_Where_Clause">
     <where>
@@ -66,7 +66,7 @@
     </where>
   </sql>
   <sql id="Base_Column_List">
-    id, role_id, permission_id, isdel
+    id, role_id, permission_id, deleted
   </sql>
   <select id="selectByQuery" parameterType="com.github.misterchangray.dao.entity.RolePermissionMapQuery" resultMap="BaseResultMap">
     select
@@ -108,9 +108,9 @@
   </delete>
   <insert id="insert" parameterType="com.github.misterchangray.dao.entity.RolePermissionMap">
     insert into role_permission_map (id, role_id, permission_id, 
-      isdel)
+      deleted)
     values (#{id,jdbcType=INTEGER}, #{roleId,jdbcType=INTEGER}, #{permissionId,jdbcType=INTEGER}, 
-      #{isdel,jdbcType=INTEGER})
+      #{deleted,jdbcType=INTEGER})
   </insert>
   <insert id="insertSelective" parameterType="com.github.misterchangray.dao.entity.RolePermissionMap">
     insert into role_permission_map
@@ -124,8 +124,8 @@
       <if test="permissionId != null">
         permission_id,
       </if>
-      <if test="isdel != null">
-        isdel,
+      <if test="deleted != null">
+        deleted,
       </if>
     </trim>
     <trim prefix="values (" suffix=")" suffixOverrides=",">
@@ -138,8 +138,8 @@
       <if test="permissionId != null">
         #{permissionId,jdbcType=INTEGER},
       </if>
-      <if test="isdel != null">
-        #{isdel,jdbcType=INTEGER},
+      <if test="deleted != null">
+        #{deleted,jdbcType=INTEGER},
       </if>
     </trim>
   </insert>
@@ -161,8 +161,8 @@
       <if test="record.permissionId != null">
         permission_id = #{record.permissionId,jdbcType=INTEGER},
       </if>
-      <if test="record.isdel != null">
-        isdel = #{record.isdel,jdbcType=INTEGER},
+      <if test="record.deleted != null">
+        deleted = #{record.deleted,jdbcType=INTEGER},
       </if>
     </set>
     <if test="_parameter != null">
@@ -174,7 +174,7 @@
     set 
       role_id = #{record.roleId,jdbcType=INTEGER},
       permission_id = #{record.permissionId,jdbcType=INTEGER},
-      isdel = #{record.isdel,jdbcType=INTEGER}
+      deleted = #{record.deleted,jdbcType=INTEGER}
     <if test="_parameter != null">
       <include refid="Update_By_Example_Where_Clause" />
     </if>
@@ -188,8 +188,8 @@
       <if test="permissionId != null">
         permission_id = #{permissionId,jdbcType=INTEGER},
       </if>
-      <if test="isdel != null">
-        isdel = #{isdel,jdbcType=INTEGER},
+      <if test="deleted != null">
+        deleted = #{deleted,jdbcType=INTEGER},
       </if>
     </set>
     where id = #{id,jdbcType=INTEGER}
@@ -198,7 +198,7 @@
     update role_permission_map
     set role_id = #{roleId,jdbcType=INTEGER},
       permission_id = #{permissionId,jdbcType=INTEGER},
-      isdel = #{isdel,jdbcType=INTEGER}
+      deleted = #{deleted,jdbcType=INTEGER}
     where id = #{id,jdbcType=INTEGER}
   </update>
   <insert id="batchInsert" parameterType="map">
@@ -208,11 +208,11 @@
       @project https://github.com/itfsw/mybatis-generator-plugin
     -->
     insert into role_permission_map
-    (id, role_id, permission_id, isdel)
+    (id, role_id, permission_id, deleted)
     values
     <foreach collection="list" item="item" separator=",">
       (#{item.id,jdbcType=INTEGER}, #{item.roleId,jdbcType=INTEGER}, #{item.permissionId,jdbcType=INTEGER}, 
-        #{item.isdel,jdbcType=INTEGER})
+        #{item.deleted,jdbcType=INTEGER})
     </foreach>
   </insert>
   <insert id="batchInsertSelective" parameterType="map">
@@ -239,8 +239,8 @@
         <if test="'permission_id' == column.value">
           #{item.permissionId,jdbcType=INTEGER}
         </if>
-        <if test="'isdel' == column.value">
-          #{item.isdel,jdbcType=INTEGER}
+        <if test="'deleted' == column.value">
+          #{item.deleted,jdbcType=INTEGER}
         </if>
       </foreach>
       )

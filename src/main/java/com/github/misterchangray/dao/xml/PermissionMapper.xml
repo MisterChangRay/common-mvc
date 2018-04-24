@@ -4,7 +4,7 @@
   <resultMap id="BaseResultMap" type="com.github.misterchangray.dao.entity.Permission">
     <id column="id" jdbcType="INTEGER" property="id" />
     <result column="name" jdbcType="VARCHAR" property="name" />
-    <result column="isdel" jdbcType="INTEGER" property="isdel" />
+    <result column="deleted" jdbcType="INTEGER" property="deleted" />
   </resultMap>
   <sql id="Example_Where_Clause">
     <where>
@@ -65,7 +65,7 @@
     </where>
   </sql>
   <sql id="Base_Column_List">
-    id, name, isdel
+    id, name, deleted
   </sql>
   <select id="selectByQuery" parameterType="com.github.misterchangray.dao.entity.PermissionQuery" resultMap="BaseResultMap">
     select
@@ -109,8 +109,8 @@
     <selectKey keyProperty="id" order="AFTER" resultType="java.lang.Integer">
       SELECT LAST_INSERT_ID()
     </selectKey>
-    insert into permission (name, isdel)
-    values (#{name,jdbcType=VARCHAR}, #{isdel,jdbcType=INTEGER})
+    insert into permission (name, deleted)
+    values (#{name,jdbcType=VARCHAR}, #{deleted,jdbcType=INTEGER})
   </insert>
   <insert id="insertSelective" parameterType="com.github.misterchangray.dao.entity.Permission">
     <selectKey keyProperty="id" order="AFTER" resultType="java.lang.Integer">
@@ -121,16 +121,16 @@
       <if test="name != null">
         name,
       </if>
-      <if test="isdel != null">
-        isdel,
+      <if test="deleted != null">
+        deleted,
       </if>
     </trim>
     <trim prefix="values (" suffix=")" suffixOverrides=",">
       <if test="name != null">
         #{name,jdbcType=VARCHAR},
       </if>
-      <if test="isdel != null">
-        #{isdel,jdbcType=INTEGER},
+      <if test="deleted != null">
+        #{deleted,jdbcType=INTEGER},
       </if>
     </trim>
   </insert>
@@ -149,8 +149,8 @@
       <if test="record.name != null">
         name = #{record.name,jdbcType=VARCHAR},
       </if>
-      <if test="record.isdel != null">
-        isdel = #{record.isdel,jdbcType=INTEGER},
+      <if test="record.deleted != null">
+        deleted = #{record.deleted,jdbcType=INTEGER},
       </if>
     </set>
     <if test="_parameter != null">
@@ -161,7 +161,7 @@
     update permission
     set 
       name = #{record.name,jdbcType=VARCHAR},
-      isdel = #{record.isdel,jdbcType=INTEGER}
+      deleted = #{record.deleted,jdbcType=INTEGER}
     <if test="_parameter != null">
       <include refid="Update_By_Example_Where_Clause" />
     </if>
@@ -172,8 +172,8 @@
       <if test="name != null">
         name = #{name,jdbcType=VARCHAR},
       </if>
-      <if test="isdel != null">
-        isdel = #{isdel,jdbcType=INTEGER},
+      <if test="deleted != null">
+        deleted = #{deleted,jdbcType=INTEGER},
       </if>
     </set>
     where id = #{id,jdbcType=INTEGER}
@@ -181,7 +181,7 @@
   <update id="updateByPrimaryKey" parameterType="com.github.misterchangray.dao.entity.Permission">
     update permission
     set name = #{name,jdbcType=VARCHAR},
-      isdel = #{isdel,jdbcType=INTEGER}
+      deleted = #{deleted,jdbcType=INTEGER}
     where id = #{id,jdbcType=INTEGER}
   </update>
   <insert id="batchInsert" keyColumn="id" keyProperty="id" parameterType="map" useGeneratedKeys="true">
@@ -191,10 +191,10 @@
       @project https://github.com/itfsw/mybatis-generator-plugin
     -->
     insert into permission
-    (name, isdel)
+    (name, deleted)
     values
     <foreach collection="list" item="item" separator=",">
-      (#{item.name,jdbcType=VARCHAR}, #{item.isdel,jdbcType=INTEGER})
+      (#{item.name,jdbcType=VARCHAR}, #{item.deleted,jdbcType=INTEGER})
     </foreach>
   </insert>
   <insert id="batchInsertSelective" keyColumn="id" keyProperty="id" parameterType="map" useGeneratedKeys="true">
@@ -215,8 +215,8 @@
         <if test="'name' == column.value">
           #{item.name,jdbcType=VARCHAR}
         </if>
-        <if test="'isdel' == column.value">
-          #{item.isdel,jdbcType=INTEGER}
+        <if test="'deleted' == column.value">
+          #{item.deleted,jdbcType=INTEGER}
         </if>
       </foreach>
       )

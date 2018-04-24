@@ -1,12 +1,22 @@
 package com.github.misterchangray.common.aop;
 
+import com.github.misterchangray.common.NormalResponse;
+import com.github.misterchangray.common.enums.DBEnum;
+import com.github.misterchangray.common.utils.JSONUtils;
+import com.github.misterchangray.dao.entity.BusinessLog;
+import com.github.misterchangray.dao.entity.User;
 import com.github.misterchangray.dao.mapper.BusinessLogMapper;
+import com.github.misterchangray.service.BusinessLogService;
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.Around;
 import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.annotation.Pointcut;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
+import org.springframework.web.context.request.RequestContextHolder;
+import org.springframework.web.context.request.ServletRequestAttributes;
+
+import javax.servlet.http.HttpServletRequest;
 
 /**
  * @author Created by rui.zhang on 2018/4/23.
@@ -23,33 +33,36 @@ import org.springframework.stereotype.Component;
 @Component
 @Aspect
 public class BusinessLogAop {
-    @Autowired
-    BusinessLogMapper businessLogMapper;
+   @Autowired
+    BusinessLogService businessLogService;
 
-    @Pointcut(value = "execution(* com.github.misterchangray.service.BaseService.insert())")
+    @Pointcut(value = "execution(* com.github.misterchangray.service.BaseService.insert(..))")
     private void insert() {}
 
-    @Pointcut(value = "execution(* com.github.misterchangray.service.BaseService.batchInsert())")
+    @Pointcut(value = "execution(* com.github.misterchangray.service.BaseService.batchInsert(..))")
     private void batchInsert() {}
 
-    @Pointcut(value = "execution(* com.github.misterchangray.service.BaseService.update())")
+    @Pointcut(value = "execution(* com.github.misterchangray.service.BaseService.update(..))")
     private void update() {}
 
-    @Pointcut(value = "execution(* com.github.misterchangray.service.BaseService.delete())")
+    @Pointcut(value = "execution(* com.github.misterchangray.service.BaseService.delete(..))")
     private void delete() {}
 
     @Around(value = "insert()")
     public Object insertAround(ProceedingJoinPoint point) {
        Object res;
-       BusinessLogAop businessLog = new BusinessLogAop();
-
-
-        try {
+       try {
             res = point.proceed();
-        } catch (Throwable throwable) {
+       } catch (Throwable throwable) {
             throwable.printStackTrace();
             return throwable.getMessage();
-        }
+       }
+        HttpServletRequest request = ((ServletRequestAttributes) RequestContextHolder.getRequestAttributes()).getRequest();
+        User user = (User) request.getSession().getAttribute("user");
+
+        Object newValue = ((NormalResponse) res).getData();
+        Object param = point.getArgs()[0];
+        businessLogService.addLog("", "", user.getId().toString(), user.getUsername(), DBEnum.INSERT, JSONUtils.obj2json(newValue), null);
         return  res;
     }
 
@@ -79,7 +92,13 @@ public class BusinessLogAop {
             return throwable.getMessage();
         }
 
+        HttpServletRequest request = ((ServletRequestAttributes) RequestContextHolder.getRequestAttributes()).getRequest();
+        User user = (User) request.getSession().getAttribute("user");
 
+        Object newValue = ((NormalResponse) res).getData();
+        Object oldValue = point.getArgs()[0];
+        businessLogService.addLog("", "", user.getId().toString(), user.getUsername(), DBEnum.UPDATE, JSONUtils.obj2json(newValue), JSONUtils.obj2json(oldValue));
+        System.out.println("11111111111lan拦截到修改操作");
         return  res;
     }
 

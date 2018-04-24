@@ -336,123 +336,123 @@ public class RoleQuery {
             return (Criteria) this;
         }
 
-        public Criteria andEnableIsNull() {
-            addCriterion("enable is null");
+        public Criteria andEnabledIsNull() {
+            addCriterion("enabled is null");
             return (Criteria) this;
         }
 
-        public Criteria andEnableIsNotNull() {
-            addCriterion("enable is not null");
+        public Criteria andEnabledIsNotNull() {
+            addCriterion("enabled is not null");
             return (Criteria) this;
         }
 
-        public Criteria andEnableEqualTo(Integer value) {
-            addCriterion("enable =", value, "enable");
+        public Criteria andEnabledEqualTo(Integer value) {
+            addCriterion("enabled =", value, "enabled");
             return (Criteria) this;
         }
 
-        public Criteria andEnableNotEqualTo(Integer value) {
-            addCriterion("enable <>", value, "enable");
+        public Criteria andEnabledNotEqualTo(Integer value) {
+            addCriterion("enabled <>", value, "enabled");
             return (Criteria) this;
         }
 
-        public Criteria andEnableGreaterThan(Integer value) {
-            addCriterion("enable >", value, "enable");
+        public Criteria andEnabledGreaterThan(Integer value) {
+            addCriterion("enabled >", value, "enabled");
             return (Criteria) this;
         }
 
-        public Criteria andEnableGreaterThanOrEqualTo(Integer value) {
-            addCriterion("enable >=", value, "enable");
+        public Criteria andEnabledGreaterThanOrEqualTo(Integer value) {
+            addCriterion("enabled >=", value, "enabled");
             return (Criteria) this;
         }
 
-        public Criteria andEnableLessThan(Integer value) {
-            addCriterion("enable <", value, "enable");
+        public Criteria andEnabledLessThan(Integer value) {
+            addCriterion("enabled <", value, "enabled");
             return (Criteria) this;
         }
 
-        public Criteria andEnableLessThanOrEqualTo(Integer value) {
-            addCriterion("enable <=", value, "enable");
+        public Criteria andEnabledLessThanOrEqualTo(Integer value) {
+            addCriterion("enabled <=", value, "enabled");
             return (Criteria) this;
         }
 
-        public Criteria andEnableIn(List<Integer> values) {
-            addCriterion("enable in", values, "enable");
+        public Criteria andEnabledIn(List<Integer> values) {
+            addCriterion("enabled in", values, "enabled");
             return (Criteria) this;
         }
 
-        public Criteria andEnableNotIn(List<Integer> values) {
-            addCriterion("enable not in", values, "enable");
+        public Criteria andEnabledNotIn(List<Integer> values) {
+            addCriterion("enabled not in", values, "enabled");
             return (Criteria) this;
         }
 
-        public Criteria andEnableBetween(Integer value1, Integer value2) {
-            addCriterion("enable between", value1, value2, "enable");
+        public Criteria andEnabledBetween(Integer value1, Integer value2) {
+            addCriterion("enabled between", value1, value2, "enabled");
             return (Criteria) this;
         }
 
-        public Criteria andEnableNotBetween(Integer value1, Integer value2) {
-            addCriterion("enable not between", value1, value2, "enable");
+        public Criteria andEnabledNotBetween(Integer value1, Integer value2) {
+            addCriterion("enabled not between", value1, value2, "enabled");
             return (Criteria) this;
         }
 
-        public Criteria andIsdelIsNull() {
-            addCriterion("isdel is null");
+        public Criteria andDeletedIsNull() {
+            addCriterion("deleted is null");
             return (Criteria) this;
         }
 
-        public Criteria andIsdelIsNotNull() {
-            addCriterion("isdel is not null");
+        public Criteria andDeletedIsNotNull() {
+            addCriterion("deleted is not null");
             return (Criteria) this;
         }
 
-        public Criteria andIsdelEqualTo(Integer value) {
-            addCriterion("isdel =", value, "isdel");
+        public Criteria andDeletedEqualTo(Integer value) {
+            addCriterion("deleted =", value, "deleted");
             return (Criteria) this;
         }
 
-        public Criteria andIsdelNotEqualTo(Integer value) {
-            addCriterion("isdel <>", value, "isdel");
+        public Criteria andDeletedNotEqualTo(Integer value) {
+            addCriterion("deleted <>", value, "deleted");
             return (Criteria) this;
         }
 
-        public Criteria andIsdelGreaterThan(Integer value) {
-            addCriterion("isdel >", value, "isdel");
+        public Criteria andDeletedGreaterThan(Integer value) {
+            addCriterion("deleted >", value, "deleted");
             return (Criteria) this;
         }
 
-        public Criteria andIsdelGreaterThanOrEqualTo(Integer value) {
-            addCriterion("isdel >=", value, "isdel");
+        public Criteria andDeletedGreaterThanOrEqualTo(Integer value) {
+            addCriterion("deleted >=", value, "deleted");
             return (Criteria) this;
         }
 
-        public Criteria andIsdelLessThan(Integer value) {
-            addCriterion("isdel <", value, "isdel");
+        public Criteria andDeletedLessThan(Integer value) {
+            addCriterion("deleted <", value, "deleted");
             return (Criteria) this;
         }
 
-        public Criteria andIsdelLessThanOrEqualTo(Integer value) {
-            addCriterion("isdel <=", value, "isdel");
+        public Criteria andDeletedLessThanOrEqualTo(Integer value) {
+            addCriterion("deleted <=", value, "deleted");
             return (Criteria) this;
         }
 
-        public Criteria andIsdelIn(List<Integer> values) {
-            addCriterion("isdel in", values, "isdel");
+        public Criteria andDeletedIn(List<Integer> values) {
+            addCriterion("deleted in", values, "deleted");
             return (Criteria) this;
         }
 
-        public Criteria andIsdelNotIn(List<Integer> values) {
-            addCriterion("isdel not in", values, "isdel");
+        public Criteria andDeletedNotIn(List<Integer> values) {
+            addCriterion("deleted not in", values, "deleted");
             return (Criteria) this;
         }
 
-        public Criteria andIsdelBetween(Integer value1, Integer value2) {
-            addCriterion("isdel between", value1, value2, "isdel");
+        public Criteria andDeletedBetween(Integer value1, Integer value2) {
+            addCriterion("deleted between", value1, value2, "deleted");
             return (Criteria) this;
         }
 
-        public Criteria andIsdelNotBetween(Integer value1, Integer value2) {
-            addCriterion("isdel not between", value1, value2, "isdel");
+        public Criteria andDeletedNotBetween(Integer value1, Integer value2) {
+            addCriterion("deleted not between", value1, value2, "deleted");
             return (Criteria) this;
         }
     }

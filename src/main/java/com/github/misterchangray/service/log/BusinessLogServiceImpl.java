@@ -22,13 +22,15 @@ public class BusinessLogServiceImpl implements BusinessLogService {
     @Autowired
     BusinessLogMapper businessLogMapper;
 
-    public int addLog(String tableName, String businessName, String userId, String userName, DBEnum method) {
+    public int addLog(String tableName, String businessName, String userId, String userName, DBEnum method, String newValue, String oldValue) {
         BusinessLog businessLog = new BusinessLog();
         businessLog.setTableName(tableName);
         businessLog.setBusinessName(businessName);
         businessLog.setUserId(userId);
         businessLog.setUserName(userName);
         businessLog.setMethod(method.getDesc());
+        businessLog.setNewValue(newValue);
+        businessLog.setOldValue(oldValue);
         return this.addLog(businessLog);
     }
 

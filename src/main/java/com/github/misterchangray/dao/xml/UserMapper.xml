@@ -10,8 +10,8 @@
     <result column="name" jdbcType="VARCHAR" property="name" />
     <result column="sex" jdbcType="INTEGER" property="sex" />
     <result column="phone" jdbcType="VARCHAR" property="phone" />
-    <result column="enable" jdbcType="INTEGER" property="enable" />
-    <result column="isdel" jdbcType="INTEGER" property="isdel" />
+    <result column="enabled" jdbcType="INTEGER" property="enabled" />
+    <result column="deleted" jdbcType="INTEGER" property="deleted" />
   </resultMap>
   <sql id="Example_Where_Clause">
     <where>
@@ -72,7 +72,7 @@
     </where>
   </sql>
   <sql id="Base_Column_List">
-    id, username, password, idcard, email, name, sex, phone, enable, isdel
+    id, username, password, idcard, email, name, sex, phone, enabled, deleted
   </sql>
   <select id="selectByQuery" parameterType="com.github.misterchangray.dao.entity.UserQuery" resultMap="BaseResultMap">
     select
@@ -118,10 +118,10 @@
     </selectKey>
     insert into user (username, password, idcard, 
       email, name, sex, phone, 
-      enable, isdel)
+      enabled, deleted)
     values (#{username,jdbcType=VARCHAR}, #{password,jdbcType=VARCHAR}, #{idcard,jdbcType=VARCHAR}, 
       #{email,jdbcType=VARCHAR}, #{name,jdbcType=VARCHAR}, #{sex,jdbcType=INTEGER}, #{phone,jdbcType=VARCHAR}, 
-      #{enable,jdbcType=INTEGER}, #{isdel,jdbcType=INTEGER})
+      #{enabled,jdbcType=INTEGER}, #{deleted,jdbcType=INTEGER})
   </insert>
   <insert id="insertSelective" parameterType="com.github.misterchangray.dao.entity.User">
     <selectKey keyProperty="id" order="AFTER" resultType="java.lang.Integer">
@@ -150,11 +150,11 @@
       <if test="phone != null">
         phone,
       </if>
-      <if test="enable != null">
-        enable,
+      <if test="enabled != null">
+        enabled,
       </if>
-      <if test="isdel != null">
-        isdel,
+      <if test="deleted != null">
+        deleted,
       </if>
     </trim>
     <trim prefix="values (" suffix=")" suffixOverrides=",">
@@ -179,11 +179,11 @@
       <if test="phone != null">
         #{phone,jdbcType=VARCHAR},
       </if>
-      <if test="enable != null">
-        #{enable,jdbcType=INTEGER},
+      <if test="enabled != null">
+        #{enabled,jdbcType=INTEGER},
       </if>
-      <if test="isdel != null">
-        #{isdel,jdbcType=INTEGER},
+      <if test="deleted != null">
+        #{deleted,jdbcType=INTEGER},
       </if>
     </trim>
   </insert>
@@ -220,11 +220,11 @@
       <if test="record.phone != null">
         phone = #{record.phone,jdbcType=VARCHAR},
       </if>
-      <if test="record.enable != null">
-        enable = #{record.enable,jdbcType=INTEGER},
+      <if test="record.enabled != null">
+        enabled = #{record.enabled,jdbcType=INTEGER},
       </if>
-      <if test="record.isdel != null">
-        isdel = #{record.isdel,jdbcType=INTEGER},
+      <if test="record.deleted != null">
+        deleted = #{record.deleted,jdbcType=INTEGER},
       </if>
     </set>
     <if test="_parameter != null">
@@ -241,8 +241,8 @@
       name = #{record.name,jdbcType=VARCHAR},
       sex = #{record.sex,jdbcType=INTEGER},
       phone = #{record.phone,jdbcType=VARCHAR},
-      enable = #{record.enable,jdbcType=INTEGER},
-      isdel = #{record.isdel,jdbcType=INTEGER}
+      enabled = #{record.enabled,jdbcType=INTEGER},
+      deleted = #{record.deleted,jdbcType=INTEGER}
     <if test="_parameter != null">
       <include refid="Update_By_Example_Where_Clause" />
     </if>
@@ -271,11 +271,11 @@
       <if test="phone != null">
         phone = #{phone,jdbcType=VARCHAR},
       </if>
-      <if test="enable != null">
-        enable = #{enable,jdbcType=INTEGER},
+      <if test="enabled != null">
+        enabled = #{enabled,jdbcType=INTEGER},
       </if>
-      <if test="isdel != null">
-        isdel = #{isdel,jdbcType=INTEGER},
+      <if test="deleted != null">
+        deleted = #{deleted,jdbcType=INTEGER},
       </if>
     </set>
     where id = #{id,jdbcType=INTEGER}
@@ -289,8 +289,8 @@
       name = #{name,jdbcType=VARCHAR},
       sex = #{sex,jdbcType=INTEGER},
       phone = #{phone,jdbcType=VARCHAR},
-      enable = #{enable,jdbcType=INTEGER},
-      isdel = #{isdel,jdbcType=INTEGER}
+      enabled = #{enabled,jdbcType=INTEGER},
+      deleted = #{deleted,jdbcType=INTEGER}
     where id = #{id,jdbcType=INTEGER}
   </update>
   <insert id="batchInsert" keyColumn="id" keyProperty="id" parameterType="map" useGeneratedKeys="true">
@@ -300,12 +300,12 @@
       @project https://github.com/itfsw/mybatis-generator-plugin
     -->
     insert into user
-    (username, password, idcard, email, name, sex, phone, enable, isdel)
+    (username, password, idcard, email, name, sex, phone, enabled, deleted)
     values
     <foreach collection="list" item="item" separator=",">
       (#{item.username,jdbcType=VARCHAR}, #{item.password,jdbcType=VARCHAR}, #{item.idcard,jdbcType=VARCHAR}, 
         #{item.email,jdbcType=VARCHAR}, #{item.name,jdbcType=VARCHAR}, #{item.sex,jdbcType=INTEGER}, 
-        #{item.phone,jdbcType=VARCHAR}, #{item.enable,jdbcType=INTEGER}, #{item.isdel,jdbcType=INTEGER}
+        #{item.phone,jdbcType=VARCHAR}, #{item.enabled,jdbcType=INTEGER}, #{item.deleted,jdbcType=INTEGER}
         )
     </foreach>
   </insert>
@@ -345,11 +345,11 @@
         <if test="'phone' == column.value">
           #{item.phone,jdbcType=VARCHAR}
         </if>
-        <if test="'enable' == column.value">
-          #{item.enable,jdbcType=INTEGER}
+        <if test="'enabled' == column.value">
+          #{item.enabled,jdbcType=INTEGER}
         </if>
-        <if test="'isdel' == column.value">
-          #{item.isdel,jdbcType=INTEGER}
+        <if test="'deleted' == column.value">
+          #{item.deleted,jdbcType=INTEGER}
         </if>
       </foreach>
       )

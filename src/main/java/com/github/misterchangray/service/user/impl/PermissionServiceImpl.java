@@ -36,7 +36,7 @@ public class PermissionServiceImpl implements PermissionService{
         PermissionQuery permissionQuery = new PermissionQuery();
         PermissionQuery.Criteria criteria = permissionQuery.createCriteria();
         criteria.andIdIn(ids);
-        criteria.andIsdelEqualTo(DBEnum.FALSE.getCode());
+        criteria.andDeletedEqualTo(DBEnum.FALSE.getCode());
         if(ids.size() == permissionMapper.countByQuery(permissionQuery)) {
             return NormalResponse.newInstance().setData(true);
         } else {
@@ -52,7 +52,7 @@ public class PermissionServiceImpl implements PermissionService{
     public NormalResponse getById(Integer id) {
         if(null == id) return NormalResponse.newInstance().setErrorCode(ErrorEnum.INVALID_REQUEST);
         Permission permission = permissionMapper.selectByPrimaryKey(id);
-        if(permission.getIsdel().equals(DBEnum.TRUE.getCode())) return NormalResponse.newInstance().setErrorCode(ErrorEnum.GONE);
+        if(permission.getDeleted().equals(DBEnum.TRUE.getCode())) return NormalResponse.newInstance().setErrorCode(ErrorEnum.GONE);
         return NormalResponse.newInstance().setData(permission);
     }
 
@@ -65,7 +65,7 @@ public class PermissionServiceImpl implements PermissionService{
         if(null == ids) NormalResponse.newInstance().setErrorCode(ErrorEnum.INVALID_REQUEST);
 
         PermissionQuery permissionQuery = new PermissionQuery();
-        permissionQuery.createCriteria().andIdIn(ids).andIsdelEqualTo(DBEnum.FALSE.getCode());
+        permissionQuery.createCriteria().andIdIn(ids).andDeletedEqualTo(DBEnum.FALSE.getCode());
         return NormalResponse.newInstance().setData(permissionMapper.selectByQuery(permissionQuery));
     }
 
@@ -82,7 +82,7 @@ public class PermissionServiceImpl implements PermissionService{
         permissionQuery.page(pageInfo.getPage(), pageInfo.getLimit());
 
         PermissionQuery.Criteria criteria = permissionQuery.createCriteria();
-        criteria.andIsdelEqualTo(DBEnum.FALSE.getCode());
+        criteria.andDeletedEqualTo(DBEnum.FALSE.getCode());
         if(null != permissionQuery) {
             if(null != permission.getName())criteria.andNameLike(permission.getName());
         }
@@ -97,7 +97,7 @@ public class PermissionServiceImpl implements PermissionService{
      */
     public NormalResponse insert(Permission permission) {
         permission.setId(null);
-        permission.setIsdel(DBEnum.FALSE.getCode());
+        permission.setDeleted(DBEnum.FALSE.getCode());
         permissionMapper.insert(permission);
         return NormalResponse.newInstance().setData(permission);
     }
@@ -122,7 +122,7 @@ public class PermissionServiceImpl implements PermissionService{
         if(null == permission || null == permission.getId()) return NormalResponse.newInstance().setErrorCode(ErrorEnum.INVALID_REQUEST);
 
         Permission dbPermission = permissionMapper.selectByPrimaryKey(permission.getId());
-        if(DBEnum.FALSE.getCode().equals(dbPermission.getIsdel())) {
+        if(DBEnum.FALSE.getCode().equals(dbPermission.getDeleted())) {
             permissionMapper.updateByPrimaryKeySelective(permission);
             permission = permissionMapper.selectByPrimaryKey(permission.getId());
         }
@@ -138,7 +138,7 @@ public class PermissionServiceImpl implements PermissionService{
     public NormalResponse delete(Permission permission) {
         if(null == permission || null == permission.getId()) return NormalResponse.newInstance().setErrorCode(ErrorEnum.INVALID_REQUEST);
 
-        permission.setIsdel(DBEnum.TRUE.getCode());
+        permission.setDeleted(DBEnum.TRUE.getCode());
         permissionMapper.updateByPrimaryKeySelective(permission);
         return NormalResponse.newInstance().setData(null);
     }

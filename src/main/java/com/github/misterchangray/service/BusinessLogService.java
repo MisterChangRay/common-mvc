@@ -21,5 +21,5 @@ public interface BusinessLogService {
      * @param method 操作方式;DBEnum枚举类(QUERY,INSERT,UPDATE,DELETE)
      * @return
      */
-    int addLog(String tableName,String businessName, String userId, String userName, DBEnum method);
+    int addLog(String tableName,String businessName, String userId, String userName, DBEnum method, String newValue, String oldValue);
 }
