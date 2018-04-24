@@ -27,28 +27,28 @@ use playground;
 
 create table user (
    id int unsigned  primary key AUTO_INCREMENT comment '用户表',
-   username varchar(100),
-   password varchar(100),
+   username varchar(100) comment '用户名',
+   password varchar(100) comment '密码',
    idcard varchar(100) comment '身份证',
-   email varchar(100),
-   name varchar(100),
+   email varchar(100) comment '邮箱',
+   name varchar(100) comment '姓名',
    sex int comment '性别0女2男',
-   phone varchar(100),
-   enable int comment '是否启用0false，1true',
-   isdel int comment '是否删除0false, 1true'
+   phone varchar(100) comment '手机号',
+   enabled int comment '是否启用0false，1true',
+   deleted int comment '是否删除0false, 1true'
  ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
  create table role (
    id int unsigned  primary key AUTO_INCREMENT comment '角色表',
-   name varchar(100),
-   enable int,
-   isdel int
+   name varchar(100) comment '角色名',
+   enabled int comment '是否启用0false，1true',
+   deleted int comment '是否删除0false, 1true'
  ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
   create table permission (
    id int unsigned  primary key AUTO_INCREMENT comment '权限表',
-   name varchar(100),
-   isdel int
+   name varchar(100) comment '权限名',
+   deleted int comment '是否删除0false, 1true'
  ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 
@@ -56,7 +56,7 @@ create table user (
    id int unsigned  primary key AUTO_INCREMENT comment '角色-权限映射表',
    role_id int unsigned,
    permission_id int unsigned,
-   isdel int
+   deleted int comment '是否删除0false, 1true'
  ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 
@@ -64,19 +64,19 @@ create table user (
    id int unsigned  primary key AUTO_INCREMENT comment '用户-角色映射表',
    user_id int unsigned,
    role_id int unsigned,
-   isdel int
+   deleted int comment '是否删除0false, 1true'
  ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
  
  create table business_log  (
 	id   int unsigned primary key AUTO_INCREMENT comment '业务日志表',
 	table_name varchar(100) comment '表名',
 	business_name varchar(100) comment '业务名称',
-	method varchar(100) comment 'insert,update,delete',
+	method varchar(100) comment '操作方式',
 	user_id varchar(100) comment '操作人ID',
 	user_name varchar(100) comment '操作人名称',
 	create_date timestamp,
-	old_value varchar(500) ,
-	new_value varchar(500)
+	old_value varchar(500) comment '修改前数据',
+	new_value varchar(500) comment '修改后数据'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 ```
