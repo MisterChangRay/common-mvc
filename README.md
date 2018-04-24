@@ -34,21 +34,21 @@ create table user (
    name varchar(100),
    sex int comment '性别0女2男',
    phone varchar(100),
-   enable int comment '是否启用0false，1true',
-   isdel int comment '是否删除0false, 1true'
+   enabled int comment '是否启用0false，1true',
+   deleted int comment '是否删除0false, 1true'
  ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
  create table role (
    id int unsigned  primary key AUTO_INCREMENT comment '角色表',
    name varchar(100),
-   enable int,
-   isdel int
+   enabled int,
+   deleted int
  ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
   create table permission (
    id int unsigned  primary key AUTO_INCREMENT comment '权限表',
    name varchar(100),
-   isdel int
+   deleted int
  ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 
@@ -56,7 +56,7 @@ create table user (
    id int unsigned  primary key AUTO_INCREMENT comment '角色-权限映射表',
    role_id int unsigned,
    permission_id int unsigned,
-   isdel int
+   deleted int
  ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 
@@ -64,7 +64,7 @@ create table user (
    id int unsigned  primary key AUTO_INCREMENT comment '用户-角色映射表',
    user_id int unsigned,
    role_id int unsigned,
-   isdel int
+   deleted int
  ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
  
  create table business_log  (
