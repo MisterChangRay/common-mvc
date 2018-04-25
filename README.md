@@ -17,7 +17,7 @@
 - 使用maven编译后，配置tomcat并部署
 - 启动tomcat,访问以下链接测试接口；
 - 访问`http://localhost:8080/docs/index.html` 查看swagger生成的Api文档信息
-
+- 根据需求进行快速迭代开发
 
 ### 建表语句
 ```sql
@@ -89,17 +89,18 @@ create table user (
 - 开发规范建议遵循阿里巴巴Java开发手册（[最新版下载](https://github.com/lihengming/java-codes/blob/master/shared-resources/%E9%98%BF%E9%87%8C%E5%B7%B4%E5%B7%B4Java%E5%BC%80%E5%8F%91%E6%89%8B%E5%86%8CV1.2.0.pdf))
 - 建议在公司内部使用ShowDoc、Swagger2 、RAP等开源项目来编写、管理API文档
 
-
-### 相关环境
+### 相关环境(推荐使用环境)
 - OS Microsoft Windows 10 Pro
+- Editor IntelliJ IDEA
 - Java 8
-- springMVC 4.3
+- SpringMVC 4.3
 - Mybitis 3.4
 - Mysql 5.5.50
-- Restful interface
 - Maven 3.5.3
 - Git 2.14.1
+- Tomcat 7.0.85
 - Swagger 2.6.1
+- Restful interface
 
 
 ### 注意事项
