@@ -100,7 +100,7 @@ create table user (
 - 需要工具类的话建议先从`common/utils`中找，实在没有再造轮子或引入类库，尽量精简项目
 - 开发规范建议遵循阿里巴巴Java开发手册（[最新版下载](https://github.com/lihengming/java-codes/blob/master/shared-resources/%E9%98%BF%E9%87%8C%E5%B7%B4%E5%B7%B4Java%E5%BC%80%E5%8F%91%E6%89%8B%E5%86%8CV1.2.0.pdf))
 - 建议在公司内部使用ShowDoc、Swagger2 、RAP等开源项目来编写、管理API文档
-- 常量信息建议放在`constants`表;如民族/地址/证件类型/性别等;
+- 页面常量信息建议放在`constants`表;如民族/地址/证件类型/性别等;
 
 
 ### 相关环境(推荐使用环境)
