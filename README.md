@@ -67,8 +67,19 @@ create table user (
    deleted int comment '是否删除0false, 1true'
  ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
  
- create table business_log  (
-	id   int unsigned primary key AUTO_INCREMENT comment '业务日志表',
+ create table constants (
+	id int unsigned primary key AUTO_INCREMENT comment '常量表',
+	name varchar(100) comment '常量名',
+	pid varchar(100) comment '父ID,null为根节点',
+	level int unsigned comment '当前层级;pid=null时为1级',
+	has_child int unsigned comment '是否有子节点0false,1true',
+	enabled int comment '是否启用0false,1true',
+  deleted int comment '是否删除0false, 1true',
+	extra varchar(300) comment '附加数据;推荐存JSON'
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+ create table operation_log  (
+	id   int unsigned primary key AUTO_INCREMENT comment '操作日志表',
 	table_name varchar(100) comment '表名',
 	business_name varchar(100) comment '业务名称',
 	method varchar(100) comment '操作方式',
@@ -88,6 +99,8 @@ create table user (
 - 需要工具类的话建议先从`common/utils`中找，实在没有再造轮子或引入类库，尽量精简项目
 - 开发规范建议遵循阿里巴巴Java开发手册（[最新版下载](https://github.com/lihengming/java-codes/blob/master/shared-resources/%E9%98%BF%E9%87%8C%E5%B7%B4%E5%B7%B4Java%E5%BC%80%E5%8F%91%E6%89%8B%E5%86%8CV1.2.0.pdf))
 - 建议在公司内部使用ShowDoc、Swagger2 、RAP等开源项目来编写、管理API文档
+- 常量信息建议放在`constants`表;如民族/地址/证件类型/性别等;
+
 
 ### 相关环境(推荐使用环境)
 - OS Microsoft Windows 10 Pro
