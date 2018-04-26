@@ -70,11 +70,12 @@ create table user (
  create table constants (
 	id int unsigned primary key AUTO_INCREMENT comment '常量表',
 	name varchar(100) comment '常量名',
+	shortcut varchar(100) comment '常量简称,用于快速定位',
 	pid varchar(100) comment '父ID,null为根节点',
 	level int unsigned comment '当前层级;pid=null时为1级',
 	has_child int unsigned comment '是否有子节点0false,1true',
 	enabled int comment '是否启用0false,1true',
-  	deleted int comment '是否删除0false, 1true',
+  deleted int comment '是否删除0false, 1true',
 	extra varchar(300) comment '附加数据;推荐存JSON'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
