@@ -74,7 +74,7 @@ create table user (
 	level int unsigned comment '当前层级;pid=null时为1级',
 	has_child int unsigned comment '是否有子节点0false,1true',
 	enabled int comment '是否启用0false,1true',
-  deleted int comment '是否删除0false, 1true',
+  	deleted int comment '是否删除0false, 1true',
 	extra varchar(300) comment '附加数据;推荐存JSON'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
