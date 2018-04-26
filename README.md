@@ -67,7 +67,7 @@ create table user (
    deleted int comment '是否删除0false, 1true'
  ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
  
- create table constants (
+ create table constant (
 	id int unsigned primary key AUTO_INCREMENT comment '常量表',
 	name varchar(100) comment '常量名',
 	shortcut varchar(100) comment '常量简称,用于快速定位',
