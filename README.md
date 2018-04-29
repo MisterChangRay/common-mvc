@@ -5,8 +5,8 @@
 ### 已完成功能
 - 增加权限统一拦截注解`@Authentication`
 - 增加方法性能统计注解`@printRunTime`
+- 增加简单的操作日志`@OperationLog`
 - 实现了简单的权限系统
-- 实现了简单的操作日志
 - 生成entity类时自动提取数据库注释生成swagger文档
 - 实现了更漂亮的swagger-ui
 
@@ -79,4 +79,4 @@ create table operation_log;
     </dependency>
 ```
 - 使用mybaitis-generator插件生成dao层时请先删除原来的文件,不然生的的内容会追加到源文件中,出现代码重复
-- 下载后可能需要修改/webapp/swagger-ui/index.html文件中的url地址.
+- 下载后如打不开swagger2文档，可能需要修改`webapp/common-core-swagger-ui/config.js`文件中得地址
