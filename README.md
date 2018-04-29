@@ -19,77 +19,25 @@
 - 访问`http://localhost:8080/docs/index.html` 查看swagger生成的Api文档信息
 - 根据需求进行快速迭代开发
 
-### 建表语句
+### 目前表单,所有表单详细信息在"/resources/archives"目录下
 ```sql
-create database playground;
+create database common_core;
 
-use playground;
+use common_core;
 
-create table user (
-   id int unsigned  primary key AUTO_INCREMENT comment '用户表',
-   username varchar(100) comment '用户名',
-   password varchar(100) comment '密码',
-   idcard varchar(100) comment '身份证',
-   email varchar(100) comment '邮箱',
-   name varchar(100) comment '姓名',
-   sex int comment '性别0女2男',
-   phone varchar(100) comment '手机号',
-   enabled int comment '是否启用0false，1true',
-   deleted int comment '是否删除0false, 1true'
- ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+create table user;
 
- create table role (
-   id int unsigned  primary key AUTO_INCREMENT comment '角色表',
-   name varchar(100) comment '角色名',
-   enabled int comment '是否启用0false，1true',
-   deleted int comment '是否删除0false, 1true'
- ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+create table role;
 
-  create table permission (
-   id int unsigned  primary key AUTO_INCREMENT comment '权限表',
-   name varchar(100) comment '权限名',
-   deleted int comment '是否删除0false, 1true'
- ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+create table permission;
 
+create table role_permission_map;
 
- create table role_permission_map (
-   id int unsigned  primary key AUTO_INCREMENT comment '角色-权限映射表',
-   role_id int unsigned,
-   permission_id int unsigned,
-   deleted int comment '是否删除0false, 1true'
- ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
-
- create table user_role_map (
-   id int unsigned  primary key AUTO_INCREMENT comment '用户-角色映射表',
-   user_id int unsigned,
-   role_id int unsigned,
-   deleted int comment '是否删除0false, 1true'
- ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+create table user_role_map;
  
- create table constant (
-	id int unsigned primary key AUTO_INCREMENT comment '常量表',
-	name varchar(100) comment '常量名',
-	shortcut varchar(100) comment '常量简称,用于快速定位',
-	pid varchar(100) comment '父ID,null为根节点',
-	level int unsigned comment '当前层级;pid=null时为1级',
-	has_child int unsigned comment '是否有子节点0false,1true',
-	enabled int comment '是否启用0false,1true',
-  deleted int comment '是否删除0false, 1true',
-	extra varchar(300) comment '附加数据;推荐存JSON'
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+create table constant;
 
- create table operation_log  (
-	id   int unsigned primary key AUTO_INCREMENT comment '操作日志表',
-	table_name varchar(100) comment '表名',
-	business_name varchar(100) comment '业务名称',
-	method varchar(100) comment '操作方式',
-	user_id varchar(100) comment '操作人ID',
-	user_name varchar(100) comment '操作人名称',
-	create_date timestamp,
-	old_value varchar(500) comment '修改前数据',
-	new_value varchar(500) comment '修改后数据'
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+create table operation_log;
 
 ```
 
