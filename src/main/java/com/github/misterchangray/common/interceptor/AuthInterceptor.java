@@ -15,8 +15,10 @@ import javax.servlet.http.HttpServletResponse;
 import java.lang.reflect.Method;
 
 /**
- * Created by Miste on 3/26/2018.
  * 权限校验拦截器
+ *
+ * @author Rui.Zhang/misterchangray@hotmail.com
+ * @author Created on 3/26/2018.
  */
 public class AuthInterceptor extends HandlerInterceptorAdapter {
     @Autowired

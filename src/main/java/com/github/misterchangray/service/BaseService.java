@@ -10,7 +10,10 @@ import javax.management.Query;
 import java.util.List;
 
 /**
- * Created by Miste on 3/27/2018.
+ * 基础服务定义
+ *
+ * @author Rui.Zhang/misterchangray@hotmail.com
+ * @author Created on  2018/4/20.
  */
 public interface BaseService<Entity> {
 

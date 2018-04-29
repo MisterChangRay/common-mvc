@@ -14,7 +14,6 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
 /**
- * Created by Miste on 3/23/2018.
  * 权限管理控制器
  *
  * 提供用户权限以下用能
@@ -22,6 +21,9 @@ import org.springframework.web.bind.annotation.*;
  * -权限新增
  * -权限编辑
  * -权限删除
+ *
+ * @author Rui.Zhang/misterchangray@hotmail.com
+ * @author Created on  3/23/2018.
  */
 @Api(tags ="权限控制", description = "PermissionController")
 @Controller

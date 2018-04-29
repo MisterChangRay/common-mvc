@@ -5,13 +5,13 @@ import io.swagger.annotations.ApiModelProperty;
 
 @ApiModel(value="com.github.misterchangray.dao.entity.Role")
 public class Role {
-    @ApiModelProperty(value="id角色表")
+    @ApiModelProperty(value="id")
     private Integer id;
 
-    @ApiModelProperty(value="name角色名")
+    @ApiModelProperty(value="name")
     private String name;
 
-    @ApiModelProperty(value="enabled是否启用0false，1true")
+    @ApiModelProperty(value="enabled是否启用0false, 1true")
     private Integer enabled;
 
     @ApiModelProperty(value="deleted是否删除0false, 1true")

@@ -4,19 +4,19 @@ import org.springframework.stereotype.Component;
 
 import java.lang.annotation.*;
 
-
 /**
  * 自定义注解
- * 在需要进行权限认证的方法上使用此注解
+ * 为此注解得service方法增加操作日志
+ * 注意此注解只用于service方法中
  *
  * @author Rui.Zhang/misterchangray@hotmail.com
- * @author Created on 2018/4/23.
+ * @author Created on 4/26/2018.
  */
 @Target(ElementType.METHOD)
 @Retention(RetentionPolicy.RUNTIME)
 @Documented
 @Inherited
 @Component
-public @interface Authentication {
-    String value() default "";
+public @interface OperationLog {
+    String businessName();
 }

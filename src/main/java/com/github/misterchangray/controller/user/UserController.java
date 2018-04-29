@@ -2,6 +2,7 @@ package com.github.misterchangray.controller.user;
 
 import com.github.misterchangray.common.NormalResponse;
 import com.github.misterchangray.common.PageInfo;
+import com.github.misterchangray.common.annotation.OperationLog;
 import com.github.misterchangray.dao.entity.User;
 import com.github.misterchangray.common.PageInfo;
 import com.github.misterchangray.common.annotation.Authentication;
@@ -19,7 +20,6 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 /**
- * Created by Miste on 3/23/2018.
  * 用户管理控制器
  *
  * 提供用户管理以下用能
@@ -30,6 +30,9 @@ import java.util.List;
  * -用户启用/停用
  * -用户编辑
  * -用户角色编辑
+ *
+ * @author Rui.Zhang/misterchangray@hotmail.com
+ * @author Created on  3/23/2018.
  */
 @Api(tags ="用户管理", description = "UserController")
 @Controller
@@ -102,6 +105,7 @@ public class UserController {
             @ApiImplicitParam(name="user", value = "用户实体JSON对象", required = true, paramType = "body", dataType = "com.github.misterchangray.dao.entity.User"),
     })
     @Authentication
+    @OperationLog(businessName = "新增用户")
     @RequestMapping(method = RequestMethod.POST)
     @ResponseBody
     public NormalResponse add(@RequestBody User user) {

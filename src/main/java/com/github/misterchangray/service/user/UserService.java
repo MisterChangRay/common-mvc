@@ -10,9 +10,10 @@ import com.github.misterchangray.service.BaseService;
 import java.util.List;
 
 /**
- * Created by Miste on 3/20/2018.
- *
  * 用户服务
+ *
+ * @author Rui.Zhang/misterchangray@hotmail.com
+ * @author Created on 3/20/2018.
  */
 public interface UserService extends BaseService<User> {
     /**

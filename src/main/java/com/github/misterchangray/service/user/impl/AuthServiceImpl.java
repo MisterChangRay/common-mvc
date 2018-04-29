@@ -1,7 +1,6 @@
 package com.github.misterchangray.service.user.impl;
 
 import com.github.misterchangray.common.NormalResponse;
-import com.github.misterchangray.common.NormalResponse;
 import com.github.misterchangray.common.enums.DBEnum;
 import com.github.misterchangray.common.enums.ErrorEnum;
 import com.github.misterchangray.common.utils.MapBuilder;
@@ -17,8 +16,11 @@ import java.util.List;
 import java.util.Map;
 import java.util.UUID;
 
+
 /**
- * Created by Miste on 3/29/2018.
+ *
+ * @author Rui.Zhang/misterchangray@hotmail.com
+ * @author Created on 3/29/2018.
  */
 @Service
 public class AuthServiceImpl implements AuthService {

@@ -3,7 +3,6 @@ package com.github.misterchangray.service.user.impl;
 import com.github.misterchangray.common.NormalResponse;
 import com.github.misterchangray.common.enums.DBEnum;
 import com.github.misterchangray.common.enums.ErrorEnum;
-import com.github.misterchangray.common.utils.EntityUtils;
 import com.github.misterchangray.dao.entity.Permission;
 import com.github.misterchangray.common.PageInfo;
 import com.github.misterchangray.dao.entity.PermissionQuery;
@@ -15,9 +14,12 @@ import org.springframework.stereotype.Service;
 
 import java.util.List;
 
+
 /**
- * Created by Miste on 3/26/2018.
  * 用户权限实现类
+ *
+ * @author Rui.Zhang/misterchangray@hotmail.com
+ * @author Created on 3/29/2018.
  */
 @Service
 public class PermissionServiceImpl implements PermissionService{

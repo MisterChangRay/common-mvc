@@ -3,7 +3,6 @@ package com.github.misterchangray.service.user.impl;
 import com.github.misterchangray.common.enums.ErrorEnum;
 import com.github.misterchangray.common.NormalResponse;
 import com.github.misterchangray.common.PageInfo;
-import com.github.misterchangray.common.utils.EntityUtils;
 import com.github.misterchangray.dao.entity.User;
 import com.github.misterchangray.dao.entity.UserQuery;
 import com.github.misterchangray.dao.entity.UserRoleMap;
@@ -13,15 +12,16 @@ import com.github.misterchangray.common.enums.DBEnum;
 import com.github.misterchangray.dao.mapper.UserRoleMapMapper;
 import com.github.misterchangray.service.user.RoleService;
 import com.github.misterchangray.service.user.UserService;
-import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.*;
 
 /**
- * Created by Miste on 3/26/2018.
  * 用户服务实现类
+ *
+ * @author Rui.Zhang/misterchangray@hotmail.com
+ * @author Created on 3/26/2018.
  */
 @Service
 public class UserServiceImpl implements UserService{

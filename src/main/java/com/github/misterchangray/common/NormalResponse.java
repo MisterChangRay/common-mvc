@@ -4,14 +4,14 @@ import com.github.misterchangray.common.enums.ErrorEnum;
 import com.github.misterchangray.common.utils.JSONUtils;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
-import org.springframework.web.servlet.view.json.MappingJackson2JsonView;
 
 import java.util.List;
 
 /**
- * Created by Miste on 3/20/2018.
+ * 通用返回类
  *
- * 用于通用函数返回，包括
+ * @author Rui.Zhang/misterchangray@hotmail.com
+ * @author Created on 3/20/2018.
  */
 @ApiModel(description = "标准返回封装-NormalResponse")
 public class NormalResponse {

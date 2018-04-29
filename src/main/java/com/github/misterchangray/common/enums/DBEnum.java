@@ -1,16 +1,16 @@
 package com.github.misterchangray.common.enums;
 
 /**
- * Created by Miste on 3/27/2018.
  * 设置数据库中的一些枚举
- * 请注意数据库中设置的数据类型
+ * 请注意此枚举为数据库中使用的枚举类型，非页面枚举
+ * 页面枚举应放置到 constants 表中
+ *
+ * @author Rui.Zhang/misterchangray@hotmail.com
+ * @author Created on 3/27/2018.
  */
 public enum DBEnum {
     TRUE(1, "true"), //表肯定
     FALSE(0, "false"), //表否定
-
-    MAN(1, "男"), //男
-    WOMAN(0, "女"),//女
 
     QUERY(100, "query"), //查询
     INSERT(101, "insert"),//新增
@@ -35,7 +35,8 @@ public enum DBEnum {
     public Integer getCode() {
         return code;
     }
-    private DBEnum(Integer code, String desc) {
+    DBEnum(Integer code, String desc) {
         this.code = code;
+        this.desc = desc;
     }
 }

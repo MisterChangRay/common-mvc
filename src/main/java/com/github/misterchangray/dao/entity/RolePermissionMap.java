@@ -5,7 +5,7 @@ import io.swagger.annotations.ApiModelProperty;
 
 @ApiModel(value="com.github.misterchangray.dao.entity.RolePermissionMap")
 public class RolePermissionMap {
-    @ApiModelProperty(value="id角色-权限映射表")
+    @ApiModelProperty(value="id")
     private Integer id;
 
     @ApiModelProperty(value="roleId")

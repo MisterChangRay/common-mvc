@@ -5,7 +5,7 @@ import io.swagger.annotations.ApiModelProperty;
 
 @ApiModel(value="com.github.misterchangray.dao.entity.UserRoleMap")
 public class UserRoleMap {
-    @ApiModelProperty(value="id用户-角色映射表")
+    @ApiModelProperty(value="id")
     private Integer id;
 
     @ApiModelProperty(value="userId")

@@ -7,7 +7,6 @@ import com.github.misterchangray.service.user.PermissionService;
 import com.github.misterchangray.service.user.RoleService;
 import com.github.misterchangray.common.annotation.Authentication;
 import com.github.misterchangray.dao.entity.Role;
-import com.github.misterchangray.dao.entity.User;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiImplicitParam;
 import io.swagger.annotations.ApiImplicitParams;
@@ -16,11 +15,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Created by Miste on 3/23/2018.
  * 角色管理控制器
  *
  * 提供用户角色以下用能
@@ -30,6 +27,9 @@ import java.util.List;
  * -角色启用/停用
  * -角色删除
  * -角色权限编辑
+ *
+ * @author Rui.Zhang/misterchangray@hotmail.com
+ * @author Created on  3/23/2018.
  */
 @Api(tags ="角色管理", description = "RoleController")
 @Controller

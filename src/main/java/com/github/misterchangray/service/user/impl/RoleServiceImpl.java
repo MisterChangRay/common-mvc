@@ -15,9 +15,12 @@ import org.springframework.stereotype.Service;
 import java.util.ArrayList;
 import java.util.List;
 
+
 /**
- * Created by Miste on 3/26/2018.
  * 用户角色服务 实现类
+ *
+ * @author Rui.Zhang/misterchangray@hotmail.com
+ * @author Created on 3/26/2018.
  */
 @Service
 public class RoleServiceImpl implements RoleService {

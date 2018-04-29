@@ -20,9 +20,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Created by Miste on 3/26/2018.
  * 配置swagger2.6.1
  *
+ * @author Rui.Zhang/misterchangray@hotmail.com
+ * @author Created on 3/22/2018.
  */
 @Configuration      //让Spring来加载该类配置
 @EnableWebMvc       //启用Mvc，非springboot框架需要引入注解@EnableWebMvc

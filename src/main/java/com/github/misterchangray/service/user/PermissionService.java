@@ -10,9 +10,10 @@ import org.springframework.beans.factory.annotation.Autowired;
 import java.util.List;
 
 /**
- * Created by Miste on 3/20/2018.
- *
  * 用户权限服务
+ *
+ * @author Rui.Zhang/misterchangray@hotmail.com
+ * @author Created on 3/20/2018.
  */
 public interface PermissionService extends BaseService<Permission> {
 }

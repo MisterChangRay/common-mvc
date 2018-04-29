@@ -12,10 +12,11 @@ import java.lang.reflect.Method;
 import java.util.Date;
 
 /**
- * Created by Miste on 3/22/2018.
- *
+ * 自定义注解
  * 统计并打印函数执行时间
  *
+ * @author Rui.Zhang/misterchangray@hotmail.com
+ * @author Created on 3/22/2018.
  */
 @Component
 @Aspect

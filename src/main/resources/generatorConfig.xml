@@ -31,7 +31,7 @@
         </commentGenerator>
         <!--数据库连接的信息：驱动类、连接地址、用户名、密码 -->
         <jdbcConnection driverClass="com.mysql.jdbc.Driver"
-                        connectionURL="jdbc:mysql://localhost:3306/playground?characterEncoding=UTF-8&amp;useSSL=true&amp;serverTimezone=GMT%2B8"
+                        connectionURL="jdbc:mysql://localhost:3306/common_core?characterEncoding=UTF-8&amp;useSSL=true&amp;serverTimezone=GMT%2B8"
                         userId="root"
                         password="Zr12356789">
         </jdbcConnection>
@@ -70,7 +70,8 @@
         <table tableName="permission"><generatedKey column="id" sqlStatement="MySql" identity="true" /></table>
         <table tableName="role_permission_map"></table>
         <table tableName="user_role_map"></table>
-        <table tableName="business_log"></table>
+        <table tableName="operation_log"></table>
+        <table tableName="constant"></table>
 
 
         <!-- 有些表的字段需要指定java类型

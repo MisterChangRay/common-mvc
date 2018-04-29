@@ -1,8 +1,6 @@
 package com.github.misterchangray.common.enums;
 
 /**
- * Created by Miste on 3/20/2018.
- *
  * 错误消息，请注意此类只应该包含错误消息：
  *
  * ID格式：
@@ -11,6 +9,8 @@ package com.github.misterchangray.common.enums;
  * 01 代表第01个模块
  * 001 代表第10模块内的第一个错误消息序号
  *
+ * @author Rui.Zhang/misterchangray@hotmail.com
+ * @author Created on 3/20/2018.
  */
 public enum ErrorEnum {
     INVALID_REQUEST(101001, "参数字段错误或参数格式错误"), //无效请求,请求有格式或数据错误

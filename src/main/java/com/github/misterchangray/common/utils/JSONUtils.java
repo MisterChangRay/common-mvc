@@ -6,11 +6,11 @@ import org.aspectj.weaver.BCException;
 
 
 /**
- * @author Created by rui.zhang on 2018/4/23.
- * @author rui.zhang
- * @version ver1.0
- * @email misterchangray@hotmail.com
- * @description JSON相关操作工具
+ * 常用静态工具类
+ * JSON相关操作工具
+ *
+ * @author Rui.Zhang/misterchangray@hotmail.com
+ * @author Created on 2018/4/23.
  */
 public class JSONUtils {
 
