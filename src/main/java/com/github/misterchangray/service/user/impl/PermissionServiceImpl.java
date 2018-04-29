@@ -1,6 +1,7 @@
 package com.github.misterchangray.service.user.impl;
 
 import com.github.misterchangray.common.NormalResponse;
+import com.github.misterchangray.common.annotation.OperationLog;
 import com.github.misterchangray.common.enums.DBEnum;
 import com.github.misterchangray.common.enums.ErrorEnum;
 import com.github.misterchangray.dao.entity.Permission;
@@ -97,6 +98,7 @@ public class PermissionServiceImpl implements PermissionService{
      * @param permission 待新增的对象
      * @return Permission
      */
+    @OperationLog(businessName = "增加权限")
     public NormalResponse insert(Permission permission) {
         permission.setId(null);
         permission.setDeleted(DBEnum.FALSE.getCode());
@@ -109,6 +111,7 @@ public class PermissionServiceImpl implements PermissionService{
      * @param permissions 待新增的对象集合
      * @return list[Permission]
      */
+    @OperationLog(businessName = "批量增加权限")
     public NormalResponse batchInsert(List<Permission> permissions) {
         if(null == permissions) return NormalResponse.newInstance().setErrorCode(ErrorEnum.INVALID_REQUEST);
 
@@ -120,6 +123,7 @@ public class PermissionServiceImpl implements PermissionService{
      * @param permission 待更新的权限对象
      * @return Permission
      */
+    @OperationLog(businessName = "更新权限")
     public NormalResponse update(Permission permission) {
         if(null == permission || null == permission.getId()) return NormalResponse.newInstance().setErrorCode(ErrorEnum.INVALID_REQUEST);
 
@@ -137,6 +141,7 @@ public class PermissionServiceImpl implements PermissionService{
      * @param permission 待删除的权限对象
      * @return null
      */
+    @OperationLog(businessName = "删除权限")
     public NormalResponse delete(Permission permission) {
         if(null == permission || null == permission.getId()) return NormalResponse.newInstance().setErrorCode(ErrorEnum.INVALID_REQUEST);
 

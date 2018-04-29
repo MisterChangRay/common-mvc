@@ -1,5 +1,6 @@
 package com.github.misterchangray.service.user.impl;
 
+import com.github.misterchangray.common.annotation.OperationLog;
 import com.github.misterchangray.common.enums.ErrorEnum;
 import com.github.misterchangray.common.NormalResponse;
 import com.github.misterchangray.common.PageInfo;
@@ -39,6 +40,7 @@ public class UserServiceImpl implements UserService{
      * @param roles 更新的角色信息
      * @return
      */
+    @OperationLog(businessName = "更新用户角色")
     public NormalResponse updateRole(Integer userId, List<Integer> roles) {
         NormalResponse normalResponse = NormalResponse.newInstance();
         if(null == userId) return normalResponse.setErrorCode(ErrorEnum.INVALID_REQUEST);
@@ -167,6 +169,7 @@ public class UserServiceImpl implements UserService{
      * @param user 待增加用户
      * @return User
      */
+    @OperationLog(businessName = "增加用户")
     public NormalResponse insert(User user) {
         if(null == user) return NormalResponse.newInstance().setErrorCode(ErrorEnum.INVALID_REQUEST);
 
@@ -182,6 +185,7 @@ public class UserServiceImpl implements UserService{
      * @param users 待增加用户
      * @return
      */
+    @OperationLog(businessName = "批量增加用户")
     public NormalResponse batchInsert(List<User> users) {
         if(null == users) return NormalResponse.newInstance().setErrorCode(ErrorEnum.INVALID_REQUEST);
 
@@ -193,6 +197,7 @@ public class UserServiceImpl implements UserService{
      * @param user 待更新用户
      * @return User
      */
+    @OperationLog(businessName = "更新用户")
     public NormalResponse update(User user) {
         if(null == user || null == user.getId()) return NormalResponse.newInstance().setErrorCode(ErrorEnum.INVALID_REQUEST);
 
@@ -211,6 +216,7 @@ public class UserServiceImpl implements UserService{
      * @param user 待删除用户
      * @return null
      */
+    @OperationLog(businessName = "删除用户角色")
     public NormalResponse delete(User user) {
         if(null == user || null == user.getId()) return NormalResponse.newInstance().setErrorCode(ErrorEnum.INVALID_REQUEST);
 

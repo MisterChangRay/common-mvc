@@ -1,6 +1,7 @@
 package com.github.misterchangray.service.user.impl;
 
 import com.github.misterchangray.common.NormalResponse;
+import com.github.misterchangray.common.annotation.OperationLog;
 import com.github.misterchangray.common.enums.DBEnum;
 import com.github.misterchangray.common.enums.ErrorEnum;
 import com.github.misterchangray.common.utils.MapBuilder;
@@ -29,6 +30,7 @@ public class AuthServiceImpl implements AuthService {
     @Autowired
     HttpSession httpSession;
 
+    @OperationLog(businessName = "用户登陆-用户名+密码")
     public NormalResponse loginByUserName(String username, String password) {
         NormalResponse res = new NormalResponse();
 
