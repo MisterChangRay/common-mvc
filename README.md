@@ -19,8 +19,10 @@
 - 访问`http://localhost:8080/docs/index.html` 查看swagger生成的Api文档信息
 - 根据需求进行快速迭代开发
 
-### 目前表单,所有表单详细信息在"/resources/archives"目录下
+### 目前表单,详细信息在"/resources/archives"目录下
 ```sql
+drop database common_core;
+
 create database common_core;
 
 use common_core;
@@ -49,7 +51,7 @@ create table operation_log;
 - 开发规范建议遵循阿里巴巴Java开发手册（[最新版下载](https://github.com/lihengming/java-codes/blob/master/shared-resources/%E9%98%BF%E9%87%8C%E5%B7%B4%E5%B7%B4Java%E5%BC%80%E5%8F%91%E6%89%8B%E5%86%8CV1.2.0.pdf))
 - 建议在公司内部使用ShowDoc、Swagger2 、RAP等开源项目来编写、管理API文档
 - 页面常量信息建议放在`constants`表;如民族/地址/证件类型/性别等;
-- 项目相关文档放置在`/resources/archives`目录下
+- 所有项目文档放置在`/resources/archives`目录下
 
 ### 相关环境(推荐使用环境)
 - OS Microsoft Windows 10 Pro
