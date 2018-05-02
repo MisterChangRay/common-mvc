@@ -1,6 +1,6 @@
 /*==============================================================*/
 /* DBMS name:      MySQL 5.0                                    */
-/* Created on:     5/1/2018 6:00:33 PM                          */
+/* Created on:     5/2/2018 8:24:43 AM                          */
 /*==============================================================*/
 
 
@@ -25,15 +25,15 @@ drop table if exists user_role_map;
 /*==============================================================*/
 create table constant
 (
-   id                   varchar(100) not null,
+   id                   int not null auto_increment,
    name                 varchar(100) comment '常量名称',
    shortcut             varchar(100) comment '常量简称,用于快速定位',
-   pid                  varchar(100) comment '父ID,null为根节点',
+   pid                  int unsigned comment '父ID,null为根节点',
+   level                int unsigned comment '当前层级;pid=null时为1级',
    has_child            int unsigned comment '是否有子节点0false,1true',
    enabled              int unsigned comment '是否启用0false,1true',
    deleted              int unsigned comment '是否删除0false, 1true',
-   extra                text comment '附加数据;推荐存JSON',
-   priority             int unsigned comment '用于排序',
+   extra                int unsigned comment '附加数据;推荐存JSON',
    primary key (id)
 );
 
@@ -73,6 +73,9 @@ create table permission
    id                   int not null auto_increment,
    name                 varchar(100),
    deleted              int unsigned comment '是否删除0false, 1true',
+   uri                  varchar(100),
+   type                 int unsigned comment '1菜单2按钮',
+   puri                 varchar(100),
    primary key (id)
 );
 
