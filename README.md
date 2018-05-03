@@ -1,4 +1,4 @@
-# common-core
+# 欢迎使用 Common-Core
 基于maven的spring4.3+mybatis3.4+swagger2.6的后台整合，用于快速构建中小型API、RESTful API项目，该项目简单、快速、易扩展；使我们摆脱那些重复劳动，专注于业务代码的编写。
 
 
