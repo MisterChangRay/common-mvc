@@ -6,6 +6,7 @@
 - 增加权限统一拦截注解`@Authentication`
 - 增加方法性能统计注解`@printRunTime`
 - 增加简单的操作日志`@OperationLog`
+- 实现了简单的登录日志
 - 实现了简单的权限系统
 - 生成entity类时自动提取数据库注释生成swagger文档
 - 实现了更漂亮的swagger-ui
@@ -52,6 +53,8 @@ create table operation_log;
 - 建议在公司内部使用ShowDoc、Swagger2 、RAP等开源项目来编写、管理API文档
 - 页面常量信息建议放在`constants`表;如民族/地址/证件类型/性别等;
 - 所有项目文档放置在`/resources/archives`目录下
+- 建议所有DTO/BO放在相应service目录下/VO放在相应controller目录下
+
 
 ### 相关环境(推荐使用环境)
 - OS Microsoft Windows 10 Pro
