@@ -71,15 +71,5 @@ create table operation_log;
 
 
 ### 注意事项
-- 下载后请修改`pom.xml`里面的,这里需要引入你的tomcat下的servlet.api.jar
-```xml 
-<!-- 添加tomcat/bin下servlet-api.jar 注意你tomcat下这个jar包版本-->
-    <dependency>
-      <groupId>javax.servlet</groupId>
-      <artifactId>servlet-api</artifactId>
-      <version>2.5</version>
-      <scope>provided</scope>
-    </dependency>
-```
 - 使用mybaitis-generator插件生成dao层时请先删除原来的文件,不然生的的内容会追加到源文件中,出现代码重复
 - 下载后如打不开swagger2文档，可能需要修改`webapp/common-core-swagger-ui/config.js`文件中得地址
