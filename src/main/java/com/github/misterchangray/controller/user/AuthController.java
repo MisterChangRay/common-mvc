@@ -1,13 +1,7 @@
 package com.github.misterchangray.controller.user;
 
-import com.alibaba.druid.util.Utils;
-import com.github.misterchangray.common.enums.DBEnum;
 import com.github.misterchangray.common.enums.ErrorEnum;
 import com.github.misterchangray.common.NormalResponse;
-import com.github.misterchangray.common.utils.MapBuilder;
-import com.github.misterchangray.dao.entity.User;
-import com.github.misterchangray.dao.entity.UserQuery;
-import com.github.misterchangray.dao.mapper.UserMapper;
 import com.github.misterchangray.common.annotation.Authentication;
 import com.github.misterchangray.service.user.AuthService;
 import com.github.misterchangray.service.user.UserService;
@@ -19,18 +13,16 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpSession;
-import java.util.*;
 
 /**
- * Created by Miste on 3/23/2018.
  * 用户认证控制器
  *
  * 提供用户登陆认证以下用能
  * -用户登陆认证
  * -检查用户信息是否存在
  *
+ * @author Rui.Zhang/misterchangray@hotmail.com
+ * @author Created on 3/23/2018.
  */
 @Api(tags ="用户认证", description = "AuthController")
 @Controller

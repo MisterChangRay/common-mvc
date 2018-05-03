@@ -1,0 +1,84452 @@
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001',
+  '常量配置',
+  'system_const',
+  NULL,
+  1,
+  1,
+  0,
+  NULL,
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010001',
+  '民族',
+  'nationality',
+  '0001',
+  1,
+  1,
+  0,
+  NULL,
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '000100010001',
+  '汉族',
+  NULL,
+  '00010001',
+  0,
+  1,
+  0,
+  NULL,
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '000100010002',
+  '蒙古族',
+  NULL,
+  '00010001',
+  0,
+  1,
+  0,
+  NULL,
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '000100010003',
+  '回族',
+  NULL,
+  '00010001',
+  0,
+  1,
+  0,
+  NULL,
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '000100010004',
+  '藏族',
+  NULL,
+  '00010001',
+  0,
+  1,
+  0,
+  NULL,
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '000100010005',
+  '维吾尔族',
+  NULL,
+  '00010001',
+  0,
+  1,
+  0,
+  NULL,
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '000100010006',
+  '苗族',
+  NULL,
+  '00010001',
+  0,
+  1,
+  0,
+  NULL,
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '000100010007',
+  '彝族',
+  NULL,
+  '00010001',
+  0,
+  1,
+  0,
+  NULL,
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '000100010008',
+  '壮族',
+  NULL,
+  '00010001',
+  0,
+  1,
+  0,
+  NULL,
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '000100010009',
+  '布依族',
+  NULL,
+  '00010001',
+  0,
+  1,
+  0,
+  NULL,
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '000100010010',
+  '朝鲜族',
+  NULL,
+  '00010001',
+  0,
+  1,
+  0,
+  NULL,
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '000100010011',
+  '满族',
+  NULL,
+  '00010001',
+  0,
+  1,
+  0,
+  NULL,
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '000100010012',
+  '侗族',
+  NULL,
+  '00010001',
+  0,
+  1,
+  0,
+  NULL,
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '000100010013',
+  '瑶族',
+  NULL,
+  '00010001',
+  0,
+  1,
+  0,
+  NULL,
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '000100010014',
+  '白族',
+  NULL,
+  '00010001',
+  0,
+  1,
+  0,
+  NULL,
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '000100010015',
+  '土家族',
+  NULL,
+  '00010001',
+  0,
+  1,
+  0,
+  NULL,
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '000100010016',
+  '哈尼族',
+  NULL,
+  '00010001',
+  0,
+  1,
+  0,
+  NULL,
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '000100010017',
+  '哈萨克族',
+  NULL,
+  '00010001',
+  0,
+  1,
+  0,
+  NULL,
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '000100010018',
+  '傣族',
+  NULL,
+  '00010001',
+  0,
+  1,
+  0,
+  NULL,
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '000100010019',
+  '黎族',
+  NULL,
+  '00010001',
+  0,
+  1,
+  0,
+  NULL,
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '000100010020',
+  '傈僳族',
+  NULL,
+  '00010001',
+  0,
+  1,
+  0,
+  NULL,
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '000100010021',
+  '佤族',
+  NULL,
+  '00010001',
+  0,
+  1,
+  0,
+  NULL,
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '000100010022',
+  '畲族',
+  NULL,
+  '00010001',
+  0,
+  1,
+  0,
+  NULL,
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '000100010023',
+  '高山族',
+  NULL,
+  '00010001',
+  0,
+  1,
+  0,
+  NULL,
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '000100010024',
+  '拉祜族',
+  NULL,
+  '00010001',
+  0,
+  1,
+  0,
+  NULL,
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '000100010025',
+  '水族',
+  NULL,
+  '00010001',
+  0,
+  1,
+  0,
+  NULL,
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '000100010026',
+  '东乡族',
+  NULL,
+  '00010001',
+  0,
+  1,
+  0,
+  NULL,
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '000100010027',
+  '纳西族',
+  NULL,
+  '00010001',
+  0,
+  1,
+  0,
+  NULL,
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '000100010028',
+  '景颇族',
+  NULL,
+  '00010001',
+  0,
+  1,
+  0,
+  NULL,
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '000100010029',
+  '柯尔克孜族',
+  NULL,
+  '00010001',
+  0,
+  1,
+  0,
+  NULL,
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '000100010030',
+  '土族',
+  NULL,
+  '00010001',
+  0,
+  1,
+  0,
+  NULL,
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '000100010031',
+  '达斡尔族',
+  NULL,
+  '00010001',
+  0,
+  1,
+  0,
+  NULL,
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '000100010032',
+  '仫佬族',
+  NULL,
+  '00010001',
+  0,
+  1,
+  0,
+  NULL,
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '000100010033',
+  '羌族',
+  NULL,
+  '00010001',
+  0,
+  1,
+  0,
+  NULL,
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '000100010034',
+  '布朗族',
+  NULL,
+  '00010001',
+  0,
+  1,
+  0,
+  NULL,
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '000100010035',
+  '撒拉族',
+  NULL,
+  '00010001',
+  0,
+  1,
+  0,
+  NULL,
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '000100010036',
+  '毛难族',
+  NULL,
+  '00010001',
+  0,
+  1,
+  0,
+  NULL,
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '000100010037',
+  '仡佬族',
+  NULL,
+  '00010001',
+  0,
+  1,
+  0,
+  NULL,
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '000100010038',
+  '锡伯族',
+  NULL,
+  '00010001',
+  0,
+  1,
+  0,
+  NULL,
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '000100010039',
+  '阿昌族',
+  NULL,
+  '00010001',
+  0,
+  1,
+  0,
+  NULL,
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '000100010040',
+  '普米族',
+  NULL,
+  '00010001',
+  0,
+  1,
+  0,
+  NULL,
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '000100010041',
+  '塔吉克族',
+  NULL,
+  '00010001',
+  0,
+  1,
+  0,
+  NULL,
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '000100010042',
+  '怒族',
+  NULL,
+  '00010001',
+  0,
+  1,
+  0,
+  NULL,
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '000100010043',
+  '乌孜别克族',
+  NULL,
+  '00010001',
+  0,
+  1,
+  0,
+  NULL,
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '000100010044',
+  '俄罗斯族',
+  NULL,
+  '00010001',
+  0,
+  1,
+  0,
+  NULL,
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '000100010045',
+  '鄂温克族',
+  NULL,
+  '00010001',
+  0,
+  1,
+  0,
+  NULL,
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '000100010046',
+  '崩龙族',
+  NULL,
+  '00010001',
+  0,
+  1,
+  0,
+  NULL,
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '000100010047',
+  '保安族',
+  NULL,
+  '00010001',
+  0,
+  1,
+  0,
+  NULL,
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '000100010048',
+  '裕固族',
+  NULL,
+  '00010001',
+  0,
+  1,
+  0,
+  NULL,
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '000100010049',
+  '京族',
+  NULL,
+  '00010001',
+  0,
+  1,
+  0,
+  NULL,
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '000100010050',
+  '塔塔尔族',
+  NULL,
+  '00010001',
+  0,
+  1,
+  0,
+  NULL,
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '000100010051',
+  '独龙族',
+  NULL,
+  '00010001',
+  0,
+  1,
+  0,
+  NULL,
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '000100010052',
+  '鄂伦春族',
+  NULL,
+  '00010001',
+  0,
+  1,
+  0,
+  NULL,
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '000100010053',
+  '赫哲族',
+  NULL,
+  '00010001',
+  0,
+  1,
+  0,
+  NULL,
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '000100010054',
+  '门巴族',
+  NULL,
+  '00010001',
+  0,
+  1,
+  0,
+  NULL,
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '000100010055',
+  '珞巴族',
+  NULL,
+  '00010001',
+  0,
+  1,
+  0,
+  NULL,
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '000100010056',
+  '基诺族',
+  NULL,
+  '00010001',
+  0,
+  1,
+  0,
+  NULL,
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010002',
+  '性别',
+  'sex',
+  '0001',
+  1,
+  1,
+  0,
+  NULL,
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '000100020001',
+  '男',
+  NULL,
+  '00010002',
+  0,
+  1,
+  0,
+  NULL,
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '000100020002',
+  '女',
+  NULL,
+  '00010002',
+  0,
+  1,
+  0,
+  NULL,
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '000100020003',
+  '保密',
+  NULL,
+  '00010002',
+  0,
+  1,
+  0,
+  NULL,
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003',
+  '全国地址',
+  'address',
+  '0001',
+  1,
+  1,
+  0,
+  NULL,
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '000100030001',
+  '北京市',
+  NULL,
+  '00010003',
+  1,
+  1,
+  0,
+  '{"fullName":"北京市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300010001',
+  '市辖区',
+  NULL,
+  '000100030001',
+  1,
+  1,
+  0,
+  '{"fullName":"北京市市辖区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000100010001',
+  '东城区',
+  NULL,
+  '0001000300010001',
+  0,
+  1,
+  0,
+  '{"fullName":"北京市市辖区东城区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000100010002',
+  '西城区',
+  NULL,
+  '0001000300010001',
+  0,
+  1,
+  0,
+  '{"fullName":"北京市市辖区西城区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000100010003',
+  '朝阳区',
+  NULL,
+  '0001000300010001',
+  0,
+  1,
+  0,
+  '{"fullName":"北京市市辖区朝阳区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000100010004',
+  '丰台区',
+  NULL,
+  '0001000300010001',
+  0,
+  1,
+  0,
+  '{"fullName":"北京市市辖区丰台区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000100010005',
+  '石景山区',
+  NULL,
+  '0001000300010001',
+  0,
+  1,
+  0,
+  '{"fullName":"北京市市辖区石景山区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000100010006',
+  '海淀区',
+  NULL,
+  '0001000300010001',
+  0,
+  1,
+  0,
+  '{"fullName":"北京市市辖区海淀区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000100010007',
+  '门头沟区',
+  NULL,
+  '0001000300010001',
+  0,
+  1,
+  0,
+  '{"fullName":"北京市市辖区门头沟区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000100010008',
+  '房山区',
+  NULL,
+  '0001000300010001',
+  0,
+  1,
+  0,
+  '{"fullName":"北京市市辖区房山区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000100010009',
+  '通州区',
+  NULL,
+  '0001000300010001',
+  0,
+  1,
+  0,
+  '{"fullName":"北京市市辖区通州区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000100010010',
+  '顺义区',
+  NULL,
+  '0001000300010001',
+  0,
+  1,
+  0,
+  '{"fullName":"北京市市辖区顺义区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000100010011',
+  '昌平区',
+  NULL,
+  '0001000300010001',
+  0,
+  1,
+  0,
+  '{"fullName":"北京市市辖区昌平区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000100010012',
+  '大兴区',
+  NULL,
+  '0001000300010001',
+  0,
+  1,
+  0,
+  '{"fullName":"北京市市辖区大兴区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000100010013',
+  '怀柔区',
+  NULL,
+  '0001000300010001',
+  0,
+  1,
+  0,
+  '{"fullName":"北京市市辖区怀柔区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000100010014',
+  '平谷区',
+  NULL,
+  '0001000300010001',
+  0,
+  1,
+  0,
+  '{"fullName":"北京市市辖区平谷区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000100010015',
+  '密云区',
+  NULL,
+  '0001000300010001',
+  0,
+  1,
+  0,
+  '{"fullName":"北京市市辖区密云区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000100010016',
+  '延庆区',
+  NULL,
+  '0001000300010001',
+  0,
+  1,
+  0,
+  '{"fullName":"北京市市辖区延庆区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '000100030002',
+  '天津市',
+  NULL,
+  '00010003',
+  1,
+  1,
+  0,
+  '{"fullName":"天津市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300020001',
+  '市辖区',
+  NULL,
+  '000100030002',
+  1,
+  1,
+  0,
+  '{"fullName":"天津市市辖区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000200010001',
+  '和平区',
+  NULL,
+  '0001000300020001',
+  0,
+  1,
+  0,
+  '{"fullName":"天津市市辖区和平区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000200010002',
+  '河东区',
+  NULL,
+  '0001000300020001',
+  0,
+  1,
+  0,
+  '{"fullName":"天津市市辖区河东区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000200010003',
+  '河西区',
+  NULL,
+  '0001000300020001',
+  0,
+  1,
+  0,
+  '{"fullName":"天津市市辖区河西区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000200010004',
+  '南开区',
+  NULL,
+  '0001000300020001',
+  0,
+  1,
+  0,
+  '{"fullName":"天津市市辖区南开区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000200010005',
+  '河北区',
+  NULL,
+  '0001000300020001',
+  0,
+  1,
+  0,
+  '{"fullName":"天津市市辖区河北区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000200010006',
+  '红桥区',
+  NULL,
+  '0001000300020001',
+  0,
+  1,
+  0,
+  '{"fullName":"天津市市辖区红桥区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000200010007',
+  '东丽区',
+  NULL,
+  '0001000300020001',
+  0,
+  1,
+  0,
+  '{"fullName":"天津市市辖区东丽区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000200010008',
+  '西青区',
+  NULL,
+  '0001000300020001',
+  0,
+  1,
+  0,
+  '{"fullName":"天津市市辖区西青区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000200010009',
+  '津南区',
+  NULL,
+  '0001000300020001',
+  0,
+  1,
+  0,
+  '{"fullName":"天津市市辖区津南区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000200010010',
+  '北辰区',
+  NULL,
+  '0001000300020001',
+  0,
+  1,
+  0,
+  '{"fullName":"天津市市辖区北辰区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000200010011',
+  '武清区',
+  NULL,
+  '0001000300020001',
+  0,
+  1,
+  0,
+  '{"fullName":"天津市市辖区武清区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000200010012',
+  '宝坻区',
+  NULL,
+  '0001000300020001',
+  0,
+  1,
+  0,
+  '{"fullName":"天津市市辖区宝坻区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000200010013',
+  '滨海新区',
+  NULL,
+  '0001000300020001',
+  0,
+  1,
+  0,
+  '{"fullName":"天津市市辖区滨海新区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000200010014',
+  '宁河区',
+  NULL,
+  '0001000300020001',
+  0,
+  1,
+  0,
+  '{"fullName":"天津市市辖区宁河区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000200010015',
+  '静海区',
+  NULL,
+  '0001000300020001',
+  0,
+  1,
+  0,
+  '{"fullName":"天津市市辖区静海区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000200010016',
+  '蓟州区',
+  NULL,
+  '0001000300020001',
+  0,
+  1,
+  0,
+  '{"fullName":"天津市市辖区蓟州区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '000100030003',
+  '河北省',
+  NULL,
+  '00010003',
+  1,
+  1,
+  0,
+  '{"fullName":"河北省"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300030001',
+  '石家庄市',
+  NULL,
+  '000100030003',
+  1,
+  1,
+  0,
+  '{"fullName":"河北省石家庄市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000300010001',
+  '长安区',
+  NULL,
+  '0001000300030001',
+  0,
+  1,
+  0,
+  '{"fullName":"河北省石家庄市长安区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000300010002',
+  '桥西区',
+  NULL,
+  '0001000300030001',
+  0,
+  1,
+  0,
+  '{"fullName":"河北省石家庄市桥西区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000300010003',
+  '新华区',
+  NULL,
+  '0001000300030001',
+  0,
+  1,
+  0,
+  '{"fullName":"河北省石家庄市新华区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000300010004',
+  '井陉矿区',
+  NULL,
+  '0001000300030001',
+  0,
+  1,
+  0,
+  '{"fullName":"河北省石家庄市井陉矿区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000300010005',
+  '裕华区',
+  NULL,
+  '0001000300030001',
+  0,
+  1,
+  0,
+  '{"fullName":"河北省石家庄市裕华区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000300010006',
+  '藁城区',
+  NULL,
+  '0001000300030001',
+  0,
+  1,
+  0,
+  '{"fullName":"河北省石家庄市藁城区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000300010007',
+  '鹿泉区',
+  NULL,
+  '0001000300030001',
+  0,
+  1,
+  0,
+  '{"fullName":"河北省石家庄市鹿泉区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000300010008',
+  '栾城区',
+  NULL,
+  '0001000300030001',
+  0,
+  1,
+  0,
+  '{"fullName":"河北省石家庄市栾城区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000300010009',
+  '井陉县',
+  NULL,
+  '0001000300030001',
+  0,
+  1,
+  0,
+  '{"fullName":"河北省石家庄市井陉县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000300010010',
+  '正定县',
+  NULL,
+  '0001000300030001',
+  0,
+  1,
+  0,
+  '{"fullName":"河北省石家庄市正定县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000300010011',
+  '行唐县',
+  NULL,
+  '0001000300030001',
+  0,
+  1,
+  0,
+  '{"fullName":"河北省石家庄市行唐县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000300010012',
+  '灵寿县',
+  NULL,
+  '0001000300030001',
+  0,
+  1,
+  0,
+  '{"fullName":"河北省石家庄市灵寿县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000300010013',
+  '高邑县',
+  NULL,
+  '0001000300030001',
+  0,
+  1,
+  0,
+  '{"fullName":"河北省石家庄市高邑县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000300010014',
+  '深泽县',
+  NULL,
+  '0001000300030001',
+  0,
+  1,
+  0,
+  '{"fullName":"河北省石家庄市深泽县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000300010015',
+  '赞皇县',
+  NULL,
+  '0001000300030001',
+  0,
+  1,
+  0,
+  '{"fullName":"河北省石家庄市赞皇县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000300010016',
+  '无极县',
+  NULL,
+  '0001000300030001',
+  0,
+  1,
+  0,
+  '{"fullName":"河北省石家庄市无极县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000300010017',
+  '平山县',
+  NULL,
+  '0001000300030001',
+  0,
+  1,
+  0,
+  '{"fullName":"河北省石家庄市平山县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000300010018',
+  '元氏县',
+  NULL,
+  '0001000300030001',
+  0,
+  1,
+  0,
+  '{"fullName":"河北省石家庄市元氏县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000300010019',
+  '赵县',
+  NULL,
+  '0001000300030001',
+  0,
+  1,
+  0,
+  '{"fullName":"河北省石家庄市赵县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000300010020',
+  '晋州市',
+  NULL,
+  '0001000300030001',
+  0,
+  1,
+  0,
+  '{"fullName":"河北省石家庄市晋州市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000300010021',
+  '新乐市',
+  NULL,
+  '0001000300030001',
+  0,
+  1,
+  0,
+  '{"fullName":"河北省石家庄市新乐市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300030002',
+  '唐山市',
+  NULL,
+  '000100030003',
+  1,
+  1,
+  0,
+  '{"fullName":"河北省唐山市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000300020001',
+  '路南区',
+  NULL,
+  '0001000300030002',
+  0,
+  1,
+  0,
+  '{"fullName":"河北省唐山市路南区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000300020002',
+  '路北区',
+  NULL,
+  '0001000300030002',
+  0,
+  1,
+  0,
+  '{"fullName":"河北省唐山市路北区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000300020003',
+  '古冶区',
+  NULL,
+  '0001000300030002',
+  0,
+  1,
+  0,
+  '{"fullName":"河北省唐山市古冶区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000300020004',
+  '开平区',
+  NULL,
+  '0001000300030002',
+  0,
+  1,
+  0,
+  '{"fullName":"河北省唐山市开平区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000300020005',
+  '丰南区',
+  NULL,
+  '0001000300030002',
+  0,
+  1,
+  0,
+  '{"fullName":"河北省唐山市丰南区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000300020006',
+  '丰润区',
+  NULL,
+  '0001000300030002',
+  0,
+  1,
+  0,
+  '{"fullName":"河北省唐山市丰润区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000300020007',
+  '曹妃甸区',
+  NULL,
+  '0001000300030002',
+  0,
+  1,
+  0,
+  '{"fullName":"河北省唐山市曹妃甸区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000300020008',
+  '滦县',
+  NULL,
+  '0001000300030002',
+  0,
+  1,
+  0,
+  '{"fullName":"河北省唐山市滦县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000300020009',
+  '滦南县',
+  NULL,
+  '0001000300030002',
+  0,
+  1,
+  0,
+  '{"fullName":"河北省唐山市滦南县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000300020010',
+  '乐亭县',
+  NULL,
+  '0001000300030002',
+  0,
+  1,
+  0,
+  '{"fullName":"河北省唐山市乐亭县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000300020011',
+  '迁西县',
+  NULL,
+  '0001000300030002',
+  0,
+  1,
+  0,
+  '{"fullName":"河北省唐山市迁西县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000300020012',
+  '玉田县',
+  NULL,
+  '0001000300030002',
+  0,
+  1,
+  0,
+  '{"fullName":"河北省唐山市玉田县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000300020013',
+  '遵化市',
+  NULL,
+  '0001000300030002',
+  0,
+  1,
+  0,
+  '{"fullName":"河北省唐山市遵化市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000300020014',
+  '迁安市',
+  NULL,
+  '0001000300030002',
+  0,
+  1,
+  0,
+  '{"fullName":"河北省唐山市迁安市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300030003',
+  '秦皇岛市',
+  NULL,
+  '000100030003',
+  1,
+  1,
+  0,
+  '{"fullName":"河北省秦皇岛市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000300030001',
+  '海港区',
+  NULL,
+  '0001000300030003',
+  0,
+  1,
+  0,
+  '{"fullName":"河北省秦皇岛市海港区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000300030002',
+  '山海关区',
+  NULL,
+  '0001000300030003',
+  0,
+  1,
+  0,
+  '{"fullName":"河北省秦皇岛市山海关区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000300030003',
+  '北戴河区',
+  NULL,
+  '0001000300030003',
+  0,
+  1,
+  0,
+  '{"fullName":"河北省秦皇岛市北戴河区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000300030004',
+  '抚宁区',
+  NULL,
+  '0001000300030003',
+  0,
+  1,
+  0,
+  '{"fullName":"河北省秦皇岛市抚宁区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000300030005',
+  '青龙满族自治县',
+  NULL,
+  '0001000300030003',
+  0,
+  1,
+  0,
+  '{"fullName":"河北省秦皇岛市青龙满族自治县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000300030006',
+  '昌黎县',
+  NULL,
+  '0001000300030003',
+  0,
+  1,
+  0,
+  '{"fullName":"河北省秦皇岛市昌黎县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000300030007',
+  '卢龙县',
+  NULL,
+  '0001000300030003',
+  0,
+  1,
+  0,
+  '{"fullName":"河北省秦皇岛市卢龙县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300030004',
+  '邯郸市',
+  NULL,
+  '000100030003',
+  1,
+  1,
+  0,
+  '{"fullName":"河北省邯郸市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000300040001',
+  '邯山区',
+  NULL,
+  '0001000300030004',
+  0,
+  1,
+  0,
+  '{"fullName":"河北省邯郸市邯山区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000300040002',
+  '丛台区',
+  NULL,
+  '0001000300030004',
+  0,
+  1,
+  0,
+  '{"fullName":"河北省邯郸市丛台区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000300040003',
+  '复兴区',
+  NULL,
+  '0001000300030004',
+  0,
+  1,
+  0,
+  '{"fullName":"河北省邯郸市复兴区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000300040004',
+  '峰峰矿区',
+  NULL,
+  '0001000300030004',
+  0,
+  1,
+  0,
+  '{"fullName":"河北省邯郸市峰峰矿区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000300040005',
+  '邯郸县',
+  NULL,
+  '0001000300030004',
+  0,
+  1,
+  0,
+  '{"fullName":"河北省邯郸市邯郸县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000300040006',
+  '临漳县',
+  NULL,
+  '0001000300030004',
+  0,
+  1,
+  0,
+  '{"fullName":"河北省邯郸市临漳县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000300040007',
+  '成安县',
+  NULL,
+  '0001000300030004',
+  0,
+  1,
+  0,
+  '{"fullName":"河北省邯郸市成安县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000300040008',
+  '大名县',
+  NULL,
+  '0001000300030004',
+  0,
+  1,
+  0,
+  '{"fullName":"河北省邯郸市大名县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000300040009',
+  '涉县',
+  NULL,
+  '0001000300030004',
+  0,
+  1,
+  0,
+  '{"fullName":"河北省邯郸市涉县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000300040010',
+  '磁县',
+  NULL,
+  '0001000300030004',
+  0,
+  1,
+  0,
+  '{"fullName":"河北省邯郸市磁县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000300040011',
+  '肥乡县',
+  NULL,
+  '0001000300030004',
+  0,
+  1,
+  0,
+  '{"fullName":"河北省邯郸市肥乡县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000300040012',
+  '永年县',
+  NULL,
+  '0001000300030004',
+  0,
+  1,
+  0,
+  '{"fullName":"河北省邯郸市永年县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000300040013',
+  '邱县',
+  NULL,
+  '0001000300030004',
+  0,
+  1,
+  0,
+  '{"fullName":"河北省邯郸市邱县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000300040014',
+  '鸡泽县',
+  NULL,
+  '0001000300030004',
+  0,
+  1,
+  0,
+  '{"fullName":"河北省邯郸市鸡泽县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000300040015',
+  '广平县',
+  NULL,
+  '0001000300030004',
+  0,
+  1,
+  0,
+  '{"fullName":"河北省邯郸市广平县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000300040016',
+  '馆陶县',
+  NULL,
+  '0001000300030004',
+  0,
+  1,
+  0,
+  '{"fullName":"河北省邯郸市馆陶县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000300040017',
+  '魏县',
+  NULL,
+  '0001000300030004',
+  0,
+  1,
+  0,
+  '{"fullName":"河北省邯郸市魏县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000300040018',
+  '曲周县',
+  NULL,
+  '0001000300030004',
+  0,
+  1,
+  0,
+  '{"fullName":"河北省邯郸市曲周县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000300040019',
+  '武安市',
+  NULL,
+  '0001000300030004',
+  0,
+  1,
+  0,
+  '{"fullName":"河北省邯郸市武安市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300030005',
+  '邢台市',
+  NULL,
+  '000100030003',
+  1,
+  1,
+  0,
+  '{"fullName":"河北省邢台市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000300050001',
+  '桥东区',
+  NULL,
+  '0001000300030005',
+  0,
+  1,
+  0,
+  '{"fullName":"河北省邢台市桥东区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000300050002',
+  '桥西区',
+  NULL,
+  '0001000300030005',
+  0,
+  1,
+  0,
+  '{"fullName":"河北省邢台市桥西区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000300050003',
+  '邢台县',
+  NULL,
+  '0001000300030005',
+  0,
+  1,
+  0,
+  '{"fullName":"河北省邢台市邢台县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000300050004',
+  '临城县',
+  NULL,
+  '0001000300030005',
+  0,
+  1,
+  0,
+  '{"fullName":"河北省邢台市临城县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000300050005',
+  '内丘县',
+  NULL,
+  '0001000300030005',
+  0,
+  1,
+  0,
+  '{"fullName":"河北省邢台市内丘县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000300050006',
+  '柏乡县',
+  NULL,
+  '0001000300030005',
+  0,
+  1,
+  0,
+  '{"fullName":"河北省邢台市柏乡县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000300050007',
+  '隆尧县',
+  NULL,
+  '0001000300030005',
+  0,
+  1,
+  0,
+  '{"fullName":"河北省邢台市隆尧县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000300050008',
+  '任县',
+  NULL,
+  '0001000300030005',
+  0,
+  1,
+  0,
+  '{"fullName":"河北省邢台市任县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000300050009',
+  '南和县',
+  NULL,
+  '0001000300030005',
+  0,
+  1,
+  0,
+  '{"fullName":"河北省邢台市南和县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000300050010',
+  '宁晋县',
+  NULL,
+  '0001000300030005',
+  0,
+  1,
+  0,
+  '{"fullName":"河北省邢台市宁晋县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000300050011',
+  '巨鹿县',
+  NULL,
+  '0001000300030005',
+  0,
+  1,
+  0,
+  '{"fullName":"河北省邢台市巨鹿县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000300050012',
+  '新河县',
+  NULL,
+  '0001000300030005',
+  0,
+  1,
+  0,
+  '{"fullName":"河北省邢台市新河县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000300050013',
+  '广宗县',
+  NULL,
+  '0001000300030005',
+  0,
+  1,
+  0,
+  '{"fullName":"河北省邢台市广宗县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000300050014',
+  '平乡县',
+  NULL,
+  '0001000300030005',
+  0,
+  1,
+  0,
+  '{"fullName":"河北省邢台市平乡县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000300050015',
+  '威县',
+  NULL,
+  '0001000300030005',
+  0,
+  1,
+  0,
+  '{"fullName":"河北省邢台市威县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000300050016',
+  '清河县',
+  NULL,
+  '0001000300030005',
+  0,
+  1,
+  0,
+  '{"fullName":"河北省邢台市清河县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000300050017',
+  '临西县',
+  NULL,
+  '0001000300030005',
+  0,
+  1,
+  0,
+  '{"fullName":"河北省邢台市临西县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000300050018',
+  '南宫市',
+  NULL,
+  '0001000300030005',
+  0,
+  1,
+  0,
+  '{"fullName":"河北省邢台市南宫市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000300050019',
+  '沙河市',
+  NULL,
+  '0001000300030005',
+  0,
+  1,
+  0,
+  '{"fullName":"河北省邢台市沙河市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300030006',
+  '保定市',
+  NULL,
+  '000100030003',
+  1,
+  1,
+  0,
+  '{"fullName":"河北省保定市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000300060001',
+  '竞秀区',
+  NULL,
+  '0001000300030006',
+  0,
+  1,
+  0,
+  '{"fullName":"河北省保定市竞秀区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000300060002',
+  '莲池区',
+  NULL,
+  '0001000300030006',
+  0,
+  1,
+  0,
+  '{"fullName":"河北省保定市莲池区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000300060003',
+  '满城区',
+  NULL,
+  '0001000300030006',
+  0,
+  1,
+  0,
+  '{"fullName":"河北省保定市满城区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000300060004',
+  '清苑区',
+  NULL,
+  '0001000300030006',
+  0,
+  1,
+  0,
+  '{"fullName":"河北省保定市清苑区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000300060005',
+  '徐水区',
+  NULL,
+  '0001000300030006',
+  0,
+  1,
+  0,
+  '{"fullName":"河北省保定市徐水区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000300060006',
+  '涞水县',
+  NULL,
+  '0001000300030006',
+  0,
+  1,
+  0,
+  '{"fullName":"河北省保定市涞水县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000300060007',
+  '阜平县',
+  NULL,
+  '0001000300030006',
+  0,
+  1,
+  0,
+  '{"fullName":"河北省保定市阜平县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000300060008',
+  '定兴县',
+  NULL,
+  '0001000300030006',
+  0,
+  1,
+  0,
+  '{"fullName":"河北省保定市定兴县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000300060009',
+  '唐县',
+  NULL,
+  '0001000300030006',
+  0,
+  1,
+  0,
+  '{"fullName":"河北省保定市唐县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000300060010',
+  '高阳县',
+  NULL,
+  '0001000300030006',
+  0,
+  1,
+  0,
+  '{"fullName":"河北省保定市高阳县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000300060011',
+  '容城县',
+  NULL,
+  '0001000300030006',
+  0,
+  1,
+  0,
+  '{"fullName":"河北省保定市容城县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000300060012',
+  '涞源县',
+  NULL,
+  '0001000300030006',
+  0,
+  1,
+  0,
+  '{"fullName":"河北省保定市涞源县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000300060013',
+  '望都县',
+  NULL,
+  '0001000300030006',
+  0,
+  1,
+  0,
+  '{"fullName":"河北省保定市望都县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000300060014',
+  '安新县',
+  NULL,
+  '0001000300030006',
+  0,
+  1,
+  0,
+  '{"fullName":"河北省保定市安新县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000300060015',
+  '易县',
+  NULL,
+  '0001000300030006',
+  0,
+  1,
+  0,
+  '{"fullName":"河北省保定市易县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000300060016',
+  '曲阳县',
+  NULL,
+  '0001000300030006',
+  0,
+  1,
+  0,
+  '{"fullName":"河北省保定市曲阳县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000300060017',
+  '蠡县',
+  NULL,
+  '0001000300030006',
+  0,
+  1,
+  0,
+  '{"fullName":"河北省保定市蠡县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000300060018',
+  '顺平县',
+  NULL,
+  '0001000300030006',
+  0,
+  1,
+  0,
+  '{"fullName":"河北省保定市顺平县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000300060019',
+  '博野县',
+  NULL,
+  '0001000300030006',
+  0,
+  1,
+  0,
+  '{"fullName":"河北省保定市博野县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000300060020',
+  '雄县',
+  NULL,
+  '0001000300030006',
+  0,
+  1,
+  0,
+  '{"fullName":"河北省保定市雄县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000300060021',
+  '涿州市',
+  NULL,
+  '0001000300030006',
+  0,
+  1,
+  0,
+  '{"fullName":"河北省保定市涿州市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000300060022',
+  '安国市',
+  NULL,
+  '0001000300030006',
+  0,
+  1,
+  0,
+  '{"fullName":"河北省保定市安国市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000300060023',
+  '高碑店市',
+  NULL,
+  '0001000300030006',
+  0,
+  1,
+  0,
+  '{"fullName":"河北省保定市高碑店市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300030007',
+  '张家口市',
+  NULL,
+  '000100030003',
+  1,
+  1,
+  0,
+  '{"fullName":"河北省张家口市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000300070001',
+  '桥东区',
+  NULL,
+  '0001000300030007',
+  0,
+  1,
+  0,
+  '{"fullName":"河北省张家口市桥东区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000300070002',
+  '桥西区',
+  NULL,
+  '0001000300030007',
+  0,
+  1,
+  0,
+  '{"fullName":"河北省张家口市桥西区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000300070003',
+  '宣化区',
+  NULL,
+  '0001000300030007',
+  0,
+  1,
+  0,
+  '{"fullName":"河北省张家口市宣化区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000300070004',
+  '下花园区',
+  NULL,
+  '0001000300030007',
+  0,
+  1,
+  0,
+  '{"fullName":"河北省张家口市下花园区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000300070005',
+  '万全区',
+  NULL,
+  '0001000300030007',
+  0,
+  1,
+  0,
+  '{"fullName":"河北省张家口市万全区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000300070006',
+  '崇礼区',
+  NULL,
+  '0001000300030007',
+  0,
+  1,
+  0,
+  '{"fullName":"河北省张家口市崇礼区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000300070007',
+  '张北县',
+  NULL,
+  '0001000300030007',
+  0,
+  1,
+  0,
+  '{"fullName":"河北省张家口市张北县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000300070008',
+  '康保县',
+  NULL,
+  '0001000300030007',
+  0,
+  1,
+  0,
+  '{"fullName":"河北省张家口市康保县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000300070009',
+  '沽源县',
+  NULL,
+  '0001000300030007',
+  0,
+  1,
+  0,
+  '{"fullName":"河北省张家口市沽源县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000300070010',
+  '尚义县',
+  NULL,
+  '0001000300030007',
+  0,
+  1,
+  0,
+  '{"fullName":"河北省张家口市尚义县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000300070011',
+  '蔚县',
+  NULL,
+  '0001000300030007',
+  0,
+  1,
+  0,
+  '{"fullName":"河北省张家口市蔚县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000300070012',
+  '阳原县',
+  NULL,
+  '0001000300030007',
+  0,
+  1,
+  0,
+  '{"fullName":"河北省张家口市阳原县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000300070013',
+  '怀安县',
+  NULL,
+  '0001000300030007',
+  0,
+  1,
+  0,
+  '{"fullName":"河北省张家口市怀安县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000300070014',
+  '怀来县',
+  NULL,
+  '0001000300030007',
+  0,
+  1,
+  0,
+  '{"fullName":"河北省张家口市怀来县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000300070015',
+  '涿鹿县',
+  NULL,
+  '0001000300030007',
+  0,
+  1,
+  0,
+  '{"fullName":"河北省张家口市涿鹿县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000300070016',
+  '赤城县',
+  NULL,
+  '0001000300030007',
+  0,
+  1,
+  0,
+  '{"fullName":"河北省张家口市赤城县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300030008',
+  '承德市',
+  NULL,
+  '000100030003',
+  1,
+  1,
+  0,
+  '{"fullName":"河北省承德市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000300080001',
+  '双桥区',
+  NULL,
+  '0001000300030008',
+  0,
+  1,
+  0,
+  '{"fullName":"河北省承德市双桥区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000300080002',
+  '双滦区',
+  NULL,
+  '0001000300030008',
+  0,
+  1,
+  0,
+  '{"fullName":"河北省承德市双滦区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000300080003',
+  '鹰手营子矿区',
+  NULL,
+  '0001000300030008',
+  0,
+  1,
+  0,
+  '{"fullName":"河北省承德市鹰手营子矿区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000300080004',
+  '承德县',
+  NULL,
+  '0001000300030008',
+  0,
+  1,
+  0,
+  '{"fullName":"河北省承德市承德县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000300080005',
+  '兴隆县',
+  NULL,
+  '0001000300030008',
+  0,
+  1,
+  0,
+  '{"fullName":"河北省承德市兴隆县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000300080006',
+  '平泉县',
+  NULL,
+  '0001000300030008',
+  0,
+  1,
+  0,
+  '{"fullName":"河北省承德市平泉县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000300080007',
+  '滦平县',
+  NULL,
+  '0001000300030008',
+  0,
+  1,
+  0,
+  '{"fullName":"河北省承德市滦平县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000300080008',
+  '隆化县',
+  NULL,
+  '0001000300030008',
+  0,
+  1,
+  0,
+  '{"fullName":"河北省承德市隆化县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000300080009',
+  '丰宁满族自治县',
+  NULL,
+  '0001000300030008',
+  0,
+  1,
+  0,
+  '{"fullName":"河北省承德市丰宁满族自治县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000300080010',
+  '宽城满族自治县',
+  NULL,
+  '0001000300030008',
+  0,
+  1,
+  0,
+  '{"fullName":"河北省承德市宽城满族自治县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000300080011',
+  '围场满族蒙古族自治县',
+  NULL,
+  '0001000300030008',
+  0,
+  1,
+  0,
+  '{"fullName":"河北省承德市围场满族蒙古族自治县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300030009',
+  '沧州市',
+  NULL,
+  '000100030003',
+  1,
+  1,
+  0,
+  '{"fullName":"河北省沧州市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000300090001',
+  '新华区',
+  NULL,
+  '0001000300030009',
+  0,
+  1,
+  0,
+  '{"fullName":"河北省沧州市新华区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000300090002',
+  '运河区',
+  NULL,
+  '0001000300030009',
+  0,
+  1,
+  0,
+  '{"fullName":"河北省沧州市运河区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000300090003',
+  '沧县',
+  NULL,
+  '0001000300030009',
+  0,
+  1,
+  0,
+  '{"fullName":"河北省沧州市沧县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000300090004',
+  '青县',
+  NULL,
+  '0001000300030009',
+  0,
+  1,
+  0,
+  '{"fullName":"河北省沧州市青县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000300090005',
+  '东光县',
+  NULL,
+  '0001000300030009',
+  0,
+  1,
+  0,
+  '{"fullName":"河北省沧州市东光县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000300090006',
+  '海兴县',
+  NULL,
+  '0001000300030009',
+  0,
+  1,
+  0,
+  '{"fullName":"河北省沧州市海兴县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000300090007',
+  '盐山县',
+  NULL,
+  '0001000300030009',
+  0,
+  1,
+  0,
+  '{"fullName":"河北省沧州市盐山县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000300090008',
+  '肃宁县',
+  NULL,
+  '0001000300030009',
+  0,
+  1,
+  0,
+  '{"fullName":"河北省沧州市肃宁县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000300090009',
+  '南皮县',
+  NULL,
+  '0001000300030009',
+  0,
+  1,
+  0,
+  '{"fullName":"河北省沧州市南皮县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000300090010',
+  '吴桥县',
+  NULL,
+  '0001000300030009',
+  0,
+  1,
+  0,
+  '{"fullName":"河北省沧州市吴桥县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000300090011',
+  '献县',
+  NULL,
+  '0001000300030009',
+  0,
+  1,
+  0,
+  '{"fullName":"河北省沧州市献县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000300090012',
+  '孟村回族自治县',
+  NULL,
+  '0001000300030009',
+  0,
+  1,
+  0,
+  '{"fullName":"河北省沧州市孟村回族自治县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000300090013',
+  '泊头市',
+  NULL,
+  '0001000300030009',
+  0,
+  1,
+  0,
+  '{"fullName":"河北省沧州市泊头市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000300090014',
+  '任丘市',
+  NULL,
+  '0001000300030009',
+  0,
+  1,
+  0,
+  '{"fullName":"河北省沧州市任丘市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000300090015',
+  '黄骅市',
+  NULL,
+  '0001000300030009',
+  0,
+  1,
+  0,
+  '{"fullName":"河北省沧州市黄骅市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000300090016',
+  '河间市',
+  NULL,
+  '0001000300030009',
+  0,
+  1,
+  0,
+  '{"fullName":"河北省沧州市河间市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300030010',
+  '廊坊市',
+  NULL,
+  '000100030003',
+  1,
+  1,
+  0,
+  '{"fullName":"河北省廊坊市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000300100001',
+  '安次区',
+  NULL,
+  '0001000300030010',
+  0,
+  1,
+  0,
+  '{"fullName":"河北省廊坊市安次区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000300100002',
+  '广阳区',
+  NULL,
+  '0001000300030010',
+  0,
+  1,
+  0,
+  '{"fullName":"河北省廊坊市广阳区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000300100003',
+  '固安县',
+  NULL,
+  '0001000300030010',
+  0,
+  1,
+  0,
+  '{"fullName":"河北省廊坊市固安县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000300100004',
+  '永清县',
+  NULL,
+  '0001000300030010',
+  0,
+  1,
+  0,
+  '{"fullName":"河北省廊坊市永清县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000300100005',
+  '香河县',
+  NULL,
+  '0001000300030010',
+  0,
+  1,
+  0,
+  '{"fullName":"河北省廊坊市香河县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000300100006',
+  '大城县',
+  NULL,
+  '0001000300030010',
+  0,
+  1,
+  0,
+  '{"fullName":"河北省廊坊市大城县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000300100007',
+  '文安县',
+  NULL,
+  '0001000300030010',
+  0,
+  1,
+  0,
+  '{"fullName":"河北省廊坊市文安县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000300100008',
+  '大厂回族自治县',
+  NULL,
+  '0001000300030010',
+  0,
+  1,
+  0,
+  '{"fullName":"河北省廊坊市大厂回族自治县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000300100009',
+  '霸州市',
+  NULL,
+  '0001000300030010',
+  0,
+  1,
+  0,
+  '{"fullName":"河北省廊坊市霸州市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000300100010',
+  '三河市',
+  NULL,
+  '0001000300030010',
+  0,
+  1,
+  0,
+  '{"fullName":"河北省廊坊市三河市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300030011',
+  '衡水市',
+  NULL,
+  '000100030003',
+  1,
+  1,
+  0,
+  '{"fullName":"河北省衡水市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000300110001',
+  '桃城区',
+  NULL,
+  '0001000300030011',
+  0,
+  1,
+  0,
+  '{"fullName":"河北省衡水市桃城区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000300110002',
+  '冀州区',
+  NULL,
+  '0001000300030011',
+  0,
+  1,
+  0,
+  '{"fullName":"河北省衡水市冀州区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000300110003',
+  '枣强县',
+  NULL,
+  '0001000300030011',
+  0,
+  1,
+  0,
+  '{"fullName":"河北省衡水市枣强县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000300110004',
+  '武邑县',
+  NULL,
+  '0001000300030011',
+  0,
+  1,
+  0,
+  '{"fullName":"河北省衡水市武邑县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000300110005',
+  '武强县',
+  NULL,
+  '0001000300030011',
+  0,
+  1,
+  0,
+  '{"fullName":"河北省衡水市武强县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000300110006',
+  '饶阳县',
+  NULL,
+  '0001000300030011',
+  0,
+  1,
+  0,
+  '{"fullName":"河北省衡水市饶阳县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000300110007',
+  '安平县',
+  NULL,
+  '0001000300030011',
+  0,
+  1,
+  0,
+  '{"fullName":"河北省衡水市安平县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000300110008',
+  '故城县',
+  NULL,
+  '0001000300030011',
+  0,
+  1,
+  0,
+  '{"fullName":"河北省衡水市故城县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000300110009',
+  '景县',
+  NULL,
+  '0001000300030011',
+  0,
+  1,
+  0,
+  '{"fullName":"河北省衡水市景县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000300110010',
+  '阜城县',
+  NULL,
+  '0001000300030011',
+  0,
+  1,
+  0,
+  '{"fullName":"河北省衡水市阜城县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000300110011',
+  '深州市',
+  NULL,
+  '0001000300030011',
+  0,
+  1,
+  0,
+  '{"fullName":"河北省衡水市深州市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300030012',
+  '省直辖县级行政区划',
+  NULL,
+  '000100030003',
+  1,
+  1,
+  0,
+  '{"fullName":"河北省省直辖县级行政区划"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000300120001',
+  '定州市',
+  NULL,
+  '0001000300030012',
+  0,
+  1,
+  0,
+  '{"fullName":"河北省省直辖县级行政区划定州市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000300120002',
+  '辛集市',
+  NULL,
+  '0001000300030012',
+  0,
+  1,
+  0,
+  '{"fullName":"河北省省直辖县级行政区划辛集市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '000100030004',
+  '山西省',
+  NULL,
+  '00010003',
+  1,
+  1,
+  0,
+  '{"fullName":"山西省"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300040001',
+  '太原市',
+  NULL,
+  '000100030004',
+  1,
+  1,
+  0,
+  '{"fullName":"山西省太原市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000400010001',
+  '小店区',
+  NULL,
+  '0001000300040001',
+  0,
+  1,
+  0,
+  '{"fullName":"山西省太原市小店区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000400010002',
+  '迎泽区',
+  NULL,
+  '0001000300040001',
+  0,
+  1,
+  0,
+  '{"fullName":"山西省太原市迎泽区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000400010003',
+  '杏花岭区',
+  NULL,
+  '0001000300040001',
+  0,
+  1,
+  0,
+  '{"fullName":"山西省太原市杏花岭区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000400010004',
+  '尖草坪区',
+  NULL,
+  '0001000300040001',
+  0,
+  1,
+  0,
+  '{"fullName":"山西省太原市尖草坪区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000400010005',
+  '万柏林区',
+  NULL,
+  '0001000300040001',
+  0,
+  1,
+  0,
+  '{"fullName":"山西省太原市万柏林区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000400010006',
+  '晋源区',
+  NULL,
+  '0001000300040001',
+  0,
+  1,
+  0,
+  '{"fullName":"山西省太原市晋源区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000400010007',
+  '清徐县',
+  NULL,
+  '0001000300040001',
+  0,
+  1,
+  0,
+  '{"fullName":"山西省太原市清徐县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000400010008',
+  '阳曲县',
+  NULL,
+  '0001000300040001',
+  0,
+  1,
+  0,
+  '{"fullName":"山西省太原市阳曲县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000400010009',
+  '娄烦县',
+  NULL,
+  '0001000300040001',
+  0,
+  1,
+  0,
+  '{"fullName":"山西省太原市娄烦县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000400010010',
+  '古交市',
+  NULL,
+  '0001000300040001',
+  0,
+  1,
+  0,
+  '{"fullName":"山西省太原市古交市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300040002',
+  '大同市',
+  NULL,
+  '000100030004',
+  1,
+  1,
+  0,
+  '{"fullName":"山西省大同市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000400020001',
+  '城区',
+  NULL,
+  '0001000300040002',
+  0,
+  1,
+  0,
+  '{"fullName":"山西省大同市城区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000400020002',
+  '矿区',
+  NULL,
+  '0001000300040002',
+  0,
+  1,
+  0,
+  '{"fullName":"山西省大同市矿区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000400020003',
+  '南郊区',
+  NULL,
+  '0001000300040002',
+  0,
+  1,
+  0,
+  '{"fullName":"山西省大同市南郊区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000400020004',
+  '新荣区',
+  NULL,
+  '0001000300040002',
+  0,
+  1,
+  0,
+  '{"fullName":"山西省大同市新荣区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000400020005',
+  '阳高县',
+  NULL,
+  '0001000300040002',
+  0,
+  1,
+  0,
+  '{"fullName":"山西省大同市阳高县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000400020006',
+  '天镇县',
+  NULL,
+  '0001000300040002',
+  0,
+  1,
+  0,
+  '{"fullName":"山西省大同市天镇县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000400020007',
+  '广灵县',
+  NULL,
+  '0001000300040002',
+  0,
+  1,
+  0,
+  '{"fullName":"山西省大同市广灵县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000400020008',
+  '灵丘县',
+  NULL,
+  '0001000300040002',
+  0,
+  1,
+  0,
+  '{"fullName":"山西省大同市灵丘县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000400020009',
+  '浑源县',
+  NULL,
+  '0001000300040002',
+  0,
+  1,
+  0,
+  '{"fullName":"山西省大同市浑源县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000400020010',
+  '左云县',
+  NULL,
+  '0001000300040002',
+  0,
+  1,
+  0,
+  '{"fullName":"山西省大同市左云县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000400020011',
+  '大同县',
+  NULL,
+  '0001000300040002',
+  0,
+  1,
+  0,
+  '{"fullName":"山西省大同市大同县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300040003',
+  '阳泉市',
+  NULL,
+  '000100030004',
+  1,
+  1,
+  0,
+  '{"fullName":"山西省阳泉市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000400030001',
+  '城区',
+  NULL,
+  '0001000300040003',
+  0,
+  1,
+  0,
+  '{"fullName":"山西省阳泉市城区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000400030002',
+  '矿区',
+  NULL,
+  '0001000300040003',
+  0,
+  1,
+  0,
+  '{"fullName":"山西省阳泉市矿区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000400030003',
+  '郊区',
+  NULL,
+  '0001000300040003',
+  0,
+  1,
+  0,
+  '{"fullName":"山西省阳泉市郊区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000400030004',
+  '平定县',
+  NULL,
+  '0001000300040003',
+  0,
+  1,
+  0,
+  '{"fullName":"山西省阳泉市平定县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000400030005',
+  '盂县',
+  NULL,
+  '0001000300040003',
+  0,
+  1,
+  0,
+  '{"fullName":"山西省阳泉市盂县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300040004',
+  '长治市',
+  NULL,
+  '000100030004',
+  1,
+  1,
+  0,
+  '{"fullName":"山西省长治市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000400040001',
+  '城区',
+  NULL,
+  '0001000300040004',
+  0,
+  1,
+  0,
+  '{"fullName":"山西省长治市城区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000400040002',
+  '郊区',
+  NULL,
+  '0001000300040004',
+  0,
+  1,
+  0,
+  '{"fullName":"山西省长治市郊区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000400040003',
+  '长治县',
+  NULL,
+  '0001000300040004',
+  0,
+  1,
+  0,
+  '{"fullName":"山西省长治市长治县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000400040004',
+  '襄垣县',
+  NULL,
+  '0001000300040004',
+  0,
+  1,
+  0,
+  '{"fullName":"山西省长治市襄垣县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000400040005',
+  '屯留县',
+  NULL,
+  '0001000300040004',
+  0,
+  1,
+  0,
+  '{"fullName":"山西省长治市屯留县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000400040006',
+  '平顺县',
+  NULL,
+  '0001000300040004',
+  0,
+  1,
+  0,
+  '{"fullName":"山西省长治市平顺县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000400040007',
+  '黎城县',
+  NULL,
+  '0001000300040004',
+  0,
+  1,
+  0,
+  '{"fullName":"山西省长治市黎城县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000400040008',
+  '壶关县',
+  NULL,
+  '0001000300040004',
+  0,
+  1,
+  0,
+  '{"fullName":"山西省长治市壶关县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000400040009',
+  '长子县',
+  NULL,
+  '0001000300040004',
+  0,
+  1,
+  0,
+  '{"fullName":"山西省长治市长子县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000400040010',
+  '武乡县',
+  NULL,
+  '0001000300040004',
+  0,
+  1,
+  0,
+  '{"fullName":"山西省长治市武乡县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000400040011',
+  '沁县',
+  NULL,
+  '0001000300040004',
+  0,
+  1,
+  0,
+  '{"fullName":"山西省长治市沁县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000400040012',
+  '沁源县',
+  NULL,
+  '0001000300040004',
+  0,
+  1,
+  0,
+  '{"fullName":"山西省长治市沁源县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000400040013',
+  '潞城市',
+  NULL,
+  '0001000300040004',
+  0,
+  1,
+  0,
+  '{"fullName":"山西省长治市潞城市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300040005',
+  '晋城市',
+  NULL,
+  '000100030004',
+  1,
+  1,
+  0,
+  '{"fullName":"山西省晋城市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000400050001',
+  '城区',
+  NULL,
+  '0001000300040005',
+  0,
+  1,
+  0,
+  '{"fullName":"山西省晋城市城区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000400050002',
+  '沁水县',
+  NULL,
+  '0001000300040005',
+  0,
+  1,
+  0,
+  '{"fullName":"山西省晋城市沁水县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000400050003',
+  '阳城县',
+  NULL,
+  '0001000300040005',
+  0,
+  1,
+  0,
+  '{"fullName":"山西省晋城市阳城县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000400050004',
+  '陵川县',
+  NULL,
+  '0001000300040005',
+  0,
+  1,
+  0,
+  '{"fullName":"山西省晋城市陵川县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000400050005',
+  '泽州县',
+  NULL,
+  '0001000300040005',
+  0,
+  1,
+  0,
+  '{"fullName":"山西省晋城市泽州县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000400050006',
+  '高平市',
+  NULL,
+  '0001000300040005',
+  0,
+  1,
+  0,
+  '{"fullName":"山西省晋城市高平市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300040006',
+  '朔州市',
+  NULL,
+  '000100030004',
+  1,
+  1,
+  0,
+  '{"fullName":"山西省朔州市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000400060001',
+  '朔城区',
+  NULL,
+  '0001000300040006',
+  0,
+  1,
+  0,
+  '{"fullName":"山西省朔州市朔城区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000400060002',
+  '平鲁区',
+  NULL,
+  '0001000300040006',
+  0,
+  1,
+  0,
+  '{"fullName":"山西省朔州市平鲁区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000400060003',
+  '山阴县',
+  NULL,
+  '0001000300040006',
+  0,
+  1,
+  0,
+  '{"fullName":"山西省朔州市山阴县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000400060004',
+  '应县',
+  NULL,
+  '0001000300040006',
+  0,
+  1,
+  0,
+  '{"fullName":"山西省朔州市应县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000400060005',
+  '右玉县',
+  NULL,
+  '0001000300040006',
+  0,
+  1,
+  0,
+  '{"fullName":"山西省朔州市右玉县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000400060006',
+  '怀仁县',
+  NULL,
+  '0001000300040006',
+  0,
+  1,
+  0,
+  '{"fullName":"山西省朔州市怀仁县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300040007',
+  '晋中市',
+  NULL,
+  '000100030004',
+  1,
+  1,
+  0,
+  '{"fullName":"山西省晋中市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000400070001',
+  '榆次区',
+  NULL,
+  '0001000300040007',
+  0,
+  1,
+  0,
+  '{"fullName":"山西省晋中市榆次区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000400070002',
+  '榆社县',
+  NULL,
+  '0001000300040007',
+  0,
+  1,
+  0,
+  '{"fullName":"山西省晋中市榆社县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000400070003',
+  '左权县',
+  NULL,
+  '0001000300040007',
+  0,
+  1,
+  0,
+  '{"fullName":"山西省晋中市左权县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000400070004',
+  '和顺县',
+  NULL,
+  '0001000300040007',
+  0,
+  1,
+  0,
+  '{"fullName":"山西省晋中市和顺县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000400070005',
+  '昔阳县',
+  NULL,
+  '0001000300040007',
+  0,
+  1,
+  0,
+  '{"fullName":"山西省晋中市昔阳县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000400070006',
+  '寿阳县',
+  NULL,
+  '0001000300040007',
+  0,
+  1,
+  0,
+  '{"fullName":"山西省晋中市寿阳县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000400070007',
+  '太谷县',
+  NULL,
+  '0001000300040007',
+  0,
+  1,
+  0,
+  '{"fullName":"山西省晋中市太谷县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000400070008',
+  '祁县',
+  NULL,
+  '0001000300040007',
+  0,
+  1,
+  0,
+  '{"fullName":"山西省晋中市祁县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000400070009',
+  '平遥县',
+  NULL,
+  '0001000300040007',
+  0,
+  1,
+  0,
+  '{"fullName":"山西省晋中市平遥县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000400070010',
+  '灵石县',
+  NULL,
+  '0001000300040007',
+  0,
+  1,
+  0,
+  '{"fullName":"山西省晋中市灵石县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000400070011',
+  '介休市',
+  NULL,
+  '0001000300040007',
+  0,
+  1,
+  0,
+  '{"fullName":"山西省晋中市介休市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300040008',
+  '运城市',
+  NULL,
+  '000100030004',
+  1,
+  1,
+  0,
+  '{"fullName":"山西省运城市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000400080001',
+  '盐湖区',
+  NULL,
+  '0001000300040008',
+  0,
+  1,
+  0,
+  '{"fullName":"山西省运城市盐湖区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000400080002',
+  '临猗县',
+  NULL,
+  '0001000300040008',
+  0,
+  1,
+  0,
+  '{"fullName":"山西省运城市临猗县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000400080003',
+  '万荣县',
+  NULL,
+  '0001000300040008',
+  0,
+  1,
+  0,
+  '{"fullName":"山西省运城市万荣县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000400080004',
+  '闻喜县',
+  NULL,
+  '0001000300040008',
+  0,
+  1,
+  0,
+  '{"fullName":"山西省运城市闻喜县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000400080005',
+  '稷山县',
+  NULL,
+  '0001000300040008',
+  0,
+  1,
+  0,
+  '{"fullName":"山西省运城市稷山县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000400080006',
+  '新绛县',
+  NULL,
+  '0001000300040008',
+  0,
+  1,
+  0,
+  '{"fullName":"山西省运城市新绛县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000400080007',
+  '绛县',
+  NULL,
+  '0001000300040008',
+  0,
+  1,
+  0,
+  '{"fullName":"山西省运城市绛县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000400080008',
+  '垣曲县',
+  NULL,
+  '0001000300040008',
+  0,
+  1,
+  0,
+  '{"fullName":"山西省运城市垣曲县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000400080009',
+  '夏县',
+  NULL,
+  '0001000300040008',
+  0,
+  1,
+  0,
+  '{"fullName":"山西省运城市夏县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000400080010',
+  '平陆县',
+  NULL,
+  '0001000300040008',
+  0,
+  1,
+  0,
+  '{"fullName":"山西省运城市平陆县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000400080011',
+  '芮城县',
+  NULL,
+  '0001000300040008',
+  0,
+  1,
+  0,
+  '{"fullName":"山西省运城市芮城县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000400080012',
+  '永济市',
+  NULL,
+  '0001000300040008',
+  0,
+  1,
+  0,
+  '{"fullName":"山西省运城市永济市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000400080013',
+  '河津市',
+  NULL,
+  '0001000300040008',
+  0,
+  1,
+  0,
+  '{"fullName":"山西省运城市河津市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300040009',
+  '忻州市',
+  NULL,
+  '000100030004',
+  1,
+  1,
+  0,
+  '{"fullName":"山西省忻州市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000400090001',
+  '忻府区',
+  NULL,
+  '0001000300040009',
+  0,
+  1,
+  0,
+  '{"fullName":"山西省忻州市忻府区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000400090002',
+  '定襄县',
+  NULL,
+  '0001000300040009',
+  0,
+  1,
+  0,
+  '{"fullName":"山西省忻州市定襄县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000400090003',
+  '五台县',
+  NULL,
+  '0001000300040009',
+  0,
+  1,
+  0,
+  '{"fullName":"山西省忻州市五台县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000400090004',
+  '代县',
+  NULL,
+  '0001000300040009',
+  0,
+  1,
+  0,
+  '{"fullName":"山西省忻州市代县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000400090005',
+  '繁峙县',
+  NULL,
+  '0001000300040009',
+  0,
+  1,
+  0,
+  '{"fullName":"山西省忻州市繁峙县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000400090006',
+  '宁武县',
+  NULL,
+  '0001000300040009',
+  0,
+  1,
+  0,
+  '{"fullName":"山西省忻州市宁武县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000400090007',
+  '静乐县',
+  NULL,
+  '0001000300040009',
+  0,
+  1,
+  0,
+  '{"fullName":"山西省忻州市静乐县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000400090008',
+  '神池县',
+  NULL,
+  '0001000300040009',
+  0,
+  1,
+  0,
+  '{"fullName":"山西省忻州市神池县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000400090009',
+  '五寨县',
+  NULL,
+  '0001000300040009',
+  0,
+  1,
+  0,
+  '{"fullName":"山西省忻州市五寨县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000400090010',
+  '岢岚县',
+  NULL,
+  '0001000300040009',
+  0,
+  1,
+  0,
+  '{"fullName":"山西省忻州市岢岚县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000400090011',
+  '河曲县',
+  NULL,
+  '0001000300040009',
+  0,
+  1,
+  0,
+  '{"fullName":"山西省忻州市河曲县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000400090012',
+  '保德县',
+  NULL,
+  '0001000300040009',
+  0,
+  1,
+  0,
+  '{"fullName":"山西省忻州市保德县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000400090013',
+  '偏关县',
+  NULL,
+  '0001000300040009',
+  0,
+  1,
+  0,
+  '{"fullName":"山西省忻州市偏关县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000400090014',
+  '原平市',
+  NULL,
+  '0001000300040009',
+  0,
+  1,
+  0,
+  '{"fullName":"山西省忻州市原平市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300040010',
+  '临汾市',
+  NULL,
+  '000100030004',
+  1,
+  1,
+  0,
+  '{"fullName":"山西省临汾市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000400100001',
+  '尧都区',
+  NULL,
+  '0001000300040010',
+  0,
+  1,
+  0,
+  '{"fullName":"山西省临汾市尧都区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000400100002',
+  '曲沃县',
+  NULL,
+  '0001000300040010',
+  0,
+  1,
+  0,
+  '{"fullName":"山西省临汾市曲沃县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000400100003',
+  '翼城县',
+  NULL,
+  '0001000300040010',
+  0,
+  1,
+  0,
+  '{"fullName":"山西省临汾市翼城县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000400100004',
+  '襄汾县',
+  NULL,
+  '0001000300040010',
+  0,
+  1,
+  0,
+  '{"fullName":"山西省临汾市襄汾县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000400100005',
+  '洪洞县',
+  NULL,
+  '0001000300040010',
+  0,
+  1,
+  0,
+  '{"fullName":"山西省临汾市洪洞县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000400100006',
+  '古县',
+  NULL,
+  '0001000300040010',
+  0,
+  1,
+  0,
+  '{"fullName":"山西省临汾市古县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000400100007',
+  '安泽县',
+  NULL,
+  '0001000300040010',
+  0,
+  1,
+  0,
+  '{"fullName":"山西省临汾市安泽县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000400100008',
+  '浮山县',
+  NULL,
+  '0001000300040010',
+  0,
+  1,
+  0,
+  '{"fullName":"山西省临汾市浮山县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000400100009',
+  '吉县',
+  NULL,
+  '0001000300040010',
+  0,
+  1,
+  0,
+  '{"fullName":"山西省临汾市吉县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000400100010',
+  '乡宁县',
+  NULL,
+  '0001000300040010',
+  0,
+  1,
+  0,
+  '{"fullName":"山西省临汾市乡宁县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000400100011',
+  '大宁县',
+  NULL,
+  '0001000300040010',
+  0,
+  1,
+  0,
+  '{"fullName":"山西省临汾市大宁县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000400100012',
+  '隰县',
+  NULL,
+  '0001000300040010',
+  0,
+  1,
+  0,
+  '{"fullName":"山西省临汾市隰县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000400100013',
+  '永和县',
+  NULL,
+  '0001000300040010',
+  0,
+  1,
+  0,
+  '{"fullName":"山西省临汾市永和县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000400100014',
+  '蒲县',
+  NULL,
+  '0001000300040010',
+  0,
+  1,
+  0,
+  '{"fullName":"山西省临汾市蒲县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000400100015',
+  '汾西县',
+  NULL,
+  '0001000300040010',
+  0,
+  1,
+  0,
+  '{"fullName":"山西省临汾市汾西县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000400100016',
+  '侯马市',
+  NULL,
+  '0001000300040010',
+  0,
+  1,
+  0,
+  '{"fullName":"山西省临汾市侯马市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000400100017',
+  '霍州市',
+  NULL,
+  '0001000300040010',
+  0,
+  1,
+  0,
+  '{"fullName":"山西省临汾市霍州市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300040011',
+  '吕梁市',
+  NULL,
+  '000100030004',
+  1,
+  1,
+  0,
+  '{"fullName":"山西省吕梁市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000400110001',
+  '离石区',
+  NULL,
+  '0001000300040011',
+  0,
+  1,
+  0,
+  '{"fullName":"山西省吕梁市离石区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000400110002',
+  '文水县',
+  NULL,
+  '0001000300040011',
+  0,
+  1,
+  0,
+  '{"fullName":"山西省吕梁市文水县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000400110003',
+  '交城县',
+  NULL,
+  '0001000300040011',
+  0,
+  1,
+  0,
+  '{"fullName":"山西省吕梁市交城县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000400110004',
+  '兴县',
+  NULL,
+  '0001000300040011',
+  0,
+  1,
+  0,
+  '{"fullName":"山西省吕梁市兴县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000400110005',
+  '临县',
+  NULL,
+  '0001000300040011',
+  0,
+  1,
+  0,
+  '{"fullName":"山西省吕梁市临县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000400110006',
+  '柳林县',
+  NULL,
+  '0001000300040011',
+  0,
+  1,
+  0,
+  '{"fullName":"山西省吕梁市柳林县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000400110007',
+  '石楼县',
+  NULL,
+  '0001000300040011',
+  0,
+  1,
+  0,
+  '{"fullName":"山西省吕梁市石楼县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000400110008',
+  '岚县',
+  NULL,
+  '0001000300040011',
+  0,
+  1,
+  0,
+  '{"fullName":"山西省吕梁市岚县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000400110009',
+  '方山县',
+  NULL,
+  '0001000300040011',
+  0,
+  1,
+  0,
+  '{"fullName":"山西省吕梁市方山县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000400110010',
+  '中阳县',
+  NULL,
+  '0001000300040011',
+  0,
+  1,
+  0,
+  '{"fullName":"山西省吕梁市中阳县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000400110011',
+  '交口县',
+  NULL,
+  '0001000300040011',
+  0,
+  1,
+  0,
+  '{"fullName":"山西省吕梁市交口县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000400110012',
+  '孝义市',
+  NULL,
+  '0001000300040011',
+  0,
+  1,
+  0,
+  '{"fullName":"山西省吕梁市孝义市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000400110013',
+  '汾阳市',
+  NULL,
+  '0001000300040011',
+  0,
+  1,
+  0,
+  '{"fullName":"山西省吕梁市汾阳市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '000100030005',
+  '内蒙古自治区',
+  NULL,
+  '00010003',
+  1,
+  1,
+  0,
+  '{"fullName":"内蒙古自治区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300050001',
+  '呼和浩特市',
+  NULL,
+  '000100030005',
+  1,
+  1,
+  0,
+  '{"fullName":"内蒙古自治区呼和浩特市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000500010001',
+  '新城区',
+  NULL,
+  '0001000300050001',
+  0,
+  1,
+  0,
+  '{"fullName":"内蒙古自治区呼和浩特市新城区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000500010002',
+  '回民区',
+  NULL,
+  '0001000300050001',
+  0,
+  1,
+  0,
+  '{"fullName":"内蒙古自治区呼和浩特市回民区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000500010003',
+  '玉泉区',
+  NULL,
+  '0001000300050001',
+  0,
+  1,
+  0,
+  '{"fullName":"内蒙古自治区呼和浩特市玉泉区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000500010004',
+  '赛罕区',
+  NULL,
+  '0001000300050001',
+  0,
+  1,
+  0,
+  '{"fullName":"内蒙古自治区呼和浩特市赛罕区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000500010005',
+  '土默特左旗',
+  NULL,
+  '0001000300050001',
+  0,
+  1,
+  0,
+  '{"fullName":"内蒙古自治区呼和浩特市土默特左旗"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000500010006',
+  '托克托县',
+  NULL,
+  '0001000300050001',
+  0,
+  1,
+  0,
+  '{"fullName":"内蒙古自治区呼和浩特市托克托县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000500010007',
+  '和林格尔县',
+  NULL,
+  '0001000300050001',
+  0,
+  1,
+  0,
+  '{"fullName":"内蒙古自治区呼和浩特市和林格尔县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000500010008',
+  '清水河县',
+  NULL,
+  '0001000300050001',
+  0,
+  1,
+  0,
+  '{"fullName":"内蒙古自治区呼和浩特市清水河县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000500010009',
+  '武川县',
+  NULL,
+  '0001000300050001',
+  0,
+  1,
+  0,
+  '{"fullName":"内蒙古自治区呼和浩特市武川县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300050002',
+  '包头市',
+  NULL,
+  '000100030005',
+  1,
+  1,
+  0,
+  '{"fullName":"内蒙古自治区包头市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000500020001',
+  '东河区',
+  NULL,
+  '0001000300050002',
+  0,
+  1,
+  0,
+  '{"fullName":"内蒙古自治区包头市东河区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000500020002',
+  '昆都仑区',
+  NULL,
+  '0001000300050002',
+  0,
+  1,
+  0,
+  '{"fullName":"内蒙古自治区包头市昆都仑区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000500020003',
+  '青山区',
+  NULL,
+  '0001000300050002',
+  0,
+  1,
+  0,
+  '{"fullName":"内蒙古自治区包头市青山区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000500020004',
+  '石拐区',
+  NULL,
+  '0001000300050002',
+  0,
+  1,
+  0,
+  '{"fullName":"内蒙古自治区包头市石拐区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000500020005',
+  '白云鄂博矿区',
+  NULL,
+  '0001000300050002',
+  0,
+  1,
+  0,
+  '{"fullName":"内蒙古自治区包头市白云鄂博矿区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000500020006',
+  '九原区',
+  NULL,
+  '0001000300050002',
+  0,
+  1,
+  0,
+  '{"fullName":"内蒙古自治区包头市九原区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000500020007',
+  '土默特右旗',
+  NULL,
+  '0001000300050002',
+  0,
+  1,
+  0,
+  '{"fullName":"内蒙古自治区包头市土默特右旗"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000500020008',
+  '固阳县',
+  NULL,
+  '0001000300050002',
+  0,
+  1,
+  0,
+  '{"fullName":"内蒙古自治区包头市固阳县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000500020009',
+  '达尔罕茂明安联合旗',
+  NULL,
+  '0001000300050002',
+  0,
+  1,
+  0,
+  '{"fullName":"内蒙古自治区包头市达尔罕茂明安联合旗"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300050003',
+  '乌海市',
+  NULL,
+  '000100030005',
+  1,
+  1,
+  0,
+  '{"fullName":"内蒙古自治区乌海市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000500030001',
+  '海勃湾区',
+  NULL,
+  '0001000300050003',
+  0,
+  1,
+  0,
+  '{"fullName":"内蒙古自治区乌海市海勃湾区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000500030002',
+  '海南区',
+  NULL,
+  '0001000300050003',
+  0,
+  1,
+  0,
+  '{"fullName":"内蒙古自治区乌海市海南区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000500030003',
+  '乌达区',
+  NULL,
+  '0001000300050003',
+  0,
+  1,
+  0,
+  '{"fullName":"内蒙古自治区乌海市乌达区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300050004',
+  '赤峰市',
+  NULL,
+  '000100030005',
+  1,
+  1,
+  0,
+  '{"fullName":"内蒙古自治区赤峰市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000500040001',
+  '红山区',
+  NULL,
+  '0001000300050004',
+  0,
+  1,
+  0,
+  '{"fullName":"内蒙古自治区赤峰市红山区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000500040002',
+  '元宝山区',
+  NULL,
+  '0001000300050004',
+  0,
+  1,
+  0,
+  '{"fullName":"内蒙古自治区赤峰市元宝山区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000500040003',
+  '松山区',
+  NULL,
+  '0001000300050004',
+  0,
+  1,
+  0,
+  '{"fullName":"内蒙古自治区赤峰市松山区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000500040004',
+  '阿鲁科尔沁旗',
+  NULL,
+  '0001000300050004',
+  0,
+  1,
+  0,
+  '{"fullName":"内蒙古自治区赤峰市阿鲁科尔沁旗"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000500040005',
+  '巴林左旗',
+  NULL,
+  '0001000300050004',
+  0,
+  1,
+  0,
+  '{"fullName":"内蒙古自治区赤峰市巴林左旗"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000500040006',
+  '巴林右旗',
+  NULL,
+  '0001000300050004',
+  0,
+  1,
+  0,
+  '{"fullName":"内蒙古自治区赤峰市巴林右旗"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000500040007',
+  '林西县',
+  NULL,
+  '0001000300050004',
+  0,
+  1,
+  0,
+  '{"fullName":"内蒙古自治区赤峰市林西县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000500040008',
+  '克什克腾旗',
+  NULL,
+  '0001000300050004',
+  0,
+  1,
+  0,
+  '{"fullName":"内蒙古自治区赤峰市克什克腾旗"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000500040009',
+  '翁牛特旗',
+  NULL,
+  '0001000300050004',
+  0,
+  1,
+  0,
+  '{"fullName":"内蒙古自治区赤峰市翁牛特旗"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000500040010',
+  '喀喇沁旗',
+  NULL,
+  '0001000300050004',
+  0,
+  1,
+  0,
+  '{"fullName":"内蒙古自治区赤峰市喀喇沁旗"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000500040011',
+  '宁城县',
+  NULL,
+  '0001000300050004',
+  0,
+  1,
+  0,
+  '{"fullName":"内蒙古自治区赤峰市宁城县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000500040012',
+  '敖汉旗',
+  NULL,
+  '0001000300050004',
+  0,
+  1,
+  0,
+  '{"fullName":"内蒙古自治区赤峰市敖汉旗"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300050005',
+  '通辽市',
+  NULL,
+  '000100030005',
+  1,
+  1,
+  0,
+  '{"fullName":"内蒙古自治区通辽市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000500050001',
+  '科尔沁区',
+  NULL,
+  '0001000300050005',
+  0,
+  1,
+  0,
+  '{"fullName":"内蒙古自治区通辽市科尔沁区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000500050002',
+  '科尔沁左翼中旗',
+  NULL,
+  '0001000300050005',
+  0,
+  1,
+  0,
+  '{"fullName":"内蒙古自治区通辽市科尔沁左翼中旗"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000500050003',
+  '科尔沁左翼后旗',
+  NULL,
+  '0001000300050005',
+  0,
+  1,
+  0,
+  '{"fullName":"内蒙古自治区通辽市科尔沁左翼后旗"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000500050004',
+  '开鲁县',
+  NULL,
+  '0001000300050005',
+  0,
+  1,
+  0,
+  '{"fullName":"内蒙古自治区通辽市开鲁县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000500050005',
+  '库伦旗',
+  NULL,
+  '0001000300050005',
+  0,
+  1,
+  0,
+  '{"fullName":"内蒙古自治区通辽市库伦旗"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000500050006',
+  '奈曼旗',
+  NULL,
+  '0001000300050005',
+  0,
+  1,
+  0,
+  '{"fullName":"内蒙古自治区通辽市奈曼旗"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000500050007',
+  '扎鲁特旗',
+  NULL,
+  '0001000300050005',
+  0,
+  1,
+  0,
+  '{"fullName":"内蒙古自治区通辽市扎鲁特旗"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000500050008',
+  '霍林郭勒市',
+  NULL,
+  '0001000300050005',
+  0,
+  1,
+  0,
+  '{"fullName":"内蒙古自治区通辽市霍林郭勒市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300050006',
+  '鄂尔多斯市',
+  NULL,
+  '000100030005',
+  1,
+  1,
+  0,
+  '{"fullName":"内蒙古自治区鄂尔多斯市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000500060001',
+  '东胜区',
+  NULL,
+  '0001000300050006',
+  0,
+  1,
+  0,
+  '{"fullName":"内蒙古自治区鄂尔多斯市东胜区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000500060002',
+  '康巴什区',
+  NULL,
+  '0001000300050006',
+  0,
+  1,
+  0,
+  '{"fullName":"内蒙古自治区鄂尔多斯市康巴什区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000500060003',
+  '达拉特旗',
+  NULL,
+  '0001000300050006',
+  0,
+  1,
+  0,
+  '{"fullName":"内蒙古自治区鄂尔多斯市达拉特旗"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000500060004',
+  '准格尔旗',
+  NULL,
+  '0001000300050006',
+  0,
+  1,
+  0,
+  '{"fullName":"内蒙古自治区鄂尔多斯市准格尔旗"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000500060005',
+  '鄂托克前旗',
+  NULL,
+  '0001000300050006',
+  0,
+  1,
+  0,
+  '{"fullName":"内蒙古自治区鄂尔多斯市鄂托克前旗"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000500060006',
+  '鄂托克旗',
+  NULL,
+  '0001000300050006',
+  0,
+  1,
+  0,
+  '{"fullName":"内蒙古自治区鄂尔多斯市鄂托克旗"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000500060007',
+  '杭锦旗',
+  NULL,
+  '0001000300050006',
+  0,
+  1,
+  0,
+  '{"fullName":"内蒙古自治区鄂尔多斯市杭锦旗"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000500060008',
+  '乌审旗',
+  NULL,
+  '0001000300050006',
+  0,
+  1,
+  0,
+  '{"fullName":"内蒙古自治区鄂尔多斯市乌审旗"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000500060009',
+  '伊金霍洛旗',
+  NULL,
+  '0001000300050006',
+  0,
+  1,
+  0,
+  '{"fullName":"内蒙古自治区鄂尔多斯市伊金霍洛旗"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300050007',
+  '呼伦贝尔市',
+  NULL,
+  '000100030005',
+  1,
+  1,
+  0,
+  '{"fullName":"内蒙古自治区呼伦贝尔市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000500070001',
+  '海拉尔区',
+  NULL,
+  '0001000300050007',
+  0,
+  1,
+  0,
+  '{"fullName":"内蒙古自治区呼伦贝尔市海拉尔区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000500070002',
+  '扎赉诺尔区',
+  NULL,
+  '0001000300050007',
+  0,
+  1,
+  0,
+  '{"fullName":"内蒙古自治区呼伦贝尔市扎赉诺尔区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000500070003',
+  '阿荣旗',
+  NULL,
+  '0001000300050007',
+  0,
+  1,
+  0,
+  '{"fullName":"内蒙古自治区呼伦贝尔市阿荣旗"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000500070004',
+  '莫力达瓦达斡尔族自治旗',
+  NULL,
+  '0001000300050007',
+  0,
+  1,
+  0,
+  '{"fullName":"内蒙古自治区呼伦贝尔市莫力达瓦达斡尔族自治旗"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000500070005',
+  '鄂伦春自治旗',
+  NULL,
+  '0001000300050007',
+  0,
+  1,
+  0,
+  '{"fullName":"内蒙古自治区呼伦贝尔市鄂伦春自治旗"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000500070006',
+  '鄂温克族自治旗',
+  NULL,
+  '0001000300050007',
+  0,
+  1,
+  0,
+  '{"fullName":"内蒙古自治区呼伦贝尔市鄂温克族自治旗"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000500070007',
+  '陈巴尔虎旗',
+  NULL,
+  '0001000300050007',
+  0,
+  1,
+  0,
+  '{"fullName":"内蒙古自治区呼伦贝尔市陈巴尔虎旗"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000500070008',
+  '新巴尔虎左旗',
+  NULL,
+  '0001000300050007',
+  0,
+  1,
+  0,
+  '{"fullName":"内蒙古自治区呼伦贝尔市新巴尔虎左旗"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000500070009',
+  '新巴尔虎右旗',
+  NULL,
+  '0001000300050007',
+  0,
+  1,
+  0,
+  '{"fullName":"内蒙古自治区呼伦贝尔市新巴尔虎右旗"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000500070010',
+  '满洲里市',
+  NULL,
+  '0001000300050007',
+  0,
+  1,
+  0,
+  '{"fullName":"内蒙古自治区呼伦贝尔市满洲里市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000500070011',
+  '牙克石市',
+  NULL,
+  '0001000300050007',
+  0,
+  1,
+  0,
+  '{"fullName":"内蒙古自治区呼伦贝尔市牙克石市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000500070012',
+  '扎兰屯市',
+  NULL,
+  '0001000300050007',
+  0,
+  1,
+  0,
+  '{"fullName":"内蒙古自治区呼伦贝尔市扎兰屯市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000500070013',
+  '额尔古纳市',
+  NULL,
+  '0001000300050007',
+  0,
+  1,
+  0,
+  '{"fullName":"内蒙古自治区呼伦贝尔市额尔古纳市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000500070014',
+  '根河市',
+  NULL,
+  '0001000300050007',
+  0,
+  1,
+  0,
+  '{"fullName":"内蒙古自治区呼伦贝尔市根河市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300050008',
+  '巴彦淖尔市',
+  NULL,
+  '000100030005',
+  1,
+  1,
+  0,
+  '{"fullName":"内蒙古自治区巴彦淖尔市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000500080001',
+  '临河区',
+  NULL,
+  '0001000300050008',
+  0,
+  1,
+  0,
+  '{"fullName":"内蒙古自治区巴彦淖尔市临河区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000500080002',
+  '五原县',
+  NULL,
+  '0001000300050008',
+  0,
+  1,
+  0,
+  '{"fullName":"内蒙古自治区巴彦淖尔市五原县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000500080003',
+  '磴口县',
+  NULL,
+  '0001000300050008',
+  0,
+  1,
+  0,
+  '{"fullName":"内蒙古自治区巴彦淖尔市磴口县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000500080004',
+  '乌拉特前旗',
+  NULL,
+  '0001000300050008',
+  0,
+  1,
+  0,
+  '{"fullName":"内蒙古自治区巴彦淖尔市乌拉特前旗"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000500080005',
+  '乌拉特中旗',
+  NULL,
+  '0001000300050008',
+  0,
+  1,
+  0,
+  '{"fullName":"内蒙古自治区巴彦淖尔市乌拉特中旗"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000500080006',
+  '乌拉特后旗',
+  NULL,
+  '0001000300050008',
+  0,
+  1,
+  0,
+  '{"fullName":"内蒙古自治区巴彦淖尔市乌拉特后旗"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000500080007',
+  '杭锦后旗',
+  NULL,
+  '0001000300050008',
+  0,
+  1,
+  0,
+  '{"fullName":"内蒙古自治区巴彦淖尔市杭锦后旗"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300050009',
+  '乌兰察布市',
+  NULL,
+  '000100030005',
+  1,
+  1,
+  0,
+  '{"fullName":"内蒙古自治区乌兰察布市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000500090001',
+  '集宁区',
+  NULL,
+  '0001000300050009',
+  0,
+  1,
+  0,
+  '{"fullName":"内蒙古自治区乌兰察布市集宁区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000500090002',
+  '卓资县',
+  NULL,
+  '0001000300050009',
+  0,
+  1,
+  0,
+  '{"fullName":"内蒙古自治区乌兰察布市卓资县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000500090003',
+  '化德县',
+  NULL,
+  '0001000300050009',
+  0,
+  1,
+  0,
+  '{"fullName":"内蒙古自治区乌兰察布市化德县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000500090004',
+  '商都县',
+  NULL,
+  '0001000300050009',
+  0,
+  1,
+  0,
+  '{"fullName":"内蒙古自治区乌兰察布市商都县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000500090005',
+  '兴和县',
+  NULL,
+  '0001000300050009',
+  0,
+  1,
+  0,
+  '{"fullName":"内蒙古自治区乌兰察布市兴和县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000500090006',
+  '凉城县',
+  NULL,
+  '0001000300050009',
+  0,
+  1,
+  0,
+  '{"fullName":"内蒙古自治区乌兰察布市凉城县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000500090007',
+  '察哈尔右翼前旗',
+  NULL,
+  '0001000300050009',
+  0,
+  1,
+  0,
+  '{"fullName":"内蒙古自治区乌兰察布市察哈尔右翼前旗"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000500090008',
+  '察哈尔右翼中旗',
+  NULL,
+  '0001000300050009',
+  0,
+  1,
+  0,
+  '{"fullName":"内蒙古自治区乌兰察布市察哈尔右翼中旗"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000500090009',
+  '察哈尔右翼后旗',
+  NULL,
+  '0001000300050009',
+  0,
+  1,
+  0,
+  '{"fullName":"内蒙古自治区乌兰察布市察哈尔右翼后旗"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000500090010',
+  '四子王旗',
+  NULL,
+  '0001000300050009',
+  0,
+  1,
+  0,
+  '{"fullName":"内蒙古自治区乌兰察布市四子王旗"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000500090011',
+  '丰镇市',
+  NULL,
+  '0001000300050009',
+  0,
+  1,
+  0,
+  '{"fullName":"内蒙古自治区乌兰察布市丰镇市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300050010',
+  '兴安盟',
+  NULL,
+  '000100030005',
+  1,
+  1,
+  0,
+  '{"fullName":"内蒙古自治区兴安盟"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000500100001',
+  '乌兰浩特市',
+  NULL,
+  '0001000300050010',
+  0,
+  1,
+  0,
+  '{"fullName":"内蒙古自治区兴安盟乌兰浩特市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000500100002',
+  '阿尔山市',
+  NULL,
+  '0001000300050010',
+  0,
+  1,
+  0,
+  '{"fullName":"内蒙古自治区兴安盟阿尔山市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000500100003',
+  '科尔沁右翼前旗',
+  NULL,
+  '0001000300050010',
+  0,
+  1,
+  0,
+  '{"fullName":"内蒙古自治区兴安盟科尔沁右翼前旗"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000500100004',
+  '科尔沁右翼中旗',
+  NULL,
+  '0001000300050010',
+  0,
+  1,
+  0,
+  '{"fullName":"内蒙古自治区兴安盟科尔沁右翼中旗"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000500100005',
+  '扎赉特旗',
+  NULL,
+  '0001000300050010',
+  0,
+  1,
+  0,
+  '{"fullName":"内蒙古自治区兴安盟扎赉特旗"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000500100006',
+  '突泉县',
+  NULL,
+  '0001000300050010',
+  0,
+  1,
+  0,
+  '{"fullName":"内蒙古自治区兴安盟突泉县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300050011',
+  '锡林郭勒盟',
+  NULL,
+  '000100030005',
+  1,
+  1,
+  0,
+  '{"fullName":"内蒙古自治区锡林郭勒盟"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000500110001',
+  '二连浩特市',
+  NULL,
+  '0001000300050011',
+  0,
+  1,
+  0,
+  '{"fullName":"内蒙古自治区锡林郭勒盟二连浩特市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000500110002',
+  '锡林浩特市',
+  NULL,
+  '0001000300050011',
+  0,
+  1,
+  0,
+  '{"fullName":"内蒙古自治区锡林郭勒盟锡林浩特市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000500110003',
+  '阿巴嘎旗',
+  NULL,
+  '0001000300050011',
+  0,
+  1,
+  0,
+  '{"fullName":"内蒙古自治区锡林郭勒盟阿巴嘎旗"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000500110004',
+  '苏尼特左旗',
+  NULL,
+  '0001000300050011',
+  0,
+  1,
+  0,
+  '{"fullName":"内蒙古自治区锡林郭勒盟苏尼特左旗"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000500110005',
+  '苏尼特右旗',
+  NULL,
+  '0001000300050011',
+  0,
+  1,
+  0,
+  '{"fullName":"内蒙古自治区锡林郭勒盟苏尼特右旗"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000500110006',
+  '东乌珠穆沁旗',
+  NULL,
+  '0001000300050011',
+  0,
+  1,
+  0,
+  '{"fullName":"内蒙古自治区锡林郭勒盟东乌珠穆沁旗"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000500110007',
+  '西乌珠穆沁旗',
+  NULL,
+  '0001000300050011',
+  0,
+  1,
+  0,
+  '{"fullName":"内蒙古自治区锡林郭勒盟西乌珠穆沁旗"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000500110008',
+  '太仆寺旗',
+  NULL,
+  '0001000300050011',
+  0,
+  1,
+  0,
+  '{"fullName":"内蒙古自治区锡林郭勒盟太仆寺旗"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000500110009',
+  '镶黄旗',
+  NULL,
+  '0001000300050011',
+  0,
+  1,
+  0,
+  '{"fullName":"内蒙古自治区锡林郭勒盟镶黄旗"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000500110010',
+  '正镶白旗',
+  NULL,
+  '0001000300050011',
+  0,
+  1,
+  0,
+  '{"fullName":"内蒙古自治区锡林郭勒盟正镶白旗"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000500110011',
+  '正蓝旗',
+  NULL,
+  '0001000300050011',
+  0,
+  1,
+  0,
+  '{"fullName":"内蒙古自治区锡林郭勒盟正蓝旗"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000500110012',
+  '多伦县',
+  NULL,
+  '0001000300050011',
+  0,
+  1,
+  0,
+  '{"fullName":"内蒙古自治区锡林郭勒盟多伦县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300050012',
+  '阿拉善盟',
+  NULL,
+  '000100030005',
+  1,
+  1,
+  0,
+  '{"fullName":"内蒙古自治区阿拉善盟"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000500120001',
+  '阿拉善左旗',
+  NULL,
+  '0001000300050012',
+  0,
+  1,
+  0,
+  '{"fullName":"内蒙古自治区阿拉善盟阿拉善左旗"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000500120002',
+  '阿拉善右旗',
+  NULL,
+  '0001000300050012',
+  0,
+  1,
+  0,
+  '{"fullName":"内蒙古自治区阿拉善盟阿拉善右旗"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000500120003',
+  '额济纳旗',
+  NULL,
+  '0001000300050012',
+  0,
+  1,
+  0,
+  '{"fullName":"内蒙古自治区阿拉善盟额济纳旗"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '000100030006',
+  '辽宁省',
+  NULL,
+  '00010003',
+  1,
+  1,
+  0,
+  '{"fullName":"辽宁省"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300060001',
+  '沈阳市',
+  NULL,
+  '000100030006',
+  1,
+  1,
+  0,
+  '{"fullName":"辽宁省沈阳市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000600010001',
+  '和平区',
+  NULL,
+  '0001000300060001',
+  0,
+  1,
+  0,
+  '{"fullName":"辽宁省沈阳市和平区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000600010002',
+  '沈河区',
+  NULL,
+  '0001000300060001',
+  0,
+  1,
+  0,
+  '{"fullName":"辽宁省沈阳市沈河区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000600010003',
+  '大东区',
+  NULL,
+  '0001000300060001',
+  0,
+  1,
+  0,
+  '{"fullName":"辽宁省沈阳市大东区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000600010004',
+  '皇姑区',
+  NULL,
+  '0001000300060001',
+  0,
+  1,
+  0,
+  '{"fullName":"辽宁省沈阳市皇姑区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000600010005',
+  '铁西区',
+  NULL,
+  '0001000300060001',
+  0,
+  1,
+  0,
+  '{"fullName":"辽宁省沈阳市铁西区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000600010006',
+  '苏家屯区',
+  NULL,
+  '0001000300060001',
+  0,
+  1,
+  0,
+  '{"fullName":"辽宁省沈阳市苏家屯区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000600010007',
+  '浑南区',
+  NULL,
+  '0001000300060001',
+  0,
+  1,
+  0,
+  '{"fullName":"辽宁省沈阳市浑南区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000600010008',
+  '沈北新区',
+  NULL,
+  '0001000300060001',
+  0,
+  1,
+  0,
+  '{"fullName":"辽宁省沈阳市沈北新区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000600010009',
+  '于洪区',
+  NULL,
+  '0001000300060001',
+  0,
+  1,
+  0,
+  '{"fullName":"辽宁省沈阳市于洪区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000600010010',
+  '辽中区',
+  NULL,
+  '0001000300060001',
+  0,
+  1,
+  0,
+  '{"fullName":"辽宁省沈阳市辽中区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000600010011',
+  '康平县',
+  NULL,
+  '0001000300060001',
+  0,
+  1,
+  0,
+  '{"fullName":"辽宁省沈阳市康平县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000600010012',
+  '法库县',
+  NULL,
+  '0001000300060001',
+  0,
+  1,
+  0,
+  '{"fullName":"辽宁省沈阳市法库县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000600010013',
+  '新民市',
+  NULL,
+  '0001000300060001',
+  0,
+  1,
+  0,
+  '{"fullName":"辽宁省沈阳市新民市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300060002',
+  '大连市',
+  NULL,
+  '000100030006',
+  1,
+  1,
+  0,
+  '{"fullName":"辽宁省大连市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000600020001',
+  '中山区',
+  NULL,
+  '0001000300060002',
+  0,
+  1,
+  0,
+  '{"fullName":"辽宁省大连市中山区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000600020002',
+  '西岗区',
+  NULL,
+  '0001000300060002',
+  0,
+  1,
+  0,
+  '{"fullName":"辽宁省大连市西岗区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000600020003',
+  '沙河口区',
+  NULL,
+  '0001000300060002',
+  0,
+  1,
+  0,
+  '{"fullName":"辽宁省大连市沙河口区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000600020004',
+  '甘井子区',
+  NULL,
+  '0001000300060002',
+  0,
+  1,
+  0,
+  '{"fullName":"辽宁省大连市甘井子区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000600020005',
+  '旅顺口区',
+  NULL,
+  '0001000300060002',
+  0,
+  1,
+  0,
+  '{"fullName":"辽宁省大连市旅顺口区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000600020006',
+  '金州区',
+  NULL,
+  '0001000300060002',
+  0,
+  1,
+  0,
+  '{"fullName":"辽宁省大连市金州区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000600020007',
+  '普兰店区',
+  NULL,
+  '0001000300060002',
+  0,
+  1,
+  0,
+  '{"fullName":"辽宁省大连市普兰店区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000600020008',
+  '长海县',
+  NULL,
+  '0001000300060002',
+  0,
+  1,
+  0,
+  '{"fullName":"辽宁省大连市长海县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000600020009',
+  '瓦房店市',
+  NULL,
+  '0001000300060002',
+  0,
+  1,
+  0,
+  '{"fullName":"辽宁省大连市瓦房店市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000600020010',
+  '庄河市',
+  NULL,
+  '0001000300060002',
+  0,
+  1,
+  0,
+  '{"fullName":"辽宁省大连市庄河市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300060003',
+  '鞍山市',
+  NULL,
+  '000100030006',
+  1,
+  1,
+  0,
+  '{"fullName":"辽宁省鞍山市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000600030001',
+  '铁东区',
+  NULL,
+  '0001000300060003',
+  0,
+  1,
+  0,
+  '{"fullName":"辽宁省鞍山市铁东区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000600030002',
+  '铁西区',
+  NULL,
+  '0001000300060003',
+  0,
+  1,
+  0,
+  '{"fullName":"辽宁省鞍山市铁西区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000600030003',
+  '立山区',
+  NULL,
+  '0001000300060003',
+  0,
+  1,
+  0,
+  '{"fullName":"辽宁省鞍山市立山区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000600030004',
+  '千山区',
+  NULL,
+  '0001000300060003',
+  0,
+  1,
+  0,
+  '{"fullName":"辽宁省鞍山市千山区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000600030005',
+  '台安县',
+  NULL,
+  '0001000300060003',
+  0,
+  1,
+  0,
+  '{"fullName":"辽宁省鞍山市台安县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000600030006',
+  '岫岩满族自治县',
+  NULL,
+  '0001000300060003',
+  0,
+  1,
+  0,
+  '{"fullName":"辽宁省鞍山市岫岩满族自治县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000600030007',
+  '海城市',
+  NULL,
+  '0001000300060003',
+  0,
+  1,
+  0,
+  '{"fullName":"辽宁省鞍山市海城市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300060004',
+  '抚顺市',
+  NULL,
+  '000100030006',
+  1,
+  1,
+  0,
+  '{"fullName":"辽宁省抚顺市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000600040001',
+  '新抚区',
+  NULL,
+  '0001000300060004',
+  0,
+  1,
+  0,
+  '{"fullName":"辽宁省抚顺市新抚区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000600040002',
+  '东洲区',
+  NULL,
+  '0001000300060004',
+  0,
+  1,
+  0,
+  '{"fullName":"辽宁省抚顺市东洲区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000600040003',
+  '望花区',
+  NULL,
+  '0001000300060004',
+  0,
+  1,
+  0,
+  '{"fullName":"辽宁省抚顺市望花区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000600040004',
+  '顺城区',
+  NULL,
+  '0001000300060004',
+  0,
+  1,
+  0,
+  '{"fullName":"辽宁省抚顺市顺城区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000600040005',
+  '抚顺县',
+  NULL,
+  '0001000300060004',
+  0,
+  1,
+  0,
+  '{"fullName":"辽宁省抚顺市抚顺县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000600040006',
+  '新宾满族自治县',
+  NULL,
+  '0001000300060004',
+  0,
+  1,
+  0,
+  '{"fullName":"辽宁省抚顺市新宾满族自治县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000600040007',
+  '清原满族自治县',
+  NULL,
+  '0001000300060004',
+  0,
+  1,
+  0,
+  '{"fullName":"辽宁省抚顺市清原满族自治县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300060005',
+  '本溪市',
+  NULL,
+  '000100030006',
+  1,
+  1,
+  0,
+  '{"fullName":"辽宁省本溪市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000600050001',
+  '平山区',
+  NULL,
+  '0001000300060005',
+  0,
+  1,
+  0,
+  '{"fullName":"辽宁省本溪市平山区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000600050002',
+  '溪湖区',
+  NULL,
+  '0001000300060005',
+  0,
+  1,
+  0,
+  '{"fullName":"辽宁省本溪市溪湖区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000600050003',
+  '明山区',
+  NULL,
+  '0001000300060005',
+  0,
+  1,
+  0,
+  '{"fullName":"辽宁省本溪市明山区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000600050004',
+  '南芬区',
+  NULL,
+  '0001000300060005',
+  0,
+  1,
+  0,
+  '{"fullName":"辽宁省本溪市南芬区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000600050005',
+  '本溪满族自治县',
+  NULL,
+  '0001000300060005',
+  0,
+  1,
+  0,
+  '{"fullName":"辽宁省本溪市本溪满族自治县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000600050006',
+  '桓仁满族自治县',
+  NULL,
+  '0001000300060005',
+  0,
+  1,
+  0,
+  '{"fullName":"辽宁省本溪市桓仁满族自治县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300060006',
+  '丹东市',
+  NULL,
+  '000100030006',
+  1,
+  1,
+  0,
+  '{"fullName":"辽宁省丹东市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000600060001',
+  '元宝区',
+  NULL,
+  '0001000300060006',
+  0,
+  1,
+  0,
+  '{"fullName":"辽宁省丹东市元宝区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000600060002',
+  '振兴区',
+  NULL,
+  '0001000300060006',
+  0,
+  1,
+  0,
+  '{"fullName":"辽宁省丹东市振兴区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000600060003',
+  '振安区',
+  NULL,
+  '0001000300060006',
+  0,
+  1,
+  0,
+  '{"fullName":"辽宁省丹东市振安区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000600060004',
+  '宽甸满族自治县',
+  NULL,
+  '0001000300060006',
+  0,
+  1,
+  0,
+  '{"fullName":"辽宁省丹东市宽甸满族自治县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000600060005',
+  '东港市',
+  NULL,
+  '0001000300060006',
+  0,
+  1,
+  0,
+  '{"fullName":"辽宁省丹东市东港市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000600060006',
+  '凤城市',
+  NULL,
+  '0001000300060006',
+  0,
+  1,
+  0,
+  '{"fullName":"辽宁省丹东市凤城市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300060007',
+  '锦州市',
+  NULL,
+  '000100030006',
+  1,
+  1,
+  0,
+  '{"fullName":"辽宁省锦州市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000600070001',
+  '古塔区',
+  NULL,
+  '0001000300060007',
+  0,
+  1,
+  0,
+  '{"fullName":"辽宁省锦州市古塔区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000600070002',
+  '凌河区',
+  NULL,
+  '0001000300060007',
+  0,
+  1,
+  0,
+  '{"fullName":"辽宁省锦州市凌河区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000600070003',
+  '太和区',
+  NULL,
+  '0001000300060007',
+  0,
+  1,
+  0,
+  '{"fullName":"辽宁省锦州市太和区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000600070004',
+  '黑山县',
+  NULL,
+  '0001000300060007',
+  0,
+  1,
+  0,
+  '{"fullName":"辽宁省锦州市黑山县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000600070005',
+  '义县',
+  NULL,
+  '0001000300060007',
+  0,
+  1,
+  0,
+  '{"fullName":"辽宁省锦州市义县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000600070006',
+  '凌海市',
+  NULL,
+  '0001000300060007',
+  0,
+  1,
+  0,
+  '{"fullName":"辽宁省锦州市凌海市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000600070007',
+  '北镇市',
+  NULL,
+  '0001000300060007',
+  0,
+  1,
+  0,
+  '{"fullName":"辽宁省锦州市北镇市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300060008',
+  '营口市',
+  NULL,
+  '000100030006',
+  1,
+  1,
+  0,
+  '{"fullName":"辽宁省营口市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000600080001',
+  '站前区',
+  NULL,
+  '0001000300060008',
+  0,
+  1,
+  0,
+  '{"fullName":"辽宁省营口市站前区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000600080002',
+  '西市区',
+  NULL,
+  '0001000300060008',
+  0,
+  1,
+  0,
+  '{"fullName":"辽宁省营口市西市区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000600080003',
+  '鲅鱼圈区',
+  NULL,
+  '0001000300060008',
+  0,
+  1,
+  0,
+  '{"fullName":"辽宁省营口市鲅鱼圈区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000600080004',
+  '老边区',
+  NULL,
+  '0001000300060008',
+  0,
+  1,
+  0,
+  '{"fullName":"辽宁省营口市老边区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000600080005',
+  '盖州市',
+  NULL,
+  '0001000300060008',
+  0,
+  1,
+  0,
+  '{"fullName":"辽宁省营口市盖州市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000600080006',
+  '大石桥市',
+  NULL,
+  '0001000300060008',
+  0,
+  1,
+  0,
+  '{"fullName":"辽宁省营口市大石桥市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300060009',
+  '阜新市',
+  NULL,
+  '000100030006',
+  1,
+  1,
+  0,
+  '{"fullName":"辽宁省阜新市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000600090001',
+  '海州区',
+  NULL,
+  '0001000300060009',
+  0,
+  1,
+  0,
+  '{"fullName":"辽宁省阜新市海州区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000600090002',
+  '新邱区',
+  NULL,
+  '0001000300060009',
+  0,
+  1,
+  0,
+  '{"fullName":"辽宁省阜新市新邱区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000600090003',
+  '太平区',
+  NULL,
+  '0001000300060009',
+  0,
+  1,
+  0,
+  '{"fullName":"辽宁省阜新市太平区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000600090004',
+  '清河门区',
+  NULL,
+  '0001000300060009',
+  0,
+  1,
+  0,
+  '{"fullName":"辽宁省阜新市清河门区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000600090005',
+  '细河区',
+  NULL,
+  '0001000300060009',
+  0,
+  1,
+  0,
+  '{"fullName":"辽宁省阜新市细河区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000600090006',
+  '阜新蒙古族自治县',
+  NULL,
+  '0001000300060009',
+  0,
+  1,
+  0,
+  '{"fullName":"辽宁省阜新市阜新蒙古族自治县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000600090007',
+  '彰武县',
+  NULL,
+  '0001000300060009',
+  0,
+  1,
+  0,
+  '{"fullName":"辽宁省阜新市彰武县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300060010',
+  '辽阳市',
+  NULL,
+  '000100030006',
+  1,
+  1,
+  0,
+  '{"fullName":"辽宁省辽阳市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000600100001',
+  '白塔区',
+  NULL,
+  '0001000300060010',
+  0,
+  1,
+  0,
+  '{"fullName":"辽宁省辽阳市白塔区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000600100002',
+  '文圣区',
+  NULL,
+  '0001000300060010',
+  0,
+  1,
+  0,
+  '{"fullName":"辽宁省辽阳市文圣区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000600100003',
+  '宏伟区',
+  NULL,
+  '0001000300060010',
+  0,
+  1,
+  0,
+  '{"fullName":"辽宁省辽阳市宏伟区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000600100004',
+  '弓长岭区',
+  NULL,
+  '0001000300060010',
+  0,
+  1,
+  0,
+  '{"fullName":"辽宁省辽阳市弓长岭区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000600100005',
+  '太子河区',
+  NULL,
+  '0001000300060010',
+  0,
+  1,
+  0,
+  '{"fullName":"辽宁省辽阳市太子河区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000600100006',
+  '辽阳县',
+  NULL,
+  '0001000300060010',
+  0,
+  1,
+  0,
+  '{"fullName":"辽宁省辽阳市辽阳县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000600100007',
+  '灯塔市',
+  NULL,
+  '0001000300060010',
+  0,
+  1,
+  0,
+  '{"fullName":"辽宁省辽阳市灯塔市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300060011',
+  '盘锦市',
+  NULL,
+  '000100030006',
+  1,
+  1,
+  0,
+  '{"fullName":"辽宁省盘锦市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000600110001',
+  '双台子区',
+  NULL,
+  '0001000300060011',
+  0,
+  1,
+  0,
+  '{"fullName":"辽宁省盘锦市双台子区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000600110002',
+  '兴隆台区',
+  NULL,
+  '0001000300060011',
+  0,
+  1,
+  0,
+  '{"fullName":"辽宁省盘锦市兴隆台区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000600110003',
+  '大洼区',
+  NULL,
+  '0001000300060011',
+  0,
+  1,
+  0,
+  '{"fullName":"辽宁省盘锦市大洼区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000600110004',
+  '盘山县',
+  NULL,
+  '0001000300060011',
+  0,
+  1,
+  0,
+  '{"fullName":"辽宁省盘锦市盘山县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300060012',
+  '铁岭市',
+  NULL,
+  '000100030006',
+  1,
+  1,
+  0,
+  '{"fullName":"辽宁省铁岭市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000600120001',
+  '银州区',
+  NULL,
+  '0001000300060012',
+  0,
+  1,
+  0,
+  '{"fullName":"辽宁省铁岭市银州区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000600120002',
+  '清河区',
+  NULL,
+  '0001000300060012',
+  0,
+  1,
+  0,
+  '{"fullName":"辽宁省铁岭市清河区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000600120003',
+  '铁岭县',
+  NULL,
+  '0001000300060012',
+  0,
+  1,
+  0,
+  '{"fullName":"辽宁省铁岭市铁岭县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000600120004',
+  '西丰县',
+  NULL,
+  '0001000300060012',
+  0,
+  1,
+  0,
+  '{"fullName":"辽宁省铁岭市西丰县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000600120005',
+  '昌图县',
+  NULL,
+  '0001000300060012',
+  0,
+  1,
+  0,
+  '{"fullName":"辽宁省铁岭市昌图县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000600120006',
+  '调兵山市',
+  NULL,
+  '0001000300060012',
+  0,
+  1,
+  0,
+  '{"fullName":"辽宁省铁岭市调兵山市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000600120007',
+  '开原市',
+  NULL,
+  '0001000300060012',
+  0,
+  1,
+  0,
+  '{"fullName":"辽宁省铁岭市开原市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300060013',
+  '朝阳市',
+  NULL,
+  '000100030006',
+  1,
+  1,
+  0,
+  '{"fullName":"辽宁省朝阳市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000600130001',
+  '双塔区',
+  NULL,
+  '0001000300060013',
+  0,
+  1,
+  0,
+  '{"fullName":"辽宁省朝阳市双塔区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000600130002',
+  '龙城区',
+  NULL,
+  '0001000300060013',
+  0,
+  1,
+  0,
+  '{"fullName":"辽宁省朝阳市龙城区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000600130003',
+  '朝阳县',
+  NULL,
+  '0001000300060013',
+  0,
+  1,
+  0,
+  '{"fullName":"辽宁省朝阳市朝阳县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000600130004',
+  '建平县',
+  NULL,
+  '0001000300060013',
+  0,
+  1,
+  0,
+  '{"fullName":"辽宁省朝阳市建平县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000600130005',
+  '喀喇沁左翼蒙古族自治县',
+  NULL,
+  '0001000300060013',
+  0,
+  1,
+  0,
+  '{"fullName":"辽宁省朝阳市喀喇沁左翼蒙古族自治县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000600130006',
+  '北票市',
+  NULL,
+  '0001000300060013',
+  0,
+  1,
+  0,
+  '{"fullName":"辽宁省朝阳市北票市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000600130007',
+  '凌源市',
+  NULL,
+  '0001000300060013',
+  0,
+  1,
+  0,
+  '{"fullName":"辽宁省朝阳市凌源市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300060014',
+  '葫芦岛市',
+  NULL,
+  '000100030006',
+  1,
+  1,
+  0,
+  '{"fullName":"辽宁省葫芦岛市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000600140001',
+  '连山区',
+  NULL,
+  '0001000300060014',
+  0,
+  1,
+  0,
+  '{"fullName":"辽宁省葫芦岛市连山区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000600140002',
+  '龙港区',
+  NULL,
+  '0001000300060014',
+  0,
+  1,
+  0,
+  '{"fullName":"辽宁省葫芦岛市龙港区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000600140003',
+  '南票区',
+  NULL,
+  '0001000300060014',
+  0,
+  1,
+  0,
+  '{"fullName":"辽宁省葫芦岛市南票区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000600140004',
+  '绥中县',
+  NULL,
+  '0001000300060014',
+  0,
+  1,
+  0,
+  '{"fullName":"辽宁省葫芦岛市绥中县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000600140005',
+  '建昌县',
+  NULL,
+  '0001000300060014',
+  0,
+  1,
+  0,
+  '{"fullName":"辽宁省葫芦岛市建昌县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000600140006',
+  '兴城市',
+  NULL,
+  '0001000300060014',
+  0,
+  1,
+  0,
+  '{"fullName":"辽宁省葫芦岛市兴城市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '000100030007',
+  '吉林省',
+  NULL,
+  '00010003',
+  1,
+  1,
+  0,
+  '{"fullName":"吉林省"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300070001',
+  '长春市',
+  NULL,
+  '000100030007',
+  1,
+  1,
+  0,
+  '{"fullName":"吉林省长春市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000700010001',
+  '南关区',
+  NULL,
+  '0001000300070001',
+  0,
+  1,
+  0,
+  '{"fullName":"吉林省长春市南关区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000700010002',
+  '宽城区',
+  NULL,
+  '0001000300070001',
+  0,
+  1,
+  0,
+  '{"fullName":"吉林省长春市宽城区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000700010003',
+  '朝阳区',
+  NULL,
+  '0001000300070001',
+  0,
+  1,
+  0,
+  '{"fullName":"吉林省长春市朝阳区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000700010004',
+  '二道区',
+  NULL,
+  '0001000300070001',
+  0,
+  1,
+  0,
+  '{"fullName":"吉林省长春市二道区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000700010005',
+  '绿园区',
+  NULL,
+  '0001000300070001',
+  0,
+  1,
+  0,
+  '{"fullName":"吉林省长春市绿园区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000700010006',
+  '双阳区',
+  NULL,
+  '0001000300070001',
+  0,
+  1,
+  0,
+  '{"fullName":"吉林省长春市双阳区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000700010007',
+  '九台区',
+  NULL,
+  '0001000300070001',
+  0,
+  1,
+  0,
+  '{"fullName":"吉林省长春市九台区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000700010008',
+  '农安县',
+  NULL,
+  '0001000300070001',
+  0,
+  1,
+  0,
+  '{"fullName":"吉林省长春市农安县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000700010009',
+  '榆树市',
+  NULL,
+  '0001000300070001',
+  0,
+  1,
+  0,
+  '{"fullName":"吉林省长春市榆树市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000700010010',
+  '德惠市',
+  NULL,
+  '0001000300070001',
+  0,
+  1,
+  0,
+  '{"fullName":"吉林省长春市德惠市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300070002',
+  '吉林市',
+  NULL,
+  '000100030007',
+  1,
+  1,
+  0,
+  '{"fullName":"吉林省吉林市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000700020001',
+  '昌邑区',
+  NULL,
+  '0001000300070002',
+  0,
+  1,
+  0,
+  '{"fullName":"吉林省吉林市昌邑区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000700020002',
+  '龙潭区',
+  NULL,
+  '0001000300070002',
+  0,
+  1,
+  0,
+  '{"fullName":"吉林省吉林市龙潭区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000700020003',
+  '船营区',
+  NULL,
+  '0001000300070002',
+  0,
+  1,
+  0,
+  '{"fullName":"吉林省吉林市船营区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000700020004',
+  '丰满区',
+  NULL,
+  '0001000300070002',
+  0,
+  1,
+  0,
+  '{"fullName":"吉林省吉林市丰满区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000700020005',
+  '永吉县',
+  NULL,
+  '0001000300070002',
+  0,
+  1,
+  0,
+  '{"fullName":"吉林省吉林市永吉县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000700020006',
+  '蛟河市',
+  NULL,
+  '0001000300070002',
+  0,
+  1,
+  0,
+  '{"fullName":"吉林省吉林市蛟河市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000700020007',
+  '桦甸市',
+  NULL,
+  '0001000300070002',
+  0,
+  1,
+  0,
+  '{"fullName":"吉林省吉林市桦甸市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000700020008',
+  '舒兰市',
+  NULL,
+  '0001000300070002',
+  0,
+  1,
+  0,
+  '{"fullName":"吉林省吉林市舒兰市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000700020009',
+  '磐石市',
+  NULL,
+  '0001000300070002',
+  0,
+  1,
+  0,
+  '{"fullName":"吉林省吉林市磐石市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300070003',
+  '四平市',
+  NULL,
+  '000100030007',
+  1,
+  1,
+  0,
+  '{"fullName":"吉林省四平市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000700030001',
+  '铁西区',
+  NULL,
+  '0001000300070003',
+  0,
+  1,
+  0,
+  '{"fullName":"吉林省四平市铁西区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000700030002',
+  '铁东区',
+  NULL,
+  '0001000300070003',
+  0,
+  1,
+  0,
+  '{"fullName":"吉林省四平市铁东区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000700030003',
+  '梨树县',
+  NULL,
+  '0001000300070003',
+  0,
+  1,
+  0,
+  '{"fullName":"吉林省四平市梨树县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000700030004',
+  '伊通满族自治县',
+  NULL,
+  '0001000300070003',
+  0,
+  1,
+  0,
+  '{"fullName":"吉林省四平市伊通满族自治县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000700030005',
+  '公主岭市',
+  NULL,
+  '0001000300070003',
+  0,
+  1,
+  0,
+  '{"fullName":"吉林省四平市公主岭市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000700030006',
+  '双辽市',
+  NULL,
+  '0001000300070003',
+  0,
+  1,
+  0,
+  '{"fullName":"吉林省四平市双辽市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300070004',
+  '辽源市',
+  NULL,
+  '000100030007',
+  1,
+  1,
+  0,
+  '{"fullName":"吉林省辽源市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000700040001',
+  '龙山区',
+  NULL,
+  '0001000300070004',
+  0,
+  1,
+  0,
+  '{"fullName":"吉林省辽源市龙山区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000700040002',
+  '西安区',
+  NULL,
+  '0001000300070004',
+  0,
+  1,
+  0,
+  '{"fullName":"吉林省辽源市西安区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000700040003',
+  '东丰县',
+  NULL,
+  '0001000300070004',
+  0,
+  1,
+  0,
+  '{"fullName":"吉林省辽源市东丰县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000700040004',
+  '东辽县',
+  NULL,
+  '0001000300070004',
+  0,
+  1,
+  0,
+  '{"fullName":"吉林省辽源市东辽县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300070005',
+  '通化市',
+  NULL,
+  '000100030007',
+  1,
+  1,
+  0,
+  '{"fullName":"吉林省通化市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000700050001',
+  '东昌区',
+  NULL,
+  '0001000300070005',
+  0,
+  1,
+  0,
+  '{"fullName":"吉林省通化市东昌区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000700050002',
+  '二道江区',
+  NULL,
+  '0001000300070005',
+  0,
+  1,
+  0,
+  '{"fullName":"吉林省通化市二道江区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000700050003',
+  '通化县',
+  NULL,
+  '0001000300070005',
+  0,
+  1,
+  0,
+  '{"fullName":"吉林省通化市通化县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000700050004',
+  '辉南县',
+  NULL,
+  '0001000300070005',
+  0,
+  1,
+  0,
+  '{"fullName":"吉林省通化市辉南县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000700050005',
+  '柳河县',
+  NULL,
+  '0001000300070005',
+  0,
+  1,
+  0,
+  '{"fullName":"吉林省通化市柳河县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000700050006',
+  '梅河口市',
+  NULL,
+  '0001000300070005',
+  0,
+  1,
+  0,
+  '{"fullName":"吉林省通化市梅河口市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000700050007',
+  '集安市',
+  NULL,
+  '0001000300070005',
+  0,
+  1,
+  0,
+  '{"fullName":"吉林省通化市集安市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300070006',
+  '白山市',
+  NULL,
+  '000100030007',
+  1,
+  1,
+  0,
+  '{"fullName":"吉林省白山市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000700060001',
+  '浑江区',
+  NULL,
+  '0001000300070006',
+  0,
+  1,
+  0,
+  '{"fullName":"吉林省白山市浑江区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000700060002',
+  '江源区',
+  NULL,
+  '0001000300070006',
+  0,
+  1,
+  0,
+  '{"fullName":"吉林省白山市江源区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000700060003',
+  '抚松县',
+  NULL,
+  '0001000300070006',
+  0,
+  1,
+  0,
+  '{"fullName":"吉林省白山市抚松县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000700060004',
+  '靖宇县',
+  NULL,
+  '0001000300070006',
+  0,
+  1,
+  0,
+  '{"fullName":"吉林省白山市靖宇县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000700060005',
+  '长白朝鲜族自治县',
+  NULL,
+  '0001000300070006',
+  0,
+  1,
+  0,
+  '{"fullName":"吉林省白山市长白朝鲜族自治县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000700060006',
+  '临江市',
+  NULL,
+  '0001000300070006',
+  0,
+  1,
+  0,
+  '{"fullName":"吉林省白山市临江市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300070007',
+  '松原市',
+  NULL,
+  '000100030007',
+  1,
+  1,
+  0,
+  '{"fullName":"吉林省松原市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000700070001',
+  '宁江区',
+  NULL,
+  '0001000300070007',
+  0,
+  1,
+  0,
+  '{"fullName":"吉林省松原市宁江区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000700070002',
+  '前郭尔罗斯蒙古族自治县',
+  NULL,
+  '0001000300070007',
+  0,
+  1,
+  0,
+  '{"fullName":"吉林省松原市前郭尔罗斯蒙古族自治县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000700070003',
+  '长岭县',
+  NULL,
+  '0001000300070007',
+  0,
+  1,
+  0,
+  '{"fullName":"吉林省松原市长岭县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000700070004',
+  '乾安县',
+  NULL,
+  '0001000300070007',
+  0,
+  1,
+  0,
+  '{"fullName":"吉林省松原市乾安县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000700070005',
+  '扶余市',
+  NULL,
+  '0001000300070007',
+  0,
+  1,
+  0,
+  '{"fullName":"吉林省松原市扶余市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300070008',
+  '白城市',
+  NULL,
+  '000100030007',
+  1,
+  1,
+  0,
+  '{"fullName":"吉林省白城市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000700080001',
+  '洮北区',
+  NULL,
+  '0001000300070008',
+  0,
+  1,
+  0,
+  '{"fullName":"吉林省白城市洮北区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000700080002',
+  '镇赉县',
+  NULL,
+  '0001000300070008',
+  0,
+  1,
+  0,
+  '{"fullName":"吉林省白城市镇赉县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000700080003',
+  '通榆县',
+  NULL,
+  '0001000300070008',
+  0,
+  1,
+  0,
+  '{"fullName":"吉林省白城市通榆县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000700080004',
+  '洮南市',
+  NULL,
+  '0001000300070008',
+  0,
+  1,
+  0,
+  '{"fullName":"吉林省白城市洮南市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000700080005',
+  '大安市',
+  NULL,
+  '0001000300070008',
+  0,
+  1,
+  0,
+  '{"fullName":"吉林省白城市大安市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300070009',
+  '延边朝鲜族自治州',
+  NULL,
+  '000100030007',
+  1,
+  1,
+  0,
+  '{"fullName":"吉林省延边朝鲜族自治州"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000700090001',
+  '延吉市',
+  NULL,
+  '0001000300070009',
+  0,
+  1,
+  0,
+  '{"fullName":"吉林省延边朝鲜族自治州延吉市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000700090002',
+  '图们市',
+  NULL,
+  '0001000300070009',
+  0,
+  1,
+  0,
+  '{"fullName":"吉林省延边朝鲜族自治州图们市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000700090003',
+  '敦化市',
+  NULL,
+  '0001000300070009',
+  0,
+  1,
+  0,
+  '{"fullName":"吉林省延边朝鲜族自治州敦化市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000700090004',
+  '珲春市',
+  NULL,
+  '0001000300070009',
+  0,
+  1,
+  0,
+  '{"fullName":"吉林省延边朝鲜族自治州珲春市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000700090005',
+  '龙井市',
+  NULL,
+  '0001000300070009',
+  0,
+  1,
+  0,
+  '{"fullName":"吉林省延边朝鲜族自治州龙井市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000700090006',
+  '和龙市',
+  NULL,
+  '0001000300070009',
+  0,
+  1,
+  0,
+  '{"fullName":"吉林省延边朝鲜族自治州和龙市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000700090007',
+  '汪清县',
+  NULL,
+  '0001000300070009',
+  0,
+  1,
+  0,
+  '{"fullName":"吉林省延边朝鲜族自治州汪清县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000700090008',
+  '安图县',
+  NULL,
+  '0001000300070009',
+  0,
+  1,
+  0,
+  '{"fullName":"吉林省延边朝鲜族自治州安图县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '000100030008',
+  '黑龙江省',
+  NULL,
+  '00010003',
+  1,
+  1,
+  0,
+  '{"fullName":"黑龙江省"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300080001',
+  '哈尔滨市',
+  NULL,
+  '000100030008',
+  1,
+  1,
+  0,
+  '{"fullName":"黑龙江省哈尔滨市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000800010001',
+  '道里区',
+  NULL,
+  '0001000300080001',
+  0,
+  1,
+  0,
+  '{"fullName":"黑龙江省哈尔滨市道里区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000800010002',
+  '南岗区',
+  NULL,
+  '0001000300080001',
+  0,
+  1,
+  0,
+  '{"fullName":"黑龙江省哈尔滨市南岗区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000800010003',
+  '道外区',
+  NULL,
+  '0001000300080001',
+  0,
+  1,
+  0,
+  '{"fullName":"黑龙江省哈尔滨市道外区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000800010004',
+  '平房区',
+  NULL,
+  '0001000300080001',
+  0,
+  1,
+  0,
+  '{"fullName":"黑龙江省哈尔滨市平房区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000800010005',
+  '松北区',
+  NULL,
+  '0001000300080001',
+  0,
+  1,
+  0,
+  '{"fullName":"黑龙江省哈尔滨市松北区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000800010006',
+  '香坊区',
+  NULL,
+  '0001000300080001',
+  0,
+  1,
+  0,
+  '{"fullName":"黑龙江省哈尔滨市香坊区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000800010007',
+  '呼兰区',
+  NULL,
+  '0001000300080001',
+  0,
+  1,
+  0,
+  '{"fullName":"黑龙江省哈尔滨市呼兰区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000800010008',
+  '阿城区',
+  NULL,
+  '0001000300080001',
+  0,
+  1,
+  0,
+  '{"fullName":"黑龙江省哈尔滨市阿城区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000800010009',
+  '双城区',
+  NULL,
+  '0001000300080001',
+  0,
+  1,
+  0,
+  '{"fullName":"黑龙江省哈尔滨市双城区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000800010010',
+  '依兰县',
+  NULL,
+  '0001000300080001',
+  0,
+  1,
+  0,
+  '{"fullName":"黑龙江省哈尔滨市依兰县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000800010011',
+  '方正县',
+  NULL,
+  '0001000300080001',
+  0,
+  1,
+  0,
+  '{"fullName":"黑龙江省哈尔滨市方正县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000800010012',
+  '宾县',
+  NULL,
+  '0001000300080001',
+  0,
+  1,
+  0,
+  '{"fullName":"黑龙江省哈尔滨市宾县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000800010013',
+  '巴彦县',
+  NULL,
+  '0001000300080001',
+  0,
+  1,
+  0,
+  '{"fullName":"黑龙江省哈尔滨市巴彦县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000800010014',
+  '木兰县',
+  NULL,
+  '0001000300080001',
+  0,
+  1,
+  0,
+  '{"fullName":"黑龙江省哈尔滨市木兰县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000800010015',
+  '通河县',
+  NULL,
+  '0001000300080001',
+  0,
+  1,
+  0,
+  '{"fullName":"黑龙江省哈尔滨市通河县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000800010016',
+  '延寿县',
+  NULL,
+  '0001000300080001',
+  0,
+  1,
+  0,
+  '{"fullName":"黑龙江省哈尔滨市延寿县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000800010017',
+  '尚志市',
+  NULL,
+  '0001000300080001',
+  0,
+  1,
+  0,
+  '{"fullName":"黑龙江省哈尔滨市尚志市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000800010018',
+  '五常市',
+  NULL,
+  '0001000300080001',
+  0,
+  1,
+  0,
+  '{"fullName":"黑龙江省哈尔滨市五常市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300080002',
+  '齐齐哈尔市',
+  NULL,
+  '000100030008',
+  1,
+  1,
+  0,
+  '{"fullName":"黑龙江省齐齐哈尔市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000800020001',
+  '龙沙区',
+  NULL,
+  '0001000300080002',
+  0,
+  1,
+  0,
+  '{"fullName":"黑龙江省齐齐哈尔市龙沙区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000800020002',
+  '建华区',
+  NULL,
+  '0001000300080002',
+  0,
+  1,
+  0,
+  '{"fullName":"黑龙江省齐齐哈尔市建华区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000800020003',
+  '铁锋区',
+  NULL,
+  '0001000300080002',
+  0,
+  1,
+  0,
+  '{"fullName":"黑龙江省齐齐哈尔市铁锋区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000800020004',
+  '昂昂溪区',
+  NULL,
+  '0001000300080002',
+  0,
+  1,
+  0,
+  '{"fullName":"黑龙江省齐齐哈尔市昂昂溪区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000800020005',
+  '富拉尔基区',
+  NULL,
+  '0001000300080002',
+  0,
+  1,
+  0,
+  '{"fullName":"黑龙江省齐齐哈尔市富拉尔基区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000800020006',
+  '碾子山区',
+  NULL,
+  '0001000300080002',
+  0,
+  1,
+  0,
+  '{"fullName":"黑龙江省齐齐哈尔市碾子山区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000800020007',
+  '梅里斯达斡尔族区',
+  NULL,
+  '0001000300080002',
+  0,
+  1,
+  0,
+  '{"fullName":"黑龙江省齐齐哈尔市梅里斯达斡尔族区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000800020008',
+  '龙江县',
+  NULL,
+  '0001000300080002',
+  0,
+  1,
+  0,
+  '{"fullName":"黑龙江省齐齐哈尔市龙江县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000800020009',
+  '依安县',
+  NULL,
+  '0001000300080002',
+  0,
+  1,
+  0,
+  '{"fullName":"黑龙江省齐齐哈尔市依安县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000800020010',
+  '泰来县',
+  NULL,
+  '0001000300080002',
+  0,
+  1,
+  0,
+  '{"fullName":"黑龙江省齐齐哈尔市泰来县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000800020011',
+  '甘南县',
+  NULL,
+  '0001000300080002',
+  0,
+  1,
+  0,
+  '{"fullName":"黑龙江省齐齐哈尔市甘南县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000800020012',
+  '富裕县',
+  NULL,
+  '0001000300080002',
+  0,
+  1,
+  0,
+  '{"fullName":"黑龙江省齐齐哈尔市富裕县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000800020013',
+  '克山县',
+  NULL,
+  '0001000300080002',
+  0,
+  1,
+  0,
+  '{"fullName":"黑龙江省齐齐哈尔市克山县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000800020014',
+  '克东县',
+  NULL,
+  '0001000300080002',
+  0,
+  1,
+  0,
+  '{"fullName":"黑龙江省齐齐哈尔市克东县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000800020015',
+  '拜泉县',
+  NULL,
+  '0001000300080002',
+  0,
+  1,
+  0,
+  '{"fullName":"黑龙江省齐齐哈尔市拜泉县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000800020016',
+  '讷河市',
+  NULL,
+  '0001000300080002',
+  0,
+  1,
+  0,
+  '{"fullName":"黑龙江省齐齐哈尔市讷河市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300080003',
+  '鸡西市',
+  NULL,
+  '000100030008',
+  1,
+  1,
+  0,
+  '{"fullName":"黑龙江省鸡西市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000800030001',
+  '鸡冠区',
+  NULL,
+  '0001000300080003',
+  0,
+  1,
+  0,
+  '{"fullName":"黑龙江省鸡西市鸡冠区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000800030002',
+  '恒山区',
+  NULL,
+  '0001000300080003',
+  0,
+  1,
+  0,
+  '{"fullName":"黑龙江省鸡西市恒山区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000800030003',
+  '滴道区',
+  NULL,
+  '0001000300080003',
+  0,
+  1,
+  0,
+  '{"fullName":"黑龙江省鸡西市滴道区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000800030004',
+  '梨树区',
+  NULL,
+  '0001000300080003',
+  0,
+  1,
+  0,
+  '{"fullName":"黑龙江省鸡西市梨树区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000800030005',
+  '城子河区',
+  NULL,
+  '0001000300080003',
+  0,
+  1,
+  0,
+  '{"fullName":"黑龙江省鸡西市城子河区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000800030006',
+  '麻山区',
+  NULL,
+  '0001000300080003',
+  0,
+  1,
+  0,
+  '{"fullName":"黑龙江省鸡西市麻山区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000800030007',
+  '鸡东县',
+  NULL,
+  '0001000300080003',
+  0,
+  1,
+  0,
+  '{"fullName":"黑龙江省鸡西市鸡东县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000800030008',
+  '虎林市',
+  NULL,
+  '0001000300080003',
+  0,
+  1,
+  0,
+  '{"fullName":"黑龙江省鸡西市虎林市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000800030009',
+  '密山市',
+  NULL,
+  '0001000300080003',
+  0,
+  1,
+  0,
+  '{"fullName":"黑龙江省鸡西市密山市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300080004',
+  '鹤岗市',
+  NULL,
+  '000100030008',
+  1,
+  1,
+  0,
+  '{"fullName":"黑龙江省鹤岗市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000800040001',
+  '向阳区',
+  NULL,
+  '0001000300080004',
+  0,
+  1,
+  0,
+  '{"fullName":"黑龙江省鹤岗市向阳区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000800040002',
+  '工农区',
+  NULL,
+  '0001000300080004',
+  0,
+  1,
+  0,
+  '{"fullName":"黑龙江省鹤岗市工农区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000800040003',
+  '南山区',
+  NULL,
+  '0001000300080004',
+  0,
+  1,
+  0,
+  '{"fullName":"黑龙江省鹤岗市南山区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000800040004',
+  '兴安区',
+  NULL,
+  '0001000300080004',
+  0,
+  1,
+  0,
+  '{"fullName":"黑龙江省鹤岗市兴安区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000800040005',
+  '东山区',
+  NULL,
+  '0001000300080004',
+  0,
+  1,
+  0,
+  '{"fullName":"黑龙江省鹤岗市东山区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000800040006',
+  '兴山区',
+  NULL,
+  '0001000300080004',
+  0,
+  1,
+  0,
+  '{"fullName":"黑龙江省鹤岗市兴山区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000800040007',
+  '萝北县',
+  NULL,
+  '0001000300080004',
+  0,
+  1,
+  0,
+  '{"fullName":"黑龙江省鹤岗市萝北县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000800040008',
+  '绥滨县',
+  NULL,
+  '0001000300080004',
+  0,
+  1,
+  0,
+  '{"fullName":"黑龙江省鹤岗市绥滨县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300080005',
+  '双鸭山市',
+  NULL,
+  '000100030008',
+  1,
+  1,
+  0,
+  '{"fullName":"黑龙江省双鸭山市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000800050001',
+  '尖山区',
+  NULL,
+  '0001000300080005',
+  0,
+  1,
+  0,
+  '{"fullName":"黑龙江省双鸭山市尖山区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000800050002',
+  '岭东区',
+  NULL,
+  '0001000300080005',
+  0,
+  1,
+  0,
+  '{"fullName":"黑龙江省双鸭山市岭东区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000800050003',
+  '四方台区',
+  NULL,
+  '0001000300080005',
+  0,
+  1,
+  0,
+  '{"fullName":"黑龙江省双鸭山市四方台区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000800050004',
+  '宝山区',
+  NULL,
+  '0001000300080005',
+  0,
+  1,
+  0,
+  '{"fullName":"黑龙江省双鸭山市宝山区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000800050005',
+  '集贤县',
+  NULL,
+  '0001000300080005',
+  0,
+  1,
+  0,
+  '{"fullName":"黑龙江省双鸭山市集贤县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000800050006',
+  '友谊县',
+  NULL,
+  '0001000300080005',
+  0,
+  1,
+  0,
+  '{"fullName":"黑龙江省双鸭山市友谊县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000800050007',
+  '宝清县',
+  NULL,
+  '0001000300080005',
+  0,
+  1,
+  0,
+  '{"fullName":"黑龙江省双鸭山市宝清县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000800050008',
+  '饶河县',
+  NULL,
+  '0001000300080005',
+  0,
+  1,
+  0,
+  '{"fullName":"黑龙江省双鸭山市饶河县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300080006',
+  '大庆市',
+  NULL,
+  '000100030008',
+  1,
+  1,
+  0,
+  '{"fullName":"黑龙江省大庆市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000800060001',
+  '萨尔图区',
+  NULL,
+  '0001000300080006',
+  0,
+  1,
+  0,
+  '{"fullName":"黑龙江省大庆市萨尔图区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000800060002',
+  '龙凤区',
+  NULL,
+  '0001000300080006',
+  0,
+  1,
+  0,
+  '{"fullName":"黑龙江省大庆市龙凤区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000800060003',
+  '让胡路区',
+  NULL,
+  '0001000300080006',
+  0,
+  1,
+  0,
+  '{"fullName":"黑龙江省大庆市让胡路区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000800060004',
+  '红岗区',
+  NULL,
+  '0001000300080006',
+  0,
+  1,
+  0,
+  '{"fullName":"黑龙江省大庆市红岗区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000800060005',
+  '大同区',
+  NULL,
+  '0001000300080006',
+  0,
+  1,
+  0,
+  '{"fullName":"黑龙江省大庆市大同区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000800060006',
+  '肇州县',
+  NULL,
+  '0001000300080006',
+  0,
+  1,
+  0,
+  '{"fullName":"黑龙江省大庆市肇州县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000800060007',
+  '肇源县',
+  NULL,
+  '0001000300080006',
+  0,
+  1,
+  0,
+  '{"fullName":"黑龙江省大庆市肇源县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000800060008',
+  '林甸县',
+  NULL,
+  '0001000300080006',
+  0,
+  1,
+  0,
+  '{"fullName":"黑龙江省大庆市林甸县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000800060009',
+  '杜尔伯特蒙古族自治县',
+  NULL,
+  '0001000300080006',
+  0,
+  1,
+  0,
+  '{"fullName":"黑龙江省大庆市杜尔伯特蒙古族自治县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300080007',
+  '伊春市',
+  NULL,
+  '000100030008',
+  1,
+  1,
+  0,
+  '{"fullName":"黑龙江省伊春市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000800070001',
+  '伊春区',
+  NULL,
+  '0001000300080007',
+  0,
+  1,
+  0,
+  '{"fullName":"黑龙江省伊春市伊春区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000800070002',
+  '南岔区',
+  NULL,
+  '0001000300080007',
+  0,
+  1,
+  0,
+  '{"fullName":"黑龙江省伊春市南岔区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000800070003',
+  '友好区',
+  NULL,
+  '0001000300080007',
+  0,
+  1,
+  0,
+  '{"fullName":"黑龙江省伊春市友好区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000800070004',
+  '西林区',
+  NULL,
+  '0001000300080007',
+  0,
+  1,
+  0,
+  '{"fullName":"黑龙江省伊春市西林区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000800070005',
+  '翠峦区',
+  NULL,
+  '0001000300080007',
+  0,
+  1,
+  0,
+  '{"fullName":"黑龙江省伊春市翠峦区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000800070006',
+  '新青区',
+  NULL,
+  '0001000300080007',
+  0,
+  1,
+  0,
+  '{"fullName":"黑龙江省伊春市新青区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000800070007',
+  '美溪区',
+  NULL,
+  '0001000300080007',
+  0,
+  1,
+  0,
+  '{"fullName":"黑龙江省伊春市美溪区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000800070008',
+  '金山屯区',
+  NULL,
+  '0001000300080007',
+  0,
+  1,
+  0,
+  '{"fullName":"黑龙江省伊春市金山屯区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000800070009',
+  '五营区',
+  NULL,
+  '0001000300080007',
+  0,
+  1,
+  0,
+  '{"fullName":"黑龙江省伊春市五营区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000800070010',
+  '乌马河区',
+  NULL,
+  '0001000300080007',
+  0,
+  1,
+  0,
+  '{"fullName":"黑龙江省伊春市乌马河区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000800070011',
+  '汤旺河区',
+  NULL,
+  '0001000300080007',
+  0,
+  1,
+  0,
+  '{"fullName":"黑龙江省伊春市汤旺河区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000800070012',
+  '带岭区',
+  NULL,
+  '0001000300080007',
+  0,
+  1,
+  0,
+  '{"fullName":"黑龙江省伊春市带岭区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000800070013',
+  '乌伊岭区',
+  NULL,
+  '0001000300080007',
+  0,
+  1,
+  0,
+  '{"fullName":"黑龙江省伊春市乌伊岭区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000800070014',
+  '红星区',
+  NULL,
+  '0001000300080007',
+  0,
+  1,
+  0,
+  '{"fullName":"黑龙江省伊春市红星区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000800070015',
+  '上甘岭区',
+  NULL,
+  '0001000300080007',
+  0,
+  1,
+  0,
+  '{"fullName":"黑龙江省伊春市上甘岭区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000800070016',
+  '嘉荫县',
+  NULL,
+  '0001000300080007',
+  0,
+  1,
+  0,
+  '{"fullName":"黑龙江省伊春市嘉荫县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000800070017',
+  '铁力市',
+  NULL,
+  '0001000300080007',
+  0,
+  1,
+  0,
+  '{"fullName":"黑龙江省伊春市铁力市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300080008',
+  '佳木斯市',
+  NULL,
+  '000100030008',
+  1,
+  1,
+  0,
+  '{"fullName":"黑龙江省佳木斯市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000800080001',
+  '向阳区',
+  NULL,
+  '0001000300080008',
+  0,
+  1,
+  0,
+  '{"fullName":"黑龙江省佳木斯市向阳区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000800080002',
+  '前进区',
+  NULL,
+  '0001000300080008',
+  0,
+  1,
+  0,
+  '{"fullName":"黑龙江省佳木斯市前进区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000800080003',
+  '东风区',
+  NULL,
+  '0001000300080008',
+  0,
+  1,
+  0,
+  '{"fullName":"黑龙江省佳木斯市东风区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000800080004',
+  '郊区',
+  NULL,
+  '0001000300080008',
+  0,
+  1,
+  0,
+  '{"fullName":"黑龙江省佳木斯市郊区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000800080005',
+  '桦南县',
+  NULL,
+  '0001000300080008',
+  0,
+  1,
+  0,
+  '{"fullName":"黑龙江省佳木斯市桦南县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000800080006',
+  '桦川县',
+  NULL,
+  '0001000300080008',
+  0,
+  1,
+  0,
+  '{"fullName":"黑龙江省佳木斯市桦川县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000800080007',
+  '汤原县',
+  NULL,
+  '0001000300080008',
+  0,
+  1,
+  0,
+  '{"fullName":"黑龙江省佳木斯市汤原县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000800080008',
+  '同江市',
+  NULL,
+  '0001000300080008',
+  0,
+  1,
+  0,
+  '{"fullName":"黑龙江省佳木斯市同江市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000800080009',
+  '富锦市',
+  NULL,
+  '0001000300080008',
+  0,
+  1,
+  0,
+  '{"fullName":"黑龙江省佳木斯市富锦市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000800080010',
+  '抚远市',
+  NULL,
+  '0001000300080008',
+  0,
+  1,
+  0,
+  '{"fullName":"黑龙江省佳木斯市抚远市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300080009',
+  '七台河市',
+  NULL,
+  '000100030008',
+  1,
+  1,
+  0,
+  '{"fullName":"黑龙江省七台河市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000800090001',
+  '新兴区',
+  NULL,
+  '0001000300080009',
+  0,
+  1,
+  0,
+  '{"fullName":"黑龙江省七台河市新兴区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000800090002',
+  '桃山区',
+  NULL,
+  '0001000300080009',
+  0,
+  1,
+  0,
+  '{"fullName":"黑龙江省七台河市桃山区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000800090003',
+  '茄子河区',
+  NULL,
+  '0001000300080009',
+  0,
+  1,
+  0,
+  '{"fullName":"黑龙江省七台河市茄子河区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000800090004',
+  '勃利县',
+  NULL,
+  '0001000300080009',
+  0,
+  1,
+  0,
+  '{"fullName":"黑龙江省七台河市勃利县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300080010',
+  '牡丹江市',
+  NULL,
+  '000100030008',
+  1,
+  1,
+  0,
+  '{"fullName":"黑龙江省牡丹江市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000800100001',
+  '东安区',
+  NULL,
+  '0001000300080010',
+  0,
+  1,
+  0,
+  '{"fullName":"黑龙江省牡丹江市东安区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000800100002',
+  '阳明区',
+  NULL,
+  '0001000300080010',
+  0,
+  1,
+  0,
+  '{"fullName":"黑龙江省牡丹江市阳明区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000800100003',
+  '爱民区',
+  NULL,
+  '0001000300080010',
+  0,
+  1,
+  0,
+  '{"fullName":"黑龙江省牡丹江市爱民区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000800100004',
+  '西安区',
+  NULL,
+  '0001000300080010',
+  0,
+  1,
+  0,
+  '{"fullName":"黑龙江省牡丹江市西安区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000800100005',
+  '林口县',
+  NULL,
+  '0001000300080010',
+  0,
+  1,
+  0,
+  '{"fullName":"黑龙江省牡丹江市林口县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000800100006',
+  '绥芬河市',
+  NULL,
+  '0001000300080010',
+  0,
+  1,
+  0,
+  '{"fullName":"黑龙江省牡丹江市绥芬河市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000800100007',
+  '海林市',
+  NULL,
+  '0001000300080010',
+  0,
+  1,
+  0,
+  '{"fullName":"黑龙江省牡丹江市海林市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000800100008',
+  '宁安市',
+  NULL,
+  '0001000300080010',
+  0,
+  1,
+  0,
+  '{"fullName":"黑龙江省牡丹江市宁安市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000800100009',
+  '穆棱市',
+  NULL,
+  '0001000300080010',
+  0,
+  1,
+  0,
+  '{"fullName":"黑龙江省牡丹江市穆棱市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000800100010',
+  '东宁市',
+  NULL,
+  '0001000300080010',
+  0,
+  1,
+  0,
+  '{"fullName":"黑龙江省牡丹江市东宁市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300080011',
+  '黑河市',
+  NULL,
+  '000100030008',
+  1,
+  1,
+  0,
+  '{"fullName":"黑龙江省黑河市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000800110001',
+  '爱辉区',
+  NULL,
+  '0001000300080011',
+  0,
+  1,
+  0,
+  '{"fullName":"黑龙江省黑河市爱辉区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000800110002',
+  '嫩江县',
+  NULL,
+  '0001000300080011',
+  0,
+  1,
+  0,
+  '{"fullName":"黑龙江省黑河市嫩江县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000800110003',
+  '逊克县',
+  NULL,
+  '0001000300080011',
+  0,
+  1,
+  0,
+  '{"fullName":"黑龙江省黑河市逊克县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000800110004',
+  '孙吴县',
+  NULL,
+  '0001000300080011',
+  0,
+  1,
+  0,
+  '{"fullName":"黑龙江省黑河市孙吴县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000800110005',
+  '北安市',
+  NULL,
+  '0001000300080011',
+  0,
+  1,
+  0,
+  '{"fullName":"黑龙江省黑河市北安市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000800110006',
+  '五大连池市',
+  NULL,
+  '0001000300080011',
+  0,
+  1,
+  0,
+  '{"fullName":"黑龙江省黑河市五大连池市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300080012',
+  '绥化市',
+  NULL,
+  '000100030008',
+  1,
+  1,
+  0,
+  '{"fullName":"黑龙江省绥化市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000800120001',
+  '北林区',
+  NULL,
+  '0001000300080012',
+  0,
+  1,
+  0,
+  '{"fullName":"黑龙江省绥化市北林区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000800120002',
+  '望奎县',
+  NULL,
+  '0001000300080012',
+  0,
+  1,
+  0,
+  '{"fullName":"黑龙江省绥化市望奎县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000800120003',
+  '兰西县',
+  NULL,
+  '0001000300080012',
+  0,
+  1,
+  0,
+  '{"fullName":"黑龙江省绥化市兰西县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000800120004',
+  '青冈县',
+  NULL,
+  '0001000300080012',
+  0,
+  1,
+  0,
+  '{"fullName":"黑龙江省绥化市青冈县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000800120005',
+  '庆安县',
+  NULL,
+  '0001000300080012',
+  0,
+  1,
+  0,
+  '{"fullName":"黑龙江省绥化市庆安县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000800120006',
+  '明水县',
+  NULL,
+  '0001000300080012',
+  0,
+  1,
+  0,
+  '{"fullName":"黑龙江省绥化市明水县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000800120007',
+  '绥棱县',
+  NULL,
+  '0001000300080012',
+  0,
+  1,
+  0,
+  '{"fullName":"黑龙江省绥化市绥棱县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000800120008',
+  '安达市',
+  NULL,
+  '0001000300080012',
+  0,
+  1,
+  0,
+  '{"fullName":"黑龙江省绥化市安达市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000800120009',
+  '肇东市',
+  NULL,
+  '0001000300080012',
+  0,
+  1,
+  0,
+  '{"fullName":"黑龙江省绥化市肇东市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000800120010',
+  '海伦市',
+  NULL,
+  '0001000300080012',
+  0,
+  1,
+  0,
+  '{"fullName":"黑龙江省绥化市海伦市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300080013',
+  '大兴安岭地区',
+  NULL,
+  '000100030008',
+  1,
+  1,
+  0,
+  '{"fullName":"黑龙江省大兴安岭地区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000800130001',
+  '呼玛县',
+  NULL,
+  '0001000300080013',
+  0,
+  1,
+  0,
+  '{"fullName":"黑龙江省大兴安岭地区呼玛县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000800130002',
+  '塔河县',
+  NULL,
+  '0001000300080013',
+  0,
+  1,
+  0,
+  '{"fullName":"黑龙江省大兴安岭地区塔河县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000800130003',
+  '漠河县',
+  NULL,
+  '0001000300080013',
+  0,
+  1,
+  0,
+  '{"fullName":"黑龙江省大兴安岭地区漠河县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '000100030009',
+  '上海市',
+  NULL,
+  '00010003',
+  1,
+  1,
+  0,
+  '{"fullName":"上海市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300090001',
+  '市辖区',
+  NULL,
+  '000100030009',
+  1,
+  1,
+  0,
+  '{"fullName":"上海市市辖区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000900010001',
+  '黄浦区',
+  NULL,
+  '0001000300090001',
+  0,
+  1,
+  0,
+  '{"fullName":"上海市市辖区黄浦区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000900010002',
+  '徐汇区',
+  NULL,
+  '0001000300090001',
+  0,
+  1,
+  0,
+  '{"fullName":"上海市市辖区徐汇区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000900010003',
+  '长宁区',
+  NULL,
+  '0001000300090001',
+  0,
+  1,
+  0,
+  '{"fullName":"上海市市辖区长宁区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000900010004',
+  '静安区',
+  NULL,
+  '0001000300090001',
+  0,
+  1,
+  0,
+  '{"fullName":"上海市市辖区静安区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000900010005',
+  '普陀区',
+  NULL,
+  '0001000300090001',
+  0,
+  1,
+  0,
+  '{"fullName":"上海市市辖区普陀区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000900010006',
+  '虹口区',
+  NULL,
+  '0001000300090001',
+  0,
+  1,
+  0,
+  '{"fullName":"上海市市辖区虹口区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000900010007',
+  '杨浦区',
+  NULL,
+  '0001000300090001',
+  0,
+  1,
+  0,
+  '{"fullName":"上海市市辖区杨浦区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000900010008',
+  '闵行区',
+  NULL,
+  '0001000300090001',
+  0,
+  1,
+  0,
+  '{"fullName":"上海市市辖区闵行区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000900010009',
+  '宝山区',
+  NULL,
+  '0001000300090001',
+  0,
+  1,
+  0,
+  '{"fullName":"上海市市辖区宝山区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000900010010',
+  '嘉定区',
+  NULL,
+  '0001000300090001',
+  0,
+  1,
+  0,
+  '{"fullName":"上海市市辖区嘉定区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000900010011',
+  '浦东新区',
+  NULL,
+  '0001000300090001',
+  0,
+  1,
+  0,
+  '{"fullName":"上海市市辖区浦东新区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000900010012',
+  '金山区',
+  NULL,
+  '0001000300090001',
+  0,
+  1,
+  0,
+  '{"fullName":"上海市市辖区金山区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000900010013',
+  '松江区',
+  NULL,
+  '0001000300090001',
+  0,
+  1,
+  0,
+  '{"fullName":"上海市市辖区松江区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000900010014',
+  '青浦区',
+  NULL,
+  '0001000300090001',
+  0,
+  1,
+  0,
+  '{"fullName":"上海市市辖区青浦区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000900010015',
+  '奉贤区',
+  NULL,
+  '0001000300090001',
+  0,
+  1,
+  0,
+  '{"fullName":"上海市市辖区奉贤区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003000900010016',
+  '崇明区',
+  NULL,
+  '0001000300090001',
+  0,
+  1,
+  0,
+  '{"fullName":"上海市市辖区崇明区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '000100030010',
+  '江苏省',
+  NULL,
+  '00010003',
+  1,
+  1,
+  0,
+  '{"fullName":"江苏省"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300100001',
+  '南京市',
+  NULL,
+  '000100030010',
+  1,
+  1,
+  0,
+  '{"fullName":"江苏省南京市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001000010001',
+  '玄武区',
+  NULL,
+  '0001000300100001',
+  0,
+  1,
+  0,
+  '{"fullName":"江苏省南京市玄武区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001000010002',
+  '秦淮区',
+  NULL,
+  '0001000300100001',
+  0,
+  1,
+  0,
+  '{"fullName":"江苏省南京市秦淮区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001000010003',
+  '建邺区',
+  NULL,
+  '0001000300100001',
+  0,
+  1,
+  0,
+  '{"fullName":"江苏省南京市建邺区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001000010004',
+  '鼓楼区',
+  NULL,
+  '0001000300100001',
+  0,
+  1,
+  0,
+  '{"fullName":"江苏省南京市鼓楼区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001000010005',
+  '浦口区',
+  NULL,
+  '0001000300100001',
+  0,
+  1,
+  0,
+  '{"fullName":"江苏省南京市浦口区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001000010006',
+  '栖霞区',
+  NULL,
+  '0001000300100001',
+  0,
+  1,
+  0,
+  '{"fullName":"江苏省南京市栖霞区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001000010007',
+  '雨花台区',
+  NULL,
+  '0001000300100001',
+  0,
+  1,
+  0,
+  '{"fullName":"江苏省南京市雨花台区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001000010008',
+  '江宁区',
+  NULL,
+  '0001000300100001',
+  0,
+  1,
+  0,
+  '{"fullName":"江苏省南京市江宁区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001000010009',
+  '六合区',
+  NULL,
+  '0001000300100001',
+  0,
+  1,
+  0,
+  '{"fullName":"江苏省南京市六合区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001000010010',
+  '溧水区',
+  NULL,
+  '0001000300100001',
+  0,
+  1,
+  0,
+  '{"fullName":"江苏省南京市溧水区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001000010011',
+  '高淳区',
+  NULL,
+  '0001000300100001',
+  0,
+  1,
+  0,
+  '{"fullName":"江苏省南京市高淳区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300100002',
+  '无锡市',
+  NULL,
+  '000100030010',
+  1,
+  1,
+  0,
+  '{"fullName":"江苏省无锡市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001000020001',
+  '锡山区',
+  NULL,
+  '0001000300100002',
+  0,
+  1,
+  0,
+  '{"fullName":"江苏省无锡市锡山区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001000020002',
+  '惠山区',
+  NULL,
+  '0001000300100002',
+  0,
+  1,
+  0,
+  '{"fullName":"江苏省无锡市惠山区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001000020003',
+  '滨湖区',
+  NULL,
+  '0001000300100002',
+  0,
+  1,
+  0,
+  '{"fullName":"江苏省无锡市滨湖区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001000020004',
+  '梁溪区',
+  NULL,
+  '0001000300100002',
+  0,
+  1,
+  0,
+  '{"fullName":"江苏省无锡市梁溪区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001000020005',
+  '新吴区',
+  NULL,
+  '0001000300100002',
+  0,
+  1,
+  0,
+  '{"fullName":"江苏省无锡市新吴区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001000020006',
+  '江阴市',
+  NULL,
+  '0001000300100002',
+  0,
+  1,
+  0,
+  '{"fullName":"江苏省无锡市江阴市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001000020007',
+  '宜兴市',
+  NULL,
+  '0001000300100002',
+  0,
+  1,
+  0,
+  '{"fullName":"江苏省无锡市宜兴市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300100003',
+  '徐州市',
+  NULL,
+  '000100030010',
+  1,
+  1,
+  0,
+  '{"fullName":"江苏省徐州市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001000030001',
+  '鼓楼区',
+  NULL,
+  '0001000300100003',
+  0,
+  1,
+  0,
+  '{"fullName":"江苏省徐州市鼓楼区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001000030002',
+  '云龙区',
+  NULL,
+  '0001000300100003',
+  0,
+  1,
+  0,
+  '{"fullName":"江苏省徐州市云龙区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001000030003',
+  '贾汪区',
+  NULL,
+  '0001000300100003',
+  0,
+  1,
+  0,
+  '{"fullName":"江苏省徐州市贾汪区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001000030004',
+  '泉山区',
+  NULL,
+  '0001000300100003',
+  0,
+  1,
+  0,
+  '{"fullName":"江苏省徐州市泉山区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001000030005',
+  '铜山区',
+  NULL,
+  '0001000300100003',
+  0,
+  1,
+  0,
+  '{"fullName":"江苏省徐州市铜山区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001000030006',
+  '丰县',
+  NULL,
+  '0001000300100003',
+  0,
+  1,
+  0,
+  '{"fullName":"江苏省徐州市丰县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001000030007',
+  '沛县',
+  NULL,
+  '0001000300100003',
+  0,
+  1,
+  0,
+  '{"fullName":"江苏省徐州市沛县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001000030008',
+  '睢宁县',
+  NULL,
+  '0001000300100003',
+  0,
+  1,
+  0,
+  '{"fullName":"江苏省徐州市睢宁县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001000030009',
+  '新沂市',
+  NULL,
+  '0001000300100003',
+  0,
+  1,
+  0,
+  '{"fullName":"江苏省徐州市新沂市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001000030010',
+  '邳州市',
+  NULL,
+  '0001000300100003',
+  0,
+  1,
+  0,
+  '{"fullName":"江苏省徐州市邳州市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300100004',
+  '常州市',
+  NULL,
+  '000100030010',
+  1,
+  1,
+  0,
+  '{"fullName":"江苏省常州市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001000040001',
+  '天宁区',
+  NULL,
+  '0001000300100004',
+  0,
+  1,
+  0,
+  '{"fullName":"江苏省常州市天宁区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001000040002',
+  '钟楼区',
+  NULL,
+  '0001000300100004',
+  0,
+  1,
+  0,
+  '{"fullName":"江苏省常州市钟楼区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001000040003',
+  '新北区',
+  NULL,
+  '0001000300100004',
+  0,
+  1,
+  0,
+  '{"fullName":"江苏省常州市新北区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001000040004',
+  '武进区',
+  NULL,
+  '0001000300100004',
+  0,
+  1,
+  0,
+  '{"fullName":"江苏省常州市武进区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001000040005',
+  '金坛区',
+  NULL,
+  '0001000300100004',
+  0,
+  1,
+  0,
+  '{"fullName":"江苏省常州市金坛区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001000040006',
+  '溧阳市',
+  NULL,
+  '0001000300100004',
+  0,
+  1,
+  0,
+  '{"fullName":"江苏省常州市溧阳市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300100005',
+  '苏州市',
+  NULL,
+  '000100030010',
+  1,
+  1,
+  0,
+  '{"fullName":"江苏省苏州市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001000050001',
+  '虎丘区',
+  NULL,
+  '0001000300100005',
+  0,
+  1,
+  0,
+  '{"fullName":"江苏省苏州市虎丘区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001000050002',
+  '吴中区',
+  NULL,
+  '0001000300100005',
+  0,
+  1,
+  0,
+  '{"fullName":"江苏省苏州市吴中区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001000050003',
+  '相城区',
+  NULL,
+  '0001000300100005',
+  0,
+  1,
+  0,
+  '{"fullName":"江苏省苏州市相城区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001000050004',
+  '姑苏区',
+  NULL,
+  '0001000300100005',
+  0,
+  1,
+  0,
+  '{"fullName":"江苏省苏州市姑苏区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001000050005',
+  '吴江区',
+  NULL,
+  '0001000300100005',
+  0,
+  1,
+  0,
+  '{"fullName":"江苏省苏州市吴江区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001000050006',
+  '常熟市',
+  NULL,
+  '0001000300100005',
+  0,
+  1,
+  0,
+  '{"fullName":"江苏省苏州市常熟市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001000050007',
+  '张家港市',
+  NULL,
+  '0001000300100005',
+  0,
+  1,
+  0,
+  '{"fullName":"江苏省苏州市张家港市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001000050008',
+  '昆山市',
+  NULL,
+  '0001000300100005',
+  0,
+  1,
+  0,
+  '{"fullName":"江苏省苏州市昆山市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001000050009',
+  '太仓市',
+  NULL,
+  '0001000300100005',
+  0,
+  1,
+  0,
+  '{"fullName":"江苏省苏州市太仓市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300100006',
+  '南通市',
+  NULL,
+  '000100030010',
+  1,
+  1,
+  0,
+  '{"fullName":"江苏省南通市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001000060001',
+  '崇川区',
+  NULL,
+  '0001000300100006',
+  0,
+  1,
+  0,
+  '{"fullName":"江苏省南通市崇川区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001000060002',
+  '港闸区',
+  NULL,
+  '0001000300100006',
+  0,
+  1,
+  0,
+  '{"fullName":"江苏省南通市港闸区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001000060003',
+  '通州区',
+  NULL,
+  '0001000300100006',
+  0,
+  1,
+  0,
+  '{"fullName":"江苏省南通市通州区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001000060004',
+  '海安县',
+  NULL,
+  '0001000300100006',
+  0,
+  1,
+  0,
+  '{"fullName":"江苏省南通市海安县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001000060005',
+  '如东县',
+  NULL,
+  '0001000300100006',
+  0,
+  1,
+  0,
+  '{"fullName":"江苏省南通市如东县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001000060006',
+  '启东市',
+  NULL,
+  '0001000300100006',
+  0,
+  1,
+  0,
+  '{"fullName":"江苏省南通市启东市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001000060007',
+  '如皋市',
+  NULL,
+  '0001000300100006',
+  0,
+  1,
+  0,
+  '{"fullName":"江苏省南通市如皋市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001000060008',
+  '海门市',
+  NULL,
+  '0001000300100006',
+  0,
+  1,
+  0,
+  '{"fullName":"江苏省南通市海门市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300100007',
+  '连云港市',
+  NULL,
+  '000100030010',
+  1,
+  1,
+  0,
+  '{"fullName":"江苏省连云港市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001000070001',
+  '连云区',
+  NULL,
+  '0001000300100007',
+  0,
+  1,
+  0,
+  '{"fullName":"江苏省连云港市连云区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001000070002',
+  '海州区',
+  NULL,
+  '0001000300100007',
+  0,
+  1,
+  0,
+  '{"fullName":"江苏省连云港市海州区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001000070003',
+  '赣榆区',
+  NULL,
+  '0001000300100007',
+  0,
+  1,
+  0,
+  '{"fullName":"江苏省连云港市赣榆区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001000070004',
+  '东海县',
+  NULL,
+  '0001000300100007',
+  0,
+  1,
+  0,
+  '{"fullName":"江苏省连云港市东海县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001000070005',
+  '灌云县',
+  NULL,
+  '0001000300100007',
+  0,
+  1,
+  0,
+  '{"fullName":"江苏省连云港市灌云县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001000070006',
+  '灌南县',
+  NULL,
+  '0001000300100007',
+  0,
+  1,
+  0,
+  '{"fullName":"江苏省连云港市灌南县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300100008',
+  '淮安市',
+  NULL,
+  '000100030010',
+  1,
+  1,
+  0,
+  '{"fullName":"江苏省淮安市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001000080001',
+  '淮安区',
+  NULL,
+  '0001000300100008',
+  0,
+  1,
+  0,
+  '{"fullName":"江苏省淮安市淮安区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001000080002',
+  '淮阴区',
+  NULL,
+  '0001000300100008',
+  0,
+  1,
+  0,
+  '{"fullName":"江苏省淮安市淮阴区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001000080003',
+  '清江浦区',
+  NULL,
+  '0001000300100008',
+  0,
+  1,
+  0,
+  '{"fullName":"江苏省淮安市清江浦区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001000080004',
+  '洪泽区',
+  NULL,
+  '0001000300100008',
+  0,
+  1,
+  0,
+  '{"fullName":"江苏省淮安市洪泽区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001000080005',
+  '涟水县',
+  NULL,
+  '0001000300100008',
+  0,
+  1,
+  0,
+  '{"fullName":"江苏省淮安市涟水县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001000080006',
+  '盱眙县',
+  NULL,
+  '0001000300100008',
+  0,
+  1,
+  0,
+  '{"fullName":"江苏省淮安市盱眙县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001000080007',
+  '金湖县',
+  NULL,
+  '0001000300100008',
+  0,
+  1,
+  0,
+  '{"fullName":"江苏省淮安市金湖县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300100009',
+  '盐城市',
+  NULL,
+  '000100030010',
+  1,
+  1,
+  0,
+  '{"fullName":"江苏省盐城市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001000090001',
+  '亭湖区',
+  NULL,
+  '0001000300100009',
+  0,
+  1,
+  0,
+  '{"fullName":"江苏省盐城市亭湖区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001000090002',
+  '盐都区',
+  NULL,
+  '0001000300100009',
+  0,
+  1,
+  0,
+  '{"fullName":"江苏省盐城市盐都区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001000090003',
+  '大丰区',
+  NULL,
+  '0001000300100009',
+  0,
+  1,
+  0,
+  '{"fullName":"江苏省盐城市大丰区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001000090004',
+  '响水县',
+  NULL,
+  '0001000300100009',
+  0,
+  1,
+  0,
+  '{"fullName":"江苏省盐城市响水县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001000090005',
+  '滨海县',
+  NULL,
+  '0001000300100009',
+  0,
+  1,
+  0,
+  '{"fullName":"江苏省盐城市滨海县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001000090006',
+  '阜宁县',
+  NULL,
+  '0001000300100009',
+  0,
+  1,
+  0,
+  '{"fullName":"江苏省盐城市阜宁县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001000090007',
+  '射阳县',
+  NULL,
+  '0001000300100009',
+  0,
+  1,
+  0,
+  '{"fullName":"江苏省盐城市射阳县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001000090008',
+  '建湖县',
+  NULL,
+  '0001000300100009',
+  0,
+  1,
+  0,
+  '{"fullName":"江苏省盐城市建湖县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001000090009',
+  '东台市',
+  NULL,
+  '0001000300100009',
+  0,
+  1,
+  0,
+  '{"fullName":"江苏省盐城市东台市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300100010',
+  '扬州市',
+  NULL,
+  '000100030010',
+  1,
+  1,
+  0,
+  '{"fullName":"江苏省扬州市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001000100001',
+  '广陵区',
+  NULL,
+  '0001000300100010',
+  0,
+  1,
+  0,
+  '{"fullName":"江苏省扬州市广陵区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001000100002',
+  '邗江区',
+  NULL,
+  '0001000300100010',
+  0,
+  1,
+  0,
+  '{"fullName":"江苏省扬州市邗江区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001000100003',
+  '江都区',
+  NULL,
+  '0001000300100010',
+  0,
+  1,
+  0,
+  '{"fullName":"江苏省扬州市江都区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001000100004',
+  '宝应县',
+  NULL,
+  '0001000300100010',
+  0,
+  1,
+  0,
+  '{"fullName":"江苏省扬州市宝应县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001000100005',
+  '仪征市',
+  NULL,
+  '0001000300100010',
+  0,
+  1,
+  0,
+  '{"fullName":"江苏省扬州市仪征市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001000100006',
+  '高邮市',
+  NULL,
+  '0001000300100010',
+  0,
+  1,
+  0,
+  '{"fullName":"江苏省扬州市高邮市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300100011',
+  '镇江市',
+  NULL,
+  '000100030010',
+  1,
+  1,
+  0,
+  '{"fullName":"江苏省镇江市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001000110001',
+  '京口区',
+  NULL,
+  '0001000300100011',
+  0,
+  1,
+  0,
+  '{"fullName":"江苏省镇江市京口区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001000110002',
+  '润州区',
+  NULL,
+  '0001000300100011',
+  0,
+  1,
+  0,
+  '{"fullName":"江苏省镇江市润州区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001000110003',
+  '丹徒区',
+  NULL,
+  '0001000300100011',
+  0,
+  1,
+  0,
+  '{"fullName":"江苏省镇江市丹徒区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001000110004',
+  '丹阳市',
+  NULL,
+  '0001000300100011',
+  0,
+  1,
+  0,
+  '{"fullName":"江苏省镇江市丹阳市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001000110005',
+  '扬中市',
+  NULL,
+  '0001000300100011',
+  0,
+  1,
+  0,
+  '{"fullName":"江苏省镇江市扬中市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001000110006',
+  '句容市',
+  NULL,
+  '0001000300100011',
+  0,
+  1,
+  0,
+  '{"fullName":"江苏省镇江市句容市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300100012',
+  '泰州市',
+  NULL,
+  '000100030010',
+  1,
+  1,
+  0,
+  '{"fullName":"江苏省泰州市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001000120001',
+  '海陵区',
+  NULL,
+  '0001000300100012',
+  0,
+  1,
+  0,
+  '{"fullName":"江苏省泰州市海陵区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001000120002',
+  '高港区',
+  NULL,
+  '0001000300100012',
+  0,
+  1,
+  0,
+  '{"fullName":"江苏省泰州市高港区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001000120003',
+  '姜堰区',
+  NULL,
+  '0001000300100012',
+  0,
+  1,
+  0,
+  '{"fullName":"江苏省泰州市姜堰区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001000120004',
+  '兴化市',
+  NULL,
+  '0001000300100012',
+  0,
+  1,
+  0,
+  '{"fullName":"江苏省泰州市兴化市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001000120005',
+  '靖江市',
+  NULL,
+  '0001000300100012',
+  0,
+  1,
+  0,
+  '{"fullName":"江苏省泰州市靖江市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001000120006',
+  '泰兴市',
+  NULL,
+  '0001000300100012',
+  0,
+  1,
+  0,
+  '{"fullName":"江苏省泰州市泰兴市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300100013',
+  '宿迁市',
+  NULL,
+  '000100030010',
+  1,
+  1,
+  0,
+  '{"fullName":"江苏省宿迁市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001000130001',
+  '宿城区',
+  NULL,
+  '0001000300100013',
+  0,
+  1,
+  0,
+  '{"fullName":"江苏省宿迁市宿城区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001000130002',
+  '宿豫区',
+  NULL,
+  '0001000300100013',
+  0,
+  1,
+  0,
+  '{"fullName":"江苏省宿迁市宿豫区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001000130003',
+  '沭阳县',
+  NULL,
+  '0001000300100013',
+  0,
+  1,
+  0,
+  '{"fullName":"江苏省宿迁市沭阳县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001000130004',
+  '泗阳县',
+  NULL,
+  '0001000300100013',
+  0,
+  1,
+  0,
+  '{"fullName":"江苏省宿迁市泗阳县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001000130005',
+  '泗洪县',
+  NULL,
+  '0001000300100013',
+  0,
+  1,
+  0,
+  '{"fullName":"江苏省宿迁市泗洪县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '000100030011',
+  '浙江省',
+  NULL,
+  '00010003',
+  1,
+  1,
+  0,
+  '{"fullName":"浙江省"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300110001',
+  '杭州市',
+  NULL,
+  '000100030011',
+  1,
+  1,
+  0,
+  '{"fullName":"浙江省杭州市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001100010001',
+  '上城区',
+  NULL,
+  '0001000300110001',
+  0,
+  1,
+  0,
+  '{"fullName":"浙江省杭州市上城区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001100010002',
+  '下城区',
+  NULL,
+  '0001000300110001',
+  0,
+  1,
+  0,
+  '{"fullName":"浙江省杭州市下城区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001100010003',
+  '江干区',
+  NULL,
+  '0001000300110001',
+  0,
+  1,
+  0,
+  '{"fullName":"浙江省杭州市江干区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001100010004',
+  '拱墅区',
+  NULL,
+  '0001000300110001',
+  0,
+  1,
+  0,
+  '{"fullName":"浙江省杭州市拱墅区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001100010005',
+  '西湖区',
+  NULL,
+  '0001000300110001',
+  0,
+  1,
+  0,
+  '{"fullName":"浙江省杭州市西湖区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001100010006',
+  '滨江区',
+  NULL,
+  '0001000300110001',
+  0,
+  1,
+  0,
+  '{"fullName":"浙江省杭州市滨江区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001100010007',
+  '萧山区',
+  NULL,
+  '0001000300110001',
+  0,
+  1,
+  0,
+  '{"fullName":"浙江省杭州市萧山区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001100010008',
+  '余杭区',
+  NULL,
+  '0001000300110001',
+  0,
+  1,
+  0,
+  '{"fullName":"浙江省杭州市余杭区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001100010009',
+  '富阳区',
+  NULL,
+  '0001000300110001',
+  0,
+  1,
+  0,
+  '{"fullName":"浙江省杭州市富阳区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001100010010',
+  '桐庐县',
+  NULL,
+  '0001000300110001',
+  0,
+  1,
+  0,
+  '{"fullName":"浙江省杭州市桐庐县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001100010011',
+  '淳安县',
+  NULL,
+  '0001000300110001',
+  0,
+  1,
+  0,
+  '{"fullName":"浙江省杭州市淳安县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001100010012',
+  '建德市',
+  NULL,
+  '0001000300110001',
+  0,
+  1,
+  0,
+  '{"fullName":"浙江省杭州市建德市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001100010013',
+  '临安市',
+  NULL,
+  '0001000300110001',
+  0,
+  1,
+  0,
+  '{"fullName":"浙江省杭州市临安市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300110002',
+  '宁波市',
+  NULL,
+  '000100030011',
+  1,
+  1,
+  0,
+  '{"fullName":"浙江省宁波市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001100020001',
+  '海曙区',
+  NULL,
+  '0001000300110002',
+  0,
+  1,
+  0,
+  '{"fullName":"浙江省宁波市海曙区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001100020002',
+  '江东区',
+  NULL,
+  '0001000300110002',
+  0,
+  1,
+  0,
+  '{"fullName":"浙江省宁波市江东区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001100020003',
+  '江北区',
+  NULL,
+  '0001000300110002',
+  0,
+  1,
+  0,
+  '{"fullName":"浙江省宁波市江北区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001100020004',
+  '北仑区',
+  NULL,
+  '0001000300110002',
+  0,
+  1,
+  0,
+  '{"fullName":"浙江省宁波市北仑区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001100020005',
+  '镇海区',
+  NULL,
+  '0001000300110002',
+  0,
+  1,
+  0,
+  '{"fullName":"浙江省宁波市镇海区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001100020006',
+  '鄞州区',
+  NULL,
+  '0001000300110002',
+  0,
+  1,
+  0,
+  '{"fullName":"浙江省宁波市鄞州区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001100020007',
+  '象山县',
+  NULL,
+  '0001000300110002',
+  0,
+  1,
+  0,
+  '{"fullName":"浙江省宁波市象山县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001100020008',
+  '宁海县',
+  NULL,
+  '0001000300110002',
+  0,
+  1,
+  0,
+  '{"fullName":"浙江省宁波市宁海县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001100020009',
+  '余姚市',
+  NULL,
+  '0001000300110002',
+  0,
+  1,
+  0,
+  '{"fullName":"浙江省宁波市余姚市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001100020010',
+  '慈溪市',
+  NULL,
+  '0001000300110002',
+  0,
+  1,
+  0,
+  '{"fullName":"浙江省宁波市慈溪市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001100020011',
+  '奉化市',
+  NULL,
+  '0001000300110002',
+  0,
+  1,
+  0,
+  '{"fullName":"浙江省宁波市奉化市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300110003',
+  '温州市',
+  NULL,
+  '000100030011',
+  1,
+  1,
+  0,
+  '{"fullName":"浙江省温州市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001100030001',
+  '鹿城区',
+  NULL,
+  '0001000300110003',
+  0,
+  1,
+  0,
+  '{"fullName":"浙江省温州市鹿城区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001100030002',
+  '龙湾区',
+  NULL,
+  '0001000300110003',
+  0,
+  1,
+  0,
+  '{"fullName":"浙江省温州市龙湾区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001100030003',
+  '瓯海区',
+  NULL,
+  '0001000300110003',
+  0,
+  1,
+  0,
+  '{"fullName":"浙江省温州市瓯海区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001100030004',
+  '洞头区',
+  NULL,
+  '0001000300110003',
+  0,
+  1,
+  0,
+  '{"fullName":"浙江省温州市洞头区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001100030005',
+  '永嘉县',
+  NULL,
+  '0001000300110003',
+  0,
+  1,
+  0,
+  '{"fullName":"浙江省温州市永嘉县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001100030006',
+  '平阳县',
+  NULL,
+  '0001000300110003',
+  0,
+  1,
+  0,
+  '{"fullName":"浙江省温州市平阳县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001100030007',
+  '苍南县',
+  NULL,
+  '0001000300110003',
+  0,
+  1,
+  0,
+  '{"fullName":"浙江省温州市苍南县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001100030008',
+  '文成县',
+  NULL,
+  '0001000300110003',
+  0,
+  1,
+  0,
+  '{"fullName":"浙江省温州市文成县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001100030009',
+  '泰顺县',
+  NULL,
+  '0001000300110003',
+  0,
+  1,
+  0,
+  '{"fullName":"浙江省温州市泰顺县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001100030010',
+  '瑞安市',
+  NULL,
+  '0001000300110003',
+  0,
+  1,
+  0,
+  '{"fullName":"浙江省温州市瑞安市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001100030011',
+  '乐清市',
+  NULL,
+  '0001000300110003',
+  0,
+  1,
+  0,
+  '{"fullName":"浙江省温州市乐清市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300110004',
+  '嘉兴市',
+  NULL,
+  '000100030011',
+  1,
+  1,
+  0,
+  '{"fullName":"浙江省嘉兴市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001100040001',
+  '南湖区',
+  NULL,
+  '0001000300110004',
+  0,
+  1,
+  0,
+  '{"fullName":"浙江省嘉兴市南湖区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001100040002',
+  '秀洲区',
+  NULL,
+  '0001000300110004',
+  0,
+  1,
+  0,
+  '{"fullName":"浙江省嘉兴市秀洲区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001100040003',
+  '嘉善县',
+  NULL,
+  '0001000300110004',
+  0,
+  1,
+  0,
+  '{"fullName":"浙江省嘉兴市嘉善县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001100040004',
+  '海盐县',
+  NULL,
+  '0001000300110004',
+  0,
+  1,
+  0,
+  '{"fullName":"浙江省嘉兴市海盐县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001100040005',
+  '海宁市',
+  NULL,
+  '0001000300110004',
+  0,
+  1,
+  0,
+  '{"fullName":"浙江省嘉兴市海宁市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001100040006',
+  '平湖市',
+  NULL,
+  '0001000300110004',
+  0,
+  1,
+  0,
+  '{"fullName":"浙江省嘉兴市平湖市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001100040007',
+  '桐乡市',
+  NULL,
+  '0001000300110004',
+  0,
+  1,
+  0,
+  '{"fullName":"浙江省嘉兴市桐乡市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300110005',
+  '湖州市',
+  NULL,
+  '000100030011',
+  1,
+  1,
+  0,
+  '{"fullName":"浙江省湖州市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001100050001',
+  '吴兴区',
+  NULL,
+  '0001000300110005',
+  0,
+  1,
+  0,
+  '{"fullName":"浙江省湖州市吴兴区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001100050002',
+  '南浔区',
+  NULL,
+  '0001000300110005',
+  0,
+  1,
+  0,
+  '{"fullName":"浙江省湖州市南浔区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001100050003',
+  '德清县',
+  NULL,
+  '0001000300110005',
+  0,
+  1,
+  0,
+  '{"fullName":"浙江省湖州市德清县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001100050004',
+  '长兴县',
+  NULL,
+  '0001000300110005',
+  0,
+  1,
+  0,
+  '{"fullName":"浙江省湖州市长兴县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001100050005',
+  '安吉县',
+  NULL,
+  '0001000300110005',
+  0,
+  1,
+  0,
+  '{"fullName":"浙江省湖州市安吉县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300110006',
+  '绍兴市',
+  NULL,
+  '000100030011',
+  1,
+  1,
+  0,
+  '{"fullName":"浙江省绍兴市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001100060001',
+  '越城区',
+  NULL,
+  '0001000300110006',
+  0,
+  1,
+  0,
+  '{"fullName":"浙江省绍兴市越城区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001100060002',
+  '柯桥区',
+  NULL,
+  '0001000300110006',
+  0,
+  1,
+  0,
+  '{"fullName":"浙江省绍兴市柯桥区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001100060003',
+  '上虞区',
+  NULL,
+  '0001000300110006',
+  0,
+  1,
+  0,
+  '{"fullName":"浙江省绍兴市上虞区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001100060004',
+  '新昌县',
+  NULL,
+  '0001000300110006',
+  0,
+  1,
+  0,
+  '{"fullName":"浙江省绍兴市新昌县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001100060005',
+  '诸暨市',
+  NULL,
+  '0001000300110006',
+  0,
+  1,
+  0,
+  '{"fullName":"浙江省绍兴市诸暨市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001100060006',
+  '嵊州市',
+  NULL,
+  '0001000300110006',
+  0,
+  1,
+  0,
+  '{"fullName":"浙江省绍兴市嵊州市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300110007',
+  '金华市',
+  NULL,
+  '000100030011',
+  1,
+  1,
+  0,
+  '{"fullName":"浙江省金华市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001100070001',
+  '婺城区',
+  NULL,
+  '0001000300110007',
+  0,
+  1,
+  0,
+  '{"fullName":"浙江省金华市婺城区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001100070002',
+  '金东区',
+  NULL,
+  '0001000300110007',
+  0,
+  1,
+  0,
+  '{"fullName":"浙江省金华市金东区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001100070003',
+  '武义县',
+  NULL,
+  '0001000300110007',
+  0,
+  1,
+  0,
+  '{"fullName":"浙江省金华市武义县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001100070004',
+  '浦江县',
+  NULL,
+  '0001000300110007',
+  0,
+  1,
+  0,
+  '{"fullName":"浙江省金华市浦江县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001100070005',
+  '磐安县',
+  NULL,
+  '0001000300110007',
+  0,
+  1,
+  0,
+  '{"fullName":"浙江省金华市磐安县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001100070006',
+  '兰溪市',
+  NULL,
+  '0001000300110007',
+  0,
+  1,
+  0,
+  '{"fullName":"浙江省金华市兰溪市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001100070007',
+  '义乌市',
+  NULL,
+  '0001000300110007',
+  0,
+  1,
+  0,
+  '{"fullName":"浙江省金华市义乌市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001100070008',
+  '东阳市',
+  NULL,
+  '0001000300110007',
+  0,
+  1,
+  0,
+  '{"fullName":"浙江省金华市东阳市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001100070009',
+  '永康市',
+  NULL,
+  '0001000300110007',
+  0,
+  1,
+  0,
+  '{"fullName":"浙江省金华市永康市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300110008',
+  '衢州市',
+  NULL,
+  '000100030011',
+  1,
+  1,
+  0,
+  '{"fullName":"浙江省衢州市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001100080001',
+  '柯城区',
+  NULL,
+  '0001000300110008',
+  0,
+  1,
+  0,
+  '{"fullName":"浙江省衢州市柯城区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001100080002',
+  '衢江区',
+  NULL,
+  '0001000300110008',
+  0,
+  1,
+  0,
+  '{"fullName":"浙江省衢州市衢江区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001100080003',
+  '常山县',
+  NULL,
+  '0001000300110008',
+  0,
+  1,
+  0,
+  '{"fullName":"浙江省衢州市常山县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001100080004',
+  '开化县',
+  NULL,
+  '0001000300110008',
+  0,
+  1,
+  0,
+  '{"fullName":"浙江省衢州市开化县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001100080005',
+  '龙游县',
+  NULL,
+  '0001000300110008',
+  0,
+  1,
+  0,
+  '{"fullName":"浙江省衢州市龙游县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001100080006',
+  '江山市',
+  NULL,
+  '0001000300110008',
+  0,
+  1,
+  0,
+  '{"fullName":"浙江省衢州市江山市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300110009',
+  '舟山市',
+  NULL,
+  '000100030011',
+  1,
+  1,
+  0,
+  '{"fullName":"浙江省舟山市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001100090001',
+  '定海区',
+  NULL,
+  '0001000300110009',
+  0,
+  1,
+  0,
+  '{"fullName":"浙江省舟山市定海区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001100090002',
+  '普陀区',
+  NULL,
+  '0001000300110009',
+  0,
+  1,
+  0,
+  '{"fullName":"浙江省舟山市普陀区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001100090003',
+  '岱山县',
+  NULL,
+  '0001000300110009',
+  0,
+  1,
+  0,
+  '{"fullName":"浙江省舟山市岱山县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001100090004',
+  '嵊泗县',
+  NULL,
+  '0001000300110009',
+  0,
+  1,
+  0,
+  '{"fullName":"浙江省舟山市嵊泗县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300110010',
+  '台州市',
+  NULL,
+  '000100030011',
+  1,
+  1,
+  0,
+  '{"fullName":"浙江省台州市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001100100001',
+  '椒江区',
+  NULL,
+  '0001000300110010',
+  0,
+  1,
+  0,
+  '{"fullName":"浙江省台州市椒江区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001100100002',
+  '黄岩区',
+  NULL,
+  '0001000300110010',
+  0,
+  1,
+  0,
+  '{"fullName":"浙江省台州市黄岩区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001100100003',
+  '路桥区',
+  NULL,
+  '0001000300110010',
+  0,
+  1,
+  0,
+  '{"fullName":"浙江省台州市路桥区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001100100004',
+  '玉环县',
+  NULL,
+  '0001000300110010',
+  0,
+  1,
+  0,
+  '{"fullName":"浙江省台州市玉环县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001100100005',
+  '三门县',
+  NULL,
+  '0001000300110010',
+  0,
+  1,
+  0,
+  '{"fullName":"浙江省台州市三门县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001100100006',
+  '天台县',
+  NULL,
+  '0001000300110010',
+  0,
+  1,
+  0,
+  '{"fullName":"浙江省台州市天台县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001100100007',
+  '仙居县',
+  NULL,
+  '0001000300110010',
+  0,
+  1,
+  0,
+  '{"fullName":"浙江省台州市仙居县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001100100008',
+  '温岭市',
+  NULL,
+  '0001000300110010',
+  0,
+  1,
+  0,
+  '{"fullName":"浙江省台州市温岭市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001100100009',
+  '临海市',
+  NULL,
+  '0001000300110010',
+  0,
+  1,
+  0,
+  '{"fullName":"浙江省台州市临海市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300110011',
+  '丽水市',
+  NULL,
+  '000100030011',
+  1,
+  1,
+  0,
+  '{"fullName":"浙江省丽水市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001100110001',
+  '莲都区',
+  NULL,
+  '0001000300110011',
+  0,
+  1,
+  0,
+  '{"fullName":"浙江省丽水市莲都区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001100110002',
+  '青田县',
+  NULL,
+  '0001000300110011',
+  0,
+  1,
+  0,
+  '{"fullName":"浙江省丽水市青田县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001100110003',
+  '缙云县',
+  NULL,
+  '0001000300110011',
+  0,
+  1,
+  0,
+  '{"fullName":"浙江省丽水市缙云县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001100110004',
+  '遂昌县',
+  NULL,
+  '0001000300110011',
+  0,
+  1,
+  0,
+  '{"fullName":"浙江省丽水市遂昌县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001100110005',
+  '松阳县',
+  NULL,
+  '0001000300110011',
+  0,
+  1,
+  0,
+  '{"fullName":"浙江省丽水市松阳县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001100110006',
+  '云和县',
+  NULL,
+  '0001000300110011',
+  0,
+  1,
+  0,
+  '{"fullName":"浙江省丽水市云和县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001100110007',
+  '庆元县',
+  NULL,
+  '0001000300110011',
+  0,
+  1,
+  0,
+  '{"fullName":"浙江省丽水市庆元县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001100110008',
+  '景宁畲族自治县',
+  NULL,
+  '0001000300110011',
+  0,
+  1,
+  0,
+  '{"fullName":"浙江省丽水市景宁畲族自治县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001100110009',
+  '龙泉市',
+  NULL,
+  '0001000300110011',
+  0,
+  1,
+  0,
+  '{"fullName":"浙江省丽水市龙泉市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '000100030012',
+  '安徽省',
+  NULL,
+  '00010003',
+  1,
+  1,
+  0,
+  '{"fullName":"安徽省"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300120001',
+  '合肥市',
+  NULL,
+  '000100030012',
+  1,
+  1,
+  0,
+  '{"fullName":"安徽省合肥市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001200010001',
+  '瑶海区',
+  NULL,
+  '0001000300120001',
+  0,
+  1,
+  0,
+  '{"fullName":"安徽省合肥市瑶海区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001200010002',
+  '庐阳区',
+  NULL,
+  '0001000300120001',
+  0,
+  1,
+  0,
+  '{"fullName":"安徽省合肥市庐阳区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001200010003',
+  '蜀山区',
+  NULL,
+  '0001000300120001',
+  0,
+  1,
+  0,
+  '{"fullName":"安徽省合肥市蜀山区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001200010004',
+  '包河区',
+  NULL,
+  '0001000300120001',
+  0,
+  1,
+  0,
+  '{"fullName":"安徽省合肥市包河区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001200010005',
+  '长丰县',
+  NULL,
+  '0001000300120001',
+  0,
+  1,
+  0,
+  '{"fullName":"安徽省合肥市长丰县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001200010006',
+  '肥东县',
+  NULL,
+  '0001000300120001',
+  0,
+  1,
+  0,
+  '{"fullName":"安徽省合肥市肥东县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001200010007',
+  '肥西县',
+  NULL,
+  '0001000300120001',
+  0,
+  1,
+  0,
+  '{"fullName":"安徽省合肥市肥西县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001200010008',
+  '庐江县',
+  NULL,
+  '0001000300120001',
+  0,
+  1,
+  0,
+  '{"fullName":"安徽省合肥市庐江县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001200010009',
+  '巢湖市',
+  NULL,
+  '0001000300120001',
+  0,
+  1,
+  0,
+  '{"fullName":"安徽省合肥市巢湖市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300120002',
+  '芜湖市',
+  NULL,
+  '000100030012',
+  1,
+  1,
+  0,
+  '{"fullName":"安徽省芜湖市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001200020001',
+  '镜湖区',
+  NULL,
+  '0001000300120002',
+  0,
+  1,
+  0,
+  '{"fullName":"安徽省芜湖市镜湖区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001200020002',
+  '弋江区',
+  NULL,
+  '0001000300120002',
+  0,
+  1,
+  0,
+  '{"fullName":"安徽省芜湖市弋江区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001200020003',
+  '鸠江区',
+  NULL,
+  '0001000300120002',
+  0,
+  1,
+  0,
+  '{"fullName":"安徽省芜湖市鸠江区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001200020004',
+  '三山区',
+  NULL,
+  '0001000300120002',
+  0,
+  1,
+  0,
+  '{"fullName":"安徽省芜湖市三山区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001200020005',
+  '芜湖县',
+  NULL,
+  '0001000300120002',
+  0,
+  1,
+  0,
+  '{"fullName":"安徽省芜湖市芜湖县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001200020006',
+  '繁昌县',
+  NULL,
+  '0001000300120002',
+  0,
+  1,
+  0,
+  '{"fullName":"安徽省芜湖市繁昌县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001200020007',
+  '南陵县',
+  NULL,
+  '0001000300120002',
+  0,
+  1,
+  0,
+  '{"fullName":"安徽省芜湖市南陵县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001200020008',
+  '无为县',
+  NULL,
+  '0001000300120002',
+  0,
+  1,
+  0,
+  '{"fullName":"安徽省芜湖市无为县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300120003',
+  '蚌埠市',
+  NULL,
+  '000100030012',
+  1,
+  1,
+  0,
+  '{"fullName":"安徽省蚌埠市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001200030001',
+  '龙子湖区',
+  NULL,
+  '0001000300120003',
+  0,
+  1,
+  0,
+  '{"fullName":"安徽省蚌埠市龙子湖区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001200030002',
+  '蚌山区',
+  NULL,
+  '0001000300120003',
+  0,
+  1,
+  0,
+  '{"fullName":"安徽省蚌埠市蚌山区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001200030003',
+  '禹会区',
+  NULL,
+  '0001000300120003',
+  0,
+  1,
+  0,
+  '{"fullName":"安徽省蚌埠市禹会区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001200030004',
+  '淮上区',
+  NULL,
+  '0001000300120003',
+  0,
+  1,
+  0,
+  '{"fullName":"安徽省蚌埠市淮上区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001200030005',
+  '怀远县',
+  NULL,
+  '0001000300120003',
+  0,
+  1,
+  0,
+  '{"fullName":"安徽省蚌埠市怀远县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001200030006',
+  '五河县',
+  NULL,
+  '0001000300120003',
+  0,
+  1,
+  0,
+  '{"fullName":"安徽省蚌埠市五河县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001200030007',
+  '固镇县',
+  NULL,
+  '0001000300120003',
+  0,
+  1,
+  0,
+  '{"fullName":"安徽省蚌埠市固镇县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300120004',
+  '淮南市',
+  NULL,
+  '000100030012',
+  1,
+  1,
+  0,
+  '{"fullName":"安徽省淮南市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001200040001',
+  '大通区',
+  NULL,
+  '0001000300120004',
+  0,
+  1,
+  0,
+  '{"fullName":"安徽省淮南市大通区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001200040002',
+  '田家庵区',
+  NULL,
+  '0001000300120004',
+  0,
+  1,
+  0,
+  '{"fullName":"安徽省淮南市田家庵区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001200040003',
+  '谢家集区',
+  NULL,
+  '0001000300120004',
+  0,
+  1,
+  0,
+  '{"fullName":"安徽省淮南市谢家集区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001200040004',
+  '八公山区',
+  NULL,
+  '0001000300120004',
+  0,
+  1,
+  0,
+  '{"fullName":"安徽省淮南市八公山区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001200040005',
+  '潘集区',
+  NULL,
+  '0001000300120004',
+  0,
+  1,
+  0,
+  '{"fullName":"安徽省淮南市潘集区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001200040006',
+  '凤台县',
+  NULL,
+  '0001000300120004',
+  0,
+  1,
+  0,
+  '{"fullName":"安徽省淮南市凤台县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001200040007',
+  '寿县',
+  NULL,
+  '0001000300120004',
+  0,
+  1,
+  0,
+  '{"fullName":"安徽省淮南市寿县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300120005',
+  '马鞍山市',
+  NULL,
+  '000100030012',
+  1,
+  1,
+  0,
+  '{"fullName":"安徽省马鞍山市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001200050001',
+  '花山区',
+  NULL,
+  '0001000300120005',
+  0,
+  1,
+  0,
+  '{"fullName":"安徽省马鞍山市花山区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001200050002',
+  '雨山区',
+  NULL,
+  '0001000300120005',
+  0,
+  1,
+  0,
+  '{"fullName":"安徽省马鞍山市雨山区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001200050003',
+  '博望区',
+  NULL,
+  '0001000300120005',
+  0,
+  1,
+  0,
+  '{"fullName":"安徽省马鞍山市博望区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001200050004',
+  '当涂县',
+  NULL,
+  '0001000300120005',
+  0,
+  1,
+  0,
+  '{"fullName":"安徽省马鞍山市当涂县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001200050005',
+  '含山县',
+  NULL,
+  '0001000300120005',
+  0,
+  1,
+  0,
+  '{"fullName":"安徽省马鞍山市含山县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001200050006',
+  '和县',
+  NULL,
+  '0001000300120005',
+  0,
+  1,
+  0,
+  '{"fullName":"安徽省马鞍山市和县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300120006',
+  '淮北市',
+  NULL,
+  '000100030012',
+  1,
+  1,
+  0,
+  '{"fullName":"安徽省淮北市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001200060001',
+  '杜集区',
+  NULL,
+  '0001000300120006',
+  0,
+  1,
+  0,
+  '{"fullName":"安徽省淮北市杜集区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001200060002',
+  '相山区',
+  NULL,
+  '0001000300120006',
+  0,
+  1,
+  0,
+  '{"fullName":"安徽省淮北市相山区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001200060003',
+  '烈山区',
+  NULL,
+  '0001000300120006',
+  0,
+  1,
+  0,
+  '{"fullName":"安徽省淮北市烈山区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001200060004',
+  '濉溪县',
+  NULL,
+  '0001000300120006',
+  0,
+  1,
+  0,
+  '{"fullName":"安徽省淮北市濉溪县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300120007',
+  '铜陵市',
+  NULL,
+  '000100030012',
+  1,
+  1,
+  0,
+  '{"fullName":"安徽省铜陵市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001200070001',
+  '铜官区',
+  NULL,
+  '0001000300120007',
+  0,
+  1,
+  0,
+  '{"fullName":"安徽省铜陵市铜官区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001200070002',
+  '义安区',
+  NULL,
+  '0001000300120007',
+  0,
+  1,
+  0,
+  '{"fullName":"安徽省铜陵市义安区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001200070003',
+  '郊区',
+  NULL,
+  '0001000300120007',
+  0,
+  1,
+  0,
+  '{"fullName":"安徽省铜陵市郊区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001200070004',
+  '枞阳县',
+  NULL,
+  '0001000300120007',
+  0,
+  1,
+  0,
+  '{"fullName":"安徽省铜陵市枞阳县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300120008',
+  '安庆市',
+  NULL,
+  '000100030012',
+  1,
+  1,
+  0,
+  '{"fullName":"安徽省安庆市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001200080001',
+  '迎江区',
+  NULL,
+  '0001000300120008',
+  0,
+  1,
+  0,
+  '{"fullName":"安徽省安庆市迎江区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001200080002',
+  '大观区',
+  NULL,
+  '0001000300120008',
+  0,
+  1,
+  0,
+  '{"fullName":"安徽省安庆市大观区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001200080003',
+  '宜秀区',
+  NULL,
+  '0001000300120008',
+  0,
+  1,
+  0,
+  '{"fullName":"安徽省安庆市宜秀区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001200080004',
+  '怀宁县',
+  NULL,
+  '0001000300120008',
+  0,
+  1,
+  0,
+  '{"fullName":"安徽省安庆市怀宁县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001200080005',
+  '潜山县',
+  NULL,
+  '0001000300120008',
+  0,
+  1,
+  0,
+  '{"fullName":"安徽省安庆市潜山县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001200080006',
+  '太湖县',
+  NULL,
+  '0001000300120008',
+  0,
+  1,
+  0,
+  '{"fullName":"安徽省安庆市太湖县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001200080007',
+  '宿松县',
+  NULL,
+  '0001000300120008',
+  0,
+  1,
+  0,
+  '{"fullName":"安徽省安庆市宿松县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001200080008',
+  '望江县',
+  NULL,
+  '0001000300120008',
+  0,
+  1,
+  0,
+  '{"fullName":"安徽省安庆市望江县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001200080009',
+  '岳西县',
+  NULL,
+  '0001000300120008',
+  0,
+  1,
+  0,
+  '{"fullName":"安徽省安庆市岳西县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001200080010',
+  '桐城市',
+  NULL,
+  '0001000300120008',
+  0,
+  1,
+  0,
+  '{"fullName":"安徽省安庆市桐城市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300120009',
+  '黄山市',
+  NULL,
+  '000100030012',
+  1,
+  1,
+  0,
+  '{"fullName":"安徽省黄山市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001200090001',
+  '屯溪区',
+  NULL,
+  '0001000300120009',
+  0,
+  1,
+  0,
+  '{"fullName":"安徽省黄山市屯溪区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001200090002',
+  '黄山区',
+  NULL,
+  '0001000300120009',
+  0,
+  1,
+  0,
+  '{"fullName":"安徽省黄山市黄山区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001200090003',
+  '徽州区',
+  NULL,
+  '0001000300120009',
+  0,
+  1,
+  0,
+  '{"fullName":"安徽省黄山市徽州区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001200090004',
+  '歙县',
+  NULL,
+  '0001000300120009',
+  0,
+  1,
+  0,
+  '{"fullName":"安徽省黄山市歙县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001200090005',
+  '休宁县',
+  NULL,
+  '0001000300120009',
+  0,
+  1,
+  0,
+  '{"fullName":"安徽省黄山市休宁县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001200090006',
+  '黟县',
+  NULL,
+  '0001000300120009',
+  0,
+  1,
+  0,
+  '{"fullName":"安徽省黄山市黟县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001200090007',
+  '祁门县',
+  NULL,
+  '0001000300120009',
+  0,
+  1,
+  0,
+  '{"fullName":"安徽省黄山市祁门县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300120010',
+  '滁州市',
+  NULL,
+  '000100030012',
+  1,
+  1,
+  0,
+  '{"fullName":"安徽省滁州市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001200100001',
+  '琅琊区',
+  NULL,
+  '0001000300120010',
+  0,
+  1,
+  0,
+  '{"fullName":"安徽省滁州市琅琊区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001200100002',
+  '南谯区',
+  NULL,
+  '0001000300120010',
+  0,
+  1,
+  0,
+  '{"fullName":"安徽省滁州市南谯区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001200100003',
+  '来安县',
+  NULL,
+  '0001000300120010',
+  0,
+  1,
+  0,
+  '{"fullName":"安徽省滁州市来安县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001200100004',
+  '全椒县',
+  NULL,
+  '0001000300120010',
+  0,
+  1,
+  0,
+  '{"fullName":"安徽省滁州市全椒县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001200100005',
+  '定远县',
+  NULL,
+  '0001000300120010',
+  0,
+  1,
+  0,
+  '{"fullName":"安徽省滁州市定远县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001200100006',
+  '凤阳县',
+  NULL,
+  '0001000300120010',
+  0,
+  1,
+  0,
+  '{"fullName":"安徽省滁州市凤阳县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001200100007',
+  '天长市',
+  NULL,
+  '0001000300120010',
+  0,
+  1,
+  0,
+  '{"fullName":"安徽省滁州市天长市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001200100008',
+  '明光市',
+  NULL,
+  '0001000300120010',
+  0,
+  1,
+  0,
+  '{"fullName":"安徽省滁州市明光市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300120011',
+  '阜阳市',
+  NULL,
+  '000100030012',
+  1,
+  1,
+  0,
+  '{"fullName":"安徽省阜阳市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001200110001',
+  '颍州区',
+  NULL,
+  '0001000300120011',
+  0,
+  1,
+  0,
+  '{"fullName":"安徽省阜阳市颍州区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001200110002',
+  '颍东区',
+  NULL,
+  '0001000300120011',
+  0,
+  1,
+  0,
+  '{"fullName":"安徽省阜阳市颍东区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001200110003',
+  '颍泉区',
+  NULL,
+  '0001000300120011',
+  0,
+  1,
+  0,
+  '{"fullName":"安徽省阜阳市颍泉区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001200110004',
+  '临泉县',
+  NULL,
+  '0001000300120011',
+  0,
+  1,
+  0,
+  '{"fullName":"安徽省阜阳市临泉县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001200110005',
+  '太和县',
+  NULL,
+  '0001000300120011',
+  0,
+  1,
+  0,
+  '{"fullName":"安徽省阜阳市太和县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001200110006',
+  '阜南县',
+  NULL,
+  '0001000300120011',
+  0,
+  1,
+  0,
+  '{"fullName":"安徽省阜阳市阜南县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001200110007',
+  '颍上县',
+  NULL,
+  '0001000300120011',
+  0,
+  1,
+  0,
+  '{"fullName":"安徽省阜阳市颍上县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001200110008',
+  '界首市',
+  NULL,
+  '0001000300120011',
+  0,
+  1,
+  0,
+  '{"fullName":"安徽省阜阳市界首市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300120012',
+  '宿州市',
+  NULL,
+  '000100030012',
+  1,
+  1,
+  0,
+  '{"fullName":"安徽省宿州市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001200120001',
+  '埇桥区',
+  NULL,
+  '0001000300120012',
+  0,
+  1,
+  0,
+  '{"fullName":"安徽省宿州市埇桥区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001200120002',
+  '砀山县',
+  NULL,
+  '0001000300120012',
+  0,
+  1,
+  0,
+  '{"fullName":"安徽省宿州市砀山县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001200120003',
+  '萧县',
+  NULL,
+  '0001000300120012',
+  0,
+  1,
+  0,
+  '{"fullName":"安徽省宿州市萧县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001200120004',
+  '灵璧县',
+  NULL,
+  '0001000300120012',
+  0,
+  1,
+  0,
+  '{"fullName":"安徽省宿州市灵璧县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001200120005',
+  '泗县',
+  NULL,
+  '0001000300120012',
+  0,
+  1,
+  0,
+  '{"fullName":"安徽省宿州市泗县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300120013',
+  '六安市',
+  NULL,
+  '000100030012',
+  1,
+  1,
+  0,
+  '{"fullName":"安徽省六安市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001200130001',
+  '金安区',
+  NULL,
+  '0001000300120013',
+  0,
+  1,
+  0,
+  '{"fullName":"安徽省六安市金安区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001200130002',
+  '裕安区',
+  NULL,
+  '0001000300120013',
+  0,
+  1,
+  0,
+  '{"fullName":"安徽省六安市裕安区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001200130003',
+  '叶集区',
+  NULL,
+  '0001000300120013',
+  0,
+  1,
+  0,
+  '{"fullName":"安徽省六安市叶集区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001200130004',
+  '霍邱县',
+  NULL,
+  '0001000300120013',
+  0,
+  1,
+  0,
+  '{"fullName":"安徽省六安市霍邱县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001200130005',
+  '舒城县',
+  NULL,
+  '0001000300120013',
+  0,
+  1,
+  0,
+  '{"fullName":"安徽省六安市舒城县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001200130006',
+  '金寨县',
+  NULL,
+  '0001000300120013',
+  0,
+  1,
+  0,
+  '{"fullName":"安徽省六安市金寨县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001200130007',
+  '霍山县',
+  NULL,
+  '0001000300120013',
+  0,
+  1,
+  0,
+  '{"fullName":"安徽省六安市霍山县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300120014',
+  '亳州市',
+  NULL,
+  '000100030012',
+  1,
+  1,
+  0,
+  '{"fullName":"安徽省亳州市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001200140001',
+  '谯城区',
+  NULL,
+  '0001000300120014',
+  0,
+  1,
+  0,
+  '{"fullName":"安徽省亳州市谯城区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001200140002',
+  '涡阳县',
+  NULL,
+  '0001000300120014',
+  0,
+  1,
+  0,
+  '{"fullName":"安徽省亳州市涡阳县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001200140003',
+  '蒙城县',
+  NULL,
+  '0001000300120014',
+  0,
+  1,
+  0,
+  '{"fullName":"安徽省亳州市蒙城县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001200140004',
+  '利辛县',
+  NULL,
+  '0001000300120014',
+  0,
+  1,
+  0,
+  '{"fullName":"安徽省亳州市利辛县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300120015',
+  '池州市',
+  NULL,
+  '000100030012',
+  1,
+  1,
+  0,
+  '{"fullName":"安徽省池州市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001200150001',
+  '贵池区',
+  NULL,
+  '0001000300120015',
+  0,
+  1,
+  0,
+  '{"fullName":"安徽省池州市贵池区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001200150002',
+  '东至县',
+  NULL,
+  '0001000300120015',
+  0,
+  1,
+  0,
+  '{"fullName":"安徽省池州市东至县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001200150003',
+  '石台县',
+  NULL,
+  '0001000300120015',
+  0,
+  1,
+  0,
+  '{"fullName":"安徽省池州市石台县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001200150004',
+  '青阳县',
+  NULL,
+  '0001000300120015',
+  0,
+  1,
+  0,
+  '{"fullName":"安徽省池州市青阳县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300120016',
+  '宣城市',
+  NULL,
+  '000100030012',
+  1,
+  1,
+  0,
+  '{"fullName":"安徽省宣城市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001200160001',
+  '宣州区',
+  NULL,
+  '0001000300120016',
+  0,
+  1,
+  0,
+  '{"fullName":"安徽省宣城市宣州区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001200160002',
+  '郎溪县',
+  NULL,
+  '0001000300120016',
+  0,
+  1,
+  0,
+  '{"fullName":"安徽省宣城市郎溪县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001200160003',
+  '广德县',
+  NULL,
+  '0001000300120016',
+  0,
+  1,
+  0,
+  '{"fullName":"安徽省宣城市广德县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001200160004',
+  '泾县',
+  NULL,
+  '0001000300120016',
+  0,
+  1,
+  0,
+  '{"fullName":"安徽省宣城市泾县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001200160005',
+  '绩溪县',
+  NULL,
+  '0001000300120016',
+  0,
+  1,
+  0,
+  '{"fullName":"安徽省宣城市绩溪县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001200160006',
+  '旌德县',
+  NULL,
+  '0001000300120016',
+  0,
+  1,
+  0,
+  '{"fullName":"安徽省宣城市旌德县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001200160007',
+  '宁国市',
+  NULL,
+  '0001000300120016',
+  0,
+  1,
+  0,
+  '{"fullName":"安徽省宣城市宁国市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '000100030013',
+  '福建省',
+  NULL,
+  '00010003',
+  1,
+  1,
+  0,
+  '{"fullName":"福建省"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300130001',
+  '福州市',
+  NULL,
+  '000100030013',
+  1,
+  1,
+  0,
+  '{"fullName":"福建省福州市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001300010001',
+  '鼓楼区',
+  NULL,
+  '0001000300130001',
+  0,
+  1,
+  0,
+  '{"fullName":"福建省福州市鼓楼区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001300010002',
+  '台江区',
+  NULL,
+  '0001000300130001',
+  0,
+  1,
+  0,
+  '{"fullName":"福建省福州市台江区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001300010003',
+  '仓山区',
+  NULL,
+  '0001000300130001',
+  0,
+  1,
+  0,
+  '{"fullName":"福建省福州市仓山区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001300010004',
+  '马尾区',
+  NULL,
+  '0001000300130001',
+  0,
+  1,
+  0,
+  '{"fullName":"福建省福州市马尾区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001300010005',
+  '晋安区',
+  NULL,
+  '0001000300130001',
+  0,
+  1,
+  0,
+  '{"fullName":"福建省福州市晋安区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001300010006',
+  '闽侯县',
+  NULL,
+  '0001000300130001',
+  0,
+  1,
+  0,
+  '{"fullName":"福建省福州市闽侯县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001300010007',
+  '连江县',
+  NULL,
+  '0001000300130001',
+  0,
+  1,
+  0,
+  '{"fullName":"福建省福州市连江县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001300010008',
+  '罗源县',
+  NULL,
+  '0001000300130001',
+  0,
+  1,
+  0,
+  '{"fullName":"福建省福州市罗源县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001300010009',
+  '闽清县',
+  NULL,
+  '0001000300130001',
+  0,
+  1,
+  0,
+  '{"fullName":"福建省福州市闽清县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001300010010',
+  '永泰县',
+  NULL,
+  '0001000300130001',
+  0,
+  1,
+  0,
+  '{"fullName":"福建省福州市永泰县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001300010011',
+  '平潭县',
+  NULL,
+  '0001000300130001',
+  0,
+  1,
+  0,
+  '{"fullName":"福建省福州市平潭县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001300010012',
+  '福清市',
+  NULL,
+  '0001000300130001',
+  0,
+  1,
+  0,
+  '{"fullName":"福建省福州市福清市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001300010013',
+  '长乐市',
+  NULL,
+  '0001000300130001',
+  0,
+  1,
+  0,
+  '{"fullName":"福建省福州市长乐市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300130002',
+  '厦门市',
+  NULL,
+  '000100030013',
+  1,
+  1,
+  0,
+  '{"fullName":"福建省厦门市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001300020001',
+  '思明区',
+  NULL,
+  '0001000300130002',
+  0,
+  1,
+  0,
+  '{"fullName":"福建省厦门市思明区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001300020002',
+  '海沧区',
+  NULL,
+  '0001000300130002',
+  0,
+  1,
+  0,
+  '{"fullName":"福建省厦门市海沧区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001300020003',
+  '湖里区',
+  NULL,
+  '0001000300130002',
+  0,
+  1,
+  0,
+  '{"fullName":"福建省厦门市湖里区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001300020004',
+  '集美区',
+  NULL,
+  '0001000300130002',
+  0,
+  1,
+  0,
+  '{"fullName":"福建省厦门市集美区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001300020005',
+  '同安区',
+  NULL,
+  '0001000300130002',
+  0,
+  1,
+  0,
+  '{"fullName":"福建省厦门市同安区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001300020006',
+  '翔安区',
+  NULL,
+  '0001000300130002',
+  0,
+  1,
+  0,
+  '{"fullName":"福建省厦门市翔安区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300130003',
+  '莆田市',
+  NULL,
+  '000100030013',
+  1,
+  1,
+  0,
+  '{"fullName":"福建省莆田市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001300030001',
+  '城厢区',
+  NULL,
+  '0001000300130003',
+  0,
+  1,
+  0,
+  '{"fullName":"福建省莆田市城厢区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001300030002',
+  '涵江区',
+  NULL,
+  '0001000300130003',
+  0,
+  1,
+  0,
+  '{"fullName":"福建省莆田市涵江区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001300030003',
+  '荔城区',
+  NULL,
+  '0001000300130003',
+  0,
+  1,
+  0,
+  '{"fullName":"福建省莆田市荔城区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001300030004',
+  '秀屿区',
+  NULL,
+  '0001000300130003',
+  0,
+  1,
+  0,
+  '{"fullName":"福建省莆田市秀屿区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001300030005',
+  '仙游县',
+  NULL,
+  '0001000300130003',
+  0,
+  1,
+  0,
+  '{"fullName":"福建省莆田市仙游县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300130004',
+  '三明市',
+  NULL,
+  '000100030013',
+  1,
+  1,
+  0,
+  '{"fullName":"福建省三明市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001300040001',
+  '梅列区',
+  NULL,
+  '0001000300130004',
+  0,
+  1,
+  0,
+  '{"fullName":"福建省三明市梅列区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001300040002',
+  '三元区',
+  NULL,
+  '0001000300130004',
+  0,
+  1,
+  0,
+  '{"fullName":"福建省三明市三元区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001300040003',
+  '明溪县',
+  NULL,
+  '0001000300130004',
+  0,
+  1,
+  0,
+  '{"fullName":"福建省三明市明溪县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001300040004',
+  '清流县',
+  NULL,
+  '0001000300130004',
+  0,
+  1,
+  0,
+  '{"fullName":"福建省三明市清流县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001300040005',
+  '宁化县',
+  NULL,
+  '0001000300130004',
+  0,
+  1,
+  0,
+  '{"fullName":"福建省三明市宁化县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001300040006',
+  '大田县',
+  NULL,
+  '0001000300130004',
+  0,
+  1,
+  0,
+  '{"fullName":"福建省三明市大田县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001300040007',
+  '尤溪县',
+  NULL,
+  '0001000300130004',
+  0,
+  1,
+  0,
+  '{"fullName":"福建省三明市尤溪县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001300040008',
+  '沙县',
+  NULL,
+  '0001000300130004',
+  0,
+  1,
+  0,
+  '{"fullName":"福建省三明市沙县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001300040009',
+  '将乐县',
+  NULL,
+  '0001000300130004',
+  0,
+  1,
+  0,
+  '{"fullName":"福建省三明市将乐县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001300040010',
+  '泰宁县',
+  NULL,
+  '0001000300130004',
+  0,
+  1,
+  0,
+  '{"fullName":"福建省三明市泰宁县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001300040011',
+  '建宁县',
+  NULL,
+  '0001000300130004',
+  0,
+  1,
+  0,
+  '{"fullName":"福建省三明市建宁县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001300040012',
+  '永安市',
+  NULL,
+  '0001000300130004',
+  0,
+  1,
+  0,
+  '{"fullName":"福建省三明市永安市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300130005',
+  '泉州市',
+  NULL,
+  '000100030013',
+  1,
+  1,
+  0,
+  '{"fullName":"福建省泉州市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001300050001',
+  '鲤城区',
+  NULL,
+  '0001000300130005',
+  0,
+  1,
+  0,
+  '{"fullName":"福建省泉州市鲤城区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001300050002',
+  '丰泽区',
+  NULL,
+  '0001000300130005',
+  0,
+  1,
+  0,
+  '{"fullName":"福建省泉州市丰泽区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001300050003',
+  '洛江区',
+  NULL,
+  '0001000300130005',
+  0,
+  1,
+  0,
+  '{"fullName":"福建省泉州市洛江区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001300050004',
+  '泉港区',
+  NULL,
+  '0001000300130005',
+  0,
+  1,
+  0,
+  '{"fullName":"福建省泉州市泉港区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001300050005',
+  '惠安县',
+  NULL,
+  '0001000300130005',
+  0,
+  1,
+  0,
+  '{"fullName":"福建省泉州市惠安县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001300050006',
+  '安溪县',
+  NULL,
+  '0001000300130005',
+  0,
+  1,
+  0,
+  '{"fullName":"福建省泉州市安溪县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001300050007',
+  '永春县',
+  NULL,
+  '0001000300130005',
+  0,
+  1,
+  0,
+  '{"fullName":"福建省泉州市永春县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001300050008',
+  '德化县',
+  NULL,
+  '0001000300130005',
+  0,
+  1,
+  0,
+  '{"fullName":"福建省泉州市德化县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001300050009',
+  '金门县',
+  NULL,
+  '0001000300130005',
+  0,
+  1,
+  0,
+  '{"fullName":"福建省泉州市金门县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001300050010',
+  '石狮市',
+  NULL,
+  '0001000300130005',
+  0,
+  1,
+  0,
+  '{"fullName":"福建省泉州市石狮市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001300050011',
+  '晋江市',
+  NULL,
+  '0001000300130005',
+  0,
+  1,
+  0,
+  '{"fullName":"福建省泉州市晋江市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001300050012',
+  '南安市',
+  NULL,
+  '0001000300130005',
+  0,
+  1,
+  0,
+  '{"fullName":"福建省泉州市南安市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300130006',
+  '漳州市',
+  NULL,
+  '000100030013',
+  1,
+  1,
+  0,
+  '{"fullName":"福建省漳州市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001300060001',
+  '芗城区',
+  NULL,
+  '0001000300130006',
+  0,
+  1,
+  0,
+  '{"fullName":"福建省漳州市芗城区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001300060002',
+  '龙文区',
+  NULL,
+  '0001000300130006',
+  0,
+  1,
+  0,
+  '{"fullName":"福建省漳州市龙文区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001300060003',
+  '云霄县',
+  NULL,
+  '0001000300130006',
+  0,
+  1,
+  0,
+  '{"fullName":"福建省漳州市云霄县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001300060004',
+  '漳浦县',
+  NULL,
+  '0001000300130006',
+  0,
+  1,
+  0,
+  '{"fullName":"福建省漳州市漳浦县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001300060005',
+  '诏安县',
+  NULL,
+  '0001000300130006',
+  0,
+  1,
+  0,
+  '{"fullName":"福建省漳州市诏安县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001300060006',
+  '长泰县',
+  NULL,
+  '0001000300130006',
+  0,
+  1,
+  0,
+  '{"fullName":"福建省漳州市长泰县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001300060007',
+  '东山县',
+  NULL,
+  '0001000300130006',
+  0,
+  1,
+  0,
+  '{"fullName":"福建省漳州市东山县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001300060008',
+  '南靖县',
+  NULL,
+  '0001000300130006',
+  0,
+  1,
+  0,
+  '{"fullName":"福建省漳州市南靖县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001300060009',
+  '平和县',
+  NULL,
+  '0001000300130006',
+  0,
+  1,
+  0,
+  '{"fullName":"福建省漳州市平和县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001300060010',
+  '华安县',
+  NULL,
+  '0001000300130006',
+  0,
+  1,
+  0,
+  '{"fullName":"福建省漳州市华安县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001300060011',
+  '龙海市',
+  NULL,
+  '0001000300130006',
+  0,
+  1,
+  0,
+  '{"fullName":"福建省漳州市龙海市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300130007',
+  '南平市',
+  NULL,
+  '000100030013',
+  1,
+  1,
+  0,
+  '{"fullName":"福建省南平市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001300070001',
+  '延平区',
+  NULL,
+  '0001000300130007',
+  0,
+  1,
+  0,
+  '{"fullName":"福建省南平市延平区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001300070002',
+  '建阳区',
+  NULL,
+  '0001000300130007',
+  0,
+  1,
+  0,
+  '{"fullName":"福建省南平市建阳区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001300070003',
+  '顺昌县',
+  NULL,
+  '0001000300130007',
+  0,
+  1,
+  0,
+  '{"fullName":"福建省南平市顺昌县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001300070004',
+  '浦城县',
+  NULL,
+  '0001000300130007',
+  0,
+  1,
+  0,
+  '{"fullName":"福建省南平市浦城县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001300070005',
+  '光泽县',
+  NULL,
+  '0001000300130007',
+  0,
+  1,
+  0,
+  '{"fullName":"福建省南平市光泽县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001300070006',
+  '松溪县',
+  NULL,
+  '0001000300130007',
+  0,
+  1,
+  0,
+  '{"fullName":"福建省南平市松溪县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001300070007',
+  '政和县',
+  NULL,
+  '0001000300130007',
+  0,
+  1,
+  0,
+  '{"fullName":"福建省南平市政和县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001300070008',
+  '邵武市',
+  NULL,
+  '0001000300130007',
+  0,
+  1,
+  0,
+  '{"fullName":"福建省南平市邵武市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001300070009',
+  '武夷山市',
+  NULL,
+  '0001000300130007',
+  0,
+  1,
+  0,
+  '{"fullName":"福建省南平市武夷山市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001300070010',
+  '建瓯市',
+  NULL,
+  '0001000300130007',
+  0,
+  1,
+  0,
+  '{"fullName":"福建省南平市建瓯市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300130008',
+  '龙岩市',
+  NULL,
+  '000100030013',
+  1,
+  1,
+  0,
+  '{"fullName":"福建省龙岩市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001300080001',
+  '新罗区',
+  NULL,
+  '0001000300130008',
+  0,
+  1,
+  0,
+  '{"fullName":"福建省龙岩市新罗区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001300080002',
+  '永定区',
+  NULL,
+  '0001000300130008',
+  0,
+  1,
+  0,
+  '{"fullName":"福建省龙岩市永定区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001300080003',
+  '长汀县',
+  NULL,
+  '0001000300130008',
+  0,
+  1,
+  0,
+  '{"fullName":"福建省龙岩市长汀县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001300080004',
+  '上杭县',
+  NULL,
+  '0001000300130008',
+  0,
+  1,
+  0,
+  '{"fullName":"福建省龙岩市上杭县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001300080005',
+  '武平县',
+  NULL,
+  '0001000300130008',
+  0,
+  1,
+  0,
+  '{"fullName":"福建省龙岩市武平县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001300080006',
+  '连城县',
+  NULL,
+  '0001000300130008',
+  0,
+  1,
+  0,
+  '{"fullName":"福建省龙岩市连城县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001300080007',
+  '漳平市',
+  NULL,
+  '0001000300130008',
+  0,
+  1,
+  0,
+  '{"fullName":"福建省龙岩市漳平市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300130009',
+  '宁德市',
+  NULL,
+  '000100030013',
+  1,
+  1,
+  0,
+  '{"fullName":"福建省宁德市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001300090001',
+  '蕉城区',
+  NULL,
+  '0001000300130009',
+  0,
+  1,
+  0,
+  '{"fullName":"福建省宁德市蕉城区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001300090002',
+  '霞浦县',
+  NULL,
+  '0001000300130009',
+  0,
+  1,
+  0,
+  '{"fullName":"福建省宁德市霞浦县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001300090003',
+  '古田县',
+  NULL,
+  '0001000300130009',
+  0,
+  1,
+  0,
+  '{"fullName":"福建省宁德市古田县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001300090004',
+  '屏南县',
+  NULL,
+  '0001000300130009',
+  0,
+  1,
+  0,
+  '{"fullName":"福建省宁德市屏南县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001300090005',
+  '寿宁县',
+  NULL,
+  '0001000300130009',
+  0,
+  1,
+  0,
+  '{"fullName":"福建省宁德市寿宁县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001300090006',
+  '周宁县',
+  NULL,
+  '0001000300130009',
+  0,
+  1,
+  0,
+  '{"fullName":"福建省宁德市周宁县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001300090007',
+  '柘荣县',
+  NULL,
+  '0001000300130009',
+  0,
+  1,
+  0,
+  '{"fullName":"福建省宁德市柘荣县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001300090008',
+  '福安市',
+  NULL,
+  '0001000300130009',
+  0,
+  1,
+  0,
+  '{"fullName":"福建省宁德市福安市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001300090009',
+  '福鼎市',
+  NULL,
+  '0001000300130009',
+  0,
+  1,
+  0,
+  '{"fullName":"福建省宁德市福鼎市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '000100030014',
+  '江西省',
+  NULL,
+  '00010003',
+  1,
+  1,
+  0,
+  '{"fullName":"江西省"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300140001',
+  '南昌市',
+  NULL,
+  '000100030014',
+  1,
+  1,
+  0,
+  '{"fullName":"江西省南昌市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001400010001',
+  '东湖区',
+  NULL,
+  '0001000300140001',
+  0,
+  1,
+  0,
+  '{"fullName":"江西省南昌市东湖区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001400010002',
+  '西湖区',
+  NULL,
+  '0001000300140001',
+  0,
+  1,
+  0,
+  '{"fullName":"江西省南昌市西湖区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001400010003',
+  '青云谱区',
+  NULL,
+  '0001000300140001',
+  0,
+  1,
+  0,
+  '{"fullName":"江西省南昌市青云谱区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001400010004',
+  '湾里区',
+  NULL,
+  '0001000300140001',
+  0,
+  1,
+  0,
+  '{"fullName":"江西省南昌市湾里区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001400010005',
+  '青山湖区',
+  NULL,
+  '0001000300140001',
+  0,
+  1,
+  0,
+  '{"fullName":"江西省南昌市青山湖区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001400010006',
+  '新建区',
+  NULL,
+  '0001000300140001',
+  0,
+  1,
+  0,
+  '{"fullName":"江西省南昌市新建区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001400010007',
+  '南昌县',
+  NULL,
+  '0001000300140001',
+  0,
+  1,
+  0,
+  '{"fullName":"江西省南昌市南昌县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001400010008',
+  '安义县',
+  NULL,
+  '0001000300140001',
+  0,
+  1,
+  0,
+  '{"fullName":"江西省南昌市安义县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001400010009',
+  '进贤县',
+  NULL,
+  '0001000300140001',
+  0,
+  1,
+  0,
+  '{"fullName":"江西省南昌市进贤县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300140002',
+  '景德镇市',
+  NULL,
+  '000100030014',
+  1,
+  1,
+  0,
+  '{"fullName":"江西省景德镇市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001400020001',
+  '昌江区',
+  NULL,
+  '0001000300140002',
+  0,
+  1,
+  0,
+  '{"fullName":"江西省景德镇市昌江区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001400020002',
+  '珠山区',
+  NULL,
+  '0001000300140002',
+  0,
+  1,
+  0,
+  '{"fullName":"江西省景德镇市珠山区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001400020003',
+  '浮梁县',
+  NULL,
+  '0001000300140002',
+  0,
+  1,
+  0,
+  '{"fullName":"江西省景德镇市浮梁县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001400020004',
+  '乐平市',
+  NULL,
+  '0001000300140002',
+  0,
+  1,
+  0,
+  '{"fullName":"江西省景德镇市乐平市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300140003',
+  '萍乡市',
+  NULL,
+  '000100030014',
+  1,
+  1,
+  0,
+  '{"fullName":"江西省萍乡市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001400030001',
+  '安源区',
+  NULL,
+  '0001000300140003',
+  0,
+  1,
+  0,
+  '{"fullName":"江西省萍乡市安源区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001400030002',
+  '湘东区',
+  NULL,
+  '0001000300140003',
+  0,
+  1,
+  0,
+  '{"fullName":"江西省萍乡市湘东区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001400030003',
+  '莲花县',
+  NULL,
+  '0001000300140003',
+  0,
+  1,
+  0,
+  '{"fullName":"江西省萍乡市莲花县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001400030004',
+  '上栗县',
+  NULL,
+  '0001000300140003',
+  0,
+  1,
+  0,
+  '{"fullName":"江西省萍乡市上栗县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001400030005',
+  '芦溪县',
+  NULL,
+  '0001000300140003',
+  0,
+  1,
+  0,
+  '{"fullName":"江西省萍乡市芦溪县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300140004',
+  '九江市',
+  NULL,
+  '000100030014',
+  1,
+  1,
+  0,
+  '{"fullName":"江西省九江市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001400040001',
+  '濂溪区',
+  NULL,
+  '0001000300140004',
+  0,
+  1,
+  0,
+  '{"fullName":"江西省九江市濂溪区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001400040002',
+  '浔阳区',
+  NULL,
+  '0001000300140004',
+  0,
+  1,
+  0,
+  '{"fullName":"江西省九江市浔阳区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001400040003',
+  '九江县',
+  NULL,
+  '0001000300140004',
+  0,
+  1,
+  0,
+  '{"fullName":"江西省九江市九江县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001400040004',
+  '武宁县',
+  NULL,
+  '0001000300140004',
+  0,
+  1,
+  0,
+  '{"fullName":"江西省九江市武宁县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001400040005',
+  '修水县',
+  NULL,
+  '0001000300140004',
+  0,
+  1,
+  0,
+  '{"fullName":"江西省九江市修水县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001400040006',
+  '永修县',
+  NULL,
+  '0001000300140004',
+  0,
+  1,
+  0,
+  '{"fullName":"江西省九江市永修县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001400040007',
+  '德安县',
+  NULL,
+  '0001000300140004',
+  0,
+  1,
+  0,
+  '{"fullName":"江西省九江市德安县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001400040008',
+  '都昌县',
+  NULL,
+  '0001000300140004',
+  0,
+  1,
+  0,
+  '{"fullName":"江西省九江市都昌县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001400040009',
+  '湖口县',
+  NULL,
+  '0001000300140004',
+  0,
+  1,
+  0,
+  '{"fullName":"江西省九江市湖口县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001400040010',
+  '彭泽县',
+  NULL,
+  '0001000300140004',
+  0,
+  1,
+  0,
+  '{"fullName":"江西省九江市彭泽县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001400040011',
+  '瑞昌市',
+  NULL,
+  '0001000300140004',
+  0,
+  1,
+  0,
+  '{"fullName":"江西省九江市瑞昌市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001400040012',
+  '共青城市',
+  NULL,
+  '0001000300140004',
+  0,
+  1,
+  0,
+  '{"fullName":"江西省九江市共青城市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001400040013',
+  '庐山市',
+  NULL,
+  '0001000300140004',
+  0,
+  1,
+  0,
+  '{"fullName":"江西省九江市庐山市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300140005',
+  '新余市',
+  NULL,
+  '000100030014',
+  1,
+  1,
+  0,
+  '{"fullName":"江西省新余市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001400050001',
+  '渝水区',
+  NULL,
+  '0001000300140005',
+  0,
+  1,
+  0,
+  '{"fullName":"江西省新余市渝水区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001400050002',
+  '分宜县',
+  NULL,
+  '0001000300140005',
+  0,
+  1,
+  0,
+  '{"fullName":"江西省新余市分宜县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300140006',
+  '鹰潭市',
+  NULL,
+  '000100030014',
+  1,
+  1,
+  0,
+  '{"fullName":"江西省鹰潭市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001400060001',
+  '月湖区',
+  NULL,
+  '0001000300140006',
+  0,
+  1,
+  0,
+  '{"fullName":"江西省鹰潭市月湖区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001400060002',
+  '余江县',
+  NULL,
+  '0001000300140006',
+  0,
+  1,
+  0,
+  '{"fullName":"江西省鹰潭市余江县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001400060003',
+  '贵溪市',
+  NULL,
+  '0001000300140006',
+  0,
+  1,
+  0,
+  '{"fullName":"江西省鹰潭市贵溪市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300140007',
+  '赣州市',
+  NULL,
+  '000100030014',
+  1,
+  1,
+  0,
+  '{"fullName":"江西省赣州市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001400070001',
+  '章贡区',
+  NULL,
+  '0001000300140007',
+  0,
+  1,
+  0,
+  '{"fullName":"江西省赣州市章贡区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001400070002',
+  '南康区',
+  NULL,
+  '0001000300140007',
+  0,
+  1,
+  0,
+  '{"fullName":"江西省赣州市南康区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001400070003',
+  '赣县',
+  NULL,
+  '0001000300140007',
+  0,
+  1,
+  0,
+  '{"fullName":"江西省赣州市赣县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001400070004',
+  '信丰县',
+  NULL,
+  '0001000300140007',
+  0,
+  1,
+  0,
+  '{"fullName":"江西省赣州市信丰县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001400070005',
+  '大余县',
+  NULL,
+  '0001000300140007',
+  0,
+  1,
+  0,
+  '{"fullName":"江西省赣州市大余县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001400070006',
+  '上犹县',
+  NULL,
+  '0001000300140007',
+  0,
+  1,
+  0,
+  '{"fullName":"江西省赣州市上犹县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001400070007',
+  '崇义县',
+  NULL,
+  '0001000300140007',
+  0,
+  1,
+  0,
+  '{"fullName":"江西省赣州市崇义县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001400070008',
+  '安远县',
+  NULL,
+  '0001000300140007',
+  0,
+  1,
+  0,
+  '{"fullName":"江西省赣州市安远县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001400070009',
+  '龙南县',
+  NULL,
+  '0001000300140007',
+  0,
+  1,
+  0,
+  '{"fullName":"江西省赣州市龙南县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001400070010',
+  '定南县',
+  NULL,
+  '0001000300140007',
+  0,
+  1,
+  0,
+  '{"fullName":"江西省赣州市定南县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001400070011',
+  '全南县',
+  NULL,
+  '0001000300140007',
+  0,
+  1,
+  0,
+  '{"fullName":"江西省赣州市全南县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001400070012',
+  '宁都县',
+  NULL,
+  '0001000300140007',
+  0,
+  1,
+  0,
+  '{"fullName":"江西省赣州市宁都县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001400070013',
+  '于都县',
+  NULL,
+  '0001000300140007',
+  0,
+  1,
+  0,
+  '{"fullName":"江西省赣州市于都县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001400070014',
+  '兴国县',
+  NULL,
+  '0001000300140007',
+  0,
+  1,
+  0,
+  '{"fullName":"江西省赣州市兴国县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001400070015',
+  '会昌县',
+  NULL,
+  '0001000300140007',
+  0,
+  1,
+  0,
+  '{"fullName":"江西省赣州市会昌县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001400070016',
+  '寻乌县',
+  NULL,
+  '0001000300140007',
+  0,
+  1,
+  0,
+  '{"fullName":"江西省赣州市寻乌县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001400070017',
+  '石城县',
+  NULL,
+  '0001000300140007',
+  0,
+  1,
+  0,
+  '{"fullName":"江西省赣州市石城县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001400070018',
+  '瑞金市',
+  NULL,
+  '0001000300140007',
+  0,
+  1,
+  0,
+  '{"fullName":"江西省赣州市瑞金市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300140008',
+  '吉安市',
+  NULL,
+  '000100030014',
+  1,
+  1,
+  0,
+  '{"fullName":"江西省吉安市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001400080001',
+  '吉州区',
+  NULL,
+  '0001000300140008',
+  0,
+  1,
+  0,
+  '{"fullName":"江西省吉安市吉州区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001400080002',
+  '青原区',
+  NULL,
+  '0001000300140008',
+  0,
+  1,
+  0,
+  '{"fullName":"江西省吉安市青原区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001400080003',
+  '吉安县',
+  NULL,
+  '0001000300140008',
+  0,
+  1,
+  0,
+  '{"fullName":"江西省吉安市吉安县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001400080004',
+  '吉水县',
+  NULL,
+  '0001000300140008',
+  0,
+  1,
+  0,
+  '{"fullName":"江西省吉安市吉水县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001400080005',
+  '峡江县',
+  NULL,
+  '0001000300140008',
+  0,
+  1,
+  0,
+  '{"fullName":"江西省吉安市峡江县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001400080006',
+  '新干县',
+  NULL,
+  '0001000300140008',
+  0,
+  1,
+  0,
+  '{"fullName":"江西省吉安市新干县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001400080007',
+  '永丰县',
+  NULL,
+  '0001000300140008',
+  0,
+  1,
+  0,
+  '{"fullName":"江西省吉安市永丰县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001400080008',
+  '泰和县',
+  NULL,
+  '0001000300140008',
+  0,
+  1,
+  0,
+  '{"fullName":"江西省吉安市泰和县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001400080009',
+  '遂川县',
+  NULL,
+  '0001000300140008',
+  0,
+  1,
+  0,
+  '{"fullName":"江西省吉安市遂川县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001400080010',
+  '万安县',
+  NULL,
+  '0001000300140008',
+  0,
+  1,
+  0,
+  '{"fullName":"江西省吉安市万安县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001400080011',
+  '安福县',
+  NULL,
+  '0001000300140008',
+  0,
+  1,
+  0,
+  '{"fullName":"江西省吉安市安福县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001400080012',
+  '永新县',
+  NULL,
+  '0001000300140008',
+  0,
+  1,
+  0,
+  '{"fullName":"江西省吉安市永新县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001400080013',
+  '井冈山市',
+  NULL,
+  '0001000300140008',
+  0,
+  1,
+  0,
+  '{"fullName":"江西省吉安市井冈山市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300140009',
+  '宜春市',
+  NULL,
+  '000100030014',
+  1,
+  1,
+  0,
+  '{"fullName":"江西省宜春市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001400090001',
+  '袁州区',
+  NULL,
+  '0001000300140009',
+  0,
+  1,
+  0,
+  '{"fullName":"江西省宜春市袁州区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001400090002',
+  '奉新县',
+  NULL,
+  '0001000300140009',
+  0,
+  1,
+  0,
+  '{"fullName":"江西省宜春市奉新县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001400090003',
+  '万载县',
+  NULL,
+  '0001000300140009',
+  0,
+  1,
+  0,
+  '{"fullName":"江西省宜春市万载县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001400090004',
+  '上高县',
+  NULL,
+  '0001000300140009',
+  0,
+  1,
+  0,
+  '{"fullName":"江西省宜春市上高县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001400090005',
+  '宜丰县',
+  NULL,
+  '0001000300140009',
+  0,
+  1,
+  0,
+  '{"fullName":"江西省宜春市宜丰县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001400090006',
+  '靖安县',
+  NULL,
+  '0001000300140009',
+  0,
+  1,
+  0,
+  '{"fullName":"江西省宜春市靖安县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001400090007',
+  '铜鼓县',
+  NULL,
+  '0001000300140009',
+  0,
+  1,
+  0,
+  '{"fullName":"江西省宜春市铜鼓县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001400090008',
+  '丰城市',
+  NULL,
+  '0001000300140009',
+  0,
+  1,
+  0,
+  '{"fullName":"江西省宜春市丰城市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001400090009',
+  '樟树市',
+  NULL,
+  '0001000300140009',
+  0,
+  1,
+  0,
+  '{"fullName":"江西省宜春市樟树市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001400090010',
+  '高安市',
+  NULL,
+  '0001000300140009',
+  0,
+  1,
+  0,
+  '{"fullName":"江西省宜春市高安市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300140010',
+  '抚州市',
+  NULL,
+  '000100030014',
+  1,
+  1,
+  0,
+  '{"fullName":"江西省抚州市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001400100001',
+  '临川区',
+  NULL,
+  '0001000300140010',
+  0,
+  1,
+  0,
+  '{"fullName":"江西省抚州市临川区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001400100002',
+  '南城县',
+  NULL,
+  '0001000300140010',
+  0,
+  1,
+  0,
+  '{"fullName":"江西省抚州市南城县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001400100003',
+  '黎川县',
+  NULL,
+  '0001000300140010',
+  0,
+  1,
+  0,
+  '{"fullName":"江西省抚州市黎川县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001400100004',
+  '南丰县',
+  NULL,
+  '0001000300140010',
+  0,
+  1,
+  0,
+  '{"fullName":"江西省抚州市南丰县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001400100005',
+  '崇仁县',
+  NULL,
+  '0001000300140010',
+  0,
+  1,
+  0,
+  '{"fullName":"江西省抚州市崇仁县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001400100006',
+  '乐安县',
+  NULL,
+  '0001000300140010',
+  0,
+  1,
+  0,
+  '{"fullName":"江西省抚州市乐安县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001400100007',
+  '宜黄县',
+  NULL,
+  '0001000300140010',
+  0,
+  1,
+  0,
+  '{"fullName":"江西省抚州市宜黄县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001400100008',
+  '金溪县',
+  NULL,
+  '0001000300140010',
+  0,
+  1,
+  0,
+  '{"fullName":"江西省抚州市金溪县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001400100009',
+  '资溪县',
+  NULL,
+  '0001000300140010',
+  0,
+  1,
+  0,
+  '{"fullName":"江西省抚州市资溪县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001400100010',
+  '东乡县',
+  NULL,
+  '0001000300140010',
+  0,
+  1,
+  0,
+  '{"fullName":"江西省抚州市东乡县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001400100011',
+  '广昌县',
+  NULL,
+  '0001000300140010',
+  0,
+  1,
+  0,
+  '{"fullName":"江西省抚州市广昌县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300140011',
+  '上饶市',
+  NULL,
+  '000100030014',
+  1,
+  1,
+  0,
+  '{"fullName":"江西省上饶市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001400110001',
+  '信州区',
+  NULL,
+  '0001000300140011',
+  0,
+  1,
+  0,
+  '{"fullName":"江西省上饶市信州区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001400110002',
+  '广丰区',
+  NULL,
+  '0001000300140011',
+  0,
+  1,
+  0,
+  '{"fullName":"江西省上饶市广丰区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001400110003',
+  '上饶县',
+  NULL,
+  '0001000300140011',
+  0,
+  1,
+  0,
+  '{"fullName":"江西省上饶市上饶县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001400110004',
+  '玉山县',
+  NULL,
+  '0001000300140011',
+  0,
+  1,
+  0,
+  '{"fullName":"江西省上饶市玉山县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001400110005',
+  '铅山县',
+  NULL,
+  '0001000300140011',
+  0,
+  1,
+  0,
+  '{"fullName":"江西省上饶市铅山县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001400110006',
+  '横峰县',
+  NULL,
+  '0001000300140011',
+  0,
+  1,
+  0,
+  '{"fullName":"江西省上饶市横峰县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001400110007',
+  '弋阳县',
+  NULL,
+  '0001000300140011',
+  0,
+  1,
+  0,
+  '{"fullName":"江西省上饶市弋阳县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001400110008',
+  '余干县',
+  NULL,
+  '0001000300140011',
+  0,
+  1,
+  0,
+  '{"fullName":"江西省上饶市余干县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001400110009',
+  '鄱阳县',
+  NULL,
+  '0001000300140011',
+  0,
+  1,
+  0,
+  '{"fullName":"江西省上饶市鄱阳县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001400110010',
+  '万年县',
+  NULL,
+  '0001000300140011',
+  0,
+  1,
+  0,
+  '{"fullName":"江西省上饶市万年县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001400110011',
+  '婺源县',
+  NULL,
+  '0001000300140011',
+  0,
+  1,
+  0,
+  '{"fullName":"江西省上饶市婺源县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001400110012',
+  '德兴市',
+  NULL,
+  '0001000300140011',
+  0,
+  1,
+  0,
+  '{"fullName":"江西省上饶市德兴市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '000100030015',
+  '山东省',
+  NULL,
+  '00010003',
+  1,
+  1,
+  0,
+  '{"fullName":"山东省"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300150001',
+  '济南市',
+  NULL,
+  '000100030015',
+  1,
+  1,
+  0,
+  '{"fullName":"山东省济南市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001500010001',
+  '历下区',
+  NULL,
+  '0001000300150001',
+  0,
+  1,
+  0,
+  '{"fullName":"山东省济南市历下区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001500010002',
+  '市中区',
+  NULL,
+  '0001000300150001',
+  0,
+  1,
+  0,
+  '{"fullName":"山东省济南市市中区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001500010003',
+  '槐荫区',
+  NULL,
+  '0001000300150001',
+  0,
+  1,
+  0,
+  '{"fullName":"山东省济南市槐荫区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001500010004',
+  '天桥区',
+  NULL,
+  '0001000300150001',
+  0,
+  1,
+  0,
+  '{"fullName":"山东省济南市天桥区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001500010005',
+  '历城区',
+  NULL,
+  '0001000300150001',
+  0,
+  1,
+  0,
+  '{"fullName":"山东省济南市历城区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001500010006',
+  '长清区',
+  NULL,
+  '0001000300150001',
+  0,
+  1,
+  0,
+  '{"fullName":"山东省济南市长清区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001500010007',
+  '平阴县',
+  NULL,
+  '0001000300150001',
+  0,
+  1,
+  0,
+  '{"fullName":"山东省济南市平阴县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001500010008',
+  '济阳县',
+  NULL,
+  '0001000300150001',
+  0,
+  1,
+  0,
+  '{"fullName":"山东省济南市济阳县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001500010009',
+  '商河县',
+  NULL,
+  '0001000300150001',
+  0,
+  1,
+  0,
+  '{"fullName":"山东省济南市商河县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001500010010',
+  '章丘市',
+  NULL,
+  '0001000300150001',
+  0,
+  1,
+  0,
+  '{"fullName":"山东省济南市章丘市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300150002',
+  '青岛市',
+  NULL,
+  '000100030015',
+  1,
+  1,
+  0,
+  '{"fullName":"山东省青岛市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001500020001',
+  '市南区',
+  NULL,
+  '0001000300150002',
+  0,
+  1,
+  0,
+  '{"fullName":"山东省青岛市市南区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001500020002',
+  '市北区',
+  NULL,
+  '0001000300150002',
+  0,
+  1,
+  0,
+  '{"fullName":"山东省青岛市市北区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001500020003',
+  '黄岛区',
+  NULL,
+  '0001000300150002',
+  0,
+  1,
+  0,
+  '{"fullName":"山东省青岛市黄岛区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001500020004',
+  '崂山区',
+  NULL,
+  '0001000300150002',
+  0,
+  1,
+  0,
+  '{"fullName":"山东省青岛市崂山区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001500020005',
+  '李沧区',
+  NULL,
+  '0001000300150002',
+  0,
+  1,
+  0,
+  '{"fullName":"山东省青岛市李沧区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001500020006',
+  '城阳区',
+  NULL,
+  '0001000300150002',
+  0,
+  1,
+  0,
+  '{"fullName":"山东省青岛市城阳区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001500020007',
+  '胶州市',
+  NULL,
+  '0001000300150002',
+  0,
+  1,
+  0,
+  '{"fullName":"山东省青岛市胶州市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001500020008',
+  '即墨市',
+  NULL,
+  '0001000300150002',
+  0,
+  1,
+  0,
+  '{"fullName":"山东省青岛市即墨市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001500020009',
+  '平度市',
+  NULL,
+  '0001000300150002',
+  0,
+  1,
+  0,
+  '{"fullName":"山东省青岛市平度市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001500020010',
+  '莱西市',
+  NULL,
+  '0001000300150002',
+  0,
+  1,
+  0,
+  '{"fullName":"山东省青岛市莱西市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300150003',
+  '淄博市',
+  NULL,
+  '000100030015',
+  1,
+  1,
+  0,
+  '{"fullName":"山东省淄博市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001500030001',
+  '淄川区',
+  NULL,
+  '0001000300150003',
+  0,
+  1,
+  0,
+  '{"fullName":"山东省淄博市淄川区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001500030002',
+  '张店区',
+  NULL,
+  '0001000300150003',
+  0,
+  1,
+  0,
+  '{"fullName":"山东省淄博市张店区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001500030003',
+  '博山区',
+  NULL,
+  '0001000300150003',
+  0,
+  1,
+  0,
+  '{"fullName":"山东省淄博市博山区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001500030004',
+  '临淄区',
+  NULL,
+  '0001000300150003',
+  0,
+  1,
+  0,
+  '{"fullName":"山东省淄博市临淄区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001500030005',
+  '周村区',
+  NULL,
+  '0001000300150003',
+  0,
+  1,
+  0,
+  '{"fullName":"山东省淄博市周村区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001500030006',
+  '桓台县',
+  NULL,
+  '0001000300150003',
+  0,
+  1,
+  0,
+  '{"fullName":"山东省淄博市桓台县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001500030007',
+  '高青县',
+  NULL,
+  '0001000300150003',
+  0,
+  1,
+  0,
+  '{"fullName":"山东省淄博市高青县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001500030008',
+  '沂源县',
+  NULL,
+  '0001000300150003',
+  0,
+  1,
+  0,
+  '{"fullName":"山东省淄博市沂源县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300150004',
+  '枣庄市',
+  NULL,
+  '000100030015',
+  1,
+  1,
+  0,
+  '{"fullName":"山东省枣庄市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001500040001',
+  '市中区',
+  NULL,
+  '0001000300150004',
+  0,
+  1,
+  0,
+  '{"fullName":"山东省枣庄市市中区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001500040002',
+  '薛城区',
+  NULL,
+  '0001000300150004',
+  0,
+  1,
+  0,
+  '{"fullName":"山东省枣庄市薛城区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001500040003',
+  '峄城区',
+  NULL,
+  '0001000300150004',
+  0,
+  1,
+  0,
+  '{"fullName":"山东省枣庄市峄城区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001500040004',
+  '台儿庄区',
+  NULL,
+  '0001000300150004',
+  0,
+  1,
+  0,
+  '{"fullName":"山东省枣庄市台儿庄区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001500040005',
+  '山亭区',
+  NULL,
+  '0001000300150004',
+  0,
+  1,
+  0,
+  '{"fullName":"山东省枣庄市山亭区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001500040006',
+  '滕州市',
+  NULL,
+  '0001000300150004',
+  0,
+  1,
+  0,
+  '{"fullName":"山东省枣庄市滕州市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300150005',
+  '东营市',
+  NULL,
+  '000100030015',
+  1,
+  1,
+  0,
+  '{"fullName":"山东省东营市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001500050001',
+  '东营区',
+  NULL,
+  '0001000300150005',
+  0,
+  1,
+  0,
+  '{"fullName":"山东省东营市东营区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001500050002',
+  '河口区',
+  NULL,
+  '0001000300150005',
+  0,
+  1,
+  0,
+  '{"fullName":"山东省东营市河口区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001500050003',
+  '垦利区',
+  NULL,
+  '0001000300150005',
+  0,
+  1,
+  0,
+  '{"fullName":"山东省东营市垦利区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001500050004',
+  '利津县',
+  NULL,
+  '0001000300150005',
+  0,
+  1,
+  0,
+  '{"fullName":"山东省东营市利津县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001500050005',
+  '广饶县',
+  NULL,
+  '0001000300150005',
+  0,
+  1,
+  0,
+  '{"fullName":"山东省东营市广饶县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300150006',
+  '烟台市',
+  NULL,
+  '000100030015',
+  1,
+  1,
+  0,
+  '{"fullName":"山东省烟台市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001500060001',
+  '芝罘区',
+  NULL,
+  '0001000300150006',
+  0,
+  1,
+  0,
+  '{"fullName":"山东省烟台市芝罘区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001500060002',
+  '福山区',
+  NULL,
+  '0001000300150006',
+  0,
+  1,
+  0,
+  '{"fullName":"山东省烟台市福山区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001500060003',
+  '牟平区',
+  NULL,
+  '0001000300150006',
+  0,
+  1,
+  0,
+  '{"fullName":"山东省烟台市牟平区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001500060004',
+  '莱山区',
+  NULL,
+  '0001000300150006',
+  0,
+  1,
+  0,
+  '{"fullName":"山东省烟台市莱山区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001500060005',
+  '长岛县',
+  NULL,
+  '0001000300150006',
+  0,
+  1,
+  0,
+  '{"fullName":"山东省烟台市长岛县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001500060006',
+  '龙口市',
+  NULL,
+  '0001000300150006',
+  0,
+  1,
+  0,
+  '{"fullName":"山东省烟台市龙口市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001500060007',
+  '莱阳市',
+  NULL,
+  '0001000300150006',
+  0,
+  1,
+  0,
+  '{"fullName":"山东省烟台市莱阳市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001500060008',
+  '莱州市',
+  NULL,
+  '0001000300150006',
+  0,
+  1,
+  0,
+  '{"fullName":"山东省烟台市莱州市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001500060009',
+  '蓬莱市',
+  NULL,
+  '0001000300150006',
+  0,
+  1,
+  0,
+  '{"fullName":"山东省烟台市蓬莱市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001500060010',
+  '招远市',
+  NULL,
+  '0001000300150006',
+  0,
+  1,
+  0,
+  '{"fullName":"山东省烟台市招远市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001500060011',
+  '栖霞市',
+  NULL,
+  '0001000300150006',
+  0,
+  1,
+  0,
+  '{"fullName":"山东省烟台市栖霞市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001500060012',
+  '海阳市',
+  NULL,
+  '0001000300150006',
+  0,
+  1,
+  0,
+  '{"fullName":"山东省烟台市海阳市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300150007',
+  '潍坊市',
+  NULL,
+  '000100030015',
+  1,
+  1,
+  0,
+  '{"fullName":"山东省潍坊市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001500070001',
+  '潍城区',
+  NULL,
+  '0001000300150007',
+  0,
+  1,
+  0,
+  '{"fullName":"山东省潍坊市潍城区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001500070002',
+  '寒亭区',
+  NULL,
+  '0001000300150007',
+  0,
+  1,
+  0,
+  '{"fullName":"山东省潍坊市寒亭区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001500070003',
+  '坊子区',
+  NULL,
+  '0001000300150007',
+  0,
+  1,
+  0,
+  '{"fullName":"山东省潍坊市坊子区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001500070004',
+  '奎文区',
+  NULL,
+  '0001000300150007',
+  0,
+  1,
+  0,
+  '{"fullName":"山东省潍坊市奎文区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001500070005',
+  '临朐县',
+  NULL,
+  '0001000300150007',
+  0,
+  1,
+  0,
+  '{"fullName":"山东省潍坊市临朐县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001500070006',
+  '昌乐县',
+  NULL,
+  '0001000300150007',
+  0,
+  1,
+  0,
+  '{"fullName":"山东省潍坊市昌乐县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001500070007',
+  '青州市',
+  NULL,
+  '0001000300150007',
+  0,
+  1,
+  0,
+  '{"fullName":"山东省潍坊市青州市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001500070008',
+  '诸城市',
+  NULL,
+  '0001000300150007',
+  0,
+  1,
+  0,
+  '{"fullName":"山东省潍坊市诸城市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001500070009',
+  '寿光市',
+  NULL,
+  '0001000300150007',
+  0,
+  1,
+  0,
+  '{"fullName":"山东省潍坊市寿光市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001500070010',
+  '安丘市',
+  NULL,
+  '0001000300150007',
+  0,
+  1,
+  0,
+  '{"fullName":"山东省潍坊市安丘市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001500070011',
+  '高密市',
+  NULL,
+  '0001000300150007',
+  0,
+  1,
+  0,
+  '{"fullName":"山东省潍坊市高密市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001500070012',
+  '昌邑市',
+  NULL,
+  '0001000300150007',
+  0,
+  1,
+  0,
+  '{"fullName":"山东省潍坊市昌邑市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300150008',
+  '济宁市',
+  NULL,
+  '000100030015',
+  1,
+  1,
+  0,
+  '{"fullName":"山东省济宁市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001500080001',
+  '任城区',
+  NULL,
+  '0001000300150008',
+  0,
+  1,
+  0,
+  '{"fullName":"山东省济宁市任城区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001500080002',
+  '兖州区',
+  NULL,
+  '0001000300150008',
+  0,
+  1,
+  0,
+  '{"fullName":"山东省济宁市兖州区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001500080003',
+  '微山县',
+  NULL,
+  '0001000300150008',
+  0,
+  1,
+  0,
+  '{"fullName":"山东省济宁市微山县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001500080004',
+  '鱼台县',
+  NULL,
+  '0001000300150008',
+  0,
+  1,
+  0,
+  '{"fullName":"山东省济宁市鱼台县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001500080005',
+  '金乡县',
+  NULL,
+  '0001000300150008',
+  0,
+  1,
+  0,
+  '{"fullName":"山东省济宁市金乡县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001500080006',
+  '嘉祥县',
+  NULL,
+  '0001000300150008',
+  0,
+  1,
+  0,
+  '{"fullName":"山东省济宁市嘉祥县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001500080007',
+  '汶上县',
+  NULL,
+  '0001000300150008',
+  0,
+  1,
+  0,
+  '{"fullName":"山东省济宁市汶上县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001500080008',
+  '泗水县',
+  NULL,
+  '0001000300150008',
+  0,
+  1,
+  0,
+  '{"fullName":"山东省济宁市泗水县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001500080009',
+  '梁山县',
+  NULL,
+  '0001000300150008',
+  0,
+  1,
+  0,
+  '{"fullName":"山东省济宁市梁山县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001500080010',
+  '曲阜市',
+  NULL,
+  '0001000300150008',
+  0,
+  1,
+  0,
+  '{"fullName":"山东省济宁市曲阜市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001500080011',
+  '邹城市',
+  NULL,
+  '0001000300150008',
+  0,
+  1,
+  0,
+  '{"fullName":"山东省济宁市邹城市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300150009',
+  '泰安市',
+  NULL,
+  '000100030015',
+  1,
+  1,
+  0,
+  '{"fullName":"山东省泰安市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001500090001',
+  '泰山区',
+  NULL,
+  '0001000300150009',
+  0,
+  1,
+  0,
+  '{"fullName":"山东省泰安市泰山区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001500090002',
+  '岱岳区',
+  NULL,
+  '0001000300150009',
+  0,
+  1,
+  0,
+  '{"fullName":"山东省泰安市岱岳区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001500090003',
+  '宁阳县',
+  NULL,
+  '0001000300150009',
+  0,
+  1,
+  0,
+  '{"fullName":"山东省泰安市宁阳县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001500090004',
+  '东平县',
+  NULL,
+  '0001000300150009',
+  0,
+  1,
+  0,
+  '{"fullName":"山东省泰安市东平县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001500090005',
+  '新泰市',
+  NULL,
+  '0001000300150009',
+  0,
+  1,
+  0,
+  '{"fullName":"山东省泰安市新泰市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001500090006',
+  '肥城市',
+  NULL,
+  '0001000300150009',
+  0,
+  1,
+  0,
+  '{"fullName":"山东省泰安市肥城市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300150010',
+  '威海市',
+  NULL,
+  '000100030015',
+  1,
+  1,
+  0,
+  '{"fullName":"山东省威海市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001500100001',
+  '环翠区',
+  NULL,
+  '0001000300150010',
+  0,
+  1,
+  0,
+  '{"fullName":"山东省威海市环翠区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001500100002',
+  '文登区',
+  NULL,
+  '0001000300150010',
+  0,
+  1,
+  0,
+  '{"fullName":"山东省威海市文登区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001500100003',
+  '荣成市',
+  NULL,
+  '0001000300150010',
+  0,
+  1,
+  0,
+  '{"fullName":"山东省威海市荣成市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001500100004',
+  '乳山市',
+  NULL,
+  '0001000300150010',
+  0,
+  1,
+  0,
+  '{"fullName":"山东省威海市乳山市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300150011',
+  '日照市',
+  NULL,
+  '000100030015',
+  1,
+  1,
+  0,
+  '{"fullName":"山东省日照市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001500110001',
+  '东港区',
+  NULL,
+  '0001000300150011',
+  0,
+  1,
+  0,
+  '{"fullName":"山东省日照市东港区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001500110002',
+  '岚山区',
+  NULL,
+  '0001000300150011',
+  0,
+  1,
+  0,
+  '{"fullName":"山东省日照市岚山区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001500110003',
+  '五莲县',
+  NULL,
+  '0001000300150011',
+  0,
+  1,
+  0,
+  '{"fullName":"山东省日照市五莲县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001500110004',
+  '莒县',
+  NULL,
+  '0001000300150011',
+  0,
+  1,
+  0,
+  '{"fullName":"山东省日照市莒县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300150012',
+  '莱芜市',
+  NULL,
+  '000100030015',
+  1,
+  1,
+  0,
+  '{"fullName":"山东省莱芜市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001500120001',
+  '莱城区',
+  NULL,
+  '0001000300150012',
+  0,
+  1,
+  0,
+  '{"fullName":"山东省莱芜市莱城区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001500120002',
+  '钢城区',
+  NULL,
+  '0001000300150012',
+  0,
+  1,
+  0,
+  '{"fullName":"山东省莱芜市钢城区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300150013',
+  '临沂市',
+  NULL,
+  '000100030015',
+  1,
+  1,
+  0,
+  '{"fullName":"山东省临沂市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001500130001',
+  '兰山区',
+  NULL,
+  '0001000300150013',
+  0,
+  1,
+  0,
+  '{"fullName":"山东省临沂市兰山区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001500130002',
+  '罗庄区',
+  NULL,
+  '0001000300150013',
+  0,
+  1,
+  0,
+  '{"fullName":"山东省临沂市罗庄区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001500130003',
+  '河东区',
+  NULL,
+  '0001000300150013',
+  0,
+  1,
+  0,
+  '{"fullName":"山东省临沂市河东区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001500130004',
+  '沂南县',
+  NULL,
+  '0001000300150013',
+  0,
+  1,
+  0,
+  '{"fullName":"山东省临沂市沂南县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001500130005',
+  '郯城县',
+  NULL,
+  '0001000300150013',
+  0,
+  1,
+  0,
+  '{"fullName":"山东省临沂市郯城县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001500130006',
+  '沂水县',
+  NULL,
+  '0001000300150013',
+  0,
+  1,
+  0,
+  '{"fullName":"山东省临沂市沂水县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001500130007',
+  '兰陵县',
+  NULL,
+  '0001000300150013',
+  0,
+  1,
+  0,
+  '{"fullName":"山东省临沂市兰陵县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001500130008',
+  '费县',
+  NULL,
+  '0001000300150013',
+  0,
+  1,
+  0,
+  '{"fullName":"山东省临沂市费县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001500130009',
+  '平邑县',
+  NULL,
+  '0001000300150013',
+  0,
+  1,
+  0,
+  '{"fullName":"山东省临沂市平邑县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001500130010',
+  '莒南县',
+  NULL,
+  '0001000300150013',
+  0,
+  1,
+  0,
+  '{"fullName":"山东省临沂市莒南县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001500130011',
+  '蒙阴县',
+  NULL,
+  '0001000300150013',
+  0,
+  1,
+  0,
+  '{"fullName":"山东省临沂市蒙阴县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001500130012',
+  '临沭县',
+  NULL,
+  '0001000300150013',
+  0,
+  1,
+  0,
+  '{"fullName":"山东省临沂市临沭县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300150014',
+  '德州市',
+  NULL,
+  '000100030015',
+  1,
+  1,
+  0,
+  '{"fullName":"山东省德州市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001500140001',
+  '德城区',
+  NULL,
+  '0001000300150014',
+  0,
+  1,
+  0,
+  '{"fullName":"山东省德州市德城区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001500140002',
+  '陵城区',
+  NULL,
+  '0001000300150014',
+  0,
+  1,
+  0,
+  '{"fullName":"山东省德州市陵城区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001500140003',
+  '宁津县',
+  NULL,
+  '0001000300150014',
+  0,
+  1,
+  0,
+  '{"fullName":"山东省德州市宁津县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001500140004',
+  '庆云县',
+  NULL,
+  '0001000300150014',
+  0,
+  1,
+  0,
+  '{"fullName":"山东省德州市庆云县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001500140005',
+  '临邑县',
+  NULL,
+  '0001000300150014',
+  0,
+  1,
+  0,
+  '{"fullName":"山东省德州市临邑县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001500140006',
+  '齐河县',
+  NULL,
+  '0001000300150014',
+  0,
+  1,
+  0,
+  '{"fullName":"山东省德州市齐河县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001500140007',
+  '平原县',
+  NULL,
+  '0001000300150014',
+  0,
+  1,
+  0,
+  '{"fullName":"山东省德州市平原县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001500140008',
+  '夏津县',
+  NULL,
+  '0001000300150014',
+  0,
+  1,
+  0,
+  '{"fullName":"山东省德州市夏津县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001500140009',
+  '武城县',
+  NULL,
+  '0001000300150014',
+  0,
+  1,
+  0,
+  '{"fullName":"山东省德州市武城县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001500140010',
+  '乐陵市',
+  NULL,
+  '0001000300150014',
+  0,
+  1,
+  0,
+  '{"fullName":"山东省德州市乐陵市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001500140011',
+  '禹城市',
+  NULL,
+  '0001000300150014',
+  0,
+  1,
+  0,
+  '{"fullName":"山东省德州市禹城市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300150015',
+  '聊城市',
+  NULL,
+  '000100030015',
+  1,
+  1,
+  0,
+  '{"fullName":"山东省聊城市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001500150001',
+  '东昌府区',
+  NULL,
+  '0001000300150015',
+  0,
+  1,
+  0,
+  '{"fullName":"山东省聊城市东昌府区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001500150002',
+  '阳谷县',
+  NULL,
+  '0001000300150015',
+  0,
+  1,
+  0,
+  '{"fullName":"山东省聊城市阳谷县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001500150003',
+  '莘县',
+  NULL,
+  '0001000300150015',
+  0,
+  1,
+  0,
+  '{"fullName":"山东省聊城市莘县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001500150004',
+  '茌平县',
+  NULL,
+  '0001000300150015',
+  0,
+  1,
+  0,
+  '{"fullName":"山东省聊城市茌平县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001500150005',
+  '东阿县',
+  NULL,
+  '0001000300150015',
+  0,
+  1,
+  0,
+  '{"fullName":"山东省聊城市东阿县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001500150006',
+  '冠县',
+  NULL,
+  '0001000300150015',
+  0,
+  1,
+  0,
+  '{"fullName":"山东省聊城市冠县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001500150007',
+  '高唐县',
+  NULL,
+  '0001000300150015',
+  0,
+  1,
+  0,
+  '{"fullName":"山东省聊城市高唐县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001500150008',
+  '临清市',
+  NULL,
+  '0001000300150015',
+  0,
+  1,
+  0,
+  '{"fullName":"山东省聊城市临清市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300150016',
+  '滨州市',
+  NULL,
+  '000100030015',
+  1,
+  1,
+  0,
+  '{"fullName":"山东省滨州市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001500160001',
+  '滨城区',
+  NULL,
+  '0001000300150016',
+  0,
+  1,
+  0,
+  '{"fullName":"山东省滨州市滨城区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001500160002',
+  '沾化区',
+  NULL,
+  '0001000300150016',
+  0,
+  1,
+  0,
+  '{"fullName":"山东省滨州市沾化区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001500160003',
+  '惠民县',
+  NULL,
+  '0001000300150016',
+  0,
+  1,
+  0,
+  '{"fullName":"山东省滨州市惠民县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001500160004',
+  '阳信县',
+  NULL,
+  '0001000300150016',
+  0,
+  1,
+  0,
+  '{"fullName":"山东省滨州市阳信县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001500160005',
+  '无棣县',
+  NULL,
+  '0001000300150016',
+  0,
+  1,
+  0,
+  '{"fullName":"山东省滨州市无棣县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001500160006',
+  '博兴县',
+  NULL,
+  '0001000300150016',
+  0,
+  1,
+  0,
+  '{"fullName":"山东省滨州市博兴县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001500160007',
+  '邹平县',
+  NULL,
+  '0001000300150016',
+  0,
+  1,
+  0,
+  '{"fullName":"山东省滨州市邹平县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300150017',
+  '菏泽市',
+  NULL,
+  '000100030015',
+  1,
+  1,
+  0,
+  '{"fullName":"山东省菏泽市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001500170001',
+  '牡丹区',
+  NULL,
+  '0001000300150017',
+  0,
+  1,
+  0,
+  '{"fullName":"山东省菏泽市牡丹区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001500170002',
+  '定陶区',
+  NULL,
+  '0001000300150017',
+  0,
+  1,
+  0,
+  '{"fullName":"山东省菏泽市定陶区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001500170003',
+  '曹县',
+  NULL,
+  '0001000300150017',
+  0,
+  1,
+  0,
+  '{"fullName":"山东省菏泽市曹县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001500170004',
+  '单县',
+  NULL,
+  '0001000300150017',
+  0,
+  1,
+  0,
+  '{"fullName":"山东省菏泽市单县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001500170005',
+  '成武县',
+  NULL,
+  '0001000300150017',
+  0,
+  1,
+  0,
+  '{"fullName":"山东省菏泽市成武县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001500170006',
+  '巨野县',
+  NULL,
+  '0001000300150017',
+  0,
+  1,
+  0,
+  '{"fullName":"山东省菏泽市巨野县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001500170007',
+  '郓城县',
+  NULL,
+  '0001000300150017',
+  0,
+  1,
+  0,
+  '{"fullName":"山东省菏泽市郓城县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001500170008',
+  '鄄城县',
+  NULL,
+  '0001000300150017',
+  0,
+  1,
+  0,
+  '{"fullName":"山东省菏泽市鄄城县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001500170009',
+  '东明县',
+  NULL,
+  '0001000300150017',
+  0,
+  1,
+  0,
+  '{"fullName":"山东省菏泽市东明县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '000100030016',
+  '河南省',
+  NULL,
+  '00010003',
+  1,
+  1,
+  0,
+  '{"fullName":"河南省"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300160001',
+  '郑州市',
+  NULL,
+  '000100030016',
+  1,
+  1,
+  0,
+  '{"fullName":"河南省郑州市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001600010001',
+  '中原区',
+  NULL,
+  '0001000300160001',
+  0,
+  1,
+  0,
+  '{"fullName":"河南省郑州市中原区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001600010002',
+  '二七区',
+  NULL,
+  '0001000300160001',
+  0,
+  1,
+  0,
+  '{"fullName":"河南省郑州市二七区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001600010003',
+  '管城回族区',
+  NULL,
+  '0001000300160001',
+  0,
+  1,
+  0,
+  '{"fullName":"河南省郑州市管城回族区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001600010004',
+  '金水区',
+  NULL,
+  '0001000300160001',
+  0,
+  1,
+  0,
+  '{"fullName":"河南省郑州市金水区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001600010005',
+  '上街区',
+  NULL,
+  '0001000300160001',
+  0,
+  1,
+  0,
+  '{"fullName":"河南省郑州市上街区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001600010006',
+  '惠济区',
+  NULL,
+  '0001000300160001',
+  0,
+  1,
+  0,
+  '{"fullName":"河南省郑州市惠济区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001600010007',
+  '中牟县',
+  NULL,
+  '0001000300160001',
+  0,
+  1,
+  0,
+  '{"fullName":"河南省郑州市中牟县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001600010008',
+  '巩义市',
+  NULL,
+  '0001000300160001',
+  0,
+  1,
+  0,
+  '{"fullName":"河南省郑州市巩义市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001600010009',
+  '荥阳市',
+  NULL,
+  '0001000300160001',
+  0,
+  1,
+  0,
+  '{"fullName":"河南省郑州市荥阳市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001600010010',
+  '新密市',
+  NULL,
+  '0001000300160001',
+  0,
+  1,
+  0,
+  '{"fullName":"河南省郑州市新密市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001600010011',
+  '新郑市',
+  NULL,
+  '0001000300160001',
+  0,
+  1,
+  0,
+  '{"fullName":"河南省郑州市新郑市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001600010012',
+  '登封市',
+  NULL,
+  '0001000300160001',
+  0,
+  1,
+  0,
+  '{"fullName":"河南省郑州市登封市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300160002',
+  '开封市',
+  NULL,
+  '000100030016',
+  1,
+  1,
+  0,
+  '{"fullName":"河南省开封市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001600020001',
+  '龙亭区',
+  NULL,
+  '0001000300160002',
+  0,
+  1,
+  0,
+  '{"fullName":"河南省开封市龙亭区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001600020002',
+  '顺河回族区',
+  NULL,
+  '0001000300160002',
+  0,
+  1,
+  0,
+  '{"fullName":"河南省开封市顺河回族区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001600020003',
+  '鼓楼区',
+  NULL,
+  '0001000300160002',
+  0,
+  1,
+  0,
+  '{"fullName":"河南省开封市鼓楼区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001600020004',
+  '禹王台区',
+  NULL,
+  '0001000300160002',
+  0,
+  1,
+  0,
+  '{"fullName":"河南省开封市禹王台区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001600020005',
+  '金明区',
+  NULL,
+  '0001000300160002',
+  0,
+  1,
+  0,
+  '{"fullName":"河南省开封市金明区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001600020006',
+  '祥符区',
+  NULL,
+  '0001000300160002',
+  0,
+  1,
+  0,
+  '{"fullName":"河南省开封市祥符区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001600020007',
+  '杞县',
+  NULL,
+  '0001000300160002',
+  0,
+  1,
+  0,
+  '{"fullName":"河南省开封市杞县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001600020008',
+  '通许县',
+  NULL,
+  '0001000300160002',
+  0,
+  1,
+  0,
+  '{"fullName":"河南省开封市通许县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001600020009',
+  '尉氏县',
+  NULL,
+  '0001000300160002',
+  0,
+  1,
+  0,
+  '{"fullName":"河南省开封市尉氏县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001600020010',
+  '兰考县',
+  NULL,
+  '0001000300160002',
+  0,
+  1,
+  0,
+  '{"fullName":"河南省开封市兰考县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300160003',
+  '洛阳市',
+  NULL,
+  '000100030016',
+  1,
+  1,
+  0,
+  '{"fullName":"河南省洛阳市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001600030001',
+  '老城区',
+  NULL,
+  '0001000300160003',
+  0,
+  1,
+  0,
+  '{"fullName":"河南省洛阳市老城区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001600030002',
+  '西工区',
+  NULL,
+  '0001000300160003',
+  0,
+  1,
+  0,
+  '{"fullName":"河南省洛阳市西工区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001600030003',
+  '瀍河回族区',
+  NULL,
+  '0001000300160003',
+  0,
+  1,
+  0,
+  '{"fullName":"河南省洛阳市瀍河回族区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001600030004',
+  '涧西区',
+  NULL,
+  '0001000300160003',
+  0,
+  1,
+  0,
+  '{"fullName":"河南省洛阳市涧西区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001600030005',
+  '吉利区',
+  NULL,
+  '0001000300160003',
+  0,
+  1,
+  0,
+  '{"fullName":"河南省洛阳市吉利区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001600030006',
+  '洛龙区',
+  NULL,
+  '0001000300160003',
+  0,
+  1,
+  0,
+  '{"fullName":"河南省洛阳市洛龙区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001600030007',
+  '孟津县',
+  NULL,
+  '0001000300160003',
+  0,
+  1,
+  0,
+  '{"fullName":"河南省洛阳市孟津县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001600030008',
+  '新安县',
+  NULL,
+  '0001000300160003',
+  0,
+  1,
+  0,
+  '{"fullName":"河南省洛阳市新安县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001600030009',
+  '栾川县',
+  NULL,
+  '0001000300160003',
+  0,
+  1,
+  0,
+  '{"fullName":"河南省洛阳市栾川县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001600030010',
+  '嵩县',
+  NULL,
+  '0001000300160003',
+  0,
+  1,
+  0,
+  '{"fullName":"河南省洛阳市嵩县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001600030011',
+  '汝阳县',
+  NULL,
+  '0001000300160003',
+  0,
+  1,
+  0,
+  '{"fullName":"河南省洛阳市汝阳县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001600030012',
+  '宜阳县',
+  NULL,
+  '0001000300160003',
+  0,
+  1,
+  0,
+  '{"fullName":"河南省洛阳市宜阳县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001600030013',
+  '洛宁县',
+  NULL,
+  '0001000300160003',
+  0,
+  1,
+  0,
+  '{"fullName":"河南省洛阳市洛宁县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001600030014',
+  '伊川县',
+  NULL,
+  '0001000300160003',
+  0,
+  1,
+  0,
+  '{"fullName":"河南省洛阳市伊川县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001600030015',
+  '偃师市',
+  NULL,
+  '0001000300160003',
+  0,
+  1,
+  0,
+  '{"fullName":"河南省洛阳市偃师市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300160004',
+  '平顶山市',
+  NULL,
+  '000100030016',
+  1,
+  1,
+  0,
+  '{"fullName":"河南省平顶山市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001600040001',
+  '新华区',
+  NULL,
+  '0001000300160004',
+  0,
+  1,
+  0,
+  '{"fullName":"河南省平顶山市新华区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001600040002',
+  '卫东区',
+  NULL,
+  '0001000300160004',
+  0,
+  1,
+  0,
+  '{"fullName":"河南省平顶山市卫东区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001600040003',
+  '石龙区',
+  NULL,
+  '0001000300160004',
+  0,
+  1,
+  0,
+  '{"fullName":"河南省平顶山市石龙区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001600040004',
+  '湛河区',
+  NULL,
+  '0001000300160004',
+  0,
+  1,
+  0,
+  '{"fullName":"河南省平顶山市湛河区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001600040005',
+  '宝丰县',
+  NULL,
+  '0001000300160004',
+  0,
+  1,
+  0,
+  '{"fullName":"河南省平顶山市宝丰县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001600040006',
+  '叶县',
+  NULL,
+  '0001000300160004',
+  0,
+  1,
+  0,
+  '{"fullName":"河南省平顶山市叶县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001600040007',
+  '鲁山县',
+  NULL,
+  '0001000300160004',
+  0,
+  1,
+  0,
+  '{"fullName":"河南省平顶山市鲁山县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001600040008',
+  '郏县',
+  NULL,
+  '0001000300160004',
+  0,
+  1,
+  0,
+  '{"fullName":"河南省平顶山市郏县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001600040009',
+  '舞钢市',
+  NULL,
+  '0001000300160004',
+  0,
+  1,
+  0,
+  '{"fullName":"河南省平顶山市舞钢市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001600040010',
+  '汝州市',
+  NULL,
+  '0001000300160004',
+  0,
+  1,
+  0,
+  '{"fullName":"河南省平顶山市汝州市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300160005',
+  '安阳市',
+  NULL,
+  '000100030016',
+  1,
+  1,
+  0,
+  '{"fullName":"河南省安阳市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001600050001',
+  '文峰区',
+  NULL,
+  '0001000300160005',
+  0,
+  1,
+  0,
+  '{"fullName":"河南省安阳市文峰区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001600050002',
+  '北关区',
+  NULL,
+  '0001000300160005',
+  0,
+  1,
+  0,
+  '{"fullName":"河南省安阳市北关区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001600050003',
+  '殷都区',
+  NULL,
+  '0001000300160005',
+  0,
+  1,
+  0,
+  '{"fullName":"河南省安阳市殷都区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001600050004',
+  '龙安区',
+  NULL,
+  '0001000300160005',
+  0,
+  1,
+  0,
+  '{"fullName":"河南省安阳市龙安区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001600050005',
+  '安阳县',
+  NULL,
+  '0001000300160005',
+  0,
+  1,
+  0,
+  '{"fullName":"河南省安阳市安阳县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001600050006',
+  '汤阴县',
+  NULL,
+  '0001000300160005',
+  0,
+  1,
+  0,
+  '{"fullName":"河南省安阳市汤阴县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001600050007',
+  '滑县',
+  NULL,
+  '0001000300160005',
+  0,
+  1,
+  0,
+  '{"fullName":"河南省安阳市滑县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001600050008',
+  '内黄县',
+  NULL,
+  '0001000300160005',
+  0,
+  1,
+  0,
+  '{"fullName":"河南省安阳市内黄县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001600050009',
+  '林州市',
+  NULL,
+  '0001000300160005',
+  0,
+  1,
+  0,
+  '{"fullName":"河南省安阳市林州市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300160006',
+  '鹤壁市',
+  NULL,
+  '000100030016',
+  1,
+  1,
+  0,
+  '{"fullName":"河南省鹤壁市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001600060001',
+  '鹤山区',
+  NULL,
+  '0001000300160006',
+  0,
+  1,
+  0,
+  '{"fullName":"河南省鹤壁市鹤山区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001600060002',
+  '山城区',
+  NULL,
+  '0001000300160006',
+  0,
+  1,
+  0,
+  '{"fullName":"河南省鹤壁市山城区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001600060003',
+  '淇滨区',
+  NULL,
+  '0001000300160006',
+  0,
+  1,
+  0,
+  '{"fullName":"河南省鹤壁市淇滨区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001600060004',
+  '浚县',
+  NULL,
+  '0001000300160006',
+  0,
+  1,
+  0,
+  '{"fullName":"河南省鹤壁市浚县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001600060005',
+  '淇县',
+  NULL,
+  '0001000300160006',
+  0,
+  1,
+  0,
+  '{"fullName":"河南省鹤壁市淇县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300160007',
+  '新乡市',
+  NULL,
+  '000100030016',
+  1,
+  1,
+  0,
+  '{"fullName":"河南省新乡市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001600070001',
+  '红旗区',
+  NULL,
+  '0001000300160007',
+  0,
+  1,
+  0,
+  '{"fullName":"河南省新乡市红旗区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001600070002',
+  '卫滨区',
+  NULL,
+  '0001000300160007',
+  0,
+  1,
+  0,
+  '{"fullName":"河南省新乡市卫滨区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001600070003',
+  '凤泉区',
+  NULL,
+  '0001000300160007',
+  0,
+  1,
+  0,
+  '{"fullName":"河南省新乡市凤泉区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001600070004',
+  '牧野区',
+  NULL,
+  '0001000300160007',
+  0,
+  1,
+  0,
+  '{"fullName":"河南省新乡市牧野区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001600070005',
+  '新乡县',
+  NULL,
+  '0001000300160007',
+  0,
+  1,
+  0,
+  '{"fullName":"河南省新乡市新乡县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001600070006',
+  '获嘉县',
+  NULL,
+  '0001000300160007',
+  0,
+  1,
+  0,
+  '{"fullName":"河南省新乡市获嘉县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001600070007',
+  '原阳县',
+  NULL,
+  '0001000300160007',
+  0,
+  1,
+  0,
+  '{"fullName":"河南省新乡市原阳县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001600070008',
+  '延津县',
+  NULL,
+  '0001000300160007',
+  0,
+  1,
+  0,
+  '{"fullName":"河南省新乡市延津县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001600070009',
+  '封丘县',
+  NULL,
+  '0001000300160007',
+  0,
+  1,
+  0,
+  '{"fullName":"河南省新乡市封丘县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001600070010',
+  '长垣县',
+  NULL,
+  '0001000300160007',
+  0,
+  1,
+  0,
+  '{"fullName":"河南省新乡市长垣县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001600070011',
+  '卫辉市',
+  NULL,
+  '0001000300160007',
+  0,
+  1,
+  0,
+  '{"fullName":"河南省新乡市卫辉市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001600070012',
+  '辉县市',
+  NULL,
+  '0001000300160007',
+  0,
+  1,
+  0,
+  '{"fullName":"河南省新乡市辉县市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300160008',
+  '焦作市',
+  NULL,
+  '000100030016',
+  1,
+  1,
+  0,
+  '{"fullName":"河南省焦作市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001600080001',
+  '解放区',
+  NULL,
+  '0001000300160008',
+  0,
+  1,
+  0,
+  '{"fullName":"河南省焦作市解放区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001600080002',
+  '中站区',
+  NULL,
+  '0001000300160008',
+  0,
+  1,
+  0,
+  '{"fullName":"河南省焦作市中站区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001600080003',
+  '马村区',
+  NULL,
+  '0001000300160008',
+  0,
+  1,
+  0,
+  '{"fullName":"河南省焦作市马村区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001600080004',
+  '山阳区',
+  NULL,
+  '0001000300160008',
+  0,
+  1,
+  0,
+  '{"fullName":"河南省焦作市山阳区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001600080005',
+  '修武县',
+  NULL,
+  '0001000300160008',
+  0,
+  1,
+  0,
+  '{"fullName":"河南省焦作市修武县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001600080006',
+  '博爱县',
+  NULL,
+  '0001000300160008',
+  0,
+  1,
+  0,
+  '{"fullName":"河南省焦作市博爱县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001600080007',
+  '武陟县',
+  NULL,
+  '0001000300160008',
+  0,
+  1,
+  0,
+  '{"fullName":"河南省焦作市武陟县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001600080008',
+  '温县',
+  NULL,
+  '0001000300160008',
+  0,
+  1,
+  0,
+  '{"fullName":"河南省焦作市温县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001600080009',
+  '沁阳市',
+  NULL,
+  '0001000300160008',
+  0,
+  1,
+  0,
+  '{"fullName":"河南省焦作市沁阳市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001600080010',
+  '孟州市',
+  NULL,
+  '0001000300160008',
+  0,
+  1,
+  0,
+  '{"fullName":"河南省焦作市孟州市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300160009',
+  '濮阳市',
+  NULL,
+  '000100030016',
+  1,
+  1,
+  0,
+  '{"fullName":"河南省濮阳市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001600090001',
+  '华龙区',
+  NULL,
+  '0001000300160009',
+  0,
+  1,
+  0,
+  '{"fullName":"河南省濮阳市华龙区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001600090002',
+  '清丰县',
+  NULL,
+  '0001000300160009',
+  0,
+  1,
+  0,
+  '{"fullName":"河南省濮阳市清丰县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001600090003',
+  '南乐县',
+  NULL,
+  '0001000300160009',
+  0,
+  1,
+  0,
+  '{"fullName":"河南省濮阳市南乐县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001600090004',
+  '范县',
+  NULL,
+  '0001000300160009',
+  0,
+  1,
+  0,
+  '{"fullName":"河南省濮阳市范县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001600090005',
+  '台前县',
+  NULL,
+  '0001000300160009',
+  0,
+  1,
+  0,
+  '{"fullName":"河南省濮阳市台前县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001600090006',
+  '濮阳县',
+  NULL,
+  '0001000300160009',
+  0,
+  1,
+  0,
+  '{"fullName":"河南省濮阳市濮阳县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300160010',
+  '许昌市',
+  NULL,
+  '000100030016',
+  1,
+  1,
+  0,
+  '{"fullName":"河南省许昌市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001600100001',
+  '魏都区',
+  NULL,
+  '0001000300160010',
+  0,
+  1,
+  0,
+  '{"fullName":"河南省许昌市魏都区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001600100002',
+  '许昌县',
+  NULL,
+  '0001000300160010',
+  0,
+  1,
+  0,
+  '{"fullName":"河南省许昌市许昌县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001600100003',
+  '鄢陵县',
+  NULL,
+  '0001000300160010',
+  0,
+  1,
+  0,
+  '{"fullName":"河南省许昌市鄢陵县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001600100004',
+  '襄城县',
+  NULL,
+  '0001000300160010',
+  0,
+  1,
+  0,
+  '{"fullName":"河南省许昌市襄城县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001600100005',
+  '禹州市',
+  NULL,
+  '0001000300160010',
+  0,
+  1,
+  0,
+  '{"fullName":"河南省许昌市禹州市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001600100006',
+  '长葛市',
+  NULL,
+  '0001000300160010',
+  0,
+  1,
+  0,
+  '{"fullName":"河南省许昌市长葛市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300160011',
+  '漯河市',
+  NULL,
+  '000100030016',
+  1,
+  1,
+  0,
+  '{"fullName":"河南省漯河市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001600110001',
+  '源汇区',
+  NULL,
+  '0001000300160011',
+  0,
+  1,
+  0,
+  '{"fullName":"河南省漯河市源汇区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001600110002',
+  '郾城区',
+  NULL,
+  '0001000300160011',
+  0,
+  1,
+  0,
+  '{"fullName":"河南省漯河市郾城区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001600110003',
+  '召陵区',
+  NULL,
+  '0001000300160011',
+  0,
+  1,
+  0,
+  '{"fullName":"河南省漯河市召陵区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001600110004',
+  '舞阳县',
+  NULL,
+  '0001000300160011',
+  0,
+  1,
+  0,
+  '{"fullName":"河南省漯河市舞阳县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001600110005',
+  '临颍县',
+  NULL,
+  '0001000300160011',
+  0,
+  1,
+  0,
+  '{"fullName":"河南省漯河市临颍县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300160012',
+  '三门峡市',
+  NULL,
+  '000100030016',
+  1,
+  1,
+  0,
+  '{"fullName":"河南省三门峡市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001600120001',
+  '湖滨区',
+  NULL,
+  '0001000300160012',
+  0,
+  1,
+  0,
+  '{"fullName":"河南省三门峡市湖滨区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001600120002',
+  '陕州区',
+  NULL,
+  '0001000300160012',
+  0,
+  1,
+  0,
+  '{"fullName":"河南省三门峡市陕州区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001600120003',
+  '渑池县',
+  NULL,
+  '0001000300160012',
+  0,
+  1,
+  0,
+  '{"fullName":"河南省三门峡市渑池县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001600120004',
+  '卢氏县',
+  NULL,
+  '0001000300160012',
+  0,
+  1,
+  0,
+  '{"fullName":"河南省三门峡市卢氏县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001600120005',
+  '义马市',
+  NULL,
+  '0001000300160012',
+  0,
+  1,
+  0,
+  '{"fullName":"河南省三门峡市义马市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001600120006',
+  '灵宝市',
+  NULL,
+  '0001000300160012',
+  0,
+  1,
+  0,
+  '{"fullName":"河南省三门峡市灵宝市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300160013',
+  '南阳市',
+  NULL,
+  '000100030016',
+  1,
+  1,
+  0,
+  '{"fullName":"河南省南阳市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001600130001',
+  '宛城区',
+  NULL,
+  '0001000300160013',
+  0,
+  1,
+  0,
+  '{"fullName":"河南省南阳市宛城区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001600130002',
+  '卧龙区',
+  NULL,
+  '0001000300160013',
+  0,
+  1,
+  0,
+  '{"fullName":"河南省南阳市卧龙区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001600130003',
+  '南召县',
+  NULL,
+  '0001000300160013',
+  0,
+  1,
+  0,
+  '{"fullName":"河南省南阳市南召县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001600130004',
+  '方城县',
+  NULL,
+  '0001000300160013',
+  0,
+  1,
+  0,
+  '{"fullName":"河南省南阳市方城县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001600130005',
+  '西峡县',
+  NULL,
+  '0001000300160013',
+  0,
+  1,
+  0,
+  '{"fullName":"河南省南阳市西峡县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001600130006',
+  '镇平县',
+  NULL,
+  '0001000300160013',
+  0,
+  1,
+  0,
+  '{"fullName":"河南省南阳市镇平县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001600130007',
+  '内乡县',
+  NULL,
+  '0001000300160013',
+  0,
+  1,
+  0,
+  '{"fullName":"河南省南阳市内乡县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001600130008',
+  '淅川县',
+  NULL,
+  '0001000300160013',
+  0,
+  1,
+  0,
+  '{"fullName":"河南省南阳市淅川县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001600130009',
+  '社旗县',
+  NULL,
+  '0001000300160013',
+  0,
+  1,
+  0,
+  '{"fullName":"河南省南阳市社旗县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001600130010',
+  '唐河县',
+  NULL,
+  '0001000300160013',
+  0,
+  1,
+  0,
+  '{"fullName":"河南省南阳市唐河县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001600130011',
+  '新野县',
+  NULL,
+  '0001000300160013',
+  0,
+  1,
+  0,
+  '{"fullName":"河南省南阳市新野县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001600130012',
+  '桐柏县',
+  NULL,
+  '0001000300160013',
+  0,
+  1,
+  0,
+  '{"fullName":"河南省南阳市桐柏县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001600130013',
+  '邓州市',
+  NULL,
+  '0001000300160013',
+  0,
+  1,
+  0,
+  '{"fullName":"河南省南阳市邓州市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300160014',
+  '商丘市',
+  NULL,
+  '000100030016',
+  1,
+  1,
+  0,
+  '{"fullName":"河南省商丘市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001600140001',
+  '梁园区',
+  NULL,
+  '0001000300160014',
+  0,
+  1,
+  0,
+  '{"fullName":"河南省商丘市梁园区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001600140002',
+  '睢阳区',
+  NULL,
+  '0001000300160014',
+  0,
+  1,
+  0,
+  '{"fullName":"河南省商丘市睢阳区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001600140003',
+  '民权县',
+  NULL,
+  '0001000300160014',
+  0,
+  1,
+  0,
+  '{"fullName":"河南省商丘市民权县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001600140004',
+  '睢县',
+  NULL,
+  '0001000300160014',
+  0,
+  1,
+  0,
+  '{"fullName":"河南省商丘市睢县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001600140005',
+  '宁陵县',
+  NULL,
+  '0001000300160014',
+  0,
+  1,
+  0,
+  '{"fullName":"河南省商丘市宁陵县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001600140006',
+  '柘城县',
+  NULL,
+  '0001000300160014',
+  0,
+  1,
+  0,
+  '{"fullName":"河南省商丘市柘城县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001600140007',
+  '虞城县',
+  NULL,
+  '0001000300160014',
+  0,
+  1,
+  0,
+  '{"fullName":"河南省商丘市虞城县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001600140008',
+  '夏邑县',
+  NULL,
+  '0001000300160014',
+  0,
+  1,
+  0,
+  '{"fullName":"河南省商丘市夏邑县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001600140009',
+  '永城市',
+  NULL,
+  '0001000300160014',
+  0,
+  1,
+  0,
+  '{"fullName":"河南省商丘市永城市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300160015',
+  '信阳市',
+  NULL,
+  '000100030016',
+  1,
+  1,
+  0,
+  '{"fullName":"河南省信阳市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001600150001',
+  '浉河区',
+  NULL,
+  '0001000300160015',
+  0,
+  1,
+  0,
+  '{"fullName":"河南省信阳市浉河区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001600150002',
+  '平桥区',
+  NULL,
+  '0001000300160015',
+  0,
+  1,
+  0,
+  '{"fullName":"河南省信阳市平桥区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001600150003',
+  '罗山县',
+  NULL,
+  '0001000300160015',
+  0,
+  1,
+  0,
+  '{"fullName":"河南省信阳市罗山县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001600150004',
+  '光山县',
+  NULL,
+  '0001000300160015',
+  0,
+  1,
+  0,
+  '{"fullName":"河南省信阳市光山县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001600150005',
+  '新县',
+  NULL,
+  '0001000300160015',
+  0,
+  1,
+  0,
+  '{"fullName":"河南省信阳市新县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001600150006',
+  '商城县',
+  NULL,
+  '0001000300160015',
+  0,
+  1,
+  0,
+  '{"fullName":"河南省信阳市商城县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001600150007',
+  '固始县',
+  NULL,
+  '0001000300160015',
+  0,
+  1,
+  0,
+  '{"fullName":"河南省信阳市固始县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001600150008',
+  '潢川县',
+  NULL,
+  '0001000300160015',
+  0,
+  1,
+  0,
+  '{"fullName":"河南省信阳市潢川县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001600150009',
+  '淮滨县',
+  NULL,
+  '0001000300160015',
+  0,
+  1,
+  0,
+  '{"fullName":"河南省信阳市淮滨县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001600150010',
+  '息县',
+  NULL,
+  '0001000300160015',
+  0,
+  1,
+  0,
+  '{"fullName":"河南省信阳市息县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300160016',
+  '周口市',
+  NULL,
+  '000100030016',
+  1,
+  1,
+  0,
+  '{"fullName":"河南省周口市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001600160001',
+  '川汇区',
+  NULL,
+  '0001000300160016',
+  0,
+  1,
+  0,
+  '{"fullName":"河南省周口市川汇区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001600160002',
+  '扶沟县',
+  NULL,
+  '0001000300160016',
+  0,
+  1,
+  0,
+  '{"fullName":"河南省周口市扶沟县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001600160003',
+  '西华县',
+  NULL,
+  '0001000300160016',
+  0,
+  1,
+  0,
+  '{"fullName":"河南省周口市西华县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001600160004',
+  '商水县',
+  NULL,
+  '0001000300160016',
+  0,
+  1,
+  0,
+  '{"fullName":"河南省周口市商水县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001600160005',
+  '沈丘县',
+  NULL,
+  '0001000300160016',
+  0,
+  1,
+  0,
+  '{"fullName":"河南省周口市沈丘县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001600160006',
+  '郸城县',
+  NULL,
+  '0001000300160016',
+  0,
+  1,
+  0,
+  '{"fullName":"河南省周口市郸城县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001600160007',
+  '淮阳县',
+  NULL,
+  '0001000300160016',
+  0,
+  1,
+  0,
+  '{"fullName":"河南省周口市淮阳县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001600160008',
+  '太康县',
+  NULL,
+  '0001000300160016',
+  0,
+  1,
+  0,
+  '{"fullName":"河南省周口市太康县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001600160009',
+  '鹿邑县',
+  NULL,
+  '0001000300160016',
+  0,
+  1,
+  0,
+  '{"fullName":"河南省周口市鹿邑县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001600160010',
+  '项城市',
+  NULL,
+  '0001000300160016',
+  0,
+  1,
+  0,
+  '{"fullName":"河南省周口市项城市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300160017',
+  '驻马店市',
+  NULL,
+  '000100030016',
+  1,
+  1,
+  0,
+  '{"fullName":"河南省驻马店市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001600170001',
+  '驿城区',
+  NULL,
+  '0001000300160017',
+  0,
+  1,
+  0,
+  '{"fullName":"河南省驻马店市驿城区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001600170002',
+  '西平县',
+  NULL,
+  '0001000300160017',
+  0,
+  1,
+  0,
+  '{"fullName":"河南省驻马店市西平县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001600170003',
+  '上蔡县',
+  NULL,
+  '0001000300160017',
+  0,
+  1,
+  0,
+  '{"fullName":"河南省驻马店市上蔡县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001600170004',
+  '平舆县',
+  NULL,
+  '0001000300160017',
+  0,
+  1,
+  0,
+  '{"fullName":"河南省驻马店市平舆县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001600170005',
+  '正阳县',
+  NULL,
+  '0001000300160017',
+  0,
+  1,
+  0,
+  '{"fullName":"河南省驻马店市正阳县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001600170006',
+  '确山县',
+  NULL,
+  '0001000300160017',
+  0,
+  1,
+  0,
+  '{"fullName":"河南省驻马店市确山县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001600170007',
+  '泌阳县',
+  NULL,
+  '0001000300160017',
+  0,
+  1,
+  0,
+  '{"fullName":"河南省驻马店市泌阳县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001600170008',
+  '汝南县',
+  NULL,
+  '0001000300160017',
+  0,
+  1,
+  0,
+  '{"fullName":"河南省驻马店市汝南县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001600170009',
+  '遂平县',
+  NULL,
+  '0001000300160017',
+  0,
+  1,
+  0,
+  '{"fullName":"河南省驻马店市遂平县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001600170010',
+  '新蔡县',
+  NULL,
+  '0001000300160017',
+  0,
+  1,
+  0,
+  '{"fullName":"河南省驻马店市新蔡县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300160018',
+  '省直辖县级行政区划',
+  NULL,
+  '000100030016',
+  1,
+  1,
+  0,
+  '{"fullName":"河南省省直辖县级行政区划"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001600180001',
+  '济源市',
+  NULL,
+  '0001000300160018',
+  0,
+  1,
+  0,
+  '{"fullName":"河南省省直辖县级行政区划济源市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '000100030017',
+  '湖北省',
+  NULL,
+  '00010003',
+  1,
+  1,
+  0,
+  '{"fullName":"湖北省"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300170001',
+  '武汉市',
+  NULL,
+  '000100030017',
+  1,
+  1,
+  0,
+  '{"fullName":"湖北省武汉市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001700010001',
+  '江岸区',
+  NULL,
+  '0001000300170001',
+  0,
+  1,
+  0,
+  '{"fullName":"湖北省武汉市江岸区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001700010002',
+  '江汉区',
+  NULL,
+  '0001000300170001',
+  0,
+  1,
+  0,
+  '{"fullName":"湖北省武汉市江汉区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001700010003',
+  '硚口区',
+  NULL,
+  '0001000300170001',
+  0,
+  1,
+  0,
+  '{"fullName":"湖北省武汉市硚口区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001700010004',
+  '汉阳区',
+  NULL,
+  '0001000300170001',
+  0,
+  1,
+  0,
+  '{"fullName":"湖北省武汉市汉阳区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001700010005',
+  '武昌区',
+  NULL,
+  '0001000300170001',
+  0,
+  1,
+  0,
+  '{"fullName":"湖北省武汉市武昌区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001700010006',
+  '青山区',
+  NULL,
+  '0001000300170001',
+  0,
+  1,
+  0,
+  '{"fullName":"湖北省武汉市青山区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001700010007',
+  '洪山区',
+  NULL,
+  '0001000300170001',
+  0,
+  1,
+  0,
+  '{"fullName":"湖北省武汉市洪山区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001700010008',
+  '东西湖区',
+  NULL,
+  '0001000300170001',
+  0,
+  1,
+  0,
+  '{"fullName":"湖北省武汉市东西湖区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001700010009',
+  '汉南区',
+  NULL,
+  '0001000300170001',
+  0,
+  1,
+  0,
+  '{"fullName":"湖北省武汉市汉南区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001700010010',
+  '蔡甸区',
+  NULL,
+  '0001000300170001',
+  0,
+  1,
+  0,
+  '{"fullName":"湖北省武汉市蔡甸区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001700010011',
+  '江夏区',
+  NULL,
+  '0001000300170001',
+  0,
+  1,
+  0,
+  '{"fullName":"湖北省武汉市江夏区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001700010012',
+  '黄陂区',
+  NULL,
+  '0001000300170001',
+  0,
+  1,
+  0,
+  '{"fullName":"湖北省武汉市黄陂区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001700010013',
+  '新洲区',
+  NULL,
+  '0001000300170001',
+  0,
+  1,
+  0,
+  '{"fullName":"湖北省武汉市新洲区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300170002',
+  '黄石市',
+  NULL,
+  '000100030017',
+  1,
+  1,
+  0,
+  '{"fullName":"湖北省黄石市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001700020001',
+  '黄石港区',
+  NULL,
+  '0001000300170002',
+  0,
+  1,
+  0,
+  '{"fullName":"湖北省黄石市黄石港区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001700020002',
+  '西塞山区',
+  NULL,
+  '0001000300170002',
+  0,
+  1,
+  0,
+  '{"fullName":"湖北省黄石市西塞山区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001700020003',
+  '下陆区',
+  NULL,
+  '0001000300170002',
+  0,
+  1,
+  0,
+  '{"fullName":"湖北省黄石市下陆区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001700020004',
+  '铁山区',
+  NULL,
+  '0001000300170002',
+  0,
+  1,
+  0,
+  '{"fullName":"湖北省黄石市铁山区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001700020005',
+  '阳新县',
+  NULL,
+  '0001000300170002',
+  0,
+  1,
+  0,
+  '{"fullName":"湖北省黄石市阳新县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001700020006',
+  '大冶市',
+  NULL,
+  '0001000300170002',
+  0,
+  1,
+  0,
+  '{"fullName":"湖北省黄石市大冶市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300170003',
+  '十堰市',
+  NULL,
+  '000100030017',
+  1,
+  1,
+  0,
+  '{"fullName":"湖北省十堰市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001700030001',
+  '茅箭区',
+  NULL,
+  '0001000300170003',
+  0,
+  1,
+  0,
+  '{"fullName":"湖北省十堰市茅箭区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001700030002',
+  '张湾区',
+  NULL,
+  '0001000300170003',
+  0,
+  1,
+  0,
+  '{"fullName":"湖北省十堰市张湾区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001700030003',
+  '郧阳区',
+  NULL,
+  '0001000300170003',
+  0,
+  1,
+  0,
+  '{"fullName":"湖北省十堰市郧阳区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001700030004',
+  '郧西县',
+  NULL,
+  '0001000300170003',
+  0,
+  1,
+  0,
+  '{"fullName":"湖北省十堰市郧西县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001700030005',
+  '竹山县',
+  NULL,
+  '0001000300170003',
+  0,
+  1,
+  0,
+  '{"fullName":"湖北省十堰市竹山县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001700030006',
+  '竹溪县',
+  NULL,
+  '0001000300170003',
+  0,
+  1,
+  0,
+  '{"fullName":"湖北省十堰市竹溪县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001700030007',
+  '房县',
+  NULL,
+  '0001000300170003',
+  0,
+  1,
+  0,
+  '{"fullName":"湖北省十堰市房县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001700030008',
+  '丹江口市',
+  NULL,
+  '0001000300170003',
+  0,
+  1,
+  0,
+  '{"fullName":"湖北省十堰市丹江口市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300170004',
+  '宜昌市',
+  NULL,
+  '000100030017',
+  1,
+  1,
+  0,
+  '{"fullName":"湖北省宜昌市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001700040001',
+  '西陵区',
+  NULL,
+  '0001000300170004',
+  0,
+  1,
+  0,
+  '{"fullName":"湖北省宜昌市西陵区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001700040002',
+  '伍家岗区',
+  NULL,
+  '0001000300170004',
+  0,
+  1,
+  0,
+  '{"fullName":"湖北省宜昌市伍家岗区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001700040003',
+  '点军区',
+  NULL,
+  '0001000300170004',
+  0,
+  1,
+  0,
+  '{"fullName":"湖北省宜昌市点军区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001700040004',
+  '猇亭区',
+  NULL,
+  '0001000300170004',
+  0,
+  1,
+  0,
+  '{"fullName":"湖北省宜昌市猇亭区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001700040005',
+  '夷陵区',
+  NULL,
+  '0001000300170004',
+  0,
+  1,
+  0,
+  '{"fullName":"湖北省宜昌市夷陵区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001700040006',
+  '远安县',
+  NULL,
+  '0001000300170004',
+  0,
+  1,
+  0,
+  '{"fullName":"湖北省宜昌市远安县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001700040007',
+  '兴山县',
+  NULL,
+  '0001000300170004',
+  0,
+  1,
+  0,
+  '{"fullName":"湖北省宜昌市兴山县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001700040008',
+  '秭归县',
+  NULL,
+  '0001000300170004',
+  0,
+  1,
+  0,
+  '{"fullName":"湖北省宜昌市秭归县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001700040009',
+  '长阳土家族自治县',
+  NULL,
+  '0001000300170004',
+  0,
+  1,
+  0,
+  '{"fullName":"湖北省宜昌市长阳土家族自治县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001700040010',
+  '五峰土家族自治县',
+  NULL,
+  '0001000300170004',
+  0,
+  1,
+  0,
+  '{"fullName":"湖北省宜昌市五峰土家族自治县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001700040011',
+  '宜都市',
+  NULL,
+  '0001000300170004',
+  0,
+  1,
+  0,
+  '{"fullName":"湖北省宜昌市宜都市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001700040012',
+  '当阳市',
+  NULL,
+  '0001000300170004',
+  0,
+  1,
+  0,
+  '{"fullName":"湖北省宜昌市当阳市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001700040013',
+  '枝江市',
+  NULL,
+  '0001000300170004',
+  0,
+  1,
+  0,
+  '{"fullName":"湖北省宜昌市枝江市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300170005',
+  '襄阳市',
+  NULL,
+  '000100030017',
+  1,
+  1,
+  0,
+  '{"fullName":"湖北省襄阳市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001700050001',
+  '襄城区',
+  NULL,
+  '0001000300170005',
+  0,
+  1,
+  0,
+  '{"fullName":"湖北省襄阳市襄城区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001700050002',
+  '樊城区',
+  NULL,
+  '0001000300170005',
+  0,
+  1,
+  0,
+  '{"fullName":"湖北省襄阳市樊城区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001700050003',
+  '襄州区',
+  NULL,
+  '0001000300170005',
+  0,
+  1,
+  0,
+  '{"fullName":"湖北省襄阳市襄州区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001700050004',
+  '南漳县',
+  NULL,
+  '0001000300170005',
+  0,
+  1,
+  0,
+  '{"fullName":"湖北省襄阳市南漳县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001700050005',
+  '谷城县',
+  NULL,
+  '0001000300170005',
+  0,
+  1,
+  0,
+  '{"fullName":"湖北省襄阳市谷城县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001700050006',
+  '保康县',
+  NULL,
+  '0001000300170005',
+  0,
+  1,
+  0,
+  '{"fullName":"湖北省襄阳市保康县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001700050007',
+  '老河口市',
+  NULL,
+  '0001000300170005',
+  0,
+  1,
+  0,
+  '{"fullName":"湖北省襄阳市老河口市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001700050008',
+  '枣阳市',
+  NULL,
+  '0001000300170005',
+  0,
+  1,
+  0,
+  '{"fullName":"湖北省襄阳市枣阳市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001700050009',
+  '宜城市',
+  NULL,
+  '0001000300170005',
+  0,
+  1,
+  0,
+  '{"fullName":"湖北省襄阳市宜城市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300170006',
+  '鄂州市',
+  NULL,
+  '000100030017',
+  1,
+  1,
+  0,
+  '{"fullName":"湖北省鄂州市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001700060001',
+  '梁子湖区',
+  NULL,
+  '0001000300170006',
+  0,
+  1,
+  0,
+  '{"fullName":"湖北省鄂州市梁子湖区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001700060002',
+  '华容区',
+  NULL,
+  '0001000300170006',
+  0,
+  1,
+  0,
+  '{"fullName":"湖北省鄂州市华容区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001700060003',
+  '鄂城区',
+  NULL,
+  '0001000300170006',
+  0,
+  1,
+  0,
+  '{"fullName":"湖北省鄂州市鄂城区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300170007',
+  '荆门市',
+  NULL,
+  '000100030017',
+  1,
+  1,
+  0,
+  '{"fullName":"湖北省荆门市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001700070001',
+  '东宝区',
+  NULL,
+  '0001000300170007',
+  0,
+  1,
+  0,
+  '{"fullName":"湖北省荆门市东宝区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001700070002',
+  '掇刀区',
+  NULL,
+  '0001000300170007',
+  0,
+  1,
+  0,
+  '{"fullName":"湖北省荆门市掇刀区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001700070003',
+  '京山县',
+  NULL,
+  '0001000300170007',
+  0,
+  1,
+  0,
+  '{"fullName":"湖北省荆门市京山县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001700070004',
+  '沙洋县',
+  NULL,
+  '0001000300170007',
+  0,
+  1,
+  0,
+  '{"fullName":"湖北省荆门市沙洋县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001700070005',
+  '钟祥市',
+  NULL,
+  '0001000300170007',
+  0,
+  1,
+  0,
+  '{"fullName":"湖北省荆门市钟祥市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300170008',
+  '孝感市',
+  NULL,
+  '000100030017',
+  1,
+  1,
+  0,
+  '{"fullName":"湖北省孝感市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001700080001',
+  '孝南区',
+  NULL,
+  '0001000300170008',
+  0,
+  1,
+  0,
+  '{"fullName":"湖北省孝感市孝南区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001700080002',
+  '孝昌县',
+  NULL,
+  '0001000300170008',
+  0,
+  1,
+  0,
+  '{"fullName":"湖北省孝感市孝昌县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001700080003',
+  '大悟县',
+  NULL,
+  '0001000300170008',
+  0,
+  1,
+  0,
+  '{"fullName":"湖北省孝感市大悟县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001700080004',
+  '云梦县',
+  NULL,
+  '0001000300170008',
+  0,
+  1,
+  0,
+  '{"fullName":"湖北省孝感市云梦县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001700080005',
+  '应城市',
+  NULL,
+  '0001000300170008',
+  0,
+  1,
+  0,
+  '{"fullName":"湖北省孝感市应城市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001700080006',
+  '安陆市',
+  NULL,
+  '0001000300170008',
+  0,
+  1,
+  0,
+  '{"fullName":"湖北省孝感市安陆市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001700080007',
+  '汉川市',
+  NULL,
+  '0001000300170008',
+  0,
+  1,
+  0,
+  '{"fullName":"湖北省孝感市汉川市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300170009',
+  '荆州市',
+  NULL,
+  '000100030017',
+  1,
+  1,
+  0,
+  '{"fullName":"湖北省荆州市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001700090001',
+  '沙市区',
+  NULL,
+  '0001000300170009',
+  0,
+  1,
+  0,
+  '{"fullName":"湖北省荆州市沙市区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001700090002',
+  '荆州区',
+  NULL,
+  '0001000300170009',
+  0,
+  1,
+  0,
+  '{"fullName":"湖北省荆州市荆州区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001700090003',
+  '公安县',
+  NULL,
+  '0001000300170009',
+  0,
+  1,
+  0,
+  '{"fullName":"湖北省荆州市公安县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001700090004',
+  '监利县',
+  NULL,
+  '0001000300170009',
+  0,
+  1,
+  0,
+  '{"fullName":"湖北省荆州市监利县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001700090005',
+  '江陵县',
+  NULL,
+  '0001000300170009',
+  0,
+  1,
+  0,
+  '{"fullName":"湖北省荆州市江陵县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001700090006',
+  '石首市',
+  NULL,
+  '0001000300170009',
+  0,
+  1,
+  0,
+  '{"fullName":"湖北省荆州市石首市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001700090007',
+  '洪湖市',
+  NULL,
+  '0001000300170009',
+  0,
+  1,
+  0,
+  '{"fullName":"湖北省荆州市洪湖市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001700090008',
+  '松滋市',
+  NULL,
+  '0001000300170009',
+  0,
+  1,
+  0,
+  '{"fullName":"湖北省荆州市松滋市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300170010',
+  '黄冈市',
+  NULL,
+  '000100030017',
+  1,
+  1,
+  0,
+  '{"fullName":"湖北省黄冈市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001700100001',
+  '黄州区',
+  NULL,
+  '0001000300170010',
+  0,
+  1,
+  0,
+  '{"fullName":"湖北省黄冈市黄州区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001700100002',
+  '团风县',
+  NULL,
+  '0001000300170010',
+  0,
+  1,
+  0,
+  '{"fullName":"湖北省黄冈市团风县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001700100003',
+  '红安县',
+  NULL,
+  '0001000300170010',
+  0,
+  1,
+  0,
+  '{"fullName":"湖北省黄冈市红安县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001700100004',
+  '罗田县',
+  NULL,
+  '0001000300170010',
+  0,
+  1,
+  0,
+  '{"fullName":"湖北省黄冈市罗田县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001700100005',
+  '英山县',
+  NULL,
+  '0001000300170010',
+  0,
+  1,
+  0,
+  '{"fullName":"湖北省黄冈市英山县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001700100006',
+  '浠水县',
+  NULL,
+  '0001000300170010',
+  0,
+  1,
+  0,
+  '{"fullName":"湖北省黄冈市浠水县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001700100007',
+  '蕲春县',
+  NULL,
+  '0001000300170010',
+  0,
+  1,
+  0,
+  '{"fullName":"湖北省黄冈市蕲春县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001700100008',
+  '黄梅县',
+  NULL,
+  '0001000300170010',
+  0,
+  1,
+  0,
+  '{"fullName":"湖北省黄冈市黄梅县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001700100009',
+  '麻城市',
+  NULL,
+  '0001000300170010',
+  0,
+  1,
+  0,
+  '{"fullName":"湖北省黄冈市麻城市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001700100010',
+  '武穴市',
+  NULL,
+  '0001000300170010',
+  0,
+  1,
+  0,
+  '{"fullName":"湖北省黄冈市武穴市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300170011',
+  '咸宁市',
+  NULL,
+  '000100030017',
+  1,
+  1,
+  0,
+  '{"fullName":"湖北省咸宁市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001700110001',
+  '咸安区',
+  NULL,
+  '0001000300170011',
+  0,
+  1,
+  0,
+  '{"fullName":"湖北省咸宁市咸安区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001700110002',
+  '嘉鱼县',
+  NULL,
+  '0001000300170011',
+  0,
+  1,
+  0,
+  '{"fullName":"湖北省咸宁市嘉鱼县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001700110003',
+  '通城县',
+  NULL,
+  '0001000300170011',
+  0,
+  1,
+  0,
+  '{"fullName":"湖北省咸宁市通城县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001700110004',
+  '崇阳县',
+  NULL,
+  '0001000300170011',
+  0,
+  1,
+  0,
+  '{"fullName":"湖北省咸宁市崇阳县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001700110005',
+  '通山县',
+  NULL,
+  '0001000300170011',
+  0,
+  1,
+  0,
+  '{"fullName":"湖北省咸宁市通山县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001700110006',
+  '赤壁市',
+  NULL,
+  '0001000300170011',
+  0,
+  1,
+  0,
+  '{"fullName":"湖北省咸宁市赤壁市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300170012',
+  '随州市',
+  NULL,
+  '000100030017',
+  1,
+  1,
+  0,
+  '{"fullName":"湖北省随州市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001700120001',
+  '曾都区',
+  NULL,
+  '0001000300170012',
+  0,
+  1,
+  0,
+  '{"fullName":"湖北省随州市曾都区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001700120002',
+  '随县',
+  NULL,
+  '0001000300170012',
+  0,
+  1,
+  0,
+  '{"fullName":"湖北省随州市随县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001700120003',
+  '广水市',
+  NULL,
+  '0001000300170012',
+  0,
+  1,
+  0,
+  '{"fullName":"湖北省随州市广水市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300170013',
+  '恩施土家族苗族自治州',
+  NULL,
+  '000100030017',
+  1,
+  1,
+  0,
+  '{"fullName":"湖北省恩施土家族苗族自治州"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001700130001',
+  '恩施市',
+  NULL,
+  '0001000300170013',
+  0,
+  1,
+  0,
+  '{"fullName":"湖北省恩施土家族苗族自治州恩施市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001700130002',
+  '利川市',
+  NULL,
+  '0001000300170013',
+  0,
+  1,
+  0,
+  '{"fullName":"湖北省恩施土家族苗族自治州利川市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001700130003',
+  '建始县',
+  NULL,
+  '0001000300170013',
+  0,
+  1,
+  0,
+  '{"fullName":"湖北省恩施土家族苗族自治州建始县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001700130004',
+  '巴东县',
+  NULL,
+  '0001000300170013',
+  0,
+  1,
+  0,
+  '{"fullName":"湖北省恩施土家族苗族自治州巴东县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001700130005',
+  '宣恩县',
+  NULL,
+  '0001000300170013',
+  0,
+  1,
+  0,
+  '{"fullName":"湖北省恩施土家族苗族自治州宣恩县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001700130006',
+  '咸丰县',
+  NULL,
+  '0001000300170013',
+  0,
+  1,
+  0,
+  '{"fullName":"湖北省恩施土家族苗族自治州咸丰县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001700130007',
+  '来凤县',
+  NULL,
+  '0001000300170013',
+  0,
+  1,
+  0,
+  '{"fullName":"湖北省恩施土家族苗族自治州来凤县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001700130008',
+  '鹤峰县',
+  NULL,
+  '0001000300170013',
+  0,
+  1,
+  0,
+  '{"fullName":"湖北省恩施土家族苗族自治州鹤峰县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300170014',
+  '省直辖县级行政区划',
+  NULL,
+  '000100030017',
+  1,
+  1,
+  0,
+  '{"fullName":"湖北省省直辖县级行政区划"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001700140001',
+  '仙桃市',
+  NULL,
+  '0001000300170014',
+  0,
+  1,
+  0,
+  '{"fullName":"湖北省省直辖县级行政区划仙桃市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001700140002',
+  '潜江市',
+  NULL,
+  '0001000300170014',
+  0,
+  1,
+  0,
+  '{"fullName":"湖北省省直辖县级行政区划潜江市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001700140003',
+  '天门市',
+  NULL,
+  '0001000300170014',
+  0,
+  1,
+  0,
+  '{"fullName":"湖北省省直辖县级行政区划天门市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001700140004',
+  '神农架林区',
+  NULL,
+  '0001000300170014',
+  0,
+  1,
+  0,
+  '{"fullName":"湖北省省直辖县级行政区划神农架林区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '000100030018',
+  '湖南省',
+  NULL,
+  '00010003',
+  1,
+  1,
+  0,
+  '{"fullName":"湖南省"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300180001',
+  '长沙市',
+  NULL,
+  '000100030018',
+  1,
+  1,
+  0,
+  '{"fullName":"湖南省长沙市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001800010001',
+  '芙蓉区',
+  NULL,
+  '0001000300180001',
+  0,
+  1,
+  0,
+  '{"fullName":"湖南省长沙市芙蓉区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001800010002',
+  '天心区',
+  NULL,
+  '0001000300180001',
+  0,
+  1,
+  0,
+  '{"fullName":"湖南省长沙市天心区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001800010003',
+  '岳麓区',
+  NULL,
+  '0001000300180001',
+  0,
+  1,
+  0,
+  '{"fullName":"湖南省长沙市岳麓区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001800010004',
+  '开福区',
+  NULL,
+  '0001000300180001',
+  0,
+  1,
+  0,
+  '{"fullName":"湖南省长沙市开福区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001800010005',
+  '雨花区',
+  NULL,
+  '0001000300180001',
+  0,
+  1,
+  0,
+  '{"fullName":"湖南省长沙市雨花区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001800010006',
+  '望城区',
+  NULL,
+  '0001000300180001',
+  0,
+  1,
+  0,
+  '{"fullName":"湖南省长沙市望城区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001800010007',
+  '长沙县',
+  NULL,
+  '0001000300180001',
+  0,
+  1,
+  0,
+  '{"fullName":"湖南省长沙市长沙县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001800010008',
+  '宁乡县',
+  NULL,
+  '0001000300180001',
+  0,
+  1,
+  0,
+  '{"fullName":"湖南省长沙市宁乡县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001800010009',
+  '浏阳市',
+  NULL,
+  '0001000300180001',
+  0,
+  1,
+  0,
+  '{"fullName":"湖南省长沙市浏阳市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300180002',
+  '株洲市',
+  NULL,
+  '000100030018',
+  1,
+  1,
+  0,
+  '{"fullName":"湖南省株洲市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001800020001',
+  '荷塘区',
+  NULL,
+  '0001000300180002',
+  0,
+  1,
+  0,
+  '{"fullName":"湖南省株洲市荷塘区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001800020002',
+  '芦淞区',
+  NULL,
+  '0001000300180002',
+  0,
+  1,
+  0,
+  '{"fullName":"湖南省株洲市芦淞区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001800020003',
+  '石峰区',
+  NULL,
+  '0001000300180002',
+  0,
+  1,
+  0,
+  '{"fullName":"湖南省株洲市石峰区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001800020004',
+  '天元区',
+  NULL,
+  '0001000300180002',
+  0,
+  1,
+  0,
+  '{"fullName":"湖南省株洲市天元区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001800020005',
+  '株洲县',
+  NULL,
+  '0001000300180002',
+  0,
+  1,
+  0,
+  '{"fullName":"湖南省株洲市株洲县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001800020006',
+  '攸县',
+  NULL,
+  '0001000300180002',
+  0,
+  1,
+  0,
+  '{"fullName":"湖南省株洲市攸县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001800020007',
+  '茶陵县',
+  NULL,
+  '0001000300180002',
+  0,
+  1,
+  0,
+  '{"fullName":"湖南省株洲市茶陵县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001800020008',
+  '炎陵县',
+  NULL,
+  '0001000300180002',
+  0,
+  1,
+  0,
+  '{"fullName":"湖南省株洲市炎陵县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001800020009',
+  '醴陵市',
+  NULL,
+  '0001000300180002',
+  0,
+  1,
+  0,
+  '{"fullName":"湖南省株洲市醴陵市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300180003',
+  '湘潭市',
+  NULL,
+  '000100030018',
+  1,
+  1,
+  0,
+  '{"fullName":"湖南省湘潭市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001800030001',
+  '雨湖区',
+  NULL,
+  '0001000300180003',
+  0,
+  1,
+  0,
+  '{"fullName":"湖南省湘潭市雨湖区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001800030002',
+  '岳塘区',
+  NULL,
+  '0001000300180003',
+  0,
+  1,
+  0,
+  '{"fullName":"湖南省湘潭市岳塘区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001800030003',
+  '湘潭县',
+  NULL,
+  '0001000300180003',
+  0,
+  1,
+  0,
+  '{"fullName":"湖南省湘潭市湘潭县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001800030004',
+  '湘乡市',
+  NULL,
+  '0001000300180003',
+  0,
+  1,
+  0,
+  '{"fullName":"湖南省湘潭市湘乡市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001800030005',
+  '韶山市',
+  NULL,
+  '0001000300180003',
+  0,
+  1,
+  0,
+  '{"fullName":"湖南省湘潭市韶山市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300180004',
+  '衡阳市',
+  NULL,
+  '000100030018',
+  1,
+  1,
+  0,
+  '{"fullName":"湖南省衡阳市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001800040001',
+  '珠晖区',
+  NULL,
+  '0001000300180004',
+  0,
+  1,
+  0,
+  '{"fullName":"湖南省衡阳市珠晖区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001800040002',
+  '雁峰区',
+  NULL,
+  '0001000300180004',
+  0,
+  1,
+  0,
+  '{"fullName":"湖南省衡阳市雁峰区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001800040003',
+  '石鼓区',
+  NULL,
+  '0001000300180004',
+  0,
+  1,
+  0,
+  '{"fullName":"湖南省衡阳市石鼓区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001800040004',
+  '蒸湘区',
+  NULL,
+  '0001000300180004',
+  0,
+  1,
+  0,
+  '{"fullName":"湖南省衡阳市蒸湘区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001800040005',
+  '南岳区',
+  NULL,
+  '0001000300180004',
+  0,
+  1,
+  0,
+  '{"fullName":"湖南省衡阳市南岳区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001800040006',
+  '衡阳县',
+  NULL,
+  '0001000300180004',
+  0,
+  1,
+  0,
+  '{"fullName":"湖南省衡阳市衡阳县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001800040007',
+  '衡南县',
+  NULL,
+  '0001000300180004',
+  0,
+  1,
+  0,
+  '{"fullName":"湖南省衡阳市衡南县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001800040008',
+  '衡山县',
+  NULL,
+  '0001000300180004',
+  0,
+  1,
+  0,
+  '{"fullName":"湖南省衡阳市衡山县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001800040009',
+  '衡东县',
+  NULL,
+  '0001000300180004',
+  0,
+  1,
+  0,
+  '{"fullName":"湖南省衡阳市衡东县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001800040010',
+  '祁东县',
+  NULL,
+  '0001000300180004',
+  0,
+  1,
+  0,
+  '{"fullName":"湖南省衡阳市祁东县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001800040011',
+  '耒阳市',
+  NULL,
+  '0001000300180004',
+  0,
+  1,
+  0,
+  '{"fullName":"湖南省衡阳市耒阳市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001800040012',
+  '常宁市',
+  NULL,
+  '0001000300180004',
+  0,
+  1,
+  0,
+  '{"fullName":"湖南省衡阳市常宁市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300180005',
+  '邵阳市',
+  NULL,
+  '000100030018',
+  1,
+  1,
+  0,
+  '{"fullName":"湖南省邵阳市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001800050001',
+  '双清区',
+  NULL,
+  '0001000300180005',
+  0,
+  1,
+  0,
+  '{"fullName":"湖南省邵阳市双清区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001800050002',
+  '大祥区',
+  NULL,
+  '0001000300180005',
+  0,
+  1,
+  0,
+  '{"fullName":"湖南省邵阳市大祥区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001800050003',
+  '北塔区',
+  NULL,
+  '0001000300180005',
+  0,
+  1,
+  0,
+  '{"fullName":"湖南省邵阳市北塔区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001800050004',
+  '邵东县',
+  NULL,
+  '0001000300180005',
+  0,
+  1,
+  0,
+  '{"fullName":"湖南省邵阳市邵东县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001800050005',
+  '新邵县',
+  NULL,
+  '0001000300180005',
+  0,
+  1,
+  0,
+  '{"fullName":"湖南省邵阳市新邵县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001800050006',
+  '邵阳县',
+  NULL,
+  '0001000300180005',
+  0,
+  1,
+  0,
+  '{"fullName":"湖南省邵阳市邵阳县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001800050007',
+  '隆回县',
+  NULL,
+  '0001000300180005',
+  0,
+  1,
+  0,
+  '{"fullName":"湖南省邵阳市隆回县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001800050008',
+  '洞口县',
+  NULL,
+  '0001000300180005',
+  0,
+  1,
+  0,
+  '{"fullName":"湖南省邵阳市洞口县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001800050009',
+  '绥宁县',
+  NULL,
+  '0001000300180005',
+  0,
+  1,
+  0,
+  '{"fullName":"湖南省邵阳市绥宁县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001800050010',
+  '新宁县',
+  NULL,
+  '0001000300180005',
+  0,
+  1,
+  0,
+  '{"fullName":"湖南省邵阳市新宁县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001800050011',
+  '城步苗族自治县',
+  NULL,
+  '0001000300180005',
+  0,
+  1,
+  0,
+  '{"fullName":"湖南省邵阳市城步苗族自治县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001800050012',
+  '武冈市',
+  NULL,
+  '0001000300180005',
+  0,
+  1,
+  0,
+  '{"fullName":"湖南省邵阳市武冈市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300180006',
+  '岳阳市',
+  NULL,
+  '000100030018',
+  1,
+  1,
+  0,
+  '{"fullName":"湖南省岳阳市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001800060001',
+  '岳阳楼区',
+  NULL,
+  '0001000300180006',
+  0,
+  1,
+  0,
+  '{"fullName":"湖南省岳阳市岳阳楼区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001800060002',
+  '云溪区',
+  NULL,
+  '0001000300180006',
+  0,
+  1,
+  0,
+  '{"fullName":"湖南省岳阳市云溪区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001800060003',
+  '君山区',
+  NULL,
+  '0001000300180006',
+  0,
+  1,
+  0,
+  '{"fullName":"湖南省岳阳市君山区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001800060004',
+  '岳阳县',
+  NULL,
+  '0001000300180006',
+  0,
+  1,
+  0,
+  '{"fullName":"湖南省岳阳市岳阳县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001800060005',
+  '华容县',
+  NULL,
+  '0001000300180006',
+  0,
+  1,
+  0,
+  '{"fullName":"湖南省岳阳市华容县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001800060006',
+  '湘阴县',
+  NULL,
+  '0001000300180006',
+  0,
+  1,
+  0,
+  '{"fullName":"湖南省岳阳市湘阴县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001800060007',
+  '平江县',
+  NULL,
+  '0001000300180006',
+  0,
+  1,
+  0,
+  '{"fullName":"湖南省岳阳市平江县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001800060008',
+  '汨罗市',
+  NULL,
+  '0001000300180006',
+  0,
+  1,
+  0,
+  '{"fullName":"湖南省岳阳市汨罗市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001800060009',
+  '临湘市',
+  NULL,
+  '0001000300180006',
+  0,
+  1,
+  0,
+  '{"fullName":"湖南省岳阳市临湘市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300180007',
+  '常德市',
+  NULL,
+  '000100030018',
+  1,
+  1,
+  0,
+  '{"fullName":"湖南省常德市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001800070001',
+  '武陵区',
+  NULL,
+  '0001000300180007',
+  0,
+  1,
+  0,
+  '{"fullName":"湖南省常德市武陵区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001800070002',
+  '鼎城区',
+  NULL,
+  '0001000300180007',
+  0,
+  1,
+  0,
+  '{"fullName":"湖南省常德市鼎城区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001800070003',
+  '安乡县',
+  NULL,
+  '0001000300180007',
+  0,
+  1,
+  0,
+  '{"fullName":"湖南省常德市安乡县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001800070004',
+  '汉寿县',
+  NULL,
+  '0001000300180007',
+  0,
+  1,
+  0,
+  '{"fullName":"湖南省常德市汉寿县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001800070005',
+  '澧县',
+  NULL,
+  '0001000300180007',
+  0,
+  1,
+  0,
+  '{"fullName":"湖南省常德市澧县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001800070006',
+  '临澧县',
+  NULL,
+  '0001000300180007',
+  0,
+  1,
+  0,
+  '{"fullName":"湖南省常德市临澧县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001800070007',
+  '桃源县',
+  NULL,
+  '0001000300180007',
+  0,
+  1,
+  0,
+  '{"fullName":"湖南省常德市桃源县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001800070008',
+  '石门县',
+  NULL,
+  '0001000300180007',
+  0,
+  1,
+  0,
+  '{"fullName":"湖南省常德市石门县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001800070009',
+  '津市市',
+  NULL,
+  '0001000300180007',
+  0,
+  1,
+  0,
+  '{"fullName":"湖南省常德市津市市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300180008',
+  '张家界市',
+  NULL,
+  '000100030018',
+  1,
+  1,
+  0,
+  '{"fullName":"湖南省张家界市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001800080001',
+  '永定区',
+  NULL,
+  '0001000300180008',
+  0,
+  1,
+  0,
+  '{"fullName":"湖南省张家界市永定区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001800080002',
+  '武陵源区',
+  NULL,
+  '0001000300180008',
+  0,
+  1,
+  0,
+  '{"fullName":"湖南省张家界市武陵源区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001800080003',
+  '慈利县',
+  NULL,
+  '0001000300180008',
+  0,
+  1,
+  0,
+  '{"fullName":"湖南省张家界市慈利县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001800080004',
+  '桑植县',
+  NULL,
+  '0001000300180008',
+  0,
+  1,
+  0,
+  '{"fullName":"湖南省张家界市桑植县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300180009',
+  '益阳市',
+  NULL,
+  '000100030018',
+  1,
+  1,
+  0,
+  '{"fullName":"湖南省益阳市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001800090001',
+  '资阳区',
+  NULL,
+  '0001000300180009',
+  0,
+  1,
+  0,
+  '{"fullName":"湖南省益阳市资阳区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001800090002',
+  '赫山区',
+  NULL,
+  '0001000300180009',
+  0,
+  1,
+  0,
+  '{"fullName":"湖南省益阳市赫山区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001800090003',
+  '南县',
+  NULL,
+  '0001000300180009',
+  0,
+  1,
+  0,
+  '{"fullName":"湖南省益阳市南县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001800090004',
+  '桃江县',
+  NULL,
+  '0001000300180009',
+  0,
+  1,
+  0,
+  '{"fullName":"湖南省益阳市桃江县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001800090005',
+  '安化县',
+  NULL,
+  '0001000300180009',
+  0,
+  1,
+  0,
+  '{"fullName":"湖南省益阳市安化县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001800090006',
+  '沅江市',
+  NULL,
+  '0001000300180009',
+  0,
+  1,
+  0,
+  '{"fullName":"湖南省益阳市沅江市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300180010',
+  '郴州市',
+  NULL,
+  '000100030018',
+  1,
+  1,
+  0,
+  '{"fullName":"湖南省郴州市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001800100001',
+  '北湖区',
+  NULL,
+  '0001000300180010',
+  0,
+  1,
+  0,
+  '{"fullName":"湖南省郴州市北湖区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001800100002',
+  '苏仙区',
+  NULL,
+  '0001000300180010',
+  0,
+  1,
+  0,
+  '{"fullName":"湖南省郴州市苏仙区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001800100003',
+  '桂阳县',
+  NULL,
+  '0001000300180010',
+  0,
+  1,
+  0,
+  '{"fullName":"湖南省郴州市桂阳县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001800100004',
+  '宜章县',
+  NULL,
+  '0001000300180010',
+  0,
+  1,
+  0,
+  '{"fullName":"湖南省郴州市宜章县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001800100005',
+  '永兴县',
+  NULL,
+  '0001000300180010',
+  0,
+  1,
+  0,
+  '{"fullName":"湖南省郴州市永兴县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001800100006',
+  '嘉禾县',
+  NULL,
+  '0001000300180010',
+  0,
+  1,
+  0,
+  '{"fullName":"湖南省郴州市嘉禾县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001800100007',
+  '临武县',
+  NULL,
+  '0001000300180010',
+  0,
+  1,
+  0,
+  '{"fullName":"湖南省郴州市临武县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001800100008',
+  '汝城县',
+  NULL,
+  '0001000300180010',
+  0,
+  1,
+  0,
+  '{"fullName":"湖南省郴州市汝城县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001800100009',
+  '桂东县',
+  NULL,
+  '0001000300180010',
+  0,
+  1,
+  0,
+  '{"fullName":"湖南省郴州市桂东县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001800100010',
+  '安仁县',
+  NULL,
+  '0001000300180010',
+  0,
+  1,
+  0,
+  '{"fullName":"湖南省郴州市安仁县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001800100011',
+  '资兴市',
+  NULL,
+  '0001000300180010',
+  0,
+  1,
+  0,
+  '{"fullName":"湖南省郴州市资兴市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300180011',
+  '永州市',
+  NULL,
+  '000100030018',
+  1,
+  1,
+  0,
+  '{"fullName":"湖南省永州市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001800110001',
+  '零陵区',
+  NULL,
+  '0001000300180011',
+  0,
+  1,
+  0,
+  '{"fullName":"湖南省永州市零陵区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001800110002',
+  '冷水滩区',
+  NULL,
+  '0001000300180011',
+  0,
+  1,
+  0,
+  '{"fullName":"湖南省永州市冷水滩区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001800110003',
+  '祁阳县',
+  NULL,
+  '0001000300180011',
+  0,
+  1,
+  0,
+  '{"fullName":"湖南省永州市祁阳县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001800110004',
+  '东安县',
+  NULL,
+  '0001000300180011',
+  0,
+  1,
+  0,
+  '{"fullName":"湖南省永州市东安县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001800110005',
+  '双牌县',
+  NULL,
+  '0001000300180011',
+  0,
+  1,
+  0,
+  '{"fullName":"湖南省永州市双牌县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001800110006',
+  '道县',
+  NULL,
+  '0001000300180011',
+  0,
+  1,
+  0,
+  '{"fullName":"湖南省永州市道县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001800110007',
+  '江永县',
+  NULL,
+  '0001000300180011',
+  0,
+  1,
+  0,
+  '{"fullName":"湖南省永州市江永县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001800110008',
+  '宁远县',
+  NULL,
+  '0001000300180011',
+  0,
+  1,
+  0,
+  '{"fullName":"湖南省永州市宁远县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001800110009',
+  '蓝山县',
+  NULL,
+  '0001000300180011',
+  0,
+  1,
+  0,
+  '{"fullName":"湖南省永州市蓝山县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001800110010',
+  '新田县',
+  NULL,
+  '0001000300180011',
+  0,
+  1,
+  0,
+  '{"fullName":"湖南省永州市新田县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001800110011',
+  '江华瑶族自治县',
+  NULL,
+  '0001000300180011',
+  0,
+  1,
+  0,
+  '{"fullName":"湖南省永州市江华瑶族自治县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300180012',
+  '怀化市',
+  NULL,
+  '000100030018',
+  1,
+  1,
+  0,
+  '{"fullName":"湖南省怀化市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001800120001',
+  '鹤城区',
+  NULL,
+  '0001000300180012',
+  0,
+  1,
+  0,
+  '{"fullName":"湖南省怀化市鹤城区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001800120002',
+  '中方县',
+  NULL,
+  '0001000300180012',
+  0,
+  1,
+  0,
+  '{"fullName":"湖南省怀化市中方县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001800120003',
+  '沅陵县',
+  NULL,
+  '0001000300180012',
+  0,
+  1,
+  0,
+  '{"fullName":"湖南省怀化市沅陵县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001800120004',
+  '辰溪县',
+  NULL,
+  '0001000300180012',
+  0,
+  1,
+  0,
+  '{"fullName":"湖南省怀化市辰溪县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001800120005',
+  '溆浦县',
+  NULL,
+  '0001000300180012',
+  0,
+  1,
+  0,
+  '{"fullName":"湖南省怀化市溆浦县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001800120006',
+  '会同县',
+  NULL,
+  '0001000300180012',
+  0,
+  1,
+  0,
+  '{"fullName":"湖南省怀化市会同县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001800120007',
+  '麻阳苗族自治县',
+  NULL,
+  '0001000300180012',
+  0,
+  1,
+  0,
+  '{"fullName":"湖南省怀化市麻阳苗族自治县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001800120008',
+  '新晃侗族自治县',
+  NULL,
+  '0001000300180012',
+  0,
+  1,
+  0,
+  '{"fullName":"湖南省怀化市新晃侗族自治县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001800120009',
+  '芷江侗族自治县',
+  NULL,
+  '0001000300180012',
+  0,
+  1,
+  0,
+  '{"fullName":"湖南省怀化市芷江侗族自治县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001800120010',
+  '靖州苗族侗族自治县',
+  NULL,
+  '0001000300180012',
+  0,
+  1,
+  0,
+  '{"fullName":"湖南省怀化市靖州苗族侗族自治县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001800120011',
+  '通道侗族自治县',
+  NULL,
+  '0001000300180012',
+  0,
+  1,
+  0,
+  '{"fullName":"湖南省怀化市通道侗族自治县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001800120012',
+  '洪江市',
+  NULL,
+  '0001000300180012',
+  0,
+  1,
+  0,
+  '{"fullName":"湖南省怀化市洪江市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300180013',
+  '娄底市',
+  NULL,
+  '000100030018',
+  1,
+  1,
+  0,
+  '{"fullName":"湖南省娄底市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001800130001',
+  '娄星区',
+  NULL,
+  '0001000300180013',
+  0,
+  1,
+  0,
+  '{"fullName":"湖南省娄底市娄星区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001800130002',
+  '双峰县',
+  NULL,
+  '0001000300180013',
+  0,
+  1,
+  0,
+  '{"fullName":"湖南省娄底市双峰县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001800130003',
+  '新化县',
+  NULL,
+  '0001000300180013',
+  0,
+  1,
+  0,
+  '{"fullName":"湖南省娄底市新化县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001800130004',
+  '冷水江市',
+  NULL,
+  '0001000300180013',
+  0,
+  1,
+  0,
+  '{"fullName":"湖南省娄底市冷水江市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001800130005',
+  '涟源市',
+  NULL,
+  '0001000300180013',
+  0,
+  1,
+  0,
+  '{"fullName":"湖南省娄底市涟源市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300180014',
+  '湘西土家族苗族自治州',
+  NULL,
+  '000100030018',
+  1,
+  1,
+  0,
+  '{"fullName":"湖南省湘西土家族苗族自治州"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001800140001',
+  '吉首市',
+  NULL,
+  '0001000300180014',
+  0,
+  1,
+  0,
+  '{"fullName":"湖南省湘西土家族苗族自治州吉首市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001800140002',
+  '泸溪县',
+  NULL,
+  '0001000300180014',
+  0,
+  1,
+  0,
+  '{"fullName":"湖南省湘西土家族苗族自治州泸溪县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001800140003',
+  '凤凰县',
+  NULL,
+  '0001000300180014',
+  0,
+  1,
+  0,
+  '{"fullName":"湖南省湘西土家族苗族自治州凤凰县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001800140004',
+  '花垣县',
+  NULL,
+  '0001000300180014',
+  0,
+  1,
+  0,
+  '{"fullName":"湖南省湘西土家族苗族自治州花垣县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001800140005',
+  '保靖县',
+  NULL,
+  '0001000300180014',
+  0,
+  1,
+  0,
+  '{"fullName":"湖南省湘西土家族苗族自治州保靖县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001800140006',
+  '古丈县',
+  NULL,
+  '0001000300180014',
+  0,
+  1,
+  0,
+  '{"fullName":"湖南省湘西土家族苗族自治州古丈县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001800140007',
+  '永顺县',
+  NULL,
+  '0001000300180014',
+  0,
+  1,
+  0,
+  '{"fullName":"湖南省湘西土家族苗族自治州永顺县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001800140008',
+  '龙山县',
+  NULL,
+  '0001000300180014',
+  0,
+  1,
+  0,
+  '{"fullName":"湖南省湘西土家族苗族自治州龙山县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '000100030019',
+  '广东省',
+  NULL,
+  '00010003',
+  1,
+  1,
+  0,
+  '{"fullName":"广东省"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300190001',
+  '广州市',
+  NULL,
+  '000100030019',
+  1,
+  1,
+  0,
+  '{"fullName":"广东省广州市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001900010001',
+  '荔湾区',
+  NULL,
+  '0001000300190001',
+  0,
+  1,
+  0,
+  '{"fullName":"广东省广州市荔湾区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001900010002',
+  '越秀区',
+  NULL,
+  '0001000300190001',
+  0,
+  1,
+  0,
+  '{"fullName":"广东省广州市越秀区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001900010003',
+  '海珠区',
+  NULL,
+  '0001000300190001',
+  0,
+  1,
+  0,
+  '{"fullName":"广东省广州市海珠区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001900010004',
+  '天河区',
+  NULL,
+  '0001000300190001',
+  0,
+  1,
+  0,
+  '{"fullName":"广东省广州市天河区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001900010005',
+  '白云区',
+  NULL,
+  '0001000300190001',
+  0,
+  1,
+  0,
+  '{"fullName":"广东省广州市白云区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001900010006',
+  '黄埔区',
+  NULL,
+  '0001000300190001',
+  0,
+  1,
+  0,
+  '{"fullName":"广东省广州市黄埔区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001900010007',
+  '番禺区',
+  NULL,
+  '0001000300190001',
+  0,
+  1,
+  0,
+  '{"fullName":"广东省广州市番禺区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001900010008',
+  '花都区',
+  NULL,
+  '0001000300190001',
+  0,
+  1,
+  0,
+  '{"fullName":"广东省广州市花都区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001900010009',
+  '南沙区',
+  NULL,
+  '0001000300190001',
+  0,
+  1,
+  0,
+  '{"fullName":"广东省广州市南沙区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001900010010',
+  '从化区',
+  NULL,
+  '0001000300190001',
+  0,
+  1,
+  0,
+  '{"fullName":"广东省广州市从化区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001900010011',
+  '增城区',
+  NULL,
+  '0001000300190001',
+  0,
+  1,
+  0,
+  '{"fullName":"广东省广州市增城区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300190002',
+  '韶关市',
+  NULL,
+  '000100030019',
+  1,
+  1,
+  0,
+  '{"fullName":"广东省韶关市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001900020001',
+  '武江区',
+  NULL,
+  '0001000300190002',
+  0,
+  1,
+  0,
+  '{"fullName":"广东省韶关市武江区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001900020002',
+  '浈江区',
+  NULL,
+  '0001000300190002',
+  0,
+  1,
+  0,
+  '{"fullName":"广东省韶关市浈江区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001900020003',
+  '曲江区',
+  NULL,
+  '0001000300190002',
+  0,
+  1,
+  0,
+  '{"fullName":"广东省韶关市曲江区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001900020004',
+  '始兴县',
+  NULL,
+  '0001000300190002',
+  0,
+  1,
+  0,
+  '{"fullName":"广东省韶关市始兴县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001900020005',
+  '仁化县',
+  NULL,
+  '0001000300190002',
+  0,
+  1,
+  0,
+  '{"fullName":"广东省韶关市仁化县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001900020006',
+  '翁源县',
+  NULL,
+  '0001000300190002',
+  0,
+  1,
+  0,
+  '{"fullName":"广东省韶关市翁源县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001900020007',
+  '乳源瑶族自治县',
+  NULL,
+  '0001000300190002',
+  0,
+  1,
+  0,
+  '{"fullName":"广东省韶关市乳源瑶族自治县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001900020008',
+  '新丰县',
+  NULL,
+  '0001000300190002',
+  0,
+  1,
+  0,
+  '{"fullName":"广东省韶关市新丰县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001900020009',
+  '乐昌市',
+  NULL,
+  '0001000300190002',
+  0,
+  1,
+  0,
+  '{"fullName":"广东省韶关市乐昌市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001900020010',
+  '南雄市',
+  NULL,
+  '0001000300190002',
+  0,
+  1,
+  0,
+  '{"fullName":"广东省韶关市南雄市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300190003',
+  '深圳市',
+  NULL,
+  '000100030019',
+  1,
+  1,
+  0,
+  '{"fullName":"广东省深圳市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001900030001',
+  '罗湖区',
+  NULL,
+  '0001000300190003',
+  0,
+  1,
+  0,
+  '{"fullName":"广东省深圳市罗湖区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001900030002',
+  '福田区',
+  NULL,
+  '0001000300190003',
+  0,
+  1,
+  0,
+  '{"fullName":"广东省深圳市福田区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001900030003',
+  '南山区',
+  NULL,
+  '0001000300190003',
+  0,
+  1,
+  0,
+  '{"fullName":"广东省深圳市南山区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001900030004',
+  '宝安区',
+  NULL,
+  '0001000300190003',
+  0,
+  1,
+  0,
+  '{"fullName":"广东省深圳市宝安区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001900030005',
+  '龙岗区',
+  NULL,
+  '0001000300190003',
+  0,
+  1,
+  0,
+  '{"fullName":"广东省深圳市龙岗区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001900030006',
+  '盐田区',
+  NULL,
+  '0001000300190003',
+  0,
+  1,
+  0,
+  '{"fullName":"广东省深圳市盐田区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300190004',
+  '珠海市',
+  NULL,
+  '000100030019',
+  1,
+  1,
+  0,
+  '{"fullName":"广东省珠海市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001900040001',
+  '香洲区',
+  NULL,
+  '0001000300190004',
+  0,
+  1,
+  0,
+  '{"fullName":"广东省珠海市香洲区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001900040002',
+  '斗门区',
+  NULL,
+  '0001000300190004',
+  0,
+  1,
+  0,
+  '{"fullName":"广东省珠海市斗门区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001900040003',
+  '金湾区',
+  NULL,
+  '0001000300190004',
+  0,
+  1,
+  0,
+  '{"fullName":"广东省珠海市金湾区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300190005',
+  '汕头市',
+  NULL,
+  '000100030019',
+  1,
+  1,
+  0,
+  '{"fullName":"广东省汕头市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001900050001',
+  '龙湖区',
+  NULL,
+  '0001000300190005',
+  0,
+  1,
+  0,
+  '{"fullName":"广东省汕头市龙湖区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001900050002',
+  '金平区',
+  NULL,
+  '0001000300190005',
+  0,
+  1,
+  0,
+  '{"fullName":"广东省汕头市金平区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001900050003',
+  '濠江区',
+  NULL,
+  '0001000300190005',
+  0,
+  1,
+  0,
+  '{"fullName":"广东省汕头市濠江区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001900050004',
+  '潮阳区',
+  NULL,
+  '0001000300190005',
+  0,
+  1,
+  0,
+  '{"fullName":"广东省汕头市潮阳区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001900050005',
+  '潮南区',
+  NULL,
+  '0001000300190005',
+  0,
+  1,
+  0,
+  '{"fullName":"广东省汕头市潮南区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001900050006',
+  '澄海区',
+  NULL,
+  '0001000300190005',
+  0,
+  1,
+  0,
+  '{"fullName":"广东省汕头市澄海区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001900050007',
+  '南澳县',
+  NULL,
+  '0001000300190005',
+  0,
+  1,
+  0,
+  '{"fullName":"广东省汕头市南澳县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300190006',
+  '佛山市',
+  NULL,
+  '000100030019',
+  1,
+  1,
+  0,
+  '{"fullName":"广东省佛山市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001900060001',
+  '禅城区',
+  NULL,
+  '0001000300190006',
+  0,
+  1,
+  0,
+  '{"fullName":"广东省佛山市禅城区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001900060002',
+  '南海区',
+  NULL,
+  '0001000300190006',
+  0,
+  1,
+  0,
+  '{"fullName":"广东省佛山市南海区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001900060003',
+  '顺德区',
+  NULL,
+  '0001000300190006',
+  0,
+  1,
+  0,
+  '{"fullName":"广东省佛山市顺德区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001900060004',
+  '三水区',
+  NULL,
+  '0001000300190006',
+  0,
+  1,
+  0,
+  '{"fullName":"广东省佛山市三水区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001900060005',
+  '高明区',
+  NULL,
+  '0001000300190006',
+  0,
+  1,
+  0,
+  '{"fullName":"广东省佛山市高明区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300190007',
+  '江门市',
+  NULL,
+  '000100030019',
+  1,
+  1,
+  0,
+  '{"fullName":"广东省江门市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001900070001',
+  '蓬江区',
+  NULL,
+  '0001000300190007',
+  0,
+  1,
+  0,
+  '{"fullName":"广东省江门市蓬江区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001900070002',
+  '江海区',
+  NULL,
+  '0001000300190007',
+  0,
+  1,
+  0,
+  '{"fullName":"广东省江门市江海区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001900070003',
+  '新会区',
+  NULL,
+  '0001000300190007',
+  0,
+  1,
+  0,
+  '{"fullName":"广东省江门市新会区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001900070004',
+  '台山市',
+  NULL,
+  '0001000300190007',
+  0,
+  1,
+  0,
+  '{"fullName":"广东省江门市台山市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001900070005',
+  '开平市',
+  NULL,
+  '0001000300190007',
+  0,
+  1,
+  0,
+  '{"fullName":"广东省江门市开平市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001900070006',
+  '鹤山市',
+  NULL,
+  '0001000300190007',
+  0,
+  1,
+  0,
+  '{"fullName":"广东省江门市鹤山市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001900070007',
+  '恩平市',
+  NULL,
+  '0001000300190007',
+  0,
+  1,
+  0,
+  '{"fullName":"广东省江门市恩平市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300190008',
+  '湛江市',
+  NULL,
+  '000100030019',
+  1,
+  1,
+  0,
+  '{"fullName":"广东省湛江市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001900080001',
+  '赤坎区',
+  NULL,
+  '0001000300190008',
+  0,
+  1,
+  0,
+  '{"fullName":"广东省湛江市赤坎区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001900080002',
+  '霞山区',
+  NULL,
+  '0001000300190008',
+  0,
+  1,
+  0,
+  '{"fullName":"广东省湛江市霞山区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001900080003',
+  '坡头区',
+  NULL,
+  '0001000300190008',
+  0,
+  1,
+  0,
+  '{"fullName":"广东省湛江市坡头区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001900080004',
+  '麻章区',
+  NULL,
+  '0001000300190008',
+  0,
+  1,
+  0,
+  '{"fullName":"广东省湛江市麻章区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001900080005',
+  '遂溪县',
+  NULL,
+  '0001000300190008',
+  0,
+  1,
+  0,
+  '{"fullName":"广东省湛江市遂溪县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001900080006',
+  '徐闻县',
+  NULL,
+  '0001000300190008',
+  0,
+  1,
+  0,
+  '{"fullName":"广东省湛江市徐闻县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001900080007',
+  '廉江市',
+  NULL,
+  '0001000300190008',
+  0,
+  1,
+  0,
+  '{"fullName":"广东省湛江市廉江市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001900080008',
+  '雷州市',
+  NULL,
+  '0001000300190008',
+  0,
+  1,
+  0,
+  '{"fullName":"广东省湛江市雷州市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001900080009',
+  '吴川市',
+  NULL,
+  '0001000300190008',
+  0,
+  1,
+  0,
+  '{"fullName":"广东省湛江市吴川市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300190009',
+  '茂名市',
+  NULL,
+  '000100030019',
+  1,
+  1,
+  0,
+  '{"fullName":"广东省茂名市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001900090001',
+  '茂南区',
+  NULL,
+  '0001000300190009',
+  0,
+  1,
+  0,
+  '{"fullName":"广东省茂名市茂南区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001900090002',
+  '电白区',
+  NULL,
+  '0001000300190009',
+  0,
+  1,
+  0,
+  '{"fullName":"广东省茂名市电白区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001900090003',
+  '高州市',
+  NULL,
+  '0001000300190009',
+  0,
+  1,
+  0,
+  '{"fullName":"广东省茂名市高州市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001900090004',
+  '化州市',
+  NULL,
+  '0001000300190009',
+  0,
+  1,
+  0,
+  '{"fullName":"广东省茂名市化州市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001900090005',
+  '信宜市',
+  NULL,
+  '0001000300190009',
+  0,
+  1,
+  0,
+  '{"fullName":"广东省茂名市信宜市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300190010',
+  '肇庆市',
+  NULL,
+  '000100030019',
+  1,
+  1,
+  0,
+  '{"fullName":"广东省肇庆市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001900100001',
+  '端州区',
+  NULL,
+  '0001000300190010',
+  0,
+  1,
+  0,
+  '{"fullName":"广东省肇庆市端州区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001900100002',
+  '鼎湖区',
+  NULL,
+  '0001000300190010',
+  0,
+  1,
+  0,
+  '{"fullName":"广东省肇庆市鼎湖区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001900100003',
+  '高要区',
+  NULL,
+  '0001000300190010',
+  0,
+  1,
+  0,
+  '{"fullName":"广东省肇庆市高要区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001900100004',
+  '广宁县',
+  NULL,
+  '0001000300190010',
+  0,
+  1,
+  0,
+  '{"fullName":"广东省肇庆市广宁县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001900100005',
+  '怀集县',
+  NULL,
+  '0001000300190010',
+  0,
+  1,
+  0,
+  '{"fullName":"广东省肇庆市怀集县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001900100006',
+  '封开县',
+  NULL,
+  '0001000300190010',
+  0,
+  1,
+  0,
+  '{"fullName":"广东省肇庆市封开县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001900100007',
+  '德庆县',
+  NULL,
+  '0001000300190010',
+  0,
+  1,
+  0,
+  '{"fullName":"广东省肇庆市德庆县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001900100008',
+  '四会市',
+  NULL,
+  '0001000300190010',
+  0,
+  1,
+  0,
+  '{"fullName":"广东省肇庆市四会市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300190011',
+  '惠州市',
+  NULL,
+  '000100030019',
+  1,
+  1,
+  0,
+  '{"fullName":"广东省惠州市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001900110001',
+  '惠城区',
+  NULL,
+  '0001000300190011',
+  0,
+  1,
+  0,
+  '{"fullName":"广东省惠州市惠城区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001900110002',
+  '惠阳区',
+  NULL,
+  '0001000300190011',
+  0,
+  1,
+  0,
+  '{"fullName":"广东省惠州市惠阳区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001900110003',
+  '博罗县',
+  NULL,
+  '0001000300190011',
+  0,
+  1,
+  0,
+  '{"fullName":"广东省惠州市博罗县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001900110004',
+  '惠东县',
+  NULL,
+  '0001000300190011',
+  0,
+  1,
+  0,
+  '{"fullName":"广东省惠州市惠东县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001900110005',
+  '龙门县',
+  NULL,
+  '0001000300190011',
+  0,
+  1,
+  0,
+  '{"fullName":"广东省惠州市龙门县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300190012',
+  '梅州市',
+  NULL,
+  '000100030019',
+  1,
+  1,
+  0,
+  '{"fullName":"广东省梅州市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001900120001',
+  '梅江区',
+  NULL,
+  '0001000300190012',
+  0,
+  1,
+  0,
+  '{"fullName":"广东省梅州市梅江区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001900120002',
+  '梅县区',
+  NULL,
+  '0001000300190012',
+  0,
+  1,
+  0,
+  '{"fullName":"广东省梅州市梅县区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001900120003',
+  '大埔县',
+  NULL,
+  '0001000300190012',
+  0,
+  1,
+  0,
+  '{"fullName":"广东省梅州市大埔县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001900120004',
+  '丰顺县',
+  NULL,
+  '0001000300190012',
+  0,
+  1,
+  0,
+  '{"fullName":"广东省梅州市丰顺县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001900120005',
+  '五华县',
+  NULL,
+  '0001000300190012',
+  0,
+  1,
+  0,
+  '{"fullName":"广东省梅州市五华县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001900120006',
+  '平远县',
+  NULL,
+  '0001000300190012',
+  0,
+  1,
+  0,
+  '{"fullName":"广东省梅州市平远县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001900120007',
+  '蕉岭县',
+  NULL,
+  '0001000300190012',
+  0,
+  1,
+  0,
+  '{"fullName":"广东省梅州市蕉岭县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001900120008',
+  '兴宁市',
+  NULL,
+  '0001000300190012',
+  0,
+  1,
+  0,
+  '{"fullName":"广东省梅州市兴宁市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300190013',
+  '汕尾市',
+  NULL,
+  '000100030019',
+  1,
+  1,
+  0,
+  '{"fullName":"广东省汕尾市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001900130001',
+  '城区',
+  NULL,
+  '0001000300190013',
+  0,
+  1,
+  0,
+  '{"fullName":"广东省汕尾市城区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001900130002',
+  '海丰县',
+  NULL,
+  '0001000300190013',
+  0,
+  1,
+  0,
+  '{"fullName":"广东省汕尾市海丰县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001900130003',
+  '陆河县',
+  NULL,
+  '0001000300190013',
+  0,
+  1,
+  0,
+  '{"fullName":"广东省汕尾市陆河县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001900130004',
+  '陆丰市',
+  NULL,
+  '0001000300190013',
+  0,
+  1,
+  0,
+  '{"fullName":"广东省汕尾市陆丰市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300190014',
+  '河源市',
+  NULL,
+  '000100030019',
+  1,
+  1,
+  0,
+  '{"fullName":"广东省河源市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001900140001',
+  '源城区',
+  NULL,
+  '0001000300190014',
+  0,
+  1,
+  0,
+  '{"fullName":"广东省河源市源城区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001900140002',
+  '紫金县',
+  NULL,
+  '0001000300190014',
+  0,
+  1,
+  0,
+  '{"fullName":"广东省河源市紫金县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001900140003',
+  '龙川县',
+  NULL,
+  '0001000300190014',
+  0,
+  1,
+  0,
+  '{"fullName":"广东省河源市龙川县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001900140004',
+  '连平县',
+  NULL,
+  '0001000300190014',
+  0,
+  1,
+  0,
+  '{"fullName":"广东省河源市连平县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001900140005',
+  '和平县',
+  NULL,
+  '0001000300190014',
+  0,
+  1,
+  0,
+  '{"fullName":"广东省河源市和平县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001900140006',
+  '东源县',
+  NULL,
+  '0001000300190014',
+  0,
+  1,
+  0,
+  '{"fullName":"广东省河源市东源县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300190015',
+  '阳江市',
+  NULL,
+  '000100030019',
+  1,
+  1,
+  0,
+  '{"fullName":"广东省阳江市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001900150001',
+  '江城区',
+  NULL,
+  '0001000300190015',
+  0,
+  1,
+  0,
+  '{"fullName":"广东省阳江市江城区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001900150002',
+  '阳东区',
+  NULL,
+  '0001000300190015',
+  0,
+  1,
+  0,
+  '{"fullName":"广东省阳江市阳东区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001900150003',
+  '阳西县',
+  NULL,
+  '0001000300190015',
+  0,
+  1,
+  0,
+  '{"fullName":"广东省阳江市阳西县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001900150004',
+  '阳春市',
+  NULL,
+  '0001000300190015',
+  0,
+  1,
+  0,
+  '{"fullName":"广东省阳江市阳春市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300190016',
+  '清远市',
+  NULL,
+  '000100030019',
+  1,
+  1,
+  0,
+  '{"fullName":"广东省清远市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001900160001',
+  '清城区',
+  NULL,
+  '0001000300190016',
+  0,
+  1,
+  0,
+  '{"fullName":"广东省清远市清城区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001900160002',
+  '清新区',
+  NULL,
+  '0001000300190016',
+  0,
+  1,
+  0,
+  '{"fullName":"广东省清远市清新区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001900160003',
+  '佛冈县',
+  NULL,
+  '0001000300190016',
+  0,
+  1,
+  0,
+  '{"fullName":"广东省清远市佛冈县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001900160004',
+  '阳山县',
+  NULL,
+  '0001000300190016',
+  0,
+  1,
+  0,
+  '{"fullName":"广东省清远市阳山县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001900160005',
+  '连山壮族瑶族自治县',
+  NULL,
+  '0001000300190016',
+  0,
+  1,
+  0,
+  '{"fullName":"广东省清远市连山壮族瑶族自治县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001900160006',
+  '连南瑶族自治县',
+  NULL,
+  '0001000300190016',
+  0,
+  1,
+  0,
+  '{"fullName":"广东省清远市连南瑶族自治县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001900160007',
+  '英德市',
+  NULL,
+  '0001000300190016',
+  0,
+  1,
+  0,
+  '{"fullName":"广东省清远市英德市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001900160008',
+  '连州市',
+  NULL,
+  '0001000300190016',
+  0,
+  1,
+  0,
+  '{"fullName":"广东省清远市连州市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300190017',
+  '东莞市',
+  NULL,
+  '000100030019',
+  1,
+  1,
+  0,
+  '{"fullName":"广东省东莞市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001900170001',
+  '东城街道',
+  NULL,
+  '0001000300190017',
+  0,
+  1,
+  0,
+  '{"fullName":"广东省东莞市东城街道"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001900170002',
+  '南城街道',
+  NULL,
+  '0001000300190017',
+  0,
+  1,
+  0,
+  '{"fullName":"广东省东莞市南城街道"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001900170003',
+  '万江街道',
+  NULL,
+  '0001000300190017',
+  0,
+  1,
+  0,
+  '{"fullName":"广东省东莞市万江街道"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001900170004',
+  '莞城街道',
+  NULL,
+  '0001000300190017',
+  0,
+  1,
+  0,
+  '{"fullName":"广东省东莞市莞城街道"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001900170005',
+  '石碣镇',
+  NULL,
+  '0001000300190017',
+  0,
+  1,
+  0,
+  '{"fullName":"广东省东莞市石碣镇"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001900170006',
+  '石龙镇',
+  NULL,
+  '0001000300190017',
+  0,
+  1,
+  0,
+  '{"fullName":"广东省东莞市石龙镇"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001900170007',
+  '茶山镇',
+  NULL,
+  '0001000300190017',
+  0,
+  1,
+  0,
+  '{"fullName":"广东省东莞市茶山镇"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001900170008',
+  '石排镇',
+  NULL,
+  '0001000300190017',
+  0,
+  1,
+  0,
+  '{"fullName":"广东省东莞市石排镇"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001900170009',
+  '企石镇',
+  NULL,
+  '0001000300190017',
+  0,
+  1,
+  0,
+  '{"fullName":"广东省东莞市企石镇"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001900170010',
+  '横沥镇',
+  NULL,
+  '0001000300190017',
+  0,
+  1,
+  0,
+  '{"fullName":"广东省东莞市横沥镇"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001900170011',
+  '桥头镇',
+  NULL,
+  '0001000300190017',
+  0,
+  1,
+  0,
+  '{"fullName":"广东省东莞市桥头镇"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001900170012',
+  '谢岗镇',
+  NULL,
+  '0001000300190017',
+  0,
+  1,
+  0,
+  '{"fullName":"广东省东莞市谢岗镇"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001900170013',
+  '东坑镇',
+  NULL,
+  '0001000300190017',
+  0,
+  1,
+  0,
+  '{"fullName":"广东省东莞市东坑镇"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001900170014',
+  '常平镇',
+  NULL,
+  '0001000300190017',
+  0,
+  1,
+  0,
+  '{"fullName":"广东省东莞市常平镇"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001900170015',
+  '寮步镇',
+  NULL,
+  '0001000300190017',
+  0,
+  1,
+  0,
+  '{"fullName":"广东省东莞市寮步镇"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001900170016',
+  '樟木头镇',
+  NULL,
+  '0001000300190017',
+  0,
+  1,
+  0,
+  '{"fullName":"广东省东莞市樟木头镇"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001900170017',
+  '大朗镇',
+  NULL,
+  '0001000300190017',
+  0,
+  1,
+  0,
+  '{"fullName":"广东省东莞市大朗镇"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001900170018',
+  '黄江镇',
+  NULL,
+  '0001000300190017',
+  0,
+  1,
+  0,
+  '{"fullName":"广东省东莞市黄江镇"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001900170019',
+  '清溪镇',
+  NULL,
+  '0001000300190017',
+  0,
+  1,
+  0,
+  '{"fullName":"广东省东莞市清溪镇"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001900170020',
+  '塘厦镇',
+  NULL,
+  '0001000300190017',
+  0,
+  1,
+  0,
+  '{"fullName":"广东省东莞市塘厦镇"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001900170021',
+  '凤岗镇',
+  NULL,
+  '0001000300190017',
+  0,
+  1,
+  0,
+  '{"fullName":"广东省东莞市凤岗镇"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001900170022',
+  '大岭山镇',
+  NULL,
+  '0001000300190017',
+  0,
+  1,
+  0,
+  '{"fullName":"广东省东莞市大岭山镇"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001900170023',
+  '长安镇',
+  NULL,
+  '0001000300190017',
+  0,
+  1,
+  0,
+  '{"fullName":"广东省东莞市长安镇"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001900170024',
+  '虎门镇',
+  NULL,
+  '0001000300190017',
+  0,
+  1,
+  0,
+  '{"fullName":"广东省东莞市虎门镇"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001900170025',
+  '厚街镇',
+  NULL,
+  '0001000300190017',
+  0,
+  1,
+  0,
+  '{"fullName":"广东省东莞市厚街镇"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001900170026',
+  '沙田镇',
+  NULL,
+  '0001000300190017',
+  0,
+  1,
+  0,
+  '{"fullName":"广东省东莞市沙田镇"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001900170027',
+  '道滘镇',
+  NULL,
+  '0001000300190017',
+  0,
+  1,
+  0,
+  '{"fullName":"广东省东莞市道滘镇"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001900170028',
+  '洪梅镇',
+  NULL,
+  '0001000300190017',
+  0,
+  1,
+  0,
+  '{"fullName":"广东省东莞市洪梅镇"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001900170029',
+  '麻涌镇',
+  NULL,
+  '0001000300190017',
+  0,
+  1,
+  0,
+  '{"fullName":"广东省东莞市麻涌镇"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001900170030',
+  '望牛墩镇',
+  NULL,
+  '0001000300190017',
+  0,
+  1,
+  0,
+  '{"fullName":"广东省东莞市望牛墩镇"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001900170031',
+  '中堂镇',
+  NULL,
+  '0001000300190017',
+  0,
+  1,
+  0,
+  '{"fullName":"广东省东莞市中堂镇"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001900170032',
+  '高埗镇',
+  NULL,
+  '0001000300190017',
+  0,
+  1,
+  0,
+  '{"fullName":"广东省东莞市高埗镇"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001900170033',
+  '松山湖管委会',
+  NULL,
+  '0001000300190017',
+  0,
+  1,
+  0,
+  '{"fullName":"广东省东莞市松山湖管委会"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001900170034',
+  '虎门港管委会',
+  NULL,
+  '0001000300190017',
+  0,
+  1,
+  0,
+  '{"fullName":"广东省东莞市虎门港管委会"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001900170035',
+  '东莞生态园',
+  NULL,
+  '0001000300190017',
+  0,
+  1,
+  0,
+  '{"fullName":"广东省东莞市东莞生态园"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300190018',
+  '中山市',
+  NULL,
+  '000100030019',
+  1,
+  1,
+  0,
+  '{"fullName":"广东省中山市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001900180001',
+  '石岐区街道',
+  NULL,
+  '0001000300190018',
+  0,
+  1,
+  0,
+  '{"fullName":"广东省中山市石岐区街道"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001900180002',
+  '东区街道',
+  NULL,
+  '0001000300190018',
+  0,
+  1,
+  0,
+  '{"fullName":"广东省中山市东区街道"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001900180003',
+  '火炬开发区街道',
+  NULL,
+  '0001000300190018',
+  0,
+  1,
+  0,
+  '{"fullName":"广东省中山市火炬开发区街道"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001900180004',
+  '西区街道',
+  NULL,
+  '0001000300190018',
+  0,
+  1,
+  0,
+  '{"fullName":"广东省中山市西区街道"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001900180005',
+  '南区街道',
+  NULL,
+  '0001000300190018',
+  0,
+  1,
+  0,
+  '{"fullName":"广东省中山市南区街道"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001900180006',
+  '五桂山街道',
+  NULL,
+  '0001000300190018',
+  0,
+  1,
+  0,
+  '{"fullName":"广东省中山市五桂山街道"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001900180007',
+  '小榄镇',
+  NULL,
+  '0001000300190018',
+  0,
+  1,
+  0,
+  '{"fullName":"广东省中山市小榄镇"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001900180008',
+  '黄圃镇',
+  NULL,
+  '0001000300190018',
+  0,
+  1,
+  0,
+  '{"fullName":"广东省中山市黄圃镇"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001900180009',
+  '民众镇',
+  NULL,
+  '0001000300190018',
+  0,
+  1,
+  0,
+  '{"fullName":"广东省中山市民众镇"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001900180010',
+  '东凤镇',
+  NULL,
+  '0001000300190018',
+  0,
+  1,
+  0,
+  '{"fullName":"广东省中山市东凤镇"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001900180011',
+  '东升镇',
+  NULL,
+  '0001000300190018',
+  0,
+  1,
+  0,
+  '{"fullName":"广东省中山市东升镇"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001900180012',
+  '古镇镇',
+  NULL,
+  '0001000300190018',
+  0,
+  1,
+  0,
+  '{"fullName":"广东省中山市古镇镇"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001900180013',
+  '沙溪镇',
+  NULL,
+  '0001000300190018',
+  0,
+  1,
+  0,
+  '{"fullName":"广东省中山市沙溪镇"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001900180014',
+  '坦洲镇',
+  NULL,
+  '0001000300190018',
+  0,
+  1,
+  0,
+  '{"fullName":"广东省中山市坦洲镇"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001900180015',
+  '港口镇',
+  NULL,
+  '0001000300190018',
+  0,
+  1,
+  0,
+  '{"fullName":"广东省中山市港口镇"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001900180016',
+  '三角镇',
+  NULL,
+  '0001000300190018',
+  0,
+  1,
+  0,
+  '{"fullName":"广东省中山市三角镇"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001900180017',
+  '横栏镇',
+  NULL,
+  '0001000300190018',
+  0,
+  1,
+  0,
+  '{"fullName":"广东省中山市横栏镇"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001900180018',
+  '南头镇',
+  NULL,
+  '0001000300190018',
+  0,
+  1,
+  0,
+  '{"fullName":"广东省中山市南头镇"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001900180019',
+  '阜沙镇',
+  NULL,
+  '0001000300190018',
+  0,
+  1,
+  0,
+  '{"fullName":"广东省中山市阜沙镇"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001900180020',
+  '南朗镇',
+  NULL,
+  '0001000300190018',
+  0,
+  1,
+  0,
+  '{"fullName":"广东省中山市南朗镇"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001900180021',
+  '三乡镇',
+  NULL,
+  '0001000300190018',
+  0,
+  1,
+  0,
+  '{"fullName":"广东省中山市三乡镇"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001900180022',
+  '板芙镇',
+  NULL,
+  '0001000300190018',
+  0,
+  1,
+  0,
+  '{"fullName":"广东省中山市板芙镇"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001900180023',
+  '大涌镇',
+  NULL,
+  '0001000300190018',
+  0,
+  1,
+  0,
+  '{"fullName":"广东省中山市大涌镇"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001900180024',
+  '神湾镇',
+  NULL,
+  '0001000300190018',
+  0,
+  1,
+  0,
+  '{"fullName":"广东省中山市神湾镇"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300190019',
+  '潮州市',
+  NULL,
+  '000100030019',
+  1,
+  1,
+  0,
+  '{"fullName":"广东省潮州市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001900190001',
+  '湘桥区',
+  NULL,
+  '0001000300190019',
+  0,
+  1,
+  0,
+  '{"fullName":"广东省潮州市湘桥区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001900190002',
+  '潮安区',
+  NULL,
+  '0001000300190019',
+  0,
+  1,
+  0,
+  '{"fullName":"广东省潮州市潮安区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001900190003',
+  '饶平县',
+  NULL,
+  '0001000300190019',
+  0,
+  1,
+  0,
+  '{"fullName":"广东省潮州市饶平县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300190020',
+  '揭阳市',
+  NULL,
+  '000100030019',
+  1,
+  1,
+  0,
+  '{"fullName":"广东省揭阳市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001900200001',
+  '榕城区',
+  NULL,
+  '0001000300190020',
+  0,
+  1,
+  0,
+  '{"fullName":"广东省揭阳市榕城区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001900200002',
+  '揭东区',
+  NULL,
+  '0001000300190020',
+  0,
+  1,
+  0,
+  '{"fullName":"广东省揭阳市揭东区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001900200003',
+  '揭西县',
+  NULL,
+  '0001000300190020',
+  0,
+  1,
+  0,
+  '{"fullName":"广东省揭阳市揭西县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001900200004',
+  '惠来县',
+  NULL,
+  '0001000300190020',
+  0,
+  1,
+  0,
+  '{"fullName":"广东省揭阳市惠来县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001900200005',
+  '普宁市',
+  NULL,
+  '0001000300190020',
+  0,
+  1,
+  0,
+  '{"fullName":"广东省揭阳市普宁市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300190021',
+  '云浮市',
+  NULL,
+  '000100030019',
+  1,
+  1,
+  0,
+  '{"fullName":"广东省云浮市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001900210001',
+  '云城区',
+  NULL,
+  '0001000300190021',
+  0,
+  1,
+  0,
+  '{"fullName":"广东省云浮市云城区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001900210002',
+  '云安区',
+  NULL,
+  '0001000300190021',
+  0,
+  1,
+  0,
+  '{"fullName":"广东省云浮市云安区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001900210003',
+  '新兴县',
+  NULL,
+  '0001000300190021',
+  0,
+  1,
+  0,
+  '{"fullName":"广东省云浮市新兴县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001900210004',
+  '郁南县',
+  NULL,
+  '0001000300190021',
+  0,
+  1,
+  0,
+  '{"fullName":"广东省云浮市郁南县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003001900210005',
+  '罗定市',
+  NULL,
+  '0001000300190021',
+  0,
+  1,
+  0,
+  '{"fullName":"广东省云浮市罗定市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '000100030020',
+  '广西壮族自治区',
+  NULL,
+  '00010003',
+  1,
+  1,
+  0,
+  '{"fullName":"广西壮族自治区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300200001',
+  '南宁市',
+  NULL,
+  '000100030020',
+  1,
+  1,
+  0,
+  '{"fullName":"广西壮族自治区南宁市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002000010001',
+  '兴宁区',
+  NULL,
+  '0001000300200001',
+  0,
+  1,
+  0,
+  '{"fullName":"广西壮族自治区南宁市兴宁区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002000010002',
+  '青秀区',
+  NULL,
+  '0001000300200001',
+  0,
+  1,
+  0,
+  '{"fullName":"广西壮族自治区南宁市青秀区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002000010003',
+  '江南区',
+  NULL,
+  '0001000300200001',
+  0,
+  1,
+  0,
+  '{"fullName":"广西壮族自治区南宁市江南区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002000010004',
+  '西乡塘区',
+  NULL,
+  '0001000300200001',
+  0,
+  1,
+  0,
+  '{"fullName":"广西壮族自治区南宁市西乡塘区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002000010005',
+  '良庆区',
+  NULL,
+  '0001000300200001',
+  0,
+  1,
+  0,
+  '{"fullName":"广西壮族自治区南宁市良庆区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002000010006',
+  '邕宁区',
+  NULL,
+  '0001000300200001',
+  0,
+  1,
+  0,
+  '{"fullName":"广西壮族自治区南宁市邕宁区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002000010007',
+  '武鸣区',
+  NULL,
+  '0001000300200001',
+  0,
+  1,
+  0,
+  '{"fullName":"广西壮族自治区南宁市武鸣区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002000010008',
+  '隆安县',
+  NULL,
+  '0001000300200001',
+  0,
+  1,
+  0,
+  '{"fullName":"广西壮族自治区南宁市隆安县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002000010009',
+  '马山县',
+  NULL,
+  '0001000300200001',
+  0,
+  1,
+  0,
+  '{"fullName":"广西壮族自治区南宁市马山县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002000010010',
+  '上林县',
+  NULL,
+  '0001000300200001',
+  0,
+  1,
+  0,
+  '{"fullName":"广西壮族自治区南宁市上林县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002000010011',
+  '宾阳县',
+  NULL,
+  '0001000300200001',
+  0,
+  1,
+  0,
+  '{"fullName":"广西壮族自治区南宁市宾阳县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002000010012',
+  '横县',
+  NULL,
+  '0001000300200001',
+  0,
+  1,
+  0,
+  '{"fullName":"广西壮族自治区南宁市横县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300200002',
+  '柳州市',
+  NULL,
+  '000100030020',
+  1,
+  1,
+  0,
+  '{"fullName":"广西壮族自治区柳州市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002000020001',
+  '城中区',
+  NULL,
+  '0001000300200002',
+  0,
+  1,
+  0,
+  '{"fullName":"广西壮族自治区柳州市城中区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002000020002',
+  '鱼峰区',
+  NULL,
+  '0001000300200002',
+  0,
+  1,
+  0,
+  '{"fullName":"广西壮族自治区柳州市鱼峰区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002000020003',
+  '柳南区',
+  NULL,
+  '0001000300200002',
+  0,
+  1,
+  0,
+  '{"fullName":"广西壮族自治区柳州市柳南区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002000020004',
+  '柳北区',
+  NULL,
+  '0001000300200002',
+  0,
+  1,
+  0,
+  '{"fullName":"广西壮族自治区柳州市柳北区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002000020005',
+  '柳江区',
+  NULL,
+  '0001000300200002',
+  0,
+  1,
+  0,
+  '{"fullName":"广西壮族自治区柳州市柳江区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002000020006',
+  '柳城县',
+  NULL,
+  '0001000300200002',
+  0,
+  1,
+  0,
+  '{"fullName":"广西壮族自治区柳州市柳城县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002000020007',
+  '鹿寨县',
+  NULL,
+  '0001000300200002',
+  0,
+  1,
+  0,
+  '{"fullName":"广西壮族自治区柳州市鹿寨县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002000020008',
+  '融安县',
+  NULL,
+  '0001000300200002',
+  0,
+  1,
+  0,
+  '{"fullName":"广西壮族自治区柳州市融安县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002000020009',
+  '融水苗族自治县',
+  NULL,
+  '0001000300200002',
+  0,
+  1,
+  0,
+  '{"fullName":"广西壮族自治区柳州市融水苗族自治县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002000020010',
+  '三江侗族自治县',
+  NULL,
+  '0001000300200002',
+  0,
+  1,
+  0,
+  '{"fullName":"广西壮族自治区柳州市三江侗族自治县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300200003',
+  '桂林市',
+  NULL,
+  '000100030020',
+  1,
+  1,
+  0,
+  '{"fullName":"广西壮族自治区桂林市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002000030001',
+  '秀峰区',
+  NULL,
+  '0001000300200003',
+  0,
+  1,
+  0,
+  '{"fullName":"广西壮族自治区桂林市秀峰区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002000030002',
+  '叠彩区',
+  NULL,
+  '0001000300200003',
+  0,
+  1,
+  0,
+  '{"fullName":"广西壮族自治区桂林市叠彩区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002000030003',
+  '象山区',
+  NULL,
+  '0001000300200003',
+  0,
+  1,
+  0,
+  '{"fullName":"广西壮族自治区桂林市象山区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002000030004',
+  '七星区',
+  NULL,
+  '0001000300200003',
+  0,
+  1,
+  0,
+  '{"fullName":"广西壮族自治区桂林市七星区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002000030005',
+  '雁山区',
+  NULL,
+  '0001000300200003',
+  0,
+  1,
+  0,
+  '{"fullName":"广西壮族自治区桂林市雁山区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002000030006',
+  '临桂区',
+  NULL,
+  '0001000300200003',
+  0,
+  1,
+  0,
+  '{"fullName":"广西壮族自治区桂林市临桂区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002000030007',
+  '阳朔县',
+  NULL,
+  '0001000300200003',
+  0,
+  1,
+  0,
+  '{"fullName":"广西壮族自治区桂林市阳朔县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002000030008',
+  '灵川县',
+  NULL,
+  '0001000300200003',
+  0,
+  1,
+  0,
+  '{"fullName":"广西壮族自治区桂林市灵川县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002000030009',
+  '全州县',
+  NULL,
+  '0001000300200003',
+  0,
+  1,
+  0,
+  '{"fullName":"广西壮族自治区桂林市全州县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002000030010',
+  '兴安县',
+  NULL,
+  '0001000300200003',
+  0,
+  1,
+  0,
+  '{"fullName":"广西壮族自治区桂林市兴安县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002000030011',
+  '永福县',
+  NULL,
+  '0001000300200003',
+  0,
+  1,
+  0,
+  '{"fullName":"广西壮族自治区桂林市永福县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002000030012',
+  '灌阳县',
+  NULL,
+  '0001000300200003',
+  0,
+  1,
+  0,
+  '{"fullName":"广西壮族自治区桂林市灌阳县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002000030013',
+  '龙胜各族自治县',
+  NULL,
+  '0001000300200003',
+  0,
+  1,
+  0,
+  '{"fullName":"广西壮族自治区桂林市龙胜各族自治县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002000030014',
+  '资源县',
+  NULL,
+  '0001000300200003',
+  0,
+  1,
+  0,
+  '{"fullName":"广西壮族自治区桂林市资源县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002000030015',
+  '平乐县',
+  NULL,
+  '0001000300200003',
+  0,
+  1,
+  0,
+  '{"fullName":"广西壮族自治区桂林市平乐县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002000030016',
+  '荔浦县',
+  NULL,
+  '0001000300200003',
+  0,
+  1,
+  0,
+  '{"fullName":"广西壮族自治区桂林市荔浦县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002000030017',
+  '恭城瑶族自治县',
+  NULL,
+  '0001000300200003',
+  0,
+  1,
+  0,
+  '{"fullName":"广西壮族自治区桂林市恭城瑶族自治县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300200004',
+  '梧州市',
+  NULL,
+  '000100030020',
+  1,
+  1,
+  0,
+  '{"fullName":"广西壮族自治区梧州市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002000040001',
+  '万秀区',
+  NULL,
+  '0001000300200004',
+  0,
+  1,
+  0,
+  '{"fullName":"广西壮族自治区梧州市万秀区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002000040002',
+  '长洲区',
+  NULL,
+  '0001000300200004',
+  0,
+  1,
+  0,
+  '{"fullName":"广西壮族自治区梧州市长洲区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002000040003',
+  '龙圩区',
+  NULL,
+  '0001000300200004',
+  0,
+  1,
+  0,
+  '{"fullName":"广西壮族自治区梧州市龙圩区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002000040004',
+  '苍梧县',
+  NULL,
+  '0001000300200004',
+  0,
+  1,
+  0,
+  '{"fullName":"广西壮族自治区梧州市苍梧县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002000040005',
+  '藤县',
+  NULL,
+  '0001000300200004',
+  0,
+  1,
+  0,
+  '{"fullName":"广西壮族自治区梧州市藤县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002000040006',
+  '蒙山县',
+  NULL,
+  '0001000300200004',
+  0,
+  1,
+  0,
+  '{"fullName":"广西壮族自治区梧州市蒙山县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002000040007',
+  '岑溪市',
+  NULL,
+  '0001000300200004',
+  0,
+  1,
+  0,
+  '{"fullName":"广西壮族自治区梧州市岑溪市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300200005',
+  '北海市',
+  NULL,
+  '000100030020',
+  1,
+  1,
+  0,
+  '{"fullName":"广西壮族自治区北海市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002000050001',
+  '海城区',
+  NULL,
+  '0001000300200005',
+  0,
+  1,
+  0,
+  '{"fullName":"广西壮族自治区北海市海城区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002000050002',
+  '银海区',
+  NULL,
+  '0001000300200005',
+  0,
+  1,
+  0,
+  '{"fullName":"广西壮族自治区北海市银海区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002000050003',
+  '铁山港区',
+  NULL,
+  '0001000300200005',
+  0,
+  1,
+  0,
+  '{"fullName":"广西壮族自治区北海市铁山港区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002000050004',
+  '合浦县',
+  NULL,
+  '0001000300200005',
+  0,
+  1,
+  0,
+  '{"fullName":"广西壮族自治区北海市合浦县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300200006',
+  '防城港市',
+  NULL,
+  '000100030020',
+  1,
+  1,
+  0,
+  '{"fullName":"广西壮族自治区防城港市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002000060001',
+  '港口区',
+  NULL,
+  '0001000300200006',
+  0,
+  1,
+  0,
+  '{"fullName":"广西壮族自治区防城港市港口区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002000060002',
+  '防城区',
+  NULL,
+  '0001000300200006',
+  0,
+  1,
+  0,
+  '{"fullName":"广西壮族自治区防城港市防城区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002000060003',
+  '上思县',
+  NULL,
+  '0001000300200006',
+  0,
+  1,
+  0,
+  '{"fullName":"广西壮族自治区防城港市上思县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002000060004',
+  '东兴市',
+  NULL,
+  '0001000300200006',
+  0,
+  1,
+  0,
+  '{"fullName":"广西壮族自治区防城港市东兴市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300200007',
+  '钦州市',
+  NULL,
+  '000100030020',
+  1,
+  1,
+  0,
+  '{"fullName":"广西壮族自治区钦州市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002000070001',
+  '钦南区',
+  NULL,
+  '0001000300200007',
+  0,
+  1,
+  0,
+  '{"fullName":"广西壮族自治区钦州市钦南区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002000070002',
+  '钦北区',
+  NULL,
+  '0001000300200007',
+  0,
+  1,
+  0,
+  '{"fullName":"广西壮族自治区钦州市钦北区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002000070003',
+  '灵山县',
+  NULL,
+  '0001000300200007',
+  0,
+  1,
+  0,
+  '{"fullName":"广西壮族自治区钦州市灵山县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002000070004',
+  '浦北县',
+  NULL,
+  '0001000300200007',
+  0,
+  1,
+  0,
+  '{"fullName":"广西壮族自治区钦州市浦北县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300200008',
+  '贵港市',
+  NULL,
+  '000100030020',
+  1,
+  1,
+  0,
+  '{"fullName":"广西壮族自治区贵港市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002000080001',
+  '港北区',
+  NULL,
+  '0001000300200008',
+  0,
+  1,
+  0,
+  '{"fullName":"广西壮族自治区贵港市港北区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002000080002',
+  '港南区',
+  NULL,
+  '0001000300200008',
+  0,
+  1,
+  0,
+  '{"fullName":"广西壮族自治区贵港市港南区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002000080003',
+  '覃塘区',
+  NULL,
+  '0001000300200008',
+  0,
+  1,
+  0,
+  '{"fullName":"广西壮族自治区贵港市覃塘区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002000080004',
+  '平南县',
+  NULL,
+  '0001000300200008',
+  0,
+  1,
+  0,
+  '{"fullName":"广西壮族自治区贵港市平南县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002000080005',
+  '桂平市',
+  NULL,
+  '0001000300200008',
+  0,
+  1,
+  0,
+  '{"fullName":"广西壮族自治区贵港市桂平市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300200009',
+  '玉林市',
+  NULL,
+  '000100030020',
+  1,
+  1,
+  0,
+  '{"fullName":"广西壮族自治区玉林市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002000090001',
+  '玉州区',
+  NULL,
+  '0001000300200009',
+  0,
+  1,
+  0,
+  '{"fullName":"广西壮族自治区玉林市玉州区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002000090002',
+  '福绵区',
+  NULL,
+  '0001000300200009',
+  0,
+  1,
+  0,
+  '{"fullName":"广西壮族自治区玉林市福绵区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002000090003',
+  '容县',
+  NULL,
+  '0001000300200009',
+  0,
+  1,
+  0,
+  '{"fullName":"广西壮族自治区玉林市容县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002000090004',
+  '陆川县',
+  NULL,
+  '0001000300200009',
+  0,
+  1,
+  0,
+  '{"fullName":"广西壮族自治区玉林市陆川县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002000090005',
+  '博白县',
+  NULL,
+  '0001000300200009',
+  0,
+  1,
+  0,
+  '{"fullName":"广西壮族自治区玉林市博白县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002000090006',
+  '兴业县',
+  NULL,
+  '0001000300200009',
+  0,
+  1,
+  0,
+  '{"fullName":"广西壮族自治区玉林市兴业县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002000090007',
+  '北流市',
+  NULL,
+  '0001000300200009',
+  0,
+  1,
+  0,
+  '{"fullName":"广西壮族自治区玉林市北流市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300200010',
+  '百色市',
+  NULL,
+  '000100030020',
+  1,
+  1,
+  0,
+  '{"fullName":"广西壮族自治区百色市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002000100001',
+  '右江区',
+  NULL,
+  '0001000300200010',
+  0,
+  1,
+  0,
+  '{"fullName":"广西壮族自治区百色市右江区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002000100002',
+  '田阳县',
+  NULL,
+  '0001000300200010',
+  0,
+  1,
+  0,
+  '{"fullName":"广西壮族自治区百色市田阳县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002000100003',
+  '田东县',
+  NULL,
+  '0001000300200010',
+  0,
+  1,
+  0,
+  '{"fullName":"广西壮族自治区百色市田东县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002000100004',
+  '平果县',
+  NULL,
+  '0001000300200010',
+  0,
+  1,
+  0,
+  '{"fullName":"广西壮族自治区百色市平果县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002000100005',
+  '德保县',
+  NULL,
+  '0001000300200010',
+  0,
+  1,
+  0,
+  '{"fullName":"广西壮族自治区百色市德保县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002000100006',
+  '那坡县',
+  NULL,
+  '0001000300200010',
+  0,
+  1,
+  0,
+  '{"fullName":"广西壮族自治区百色市那坡县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002000100007',
+  '凌云县',
+  NULL,
+  '0001000300200010',
+  0,
+  1,
+  0,
+  '{"fullName":"广西壮族自治区百色市凌云县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002000100008',
+  '乐业县',
+  NULL,
+  '0001000300200010',
+  0,
+  1,
+  0,
+  '{"fullName":"广西壮族自治区百色市乐业县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002000100009',
+  '田林县',
+  NULL,
+  '0001000300200010',
+  0,
+  1,
+  0,
+  '{"fullName":"广西壮族自治区百色市田林县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002000100010',
+  '西林县',
+  NULL,
+  '0001000300200010',
+  0,
+  1,
+  0,
+  '{"fullName":"广西壮族自治区百色市西林县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002000100011',
+  '隆林各族自治县',
+  NULL,
+  '0001000300200010',
+  0,
+  1,
+  0,
+  '{"fullName":"广西壮族自治区百色市隆林各族自治县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002000100012',
+  '靖西市',
+  NULL,
+  '0001000300200010',
+  0,
+  1,
+  0,
+  '{"fullName":"广西壮族自治区百色市靖西市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300200011',
+  '贺州市',
+  NULL,
+  '000100030020',
+  1,
+  1,
+  0,
+  '{"fullName":"广西壮族自治区贺州市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002000110001',
+  '八步区',
+  NULL,
+  '0001000300200011',
+  0,
+  1,
+  0,
+  '{"fullName":"广西壮族自治区贺州市八步区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002000110002',
+  '平桂区',
+  NULL,
+  '0001000300200011',
+  0,
+  1,
+  0,
+  '{"fullName":"广西壮族自治区贺州市平桂区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002000110003',
+  '昭平县',
+  NULL,
+  '0001000300200011',
+  0,
+  1,
+  0,
+  '{"fullName":"广西壮族自治区贺州市昭平县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002000110004',
+  '钟山县',
+  NULL,
+  '0001000300200011',
+  0,
+  1,
+  0,
+  '{"fullName":"广西壮族自治区贺州市钟山县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002000110005',
+  '富川瑶族自治县',
+  NULL,
+  '0001000300200011',
+  0,
+  1,
+  0,
+  '{"fullName":"广西壮族自治区贺州市富川瑶族自治县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300200012',
+  '河池市',
+  NULL,
+  '000100030020',
+  1,
+  1,
+  0,
+  '{"fullName":"广西壮族自治区河池市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002000120001',
+  '金城江区',
+  NULL,
+  '0001000300200012',
+  0,
+  1,
+  0,
+  '{"fullName":"广西壮族自治区河池市金城江区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002000120002',
+  '南丹县',
+  NULL,
+  '0001000300200012',
+  0,
+  1,
+  0,
+  '{"fullName":"广西壮族自治区河池市南丹县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002000120003',
+  '天峨县',
+  NULL,
+  '0001000300200012',
+  0,
+  1,
+  0,
+  '{"fullName":"广西壮族自治区河池市天峨县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002000120004',
+  '凤山县',
+  NULL,
+  '0001000300200012',
+  0,
+  1,
+  0,
+  '{"fullName":"广西壮族自治区河池市凤山县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002000120005',
+  '东兰县',
+  NULL,
+  '0001000300200012',
+  0,
+  1,
+  0,
+  '{"fullName":"广西壮族自治区河池市东兰县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002000120006',
+  '罗城仫佬族自治县',
+  NULL,
+  '0001000300200012',
+  0,
+  1,
+  0,
+  '{"fullName":"广西壮族自治区河池市罗城仫佬族自治县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002000120007',
+  '环江毛南族自治县',
+  NULL,
+  '0001000300200012',
+  0,
+  1,
+  0,
+  '{"fullName":"广西壮族自治区河池市环江毛南族自治县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002000120008',
+  '巴马瑶族自治县',
+  NULL,
+  '0001000300200012',
+  0,
+  1,
+  0,
+  '{"fullName":"广西壮族自治区河池市巴马瑶族自治县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002000120009',
+  '都安瑶族自治县',
+  NULL,
+  '0001000300200012',
+  0,
+  1,
+  0,
+  '{"fullName":"广西壮族自治区河池市都安瑶族自治县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002000120010',
+  '大化瑶族自治县',
+  NULL,
+  '0001000300200012',
+  0,
+  1,
+  0,
+  '{"fullName":"广西壮族自治区河池市大化瑶族自治县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002000120011',
+  '宜州市',
+  NULL,
+  '0001000300200012',
+  0,
+  1,
+  0,
+  '{"fullName":"广西壮族自治区河池市宜州市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300200013',
+  '来宾市',
+  NULL,
+  '000100030020',
+  1,
+  1,
+  0,
+  '{"fullName":"广西壮族自治区来宾市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002000130001',
+  '兴宾区',
+  NULL,
+  '0001000300200013',
+  0,
+  1,
+  0,
+  '{"fullName":"广西壮族自治区来宾市兴宾区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002000130002',
+  '忻城县',
+  NULL,
+  '0001000300200013',
+  0,
+  1,
+  0,
+  '{"fullName":"广西壮族自治区来宾市忻城县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002000130003',
+  '象州县',
+  NULL,
+  '0001000300200013',
+  0,
+  1,
+  0,
+  '{"fullName":"广西壮族自治区来宾市象州县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002000130004',
+  '武宣县',
+  NULL,
+  '0001000300200013',
+  0,
+  1,
+  0,
+  '{"fullName":"广西壮族自治区来宾市武宣县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002000130005',
+  '金秀瑶族自治县',
+  NULL,
+  '0001000300200013',
+  0,
+  1,
+  0,
+  '{"fullName":"广西壮族自治区来宾市金秀瑶族自治县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002000130006',
+  '合山市',
+  NULL,
+  '0001000300200013',
+  0,
+  1,
+  0,
+  '{"fullName":"广西壮族自治区来宾市合山市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300200014',
+  '崇左市',
+  NULL,
+  '000100030020',
+  1,
+  1,
+  0,
+  '{"fullName":"广西壮族自治区崇左市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002000140001',
+  '江州区',
+  NULL,
+  '0001000300200014',
+  0,
+  1,
+  0,
+  '{"fullName":"广西壮族自治区崇左市江州区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002000140002',
+  '扶绥县',
+  NULL,
+  '0001000300200014',
+  0,
+  1,
+  0,
+  '{"fullName":"广西壮族自治区崇左市扶绥县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002000140003',
+  '宁明县',
+  NULL,
+  '0001000300200014',
+  0,
+  1,
+  0,
+  '{"fullName":"广西壮族自治区崇左市宁明县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002000140004',
+  '龙州县',
+  NULL,
+  '0001000300200014',
+  0,
+  1,
+  0,
+  '{"fullName":"广西壮族自治区崇左市龙州县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002000140005',
+  '大新县',
+  NULL,
+  '0001000300200014',
+  0,
+  1,
+  0,
+  '{"fullName":"广西壮族自治区崇左市大新县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002000140006',
+  '天等县',
+  NULL,
+  '0001000300200014',
+  0,
+  1,
+  0,
+  '{"fullName":"广西壮族自治区崇左市天等县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002000140007',
+  '凭祥市',
+  NULL,
+  '0001000300200014',
+  0,
+  1,
+  0,
+  '{"fullName":"广西壮族自治区崇左市凭祥市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '000100030021',
+  '海南省',
+  NULL,
+  '00010003',
+  1,
+  1,
+  0,
+  '{"fullName":"海南省"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300210001',
+  '海口市',
+  NULL,
+  '000100030021',
+  1,
+  1,
+  0,
+  '{"fullName":"海南省海口市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002100010001',
+  '秀英区',
+  NULL,
+  '0001000300210001',
+  0,
+  1,
+  0,
+  '{"fullName":"海南省海口市秀英区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002100010002',
+  '龙华区',
+  NULL,
+  '0001000300210001',
+  0,
+  1,
+  0,
+  '{"fullName":"海南省海口市龙华区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002100010003',
+  '琼山区',
+  NULL,
+  '0001000300210001',
+  0,
+  1,
+  0,
+  '{"fullName":"海南省海口市琼山区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002100010004',
+  '美兰区',
+  NULL,
+  '0001000300210001',
+  0,
+  1,
+  0,
+  '{"fullName":"海南省海口市美兰区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300210002',
+  '三亚市',
+  NULL,
+  '000100030021',
+  1,
+  1,
+  0,
+  '{"fullName":"海南省三亚市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002100020001',
+  '市辖区',
+  NULL,
+  '0001000300210002',
+  0,
+  1,
+  0,
+  '{"fullName":"海南省三亚市市辖区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002100020002',
+  '海棠区',
+  NULL,
+  '0001000300210002',
+  0,
+  1,
+  0,
+  '{"fullName":"海南省三亚市海棠区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002100020003',
+  '吉阳区',
+  NULL,
+  '0001000300210002',
+  0,
+  1,
+  0,
+  '{"fullName":"海南省三亚市吉阳区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002100020004',
+  '天涯区',
+  NULL,
+  '0001000300210002',
+  0,
+  1,
+  0,
+  '{"fullName":"海南省三亚市天涯区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002100020005',
+  '崖州区',
+  NULL,
+  '0001000300210002',
+  0,
+  1,
+  0,
+  '{"fullName":"海南省三亚市崖州区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300210003',
+  '三沙市',
+  NULL,
+  '000100030021',
+  1,
+  1,
+  0,
+  '{"fullName":"海南省三沙市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002100030001',
+  '西沙群岛',
+  NULL,
+  '0001000300210003',
+  0,
+  1,
+  0,
+  '{"fullName":"海南省三沙市西沙群岛"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002100030002',
+  '南沙群岛',
+  NULL,
+  '0001000300210003',
+  0,
+  1,
+  0,
+  '{"fullName":"海南省三沙市南沙群岛"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002100030003',
+  '中沙群岛的岛礁及其海域',
+  NULL,
+  '0001000300210003',
+  0,
+  1,
+  0,
+  '{"fullName":"海南省三沙市中沙群岛的岛礁及其海域"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300210004',
+  '儋州市',
+  NULL,
+  '000100030021',
+  1,
+  1,
+  0,
+  '{"fullName":"海南省儋州市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002100040001',
+  '那大镇',
+  NULL,
+  '0001000300210004',
+  0,
+  1,
+  0,
+  '{"fullName":"海南省儋州市那大镇"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002100040002',
+  '和庆镇',
+  NULL,
+  '0001000300210004',
+  0,
+  1,
+  0,
+  '{"fullName":"海南省儋州市和庆镇"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002100040003',
+  '南丰镇',
+  NULL,
+  '0001000300210004',
+  0,
+  1,
+  0,
+  '{"fullName":"海南省儋州市南丰镇"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002100040004',
+  '大成镇',
+  NULL,
+  '0001000300210004',
+  0,
+  1,
+  0,
+  '{"fullName":"海南省儋州市大成镇"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002100040005',
+  '雅星镇',
+  NULL,
+  '0001000300210004',
+  0,
+  1,
+  0,
+  '{"fullName":"海南省儋州市雅星镇"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002100040006',
+  '兰洋镇',
+  NULL,
+  '0001000300210004',
+  0,
+  1,
+  0,
+  '{"fullName":"海南省儋州市兰洋镇"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002100040007',
+  '光村镇',
+  NULL,
+  '0001000300210004',
+  0,
+  1,
+  0,
+  '{"fullName":"海南省儋州市光村镇"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002100040008',
+  '木棠镇',
+  NULL,
+  '0001000300210004',
+  0,
+  1,
+  0,
+  '{"fullName":"海南省儋州市木棠镇"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002100040009',
+  '海头镇',
+  NULL,
+  '0001000300210004',
+  0,
+  1,
+  0,
+  '{"fullName":"海南省儋州市海头镇"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002100040010',
+  '峨蔓镇',
+  NULL,
+  '0001000300210004',
+  0,
+  1,
+  0,
+  '{"fullName":"海南省儋州市峨蔓镇"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002100040011',
+  '三都镇',
+  NULL,
+  '0001000300210004',
+  0,
+  1,
+  0,
+  '{"fullName":"海南省儋州市三都镇"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002100040012',
+  '王五镇',
+  NULL,
+  '0001000300210004',
+  0,
+  1,
+  0,
+  '{"fullName":"海南省儋州市王五镇"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002100040013',
+  '白马井镇',
+  NULL,
+  '0001000300210004',
+  0,
+  1,
+  0,
+  '{"fullName":"海南省儋州市白马井镇"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002100040014',
+  '中和镇',
+  NULL,
+  '0001000300210004',
+  0,
+  1,
+  0,
+  '{"fullName":"海南省儋州市中和镇"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002100040015',
+  '排浦镇',
+  NULL,
+  '0001000300210004',
+  0,
+  1,
+  0,
+  '{"fullName":"海南省儋州市排浦镇"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002100040016',
+  '东成镇',
+  NULL,
+  '0001000300210004',
+  0,
+  1,
+  0,
+  '{"fullName":"海南省儋州市东成镇"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002100040017',
+  '新州镇',
+  NULL,
+  '0001000300210004',
+  0,
+  1,
+  0,
+  '{"fullName":"海南省儋州市新州镇"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002100040018',
+  '国营西培农场',
+  NULL,
+  '0001000300210004',
+  0,
+  1,
+  0,
+  '{"fullName":"海南省儋州市国营西培农场"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002100040019',
+  '国营西联农场',
+  NULL,
+  '0001000300210004',
+  0,
+  1,
+  0,
+  '{"fullName":"海南省儋州市国营西联农场"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002100040020',
+  '国营蓝洋农场',
+  NULL,
+  '0001000300210004',
+  0,
+  1,
+  0,
+  '{"fullName":"海南省儋州市国营蓝洋农场"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002100040021',
+  '国营八一农场',
+  NULL,
+  '0001000300210004',
+  0,
+  1,
+  0,
+  '{"fullName":"海南省儋州市国营八一农场"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002100040022',
+  '洋浦经济开发区',
+  NULL,
+  '0001000300210004',
+  0,
+  1,
+  0,
+  '{"fullName":"海南省儋州市洋浦经济开发区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002100040023',
+  '华南热作学院',
+  NULL,
+  '0001000300210004',
+  0,
+  1,
+  0,
+  '{"fullName":"海南省儋州市华南热作学院"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300210005',
+  '省直辖县级行政区划',
+  NULL,
+  '000100030021',
+  1,
+  1,
+  0,
+  '{"fullName":"海南省省直辖县级行政区划"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002100050001',
+  '五指山市',
+  NULL,
+  '0001000300210005',
+  0,
+  1,
+  0,
+  '{"fullName":"海南省省直辖县级行政区划五指山市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002100050002',
+  '琼海市',
+  NULL,
+  '0001000300210005',
+  0,
+  1,
+  0,
+  '{"fullName":"海南省省直辖县级行政区划琼海市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002100050003',
+  '文昌市',
+  NULL,
+  '0001000300210005',
+  0,
+  1,
+  0,
+  '{"fullName":"海南省省直辖县级行政区划文昌市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002100050004',
+  '万宁市',
+  NULL,
+  '0001000300210005',
+  0,
+  1,
+  0,
+  '{"fullName":"海南省省直辖县级行政区划万宁市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002100050005',
+  '东方市',
+  NULL,
+  '0001000300210005',
+  0,
+  1,
+  0,
+  '{"fullName":"海南省省直辖县级行政区划东方市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002100050006',
+  '定安县',
+  NULL,
+  '0001000300210005',
+  0,
+  1,
+  0,
+  '{"fullName":"海南省省直辖县级行政区划定安县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002100050007',
+  '屯昌县',
+  NULL,
+  '0001000300210005',
+  0,
+  1,
+  0,
+  '{"fullName":"海南省省直辖县级行政区划屯昌县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002100050008',
+  '澄迈县',
+  NULL,
+  '0001000300210005',
+  0,
+  1,
+  0,
+  '{"fullName":"海南省省直辖县级行政区划澄迈县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002100050009',
+  '临高县',
+  NULL,
+  '0001000300210005',
+  0,
+  1,
+  0,
+  '{"fullName":"海南省省直辖县级行政区划临高县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002100050010',
+  '白沙黎族自治县',
+  NULL,
+  '0001000300210005',
+  0,
+  1,
+  0,
+  '{"fullName":"海南省省直辖县级行政区划白沙黎族自治县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002100050011',
+  '昌江黎族自治县',
+  NULL,
+  '0001000300210005',
+  0,
+  1,
+  0,
+  '{"fullName":"海南省省直辖县级行政区划昌江黎族自治县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002100050012',
+  '乐东黎族自治县',
+  NULL,
+  '0001000300210005',
+  0,
+  1,
+  0,
+  '{"fullName":"海南省省直辖县级行政区划乐东黎族自治县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002100050013',
+  '陵水黎族自治县',
+  NULL,
+  '0001000300210005',
+  0,
+  1,
+  0,
+  '{"fullName":"海南省省直辖县级行政区划陵水黎族自治县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002100050014',
+  '保亭黎族苗族自治县',
+  NULL,
+  '0001000300210005',
+  0,
+  1,
+  0,
+  '{"fullName":"海南省省直辖县级行政区划保亭黎族苗族自治县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002100050015',
+  '琼中黎族苗族自治县',
+  NULL,
+  '0001000300210005',
+  0,
+  1,
+  0,
+  '{"fullName":"海南省省直辖县级行政区划琼中黎族苗族自治县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '000100030022',
+  '重庆市',
+  NULL,
+  '00010003',
+  1,
+  1,
+  0,
+  '{"fullName":"重庆市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300220001',
+  '市辖区',
+  NULL,
+  '000100030022',
+  1,
+  1,
+  0,
+  '{"fullName":"重庆市市辖区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002200010001',
+  '万州区',
+  NULL,
+  '0001000300220001',
+  0,
+  1,
+  0,
+  '{"fullName":"重庆市市辖区万州区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002200010002',
+  '涪陵区',
+  NULL,
+  '0001000300220001',
+  0,
+  1,
+  0,
+  '{"fullName":"重庆市市辖区涪陵区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002200010003',
+  '渝中区',
+  NULL,
+  '0001000300220001',
+  0,
+  1,
+  0,
+  '{"fullName":"重庆市市辖区渝中区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002200010004',
+  '大渡口区',
+  NULL,
+  '0001000300220001',
+  0,
+  1,
+  0,
+  '{"fullName":"重庆市市辖区大渡口区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002200010005',
+  '江北区',
+  NULL,
+  '0001000300220001',
+  0,
+  1,
+  0,
+  '{"fullName":"重庆市市辖区江北区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002200010006',
+  '沙坪坝区',
+  NULL,
+  '0001000300220001',
+  0,
+  1,
+  0,
+  '{"fullName":"重庆市市辖区沙坪坝区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002200010007',
+  '九龙坡区',
+  NULL,
+  '0001000300220001',
+  0,
+  1,
+  0,
+  '{"fullName":"重庆市市辖区九龙坡区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002200010008',
+  '南岸区',
+  NULL,
+  '0001000300220001',
+  0,
+  1,
+  0,
+  '{"fullName":"重庆市市辖区南岸区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002200010009',
+  '北碚区',
+  NULL,
+  '0001000300220001',
+  0,
+  1,
+  0,
+  '{"fullName":"重庆市市辖区北碚区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002200010010',
+  '綦江区',
+  NULL,
+  '0001000300220001',
+  0,
+  1,
+  0,
+  '{"fullName":"重庆市市辖区綦江区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002200010011',
+  '大足区',
+  NULL,
+  '0001000300220001',
+  0,
+  1,
+  0,
+  '{"fullName":"重庆市市辖区大足区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002200010012',
+  '渝北区',
+  NULL,
+  '0001000300220001',
+  0,
+  1,
+  0,
+  '{"fullName":"重庆市市辖区渝北区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002200010013',
+  '巴南区',
+  NULL,
+  '0001000300220001',
+  0,
+  1,
+  0,
+  '{"fullName":"重庆市市辖区巴南区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002200010014',
+  '黔江区',
+  NULL,
+  '0001000300220001',
+  0,
+  1,
+  0,
+  '{"fullName":"重庆市市辖区黔江区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002200010015',
+  '长寿区',
+  NULL,
+  '0001000300220001',
+  0,
+  1,
+  0,
+  '{"fullName":"重庆市市辖区长寿区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002200010016',
+  '江津区',
+  NULL,
+  '0001000300220001',
+  0,
+  1,
+  0,
+  '{"fullName":"重庆市市辖区江津区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002200010017',
+  '合川区',
+  NULL,
+  '0001000300220001',
+  0,
+  1,
+  0,
+  '{"fullName":"重庆市市辖区合川区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002200010018',
+  '永川区',
+  NULL,
+  '0001000300220001',
+  0,
+  1,
+  0,
+  '{"fullName":"重庆市市辖区永川区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002200010019',
+  '南川区',
+  NULL,
+  '0001000300220001',
+  0,
+  1,
+  0,
+  '{"fullName":"重庆市市辖区南川区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002200010020',
+  '璧山区',
+  NULL,
+  '0001000300220001',
+  0,
+  1,
+  0,
+  '{"fullName":"重庆市市辖区璧山区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002200010021',
+  '铜梁区',
+  NULL,
+  '0001000300220001',
+  0,
+  1,
+  0,
+  '{"fullName":"重庆市市辖区铜梁区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002200010022',
+  '潼南区',
+  NULL,
+  '0001000300220001',
+  0,
+  1,
+  0,
+  '{"fullName":"重庆市市辖区潼南区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002200010023',
+  '荣昌区',
+  NULL,
+  '0001000300220001',
+  0,
+  1,
+  0,
+  '{"fullName":"重庆市市辖区荣昌区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002200010024',
+  '开州区',
+  NULL,
+  '0001000300220001',
+  0,
+  1,
+  0,
+  '{"fullName":"重庆市市辖区开州区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300220002',
+  '县',
+  NULL,
+  '000100030022',
+  1,
+  1,
+  0,
+  '{"fullName":"重庆市县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002200020001',
+  '梁平县',
+  NULL,
+  '0001000300220002',
+  0,
+  1,
+  0,
+  '{"fullName":"重庆市县梁平县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002200020002',
+  '城口县',
+  NULL,
+  '0001000300220002',
+  0,
+  1,
+  0,
+  '{"fullName":"重庆市县城口县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002200020003',
+  '丰都县',
+  NULL,
+  '0001000300220002',
+  0,
+  1,
+  0,
+  '{"fullName":"重庆市县丰都县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002200020004',
+  '垫江县',
+  NULL,
+  '0001000300220002',
+  0,
+  1,
+  0,
+  '{"fullName":"重庆市县垫江县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002200020005',
+  '武隆县',
+  NULL,
+  '0001000300220002',
+  0,
+  1,
+  0,
+  '{"fullName":"重庆市县武隆县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002200020006',
+  '忠县',
+  NULL,
+  '0001000300220002',
+  0,
+  1,
+  0,
+  '{"fullName":"重庆市县忠县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002200020007',
+  '云阳县',
+  NULL,
+  '0001000300220002',
+  0,
+  1,
+  0,
+  '{"fullName":"重庆市县云阳县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002200020008',
+  '奉节县',
+  NULL,
+  '0001000300220002',
+  0,
+  1,
+  0,
+  '{"fullName":"重庆市县奉节县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002200020009',
+  '巫山县',
+  NULL,
+  '0001000300220002',
+  0,
+  1,
+  0,
+  '{"fullName":"重庆市县巫山县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002200020010',
+  '巫溪县',
+  NULL,
+  '0001000300220002',
+  0,
+  1,
+  0,
+  '{"fullName":"重庆市县巫溪县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002200020011',
+  '石柱土家族自治县',
+  NULL,
+  '0001000300220002',
+  0,
+  1,
+  0,
+  '{"fullName":"重庆市县石柱土家族自治县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002200020012',
+  '秀山土家族苗族自治县',
+  NULL,
+  '0001000300220002',
+  0,
+  1,
+  0,
+  '{"fullName":"重庆市县秀山土家族苗族自治县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002200020013',
+  '酉阳土家族苗族自治县',
+  NULL,
+  '0001000300220002',
+  0,
+  1,
+  0,
+  '{"fullName":"重庆市县酉阳土家族苗族自治县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002200020014',
+  '彭水苗族土家族自治县',
+  NULL,
+  '0001000300220002',
+  0,
+  1,
+  0,
+  '{"fullName":"重庆市县彭水苗族土家族自治县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '000100030023',
+  '四川省',
+  NULL,
+  '00010003',
+  1,
+  1,
+  0,
+  '{"fullName":"四川省"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300230001',
+  '成都市',
+  NULL,
+  '000100030023',
+  1,
+  1,
+  0,
+  '{"fullName":"四川省成都市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002300010001',
+  '锦江区',
+  NULL,
+  '0001000300230001',
+  0,
+  1,
+  0,
+  '{"fullName":"四川省成都市锦江区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002300010002',
+  '青羊区',
+  NULL,
+  '0001000300230001',
+  0,
+  1,
+  0,
+  '{"fullName":"四川省成都市青羊区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002300010003',
+  '金牛区',
+  NULL,
+  '0001000300230001',
+  0,
+  1,
+  0,
+  '{"fullName":"四川省成都市金牛区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002300010004',
+  '武侯区',
+  NULL,
+  '0001000300230001',
+  0,
+  1,
+  0,
+  '{"fullName":"四川省成都市武侯区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002300010005',
+  '成华区',
+  NULL,
+  '0001000300230001',
+  0,
+  1,
+  0,
+  '{"fullName":"四川省成都市成华区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002300010006',
+  '龙泉驿区',
+  NULL,
+  '0001000300230001',
+  0,
+  1,
+  0,
+  '{"fullName":"四川省成都市龙泉驿区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002300010007',
+  '青白江区',
+  NULL,
+  '0001000300230001',
+  0,
+  1,
+  0,
+  '{"fullName":"四川省成都市青白江区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002300010008',
+  '新都区',
+  NULL,
+  '0001000300230001',
+  0,
+  1,
+  0,
+  '{"fullName":"四川省成都市新都区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002300010009',
+  '温江区',
+  NULL,
+  '0001000300230001',
+  0,
+  1,
+  0,
+  '{"fullName":"四川省成都市温江区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002300010010',
+  '双流区',
+  NULL,
+  '0001000300230001',
+  0,
+  1,
+  0,
+  '{"fullName":"四川省成都市双流区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002300010011',
+  '金堂县',
+  NULL,
+  '0001000300230001',
+  0,
+  1,
+  0,
+  '{"fullName":"四川省成都市金堂县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002300010012',
+  '郫县',
+  NULL,
+  '0001000300230001',
+  0,
+  1,
+  0,
+  '{"fullName":"四川省成都市郫县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002300010013',
+  '大邑县',
+  NULL,
+  '0001000300230001',
+  0,
+  1,
+  0,
+  '{"fullName":"四川省成都市大邑县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002300010014',
+  '蒲江县',
+  NULL,
+  '0001000300230001',
+  0,
+  1,
+  0,
+  '{"fullName":"四川省成都市蒲江县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002300010015',
+  '新津县',
+  NULL,
+  '0001000300230001',
+  0,
+  1,
+  0,
+  '{"fullName":"四川省成都市新津县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002300010016',
+  '都江堰市',
+  NULL,
+  '0001000300230001',
+  0,
+  1,
+  0,
+  '{"fullName":"四川省成都市都江堰市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002300010017',
+  '彭州市',
+  NULL,
+  '0001000300230001',
+  0,
+  1,
+  0,
+  '{"fullName":"四川省成都市彭州市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002300010018',
+  '邛崃市',
+  NULL,
+  '0001000300230001',
+  0,
+  1,
+  0,
+  '{"fullName":"四川省成都市邛崃市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002300010019',
+  '崇州市',
+  NULL,
+  '0001000300230001',
+  0,
+  1,
+  0,
+  '{"fullName":"四川省成都市崇州市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002300010020',
+  '简阳市',
+  NULL,
+  '0001000300230001',
+  0,
+  1,
+  0,
+  '{"fullName":"四川省成都市简阳市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300230002',
+  '自贡市',
+  NULL,
+  '000100030023',
+  1,
+  1,
+  0,
+  '{"fullName":"四川省自贡市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002300020001',
+  '自流井区',
+  NULL,
+  '0001000300230002',
+  0,
+  1,
+  0,
+  '{"fullName":"四川省自贡市自流井区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002300020002',
+  '贡井区',
+  NULL,
+  '0001000300230002',
+  0,
+  1,
+  0,
+  '{"fullName":"四川省自贡市贡井区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002300020003',
+  '大安区',
+  NULL,
+  '0001000300230002',
+  0,
+  1,
+  0,
+  '{"fullName":"四川省自贡市大安区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002300020004',
+  '沿滩区',
+  NULL,
+  '0001000300230002',
+  0,
+  1,
+  0,
+  '{"fullName":"四川省自贡市沿滩区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002300020005',
+  '荣县',
+  NULL,
+  '0001000300230002',
+  0,
+  1,
+  0,
+  '{"fullName":"四川省自贡市荣县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002300020006',
+  '富顺县',
+  NULL,
+  '0001000300230002',
+  0,
+  1,
+  0,
+  '{"fullName":"四川省自贡市富顺县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300230003',
+  '攀枝花市',
+  NULL,
+  '000100030023',
+  1,
+  1,
+  0,
+  '{"fullName":"四川省攀枝花市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002300030001',
+  '东区',
+  NULL,
+  '0001000300230003',
+  0,
+  1,
+  0,
+  '{"fullName":"四川省攀枝花市东区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002300030002',
+  '西区',
+  NULL,
+  '0001000300230003',
+  0,
+  1,
+  0,
+  '{"fullName":"四川省攀枝花市西区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002300030003',
+  '仁和区',
+  NULL,
+  '0001000300230003',
+  0,
+  1,
+  0,
+  '{"fullName":"四川省攀枝花市仁和区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002300030004',
+  '米易县',
+  NULL,
+  '0001000300230003',
+  0,
+  1,
+  0,
+  '{"fullName":"四川省攀枝花市米易县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002300030005',
+  '盐边县',
+  NULL,
+  '0001000300230003',
+  0,
+  1,
+  0,
+  '{"fullName":"四川省攀枝花市盐边县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300230004',
+  '泸州市',
+  NULL,
+  '000100030023',
+  1,
+  1,
+  0,
+  '{"fullName":"四川省泸州市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002300040001',
+  '江阳区',
+  NULL,
+  '0001000300230004',
+  0,
+  1,
+  0,
+  '{"fullName":"四川省泸州市江阳区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002300040002',
+  '纳溪区',
+  NULL,
+  '0001000300230004',
+  0,
+  1,
+  0,
+  '{"fullName":"四川省泸州市纳溪区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002300040003',
+  '龙马潭区',
+  NULL,
+  '0001000300230004',
+  0,
+  1,
+  0,
+  '{"fullName":"四川省泸州市龙马潭区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002300040004',
+  '泸县',
+  NULL,
+  '0001000300230004',
+  0,
+  1,
+  0,
+  '{"fullName":"四川省泸州市泸县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002300040005',
+  '合江县',
+  NULL,
+  '0001000300230004',
+  0,
+  1,
+  0,
+  '{"fullName":"四川省泸州市合江县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002300040006',
+  '叙永县',
+  NULL,
+  '0001000300230004',
+  0,
+  1,
+  0,
+  '{"fullName":"四川省泸州市叙永县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002300040007',
+  '古蔺县',
+  NULL,
+  '0001000300230004',
+  0,
+  1,
+  0,
+  '{"fullName":"四川省泸州市古蔺县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300230005',
+  '德阳市',
+  NULL,
+  '000100030023',
+  1,
+  1,
+  0,
+  '{"fullName":"四川省德阳市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002300050001',
+  '旌阳区',
+  NULL,
+  '0001000300230005',
+  0,
+  1,
+  0,
+  '{"fullName":"四川省德阳市旌阳区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002300050002',
+  '中江县',
+  NULL,
+  '0001000300230005',
+  0,
+  1,
+  0,
+  '{"fullName":"四川省德阳市中江县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002300050003',
+  '罗江县',
+  NULL,
+  '0001000300230005',
+  0,
+  1,
+  0,
+  '{"fullName":"四川省德阳市罗江县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002300050004',
+  '广汉市',
+  NULL,
+  '0001000300230005',
+  0,
+  1,
+  0,
+  '{"fullName":"四川省德阳市广汉市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002300050005',
+  '什邡市',
+  NULL,
+  '0001000300230005',
+  0,
+  1,
+  0,
+  '{"fullName":"四川省德阳市什邡市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002300050006',
+  '绵竹市',
+  NULL,
+  '0001000300230005',
+  0,
+  1,
+  0,
+  '{"fullName":"四川省德阳市绵竹市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300230006',
+  '绵阳市',
+  NULL,
+  '000100030023',
+  1,
+  1,
+  0,
+  '{"fullName":"四川省绵阳市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002300060001',
+  '涪城区',
+  NULL,
+  '0001000300230006',
+  0,
+  1,
+  0,
+  '{"fullName":"四川省绵阳市涪城区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002300060002',
+  '游仙区',
+  NULL,
+  '0001000300230006',
+  0,
+  1,
+  0,
+  '{"fullName":"四川省绵阳市游仙区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002300060003',
+  '安州区',
+  NULL,
+  '0001000300230006',
+  0,
+  1,
+  0,
+  '{"fullName":"四川省绵阳市安州区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002300060004',
+  '三台县',
+  NULL,
+  '0001000300230006',
+  0,
+  1,
+  0,
+  '{"fullName":"四川省绵阳市三台县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002300060005',
+  '盐亭县',
+  NULL,
+  '0001000300230006',
+  0,
+  1,
+  0,
+  '{"fullName":"四川省绵阳市盐亭县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002300060006',
+  '梓潼县',
+  NULL,
+  '0001000300230006',
+  0,
+  1,
+  0,
+  '{"fullName":"四川省绵阳市梓潼县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002300060007',
+  '北川羌族自治县',
+  NULL,
+  '0001000300230006',
+  0,
+  1,
+  0,
+  '{"fullName":"四川省绵阳市北川羌族自治县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002300060008',
+  '平武县',
+  NULL,
+  '0001000300230006',
+  0,
+  1,
+  0,
+  '{"fullName":"四川省绵阳市平武县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002300060009',
+  '江油市',
+  NULL,
+  '0001000300230006',
+  0,
+  1,
+  0,
+  '{"fullName":"四川省绵阳市江油市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300230007',
+  '广元市',
+  NULL,
+  '000100030023',
+  1,
+  1,
+  0,
+  '{"fullName":"四川省广元市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002300070001',
+  '利州区',
+  NULL,
+  '0001000300230007',
+  0,
+  1,
+  0,
+  '{"fullName":"四川省广元市利州区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002300070002',
+  '昭化区',
+  NULL,
+  '0001000300230007',
+  0,
+  1,
+  0,
+  '{"fullName":"四川省广元市昭化区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002300070003',
+  '朝天区',
+  NULL,
+  '0001000300230007',
+  0,
+  1,
+  0,
+  '{"fullName":"四川省广元市朝天区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002300070004',
+  '旺苍县',
+  NULL,
+  '0001000300230007',
+  0,
+  1,
+  0,
+  '{"fullName":"四川省广元市旺苍县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002300070005',
+  '青川县',
+  NULL,
+  '0001000300230007',
+  0,
+  1,
+  0,
+  '{"fullName":"四川省广元市青川县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002300070006',
+  '剑阁县',
+  NULL,
+  '0001000300230007',
+  0,
+  1,
+  0,
+  '{"fullName":"四川省广元市剑阁县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002300070007',
+  '苍溪县',
+  NULL,
+  '0001000300230007',
+  0,
+  1,
+  0,
+  '{"fullName":"四川省广元市苍溪县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300230008',
+  '遂宁市',
+  NULL,
+  '000100030023',
+  1,
+  1,
+  0,
+  '{"fullName":"四川省遂宁市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002300080001',
+  '船山区',
+  NULL,
+  '0001000300230008',
+  0,
+  1,
+  0,
+  '{"fullName":"四川省遂宁市船山区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002300080002',
+  '安居区',
+  NULL,
+  '0001000300230008',
+  0,
+  1,
+  0,
+  '{"fullName":"四川省遂宁市安居区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002300080003',
+  '蓬溪县',
+  NULL,
+  '0001000300230008',
+  0,
+  1,
+  0,
+  '{"fullName":"四川省遂宁市蓬溪县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002300080004',
+  '射洪县',
+  NULL,
+  '0001000300230008',
+  0,
+  1,
+  0,
+  '{"fullName":"四川省遂宁市射洪县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002300080005',
+  '大英县',
+  NULL,
+  '0001000300230008',
+  0,
+  1,
+  0,
+  '{"fullName":"四川省遂宁市大英县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300230009',
+  '内江市',
+  NULL,
+  '000100030023',
+  1,
+  1,
+  0,
+  '{"fullName":"四川省内江市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002300090001',
+  '市中区',
+  NULL,
+  '0001000300230009',
+  0,
+  1,
+  0,
+  '{"fullName":"四川省内江市市中区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002300090002',
+  '东兴区',
+  NULL,
+  '0001000300230009',
+  0,
+  1,
+  0,
+  '{"fullName":"四川省内江市东兴区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002300090003',
+  '威远县',
+  NULL,
+  '0001000300230009',
+  0,
+  1,
+  0,
+  '{"fullName":"四川省内江市威远县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002300090004',
+  '资中县',
+  NULL,
+  '0001000300230009',
+  0,
+  1,
+  0,
+  '{"fullName":"四川省内江市资中县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002300090005',
+  '隆昌县',
+  NULL,
+  '0001000300230009',
+  0,
+  1,
+  0,
+  '{"fullName":"四川省内江市隆昌县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300230010',
+  '乐山市',
+  NULL,
+  '000100030023',
+  1,
+  1,
+  0,
+  '{"fullName":"四川省乐山市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002300100001',
+  '市中区',
+  NULL,
+  '0001000300230010',
+  0,
+  1,
+  0,
+  '{"fullName":"四川省乐山市市中区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002300100002',
+  '沙湾区',
+  NULL,
+  '0001000300230010',
+  0,
+  1,
+  0,
+  '{"fullName":"四川省乐山市沙湾区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002300100003',
+  '五通桥区',
+  NULL,
+  '0001000300230010',
+  0,
+  1,
+  0,
+  '{"fullName":"四川省乐山市五通桥区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002300100004',
+  '金口河区',
+  NULL,
+  '0001000300230010',
+  0,
+  1,
+  0,
+  '{"fullName":"四川省乐山市金口河区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002300100005',
+  '犍为县',
+  NULL,
+  '0001000300230010',
+  0,
+  1,
+  0,
+  '{"fullName":"四川省乐山市犍为县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002300100006',
+  '井研县',
+  NULL,
+  '0001000300230010',
+  0,
+  1,
+  0,
+  '{"fullName":"四川省乐山市井研县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002300100007',
+  '夹江县',
+  NULL,
+  '0001000300230010',
+  0,
+  1,
+  0,
+  '{"fullName":"四川省乐山市夹江县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002300100008',
+  '沐川县',
+  NULL,
+  '0001000300230010',
+  0,
+  1,
+  0,
+  '{"fullName":"四川省乐山市沐川县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002300100009',
+  '峨边彝族自治县',
+  NULL,
+  '0001000300230010',
+  0,
+  1,
+  0,
+  '{"fullName":"四川省乐山市峨边彝族自治县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002300100010',
+  '马边彝族自治县',
+  NULL,
+  '0001000300230010',
+  0,
+  1,
+  0,
+  '{"fullName":"四川省乐山市马边彝族自治县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002300100011',
+  '峨眉山市',
+  NULL,
+  '0001000300230010',
+  0,
+  1,
+  0,
+  '{"fullName":"四川省乐山市峨眉山市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300230011',
+  '南充市',
+  NULL,
+  '000100030023',
+  1,
+  1,
+  0,
+  '{"fullName":"四川省南充市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002300110001',
+  '顺庆区',
+  NULL,
+  '0001000300230011',
+  0,
+  1,
+  0,
+  '{"fullName":"四川省南充市顺庆区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002300110002',
+  '高坪区',
+  NULL,
+  '0001000300230011',
+  0,
+  1,
+  0,
+  '{"fullName":"四川省南充市高坪区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002300110003',
+  '嘉陵区',
+  NULL,
+  '0001000300230011',
+  0,
+  1,
+  0,
+  '{"fullName":"四川省南充市嘉陵区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002300110004',
+  '南部县',
+  NULL,
+  '0001000300230011',
+  0,
+  1,
+  0,
+  '{"fullName":"四川省南充市南部县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002300110005',
+  '营山县',
+  NULL,
+  '0001000300230011',
+  0,
+  1,
+  0,
+  '{"fullName":"四川省南充市营山县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002300110006',
+  '蓬安县',
+  NULL,
+  '0001000300230011',
+  0,
+  1,
+  0,
+  '{"fullName":"四川省南充市蓬安县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002300110007',
+  '仪陇县',
+  NULL,
+  '0001000300230011',
+  0,
+  1,
+  0,
+  '{"fullName":"四川省南充市仪陇县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002300110008',
+  '西充县',
+  NULL,
+  '0001000300230011',
+  0,
+  1,
+  0,
+  '{"fullName":"四川省南充市西充县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002300110009',
+  '阆中市',
+  NULL,
+  '0001000300230011',
+  0,
+  1,
+  0,
+  '{"fullName":"四川省南充市阆中市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300230012',
+  '眉山市',
+  NULL,
+  '000100030023',
+  1,
+  1,
+  0,
+  '{"fullName":"四川省眉山市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002300120001',
+  '东坡区',
+  NULL,
+  '0001000300230012',
+  0,
+  1,
+  0,
+  '{"fullName":"四川省眉山市东坡区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002300120002',
+  '彭山区',
+  NULL,
+  '0001000300230012',
+  0,
+  1,
+  0,
+  '{"fullName":"四川省眉山市彭山区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002300120003',
+  '仁寿县',
+  NULL,
+  '0001000300230012',
+  0,
+  1,
+  0,
+  '{"fullName":"四川省眉山市仁寿县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002300120004',
+  '洪雅县',
+  NULL,
+  '0001000300230012',
+  0,
+  1,
+  0,
+  '{"fullName":"四川省眉山市洪雅县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002300120005',
+  '丹棱县',
+  NULL,
+  '0001000300230012',
+  0,
+  1,
+  0,
+  '{"fullName":"四川省眉山市丹棱县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002300120006',
+  '青神县',
+  NULL,
+  '0001000300230012',
+  0,
+  1,
+  0,
+  '{"fullName":"四川省眉山市青神县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300230013',
+  '宜宾市',
+  NULL,
+  '000100030023',
+  1,
+  1,
+  0,
+  '{"fullName":"四川省宜宾市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002300130001',
+  '翠屏区',
+  NULL,
+  '0001000300230013',
+  0,
+  1,
+  0,
+  '{"fullName":"四川省宜宾市翠屏区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002300130002',
+  '南溪区',
+  NULL,
+  '0001000300230013',
+  0,
+  1,
+  0,
+  '{"fullName":"四川省宜宾市南溪区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002300130003',
+  '宜宾县',
+  NULL,
+  '0001000300230013',
+  0,
+  1,
+  0,
+  '{"fullName":"四川省宜宾市宜宾县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002300130004',
+  '江安县',
+  NULL,
+  '0001000300230013',
+  0,
+  1,
+  0,
+  '{"fullName":"四川省宜宾市江安县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002300130005',
+  '长宁县',
+  NULL,
+  '0001000300230013',
+  0,
+  1,
+  0,
+  '{"fullName":"四川省宜宾市长宁县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002300130006',
+  '高县',
+  NULL,
+  '0001000300230013',
+  0,
+  1,
+  0,
+  '{"fullName":"四川省宜宾市高县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002300130007',
+  '珙县',
+  NULL,
+  '0001000300230013',
+  0,
+  1,
+  0,
+  '{"fullName":"四川省宜宾市珙县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002300130008',
+  '筠连县',
+  NULL,
+  '0001000300230013',
+  0,
+  1,
+  0,
+  '{"fullName":"四川省宜宾市筠连县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002300130009',
+  '兴文县',
+  NULL,
+  '0001000300230013',
+  0,
+  1,
+  0,
+  '{"fullName":"四川省宜宾市兴文县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002300130010',
+  '屏山县',
+  NULL,
+  '0001000300230013',
+  0,
+  1,
+  0,
+  '{"fullName":"四川省宜宾市屏山县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300230014',
+  '广安市',
+  NULL,
+  '000100030023',
+  1,
+  1,
+  0,
+  '{"fullName":"四川省广安市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002300140001',
+  '广安区',
+  NULL,
+  '0001000300230014',
+  0,
+  1,
+  0,
+  '{"fullName":"四川省广安市广安区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002300140002',
+  '前锋区',
+  NULL,
+  '0001000300230014',
+  0,
+  1,
+  0,
+  '{"fullName":"四川省广安市前锋区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002300140003',
+  '岳池县',
+  NULL,
+  '0001000300230014',
+  0,
+  1,
+  0,
+  '{"fullName":"四川省广安市岳池县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002300140004',
+  '武胜县',
+  NULL,
+  '0001000300230014',
+  0,
+  1,
+  0,
+  '{"fullName":"四川省广安市武胜县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002300140005',
+  '邻水县',
+  NULL,
+  '0001000300230014',
+  0,
+  1,
+  0,
+  '{"fullName":"四川省广安市邻水县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002300140006',
+  '华蓥市',
+  NULL,
+  '0001000300230014',
+  0,
+  1,
+  0,
+  '{"fullName":"四川省广安市华蓥市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300230015',
+  '达州市',
+  NULL,
+  '000100030023',
+  1,
+  1,
+  0,
+  '{"fullName":"四川省达州市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002300150001',
+  '通川区',
+  NULL,
+  '0001000300230015',
+  0,
+  1,
+  0,
+  '{"fullName":"四川省达州市通川区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002300150002',
+  '达川区',
+  NULL,
+  '0001000300230015',
+  0,
+  1,
+  0,
+  '{"fullName":"四川省达州市达川区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002300150003',
+  '宣汉县',
+  NULL,
+  '0001000300230015',
+  0,
+  1,
+  0,
+  '{"fullName":"四川省达州市宣汉县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002300150004',
+  '开江县',
+  NULL,
+  '0001000300230015',
+  0,
+  1,
+  0,
+  '{"fullName":"四川省达州市开江县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002300150005',
+  '大竹县',
+  NULL,
+  '0001000300230015',
+  0,
+  1,
+  0,
+  '{"fullName":"四川省达州市大竹县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002300150006',
+  '渠县',
+  NULL,
+  '0001000300230015',
+  0,
+  1,
+  0,
+  '{"fullName":"四川省达州市渠县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002300150007',
+  '万源市',
+  NULL,
+  '0001000300230015',
+  0,
+  1,
+  0,
+  '{"fullName":"四川省达州市万源市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300230016',
+  '雅安市',
+  NULL,
+  '000100030023',
+  1,
+  1,
+  0,
+  '{"fullName":"四川省雅安市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002300160001',
+  '雨城区',
+  NULL,
+  '0001000300230016',
+  0,
+  1,
+  0,
+  '{"fullName":"四川省雅安市雨城区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002300160002',
+  '名山区',
+  NULL,
+  '0001000300230016',
+  0,
+  1,
+  0,
+  '{"fullName":"四川省雅安市名山区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002300160003',
+  '荥经县',
+  NULL,
+  '0001000300230016',
+  0,
+  1,
+  0,
+  '{"fullName":"四川省雅安市荥经县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002300160004',
+  '汉源县',
+  NULL,
+  '0001000300230016',
+  0,
+  1,
+  0,
+  '{"fullName":"四川省雅安市汉源县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002300160005',
+  '石棉县',
+  NULL,
+  '0001000300230016',
+  0,
+  1,
+  0,
+  '{"fullName":"四川省雅安市石棉县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002300160006',
+  '天全县',
+  NULL,
+  '0001000300230016',
+  0,
+  1,
+  0,
+  '{"fullName":"四川省雅安市天全县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002300160007',
+  '芦山县',
+  NULL,
+  '0001000300230016',
+  0,
+  1,
+  0,
+  '{"fullName":"四川省雅安市芦山县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002300160008',
+  '宝兴县',
+  NULL,
+  '0001000300230016',
+  0,
+  1,
+  0,
+  '{"fullName":"四川省雅安市宝兴县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300230017',
+  '巴中市',
+  NULL,
+  '000100030023',
+  1,
+  1,
+  0,
+  '{"fullName":"四川省巴中市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002300170001',
+  '巴州区',
+  NULL,
+  '0001000300230017',
+  0,
+  1,
+  0,
+  '{"fullName":"四川省巴中市巴州区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002300170002',
+  '恩阳区',
+  NULL,
+  '0001000300230017',
+  0,
+  1,
+  0,
+  '{"fullName":"四川省巴中市恩阳区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002300170003',
+  '通江县',
+  NULL,
+  '0001000300230017',
+  0,
+  1,
+  0,
+  '{"fullName":"四川省巴中市通江县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002300170004',
+  '南江县',
+  NULL,
+  '0001000300230017',
+  0,
+  1,
+  0,
+  '{"fullName":"四川省巴中市南江县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002300170005',
+  '平昌县',
+  NULL,
+  '0001000300230017',
+  0,
+  1,
+  0,
+  '{"fullName":"四川省巴中市平昌县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300230018',
+  '资阳市',
+  NULL,
+  '000100030023',
+  1,
+  1,
+  0,
+  '{"fullName":"四川省资阳市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002300180001',
+  '雁江区',
+  NULL,
+  '0001000300230018',
+  0,
+  1,
+  0,
+  '{"fullName":"四川省资阳市雁江区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002300180002',
+  '安岳县',
+  NULL,
+  '0001000300230018',
+  0,
+  1,
+  0,
+  '{"fullName":"四川省资阳市安岳县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002300180003',
+  '乐至县',
+  NULL,
+  '0001000300230018',
+  0,
+  1,
+  0,
+  '{"fullName":"四川省资阳市乐至县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300230019',
+  '阿坝藏族羌族自治州',
+  NULL,
+  '000100030023',
+  1,
+  1,
+  0,
+  '{"fullName":"四川省阿坝藏族羌族自治州"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002300190001',
+  '马尔康市',
+  NULL,
+  '0001000300230019',
+  0,
+  1,
+  0,
+  '{"fullName":"四川省阿坝藏族羌族自治州马尔康市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002300190002',
+  '汶川县',
+  NULL,
+  '0001000300230019',
+  0,
+  1,
+  0,
+  '{"fullName":"四川省阿坝藏族羌族自治州汶川县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002300190003',
+  '理县',
+  NULL,
+  '0001000300230019',
+  0,
+  1,
+  0,
+  '{"fullName":"四川省阿坝藏族羌族自治州理县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002300190004',
+  '茂县',
+  NULL,
+  '0001000300230019',
+  0,
+  1,
+  0,
+  '{"fullName":"四川省阿坝藏族羌族自治州茂县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002300190005',
+  '松潘县',
+  NULL,
+  '0001000300230019',
+  0,
+  1,
+  0,
+  '{"fullName":"四川省阿坝藏族羌族自治州松潘县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002300190006',
+  '九寨沟县',
+  NULL,
+  '0001000300230019',
+  0,
+  1,
+  0,
+  '{"fullName":"四川省阿坝藏族羌族自治州九寨沟县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002300190007',
+  '金川县',
+  NULL,
+  '0001000300230019',
+  0,
+  1,
+  0,
+  '{"fullName":"四川省阿坝藏族羌族自治州金川县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002300190008',
+  '小金县',
+  NULL,
+  '0001000300230019',
+  0,
+  1,
+  0,
+  '{"fullName":"四川省阿坝藏族羌族自治州小金县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002300190009',
+  '黑水县',
+  NULL,
+  '0001000300230019',
+  0,
+  1,
+  0,
+  '{"fullName":"四川省阿坝藏族羌族自治州黑水县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002300190010',
+  '壤塘县',
+  NULL,
+  '0001000300230019',
+  0,
+  1,
+  0,
+  '{"fullName":"四川省阿坝藏族羌族自治州壤塘县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002300190011',
+  '阿坝县',
+  NULL,
+  '0001000300230019',
+  0,
+  1,
+  0,
+  '{"fullName":"四川省阿坝藏族羌族自治州阿坝县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002300190012',
+  '若尔盖县',
+  NULL,
+  '0001000300230019',
+  0,
+  1,
+  0,
+  '{"fullName":"四川省阿坝藏族羌族自治州若尔盖县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002300190013',
+  '红原县',
+  NULL,
+  '0001000300230019',
+  0,
+  1,
+  0,
+  '{"fullName":"四川省阿坝藏族羌族自治州红原县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300230020',
+  '甘孜藏族自治州',
+  NULL,
+  '000100030023',
+  1,
+  1,
+  0,
+  '{"fullName":"四川省甘孜藏族自治州"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002300200001',
+  '康定市',
+  NULL,
+  '0001000300230020',
+  0,
+  1,
+  0,
+  '{"fullName":"四川省甘孜藏族自治州康定市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002300200002',
+  '泸定县',
+  NULL,
+  '0001000300230020',
+  0,
+  1,
+  0,
+  '{"fullName":"四川省甘孜藏族自治州泸定县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002300200003',
+  '丹巴县',
+  NULL,
+  '0001000300230020',
+  0,
+  1,
+  0,
+  '{"fullName":"四川省甘孜藏族自治州丹巴县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002300200004',
+  '九龙县',
+  NULL,
+  '0001000300230020',
+  0,
+  1,
+  0,
+  '{"fullName":"四川省甘孜藏族自治州九龙县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002300200005',
+  '雅江县',
+  NULL,
+  '0001000300230020',
+  0,
+  1,
+  0,
+  '{"fullName":"四川省甘孜藏族自治州雅江县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002300200006',
+  '道孚县',
+  NULL,
+  '0001000300230020',
+  0,
+  1,
+  0,
+  '{"fullName":"四川省甘孜藏族自治州道孚县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002300200007',
+  '炉霍县',
+  NULL,
+  '0001000300230020',
+  0,
+  1,
+  0,
+  '{"fullName":"四川省甘孜藏族自治州炉霍县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002300200008',
+  '甘孜县',
+  NULL,
+  '0001000300230020',
+  0,
+  1,
+  0,
+  '{"fullName":"四川省甘孜藏族自治州甘孜县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002300200009',
+  '新龙县',
+  NULL,
+  '0001000300230020',
+  0,
+  1,
+  0,
+  '{"fullName":"四川省甘孜藏族自治州新龙县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002300200010',
+  '德格县',
+  NULL,
+  '0001000300230020',
+  0,
+  1,
+  0,
+  '{"fullName":"四川省甘孜藏族自治州德格县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002300200011',
+  '白玉县',
+  NULL,
+  '0001000300230020',
+  0,
+  1,
+  0,
+  '{"fullName":"四川省甘孜藏族自治州白玉县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002300200012',
+  '石渠县',
+  NULL,
+  '0001000300230020',
+  0,
+  1,
+  0,
+  '{"fullName":"四川省甘孜藏族自治州石渠县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002300200013',
+  '色达县',
+  NULL,
+  '0001000300230020',
+  0,
+  1,
+  0,
+  '{"fullName":"四川省甘孜藏族自治州色达县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002300200014',
+  '理塘县',
+  NULL,
+  '0001000300230020',
+  0,
+  1,
+  0,
+  '{"fullName":"四川省甘孜藏族自治州理塘县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002300200015',
+  '巴塘县',
+  NULL,
+  '0001000300230020',
+  0,
+  1,
+  0,
+  '{"fullName":"四川省甘孜藏族自治州巴塘县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002300200016',
+  '乡城县',
+  NULL,
+  '0001000300230020',
+  0,
+  1,
+  0,
+  '{"fullName":"四川省甘孜藏族自治州乡城县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002300200017',
+  '稻城县',
+  NULL,
+  '0001000300230020',
+  0,
+  1,
+  0,
+  '{"fullName":"四川省甘孜藏族自治州稻城县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002300200018',
+  '得荣县',
+  NULL,
+  '0001000300230020',
+  0,
+  1,
+  0,
+  '{"fullName":"四川省甘孜藏族自治州得荣县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300230021',
+  '凉山彝族自治州',
+  NULL,
+  '000100030023',
+  1,
+  1,
+  0,
+  '{"fullName":"四川省凉山彝族自治州"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002300210001',
+  '西昌市',
+  NULL,
+  '0001000300230021',
+  0,
+  1,
+  0,
+  '{"fullName":"四川省凉山彝族自治州西昌市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002300210002',
+  '木里藏族自治县',
+  NULL,
+  '0001000300230021',
+  0,
+  1,
+  0,
+  '{"fullName":"四川省凉山彝族自治州木里藏族自治县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002300210003',
+  '盐源县',
+  NULL,
+  '0001000300230021',
+  0,
+  1,
+  0,
+  '{"fullName":"四川省凉山彝族自治州盐源县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002300210004',
+  '德昌县',
+  NULL,
+  '0001000300230021',
+  0,
+  1,
+  0,
+  '{"fullName":"四川省凉山彝族自治州德昌县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002300210005',
+  '会理县',
+  NULL,
+  '0001000300230021',
+  0,
+  1,
+  0,
+  '{"fullName":"四川省凉山彝族自治州会理县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002300210006',
+  '会东县',
+  NULL,
+  '0001000300230021',
+  0,
+  1,
+  0,
+  '{"fullName":"四川省凉山彝族自治州会东县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002300210007',
+  '宁南县',
+  NULL,
+  '0001000300230021',
+  0,
+  1,
+  0,
+  '{"fullName":"四川省凉山彝族自治州宁南县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002300210008',
+  '普格县',
+  NULL,
+  '0001000300230021',
+  0,
+  1,
+  0,
+  '{"fullName":"四川省凉山彝族自治州普格县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002300210009',
+  '布拖县',
+  NULL,
+  '0001000300230021',
+  0,
+  1,
+  0,
+  '{"fullName":"四川省凉山彝族自治州布拖县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002300210010',
+  '金阳县',
+  NULL,
+  '0001000300230021',
+  0,
+  1,
+  0,
+  '{"fullName":"四川省凉山彝族自治州金阳县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002300210011',
+  '昭觉县',
+  NULL,
+  '0001000300230021',
+  0,
+  1,
+  0,
+  '{"fullName":"四川省凉山彝族自治州昭觉县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002300210012',
+  '喜德县',
+  NULL,
+  '0001000300230021',
+  0,
+  1,
+  0,
+  '{"fullName":"四川省凉山彝族自治州喜德县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002300210013',
+  '冕宁县',
+  NULL,
+  '0001000300230021',
+  0,
+  1,
+  0,
+  '{"fullName":"四川省凉山彝族自治州冕宁县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002300210014',
+  '越西县',
+  NULL,
+  '0001000300230021',
+  0,
+  1,
+  0,
+  '{"fullName":"四川省凉山彝族自治州越西县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002300210015',
+  '甘洛县',
+  NULL,
+  '0001000300230021',
+  0,
+  1,
+  0,
+  '{"fullName":"四川省凉山彝族自治州甘洛县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002300210016',
+  '美姑县',
+  NULL,
+  '0001000300230021',
+  0,
+  1,
+  0,
+  '{"fullName":"四川省凉山彝族自治州美姑县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002300210017',
+  '雷波县',
+  NULL,
+  '0001000300230021',
+  0,
+  1,
+  0,
+  '{"fullName":"四川省凉山彝族自治州雷波县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '000100030024',
+  '贵州省',
+  NULL,
+  '00010003',
+  1,
+  1,
+  0,
+  '{"fullName":"贵州省"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300240001',
+  '贵阳市',
+  NULL,
+  '000100030024',
+  1,
+  1,
+  0,
+  '{"fullName":"贵州省贵阳市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002400010001',
+  '南明区',
+  NULL,
+  '0001000300240001',
+  0,
+  1,
+  0,
+  '{"fullName":"贵州省贵阳市南明区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002400010002',
+  '云岩区',
+  NULL,
+  '0001000300240001',
+  0,
+  1,
+  0,
+  '{"fullName":"贵州省贵阳市云岩区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002400010003',
+  '花溪区',
+  NULL,
+  '0001000300240001',
+  0,
+  1,
+  0,
+  '{"fullName":"贵州省贵阳市花溪区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002400010004',
+  '乌当区',
+  NULL,
+  '0001000300240001',
+  0,
+  1,
+  0,
+  '{"fullName":"贵州省贵阳市乌当区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002400010005',
+  '白云区',
+  NULL,
+  '0001000300240001',
+  0,
+  1,
+  0,
+  '{"fullName":"贵州省贵阳市白云区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002400010006',
+  '观山湖区',
+  NULL,
+  '0001000300240001',
+  0,
+  1,
+  0,
+  '{"fullName":"贵州省贵阳市观山湖区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002400010007',
+  '开阳县',
+  NULL,
+  '0001000300240001',
+  0,
+  1,
+  0,
+  '{"fullName":"贵州省贵阳市开阳县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002400010008',
+  '息烽县',
+  NULL,
+  '0001000300240001',
+  0,
+  1,
+  0,
+  '{"fullName":"贵州省贵阳市息烽县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002400010009',
+  '修文县',
+  NULL,
+  '0001000300240001',
+  0,
+  1,
+  0,
+  '{"fullName":"贵州省贵阳市修文县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002400010010',
+  '清镇市',
+  NULL,
+  '0001000300240001',
+  0,
+  1,
+  0,
+  '{"fullName":"贵州省贵阳市清镇市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300240002',
+  '六盘水市',
+  NULL,
+  '000100030024',
+  1,
+  1,
+  0,
+  '{"fullName":"贵州省六盘水市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002400020001',
+  '钟山区',
+  NULL,
+  '0001000300240002',
+  0,
+  1,
+  0,
+  '{"fullName":"贵州省六盘水市钟山区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002400020002',
+  '六枝特区',
+  NULL,
+  '0001000300240002',
+  0,
+  1,
+  0,
+  '{"fullName":"贵州省六盘水市六枝特区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002400020003',
+  '水城县',
+  NULL,
+  '0001000300240002',
+  0,
+  1,
+  0,
+  '{"fullName":"贵州省六盘水市水城县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002400020004',
+  '盘县',
+  NULL,
+  '0001000300240002',
+  0,
+  1,
+  0,
+  '{"fullName":"贵州省六盘水市盘县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300240003',
+  '遵义市',
+  NULL,
+  '000100030024',
+  1,
+  1,
+  0,
+  '{"fullName":"贵州省遵义市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002400030001',
+  '红花岗区',
+  NULL,
+  '0001000300240003',
+  0,
+  1,
+  0,
+  '{"fullName":"贵州省遵义市红花岗区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002400030002',
+  '汇川区',
+  NULL,
+  '0001000300240003',
+  0,
+  1,
+  0,
+  '{"fullName":"贵州省遵义市汇川区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002400030003',
+  '播州区',
+  NULL,
+  '0001000300240003',
+  0,
+  1,
+  0,
+  '{"fullName":"贵州省遵义市播州区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002400030004',
+  '桐梓县',
+  NULL,
+  '0001000300240003',
+  0,
+  1,
+  0,
+  '{"fullName":"贵州省遵义市桐梓县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002400030005',
+  '绥阳县',
+  NULL,
+  '0001000300240003',
+  0,
+  1,
+  0,
+  '{"fullName":"贵州省遵义市绥阳县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002400030006',
+  '正安县',
+  NULL,
+  '0001000300240003',
+  0,
+  1,
+  0,
+  '{"fullName":"贵州省遵义市正安县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002400030007',
+  '道真仡佬族苗族自治县',
+  NULL,
+  '0001000300240003',
+  0,
+  1,
+  0,
+  '{"fullName":"贵州省遵义市道真仡佬族苗族自治县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002400030008',
+  '务川仡佬族苗族自治县',
+  NULL,
+  '0001000300240003',
+  0,
+  1,
+  0,
+  '{"fullName":"贵州省遵义市务川仡佬族苗族自治县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002400030009',
+  '凤冈县',
+  NULL,
+  '0001000300240003',
+  0,
+  1,
+  0,
+  '{"fullName":"贵州省遵义市凤冈县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002400030010',
+  '湄潭县',
+  NULL,
+  '0001000300240003',
+  0,
+  1,
+  0,
+  '{"fullName":"贵州省遵义市湄潭县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002400030011',
+  '余庆县',
+  NULL,
+  '0001000300240003',
+  0,
+  1,
+  0,
+  '{"fullName":"贵州省遵义市余庆县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002400030012',
+  '习水县',
+  NULL,
+  '0001000300240003',
+  0,
+  1,
+  0,
+  '{"fullName":"贵州省遵义市习水县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002400030013',
+  '赤水市',
+  NULL,
+  '0001000300240003',
+  0,
+  1,
+  0,
+  '{"fullName":"贵州省遵义市赤水市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002400030014',
+  '仁怀市',
+  NULL,
+  '0001000300240003',
+  0,
+  1,
+  0,
+  '{"fullName":"贵州省遵义市仁怀市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300240004',
+  '安顺市',
+  NULL,
+  '000100030024',
+  1,
+  1,
+  0,
+  '{"fullName":"贵州省安顺市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002400040001',
+  '西秀区',
+  NULL,
+  '0001000300240004',
+  0,
+  1,
+  0,
+  '{"fullName":"贵州省安顺市西秀区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002400040002',
+  '平坝区',
+  NULL,
+  '0001000300240004',
+  0,
+  1,
+  0,
+  '{"fullName":"贵州省安顺市平坝区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002400040003',
+  '普定县',
+  NULL,
+  '0001000300240004',
+  0,
+  1,
+  0,
+  '{"fullName":"贵州省安顺市普定县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002400040004',
+  '镇宁布依族苗族自治县',
+  NULL,
+  '0001000300240004',
+  0,
+  1,
+  0,
+  '{"fullName":"贵州省安顺市镇宁布依族苗族自治县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002400040005',
+  '关岭布依族苗族自治县',
+  NULL,
+  '0001000300240004',
+  0,
+  1,
+  0,
+  '{"fullName":"贵州省安顺市关岭布依族苗族自治县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002400040006',
+  '紫云苗族布依族自治县',
+  NULL,
+  '0001000300240004',
+  0,
+  1,
+  0,
+  '{"fullName":"贵州省安顺市紫云苗族布依族自治县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300240005',
+  '毕节市',
+  NULL,
+  '000100030024',
+  1,
+  1,
+  0,
+  '{"fullName":"贵州省毕节市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002400050001',
+  '七星关区',
+  NULL,
+  '0001000300240005',
+  0,
+  1,
+  0,
+  '{"fullName":"贵州省毕节市七星关区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002400050002',
+  '大方县',
+  NULL,
+  '0001000300240005',
+  0,
+  1,
+  0,
+  '{"fullName":"贵州省毕节市大方县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002400050003',
+  '黔西县',
+  NULL,
+  '0001000300240005',
+  0,
+  1,
+  0,
+  '{"fullName":"贵州省毕节市黔西县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002400050004',
+  '金沙县',
+  NULL,
+  '0001000300240005',
+  0,
+  1,
+  0,
+  '{"fullName":"贵州省毕节市金沙县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002400050005',
+  '织金县',
+  NULL,
+  '0001000300240005',
+  0,
+  1,
+  0,
+  '{"fullName":"贵州省毕节市织金县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002400050006',
+  '纳雍县',
+  NULL,
+  '0001000300240005',
+  0,
+  1,
+  0,
+  '{"fullName":"贵州省毕节市纳雍县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002400050007',
+  '威宁彝族回族苗族自治县',
+  NULL,
+  '0001000300240005',
+  0,
+  1,
+  0,
+  '{"fullName":"贵州省毕节市威宁彝族回族苗族自治县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002400050008',
+  '赫章县',
+  NULL,
+  '0001000300240005',
+  0,
+  1,
+  0,
+  '{"fullName":"贵州省毕节市赫章县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300240006',
+  '铜仁市',
+  NULL,
+  '000100030024',
+  1,
+  1,
+  0,
+  '{"fullName":"贵州省铜仁市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002400060001',
+  '碧江区',
+  NULL,
+  '0001000300240006',
+  0,
+  1,
+  0,
+  '{"fullName":"贵州省铜仁市碧江区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002400060002',
+  '万山区',
+  NULL,
+  '0001000300240006',
+  0,
+  1,
+  0,
+  '{"fullName":"贵州省铜仁市万山区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002400060003',
+  '江口县',
+  NULL,
+  '0001000300240006',
+  0,
+  1,
+  0,
+  '{"fullName":"贵州省铜仁市江口县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002400060004',
+  '玉屏侗族自治县',
+  NULL,
+  '0001000300240006',
+  0,
+  1,
+  0,
+  '{"fullName":"贵州省铜仁市玉屏侗族自治县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002400060005',
+  '石阡县',
+  NULL,
+  '0001000300240006',
+  0,
+  1,
+  0,
+  '{"fullName":"贵州省铜仁市石阡县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002400060006',
+  '思南县',
+  NULL,
+  '0001000300240006',
+  0,
+  1,
+  0,
+  '{"fullName":"贵州省铜仁市思南县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002400060007',
+  '印江土家族苗族自治县',
+  NULL,
+  '0001000300240006',
+  0,
+  1,
+  0,
+  '{"fullName":"贵州省铜仁市印江土家族苗族自治县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002400060008',
+  '德江县',
+  NULL,
+  '0001000300240006',
+  0,
+  1,
+  0,
+  '{"fullName":"贵州省铜仁市德江县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002400060009',
+  '沿河土家族自治县',
+  NULL,
+  '0001000300240006',
+  0,
+  1,
+  0,
+  '{"fullName":"贵州省铜仁市沿河土家族自治县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002400060010',
+  '松桃苗族自治县',
+  NULL,
+  '0001000300240006',
+  0,
+  1,
+  0,
+  '{"fullName":"贵州省铜仁市松桃苗族自治县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300240007',
+  '黔西南布依族苗族自治州',
+  NULL,
+  '000100030024',
+  1,
+  1,
+  0,
+  '{"fullName":"贵州省黔西南布依族苗族自治州"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002400070001',
+  '兴义市',
+  NULL,
+  '0001000300240007',
+  0,
+  1,
+  0,
+  '{"fullName":"贵州省黔西南布依族苗族自治州兴义市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002400070002',
+  '兴仁县',
+  NULL,
+  '0001000300240007',
+  0,
+  1,
+  0,
+  '{"fullName":"贵州省黔西南布依族苗族自治州兴仁县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002400070003',
+  '普安县',
+  NULL,
+  '0001000300240007',
+  0,
+  1,
+  0,
+  '{"fullName":"贵州省黔西南布依族苗族自治州普安县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002400070004',
+  '晴隆县',
+  NULL,
+  '0001000300240007',
+  0,
+  1,
+  0,
+  '{"fullName":"贵州省黔西南布依族苗族自治州晴隆县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002400070005',
+  '贞丰县',
+  NULL,
+  '0001000300240007',
+  0,
+  1,
+  0,
+  '{"fullName":"贵州省黔西南布依族苗族自治州贞丰县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002400070006',
+  '望谟县',
+  NULL,
+  '0001000300240007',
+  0,
+  1,
+  0,
+  '{"fullName":"贵州省黔西南布依族苗族自治州望谟县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002400070007',
+  '册亨县',
+  NULL,
+  '0001000300240007',
+  0,
+  1,
+  0,
+  '{"fullName":"贵州省黔西南布依族苗族自治州册亨县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002400070008',
+  '安龙县',
+  NULL,
+  '0001000300240007',
+  0,
+  1,
+  0,
+  '{"fullName":"贵州省黔西南布依族苗族自治州安龙县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300240008',
+  '黔东南苗族侗族自治州',
+  NULL,
+  '000100030024',
+  1,
+  1,
+  0,
+  '{"fullName":"贵州省黔东南苗族侗族自治州"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002400080001',
+  '凯里市',
+  NULL,
+  '0001000300240008',
+  0,
+  1,
+  0,
+  '{"fullName":"贵州省黔东南苗族侗族自治州凯里市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002400080002',
+  '黄平县',
+  NULL,
+  '0001000300240008',
+  0,
+  1,
+  0,
+  '{"fullName":"贵州省黔东南苗族侗族自治州黄平县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002400080003',
+  '施秉县',
+  NULL,
+  '0001000300240008',
+  0,
+  1,
+  0,
+  '{"fullName":"贵州省黔东南苗族侗族自治州施秉县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002400080004',
+  '三穗县',
+  NULL,
+  '0001000300240008',
+  0,
+  1,
+  0,
+  '{"fullName":"贵州省黔东南苗族侗族自治州三穗县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002400080005',
+  '镇远县',
+  NULL,
+  '0001000300240008',
+  0,
+  1,
+  0,
+  '{"fullName":"贵州省黔东南苗族侗族自治州镇远县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002400080006',
+  '岑巩县',
+  NULL,
+  '0001000300240008',
+  0,
+  1,
+  0,
+  '{"fullName":"贵州省黔东南苗族侗族自治州岑巩县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002400080007',
+  '天柱县',
+  NULL,
+  '0001000300240008',
+  0,
+  1,
+  0,
+  '{"fullName":"贵州省黔东南苗族侗族自治州天柱县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002400080008',
+  '锦屏县',
+  NULL,
+  '0001000300240008',
+  0,
+  1,
+  0,
+  '{"fullName":"贵州省黔东南苗族侗族自治州锦屏县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002400080009',
+  '剑河县',
+  NULL,
+  '0001000300240008',
+  0,
+  1,
+  0,
+  '{"fullName":"贵州省黔东南苗族侗族自治州剑河县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002400080010',
+  '台江县',
+  NULL,
+  '0001000300240008',
+  0,
+  1,
+  0,
+  '{"fullName":"贵州省黔东南苗族侗族自治州台江县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002400080011',
+  '黎平县',
+  NULL,
+  '0001000300240008',
+  0,
+  1,
+  0,
+  '{"fullName":"贵州省黔东南苗族侗族自治州黎平县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002400080012',
+  '榕江县',
+  NULL,
+  '0001000300240008',
+  0,
+  1,
+  0,
+  '{"fullName":"贵州省黔东南苗族侗族自治州榕江县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002400080013',
+  '从江县',
+  NULL,
+  '0001000300240008',
+  0,
+  1,
+  0,
+  '{"fullName":"贵州省黔东南苗族侗族自治州从江县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002400080014',
+  '雷山县',
+  NULL,
+  '0001000300240008',
+  0,
+  1,
+  0,
+  '{"fullName":"贵州省黔东南苗族侗族自治州雷山县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002400080015',
+  '麻江县',
+  NULL,
+  '0001000300240008',
+  0,
+  1,
+  0,
+  '{"fullName":"贵州省黔东南苗族侗族自治州麻江县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002400080016',
+  '丹寨县',
+  NULL,
+  '0001000300240008',
+  0,
+  1,
+  0,
+  '{"fullName":"贵州省黔东南苗族侗族自治州丹寨县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300240009',
+  '黔南布依族苗族自治州',
+  NULL,
+  '000100030024',
+  1,
+  1,
+  0,
+  '{"fullName":"贵州省黔南布依族苗族自治州"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002400090001',
+  '都匀市',
+  NULL,
+  '0001000300240009',
+  0,
+  1,
+  0,
+  '{"fullName":"贵州省黔南布依族苗族自治州都匀市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002400090002',
+  '福泉市',
+  NULL,
+  '0001000300240009',
+  0,
+  1,
+  0,
+  '{"fullName":"贵州省黔南布依族苗族自治州福泉市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002400090003',
+  '荔波县',
+  NULL,
+  '0001000300240009',
+  0,
+  1,
+  0,
+  '{"fullName":"贵州省黔南布依族苗族自治州荔波县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002400090004',
+  '贵定县',
+  NULL,
+  '0001000300240009',
+  0,
+  1,
+  0,
+  '{"fullName":"贵州省黔南布依族苗族自治州贵定县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002400090005',
+  '瓮安县',
+  NULL,
+  '0001000300240009',
+  0,
+  1,
+  0,
+  '{"fullName":"贵州省黔南布依族苗族自治州瓮安县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002400090006',
+  '独山县',
+  NULL,
+  '0001000300240009',
+  0,
+  1,
+  0,
+  '{"fullName":"贵州省黔南布依族苗族自治州独山县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002400090007',
+  '平塘县',
+  NULL,
+  '0001000300240009',
+  0,
+  1,
+  0,
+  '{"fullName":"贵州省黔南布依族苗族自治州平塘县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002400090008',
+  '罗甸县',
+  NULL,
+  '0001000300240009',
+  0,
+  1,
+  0,
+  '{"fullName":"贵州省黔南布依族苗族自治州罗甸县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002400090009',
+  '长顺县',
+  NULL,
+  '0001000300240009',
+  0,
+  1,
+  0,
+  '{"fullName":"贵州省黔南布依族苗族自治州长顺县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002400090010',
+  '龙里县',
+  NULL,
+  '0001000300240009',
+  0,
+  1,
+  0,
+  '{"fullName":"贵州省黔南布依族苗族自治州龙里县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002400090011',
+  '惠水县',
+  NULL,
+  '0001000300240009',
+  0,
+  1,
+  0,
+  '{"fullName":"贵州省黔南布依族苗族自治州惠水县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002400090012',
+  '三都水族自治县',
+  NULL,
+  '0001000300240009',
+  0,
+  1,
+  0,
+  '{"fullName":"贵州省黔南布依族苗族自治州三都水族自治县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '000100030025',
+  '云南省',
+  NULL,
+  '00010003',
+  1,
+  1,
+  0,
+  '{"fullName":"云南省"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300250001',
+  '昆明市',
+  NULL,
+  '000100030025',
+  1,
+  1,
+  0,
+  '{"fullName":"云南省昆明市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002500010001',
+  '五华区',
+  NULL,
+  '0001000300250001',
+  0,
+  1,
+  0,
+  '{"fullName":"云南省昆明市五华区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002500010002',
+  '盘龙区',
+  NULL,
+  '0001000300250001',
+  0,
+  1,
+  0,
+  '{"fullName":"云南省昆明市盘龙区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002500010003',
+  '官渡区',
+  NULL,
+  '0001000300250001',
+  0,
+  1,
+  0,
+  '{"fullName":"云南省昆明市官渡区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002500010004',
+  '西山区',
+  NULL,
+  '0001000300250001',
+  0,
+  1,
+  0,
+  '{"fullName":"云南省昆明市西山区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002500010005',
+  '东川区',
+  NULL,
+  '0001000300250001',
+  0,
+  1,
+  0,
+  '{"fullName":"云南省昆明市东川区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002500010006',
+  '呈贡区',
+  NULL,
+  '0001000300250001',
+  0,
+  1,
+  0,
+  '{"fullName":"云南省昆明市呈贡区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002500010007',
+  '晋宁县',
+  NULL,
+  '0001000300250001',
+  0,
+  1,
+  0,
+  '{"fullName":"云南省昆明市晋宁县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002500010008',
+  '富民县',
+  NULL,
+  '0001000300250001',
+  0,
+  1,
+  0,
+  '{"fullName":"云南省昆明市富民县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002500010009',
+  '宜良县',
+  NULL,
+  '0001000300250001',
+  0,
+  1,
+  0,
+  '{"fullName":"云南省昆明市宜良县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002500010010',
+  '石林彝族自治县',
+  NULL,
+  '0001000300250001',
+  0,
+  1,
+  0,
+  '{"fullName":"云南省昆明市石林彝族自治县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002500010011',
+  '嵩明县',
+  NULL,
+  '0001000300250001',
+  0,
+  1,
+  0,
+  '{"fullName":"云南省昆明市嵩明县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002500010012',
+  '禄劝彝族苗族自治县',
+  NULL,
+  '0001000300250001',
+  0,
+  1,
+  0,
+  '{"fullName":"云南省昆明市禄劝彝族苗族自治县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002500010013',
+  '寻甸回族彝族自治县',
+  NULL,
+  '0001000300250001',
+  0,
+  1,
+  0,
+  '{"fullName":"云南省昆明市寻甸回族彝族自治县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002500010014',
+  '安宁市',
+  NULL,
+  '0001000300250001',
+  0,
+  1,
+  0,
+  '{"fullName":"云南省昆明市安宁市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300250002',
+  '曲靖市',
+  NULL,
+  '000100030025',
+  1,
+  1,
+  0,
+  '{"fullName":"云南省曲靖市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002500020001',
+  '麒麟区',
+  NULL,
+  '0001000300250002',
+  0,
+  1,
+  0,
+  '{"fullName":"云南省曲靖市麒麟区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002500020002',
+  '沾益区',
+  NULL,
+  '0001000300250002',
+  0,
+  1,
+  0,
+  '{"fullName":"云南省曲靖市沾益区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002500020003',
+  '马龙县',
+  NULL,
+  '0001000300250002',
+  0,
+  1,
+  0,
+  '{"fullName":"云南省曲靖市马龙县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002500020004',
+  '陆良县',
+  NULL,
+  '0001000300250002',
+  0,
+  1,
+  0,
+  '{"fullName":"云南省曲靖市陆良县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002500020005',
+  '师宗县',
+  NULL,
+  '0001000300250002',
+  0,
+  1,
+  0,
+  '{"fullName":"云南省曲靖市师宗县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002500020006',
+  '罗平县',
+  NULL,
+  '0001000300250002',
+  0,
+  1,
+  0,
+  '{"fullName":"云南省曲靖市罗平县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002500020007',
+  '富源县',
+  NULL,
+  '0001000300250002',
+  0,
+  1,
+  0,
+  '{"fullName":"云南省曲靖市富源县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002500020008',
+  '会泽县',
+  NULL,
+  '0001000300250002',
+  0,
+  1,
+  0,
+  '{"fullName":"云南省曲靖市会泽县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002500020009',
+  '宣威市',
+  NULL,
+  '0001000300250002',
+  0,
+  1,
+  0,
+  '{"fullName":"云南省曲靖市宣威市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300250003',
+  '玉溪市',
+  NULL,
+  '000100030025',
+  1,
+  1,
+  0,
+  '{"fullName":"云南省玉溪市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002500030001',
+  '红塔区',
+  NULL,
+  '0001000300250003',
+  0,
+  1,
+  0,
+  '{"fullName":"云南省玉溪市红塔区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002500030002',
+  '江川区',
+  NULL,
+  '0001000300250003',
+  0,
+  1,
+  0,
+  '{"fullName":"云南省玉溪市江川区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002500030003',
+  '澄江县',
+  NULL,
+  '0001000300250003',
+  0,
+  1,
+  0,
+  '{"fullName":"云南省玉溪市澄江县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002500030004',
+  '通海县',
+  NULL,
+  '0001000300250003',
+  0,
+  1,
+  0,
+  '{"fullName":"云南省玉溪市通海县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002500030005',
+  '华宁县',
+  NULL,
+  '0001000300250003',
+  0,
+  1,
+  0,
+  '{"fullName":"云南省玉溪市华宁县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002500030006',
+  '易门县',
+  NULL,
+  '0001000300250003',
+  0,
+  1,
+  0,
+  '{"fullName":"云南省玉溪市易门县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002500030007',
+  '峨山彝族自治县',
+  NULL,
+  '0001000300250003',
+  0,
+  1,
+  0,
+  '{"fullName":"云南省玉溪市峨山彝族自治县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002500030008',
+  '新平彝族傣族自治县',
+  NULL,
+  '0001000300250003',
+  0,
+  1,
+  0,
+  '{"fullName":"云南省玉溪市新平彝族傣族自治县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002500030009',
+  '元江哈尼族彝族傣族自治县',
+  NULL,
+  '0001000300250003',
+  0,
+  1,
+  0,
+  '{"fullName":"云南省玉溪市元江哈尼族彝族傣族自治县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300250004',
+  '保山市',
+  NULL,
+  '000100030025',
+  1,
+  1,
+  0,
+  '{"fullName":"云南省保山市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002500040001',
+  '隆阳区',
+  NULL,
+  '0001000300250004',
+  0,
+  1,
+  0,
+  '{"fullName":"云南省保山市隆阳区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002500040002',
+  '施甸县',
+  NULL,
+  '0001000300250004',
+  0,
+  1,
+  0,
+  '{"fullName":"云南省保山市施甸县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002500040003',
+  '龙陵县',
+  NULL,
+  '0001000300250004',
+  0,
+  1,
+  0,
+  '{"fullName":"云南省保山市龙陵县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002500040004',
+  '昌宁县',
+  NULL,
+  '0001000300250004',
+  0,
+  1,
+  0,
+  '{"fullName":"云南省保山市昌宁县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002500040005',
+  '腾冲市',
+  NULL,
+  '0001000300250004',
+  0,
+  1,
+  0,
+  '{"fullName":"云南省保山市腾冲市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300250005',
+  '昭通市',
+  NULL,
+  '000100030025',
+  1,
+  1,
+  0,
+  '{"fullName":"云南省昭通市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002500050001',
+  '昭阳区',
+  NULL,
+  '0001000300250005',
+  0,
+  1,
+  0,
+  '{"fullName":"云南省昭通市昭阳区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002500050002',
+  '鲁甸县',
+  NULL,
+  '0001000300250005',
+  0,
+  1,
+  0,
+  '{"fullName":"云南省昭通市鲁甸县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002500050003',
+  '巧家县',
+  NULL,
+  '0001000300250005',
+  0,
+  1,
+  0,
+  '{"fullName":"云南省昭通市巧家县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002500050004',
+  '盐津县',
+  NULL,
+  '0001000300250005',
+  0,
+  1,
+  0,
+  '{"fullName":"云南省昭通市盐津县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002500050005',
+  '大关县',
+  NULL,
+  '0001000300250005',
+  0,
+  1,
+  0,
+  '{"fullName":"云南省昭通市大关县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002500050006',
+  '永善县',
+  NULL,
+  '0001000300250005',
+  0,
+  1,
+  0,
+  '{"fullName":"云南省昭通市永善县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002500050007',
+  '绥江县',
+  NULL,
+  '0001000300250005',
+  0,
+  1,
+  0,
+  '{"fullName":"云南省昭通市绥江县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002500050008',
+  '镇雄县',
+  NULL,
+  '0001000300250005',
+  0,
+  1,
+  0,
+  '{"fullName":"云南省昭通市镇雄县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002500050009',
+  '彝良县',
+  NULL,
+  '0001000300250005',
+  0,
+  1,
+  0,
+  '{"fullName":"云南省昭通市彝良县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002500050010',
+  '威信县',
+  NULL,
+  '0001000300250005',
+  0,
+  1,
+  0,
+  '{"fullName":"云南省昭通市威信县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002500050011',
+  '水富县',
+  NULL,
+  '0001000300250005',
+  0,
+  1,
+  0,
+  '{"fullName":"云南省昭通市水富县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300250006',
+  '丽江市',
+  NULL,
+  '000100030025',
+  1,
+  1,
+  0,
+  '{"fullName":"云南省丽江市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002500060001',
+  '古城区',
+  NULL,
+  '0001000300250006',
+  0,
+  1,
+  0,
+  '{"fullName":"云南省丽江市古城区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002500060002',
+  '玉龙纳西族自治县',
+  NULL,
+  '0001000300250006',
+  0,
+  1,
+  0,
+  '{"fullName":"云南省丽江市玉龙纳西族自治县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002500060003',
+  '永胜县',
+  NULL,
+  '0001000300250006',
+  0,
+  1,
+  0,
+  '{"fullName":"云南省丽江市永胜县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002500060004',
+  '华坪县',
+  NULL,
+  '0001000300250006',
+  0,
+  1,
+  0,
+  '{"fullName":"云南省丽江市华坪县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002500060005',
+  '宁蒗彝族自治县',
+  NULL,
+  '0001000300250006',
+  0,
+  1,
+  0,
+  '{"fullName":"云南省丽江市宁蒗彝族自治县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300250007',
+  '普洱市',
+  NULL,
+  '000100030025',
+  1,
+  1,
+  0,
+  '{"fullName":"云南省普洱市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002500070001',
+  '思茅区',
+  NULL,
+  '0001000300250007',
+  0,
+  1,
+  0,
+  '{"fullName":"云南省普洱市思茅区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002500070002',
+  '宁洱哈尼族彝族自治县',
+  NULL,
+  '0001000300250007',
+  0,
+  1,
+  0,
+  '{"fullName":"云南省普洱市宁洱哈尼族彝族自治县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002500070003',
+  '墨江哈尼族自治县',
+  NULL,
+  '0001000300250007',
+  0,
+  1,
+  0,
+  '{"fullName":"云南省普洱市墨江哈尼族自治县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002500070004',
+  '景东彝族自治县',
+  NULL,
+  '0001000300250007',
+  0,
+  1,
+  0,
+  '{"fullName":"云南省普洱市景东彝族自治县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002500070005',
+  '景谷傣族彝族自治县',
+  NULL,
+  '0001000300250007',
+  0,
+  1,
+  0,
+  '{"fullName":"云南省普洱市景谷傣族彝族自治县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002500070006',
+  '镇沅彝族哈尼族拉祜族自治县',
+  NULL,
+  '0001000300250007',
+  0,
+  1,
+  0,
+  '{"fullName":"云南省普洱市镇沅彝族哈尼族拉祜族自治县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002500070007',
+  '江城哈尼族彝族自治县',
+  NULL,
+  '0001000300250007',
+  0,
+  1,
+  0,
+  '{"fullName":"云南省普洱市江城哈尼族彝族自治县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002500070008',
+  '孟连傣族拉祜族佤族自治县',
+  NULL,
+  '0001000300250007',
+  0,
+  1,
+  0,
+  '{"fullName":"云南省普洱市孟连傣族拉祜族佤族自治县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002500070009',
+  '澜沧拉祜族自治县',
+  NULL,
+  '0001000300250007',
+  0,
+  1,
+  0,
+  '{"fullName":"云南省普洱市澜沧拉祜族自治县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002500070010',
+  '西盟佤族自治县',
+  NULL,
+  '0001000300250007',
+  0,
+  1,
+  0,
+  '{"fullName":"云南省普洱市西盟佤族自治县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300250008',
+  '临沧市',
+  NULL,
+  '000100030025',
+  1,
+  1,
+  0,
+  '{"fullName":"云南省临沧市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002500080001',
+  '临翔区',
+  NULL,
+  '0001000300250008',
+  0,
+  1,
+  0,
+  '{"fullName":"云南省临沧市临翔区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002500080002',
+  '凤庆县',
+  NULL,
+  '0001000300250008',
+  0,
+  1,
+  0,
+  '{"fullName":"云南省临沧市凤庆县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002500080003',
+  '云县',
+  NULL,
+  '0001000300250008',
+  0,
+  1,
+  0,
+  '{"fullName":"云南省临沧市云县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002500080004',
+  '永德县',
+  NULL,
+  '0001000300250008',
+  0,
+  1,
+  0,
+  '{"fullName":"云南省临沧市永德县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002500080005',
+  '镇康县',
+  NULL,
+  '0001000300250008',
+  0,
+  1,
+  0,
+  '{"fullName":"云南省临沧市镇康县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002500080006',
+  '双江拉祜族佤族布朗族傣族自治县',
+  NULL,
+  '0001000300250008',
+  0,
+  1,
+  0,
+  '{"fullName":"云南省临沧市双江拉祜族佤族布朗族傣族自治县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002500080007',
+  '耿马傣族佤族自治县',
+  NULL,
+  '0001000300250008',
+  0,
+  1,
+  0,
+  '{"fullName":"云南省临沧市耿马傣族佤族自治县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002500080008',
+  '沧源佤族自治县',
+  NULL,
+  '0001000300250008',
+  0,
+  1,
+  0,
+  '{"fullName":"云南省临沧市沧源佤族自治县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300250009',
+  '楚雄彝族自治州',
+  NULL,
+  '000100030025',
+  1,
+  1,
+  0,
+  '{"fullName":"云南省楚雄彝族自治州"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002500090001',
+  '楚雄市',
+  NULL,
+  '0001000300250009',
+  0,
+  1,
+  0,
+  '{"fullName":"云南省楚雄彝族自治州楚雄市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002500090002',
+  '双柏县',
+  NULL,
+  '0001000300250009',
+  0,
+  1,
+  0,
+  '{"fullName":"云南省楚雄彝族自治州双柏县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002500090003',
+  '牟定县',
+  NULL,
+  '0001000300250009',
+  0,
+  1,
+  0,
+  '{"fullName":"云南省楚雄彝族自治州牟定县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002500090004',
+  '南华县',
+  NULL,
+  '0001000300250009',
+  0,
+  1,
+  0,
+  '{"fullName":"云南省楚雄彝族自治州南华县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002500090005',
+  '姚安县',
+  NULL,
+  '0001000300250009',
+  0,
+  1,
+  0,
+  '{"fullName":"云南省楚雄彝族自治州姚安县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002500090006',
+  '大姚县',
+  NULL,
+  '0001000300250009',
+  0,
+  1,
+  0,
+  '{"fullName":"云南省楚雄彝族自治州大姚县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002500090007',
+  '永仁县',
+  NULL,
+  '0001000300250009',
+  0,
+  1,
+  0,
+  '{"fullName":"云南省楚雄彝族自治州永仁县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002500090008',
+  '元谋县',
+  NULL,
+  '0001000300250009',
+  0,
+  1,
+  0,
+  '{"fullName":"云南省楚雄彝族自治州元谋县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002500090009',
+  '武定县',
+  NULL,
+  '0001000300250009',
+  0,
+  1,
+  0,
+  '{"fullName":"云南省楚雄彝族自治州武定县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002500090010',
+  '禄丰县',
+  NULL,
+  '0001000300250009',
+  0,
+  1,
+  0,
+  '{"fullName":"云南省楚雄彝族自治州禄丰县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300250010',
+  '红河哈尼族彝族自治州',
+  NULL,
+  '000100030025',
+  1,
+  1,
+  0,
+  '{"fullName":"云南省红河哈尼族彝族自治州"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002500100001',
+  '个旧市',
+  NULL,
+  '0001000300250010',
+  0,
+  1,
+  0,
+  '{"fullName":"云南省红河哈尼族彝族自治州个旧市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002500100002',
+  '开远市',
+  NULL,
+  '0001000300250010',
+  0,
+  1,
+  0,
+  '{"fullName":"云南省红河哈尼族彝族自治州开远市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002500100003',
+  '蒙自市',
+  NULL,
+  '0001000300250010',
+  0,
+  1,
+  0,
+  '{"fullName":"云南省红河哈尼族彝族自治州蒙自市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002500100004',
+  '弥勒市',
+  NULL,
+  '0001000300250010',
+  0,
+  1,
+  0,
+  '{"fullName":"云南省红河哈尼族彝族自治州弥勒市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002500100005',
+  '屏边苗族自治县',
+  NULL,
+  '0001000300250010',
+  0,
+  1,
+  0,
+  '{"fullName":"云南省红河哈尼族彝族自治州屏边苗族自治县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002500100006',
+  '建水县',
+  NULL,
+  '0001000300250010',
+  0,
+  1,
+  0,
+  '{"fullName":"云南省红河哈尼族彝族自治州建水县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002500100007',
+  '石屏县',
+  NULL,
+  '0001000300250010',
+  0,
+  1,
+  0,
+  '{"fullName":"云南省红河哈尼族彝族自治州石屏县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002500100008',
+  '泸西县',
+  NULL,
+  '0001000300250010',
+  0,
+  1,
+  0,
+  '{"fullName":"云南省红河哈尼族彝族自治州泸西县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002500100009',
+  '元阳县',
+  NULL,
+  '0001000300250010',
+  0,
+  1,
+  0,
+  '{"fullName":"云南省红河哈尼族彝族自治州元阳县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002500100010',
+  '红河县',
+  NULL,
+  '0001000300250010',
+  0,
+  1,
+  0,
+  '{"fullName":"云南省红河哈尼族彝族自治州红河县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002500100011',
+  '金平苗族瑶族傣族自治县',
+  NULL,
+  '0001000300250010',
+  0,
+  1,
+  0,
+  '{"fullName":"云南省红河哈尼族彝族自治州金平苗族瑶族傣族自治县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002500100012',
+  '绿春县',
+  NULL,
+  '0001000300250010',
+  0,
+  1,
+  0,
+  '{"fullName":"云南省红河哈尼族彝族自治州绿春县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002500100013',
+  '河口瑶族自治县',
+  NULL,
+  '0001000300250010',
+  0,
+  1,
+  0,
+  '{"fullName":"云南省红河哈尼族彝族自治州河口瑶族自治县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300250011',
+  '文山壮族苗族自治州',
+  NULL,
+  '000100030025',
+  1,
+  1,
+  0,
+  '{"fullName":"云南省文山壮族苗族自治州"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002500110001',
+  '文山市',
+  NULL,
+  '0001000300250011',
+  0,
+  1,
+  0,
+  '{"fullName":"云南省文山壮族苗族自治州文山市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002500110002',
+  '砚山县',
+  NULL,
+  '0001000300250011',
+  0,
+  1,
+  0,
+  '{"fullName":"云南省文山壮族苗族自治州砚山县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002500110003',
+  '西畴县',
+  NULL,
+  '0001000300250011',
+  0,
+  1,
+  0,
+  '{"fullName":"云南省文山壮族苗族自治州西畴县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002500110004',
+  '麻栗坡县',
+  NULL,
+  '0001000300250011',
+  0,
+  1,
+  0,
+  '{"fullName":"云南省文山壮族苗族自治州麻栗坡县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002500110005',
+  '马关县',
+  NULL,
+  '0001000300250011',
+  0,
+  1,
+  0,
+  '{"fullName":"云南省文山壮族苗族自治州马关县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002500110006',
+  '丘北县',
+  NULL,
+  '0001000300250011',
+  0,
+  1,
+  0,
+  '{"fullName":"云南省文山壮族苗族自治州丘北县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002500110007',
+  '广南县',
+  NULL,
+  '0001000300250011',
+  0,
+  1,
+  0,
+  '{"fullName":"云南省文山壮族苗族自治州广南县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002500110008',
+  '富宁县',
+  NULL,
+  '0001000300250011',
+  0,
+  1,
+  0,
+  '{"fullName":"云南省文山壮族苗族自治州富宁县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300250012',
+  '西双版纳傣族自治州',
+  NULL,
+  '000100030025',
+  1,
+  1,
+  0,
+  '{"fullName":"云南省西双版纳傣族自治州"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002500120001',
+  '景洪市',
+  NULL,
+  '0001000300250012',
+  0,
+  1,
+  0,
+  '{"fullName":"云南省西双版纳傣族自治州景洪市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002500120002',
+  '勐海县',
+  NULL,
+  '0001000300250012',
+  0,
+  1,
+  0,
+  '{"fullName":"云南省西双版纳傣族自治州勐海县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002500120003',
+  '勐腊县',
+  NULL,
+  '0001000300250012',
+  0,
+  1,
+  0,
+  '{"fullName":"云南省西双版纳傣族自治州勐腊县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300250013',
+  '大理白族自治州',
+  NULL,
+  '000100030025',
+  1,
+  1,
+  0,
+  '{"fullName":"云南省大理白族自治州"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002500130001',
+  '大理市',
+  NULL,
+  '0001000300250013',
+  0,
+  1,
+  0,
+  '{"fullName":"云南省大理白族自治州大理市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002500130002',
+  '漾濞彝族自治县',
+  NULL,
+  '0001000300250013',
+  0,
+  1,
+  0,
+  '{"fullName":"云南省大理白族自治州漾濞彝族自治县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002500130003',
+  '祥云县',
+  NULL,
+  '0001000300250013',
+  0,
+  1,
+  0,
+  '{"fullName":"云南省大理白族自治州祥云县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002500130004',
+  '宾川县',
+  NULL,
+  '0001000300250013',
+  0,
+  1,
+  0,
+  '{"fullName":"云南省大理白族自治州宾川县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002500130005',
+  '弥渡县',
+  NULL,
+  '0001000300250013',
+  0,
+  1,
+  0,
+  '{"fullName":"云南省大理白族自治州弥渡县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002500130006',
+  '南涧彝族自治县',
+  NULL,
+  '0001000300250013',
+  0,
+  1,
+  0,
+  '{"fullName":"云南省大理白族自治州南涧彝族自治县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002500130007',
+  '巍山彝族回族自治县',
+  NULL,
+  '0001000300250013',
+  0,
+  1,
+  0,
+  '{"fullName":"云南省大理白族自治州巍山彝族回族自治县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002500130008',
+  '永平县',
+  NULL,
+  '0001000300250013',
+  0,
+  1,
+  0,
+  '{"fullName":"云南省大理白族自治州永平县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002500130009',
+  '云龙县',
+  NULL,
+  '0001000300250013',
+  0,
+  1,
+  0,
+  '{"fullName":"云南省大理白族自治州云龙县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002500130010',
+  '洱源县',
+  NULL,
+  '0001000300250013',
+  0,
+  1,
+  0,
+  '{"fullName":"云南省大理白族自治州洱源县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002500130011',
+  '剑川县',
+  NULL,
+  '0001000300250013',
+  0,
+  1,
+  0,
+  '{"fullName":"云南省大理白族自治州剑川县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002500130012',
+  '鹤庆县',
+  NULL,
+  '0001000300250013',
+  0,
+  1,
+  0,
+  '{"fullName":"云南省大理白族自治州鹤庆县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300250014',
+  '德宏傣族景颇族自治州',
+  NULL,
+  '000100030025',
+  1,
+  1,
+  0,
+  '{"fullName":"云南省德宏傣族景颇族自治州"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002500140001',
+  '瑞丽市',
+  NULL,
+  '0001000300250014',
+  0,
+  1,
+  0,
+  '{"fullName":"云南省德宏傣族景颇族自治州瑞丽市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002500140002',
+  '芒市',
+  NULL,
+  '0001000300250014',
+  0,
+  1,
+  0,
+  '{"fullName":"云南省德宏傣族景颇族自治州芒市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002500140003',
+  '梁河县',
+  NULL,
+  '0001000300250014',
+  0,
+  1,
+  0,
+  '{"fullName":"云南省德宏傣族景颇族自治州梁河县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002500140004',
+  '盈江县',
+  NULL,
+  '0001000300250014',
+  0,
+  1,
+  0,
+  '{"fullName":"云南省德宏傣族景颇族自治州盈江县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002500140005',
+  '陇川县',
+  NULL,
+  '0001000300250014',
+  0,
+  1,
+  0,
+  '{"fullName":"云南省德宏傣族景颇族自治州陇川县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300250015',
+  '怒江傈僳族自治州',
+  NULL,
+  '000100030025',
+  1,
+  1,
+  0,
+  '{"fullName":"云南省怒江傈僳族自治州"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002500150001',
+  '泸水市',
+  NULL,
+  '0001000300250015',
+  0,
+  1,
+  0,
+  '{"fullName":"云南省怒江傈僳族自治州泸水市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002500150002',
+  '福贡县',
+  NULL,
+  '0001000300250015',
+  0,
+  1,
+  0,
+  '{"fullName":"云南省怒江傈僳族自治州福贡县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002500150003',
+  '贡山独龙族怒族自治县',
+  NULL,
+  '0001000300250015',
+  0,
+  1,
+  0,
+  '{"fullName":"云南省怒江傈僳族自治州贡山独龙族怒族自治县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002500150004',
+  '兰坪白族普米族自治县',
+  NULL,
+  '0001000300250015',
+  0,
+  1,
+  0,
+  '{"fullName":"云南省怒江傈僳族自治州兰坪白族普米族自治县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300250016',
+  '迪庆藏族自治州',
+  NULL,
+  '000100030025',
+  1,
+  1,
+  0,
+  '{"fullName":"云南省迪庆藏族自治州"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002500160001',
+  '香格里拉市',
+  NULL,
+  '0001000300250016',
+  0,
+  1,
+  0,
+  '{"fullName":"云南省迪庆藏族自治州香格里拉市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002500160002',
+  '德钦县',
+  NULL,
+  '0001000300250016',
+  0,
+  1,
+  0,
+  '{"fullName":"云南省迪庆藏族自治州德钦县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002500160003',
+  '维西傈僳族自治县',
+  NULL,
+  '0001000300250016',
+  0,
+  1,
+  0,
+  '{"fullName":"云南省迪庆藏族自治州维西傈僳族自治县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '000100030026',
+  '西藏自治区',
+  NULL,
+  '00010003',
+  1,
+  1,
+  0,
+  '{"fullName":"西藏自治区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300260001',
+  '拉萨市',
+  NULL,
+  '000100030026',
+  1,
+  1,
+  0,
+  '{"fullName":"西藏自治区拉萨市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002600010001',
+  '城关区',
+  NULL,
+  '0001000300260001',
+  0,
+  1,
+  0,
+  '{"fullName":"西藏自治区拉萨市城关区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002600010002',
+  '堆龙德庆区',
+  NULL,
+  '0001000300260001',
+  0,
+  1,
+  0,
+  '{"fullName":"西藏自治区拉萨市堆龙德庆区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002600010003',
+  '林周县',
+  NULL,
+  '0001000300260001',
+  0,
+  1,
+  0,
+  '{"fullName":"西藏自治区拉萨市林周县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002600010004',
+  '当雄县',
+  NULL,
+  '0001000300260001',
+  0,
+  1,
+  0,
+  '{"fullName":"西藏自治区拉萨市当雄县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002600010005',
+  '尼木县',
+  NULL,
+  '0001000300260001',
+  0,
+  1,
+  0,
+  '{"fullName":"西藏自治区拉萨市尼木县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002600010006',
+  '曲水县',
+  NULL,
+  '0001000300260001',
+  0,
+  1,
+  0,
+  '{"fullName":"西藏自治区拉萨市曲水县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002600010007',
+  '达孜县',
+  NULL,
+  '0001000300260001',
+  0,
+  1,
+  0,
+  '{"fullName":"西藏自治区拉萨市达孜县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002600010008',
+  '墨竹工卡县',
+  NULL,
+  '0001000300260001',
+  0,
+  1,
+  0,
+  '{"fullName":"西藏自治区拉萨市墨竹工卡县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300260002',
+  '日喀则市',
+  NULL,
+  '000100030026',
+  1,
+  1,
+  0,
+  '{"fullName":"西藏自治区日喀则市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002600020001',
+  '桑珠孜区',
+  NULL,
+  '0001000300260002',
+  0,
+  1,
+  0,
+  '{"fullName":"西藏自治区日喀则市桑珠孜区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002600020002',
+  '南木林县',
+  NULL,
+  '0001000300260002',
+  0,
+  1,
+  0,
+  '{"fullName":"西藏自治区日喀则市南木林县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002600020003',
+  '江孜县',
+  NULL,
+  '0001000300260002',
+  0,
+  1,
+  0,
+  '{"fullName":"西藏自治区日喀则市江孜县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002600020004',
+  '定日县',
+  NULL,
+  '0001000300260002',
+  0,
+  1,
+  0,
+  '{"fullName":"西藏自治区日喀则市定日县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002600020005',
+  '萨迦县',
+  NULL,
+  '0001000300260002',
+  0,
+  1,
+  0,
+  '{"fullName":"西藏自治区日喀则市萨迦县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002600020006',
+  '拉孜县',
+  NULL,
+  '0001000300260002',
+  0,
+  1,
+  0,
+  '{"fullName":"西藏自治区日喀则市拉孜县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002600020007',
+  '昂仁县',
+  NULL,
+  '0001000300260002',
+  0,
+  1,
+  0,
+  '{"fullName":"西藏自治区日喀则市昂仁县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002600020008',
+  '谢通门县',
+  NULL,
+  '0001000300260002',
+  0,
+  1,
+  0,
+  '{"fullName":"西藏自治区日喀则市谢通门县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002600020009',
+  '白朗县',
+  NULL,
+  '0001000300260002',
+  0,
+  1,
+  0,
+  '{"fullName":"西藏自治区日喀则市白朗县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002600020010',
+  '仁布县',
+  NULL,
+  '0001000300260002',
+  0,
+  1,
+  0,
+  '{"fullName":"西藏自治区日喀则市仁布县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002600020011',
+  '康马县',
+  NULL,
+  '0001000300260002',
+  0,
+  1,
+  0,
+  '{"fullName":"西藏自治区日喀则市康马县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002600020012',
+  '定结县',
+  NULL,
+  '0001000300260002',
+  0,
+  1,
+  0,
+  '{"fullName":"西藏自治区日喀则市定结县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002600020013',
+  '仲巴县',
+  NULL,
+  '0001000300260002',
+  0,
+  1,
+  0,
+  '{"fullName":"西藏自治区日喀则市仲巴县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002600020014',
+  '亚东县',
+  NULL,
+  '0001000300260002',
+  0,
+  1,
+  0,
+  '{"fullName":"西藏自治区日喀则市亚东县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002600020015',
+  '吉隆县',
+  NULL,
+  '0001000300260002',
+  0,
+  1,
+  0,
+  '{"fullName":"西藏自治区日喀则市吉隆县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002600020016',
+  '聂拉木县',
+  NULL,
+  '0001000300260002',
+  0,
+  1,
+  0,
+  '{"fullName":"西藏自治区日喀则市聂拉木县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002600020017',
+  '萨嘎县',
+  NULL,
+  '0001000300260002',
+  0,
+  1,
+  0,
+  '{"fullName":"西藏自治区日喀则市萨嘎县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002600020018',
+  '岗巴县',
+  NULL,
+  '0001000300260002',
+  0,
+  1,
+  0,
+  '{"fullName":"西藏自治区日喀则市岗巴县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300260003',
+  '昌都市',
+  NULL,
+  '000100030026',
+  1,
+  1,
+  0,
+  '{"fullName":"西藏自治区昌都市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002600030001',
+  '卡若区',
+  NULL,
+  '0001000300260003',
+  0,
+  1,
+  0,
+  '{"fullName":"西藏自治区昌都市卡若区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002600030002',
+  '江达县',
+  NULL,
+  '0001000300260003',
+  0,
+  1,
+  0,
+  '{"fullName":"西藏自治区昌都市江达县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002600030003',
+  '贡觉县',
+  NULL,
+  '0001000300260003',
+  0,
+  1,
+  0,
+  '{"fullName":"西藏自治区昌都市贡觉县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002600030004',
+  '类乌齐县',
+  NULL,
+  '0001000300260003',
+  0,
+  1,
+  0,
+  '{"fullName":"西藏自治区昌都市类乌齐县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002600030005',
+  '丁青县',
+  NULL,
+  '0001000300260003',
+  0,
+  1,
+  0,
+  '{"fullName":"西藏自治区昌都市丁青县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002600030006',
+  '察雅县',
+  NULL,
+  '0001000300260003',
+  0,
+  1,
+  0,
+  '{"fullName":"西藏自治区昌都市察雅县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002600030007',
+  '八宿县',
+  NULL,
+  '0001000300260003',
+  0,
+  1,
+  0,
+  '{"fullName":"西藏自治区昌都市八宿县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002600030008',
+  '左贡县',
+  NULL,
+  '0001000300260003',
+  0,
+  1,
+  0,
+  '{"fullName":"西藏自治区昌都市左贡县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002600030009',
+  '芒康县',
+  NULL,
+  '0001000300260003',
+  0,
+  1,
+  0,
+  '{"fullName":"西藏自治区昌都市芒康县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002600030010',
+  '洛隆县',
+  NULL,
+  '0001000300260003',
+  0,
+  1,
+  0,
+  '{"fullName":"西藏自治区昌都市洛隆县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002600030011',
+  '边坝县',
+  NULL,
+  '0001000300260003',
+  0,
+  1,
+  0,
+  '{"fullName":"西藏自治区昌都市边坝县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300260004',
+  '林芝市',
+  NULL,
+  '000100030026',
+  1,
+  1,
+  0,
+  '{"fullName":"西藏自治区林芝市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002600040001',
+  '巴宜区',
+  NULL,
+  '0001000300260004',
+  0,
+  1,
+  0,
+  '{"fullName":"西藏自治区林芝市巴宜区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002600040002',
+  '工布江达县',
+  NULL,
+  '0001000300260004',
+  0,
+  1,
+  0,
+  '{"fullName":"西藏自治区林芝市工布江达县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002600040003',
+  '米林县',
+  NULL,
+  '0001000300260004',
+  0,
+  1,
+  0,
+  '{"fullName":"西藏自治区林芝市米林县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002600040004',
+  '墨脱县',
+  NULL,
+  '0001000300260004',
+  0,
+  1,
+  0,
+  '{"fullName":"西藏自治区林芝市墨脱县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002600040005',
+  '波密县',
+  NULL,
+  '0001000300260004',
+  0,
+  1,
+  0,
+  '{"fullName":"西藏自治区林芝市波密县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002600040006',
+  '察隅县',
+  NULL,
+  '0001000300260004',
+  0,
+  1,
+  0,
+  '{"fullName":"西藏自治区林芝市察隅县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002600040007',
+  '朗县',
+  NULL,
+  '0001000300260004',
+  0,
+  1,
+  0,
+  '{"fullName":"西藏自治区林芝市朗县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300260005',
+  '山南市',
+  NULL,
+  '000100030026',
+  1,
+  1,
+  0,
+  '{"fullName":"西藏自治区山南市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002600050001',
+  '乃东区',
+  NULL,
+  '0001000300260005',
+  0,
+  1,
+  0,
+  '{"fullName":"西藏自治区山南市乃东区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002600050002',
+  '扎囊县',
+  NULL,
+  '0001000300260005',
+  0,
+  1,
+  0,
+  '{"fullName":"西藏自治区山南市扎囊县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002600050003',
+  '贡嘎县',
+  NULL,
+  '0001000300260005',
+  0,
+  1,
+  0,
+  '{"fullName":"西藏自治区山南市贡嘎县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002600050004',
+  '桑日县',
+  NULL,
+  '0001000300260005',
+  0,
+  1,
+  0,
+  '{"fullName":"西藏自治区山南市桑日县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002600050005',
+  '琼结县',
+  NULL,
+  '0001000300260005',
+  0,
+  1,
+  0,
+  '{"fullName":"西藏自治区山南市琼结县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002600050006',
+  '曲松县',
+  NULL,
+  '0001000300260005',
+  0,
+  1,
+  0,
+  '{"fullName":"西藏自治区山南市曲松县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002600050007',
+  '措美县',
+  NULL,
+  '0001000300260005',
+  0,
+  1,
+  0,
+  '{"fullName":"西藏自治区山南市措美县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002600050008',
+  '洛扎县',
+  NULL,
+  '0001000300260005',
+  0,
+  1,
+  0,
+  '{"fullName":"西藏自治区山南市洛扎县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002600050009',
+  '加查县',
+  NULL,
+  '0001000300260005',
+  0,
+  1,
+  0,
+  '{"fullName":"西藏自治区山南市加查县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002600050010',
+  '隆子县',
+  NULL,
+  '0001000300260005',
+  0,
+  1,
+  0,
+  '{"fullName":"西藏自治区山南市隆子县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002600050011',
+  '错那县',
+  NULL,
+  '0001000300260005',
+  0,
+  1,
+  0,
+  '{"fullName":"西藏自治区山南市错那县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002600050012',
+  '浪卡子县',
+  NULL,
+  '0001000300260005',
+  0,
+  1,
+  0,
+  '{"fullName":"西藏自治区山南市浪卡子县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300260006',
+  '那曲地区',
+  NULL,
+  '000100030026',
+  1,
+  1,
+  0,
+  '{"fullName":"西藏自治区那曲地区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002600060001',
+  '那曲县',
+  NULL,
+  '0001000300260006',
+  0,
+  1,
+  0,
+  '{"fullName":"西藏自治区那曲地区那曲县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002600060002',
+  '嘉黎县',
+  NULL,
+  '0001000300260006',
+  0,
+  1,
+  0,
+  '{"fullName":"西藏自治区那曲地区嘉黎县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002600060003',
+  '比如县',
+  NULL,
+  '0001000300260006',
+  0,
+  1,
+  0,
+  '{"fullName":"西藏自治区那曲地区比如县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002600060004',
+  '聂荣县',
+  NULL,
+  '0001000300260006',
+  0,
+  1,
+  0,
+  '{"fullName":"西藏自治区那曲地区聂荣县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002600060005',
+  '安多县',
+  NULL,
+  '0001000300260006',
+  0,
+  1,
+  0,
+  '{"fullName":"西藏自治区那曲地区安多县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002600060006',
+  '申扎县',
+  NULL,
+  '0001000300260006',
+  0,
+  1,
+  0,
+  '{"fullName":"西藏自治区那曲地区申扎县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002600060007',
+  '索县',
+  NULL,
+  '0001000300260006',
+  0,
+  1,
+  0,
+  '{"fullName":"西藏自治区那曲地区索县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002600060008',
+  '班戈县',
+  NULL,
+  '0001000300260006',
+  0,
+  1,
+  0,
+  '{"fullName":"西藏自治区那曲地区班戈县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002600060009',
+  '巴青县',
+  NULL,
+  '0001000300260006',
+  0,
+  1,
+  0,
+  '{"fullName":"西藏自治区那曲地区巴青县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002600060010',
+  '尼玛县',
+  NULL,
+  '0001000300260006',
+  0,
+  1,
+  0,
+  '{"fullName":"西藏自治区那曲地区尼玛县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002600060011',
+  '双湖县',
+  NULL,
+  '0001000300260006',
+  0,
+  1,
+  0,
+  '{"fullName":"西藏自治区那曲地区双湖县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300260007',
+  '阿里地区',
+  NULL,
+  '000100030026',
+  1,
+  1,
+  0,
+  '{"fullName":"西藏自治区阿里地区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002600070001',
+  '普兰县',
+  NULL,
+  '0001000300260007',
+  0,
+  1,
+  0,
+  '{"fullName":"西藏自治区阿里地区普兰县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002600070002',
+  '札达县',
+  NULL,
+  '0001000300260007',
+  0,
+  1,
+  0,
+  '{"fullName":"西藏自治区阿里地区札达县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002600070003',
+  '噶尔县',
+  NULL,
+  '0001000300260007',
+  0,
+  1,
+  0,
+  '{"fullName":"西藏自治区阿里地区噶尔县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002600070004',
+  '日土县',
+  NULL,
+  '0001000300260007',
+  0,
+  1,
+  0,
+  '{"fullName":"西藏自治区阿里地区日土县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002600070005',
+  '革吉县',
+  NULL,
+  '0001000300260007',
+  0,
+  1,
+  0,
+  '{"fullName":"西藏自治区阿里地区革吉县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002600070006',
+  '改则县',
+  NULL,
+  '0001000300260007',
+  0,
+  1,
+  0,
+  '{"fullName":"西藏自治区阿里地区改则县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002600070007',
+  '措勤县',
+  NULL,
+  '0001000300260007',
+  0,
+  1,
+  0,
+  '{"fullName":"西藏自治区阿里地区措勤县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '000100030027',
+  '陕西省',
+  NULL,
+  '00010003',
+  1,
+  1,
+  0,
+  '{"fullName":"陕西省"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300270001',
+  '西安市',
+  NULL,
+  '000100030027',
+  1,
+  1,
+  0,
+  '{"fullName":"陕西省西安市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002700010001',
+  '新城区',
+  NULL,
+  '0001000300270001',
+  0,
+  1,
+  0,
+  '{"fullName":"陕西省西安市新城区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002700010002',
+  '碑林区',
+  NULL,
+  '0001000300270001',
+  0,
+  1,
+  0,
+  '{"fullName":"陕西省西安市碑林区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002700010003',
+  '莲湖区',
+  NULL,
+  '0001000300270001',
+  0,
+  1,
+  0,
+  '{"fullName":"陕西省西安市莲湖区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002700010004',
+  '灞桥区',
+  NULL,
+  '0001000300270001',
+  0,
+  1,
+  0,
+  '{"fullName":"陕西省西安市灞桥区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002700010005',
+  '未央区',
+  NULL,
+  '0001000300270001',
+  0,
+  1,
+  0,
+  '{"fullName":"陕西省西安市未央区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002700010006',
+  '雁塔区',
+  NULL,
+  '0001000300270001',
+  0,
+  1,
+  0,
+  '{"fullName":"陕西省西安市雁塔区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002700010007',
+  '阎良区',
+  NULL,
+  '0001000300270001',
+  0,
+  1,
+  0,
+  '{"fullName":"陕西省西安市阎良区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002700010008',
+  '临潼区',
+  NULL,
+  '0001000300270001',
+  0,
+  1,
+  0,
+  '{"fullName":"陕西省西安市临潼区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002700010009',
+  '长安区',
+  NULL,
+  '0001000300270001',
+  0,
+  1,
+  0,
+  '{"fullName":"陕西省西安市长安区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002700010010',
+  '高陵区',
+  NULL,
+  '0001000300270001',
+  0,
+  1,
+  0,
+  '{"fullName":"陕西省西安市高陵区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002700010011',
+  '蓝田县',
+  NULL,
+  '0001000300270001',
+  0,
+  1,
+  0,
+  '{"fullName":"陕西省西安市蓝田县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002700010012',
+  '周至县',
+  NULL,
+  '0001000300270001',
+  0,
+  1,
+  0,
+  '{"fullName":"陕西省西安市周至县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002700010013',
+  '户县',
+  NULL,
+  '0001000300270001',
+  0,
+  1,
+  0,
+  '{"fullName":"陕西省西安市户县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300270002',
+  '铜川市',
+  NULL,
+  '000100030027',
+  1,
+  1,
+  0,
+  '{"fullName":"陕西省铜川市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002700020001',
+  '王益区',
+  NULL,
+  '0001000300270002',
+  0,
+  1,
+  0,
+  '{"fullName":"陕西省铜川市王益区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002700020002',
+  '印台区',
+  NULL,
+  '0001000300270002',
+  0,
+  1,
+  0,
+  '{"fullName":"陕西省铜川市印台区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002700020003',
+  '耀州区',
+  NULL,
+  '0001000300270002',
+  0,
+  1,
+  0,
+  '{"fullName":"陕西省铜川市耀州区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002700020004',
+  '宜君县',
+  NULL,
+  '0001000300270002',
+  0,
+  1,
+  0,
+  '{"fullName":"陕西省铜川市宜君县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300270003',
+  '宝鸡市',
+  NULL,
+  '000100030027',
+  1,
+  1,
+  0,
+  '{"fullName":"陕西省宝鸡市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002700030001',
+  '渭滨区',
+  NULL,
+  '0001000300270003',
+  0,
+  1,
+  0,
+  '{"fullName":"陕西省宝鸡市渭滨区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002700030002',
+  '金台区',
+  NULL,
+  '0001000300270003',
+  0,
+  1,
+  0,
+  '{"fullName":"陕西省宝鸡市金台区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002700030003',
+  '陈仓区',
+  NULL,
+  '0001000300270003',
+  0,
+  1,
+  0,
+  '{"fullName":"陕西省宝鸡市陈仓区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002700030004',
+  '凤翔县',
+  NULL,
+  '0001000300270003',
+  0,
+  1,
+  0,
+  '{"fullName":"陕西省宝鸡市凤翔县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002700030005',
+  '岐山县',
+  NULL,
+  '0001000300270003',
+  0,
+  1,
+  0,
+  '{"fullName":"陕西省宝鸡市岐山县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002700030006',
+  '扶风县',
+  NULL,
+  '0001000300270003',
+  0,
+  1,
+  0,
+  '{"fullName":"陕西省宝鸡市扶风县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002700030007',
+  '眉县',
+  NULL,
+  '0001000300270003',
+  0,
+  1,
+  0,
+  '{"fullName":"陕西省宝鸡市眉县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002700030008',
+  '陇县',
+  NULL,
+  '0001000300270003',
+  0,
+  1,
+  0,
+  '{"fullName":"陕西省宝鸡市陇县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002700030009',
+  '千阳县',
+  NULL,
+  '0001000300270003',
+  0,
+  1,
+  0,
+  '{"fullName":"陕西省宝鸡市千阳县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002700030010',
+  '麟游县',
+  NULL,
+  '0001000300270003',
+  0,
+  1,
+  0,
+  '{"fullName":"陕西省宝鸡市麟游县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002700030011',
+  '凤县',
+  NULL,
+  '0001000300270003',
+  0,
+  1,
+  0,
+  '{"fullName":"陕西省宝鸡市凤县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002700030012',
+  '太白县',
+  NULL,
+  '0001000300270003',
+  0,
+  1,
+  0,
+  '{"fullName":"陕西省宝鸡市太白县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300270004',
+  '咸阳市',
+  NULL,
+  '000100030027',
+  1,
+  1,
+  0,
+  '{"fullName":"陕西省咸阳市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002700040001',
+  '秦都区',
+  NULL,
+  '0001000300270004',
+  0,
+  1,
+  0,
+  '{"fullName":"陕西省咸阳市秦都区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002700040002',
+  '杨陵区',
+  NULL,
+  '0001000300270004',
+  0,
+  1,
+  0,
+  '{"fullName":"陕西省咸阳市杨陵区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002700040003',
+  '渭城区',
+  NULL,
+  '0001000300270004',
+  0,
+  1,
+  0,
+  '{"fullName":"陕西省咸阳市渭城区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002700040004',
+  '三原县',
+  NULL,
+  '0001000300270004',
+  0,
+  1,
+  0,
+  '{"fullName":"陕西省咸阳市三原县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002700040005',
+  '泾阳县',
+  NULL,
+  '0001000300270004',
+  0,
+  1,
+  0,
+  '{"fullName":"陕西省咸阳市泾阳县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002700040006',
+  '乾县',
+  NULL,
+  '0001000300270004',
+  0,
+  1,
+  0,
+  '{"fullName":"陕西省咸阳市乾县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002700040007',
+  '礼泉县',
+  NULL,
+  '0001000300270004',
+  0,
+  1,
+  0,
+  '{"fullName":"陕西省咸阳市礼泉县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002700040008',
+  '永寿县',
+  NULL,
+  '0001000300270004',
+  0,
+  1,
+  0,
+  '{"fullName":"陕西省咸阳市永寿县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002700040009',
+  '彬县',
+  NULL,
+  '0001000300270004',
+  0,
+  1,
+  0,
+  '{"fullName":"陕西省咸阳市彬县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002700040010',
+  '长武县',
+  NULL,
+  '0001000300270004',
+  0,
+  1,
+  0,
+  '{"fullName":"陕西省咸阳市长武县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002700040011',
+  '旬邑县',
+  NULL,
+  '0001000300270004',
+  0,
+  1,
+  0,
+  '{"fullName":"陕西省咸阳市旬邑县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002700040012',
+  '淳化县',
+  NULL,
+  '0001000300270004',
+  0,
+  1,
+  0,
+  '{"fullName":"陕西省咸阳市淳化县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002700040013',
+  '武功县',
+  NULL,
+  '0001000300270004',
+  0,
+  1,
+  0,
+  '{"fullName":"陕西省咸阳市武功县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002700040014',
+  '兴平市',
+  NULL,
+  '0001000300270004',
+  0,
+  1,
+  0,
+  '{"fullName":"陕西省咸阳市兴平市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300270005',
+  '渭南市',
+  NULL,
+  '000100030027',
+  1,
+  1,
+  0,
+  '{"fullName":"陕西省渭南市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002700050001',
+  '临渭区',
+  NULL,
+  '0001000300270005',
+  0,
+  1,
+  0,
+  '{"fullName":"陕西省渭南市临渭区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002700050002',
+  '华州区',
+  NULL,
+  '0001000300270005',
+  0,
+  1,
+  0,
+  '{"fullName":"陕西省渭南市华州区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002700050003',
+  '潼关县',
+  NULL,
+  '0001000300270005',
+  0,
+  1,
+  0,
+  '{"fullName":"陕西省渭南市潼关县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002700050004',
+  '大荔县',
+  NULL,
+  '0001000300270005',
+  0,
+  1,
+  0,
+  '{"fullName":"陕西省渭南市大荔县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002700050005',
+  '合阳县',
+  NULL,
+  '0001000300270005',
+  0,
+  1,
+  0,
+  '{"fullName":"陕西省渭南市合阳县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002700050006',
+  '澄城县',
+  NULL,
+  '0001000300270005',
+  0,
+  1,
+  0,
+  '{"fullName":"陕西省渭南市澄城县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002700050007',
+  '蒲城县',
+  NULL,
+  '0001000300270005',
+  0,
+  1,
+  0,
+  '{"fullName":"陕西省渭南市蒲城县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002700050008',
+  '白水县',
+  NULL,
+  '0001000300270005',
+  0,
+  1,
+  0,
+  '{"fullName":"陕西省渭南市白水县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002700050009',
+  '富平县',
+  NULL,
+  '0001000300270005',
+  0,
+  1,
+  0,
+  '{"fullName":"陕西省渭南市富平县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002700050010',
+  '韩城市',
+  NULL,
+  '0001000300270005',
+  0,
+  1,
+  0,
+  '{"fullName":"陕西省渭南市韩城市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002700050011',
+  '华阴市',
+  NULL,
+  '0001000300270005',
+  0,
+  1,
+  0,
+  '{"fullName":"陕西省渭南市华阴市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300270006',
+  '延安市',
+  NULL,
+  '000100030027',
+  1,
+  1,
+  0,
+  '{"fullName":"陕西省延安市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002700060001',
+  '宝塔区',
+  NULL,
+  '0001000300270006',
+  0,
+  1,
+  0,
+  '{"fullName":"陕西省延安市宝塔区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002700060002',
+  '安塞区',
+  NULL,
+  '0001000300270006',
+  0,
+  1,
+  0,
+  '{"fullName":"陕西省延安市安塞区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002700060003',
+  '延长县',
+  NULL,
+  '0001000300270006',
+  0,
+  1,
+  0,
+  '{"fullName":"陕西省延安市延长县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002700060004',
+  '延川县',
+  NULL,
+  '0001000300270006',
+  0,
+  1,
+  0,
+  '{"fullName":"陕西省延安市延川县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002700060005',
+  '子长县',
+  NULL,
+  '0001000300270006',
+  0,
+  1,
+  0,
+  '{"fullName":"陕西省延安市子长县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002700060006',
+  '志丹县',
+  NULL,
+  '0001000300270006',
+  0,
+  1,
+  0,
+  '{"fullName":"陕西省延安市志丹县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002700060007',
+  '吴起县',
+  NULL,
+  '0001000300270006',
+  0,
+  1,
+  0,
+  '{"fullName":"陕西省延安市吴起县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002700060008',
+  '甘泉县',
+  NULL,
+  '0001000300270006',
+  0,
+  1,
+  0,
+  '{"fullName":"陕西省延安市甘泉县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002700060009',
+  '富县',
+  NULL,
+  '0001000300270006',
+  0,
+  1,
+  0,
+  '{"fullName":"陕西省延安市富县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002700060010',
+  '洛川县',
+  NULL,
+  '0001000300270006',
+  0,
+  1,
+  0,
+  '{"fullName":"陕西省延安市洛川县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002700060011',
+  '宜川县',
+  NULL,
+  '0001000300270006',
+  0,
+  1,
+  0,
+  '{"fullName":"陕西省延安市宜川县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002700060012',
+  '黄龙县',
+  NULL,
+  '0001000300270006',
+  0,
+  1,
+  0,
+  '{"fullName":"陕西省延安市黄龙县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002700060013',
+  '黄陵县',
+  NULL,
+  '0001000300270006',
+  0,
+  1,
+  0,
+  '{"fullName":"陕西省延安市黄陵县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300270007',
+  '汉中市',
+  NULL,
+  '000100030027',
+  1,
+  1,
+  0,
+  '{"fullName":"陕西省汉中市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002700070001',
+  '汉台区',
+  NULL,
+  '0001000300270007',
+  0,
+  1,
+  0,
+  '{"fullName":"陕西省汉中市汉台区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002700070002',
+  '南郑县',
+  NULL,
+  '0001000300270007',
+  0,
+  1,
+  0,
+  '{"fullName":"陕西省汉中市南郑县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002700070003',
+  '城固县',
+  NULL,
+  '0001000300270007',
+  0,
+  1,
+  0,
+  '{"fullName":"陕西省汉中市城固县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002700070004',
+  '洋县',
+  NULL,
+  '0001000300270007',
+  0,
+  1,
+  0,
+  '{"fullName":"陕西省汉中市洋县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002700070005',
+  '西乡县',
+  NULL,
+  '0001000300270007',
+  0,
+  1,
+  0,
+  '{"fullName":"陕西省汉中市西乡县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002700070006',
+  '勉县',
+  NULL,
+  '0001000300270007',
+  0,
+  1,
+  0,
+  '{"fullName":"陕西省汉中市勉县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002700070007',
+  '宁强县',
+  NULL,
+  '0001000300270007',
+  0,
+  1,
+  0,
+  '{"fullName":"陕西省汉中市宁强县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002700070008',
+  '略阳县',
+  NULL,
+  '0001000300270007',
+  0,
+  1,
+  0,
+  '{"fullName":"陕西省汉中市略阳县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002700070009',
+  '镇巴县',
+  NULL,
+  '0001000300270007',
+  0,
+  1,
+  0,
+  '{"fullName":"陕西省汉中市镇巴县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002700070010',
+  '留坝县',
+  NULL,
+  '0001000300270007',
+  0,
+  1,
+  0,
+  '{"fullName":"陕西省汉中市留坝县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002700070011',
+  '佛坪县',
+  NULL,
+  '0001000300270007',
+  0,
+  1,
+  0,
+  '{"fullName":"陕西省汉中市佛坪县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300270008',
+  '榆林市',
+  NULL,
+  '000100030027',
+  1,
+  1,
+  0,
+  '{"fullName":"陕西省榆林市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002700080001',
+  '榆阳区',
+  NULL,
+  '0001000300270008',
+  0,
+  1,
+  0,
+  '{"fullName":"陕西省榆林市榆阳区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002700080002',
+  '横山区',
+  NULL,
+  '0001000300270008',
+  0,
+  1,
+  0,
+  '{"fullName":"陕西省榆林市横山区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002700080003',
+  '神木县',
+  NULL,
+  '0001000300270008',
+  0,
+  1,
+  0,
+  '{"fullName":"陕西省榆林市神木县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002700080004',
+  '府谷县',
+  NULL,
+  '0001000300270008',
+  0,
+  1,
+  0,
+  '{"fullName":"陕西省榆林市府谷县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002700080005',
+  '靖边县',
+  NULL,
+  '0001000300270008',
+  0,
+  1,
+  0,
+  '{"fullName":"陕西省榆林市靖边县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002700080006',
+  '定边县',
+  NULL,
+  '0001000300270008',
+  0,
+  1,
+  0,
+  '{"fullName":"陕西省榆林市定边县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002700080007',
+  '绥德县',
+  NULL,
+  '0001000300270008',
+  0,
+  1,
+  0,
+  '{"fullName":"陕西省榆林市绥德县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002700080008',
+  '米脂县',
+  NULL,
+  '0001000300270008',
+  0,
+  1,
+  0,
+  '{"fullName":"陕西省榆林市米脂县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002700080009',
+  '佳县',
+  NULL,
+  '0001000300270008',
+  0,
+  1,
+  0,
+  '{"fullName":"陕西省榆林市佳县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002700080010',
+  '吴堡县',
+  NULL,
+  '0001000300270008',
+  0,
+  1,
+  0,
+  '{"fullName":"陕西省榆林市吴堡县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002700080011',
+  '清涧县',
+  NULL,
+  '0001000300270008',
+  0,
+  1,
+  0,
+  '{"fullName":"陕西省榆林市清涧县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002700080012',
+  '子洲县',
+  NULL,
+  '0001000300270008',
+  0,
+  1,
+  0,
+  '{"fullName":"陕西省榆林市子洲县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300270009',
+  '安康市',
+  NULL,
+  '000100030027',
+  1,
+  1,
+  0,
+  '{"fullName":"陕西省安康市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002700090001',
+  '汉滨区',
+  NULL,
+  '0001000300270009',
+  0,
+  1,
+  0,
+  '{"fullName":"陕西省安康市汉滨区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002700090002',
+  '汉阴县',
+  NULL,
+  '0001000300270009',
+  0,
+  1,
+  0,
+  '{"fullName":"陕西省安康市汉阴县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002700090003',
+  '石泉县',
+  NULL,
+  '0001000300270009',
+  0,
+  1,
+  0,
+  '{"fullName":"陕西省安康市石泉县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002700090004',
+  '宁陕县',
+  NULL,
+  '0001000300270009',
+  0,
+  1,
+  0,
+  '{"fullName":"陕西省安康市宁陕县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002700090005',
+  '紫阳县',
+  NULL,
+  '0001000300270009',
+  0,
+  1,
+  0,
+  '{"fullName":"陕西省安康市紫阳县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002700090006',
+  '岚皋县',
+  NULL,
+  '0001000300270009',
+  0,
+  1,
+  0,
+  '{"fullName":"陕西省安康市岚皋县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002700090007',
+  '平利县',
+  NULL,
+  '0001000300270009',
+  0,
+  1,
+  0,
+  '{"fullName":"陕西省安康市平利县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002700090008',
+  '镇坪县',
+  NULL,
+  '0001000300270009',
+  0,
+  1,
+  0,
+  '{"fullName":"陕西省安康市镇坪县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002700090009',
+  '旬阳县',
+  NULL,
+  '0001000300270009',
+  0,
+  1,
+  0,
+  '{"fullName":"陕西省安康市旬阳县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002700090010',
+  '白河县',
+  NULL,
+  '0001000300270009',
+  0,
+  1,
+  0,
+  '{"fullName":"陕西省安康市白河县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300270010',
+  '商洛市',
+  NULL,
+  '000100030027',
+  1,
+  1,
+  0,
+  '{"fullName":"陕西省商洛市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002700100001',
+  '商州区',
+  NULL,
+  '0001000300270010',
+  0,
+  1,
+  0,
+  '{"fullName":"陕西省商洛市商州区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002700100002',
+  '洛南县',
+  NULL,
+  '0001000300270010',
+  0,
+  1,
+  0,
+  '{"fullName":"陕西省商洛市洛南县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002700100003',
+  '丹凤县',
+  NULL,
+  '0001000300270010',
+  0,
+  1,
+  0,
+  '{"fullName":"陕西省商洛市丹凤县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002700100004',
+  '商南县',
+  NULL,
+  '0001000300270010',
+  0,
+  1,
+  0,
+  '{"fullName":"陕西省商洛市商南县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002700100005',
+  '山阳县',
+  NULL,
+  '0001000300270010',
+  0,
+  1,
+  0,
+  '{"fullName":"陕西省商洛市山阳县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002700100006',
+  '镇安县',
+  NULL,
+  '0001000300270010',
+  0,
+  1,
+  0,
+  '{"fullName":"陕西省商洛市镇安县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002700100007',
+  '柞水县',
+  NULL,
+  '0001000300270010',
+  0,
+  1,
+  0,
+  '{"fullName":"陕西省商洛市柞水县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '000100030028',
+  '甘肃省',
+  NULL,
+  '00010003',
+  1,
+  1,
+  0,
+  '{"fullName":"甘肃省"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300280001',
+  '兰州市',
+  NULL,
+  '000100030028',
+  1,
+  1,
+  0,
+  '{"fullName":"甘肃省兰州市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002800010001',
+  '城关区',
+  NULL,
+  '0001000300280001',
+  0,
+  1,
+  0,
+  '{"fullName":"甘肃省兰州市城关区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002800010002',
+  '七里河区',
+  NULL,
+  '0001000300280001',
+  0,
+  1,
+  0,
+  '{"fullName":"甘肃省兰州市七里河区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002800010003',
+  '西固区',
+  NULL,
+  '0001000300280001',
+  0,
+  1,
+  0,
+  '{"fullName":"甘肃省兰州市西固区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002800010004',
+  '安宁区',
+  NULL,
+  '0001000300280001',
+  0,
+  1,
+  0,
+  '{"fullName":"甘肃省兰州市安宁区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002800010005',
+  '红古区',
+  NULL,
+  '0001000300280001',
+  0,
+  1,
+  0,
+  '{"fullName":"甘肃省兰州市红古区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002800010006',
+  '永登县',
+  NULL,
+  '0001000300280001',
+  0,
+  1,
+  0,
+  '{"fullName":"甘肃省兰州市永登县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002800010007',
+  '皋兰县',
+  NULL,
+  '0001000300280001',
+  0,
+  1,
+  0,
+  '{"fullName":"甘肃省兰州市皋兰县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002800010008',
+  '榆中县',
+  NULL,
+  '0001000300280001',
+  0,
+  1,
+  0,
+  '{"fullName":"甘肃省兰州市榆中县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300280002',
+  '嘉峪关市',
+  NULL,
+  '000100030028',
+  1,
+  1,
+  0,
+  '{"fullName":"甘肃省嘉峪关市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002800020001',
+  '新城镇',
+  NULL,
+  '0001000300280002',
+  0,
+  1,
+  0,
+  '{"fullName":"甘肃省嘉峪关市新城镇"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002800020002',
+  '峪泉镇',
+  NULL,
+  '0001000300280002',
+  0,
+  1,
+  0,
+  '{"fullName":"甘肃省嘉峪关市峪泉镇"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002800020003',
+  '文殊镇',
+  NULL,
+  '0001000300280002',
+  0,
+  1,
+  0,
+  '{"fullName":"甘肃省嘉峪关市文殊镇"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002800020004',
+  '雄关区',
+  NULL,
+  '0001000300280002',
+  0,
+  1,
+  0,
+  '{"fullName":"甘肃省嘉峪关市雄关区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002800020005',
+  '镜铁区',
+  NULL,
+  '0001000300280002',
+  0,
+  1,
+  0,
+  '{"fullName":"甘肃省嘉峪关市镜铁区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002800020006',
+  '长城区',
+  NULL,
+  '0001000300280002',
+  0,
+  1,
+  0,
+  '{"fullName":"甘肃省嘉峪关市长城区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300280003',
+  '金昌市',
+  NULL,
+  '000100030028',
+  1,
+  1,
+  0,
+  '{"fullName":"甘肃省金昌市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002800030001',
+  '金川区',
+  NULL,
+  '0001000300280003',
+  0,
+  1,
+  0,
+  '{"fullName":"甘肃省金昌市金川区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002800030002',
+  '永昌县',
+  NULL,
+  '0001000300280003',
+  0,
+  1,
+  0,
+  '{"fullName":"甘肃省金昌市永昌县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300280004',
+  '白银市',
+  NULL,
+  '000100030028',
+  1,
+  1,
+  0,
+  '{"fullName":"甘肃省白银市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002800040001',
+  '白银区',
+  NULL,
+  '0001000300280004',
+  0,
+  1,
+  0,
+  '{"fullName":"甘肃省白银市白银区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002800040002',
+  '平川区',
+  NULL,
+  '0001000300280004',
+  0,
+  1,
+  0,
+  '{"fullName":"甘肃省白银市平川区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002800040003',
+  '靖远县',
+  NULL,
+  '0001000300280004',
+  0,
+  1,
+  0,
+  '{"fullName":"甘肃省白银市靖远县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002800040004',
+  '会宁县',
+  NULL,
+  '0001000300280004',
+  0,
+  1,
+  0,
+  '{"fullName":"甘肃省白银市会宁县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002800040005',
+  '景泰县',
+  NULL,
+  '0001000300280004',
+  0,
+  1,
+  0,
+  '{"fullName":"甘肃省白银市景泰县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300280005',
+  '天水市',
+  NULL,
+  '000100030028',
+  1,
+  1,
+  0,
+  '{"fullName":"甘肃省天水市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002800050001',
+  '秦州区',
+  NULL,
+  '0001000300280005',
+  0,
+  1,
+  0,
+  '{"fullName":"甘肃省天水市秦州区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002800050002',
+  '麦积区',
+  NULL,
+  '0001000300280005',
+  0,
+  1,
+  0,
+  '{"fullName":"甘肃省天水市麦积区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002800050003',
+  '清水县',
+  NULL,
+  '0001000300280005',
+  0,
+  1,
+  0,
+  '{"fullName":"甘肃省天水市清水县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002800050004',
+  '秦安县',
+  NULL,
+  '0001000300280005',
+  0,
+  1,
+  0,
+  '{"fullName":"甘肃省天水市秦安县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002800050005',
+  '甘谷县',
+  NULL,
+  '0001000300280005',
+  0,
+  1,
+  0,
+  '{"fullName":"甘肃省天水市甘谷县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002800050006',
+  '武山县',
+  NULL,
+  '0001000300280005',
+  0,
+  1,
+  0,
+  '{"fullName":"甘肃省天水市武山县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002800050007',
+  '张家川回族自治县',
+  NULL,
+  '0001000300280005',
+  0,
+  1,
+  0,
+  '{"fullName":"甘肃省天水市张家川回族自治县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300280006',
+  '武威市',
+  NULL,
+  '000100030028',
+  1,
+  1,
+  0,
+  '{"fullName":"甘肃省武威市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002800060001',
+  '凉州区',
+  NULL,
+  '0001000300280006',
+  0,
+  1,
+  0,
+  '{"fullName":"甘肃省武威市凉州区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002800060002',
+  '民勤县',
+  NULL,
+  '0001000300280006',
+  0,
+  1,
+  0,
+  '{"fullName":"甘肃省武威市民勤县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002800060003',
+  '古浪县',
+  NULL,
+  '0001000300280006',
+  0,
+  1,
+  0,
+  '{"fullName":"甘肃省武威市古浪县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002800060004',
+  '天祝藏族自治县',
+  NULL,
+  '0001000300280006',
+  0,
+  1,
+  0,
+  '{"fullName":"甘肃省武威市天祝藏族自治县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300280007',
+  '张掖市',
+  NULL,
+  '000100030028',
+  1,
+  1,
+  0,
+  '{"fullName":"甘肃省张掖市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002800070001',
+  '甘州区',
+  NULL,
+  '0001000300280007',
+  0,
+  1,
+  0,
+  '{"fullName":"甘肃省张掖市甘州区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002800070002',
+  '肃南裕固族自治县',
+  NULL,
+  '0001000300280007',
+  0,
+  1,
+  0,
+  '{"fullName":"甘肃省张掖市肃南裕固族自治县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002800070003',
+  '民乐县',
+  NULL,
+  '0001000300280007',
+  0,
+  1,
+  0,
+  '{"fullName":"甘肃省张掖市民乐县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002800070004',
+  '临泽县',
+  NULL,
+  '0001000300280007',
+  0,
+  1,
+  0,
+  '{"fullName":"甘肃省张掖市临泽县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002800070005',
+  '高台县',
+  NULL,
+  '0001000300280007',
+  0,
+  1,
+  0,
+  '{"fullName":"甘肃省张掖市高台县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002800070006',
+  '山丹县',
+  NULL,
+  '0001000300280007',
+  0,
+  1,
+  0,
+  '{"fullName":"甘肃省张掖市山丹县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300280008',
+  '平凉市',
+  NULL,
+  '000100030028',
+  1,
+  1,
+  0,
+  '{"fullName":"甘肃省平凉市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002800080001',
+  '崆峒区',
+  NULL,
+  '0001000300280008',
+  0,
+  1,
+  0,
+  '{"fullName":"甘肃省平凉市崆峒区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002800080002',
+  '泾川县',
+  NULL,
+  '0001000300280008',
+  0,
+  1,
+  0,
+  '{"fullName":"甘肃省平凉市泾川县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002800080003',
+  '灵台县',
+  NULL,
+  '0001000300280008',
+  0,
+  1,
+  0,
+  '{"fullName":"甘肃省平凉市灵台县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002800080004',
+  '崇信县',
+  NULL,
+  '0001000300280008',
+  0,
+  1,
+  0,
+  '{"fullName":"甘肃省平凉市崇信县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002800080005',
+  '华亭县',
+  NULL,
+  '0001000300280008',
+  0,
+  1,
+  0,
+  '{"fullName":"甘肃省平凉市华亭县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002800080006',
+  '庄浪县',
+  NULL,
+  '0001000300280008',
+  0,
+  1,
+  0,
+  '{"fullName":"甘肃省平凉市庄浪县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002800080007',
+  '静宁县',
+  NULL,
+  '0001000300280008',
+  0,
+  1,
+  0,
+  '{"fullName":"甘肃省平凉市静宁县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300280009',
+  '酒泉市',
+  NULL,
+  '000100030028',
+  1,
+  1,
+  0,
+  '{"fullName":"甘肃省酒泉市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002800090001',
+  '肃州区',
+  NULL,
+  '0001000300280009',
+  0,
+  1,
+  0,
+  '{"fullName":"甘肃省酒泉市肃州区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002800090002',
+  '金塔县',
+  NULL,
+  '0001000300280009',
+  0,
+  1,
+  0,
+  '{"fullName":"甘肃省酒泉市金塔县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002800090003',
+  '瓜州县',
+  NULL,
+  '0001000300280009',
+  0,
+  1,
+  0,
+  '{"fullName":"甘肃省酒泉市瓜州县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002800090004',
+  '肃北蒙古族自治县',
+  NULL,
+  '0001000300280009',
+  0,
+  1,
+  0,
+  '{"fullName":"甘肃省酒泉市肃北蒙古族自治县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002800090005',
+  '阿克塞哈萨克族自治县',
+  NULL,
+  '0001000300280009',
+  0,
+  1,
+  0,
+  '{"fullName":"甘肃省酒泉市阿克塞哈萨克族自治县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002800090006',
+  '玉门市',
+  NULL,
+  '0001000300280009',
+  0,
+  1,
+  0,
+  '{"fullName":"甘肃省酒泉市玉门市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002800090007',
+  '敦煌市',
+  NULL,
+  '0001000300280009',
+  0,
+  1,
+  0,
+  '{"fullName":"甘肃省酒泉市敦煌市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300280010',
+  '庆阳市',
+  NULL,
+  '000100030028',
+  1,
+  1,
+  0,
+  '{"fullName":"甘肃省庆阳市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002800100001',
+  '西峰区',
+  NULL,
+  '0001000300280010',
+  0,
+  1,
+  0,
+  '{"fullName":"甘肃省庆阳市西峰区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002800100002',
+  '庆城县',
+  NULL,
+  '0001000300280010',
+  0,
+  1,
+  0,
+  '{"fullName":"甘肃省庆阳市庆城县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002800100003',
+  '环县',
+  NULL,
+  '0001000300280010',
+  0,
+  1,
+  0,
+  '{"fullName":"甘肃省庆阳市环县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002800100004',
+  '华池县',
+  NULL,
+  '0001000300280010',
+  0,
+  1,
+  0,
+  '{"fullName":"甘肃省庆阳市华池县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002800100005',
+  '合水县',
+  NULL,
+  '0001000300280010',
+  0,
+  1,
+  0,
+  '{"fullName":"甘肃省庆阳市合水县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002800100006',
+  '正宁县',
+  NULL,
+  '0001000300280010',
+  0,
+  1,
+  0,
+  '{"fullName":"甘肃省庆阳市正宁县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002800100007',
+  '宁县',
+  NULL,
+  '0001000300280010',
+  0,
+  1,
+  0,
+  '{"fullName":"甘肃省庆阳市宁县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002800100008',
+  '镇原县',
+  NULL,
+  '0001000300280010',
+  0,
+  1,
+  0,
+  '{"fullName":"甘肃省庆阳市镇原县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300280011',
+  '定西市',
+  NULL,
+  '000100030028',
+  1,
+  1,
+  0,
+  '{"fullName":"甘肃省定西市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002800110001',
+  '安定区',
+  NULL,
+  '0001000300280011',
+  0,
+  1,
+  0,
+  '{"fullName":"甘肃省定西市安定区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002800110002',
+  '通渭县',
+  NULL,
+  '0001000300280011',
+  0,
+  1,
+  0,
+  '{"fullName":"甘肃省定西市通渭县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002800110003',
+  '陇西县',
+  NULL,
+  '0001000300280011',
+  0,
+  1,
+  0,
+  '{"fullName":"甘肃省定西市陇西县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002800110004',
+  '渭源县',
+  NULL,
+  '0001000300280011',
+  0,
+  1,
+  0,
+  '{"fullName":"甘肃省定西市渭源县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002800110005',
+  '临洮县',
+  NULL,
+  '0001000300280011',
+  0,
+  1,
+  0,
+  '{"fullName":"甘肃省定西市临洮县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002800110006',
+  '漳县',
+  NULL,
+  '0001000300280011',
+  0,
+  1,
+  0,
+  '{"fullName":"甘肃省定西市漳县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002800110007',
+  '岷县',
+  NULL,
+  '0001000300280011',
+  0,
+  1,
+  0,
+  '{"fullName":"甘肃省定西市岷县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300280012',
+  '陇南市',
+  NULL,
+  '000100030028',
+  1,
+  1,
+  0,
+  '{"fullName":"甘肃省陇南市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002800120001',
+  '武都区',
+  NULL,
+  '0001000300280012',
+  0,
+  1,
+  0,
+  '{"fullName":"甘肃省陇南市武都区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002800120002',
+  '成县',
+  NULL,
+  '0001000300280012',
+  0,
+  1,
+  0,
+  '{"fullName":"甘肃省陇南市成县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002800120003',
+  '文县',
+  NULL,
+  '0001000300280012',
+  0,
+  1,
+  0,
+  '{"fullName":"甘肃省陇南市文县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002800120004',
+  '宕昌县',
+  NULL,
+  '0001000300280012',
+  0,
+  1,
+  0,
+  '{"fullName":"甘肃省陇南市宕昌县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002800120005',
+  '康县',
+  NULL,
+  '0001000300280012',
+  0,
+  1,
+  0,
+  '{"fullName":"甘肃省陇南市康县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002800120006',
+  '西和县',
+  NULL,
+  '0001000300280012',
+  0,
+  1,
+  0,
+  '{"fullName":"甘肃省陇南市西和县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002800120007',
+  '礼县',
+  NULL,
+  '0001000300280012',
+  0,
+  1,
+  0,
+  '{"fullName":"甘肃省陇南市礼县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002800120008',
+  '徽县',
+  NULL,
+  '0001000300280012',
+  0,
+  1,
+  0,
+  '{"fullName":"甘肃省陇南市徽县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002800120009',
+  '两当县',
+  NULL,
+  '0001000300280012',
+  0,
+  1,
+  0,
+  '{"fullName":"甘肃省陇南市两当县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300280013',
+  '临夏回族自治州',
+  NULL,
+  '000100030028',
+  1,
+  1,
+  0,
+  '{"fullName":"甘肃省临夏回族自治州"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002800130001',
+  '临夏市',
+  NULL,
+  '0001000300280013',
+  0,
+  1,
+  0,
+  '{"fullName":"甘肃省临夏回族自治州临夏市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002800130002',
+  '临夏县',
+  NULL,
+  '0001000300280013',
+  0,
+  1,
+  0,
+  '{"fullName":"甘肃省临夏回族自治州临夏县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002800130003',
+  '康乐县',
+  NULL,
+  '0001000300280013',
+  0,
+  1,
+  0,
+  '{"fullName":"甘肃省临夏回族自治州康乐县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002800130004',
+  '永靖县',
+  NULL,
+  '0001000300280013',
+  0,
+  1,
+  0,
+  '{"fullName":"甘肃省临夏回族自治州永靖县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002800130005',
+  '广河县',
+  NULL,
+  '0001000300280013',
+  0,
+  1,
+  0,
+  '{"fullName":"甘肃省临夏回族自治州广河县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002800130006',
+  '和政县',
+  NULL,
+  '0001000300280013',
+  0,
+  1,
+  0,
+  '{"fullName":"甘肃省临夏回族自治州和政县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002800130007',
+  '东乡族自治县',
+  NULL,
+  '0001000300280013',
+  0,
+  1,
+  0,
+  '{"fullName":"甘肃省临夏回族自治州东乡族自治县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002800130008',
+  '积石山保安族东乡族撒拉族自治县',
+  NULL,
+  '0001000300280013',
+  0,
+  1,
+  0,
+  '{"fullName":"甘肃省临夏回族自治州积石山保安族东乡族撒拉族自治县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300280014',
+  '甘南藏族自治州',
+  NULL,
+  '000100030028',
+  1,
+  1,
+  0,
+  '{"fullName":"甘肃省甘南藏族自治州"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002800140001',
+  '合作市',
+  NULL,
+  '0001000300280014',
+  0,
+  1,
+  0,
+  '{"fullName":"甘肃省甘南藏族自治州合作市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002800140002',
+  '临潭县',
+  NULL,
+  '0001000300280014',
+  0,
+  1,
+  0,
+  '{"fullName":"甘肃省甘南藏族自治州临潭县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002800140003',
+  '卓尼县',
+  NULL,
+  '0001000300280014',
+  0,
+  1,
+  0,
+  '{"fullName":"甘肃省甘南藏族自治州卓尼县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002800140004',
+  '舟曲县',
+  NULL,
+  '0001000300280014',
+  0,
+  1,
+  0,
+  '{"fullName":"甘肃省甘南藏族自治州舟曲县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002800140005',
+  '迭部县',
+  NULL,
+  '0001000300280014',
+  0,
+  1,
+  0,
+  '{"fullName":"甘肃省甘南藏族自治州迭部县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002800140006',
+  '玛曲县',
+  NULL,
+  '0001000300280014',
+  0,
+  1,
+  0,
+  '{"fullName":"甘肃省甘南藏族自治州玛曲县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002800140007',
+  '碌曲县',
+  NULL,
+  '0001000300280014',
+  0,
+  1,
+  0,
+  '{"fullName":"甘肃省甘南藏族自治州碌曲县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002800140008',
+  '夏河县',
+  NULL,
+  '0001000300280014',
+  0,
+  1,
+  0,
+  '{"fullName":"甘肃省甘南藏族自治州夏河县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '000100030029',
+  '青海省',
+  NULL,
+  '00010003',
+  1,
+  1,
+  0,
+  '{"fullName":"青海省"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300290001',
+  '西宁市',
+  NULL,
+  '000100030029',
+  1,
+  1,
+  0,
+  '{"fullName":"青海省西宁市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002900010001',
+  '城东区',
+  NULL,
+  '0001000300290001',
+  0,
+  1,
+  0,
+  '{"fullName":"青海省西宁市城东区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002900010002',
+  '城中区',
+  NULL,
+  '0001000300290001',
+  0,
+  1,
+  0,
+  '{"fullName":"青海省西宁市城中区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002900010003',
+  '城西区',
+  NULL,
+  '0001000300290001',
+  0,
+  1,
+  0,
+  '{"fullName":"青海省西宁市城西区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002900010004',
+  '城北区',
+  NULL,
+  '0001000300290001',
+  0,
+  1,
+  0,
+  '{"fullName":"青海省西宁市城北区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002900010005',
+  '大通回族土族自治县',
+  NULL,
+  '0001000300290001',
+  0,
+  1,
+  0,
+  '{"fullName":"青海省西宁市大通回族土族自治县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002900010006',
+  '湟中县',
+  NULL,
+  '0001000300290001',
+  0,
+  1,
+  0,
+  '{"fullName":"青海省西宁市湟中县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002900010007',
+  '湟源县',
+  NULL,
+  '0001000300290001',
+  0,
+  1,
+  0,
+  '{"fullName":"青海省西宁市湟源县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300290002',
+  '海东市',
+  NULL,
+  '000100030029',
+  1,
+  1,
+  0,
+  '{"fullName":"青海省海东市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002900020001',
+  '乐都区',
+  NULL,
+  '0001000300290002',
+  0,
+  1,
+  0,
+  '{"fullName":"青海省海东市乐都区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002900020002',
+  '平安区',
+  NULL,
+  '0001000300290002',
+  0,
+  1,
+  0,
+  '{"fullName":"青海省海东市平安区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002900020003',
+  '民和回族土族自治县',
+  NULL,
+  '0001000300290002',
+  0,
+  1,
+  0,
+  '{"fullName":"青海省海东市民和回族土族自治县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002900020004',
+  '互助土族自治县',
+  NULL,
+  '0001000300290002',
+  0,
+  1,
+  0,
+  '{"fullName":"青海省海东市互助土族自治县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002900020005',
+  '化隆回族自治县',
+  NULL,
+  '0001000300290002',
+  0,
+  1,
+  0,
+  '{"fullName":"青海省海东市化隆回族自治县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002900020006',
+  '循化撒拉族自治县',
+  NULL,
+  '0001000300290002',
+  0,
+  1,
+  0,
+  '{"fullName":"青海省海东市循化撒拉族自治县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300290003',
+  '海北藏族自治州',
+  NULL,
+  '000100030029',
+  1,
+  1,
+  0,
+  '{"fullName":"青海省海北藏族自治州"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002900030001',
+  '门源回族自治县',
+  NULL,
+  '0001000300290003',
+  0,
+  1,
+  0,
+  '{"fullName":"青海省海北藏族自治州门源回族自治县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002900030002',
+  '祁连县',
+  NULL,
+  '0001000300290003',
+  0,
+  1,
+  0,
+  '{"fullName":"青海省海北藏族自治州祁连县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002900030003',
+  '海晏县',
+  NULL,
+  '0001000300290003',
+  0,
+  1,
+  0,
+  '{"fullName":"青海省海北藏族自治州海晏县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002900030004',
+  '刚察县',
+  NULL,
+  '0001000300290003',
+  0,
+  1,
+  0,
+  '{"fullName":"青海省海北藏族自治州刚察县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300290004',
+  '黄南藏族自治州',
+  NULL,
+  '000100030029',
+  1,
+  1,
+  0,
+  '{"fullName":"青海省黄南藏族自治州"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002900040001',
+  '同仁县',
+  NULL,
+  '0001000300290004',
+  0,
+  1,
+  0,
+  '{"fullName":"青海省黄南藏族自治州同仁县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002900040002',
+  '尖扎县',
+  NULL,
+  '0001000300290004',
+  0,
+  1,
+  0,
+  '{"fullName":"青海省黄南藏族自治州尖扎县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002900040003',
+  '泽库县',
+  NULL,
+  '0001000300290004',
+  0,
+  1,
+  0,
+  '{"fullName":"青海省黄南藏族自治州泽库县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002900040004',
+  '河南蒙古族自治县',
+  NULL,
+  '0001000300290004',
+  0,
+  1,
+  0,
+  '{"fullName":"青海省黄南藏族自治州河南蒙古族自治县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300290005',
+  '海南藏族自治州',
+  NULL,
+  '000100030029',
+  1,
+  1,
+  0,
+  '{"fullName":"青海省海南藏族自治州"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002900050001',
+  '共和县',
+  NULL,
+  '0001000300290005',
+  0,
+  1,
+  0,
+  '{"fullName":"青海省海南藏族自治州共和县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002900050002',
+  '同德县',
+  NULL,
+  '0001000300290005',
+  0,
+  1,
+  0,
+  '{"fullName":"青海省海南藏族自治州同德县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002900050003',
+  '贵德县',
+  NULL,
+  '0001000300290005',
+  0,
+  1,
+  0,
+  '{"fullName":"青海省海南藏族自治州贵德县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002900050004',
+  '兴海县',
+  NULL,
+  '0001000300290005',
+  0,
+  1,
+  0,
+  '{"fullName":"青海省海南藏族自治州兴海县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002900050005',
+  '贵南县',
+  NULL,
+  '0001000300290005',
+  0,
+  1,
+  0,
+  '{"fullName":"青海省海南藏族自治州贵南县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300290006',
+  '果洛藏族自治州',
+  NULL,
+  '000100030029',
+  1,
+  1,
+  0,
+  '{"fullName":"青海省果洛藏族自治州"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002900060001',
+  '玛沁县',
+  NULL,
+  '0001000300290006',
+  0,
+  1,
+  0,
+  '{"fullName":"青海省果洛藏族自治州玛沁县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002900060002',
+  '班玛县',
+  NULL,
+  '0001000300290006',
+  0,
+  1,
+  0,
+  '{"fullName":"青海省果洛藏族自治州班玛县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002900060003',
+  '甘德县',
+  NULL,
+  '0001000300290006',
+  0,
+  1,
+  0,
+  '{"fullName":"青海省果洛藏族自治州甘德县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002900060004',
+  '达日县',
+  NULL,
+  '0001000300290006',
+  0,
+  1,
+  0,
+  '{"fullName":"青海省果洛藏族自治州达日县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002900060005',
+  '久治县',
+  NULL,
+  '0001000300290006',
+  0,
+  1,
+  0,
+  '{"fullName":"青海省果洛藏族自治州久治县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002900060006',
+  '玛多县',
+  NULL,
+  '0001000300290006',
+  0,
+  1,
+  0,
+  '{"fullName":"青海省果洛藏族自治州玛多县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300290007',
+  '玉树藏族自治州',
+  NULL,
+  '000100030029',
+  1,
+  1,
+  0,
+  '{"fullName":"青海省玉树藏族自治州"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002900070001',
+  '玉树市',
+  NULL,
+  '0001000300290007',
+  0,
+  1,
+  0,
+  '{"fullName":"青海省玉树藏族自治州玉树市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002900070002',
+  '杂多县',
+  NULL,
+  '0001000300290007',
+  0,
+  1,
+  0,
+  '{"fullName":"青海省玉树藏族自治州杂多县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002900070003',
+  '称多县',
+  NULL,
+  '0001000300290007',
+  0,
+  1,
+  0,
+  '{"fullName":"青海省玉树藏族自治州称多县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002900070004',
+  '治多县',
+  NULL,
+  '0001000300290007',
+  0,
+  1,
+  0,
+  '{"fullName":"青海省玉树藏族自治州治多县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002900070005',
+  '囊谦县',
+  NULL,
+  '0001000300290007',
+  0,
+  1,
+  0,
+  '{"fullName":"青海省玉树藏族自治州囊谦县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002900070006',
+  '曲麻莱县',
+  NULL,
+  '0001000300290007',
+  0,
+  1,
+  0,
+  '{"fullName":"青海省玉树藏族自治州曲麻莱县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300290008',
+  '海西蒙古族藏族自治州',
+  NULL,
+  '000100030029',
+  1,
+  1,
+  0,
+  '{"fullName":"青海省海西蒙古族藏族自治州"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002900080001',
+  '格尔木市',
+  NULL,
+  '0001000300290008',
+  0,
+  1,
+  0,
+  '{"fullName":"青海省海西蒙古族藏族自治州格尔木市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002900080002',
+  '德令哈市',
+  NULL,
+  '0001000300290008',
+  0,
+  1,
+  0,
+  '{"fullName":"青海省海西蒙古族藏族自治州德令哈市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002900080003',
+  '乌兰县',
+  NULL,
+  '0001000300290008',
+  0,
+  1,
+  0,
+  '{"fullName":"青海省海西蒙古族藏族自治州乌兰县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002900080004',
+  '都兰县',
+  NULL,
+  '0001000300290008',
+  0,
+  1,
+  0,
+  '{"fullName":"青海省海西蒙古族藏族自治州都兰县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003002900080005',
+  '天峻县',
+  NULL,
+  '0001000300290008',
+  0,
+  1,
+  0,
+  '{"fullName":"青海省海西蒙古族藏族自治州天峻县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '000100030030',
+  '宁夏回族自治区',
+  NULL,
+  '00010003',
+  1,
+  1,
+  0,
+  '{"fullName":"宁夏回族自治区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300300001',
+  '银川市',
+  NULL,
+  '000100030030',
+  1,
+  1,
+  0,
+  '{"fullName":"宁夏回族自治区银川市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003003000010001',
+  '兴庆区',
+  NULL,
+  '0001000300300001',
+  0,
+  1,
+  0,
+  '{"fullName":"宁夏回族自治区银川市兴庆区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003003000010002',
+  '西夏区',
+  NULL,
+  '0001000300300001',
+  0,
+  1,
+  0,
+  '{"fullName":"宁夏回族自治区银川市西夏区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003003000010003',
+  '金凤区',
+  NULL,
+  '0001000300300001',
+  0,
+  1,
+  0,
+  '{"fullName":"宁夏回族自治区银川市金凤区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003003000010004',
+  '永宁县',
+  NULL,
+  '0001000300300001',
+  0,
+  1,
+  0,
+  '{"fullName":"宁夏回族自治区银川市永宁县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003003000010005',
+  '贺兰县',
+  NULL,
+  '0001000300300001',
+  0,
+  1,
+  0,
+  '{"fullName":"宁夏回族自治区银川市贺兰县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003003000010006',
+  '灵武市',
+  NULL,
+  '0001000300300001',
+  0,
+  1,
+  0,
+  '{"fullName":"宁夏回族自治区银川市灵武市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300300002',
+  '石嘴山市',
+  NULL,
+  '000100030030',
+  1,
+  1,
+  0,
+  '{"fullName":"宁夏回族自治区石嘴山市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003003000020001',
+  '大武口区',
+  NULL,
+  '0001000300300002',
+  0,
+  1,
+  0,
+  '{"fullName":"宁夏回族自治区石嘴山市大武口区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003003000020002',
+  '惠农区',
+  NULL,
+  '0001000300300002',
+  0,
+  1,
+  0,
+  '{"fullName":"宁夏回族自治区石嘴山市惠农区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003003000020003',
+  '平罗县',
+  NULL,
+  '0001000300300002',
+  0,
+  1,
+  0,
+  '{"fullName":"宁夏回族自治区石嘴山市平罗县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300300003',
+  '吴忠市',
+  NULL,
+  '000100030030',
+  1,
+  1,
+  0,
+  '{"fullName":"宁夏回族自治区吴忠市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003003000030001',
+  '利通区',
+  NULL,
+  '0001000300300003',
+  0,
+  1,
+  0,
+  '{"fullName":"宁夏回族自治区吴忠市利通区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003003000030002',
+  '红寺堡区',
+  NULL,
+  '0001000300300003',
+  0,
+  1,
+  0,
+  '{"fullName":"宁夏回族自治区吴忠市红寺堡区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003003000030003',
+  '盐池县',
+  NULL,
+  '0001000300300003',
+  0,
+  1,
+  0,
+  '{"fullName":"宁夏回族自治区吴忠市盐池县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003003000030004',
+  '同心县',
+  NULL,
+  '0001000300300003',
+  0,
+  1,
+  0,
+  '{"fullName":"宁夏回族自治区吴忠市同心县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003003000030005',
+  '青铜峡市',
+  NULL,
+  '0001000300300003',
+  0,
+  1,
+  0,
+  '{"fullName":"宁夏回族自治区吴忠市青铜峡市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300300004',
+  '固原市',
+  NULL,
+  '000100030030',
+  1,
+  1,
+  0,
+  '{"fullName":"宁夏回族自治区固原市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003003000040001',
+  '原州区',
+  NULL,
+  '0001000300300004',
+  0,
+  1,
+  0,
+  '{"fullName":"宁夏回族自治区固原市原州区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003003000040002',
+  '西吉县',
+  NULL,
+  '0001000300300004',
+  0,
+  1,
+  0,
+  '{"fullName":"宁夏回族自治区固原市西吉县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003003000040003',
+  '隆德县',
+  NULL,
+  '0001000300300004',
+  0,
+  1,
+  0,
+  '{"fullName":"宁夏回族自治区固原市隆德县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003003000040004',
+  '泾源县',
+  NULL,
+  '0001000300300004',
+  0,
+  1,
+  0,
+  '{"fullName":"宁夏回族自治区固原市泾源县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003003000040005',
+  '彭阳县',
+  NULL,
+  '0001000300300004',
+  0,
+  1,
+  0,
+  '{"fullName":"宁夏回族自治区固原市彭阳县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300300005',
+  '中卫市',
+  NULL,
+  '000100030030',
+  1,
+  1,
+  0,
+  '{"fullName":"宁夏回族自治区中卫市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003003000050001',
+  '沙坡头区',
+  NULL,
+  '0001000300300005',
+  0,
+  1,
+  0,
+  '{"fullName":"宁夏回族自治区中卫市沙坡头区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003003000050002',
+  '中宁县',
+  NULL,
+  '0001000300300005',
+  0,
+  1,
+  0,
+  '{"fullName":"宁夏回族自治区中卫市中宁县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003003000050003',
+  '海原县',
+  NULL,
+  '0001000300300005',
+  0,
+  1,
+  0,
+  '{"fullName":"宁夏回族自治区中卫市海原县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '000100030031',
+  '新疆维吾尔自治区',
+  NULL,
+  '00010003',
+  1,
+  1,
+  0,
+  '{"fullName":"新疆维吾尔自治区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300310001',
+  '乌鲁木齐市',
+  NULL,
+  '000100030031',
+  1,
+  1,
+  0,
+  '{"fullName":"新疆维吾尔自治区乌鲁木齐市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003003100010001',
+  '天山区',
+  NULL,
+  '0001000300310001',
+  0,
+  1,
+  0,
+  '{"fullName":"新疆维吾尔自治区乌鲁木齐市天山区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003003100010002',
+  '沙依巴克区',
+  NULL,
+  '0001000300310001',
+  0,
+  1,
+  0,
+  '{"fullName":"新疆维吾尔自治区乌鲁木齐市沙依巴克区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003003100010003',
+  '新市区',
+  NULL,
+  '0001000300310001',
+  0,
+  1,
+  0,
+  '{"fullName":"新疆维吾尔自治区乌鲁木齐市新市区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003003100010004',
+  '水磨沟区',
+  NULL,
+  '0001000300310001',
+  0,
+  1,
+  0,
+  '{"fullName":"新疆维吾尔自治区乌鲁木齐市水磨沟区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003003100010005',
+  '头屯河区',
+  NULL,
+  '0001000300310001',
+  0,
+  1,
+  0,
+  '{"fullName":"新疆维吾尔自治区乌鲁木齐市头屯河区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003003100010006',
+  '达坂城区',
+  NULL,
+  '0001000300310001',
+  0,
+  1,
+  0,
+  '{"fullName":"新疆维吾尔自治区乌鲁木齐市达坂城区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003003100010007',
+  '米东区',
+  NULL,
+  '0001000300310001',
+  0,
+  1,
+  0,
+  '{"fullName":"新疆维吾尔自治区乌鲁木齐市米东区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003003100010008',
+  '乌鲁木齐县',
+  NULL,
+  '0001000300310001',
+  0,
+  1,
+  0,
+  '{"fullName":"新疆维吾尔自治区乌鲁木齐市乌鲁木齐县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300310002',
+  '克拉玛依市',
+  NULL,
+  '000100030031',
+  1,
+  1,
+  0,
+  '{"fullName":"新疆维吾尔自治区克拉玛依市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003003100020001',
+  '独山子区',
+  NULL,
+  '0001000300310002',
+  0,
+  1,
+  0,
+  '{"fullName":"新疆维吾尔自治区克拉玛依市独山子区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003003100020002',
+  '克拉玛依区',
+  NULL,
+  '0001000300310002',
+  0,
+  1,
+  0,
+  '{"fullName":"新疆维吾尔自治区克拉玛依市克拉玛依区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003003100020003',
+  '白碱滩区',
+  NULL,
+  '0001000300310002',
+  0,
+  1,
+  0,
+  '{"fullName":"新疆维吾尔自治区克拉玛依市白碱滩区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003003100020004',
+  '乌尔禾区',
+  NULL,
+  '0001000300310002',
+  0,
+  1,
+  0,
+  '{"fullName":"新疆维吾尔自治区克拉玛依市乌尔禾区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300310003',
+  '吐鲁番市',
+  NULL,
+  '000100030031',
+  1,
+  1,
+  0,
+  '{"fullName":"新疆维吾尔自治区吐鲁番市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003003100030001',
+  '高昌区',
+  NULL,
+  '0001000300310003',
+  0,
+  1,
+  0,
+  '{"fullName":"新疆维吾尔自治区吐鲁番市高昌区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003003100030002',
+  '鄯善县',
+  NULL,
+  '0001000300310003',
+  0,
+  1,
+  0,
+  '{"fullName":"新疆维吾尔自治区吐鲁番市鄯善县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003003100030003',
+  '托克逊县',
+  NULL,
+  '0001000300310003',
+  0,
+  1,
+  0,
+  '{"fullName":"新疆维吾尔自治区吐鲁番市托克逊县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300310004',
+  '哈密市',
+  NULL,
+  '000100030031',
+  1,
+  1,
+  0,
+  '{"fullName":"新疆维吾尔自治区哈密市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003003100040001',
+  '伊州区',
+  NULL,
+  '0001000300310004',
+  0,
+  1,
+  0,
+  '{"fullName":"新疆维吾尔自治区哈密市伊州区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003003100040002',
+  '巴里坤哈萨克自治县',
+  NULL,
+  '0001000300310004',
+  0,
+  1,
+  0,
+  '{"fullName":"新疆维吾尔自治区哈密市巴里坤哈萨克自治县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003003100040003',
+  '伊吾县',
+  NULL,
+  '0001000300310004',
+  0,
+  1,
+  0,
+  '{"fullName":"新疆维吾尔自治区哈密市伊吾县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300310005',
+  '昌吉回族自治州',
+  NULL,
+  '000100030031',
+  1,
+  1,
+  0,
+  '{"fullName":"新疆维吾尔自治区昌吉回族自治州"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003003100050001',
+  '昌吉市',
+  NULL,
+  '0001000300310005',
+  0,
+  1,
+  0,
+  '{"fullName":"新疆维吾尔自治区昌吉回族自治州昌吉市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003003100050002',
+  '阜康市',
+  NULL,
+  '0001000300310005',
+  0,
+  1,
+  0,
+  '{"fullName":"新疆维吾尔自治区昌吉回族自治州阜康市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003003100050003',
+  '呼图壁县',
+  NULL,
+  '0001000300310005',
+  0,
+  1,
+  0,
+  '{"fullName":"新疆维吾尔自治区昌吉回族自治州呼图壁县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003003100050004',
+  '玛纳斯县',
+  NULL,
+  '0001000300310005',
+  0,
+  1,
+  0,
+  '{"fullName":"新疆维吾尔自治区昌吉回族自治州玛纳斯县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003003100050005',
+  '奇台县',
+  NULL,
+  '0001000300310005',
+  0,
+  1,
+  0,
+  '{"fullName":"新疆维吾尔自治区昌吉回族自治州奇台县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003003100050006',
+  '吉木萨尔县',
+  NULL,
+  '0001000300310005',
+  0,
+  1,
+  0,
+  '{"fullName":"新疆维吾尔自治区昌吉回族自治州吉木萨尔县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003003100050007',
+  '木垒哈萨克自治县',
+  NULL,
+  '0001000300310005',
+  0,
+  1,
+  0,
+  '{"fullName":"新疆维吾尔自治区昌吉回族自治州木垒哈萨克自治县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300310006',
+  '博尔塔拉蒙古自治州',
+  NULL,
+  '000100030031',
+  1,
+  1,
+  0,
+  '{"fullName":"新疆维吾尔自治区博尔塔拉蒙古自治州"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003003100060001',
+  '博乐市',
+  NULL,
+  '0001000300310006',
+  0,
+  1,
+  0,
+  '{"fullName":"新疆维吾尔自治区博尔塔拉蒙古自治州博乐市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003003100060002',
+  '阿拉山口市',
+  NULL,
+  '0001000300310006',
+  0,
+  1,
+  0,
+  '{"fullName":"新疆维吾尔自治区博尔塔拉蒙古自治州阿拉山口市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003003100060003',
+  '精河县',
+  NULL,
+  '0001000300310006',
+  0,
+  1,
+  0,
+  '{"fullName":"新疆维吾尔自治区博尔塔拉蒙古自治州精河县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003003100060004',
+  '温泉县',
+  NULL,
+  '0001000300310006',
+  0,
+  1,
+  0,
+  '{"fullName":"新疆维吾尔自治区博尔塔拉蒙古自治州温泉县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300310007',
+  '巴音郭楞蒙古自治州',
+  NULL,
+  '000100030031',
+  1,
+  1,
+  0,
+  '{"fullName":"新疆维吾尔自治区巴音郭楞蒙古自治州"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003003100070001',
+  '库尔勒市',
+  NULL,
+  '0001000300310007',
+  0,
+  1,
+  0,
+  '{"fullName":"新疆维吾尔自治区巴音郭楞蒙古自治州库尔勒市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003003100070002',
+  '轮台县',
+  NULL,
+  '0001000300310007',
+  0,
+  1,
+  0,
+  '{"fullName":"新疆维吾尔自治区巴音郭楞蒙古自治州轮台县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003003100070003',
+  '尉犁县',
+  NULL,
+  '0001000300310007',
+  0,
+  1,
+  0,
+  '{"fullName":"新疆维吾尔自治区巴音郭楞蒙古自治州尉犁县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003003100070004',
+  '若羌县',
+  NULL,
+  '0001000300310007',
+  0,
+  1,
+  0,
+  '{"fullName":"新疆维吾尔自治区巴音郭楞蒙古自治州若羌县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003003100070005',
+  '且末县',
+  NULL,
+  '0001000300310007',
+  0,
+  1,
+  0,
+  '{"fullName":"新疆维吾尔自治区巴音郭楞蒙古自治州且末县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003003100070006',
+  '焉耆回族自治县',
+  NULL,
+  '0001000300310007',
+  0,
+  1,
+  0,
+  '{"fullName":"新疆维吾尔自治区巴音郭楞蒙古自治州焉耆回族自治县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003003100070007',
+  '和静县',
+  NULL,
+  '0001000300310007',
+  0,
+  1,
+  0,
+  '{"fullName":"新疆维吾尔自治区巴音郭楞蒙古自治州和静县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003003100070008',
+  '和硕县',
+  NULL,
+  '0001000300310007',
+  0,
+  1,
+  0,
+  '{"fullName":"新疆维吾尔自治区巴音郭楞蒙古自治州和硕县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003003100070009',
+  '博湖县',
+  NULL,
+  '0001000300310007',
+  0,
+  1,
+  0,
+  '{"fullName":"新疆维吾尔自治区巴音郭楞蒙古自治州博湖县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300310008',
+  '阿克苏地区',
+  NULL,
+  '000100030031',
+  1,
+  1,
+  0,
+  '{"fullName":"新疆维吾尔自治区阿克苏地区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003003100080001',
+  '阿克苏市',
+  NULL,
+  '0001000300310008',
+  0,
+  1,
+  0,
+  '{"fullName":"新疆维吾尔自治区阿克苏地区阿克苏市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003003100080002',
+  '温宿县',
+  NULL,
+  '0001000300310008',
+  0,
+  1,
+  0,
+  '{"fullName":"新疆维吾尔自治区阿克苏地区温宿县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003003100080003',
+  '库车县',
+  NULL,
+  '0001000300310008',
+  0,
+  1,
+  0,
+  '{"fullName":"新疆维吾尔自治区阿克苏地区库车县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003003100080004',
+  '沙雅县',
+  NULL,
+  '0001000300310008',
+  0,
+  1,
+  0,
+  '{"fullName":"新疆维吾尔自治区阿克苏地区沙雅县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003003100080005',
+  '新和县',
+  NULL,
+  '0001000300310008',
+  0,
+  1,
+  0,
+  '{"fullName":"新疆维吾尔自治区阿克苏地区新和县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003003100080006',
+  '拜城县',
+  NULL,
+  '0001000300310008',
+  0,
+  1,
+  0,
+  '{"fullName":"新疆维吾尔自治区阿克苏地区拜城县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003003100080007',
+  '乌什县',
+  NULL,
+  '0001000300310008',
+  0,
+  1,
+  0,
+  '{"fullName":"新疆维吾尔自治区阿克苏地区乌什县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003003100080008',
+  '阿瓦提县',
+  NULL,
+  '0001000300310008',
+  0,
+  1,
+  0,
+  '{"fullName":"新疆维吾尔自治区阿克苏地区阿瓦提县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003003100080009',
+  '柯坪县',
+  NULL,
+  '0001000300310008',
+  0,
+  1,
+  0,
+  '{"fullName":"新疆维吾尔自治区阿克苏地区柯坪县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300310009',
+  '克孜勒苏柯尔克孜自治州',
+  NULL,
+  '000100030031',
+  1,
+  1,
+  0,
+  '{"fullName":"新疆维吾尔自治区克孜勒苏柯尔克孜自治州"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003003100090001',
+  '阿图什市',
+  NULL,
+  '0001000300310009',
+  0,
+  1,
+  0,
+  '{"fullName":"新疆维吾尔自治区克孜勒苏柯尔克孜自治州阿图什市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003003100090002',
+  '阿克陶县',
+  NULL,
+  '0001000300310009',
+  0,
+  1,
+  0,
+  '{"fullName":"新疆维吾尔自治区克孜勒苏柯尔克孜自治州阿克陶县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003003100090003',
+  '阿合奇县',
+  NULL,
+  '0001000300310009',
+  0,
+  1,
+  0,
+  '{"fullName":"新疆维吾尔自治区克孜勒苏柯尔克孜自治州阿合奇县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003003100090004',
+  '乌恰县',
+  NULL,
+  '0001000300310009',
+  0,
+  1,
+  0,
+  '{"fullName":"新疆维吾尔自治区克孜勒苏柯尔克孜自治州乌恰县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300310010',
+  '喀什地区',
+  NULL,
+  '000100030031',
+  1,
+  1,
+  0,
+  '{"fullName":"新疆维吾尔自治区喀什地区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003003100100001',
+  '喀什市',
+  NULL,
+  '0001000300310010',
+  0,
+  1,
+  0,
+  '{"fullName":"新疆维吾尔自治区喀什地区喀什市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003003100100002',
+  '疏附县',
+  NULL,
+  '0001000300310010',
+  0,
+  1,
+  0,
+  '{"fullName":"新疆维吾尔自治区喀什地区疏附县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003003100100003',
+  '疏勒县',
+  NULL,
+  '0001000300310010',
+  0,
+  1,
+  0,
+  '{"fullName":"新疆维吾尔自治区喀什地区疏勒县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003003100100004',
+  '英吉沙县',
+  NULL,
+  '0001000300310010',
+  0,
+  1,
+  0,
+  '{"fullName":"新疆维吾尔自治区喀什地区英吉沙县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003003100100005',
+  '泽普县',
+  NULL,
+  '0001000300310010',
+  0,
+  1,
+  0,
+  '{"fullName":"新疆维吾尔自治区喀什地区泽普县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003003100100006',
+  '莎车县',
+  NULL,
+  '0001000300310010',
+  0,
+  1,
+  0,
+  '{"fullName":"新疆维吾尔自治区喀什地区莎车县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003003100100007',
+  '叶城县',
+  NULL,
+  '0001000300310010',
+  0,
+  1,
+  0,
+  '{"fullName":"新疆维吾尔自治区喀什地区叶城县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003003100100008',
+  '麦盖提县',
+  NULL,
+  '0001000300310010',
+  0,
+  1,
+  0,
+  '{"fullName":"新疆维吾尔自治区喀什地区麦盖提县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003003100100009',
+  '岳普湖县',
+  NULL,
+  '0001000300310010',
+  0,
+  1,
+  0,
+  '{"fullName":"新疆维吾尔自治区喀什地区岳普湖县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003003100100010',
+  '伽师县',
+  NULL,
+  '0001000300310010',
+  0,
+  1,
+  0,
+  '{"fullName":"新疆维吾尔自治区喀什地区伽师县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003003100100011',
+  '巴楚县',
+  NULL,
+  '0001000300310010',
+  0,
+  1,
+  0,
+  '{"fullName":"新疆维吾尔自治区喀什地区巴楚县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003003100100012',
+  '塔什库尔干塔吉克自治县',
+  NULL,
+  '0001000300310010',
+  0,
+  1,
+  0,
+  '{"fullName":"新疆维吾尔自治区喀什地区塔什库尔干塔吉克自治县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300310011',
+  '和田地区',
+  NULL,
+  '000100030031',
+  1,
+  1,
+  0,
+  '{"fullName":"新疆维吾尔自治区和田地区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003003100110001',
+  '和田市',
+  NULL,
+  '0001000300310011',
+  0,
+  1,
+  0,
+  '{"fullName":"新疆维吾尔自治区和田地区和田市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003003100110002',
+  '和田县',
+  NULL,
+  '0001000300310011',
+  0,
+  1,
+  0,
+  '{"fullName":"新疆维吾尔自治区和田地区和田县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003003100110003',
+  '墨玉县',
+  NULL,
+  '0001000300310011',
+  0,
+  1,
+  0,
+  '{"fullName":"新疆维吾尔自治区和田地区墨玉县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003003100110004',
+  '皮山县',
+  NULL,
+  '0001000300310011',
+  0,
+  1,
+  0,
+  '{"fullName":"新疆维吾尔自治区和田地区皮山县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003003100110005',
+  '洛浦县',
+  NULL,
+  '0001000300310011',
+  0,
+  1,
+  0,
+  '{"fullName":"新疆维吾尔自治区和田地区洛浦县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003003100110006',
+  '策勒县',
+  NULL,
+  '0001000300310011',
+  0,
+  1,
+  0,
+  '{"fullName":"新疆维吾尔自治区和田地区策勒县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003003100110007',
+  '于田县',
+  NULL,
+  '0001000300310011',
+  0,
+  1,
+  0,
+  '{"fullName":"新疆维吾尔自治区和田地区于田县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003003100110008',
+  '民丰县',
+  NULL,
+  '0001000300310011',
+  0,
+  1,
+  0,
+  '{"fullName":"新疆维吾尔自治区和田地区民丰县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300310012',
+  '伊犁哈萨克自治州',
+  NULL,
+  '000100030031',
+  1,
+  1,
+  0,
+  '{"fullName":"新疆维吾尔自治区伊犁哈萨克自治州"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003003100120001',
+  '伊宁市',
+  NULL,
+  '0001000300310012',
+  0,
+  1,
+  0,
+  '{"fullName":"新疆维吾尔自治区伊犁哈萨克自治州伊宁市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003003100120002',
+  '奎屯市',
+  NULL,
+  '0001000300310012',
+  0,
+  1,
+  0,
+  '{"fullName":"新疆维吾尔自治区伊犁哈萨克自治州奎屯市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003003100120003',
+  '霍尔果斯市',
+  NULL,
+  '0001000300310012',
+  0,
+  1,
+  0,
+  '{"fullName":"新疆维吾尔自治区伊犁哈萨克自治州霍尔果斯市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003003100120004',
+  '伊宁县',
+  NULL,
+  '0001000300310012',
+  0,
+  1,
+  0,
+  '{"fullName":"新疆维吾尔自治区伊犁哈萨克自治州伊宁县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003003100120005',
+  '察布查尔锡伯自治县',
+  NULL,
+  '0001000300310012',
+  0,
+  1,
+  0,
+  '{"fullName":"新疆维吾尔自治区伊犁哈萨克自治州察布查尔锡伯自治县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003003100120006',
+  '霍城县',
+  NULL,
+  '0001000300310012',
+  0,
+  1,
+  0,
+  '{"fullName":"新疆维吾尔自治区伊犁哈萨克自治州霍城县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003003100120007',
+  '巩留县',
+  NULL,
+  '0001000300310012',
+  0,
+  1,
+  0,
+  '{"fullName":"新疆维吾尔自治区伊犁哈萨克自治州巩留县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003003100120008',
+  '新源县',
+  NULL,
+  '0001000300310012',
+  0,
+  1,
+  0,
+  '{"fullName":"新疆维吾尔自治区伊犁哈萨克自治州新源县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003003100120009',
+  '昭苏县',
+  NULL,
+  '0001000300310012',
+  0,
+  1,
+  0,
+  '{"fullName":"新疆维吾尔自治区伊犁哈萨克自治州昭苏县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003003100120010',
+  '特克斯县',
+  NULL,
+  '0001000300310012',
+  0,
+  1,
+  0,
+  '{"fullName":"新疆维吾尔自治区伊犁哈萨克自治州特克斯县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003003100120011',
+  '尼勒克县',
+  NULL,
+  '0001000300310012',
+  0,
+  1,
+  0,
+  '{"fullName":"新疆维吾尔自治区伊犁哈萨克自治州尼勒克县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300310013',
+  '塔城地区',
+  NULL,
+  '000100030031',
+  1,
+  1,
+  0,
+  '{"fullName":"新疆维吾尔自治区塔城地区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003003100130001',
+  '塔城市',
+  NULL,
+  '0001000300310013',
+  0,
+  1,
+  0,
+  '{"fullName":"新疆维吾尔自治区塔城地区塔城市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003003100130002',
+  '乌苏市',
+  NULL,
+  '0001000300310013',
+  0,
+  1,
+  0,
+  '{"fullName":"新疆维吾尔自治区塔城地区乌苏市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003003100130003',
+  '额敏县',
+  NULL,
+  '0001000300310013',
+  0,
+  1,
+  0,
+  '{"fullName":"新疆维吾尔自治区塔城地区额敏县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003003100130004',
+  '沙湾县',
+  NULL,
+  '0001000300310013',
+  0,
+  1,
+  0,
+  '{"fullName":"新疆维吾尔自治区塔城地区沙湾县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003003100130005',
+  '托里县',
+  NULL,
+  '0001000300310013',
+  0,
+  1,
+  0,
+  '{"fullName":"新疆维吾尔自治区塔城地区托里县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003003100130006',
+  '裕民县',
+  NULL,
+  '0001000300310013',
+  0,
+  1,
+  0,
+  '{"fullName":"新疆维吾尔自治区塔城地区裕民县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003003100130007',
+  '和布克赛尔蒙古自治县',
+  NULL,
+  '0001000300310013',
+  0,
+  1,
+  0,
+  '{"fullName":"新疆维吾尔自治区塔城地区和布克赛尔蒙古自治县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300310014',
+  '阿勒泰地区',
+  NULL,
+  '000100030031',
+  1,
+  1,
+  0,
+  '{"fullName":"新疆维吾尔自治区阿勒泰地区"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003003100140001',
+  '阿勒泰市',
+  NULL,
+  '0001000300310014',
+  0,
+  1,
+  0,
+  '{"fullName":"新疆维吾尔自治区阿勒泰地区阿勒泰市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003003100140002',
+  '布尔津县',
+  NULL,
+  '0001000300310014',
+  0,
+  1,
+  0,
+  '{"fullName":"新疆维吾尔自治区阿勒泰地区布尔津县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003003100140003',
+  '富蕴县',
+  NULL,
+  '0001000300310014',
+  0,
+  1,
+  0,
+  '{"fullName":"新疆维吾尔自治区阿勒泰地区富蕴县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003003100140004',
+  '福海县',
+  NULL,
+  '0001000300310014',
+  0,
+  1,
+  0,
+  '{"fullName":"新疆维吾尔自治区阿勒泰地区福海县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003003100140005',
+  '哈巴河县',
+  NULL,
+  '0001000300310014',
+  0,
+  1,
+  0,
+  '{"fullName":"新疆维吾尔自治区阿勒泰地区哈巴河县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003003100140006',
+  '青河县',
+  NULL,
+  '0001000300310014',
+  0,
+  1,
+  0,
+  '{"fullName":"新疆维吾尔自治区阿勒泰地区青河县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003003100140007',
+  '吉木乃县',
+  NULL,
+  '0001000300310014',
+  0,
+  1,
+  0,
+  '{"fullName":"新疆维吾尔自治区阿勒泰地区吉木乃县"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '0001000300310015',
+  '自治区直辖县级行政区划',
+  NULL,
+  '000100030031',
+  1,
+  1,
+  0,
+  '{"fullName":"新疆维吾尔自治区自治区直辖县级行政区划"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003003100150001',
+  '石河子市',
+  NULL,
+  '0001000300310015',
+  0,
+  1,
+  0,
+  '{"fullName":"新疆维吾尔自治区自治区直辖县级行政区划石河子市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003003100150002',
+  '阿拉尔市',
+  NULL,
+  '0001000300310015',
+  0,
+  1,
+  0,
+  '{"fullName":"新疆维吾尔自治区自治区直辖县级行政区划阿拉尔市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003003100150003',
+  '图木舒克市',
+  NULL,
+  '0001000300310015',
+  0,
+  1,
+  0,
+  '{"fullName":"新疆维吾尔自治区自治区直辖县级行政区划图木舒克市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003003100150004',
+  '五家渠市',
+  NULL,
+  '0001000300310015',
+  0,
+  1,
+  0,
+  '{"fullName":"新疆维吾尔自治区自治区直辖县级行政区划五家渠市"}',
+  NULL
+);
+
+INSERT INTO common_core.constant
+(
+  id,
+  name,
+  shortcut,
+  pid,
+  has_child,
+  enabled,
+  deleted,
+  extra,
+  priority
+)
+VALUES
+(
+  '00010003003100150005',
+  '铁门关市',
+  NULL,
+  '0001000300310015',
+  0,
+  1,
+  0,
+  '{"fullName":"新疆维吾尔自治区自治区直辖县级行政区划铁门关市"}',
+  NULL
+);
+
+
+COMMIT;

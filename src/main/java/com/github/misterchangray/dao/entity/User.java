@@ -5,7 +5,7 @@ import io.swagger.annotations.ApiModelProperty;
 
 @ApiModel(value="com.github.misterchangray.dao.entity.User")
 public class User {
-    @ApiModelProperty(value="id用户表")
+    @ApiModelProperty(value="id")
     private Integer id;
 
     @ApiModelProperty(value="username用户名")
@@ -23,7 +23,7 @@ public class User {
     @ApiModelProperty(value="name姓名")
     private String name;
 
-    @ApiModelProperty(value="sex性别0女2男")
+    @ApiModelProperty(value="sex性别")
     private Integer sex;
 
     @ApiModelProperty(value="phone手机号")
@@ -32,7 +32,7 @@ public class User {
     @ApiModelProperty(value="enabled是否启用0false，1true")
     private Integer enabled;
 
-    @ApiModelProperty(value="deleted是否删除0false, 1true")
+    @ApiModelProperty(value="deleted是否删除0false，1true")
     private Integer deleted;
 
     public Integer getId() {

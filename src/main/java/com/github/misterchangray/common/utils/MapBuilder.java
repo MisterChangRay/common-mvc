@@ -4,12 +4,13 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * Created by Miste on 4/19/2018.
  * 返回对象为Map子类,可直接当Map使用
  * 简易的map构建器,用于链式构建map结构数据
  * 示例如下：
  * MapBuilder.build().add("key", "value").add("key2", "value2");
  *
+ * @author Rui.Zhang/misterchangray@hotmail.com
+ * @author Created on 4/19/2018.
  */
 public class MapBuilder extends HashMap {
 

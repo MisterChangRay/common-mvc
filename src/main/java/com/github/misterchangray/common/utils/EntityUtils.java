@@ -7,8 +7,13 @@ import org.springframework.beans.BeanWrapperImpl;
 import java.util.HashSet;
 import java.util.Set;
 
+
 /**
- * Created by Miste on 4/19/2018.
+ * 常用静态工具类
+ * 提供对象处理方法
+ *
+ * @author Rui.Zhang/misterchangray@hotmail.com
+ * @author Created on 3/26/2018.
  */
 public class EntityUtils {
     /**

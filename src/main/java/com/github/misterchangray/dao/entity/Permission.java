@@ -5,10 +5,10 @@ import io.swagger.annotations.ApiModelProperty;
 
 @ApiModel(value="com.github.misterchangray.dao.entity.Permission")
 public class Permission {
-    @ApiModelProperty(value="id权限表")
+    @ApiModelProperty(value="id")
     private Integer id;
 
-    @ApiModelProperty(value="name权限名")
+    @ApiModelProperty(value="name")
     private String name;
 
     @ApiModelProperty(value="deleted是否删除0false, 1true")

@@ -1,5 +1,7 @@
 package com.github.misterchangray.service.user.impl;
 
+import com.github.misterchangray.common.annotation.*;
+import com.github.misterchangray.common.annotation.OperationLog;
 import com.github.misterchangray.common.enums.DBEnum;
 import com.github.misterchangray.common.enums.ErrorEnum;
 import com.github.misterchangray.common.NormalResponse;
@@ -15,9 +17,12 @@ import org.springframework.stereotype.Service;
 import java.util.ArrayList;
 import java.util.List;
 
+
 /**
- * Created by Miste on 3/26/2018.
  * 用户角色服务 实现类
+ *
+ * @author Rui.Zhang/misterchangray@hotmail.com
+ * @author Created on 3/26/2018.
  */
 @Service
 public class RoleServiceImpl implements RoleService {
@@ -101,6 +106,7 @@ public class RoleServiceImpl implements RoleService {
      * @param role 增加角色信息
      * @return  Role
      */
+    @OperationLog(businessName = "增加角色")
     public NormalResponse insert(Role role) {
         role.setId(null);
         role.setEnabled(DBEnum.TRUE.getCode());
@@ -114,6 +120,7 @@ public class RoleServiceImpl implements RoleService {
      * @param roles List[Role]
      * @return
      */
+    @OperationLog(businessName = "批量增加角色")
     public NormalResponse batchInsert(List<Role> roles) {
         if(null == roles) return NormalResponse.newInstance().setErrorCode(ErrorEnum.INVALID_REQUEST);
 
@@ -125,6 +132,7 @@ public class RoleServiceImpl implements RoleService {
      * @param role 角色对象
      * @return Role
      */
+    @OperationLog(businessName = "修改角色")
     public NormalResponse update(Role role) {
         if(null == role || null == role.getId()) return NormalResponse.newInstance().setErrorCode(ErrorEnum.INVALID_REQUEST);
 
@@ -142,6 +150,7 @@ public class RoleServiceImpl implements RoleService {
      * @param role 待删除角色对象
      * @return null
      */
+    @OperationLog(businessName = "删除角色")
     public NormalResponse delete(Role role) {
         if(null == role || null == role.getId()) return NormalResponse.newInstance().setErrorCode(ErrorEnum.INVALID_REQUEST);
 
@@ -157,6 +166,7 @@ public class RoleServiceImpl implements RoleService {
      * @param permissions 权限列表
      * @return
      */
+    @OperationLog(businessName = "更新角色权限")
     public NormalResponse updatePermission(Integer roleId, List<Integer> permissions) {
         NormalResponse normalResponse = NormalResponse.newInstance();
         if(null == roleId) return normalResponse.setErrorCode(ErrorEnum.INVALID_REQUEST);

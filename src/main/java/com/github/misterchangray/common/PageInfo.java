@@ -4,10 +4,11 @@ import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 
 /**
- * Created by Miste on 3/23/2018.
- *
  * 页码信息类
  * 用于返回页码信息
+ *
+ * @author Rui.Zhang/misterchangray@hotmail.com
+ * @author Created on 3/23/2018.
  */
 @ApiModel(description = "页码信息封装对象-PageInfo")
 public class PageInfo {

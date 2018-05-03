@@ -5,8 +5,8 @@
 ### 已完成功能
 - 增加权限统一拦截注解`@Authentication`
 - 增加方法性能统计注解`@printRunTime`
+- 增加简单的操作日志`@OperationLog`
 - 实现了简单的权限系统
-- 实现了简单的操作日志
 - 生成entity类时自动提取数据库注释生成swagger文档
 - 实现了更漂亮的swagger-ui
 
@@ -19,77 +19,27 @@
 - 访问`http://localhost:8080/docs/index.html` 查看swagger生成的Api文档信息
 - 根据需求进行快速迭代开发
 
-### 建表语句
+### 目前表单,详细信息在"/resources/archives"目录下
 ```sql
-create database playground;
+drop database common_core;
 
-use playground;
+create database common_core;
 
-create table user (
-   id int unsigned  primary key AUTO_INCREMENT comment '用户表',
-   username varchar(100) comment '用户名',
-   password varchar(100) comment '密码',
-   idcard varchar(100) comment '身份证',
-   email varchar(100) comment '邮箱',
-   name varchar(100) comment '姓名',
-   sex int comment '性别0女2男',
-   phone varchar(100) comment '手机号',
-   enabled int comment '是否启用0false，1true',
-   deleted int comment '是否删除0false, 1true'
- ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+use common_core;
 
- create table role (
-   id int unsigned  primary key AUTO_INCREMENT comment '角色表',
-   name varchar(100) comment '角色名',
-   enabled int comment '是否启用0false，1true',
-   deleted int comment '是否删除0false, 1true'
- ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+create table user;
 
-  create table permission (
-   id int unsigned  primary key AUTO_INCREMENT comment '权限表',
-   name varchar(100) comment '权限名',
-   deleted int comment '是否删除0false, 1true'
- ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+create table role;
 
+create table permission;
 
- create table role_permission_map (
-   id int unsigned  primary key AUTO_INCREMENT comment '角色-权限映射表',
-   role_id int unsigned,
-   permission_id int unsigned,
-   deleted int comment '是否删除0false, 1true'
- ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+create table role_permission_map;
 
-
- create table user_role_map (
-   id int unsigned  primary key AUTO_INCREMENT comment '用户-角色映射表',
-   user_id int unsigned,
-   role_id int unsigned,
-   deleted int comment '是否删除0false, 1true'
- ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+create table user_role_map;
  
- create table constant (
-	id int unsigned primary key AUTO_INCREMENT comment '常量表',
-	name varchar(100) comment '常量名',
-	shortcut varchar(100) comment '常量简称,用于快速定位',
-	pid varchar(100) comment '父ID,null为根节点',
-	level int unsigned comment '当前层级;pid=null时为1级',
-	has_child int unsigned comment '是否有子节点0false,1true',
-	enabled int comment '是否启用0false,1true',
-  deleted int comment '是否删除0false, 1true',
-	extra varchar(300) comment '附加数据;推荐存JSON'
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+create table constant;
 
- create table operation_log  (
-	id   int unsigned primary key AUTO_INCREMENT comment '操作日志表',
-	table_name varchar(100) comment '表名',
-	business_name varchar(100) comment '业务名称',
-	method varchar(100) comment '操作方式',
-	user_id varchar(100) comment '操作人ID',
-	user_name varchar(100) comment '操作人名称',
-	create_date timestamp,
-	old_value varchar(500) comment '修改前数据',
-	new_value varchar(500) comment '修改后数据'
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+create table operation_log;
 
 ```
 
@@ -101,7 +51,7 @@ create table user (
 - 开发规范建议遵循阿里巴巴Java开发手册（[最新版下载](https://github.com/lihengming/java-codes/blob/master/shared-resources/%E9%98%BF%E9%87%8C%E5%B7%B4%E5%B7%B4Java%E5%BC%80%E5%8F%91%E6%89%8B%E5%86%8CV1.2.0.pdf))
 - 建议在公司内部使用ShowDoc、Swagger2 、RAP等开源项目来编写、管理API文档
 - 页面常量信息建议放在`constants`表;如民族/地址/证件类型/性别等;
-
+- 所有项目文档放置在`/resources/archives`目录下
 
 ### 相关环境(推荐使用环境)
 - OS Microsoft Windows 10 Pro
@@ -129,4 +79,4 @@ create table user (
     </dependency>
 ```
 - 使用mybaitis-generator插件生成dao层时请先删除原来的文件,不然生的的内容会追加到源文件中,出现代码重复
-- 下载后可能需要修改/webapp/swagger-ui/index.html文件中的url地址.
+- 下载后如打不开swagger2文档，可能需要修改`webapp/common-core-swagger-ui/config.js`文件中得地址
