@@ -1,5 +1,6 @@
 package com.github.misterchangray.common.config;
 
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
@@ -30,6 +31,9 @@ import java.util.List;
 @EnableSwagger2     //启用Swagger2
 @ComponentScan(basePackages = "com.github.misterchangray")
 public class SwaggerConfig {
+    @Value("${swagger2.enabled}")
+    private boolean enabled;
+
     @Bean
     public Docket createRestApi() {
         //统一增加权限验证字段
@@ -38,8 +42,8 @@ public class SwaggerConfig {
         tokenParam.name("Authentication").description("令牌").modelRef(new ModelRef("string")).parameterType("header").required(true).build();
         params.add(tokenParam.build());
 
-        return
-                new Docket(DocumentationType.SWAGGER_2)
+        return new Docket(DocumentationType.SWAGGER_2)
+                .enable(enabled)
                 .apiInfo(apiInfo()).select()
                         //扫描指定包中的swagger注解
                         //.apis(RequestHandlerSelectors.basePackage("com.github.misterchangray.controller"))

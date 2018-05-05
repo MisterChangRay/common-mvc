@@ -15,11 +15,14 @@
     <!-- 自动扫描SpringMVC包 ,将带有注解的类 纳入spring容器管理 -->
     <context:component-scan base-package="com.github.misterchangray"/>
 
-    <!-- 引入jdbc配置文件 -->
+    <!-- 引入配置文件;请注意申明配置时key不要重复 -->
     <bean id="propertyConfigurer" class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
         <property name="locations">
             <list>
+                <!-- jdbc配置-->
                 <value>classpath*:jdbc.properties</value>
+                <!-- 系统配置 -->
+                <value>classpath*:config.properties</value>
             </list>
         </property>
     </bean>
