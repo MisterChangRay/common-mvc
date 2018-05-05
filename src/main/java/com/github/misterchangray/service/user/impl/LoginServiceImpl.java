@@ -8,14 +8,14 @@ import com.github.misterchangray.common.utils.MapBuilder;
 import com.github.misterchangray.dao.entity.User;
 import com.github.misterchangray.dao.entity.UserQuery;
 import com.github.misterchangray.dao.mapper.UserMapper;
-import com.github.misterchangray.service.user.AuthService;
+import com.github.misterchangray.service.user.UserSessionService;
+import com.github.misterchangray.service.user.LoginService;
+import com.github.misterchangray.service.user.vo.UserSessionVO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import javax.servlet.http.HttpSession;
-import java.util.List;
-import java.util.Map;
-import java.util.UUID;
+import java.util.*;
 
 
 /**
@@ -24,14 +24,15 @@ import java.util.UUID;
  * @author Created on 3/29/2018.
  */
 @Service
-public class AuthServiceImpl implements AuthService {
+public class LoginServiceImpl implements LoginService {
     @Autowired
     UserMapper userMapper;
     @Autowired
     HttpSession httpSession;
+    @Autowired
+    UserSessionService userSessionService;
 
-    @OperationLog(businessName = "用户登陆-用户名+密码")
-    public NormalResponse loginByUserName(String username, String password) {
+    public NormalResponse signInByUserName(String username, String password) {
         NormalResponse res = new NormalResponse();
 
         UserQuery userQuery = new UserQuery();
@@ -53,20 +54,28 @@ public class AuthServiceImpl implements AuthService {
             return  res;
         }
 
-        String token = UUID.randomUUID().toString();
-        httpSession.setAttribute("Authentication", token);
+
+        UserSessionVO userSessionVO = userSessionService.createSession(user.getId().toString());
+        httpSession.setAttribute("Authentication", userSessionVO.getSession());
         httpSession.setAttribute("user", user);
 
-        Map data = MapBuilder.build().put("Authentication", token).put("user", user);
+        Map data = MapBuilder.build().put("Authentication", userSessionVO.getSession()).put("user", user);
         res.setData(data);
         return res;
     }
 
-    public NormalResponse loginByPhone(String phone, String password) {
+    public NormalResponse signInByEmail(String email, String password) {
         return null;
     }
 
-    public NormalResponse loginByEmail(String email, String password) {
+    public NormalResponse signInByPhone(String phone, String verificationCode) {
         return null;
+    }
+
+
+
+    public NormalResponse signOut(String session) {
+        userSessionService.destroySession(session);
+        return NormalResponse.newInstance();
     }
 }

@@ -6,6 +6,8 @@ import com.github.misterchangray.common.annotation.Authentication;
 import com.github.misterchangray.common.enums.ErrorEnum;
 import com.github.misterchangray.common.utils.JSONUtils;
 import com.github.misterchangray.service.user.UserService;
+import com.github.misterchangray.service.user.UserSessionService;
+import com.github.misterchangray.service.user.vo.UserSessionVO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.method.HandlerMethod;
 import org.springframework.web.servlet.handler.HandlerInterceptorAdapter;
@@ -16,6 +18,7 @@ import java.lang.reflect.Method;
 
 /**
  * 权限校验拦截器
+ * 判断当前登录用户集合中是否存在该session；并校验session是否正确
  *
  * @author Rui.Zhang/misterchangray@hotmail.com
  * @author Created on 3/26/2018.
@@ -23,6 +26,8 @@ import java.lang.reflect.Method;
 public class AuthInterceptor extends HandlerInterceptorAdapter {
     @Autowired
     UserService userService;
+    @Autowired
+    UserSessionService userSessionService;
 
     @Override
     public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception {
@@ -39,17 +44,17 @@ public class AuthInterceptor extends HandlerInterceptorAdapter {
         if (methodAnnotation != null) {
             // 执行认证
             String token = request.getHeader("Authentication");  // 从 http 请求头中取出 Authentication
-            String loginToken = (String) request.getSession().getAttribute("Authentication");
+            UserSessionVO userSessionVO = userSessionService.getSession(token);
 
             NormalResponse normalResponse = new NormalResponse();
-            if (null == token || null == loginToken) {
+            if (null == token || null == userSessionVO) {
                 normalResponse.setErrorCode(ErrorEnum.NEED_AUTH);
                 normalResponse.setErrorMsg("无token，请先登录");
                 response.getWriter().append(JSONUtils.obj2json(normalResponse));
                 response.setContentType("application/json");
                 return false;
             }
-            if(!token.equals(loginToken)) {
+            if(!token.equals(userSessionVO.getSession())) {
                 normalResponse.setErrorCode(ErrorEnum.NEED_AUTH);
                 normalResponse.setErrorMsg("token异常，请重新登录");
                 response.getWriter().append(JSONUtils.obj2json(normalResponse));

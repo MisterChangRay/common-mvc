@@ -1,17 +1,21 @@
 package com.github.misterchangray.controller.user;
 
-import com.github.misterchangray.common.enums.ErrorEnum;
 import com.github.misterchangray.common.NormalResponse;
 import com.github.misterchangray.common.annotation.Authentication;
-import com.github.misterchangray.service.user.AuthService;
+import com.github.misterchangray.common.enums.ErrorEnum;
+import com.github.misterchangray.service.user.LoginService;
 import com.github.misterchangray.service.user.UserService;
-import io.swagger.annotations.*;
+import com.github.misterchangray.service.user.UserSessionService;
+import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiImplicitParam;
+import io.swagger.annotations.ApiImplicitParams;
+import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.ApplicationContext;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.*;
+
+import javax.servlet.http.HttpSession;
 
 
 /**
@@ -26,15 +30,18 @@ import org.springframework.web.bind.annotation.ResponseBody;
  */
 @Api(tags ="用户认证", description = "AuthController")
 @Controller
-@RequestMapping("/v1/auth")
-public class AuthController {
+@RequestMapping("/v1/session")
+public class LoginController {
     @Autowired
-    AuthService authService;
+    LoginService loginService;
     @Autowired
     UserService userService;
-
-
-
+    @Autowired
+    HttpSession httpSession;
+    @Autowired
+    ApplicationContext applicationContext;
+    @Autowired
+    UserSessionService userSessionService;
 
     /**
      * 用户登陆
@@ -62,36 +69,45 @@ public class AuthController {
             return res;
         }
         if(null != username && null != password) {
-            return authService.loginByUserName(username, password);
+            return loginService.signInByUserName(username, password);
         }
         return res;
     }
 
+
     /**
-     * 检查用户信息是否存在
-     * @param username 用户名
-     * @param phone 手机号
-     * @param idcard 身份证
-     * @param email 邮箱
+     * 用户登出
+     * @param token
      * @return
      */
-    @ApiOperation(value = "用户信息校验", notes = "检查用户信息是否已经注册,true表示已经注册,false为未注册")
+    @ApiOperation(value = "用户登出", notes = "提供用户用户登出")
     @ApiImplicitParams({
-            @ApiImplicitParam(name="username", value = "用户名", required = false, paramType = "query", dataType = "string"),
-            @ApiImplicitParam(name="phone", value = "手机号", required = false, paramType = "query", dataType = "string"),
-            @ApiImplicitParam(name="idcard", value = "身份证", required = false, paramType = "query", dataType = "string"),
-            @ApiImplicitParam(name="email", value = "邮箱", required = false, paramType = "query", dataType = "string"),
+            @ApiImplicitParam(name="userId", value = "用户ID", required = false, paramType = "query", dataType = "string"),
     })
     @Authentication
-    @RequestMapping(value = "/checkUserInfo", method = RequestMethod.POST)
+    @RequestMapping(value = "/loginOut", method = RequestMethod.POST)
     @ResponseBody
-    public NormalResponse checkUser(@RequestParam(required = false) String username,
-                                    @RequestParam(required = false) String phone,
-                                    @RequestParam(required = false) String idcard,
-                                    @RequestParam(required = false) String email) {
-
-        return userService.checkUserInfo(username, email, phone, idcard);
+    public NormalResponse login(@RequestHeader(value = "Authentication") String token) {
+        return  loginService.signOut(token);
     }
+
+
+
+    /**
+     * 更新心跳
+     * @return
+     */
+    @ApiOperation(value = "心跳检测", notes = "更新心跳,每隔1分钟访问一次;如3分钟后未访问断定位离线")
+    @Authentication
+    @RequestMapping(value = "/heartbeat", method = RequestMethod.GET)
+    @ResponseBody
+    public NormalResponse heartbeat(@RequestHeader("Authentication") String authentication) {
+        userSessionService.heartbeat(authentication);
+        return NormalResponse.newInstance();
+    }
+
+
+
 
 
 }

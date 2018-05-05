@@ -41,6 +41,34 @@ public class UserController {
     @Autowired
     UserService userService;
 
+
+
+    /**
+     * 检查用户信息是否存在
+     * @param username 用户名
+     * @param phone 手机号
+     * @param idcard 身份证
+     * @param email 邮箱
+     * @return
+     */
+    @ApiOperation(value = "用户信息校验", notes = "检查用户信息是否已经注册,true表示已经注册,false为未注册")
+    @ApiImplicitParams({
+            @ApiImplicitParam(name="username", value = "用户名", required = false, paramType = "query", dataType = "string"),
+            @ApiImplicitParam(name="phone", value = "手机号", required = false, paramType = "query", dataType = "string"),
+            @ApiImplicitParam(name="idcard", value = "身份证", required = false, paramType = "query", dataType = "string"),
+            @ApiImplicitParam(name="email", value = "邮箱", required = false, paramType = "query", dataType = "string"),
+    })
+    @Authentication
+    @RequestMapping(value = "/checkUserInfo", method = RequestMethod.POST)
+    @ResponseBody
+    public NormalResponse checkUser(@RequestParam(required = false) String username,
+                                    @RequestParam(required = false) String phone,
+                                    @RequestParam(required = false) String idcard,
+                                    @RequestParam(required = false) String email) {
+
+        return userService.checkUserInfo(username, email, phone, idcard);
+    }
+
     /**
      * 编辑用户角色
      * @param userId 用户id
