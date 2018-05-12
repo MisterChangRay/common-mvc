@@ -34,7 +34,7 @@ public class ConstantController {
     @RequestMapping(method = RequestMethod.GET)
     @ResponseBody
     public NormalResponse constant(@RequestParam(required = false) Integer pid, @RequestParam(required = false) String shortcut) {
-        NormalResponse res = new NormalResponse();
+        NormalResponse res = NormalResponse.newInstance();
 
         ConstantQuery constantQuery = new ConstantQuery();
         ConstantQuery.Criteria criteria = constantQuery.createCriteria();

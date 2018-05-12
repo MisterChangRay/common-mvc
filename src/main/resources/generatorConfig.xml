@@ -24,6 +24,8 @@
         <plugin type="com.itfsw.mybatis.generator.plugins.ModelColumnPlugin"/>
         <!-- 自动为entity生成swagger2文档-->
         <plugin type="mybatis.generator.plugins.GeneratorSwagger2Doc"></plugin>
+        <!-- 扩展entity的set方法-->
+        <plugin type="mybatis.generator.plugins.ExtendEntitySetter" />
 
         <commentGenerator>
             <!-- 是否去除自动生成的注释 true：是 ： false:否 -->
@@ -72,6 +74,7 @@
         <table tableName="user_role_map"></table>
         <table tableName="operation_log"></table>
         <table tableName="constant"></table>
+        <table tableName="login_log"></table>
 
 
         <!-- 有些表的字段需要指定java类型

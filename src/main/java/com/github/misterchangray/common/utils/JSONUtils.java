@@ -3,6 +3,8 @@ package com.github.misterchangray.common.utils;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.github.misterchangray.common.NormalResponse;
+import com.github.misterchangray.dao.entity.User;
 import org.aspectj.weaver.BCException;
 
 import java.io.IOException;
@@ -14,35 +16,45 @@ import java.util.Map;
  * 常用静态工具类
  * JSON相关操作工具
  *
+ *
+ * 连续访问一个JSON的多个属性时推荐先使用 buildJsonNode 方法建立 Json实体;再读取其中的属性;以提高效率
+ *
  * @author Rui.Zhang/misterchangray@hotmail.com
  * @author Created on 2018/4/23.
  */
 public class JSONUtils {
     private static ObjectMapper mapper = new ObjectMapper();
-    private static JsonNode cacheNode;
 
     public static void main(String[] a) {
+
+        System.out.print(JSONUtils.json2obj("{\"id\":\"123\"}", User.class));;
+        User u = new User();
+        u.setId(123123);
+
+        NormalResponse<User> n = NormalResponse.newInstance().setData(u);
+        User u2 = n.getData();
+        System.out.println(u2);
 //        System.out.println("1a1".split("\\.").length);
         //{a:1,b:{e:[{},{t:"asd"}]}}
-
-
-        String json = "{\"a\":1,\"b\":{\"e\":[{},{\"t\":\"asd\"}]}}";
-//        json = "[{\"id\":1,\"username\":\"zr\"},{\"id\":2,\"username\":\"zr2\"}]";
-        Long start = System.currentTimeMillis();
-        JsonNode jsonNode2 = getJsonPathVal(json, "a.h", "");
-        System.out.println(jsonNode2.isNull());
-        System.out.println(getJsonPathVal(json, "b", "e"));
-        System.out.println(getJsonPathVal(json, "b.e", "e"));
-        System.out.println(getJsonPathVal(json, "b.e.t", "e"));
-        System.out.println("-1-----------" + (System.currentTimeMillis() - start));
-
-        start = System.currentTimeMillis();
-        JsonNode jsonNode = buildJsonNode(json);
-//        System.out.println(getJsonPathVal(jsonNode, "[1].username2", "e"));
-        System.out.println(getJsonPathVal(jsonNode, "b", "e"));
-        System.out.println(getJsonPathVal(jsonNode, "b.e", "e"));
-        System.out.println(getJsonPathVal(jsonNode, "b.e[1].t", false));
-        System.out.println("-2-----------" + (System.currentTimeMillis() - start));
+//
+//
+//        String json = "{\"a\":1,\"b\":{\"e\":[{},{\"t\":\"asd\"}]}}";
+////        json = "[{\"id\":1,\"username\":\"zr\"},{\"id\":2,\"username\":\"zr2\"}]";
+//        Long start = System.currentTimeMillis();
+//        JsonNode jsonNode2 = getJsonPathVal(json, "a.h", "");
+//        System.out.println(jsonNode2.isNull());
+//        System.out.println(getJsonPathVal(json, "b", "e"));
+//        System.out.println(getJsonPathVal(json, "b.e", "e"));
+//        System.out.println(getJsonPathVal(json, "b.e.t", "e"));
+//        System.out.println("-1-----------" + (System.currentTimeMillis() - start));
+//
+//        start = System.currentTimeMillis();
+//        JsonNode jsonNode = buildJsonNode(json);
+////        System.out.println(getJsonPathVal(jsonNode, "[1].username2", "e"));
+//        System.out.println(getJsonPathVal(jsonNode, "b", "e"));
+//        System.out.println(getJsonPathVal(jsonNode, "b.e", "e"));
+//        System.out.println(getJsonPathVal(jsonNode, "b.e[1].t", false));
+//        System.out.println("-2-----------" + (System.currentTimeMillis() - start));
 
 
     }
@@ -125,7 +137,7 @@ public class JSONUtils {
      * @return
      * @throws BCException
      */
-    public static String obj2json(Object object) throws BCException {
+    public static String obj2json(Object object) {
         String json = null;
         try {
             json = mapper.writeValueAsString(object);
@@ -142,7 +154,7 @@ public class JSONUtils {
      * @return
      * @throws BCException
      */
-    public static Map json2map(String json) throws BCException {
+    public static Map json2map(String json) {
         Map res = null;
         try {
             res = mapper.readValue(json, HashMap.class);
@@ -160,10 +172,10 @@ public class JSONUtils {
      * @return
      * @throws BCException
      */
-    public static <T> T json2obj(String json, T t) throws BCException {
+    public static <T> T json2obj(String json, Class<T> t) {
         T res = null;
         try {
-            res = (T) mapper.readValue(json, t.getClass());
+            res = (T) mapper.readValue(json, t);
         } catch (JsonProcessingException e) {
             e.printStackTrace();
         } catch (IOException e) {

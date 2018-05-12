@@ -1,13 +1,13 @@
-package com.github.misterchangray.service.user.impl;
+package com.github.misterchangray.service.user.bo;
 
 import com.github.misterchangray.common.NormalResponse;
 import com.github.misterchangray.dao.entity.User;
 import com.github.misterchangray.service.common.GlobalCacheService;
+import com.github.misterchangray.service.log.LoginLogService;
 import com.github.misterchangray.service.user.UserService;
-import com.github.misterchangray.service.user.UserSessionService;
 import com.github.misterchangray.service.user.vo.UserSessionVO;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
+import org.springframework.stereotype.Component;
 
 import java.util.HashMap;
 import java.util.Iterator;
@@ -17,16 +17,17 @@ import java.util.UUID;
 /**
  *
  * session管理
- *
  * @author Rui.Zhang/misterchangray@hotmail.com
  * @author Created on 4/29/2018.
  */
-@Service
-public class UserSessionServiceImpl implements UserSessionService {
+@Component
+public class UserSessionBo {
     @Autowired
     private GlobalCacheService globalCacheService;
     @Autowired
     private UserService userService;
+    @Autowired
+    private LoginLogService loginLogService;
 
     /**
      * 初始化session環境
@@ -92,6 +93,9 @@ public class UserSessionServiceImpl implements UserSessionService {
         if(null == onLineUsers.get(session)) return;
         UserSessionVO userSessionVO = onLineUsers.get(session);
         if(null == userSessionVO) return;
+
+        //添加登录日志
+        loginLogService.addLog(userSessionVO.getUserId(), "", "", userSessionVO.getLoginDate(), System.currentTimeMillis());
 
         onLineUsers.remove(userSessionVO.getSession());
         onLineUsers.remove(userSessionVO.getUserId());

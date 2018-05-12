@@ -35,7 +35,7 @@ public class HttpUtils {
 //        System.out.println("---" + m);
 //        System.out.println(MapBuilder.build().add("a","b"));
 //        JSONUtils.json2obj("\\\\", User.class);
-        User user = (User) JSONUtils.json2obj("{\"id\":\"12\"}", new Object());
+        User user = (User) JSONUtils.json2obj("{\"id\":\"12\"}", User.class);
         System.out.println(user.getId());
 
     }

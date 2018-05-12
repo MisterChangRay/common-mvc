@@ -39,80 +39,90 @@ public class User {
         return id;
     }
 
-    public void setId(Integer id) {
+    public User setId(Integer id) {
         this.id = id;
+        return this;
     }
 
     public String getUsername() {
         return username;
     }
 
-    public void setUsername(String username) {
+    public User setUsername(String username) {
         this.username = username == null ? null : username.trim();
+        return this;
     }
 
     public String getPassword() {
         return password;
     }
 
-    public void setPassword(String password) {
+    public User setPassword(String password) {
         this.password = password == null ? null : password.trim();
+        return this;
     }
 
     public String getIdcard() {
         return idcard;
     }
 
-    public void setIdcard(String idcard) {
+    public User setIdcard(String idcard) {
         this.idcard = idcard == null ? null : idcard.trim();
+        return this;
     }
 
     public String getEmail() {
         return email;
     }
 
-    public void setEmail(String email) {
+    public User setEmail(String email) {
         this.email = email == null ? null : email.trim();
+        return this;
     }
 
     public String getName() {
         return name;
     }
 
-    public void setName(String name) {
+    public User setName(String name) {
         this.name = name == null ? null : name.trim();
+        return this;
     }
 
     public Integer getSex() {
         return sex;
     }
 
-    public void setSex(Integer sex) {
+    public User setSex(Integer sex) {
         this.sex = sex;
+        return this;
     }
 
     public String getPhone() {
         return phone;
     }
 
-    public void setPhone(String phone) {
+    public User setPhone(String phone) {
         this.phone = phone == null ? null : phone.trim();
+        return this;
     }
 
     public Integer getEnabled() {
         return enabled;
     }
 
-    public void setEnabled(Integer enabled) {
+    public User setEnabled(Integer enabled) {
         this.enabled = enabled;
+        return this;
     }
 
     public Integer getDeleted() {
         return deleted;
     }
 
-    public void setDeleted(Integer deleted) {
+    public User setDeleted(Integer deleted) {
         this.deleted = deleted;
+        return this;
     }
 
     @Override

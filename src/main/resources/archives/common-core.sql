@@ -1,6 +1,6 @@
 /*==============================================================*/
 /* DBMS name:      MySQL 5.0                                    */
-/* Created on:     5/2/2018 8:24:43 AM                          */
+/* Created on:     5/6/2018 3:53:44 PM                          */
 /*==============================================================*/
 
 
@@ -45,7 +45,7 @@ create table login_log
    id                   int unsigned,
    user_id              int unsigned,
    login_ip             varchar(100),
-   device_number        varchar(300),
+   device_info          varchar(300),
    sign_in_time         timestamp,
    sign_out_time        timestamp
 );

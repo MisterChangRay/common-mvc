@@ -21,32 +21,36 @@ public class UserRoleMap {
         return id;
     }
 
-    public void setId(Integer id) {
+    public UserRoleMap setId(Integer id) {
         this.id = id;
+        return this;
     }
 
     public Integer getUserId() {
         return userId;
     }
 
-    public void setUserId(Integer userId) {
+    public UserRoleMap setUserId(Integer userId) {
         this.userId = userId;
+        return this;
     }
 
     public Integer getRoleId() {
         return roleId;
     }
 
-    public void setRoleId(Integer roleId) {
+    public UserRoleMap setRoleId(Integer roleId) {
         this.roleId = roleId;
+        return this;
     }
 
     public Integer getDeleted() {
         return deleted;
     }
 
-    public void setDeleted(Integer deleted) {
+    public UserRoleMap setDeleted(Integer deleted) {
         this.deleted = deleted;
+        return this;
     }
 
     @Override

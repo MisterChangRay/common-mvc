@@ -26,6 +26,20 @@ public class UserSessionVO {
      */
     private Long heartBeatDate;
 
+    /**
+     * 登录时间
+     */
+    private Long loginDate;
+
+
+    public Long getLoginDate() {
+        return loginDate;
+    }
+
+    public void setLoginDate(Long loginDate) {
+        this.loginDate = loginDate;
+    }
+
     public String getSession() {
         return session;
     }
@@ -63,6 +77,7 @@ public class UserSessionVO {
         this.username = username;
         this.userId = userId;
         this.heartBeatDate = heartBeatDate;
+        this.loginDate = heartBeatDate;
     }
 
 

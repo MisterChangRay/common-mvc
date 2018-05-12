@@ -395,6 +395,206 @@ public class PermissionQuery {
             addCriterion("deleted not between", value1, value2, "deleted");
             return (Criteria) this;
         }
+
+        public Criteria andUriIsNull() {
+            addCriterion("uri is null");
+            return (Criteria) this;
+        }
+
+        public Criteria andUriIsNotNull() {
+            addCriterion("uri is not null");
+            return (Criteria) this;
+        }
+
+        public Criteria andUriEqualTo(String value) {
+            addCriterion("uri =", value, "uri");
+            return (Criteria) this;
+        }
+
+        public Criteria andUriNotEqualTo(String value) {
+            addCriterion("uri <>", value, "uri");
+            return (Criteria) this;
+        }
+
+        public Criteria andUriGreaterThan(String value) {
+            addCriterion("uri >", value, "uri");
+            return (Criteria) this;
+        }
+
+        public Criteria andUriGreaterThanOrEqualTo(String value) {
+            addCriterion("uri >=", value, "uri");
+            return (Criteria) this;
+        }
+
+        public Criteria andUriLessThan(String value) {
+            addCriterion("uri <", value, "uri");
+            return (Criteria) this;
+        }
+
+        public Criteria andUriLessThanOrEqualTo(String value) {
+            addCriterion("uri <=", value, "uri");
+            return (Criteria) this;
+        }
+
+        public Criteria andUriLike(String value) {
+            addCriterion("uri like", value, "uri");
+            return (Criteria) this;
+        }
+
+        public Criteria andUriNotLike(String value) {
+            addCriterion("uri not like", value, "uri");
+            return (Criteria) this;
+        }
+
+        public Criteria andUriIn(List<String> values) {
+            addCriterion("uri in", values, "uri");
+            return (Criteria) this;
+        }
+
+        public Criteria andUriNotIn(List<String> values) {
+            addCriterion("uri not in", values, "uri");
+            return (Criteria) this;
+        }
+
+        public Criteria andUriBetween(String value1, String value2) {
+            addCriterion("uri between", value1, value2, "uri");
+            return (Criteria) this;
+        }
+
+        public Criteria andUriNotBetween(String value1, String value2) {
+            addCriterion("uri not between", value1, value2, "uri");
+            return (Criteria) this;
+        }
+
+        public Criteria andTypeIsNull() {
+            addCriterion("type is null");
+            return (Criteria) this;
+        }
+
+        public Criteria andTypeIsNotNull() {
+            addCriterion("type is not null");
+            return (Criteria) this;
+        }
+
+        public Criteria andTypeEqualTo(Integer value) {
+            addCriterion("type =", value, "type");
+            return (Criteria) this;
+        }
+
+        public Criteria andTypeNotEqualTo(Integer value) {
+            addCriterion("type <>", value, "type");
+            return (Criteria) this;
+        }
+
+        public Criteria andTypeGreaterThan(Integer value) {
+            addCriterion("type >", value, "type");
+            return (Criteria) this;
+        }
+
+        public Criteria andTypeGreaterThanOrEqualTo(Integer value) {
+            addCriterion("type >=", value, "type");
+            return (Criteria) this;
+        }
+
+        public Criteria andTypeLessThan(Integer value) {
+            addCriterion("type <", value, "type");
+            return (Criteria) this;
+        }
+
+        public Criteria andTypeLessThanOrEqualTo(Integer value) {
+            addCriterion("type <=", value, "type");
+            return (Criteria) this;
+        }
+
+        public Criteria andTypeIn(List<Integer> values) {
+            addCriterion("type in", values, "type");
+            return (Criteria) this;
+        }
+
+        public Criteria andTypeNotIn(List<Integer> values) {
+            addCriterion("type not in", values, "type");
+            return (Criteria) this;
+        }
+
+        public Criteria andTypeBetween(Integer value1, Integer value2) {
+            addCriterion("type between", value1, value2, "type");
+            return (Criteria) this;
+        }
+
+        public Criteria andTypeNotBetween(Integer value1, Integer value2) {
+            addCriterion("type not between", value1, value2, "type");
+            return (Criteria) this;
+        }
+
+        public Criteria andPuriIsNull() {
+            addCriterion("puri is null");
+            return (Criteria) this;
+        }
+
+        public Criteria andPuriIsNotNull() {
+            addCriterion("puri is not null");
+            return (Criteria) this;
+        }
+
+        public Criteria andPuriEqualTo(String value) {
+            addCriterion("puri =", value, "puri");
+            return (Criteria) this;
+        }
+
+        public Criteria andPuriNotEqualTo(String value) {
+            addCriterion("puri <>", value, "puri");
+            return (Criteria) this;
+        }
+
+        public Criteria andPuriGreaterThan(String value) {
+            addCriterion("puri >", value, "puri");
+            return (Criteria) this;
+        }
+
+        public Criteria andPuriGreaterThanOrEqualTo(String value) {
+            addCriterion("puri >=", value, "puri");
+            return (Criteria) this;
+        }
+
+        public Criteria andPuriLessThan(String value) {
+            addCriterion("puri <", value, "puri");
+            return (Criteria) this;
+        }
+
+        public Criteria andPuriLessThanOrEqualTo(String value) {
+            addCriterion("puri <=", value, "puri");
+            return (Criteria) this;
+        }
+
+        public Criteria andPuriLike(String value) {
+            addCriterion("puri like", value, "puri");
+            return (Criteria) this;
+        }
+
+        public Criteria andPuriNotLike(String value) {
+            addCriterion("puri not like", value, "puri");
+            return (Criteria) this;
+        }
+
+        public Criteria andPuriIn(List<String> values) {
+            addCriterion("puri in", values, "puri");
+            return (Criteria) this;
+        }
+
+        public Criteria andPuriNotIn(List<String> values) {
+            addCriterion("puri not in", values, "puri");
+            return (Criteria) this;
+        }
+
+        public Criteria andPuriBetween(String value1, String value2) {
+            addCriterion("puri between", value1, value2, "puri");
+            return (Criteria) this;
+        }
+
+        public Criteria andPuriNotBetween(String value1, String value2) {
+            addCriterion("puri not between", value1, value2, "puri");
+            return (Criteria) this;
+        }
     }
 
     public static class Criteria extends GeneratedCriteria {

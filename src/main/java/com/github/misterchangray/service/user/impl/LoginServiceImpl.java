@@ -1,21 +1,21 @@
 package com.github.misterchangray.service.user.impl;
 
 import com.github.misterchangray.common.NormalResponse;
-import com.github.misterchangray.common.annotation.OperationLog;
 import com.github.misterchangray.common.enums.DBEnum;
 import com.github.misterchangray.common.enums.ErrorEnum;
 import com.github.misterchangray.common.utils.MapBuilder;
 import com.github.misterchangray.dao.entity.User;
 import com.github.misterchangray.dao.entity.UserQuery;
 import com.github.misterchangray.dao.mapper.UserMapper;
-import com.github.misterchangray.service.user.UserSessionService;
 import com.github.misterchangray.service.user.LoginService;
+import com.github.misterchangray.service.user.bo.UserSessionBo;
 import com.github.misterchangray.service.user.vo.UserSessionVO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import javax.servlet.http.HttpSession;
-import java.util.*;
+import java.util.List;
+import java.util.Map;
 
 
 /**
@@ -30,10 +30,10 @@ public class LoginServiceImpl implements LoginService {
     @Autowired
     HttpSession httpSession;
     @Autowired
-    UserSessionService userSessionService;
+    UserSessionBo userSessionBo;
 
     public NormalResponse signInByUserName(String username, String password) {
-        NormalResponse res = new NormalResponse();
+        NormalResponse res = NormalResponse.newInstance();
 
         UserQuery userQuery = new UserQuery();
         UserQuery.Criteria criteria = userQuery.createCriteria();
@@ -55,7 +55,7 @@ public class LoginServiceImpl implements LoginService {
         }
 
 
-        UserSessionVO userSessionVO = userSessionService.createSession(user.getId().toString());
+        UserSessionVO userSessionVO = userSessionBo.createSession(user.getId().toString());
         httpSession.setAttribute("Authentication", userSessionVO.getSession());
         httpSession.setAttribute("user", user);
 
@@ -75,7 +75,7 @@ public class LoginServiceImpl implements LoginService {
 
 
     public NormalResponse signOut(String session) {
-        userSessionService.destroySession(session);
+        userSessionBo.destroySession(session);
         return NormalResponse.newInstance();
     }
 }

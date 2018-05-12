@@ -1,6 +1,6 @@
 package com.github.misterchangray.common.init;
 
-import com.github.misterchangray.service.user.UserSessionService;
+import com.github.misterchangray.service.user.bo.UserSessionBo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationListener;
 import org.springframework.context.event.ContextRefreshedEvent;
@@ -15,12 +15,12 @@ import org.springframework.stereotype.Component;
 @Component
 public class Init implements ApplicationListener<ContextRefreshedEvent> {
     @Autowired
-    UserSessionService userSessionService;
+    UserSessionBo userSessionBo;
 
 
+    //需要执行的逻辑代码，当spring容器初始化完成后就会执行该方法。
     public void onApplicationEvent(ContextRefreshedEvent contextRefreshedEvent) {
-        //需要执行的逻辑代码，当spring容器初始化完成后就会执行该方法。
-        userSessionService.initUserSessionContext();
+        userSessionBo.initUserSessionContext();
 
     }
 }

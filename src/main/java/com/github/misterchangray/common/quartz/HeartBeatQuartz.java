@@ -1,7 +1,7 @@
 package com.github.misterchangray.common.quartz;
 
 import com.github.misterchangray.service.user.LoginService;
-import com.github.misterchangray.service.user.UserSessionService;
+import com.github.misterchangray.service.user.bo.UserSessionBo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;
@@ -15,7 +15,7 @@ import org.springframework.stereotype.Component;
 @Component("HeartBeatQuartz")
 public class HeartBeatQuartz {
     @Autowired
-    UserSessionService userSessionService;
+    UserSessionBo userSessionBo;
     @Autowired
     LoginService loginService;
 
@@ -39,6 +39,6 @@ public class HeartBeatQuartz {
     @Scheduled(cron = "0 0/1 * * * ?")
     public void HeartBeatQuartz() {
         //每分钟清除一次死亡的session
-        userSessionService.clearInvalid(3);
+        userSessionBo.clearInvalid(3);
     }
 }

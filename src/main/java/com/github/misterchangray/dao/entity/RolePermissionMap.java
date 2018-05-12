@@ -21,32 +21,36 @@ public class RolePermissionMap {
         return id;
     }
 
-    public void setId(Integer id) {
+    public RolePermissionMap setId(Integer id) {
         this.id = id;
+        return this;
     }
 
     public Integer getRoleId() {
         return roleId;
     }
 
-    public void setRoleId(Integer roleId) {
+    public RolePermissionMap setRoleId(Integer roleId) {
         this.roleId = roleId;
+        return this;
     }
 
     public Integer getPermissionId() {
         return permissionId;
     }
 
-    public void setPermissionId(Integer permissionId) {
+    public RolePermissionMap setPermissionId(Integer permissionId) {
         this.permissionId = permissionId;
+        return this;
     }
 
     public Integer getDeleted() {
         return deleted;
     }
 
-    public void setDeleted(Integer deleted) {
+    public RolePermissionMap setDeleted(Integer deleted) {
         this.deleted = deleted;
+        return this;
     }
 
     @Override

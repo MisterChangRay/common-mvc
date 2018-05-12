@@ -21,32 +21,36 @@ public class Role {
         return id;
     }
 
-    public void setId(Integer id) {
+    public Role setId(Integer id) {
         this.id = id;
+        return this;
     }
 
     public String getName() {
         return name;
     }
 
-    public void setName(String name) {
+    public Role setName(String name) {
         this.name = name == null ? null : name.trim();
+        return this;
     }
 
     public Integer getEnabled() {
         return enabled;
     }
 
-    public void setEnabled(Integer enabled) {
+    public Role setEnabled(Integer enabled) {
         this.enabled = enabled;
+        return this;
     }
 
     public Integer getDeleted() {
         return deleted;
     }
 
-    public void setDeleted(Integer deleted) {
+    public Role setDeleted(Integer deleted) {
         this.deleted = deleted;
+        return this;
     }
 
     @Override

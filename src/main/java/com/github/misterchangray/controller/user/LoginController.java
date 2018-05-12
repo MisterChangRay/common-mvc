@@ -5,7 +5,7 @@ import com.github.misterchangray.common.annotation.Authentication;
 import com.github.misterchangray.common.enums.ErrorEnum;
 import com.github.misterchangray.service.user.LoginService;
 import com.github.misterchangray.service.user.UserService;
-import com.github.misterchangray.service.user.UserSessionService;
+import com.github.misterchangray.service.user.bo.UserSessionBo;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiImplicitParam;
 import io.swagger.annotations.ApiImplicitParams;
@@ -15,6 +15,7 @@ import org.springframework.context.ApplicationContext;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
+import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 
 
@@ -22,8 +23,13 @@ import javax.servlet.http.HttpSession;
  * 用户认证控制器
  *
  * 提供用户登陆认证以下用能
- * -用户登陆认证
- * -检查用户信息是否存在
+ * -用户登入
+ * -用户登出
+ * -用户心跳更新
+ *
+ *
+ * 如果项目中使用的是单点登录;则可不理会此处实现(建议保留实现);也可以删除用户相关功能(不推荐)
+ * 因为项目登入Token校验是在 AuthInterceptor 拦截器中校验;所以只需要改变拦截器实现即可。
  *
  * @author Rui.Zhang/misterchangray@hotmail.com
  * @author Created on 3/23/2018.
@@ -41,7 +47,7 @@ public class LoginController {
     @Autowired
     ApplicationContext applicationContext;
     @Autowired
-    UserSessionService userSessionService;
+    UserSessionBo userSessionBo;
 
     /**
      * 用户登陆
@@ -61,9 +67,10 @@ public class LoginController {
     public NormalResponse login(@RequestParam(required = false) String username,
                                 @RequestParam(required = false) String email,
                                 @RequestParam(required = false) String phone,
-                                @RequestParam String password) {
+                                @RequestParam String password,
+                                HttpServletRequest httpServletRequest) {
 
-        NormalResponse res = new NormalResponse();
+        NormalResponse res = NormalResponse.newInstance();
         if((null == username && null == email && null == phone) || null == password) {
             res.setErrorCode(ErrorEnum.INVALID_REQUEST);
             return res;
@@ -102,11 +109,9 @@ public class LoginController {
     @RequestMapping(value = "/heartbeat", method = RequestMethod.GET)
     @ResponseBody
     public NormalResponse heartbeat(@RequestHeader("Authentication") String authentication) {
-        userSessionService.heartbeat(authentication);
+        userSessionBo.heartbeat(authentication);
         return NormalResponse.newInstance();
     }
-
-
 
 
 

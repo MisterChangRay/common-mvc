@@ -2,6 +2,7 @@ package com.github.misterchangray.common;
 
 import com.github.misterchangray.common.enums.ErrorEnum;
 import com.github.misterchangray.common.utils.JSONUtils;
+import com.github.misterchangray.dao.entity.User;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 
@@ -14,7 +15,7 @@ import java.util.List;
  * @author Created on 3/20/2018.
  */
 @ApiModel(description = "标准返回封装-NormalResponse")
-public class NormalResponse {
+public class NormalResponse <T> {
     /**
      * 是否成功,不成功时参见错误代码
      * false/ true
@@ -36,7 +37,7 @@ public class NormalResponse {
      * 返回的数据,这里一般是函数的返回值
      */
     @ApiModelProperty(value = "结果返回 JSON 格式", dataType = "JSON")
-    private Object data;
+    private T data;
     /**
      * 快捷访问接口,帮助提示接口
      */
@@ -98,11 +99,11 @@ public class NormalResponse {
         return errorCode;
     }
 
-    public Object getData() {
+    public T getData() {
         return data;
     }
 
-    public NormalResponse setData(Object data) {
+    public NormalResponse setData(T data) {
         this.data = data;
         return this;
     }
@@ -118,7 +119,7 @@ public class NormalResponse {
         return this;
     }
 
-    public static  NormalResponse  newInstance() {
+    public static NormalResponse newInstance() {
         return new NormalResponse();
     }
 
@@ -126,6 +127,8 @@ public class NormalResponse {
     public String toString() {
         return JSONUtils.obj2json(this);
     }
+
+    private NormalResponse() {}
 }
 
 

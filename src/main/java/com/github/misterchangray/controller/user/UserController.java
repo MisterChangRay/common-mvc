@@ -2,11 +2,8 @@ package com.github.misterchangray.controller.user;
 
 import com.github.misterchangray.common.NormalResponse;
 import com.github.misterchangray.common.PageInfo;
-import com.github.misterchangray.common.annotation.OperationLog;
-import com.github.misterchangray.dao.entity.User;
-import com.github.misterchangray.common.PageInfo;
 import com.github.misterchangray.common.annotation.Authentication;
-import com.github.misterchangray.common.NormalResponse;
+import com.github.misterchangray.common.annotation.OperationLog;
 import com.github.misterchangray.dao.entity.User;
 import com.github.misterchangray.service.user.UserService;
 import io.swagger.annotations.Api;
@@ -30,6 +27,7 @@ import java.util.List;
  * -用户启用/停用
  * -用户编辑
  * -用户角色编辑
+ * -检查用户信息是否存在
  *
  * @author Rui.Zhang/misterchangray@hotmail.com
  * @author Created on  3/23/2018.
