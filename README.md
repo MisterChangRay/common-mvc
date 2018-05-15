@@ -54,6 +54,7 @@ create table operation_log;
 - 页面常量信息建议放在`constants`表;如民族/地址/证件类型/性别等;
 - 所有项目文档放置在`/resources/archives`目录下
 - 建议所有DTO/BO放在相应service目录下/VO放在相应controller目录下
+- 修改已有表结构时,不建议修改以下字段(id,enabled,deleted);因为这些字段已在开发中用到
 
 
 ### 相关环境(推荐使用环境)
