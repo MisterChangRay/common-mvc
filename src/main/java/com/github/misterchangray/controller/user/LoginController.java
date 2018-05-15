@@ -49,6 +49,7 @@ public class LoginController {
     @Autowired
     UserSessionBo userSessionBo;
 
+
     /**
      * 用户登陆
      * @param username
@@ -62,9 +63,9 @@ public class LoginController {
         @ApiImplicitParam(name="phone", value = "手机号", required = false, paramType = "query", dataType = "string"),
         @ApiImplicitParam(name="password", value = "密码", required = false, paramType = "query", dataType = "string")
     })
-    @RequestMapping(value = "/login", method = RequestMethod.POST)
+    @RequestMapping(value = "/signIn", method = RequestMethod.POST)
     @ResponseBody
-    public NormalResponse login(@RequestParam(required = false) String username,
+    public NormalResponse signIn(@RequestParam(required = false) String username,
                                 @RequestParam(required = false) String email,
                                 @RequestParam(required = false) String phone,
                                 @RequestParam String password,
@@ -76,7 +77,7 @@ public class LoginController {
             return res;
         }
         if(null != username && null != password) {
-            return loginService.signInByUserName(username, password);
+            res = loginService.signInByUserName(username, password);
         }
         return res;
     }
@@ -89,12 +90,12 @@ public class LoginController {
      */
     @ApiOperation(value = "用户登出", notes = "提供用户用户登出")
     @ApiImplicitParams({
-            @ApiImplicitParam(name="userId", value = "用户ID", required = false, paramType = "query", dataType = "string"),
+            @ApiImplicitParam(name="Authentication", value = "用户session", required = false, paramType = "header", dataType = "string"),
     })
     @Authentication
-    @RequestMapping(value = "/loginOut", method = RequestMethod.POST)
+    @RequestMapping(value = "/signOut", method = RequestMethod.POST)
     @ResponseBody
-    public NormalResponse login(@RequestHeader(value = "Authentication") String token) {
+    public NormalResponse signOut(@RequestHeader(value = "Authentication") String token) {
         return  loginService.signOut(token);
     }
 

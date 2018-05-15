@@ -3,7 +3,6 @@ package com.github.misterchangray.service.user.bo;
 import com.github.misterchangray.common.NormalResponse;
 import com.github.misterchangray.dao.entity.User;
 import com.github.misterchangray.service.common.GlobalCacheService;
-import com.github.misterchangray.service.log.LoginLogService;
 import com.github.misterchangray.service.user.UserService;
 import com.github.misterchangray.service.user.vo.UserSessionVO;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -26,8 +25,7 @@ public class UserSessionBo {
     private GlobalCacheService globalCacheService;
     @Autowired
     private UserService userService;
-    @Autowired
-    private LoginLogService loginLogService;
+
 
     /**
      * 初始化session環境
@@ -64,8 +62,11 @@ public class UserSessionBo {
         String token = UUID.randomUUID().toString();
         UserSessionVO userSessionVO = new UserSessionVO(token, user.getUsername(), userId, System.currentTimeMillis());
 
+
+
         onLineUsers.put(userId, userSessionVO);
         onLineUsers.put(token, userSessionVO);
+
 
         return userSessionVO;
     }
@@ -94,8 +95,6 @@ public class UserSessionBo {
         UserSessionVO userSessionVO = onLineUsers.get(session);
         if(null == userSessionVO) return;
 
-        //添加登录日志
-        loginLogService.addLog(userSessionVO.getUserId(), "", "", userSessionVO.getLoginDate(), System.currentTimeMillis());
 
         onLineUsers.remove(userSessionVO.getSession());
         onLineUsers.remove(userSessionVO.getUserId());

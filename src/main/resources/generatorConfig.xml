@@ -67,14 +67,30 @@
         </javaClientGenerator>
 
         <!-- 指定数据库表 -->
-        <table tableName="user"><generatedKey column="id" sqlStatement="MySql" identity="true" /></table>
-        <table tableName="role"><generatedKey column="id" sqlStatement="MySql" identity="true" /></table>
-        <table tableName="permission"><generatedKey column="id" sqlStatement="MySql" identity="true" /></table>
-        <table tableName="role_permission_map"></table>
-        <table tableName="user_role_map"></table>
-        <table tableName="operation_log"></table>
-        <table tableName="constant"></table>
-        <table tableName="login_log"></table>
+        <table tableName="user">
+            <generatedKey column="id" sqlStatement="MySql" identity="true" />
+        </table>
+        <table tableName="role">
+            <generatedKey column="id" sqlStatement="MySql" identity="true" />
+        </table>
+        <table tableName="permission">
+            <generatedKey column="id" sqlStatement="MySql" identity="true" />
+        </table>
+        <table tableName="role_permission_map">
+            <generatedKey column="id" sqlStatement="MySql" identity="true" />
+        </table>
+        <table tableName="user_role_map">
+            <generatedKey column="id" sqlStatement="MySql" identity="true" />
+        </table>
+        <table tableName="operation_log">
+            <generatedKey column="id" sqlStatement="MySql" identity="true" />
+        </table>
+        <table tableName="constant">
+            <generatedKey column="id" sqlStatement="MySql" identity="true" />
+        </table>
+        <table tableName="login_log">
+            <generatedKey column="id" sqlStatement="MySql" identity="true" />
+        </table>
 
 
         <!-- 有些表的字段需要指定java类型

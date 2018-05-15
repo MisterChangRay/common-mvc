@@ -31,6 +31,19 @@ public class UserSessionVO {
      */
     private Long loginDate;
 
+    /**
+     * 登录日志ID
+     */
+    private Integer loginLogId;
+
+
+    public Integer getLoginLogId() {
+        return loginLogId;
+    }
+
+    public void setLoginLogId(Integer loginLogId) {
+        this.loginLogId = loginLogId;
+    }
 
     public Long getLoginDate() {
         return loginDate;

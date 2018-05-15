@@ -1,15 +1,13 @@
 package com.github.misterchangray.service.log.impl;
 
+import com.github.misterchangray.common.enums.DBEnum;
 import com.github.misterchangray.dao.entity.LoginLog;
-import com.github.misterchangray.dao.entity.OperationLog;
+import com.github.misterchangray.dao.entity.LoginLogQuery;
 import com.github.misterchangray.dao.mapper.LoginLogMapper;
-import com.github.misterchangray.dao.mapper.OperationLogMapper;
 import com.github.misterchangray.service.log.LoginLogService;
-import com.github.misterchangray.service.log.OperationLogService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.time.Instant;
 import java.util.Date;
 
 /**
@@ -27,21 +25,42 @@ public class LoginLogServiceImpl implements LoginLogService {
      * 增加登录日志
      * @param userId    登录用户ID
      * @param loginIp   登录IP地址
-     * @param deviceInfo  登录设备信息
+     * @param deviceInfo  登录设备标识符
      * @param signInTime    登录时间
-     * @param signOutTime   登出时间
+     * @param success   是否成功
+     * @param detailsOfFail   失败原因
      * @return
      */
-    public int addLog(String userId, String loginIp, String deviceInfo, Long signInTime, Long signOutTime) {
+    public int addLog(String userId, String loginIp, String deviceInfo, Long signInTime, Boolean success, String detailsOfFail){
         LoginLog loginLog = new LoginLog();
         loginLog.setUserId(Integer.parseInt(userId));
-        loginLog.setLoginIp(loginIp);
+        loginLog.setSignInIp(loginIp);
         loginLog.setDeviceInfo(deviceInfo);
         loginLog.setSignInTime(new Date(signInTime));
-        loginLog.setSignOutTime(new Date(signOutTime));
+        loginLog.setSuccess(success ? DBEnum.TRUE.getCode() : DBEnum.DELETE.getCode());
+        loginLog.setDeviceInfo(detailsOfFail);
 
         return this.addLog(loginLog);
     }
+
+    /**
+     * 更新登录日志的登出时间
+     * @param id 待更新记录的Id
+     * @return
+     */
+    public int addSignOutTime(int id) {
+        LoginLog loginLog = new LoginLog();
+        loginLog.setId(id);
+        loginLog.setSignOutTime(new Date(System.currentTimeMillis()));
+
+        LoginLogQuery loginLogQuery = new LoginLogQuery();
+        LoginLogQuery.Criteria criteria =  loginLogQuery.createCriteria();
+        criteria.andIdEqualTo(id);
+
+        return loginLogMapper.updateByQuerySelective(loginLog, loginLogQuery);
+    }
+
+
 
     public int addLog(LoginLog loginLog) {
         return loginLogMapper.insert(loginLog);

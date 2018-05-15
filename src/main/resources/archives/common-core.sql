@@ -1,6 +1,6 @@
 /*==============================================================*/
 /* DBMS name:      MySQL 5.0                                    */
-/* Created on:     5/6/2018 3:53:44 PM                          */
+/* Created on:     5/15/2018 7:22:13 AM                         */
 /*==============================================================*/
 
 
@@ -42,12 +42,16 @@ create table constant
 /*==============================================================*/
 create table login_log
 (
-   id                   int unsigned,
-   user_id              int unsigned,
-   login_ip             varchar(100),
+   id                   int not null auto_increment,
+   user_id              int unsigned comment '成功登入有此数据',
+   sign_in_ip           varchar(100),
    device_info          varchar(300),
-   sign_in_time         timestamp,
-   sign_out_time        timestamp
+   sign_in_time         datetime default NULL,
+   sign_out_time        datetime default NULL comment '成功登入有此数据',
+   success              int unsigned,
+   details_of_fail      varchar(300),
+   sign_in_param        varchar(300),
+   primary key (id)
 );
 
 /*==============================================================*/
@@ -60,7 +64,7 @@ create table operation_log
    business_name        varchar(500) comment '方法的业务名称',
    user_id              int unsigned comment '操作人用户表ID',
    user_name            varchar(100) comment '操作人名称',
-   create_date          timestamp,
+   create_date          datetime default NULL,
    data                 text,
    primary key (id)
 );

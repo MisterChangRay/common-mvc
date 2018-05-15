@@ -20,7 +20,7 @@ public class NormalResponse <T> {
      * 是否成功,不成功时参见错误代码
      * false/ true
      */
-    @ApiModelProperty(value = "处理是否成功，如果失败参见errorMsg", dataType = "boolean")
+    @ApiModelProperty(value = "业务是否成功，如果失败参见errorMsg", dataType = "boolean")
     private boolean success = true;
     /**
      * 错误消息
