@@ -21,7 +21,7 @@ public class PageInfo {
      * 总共有多少条记录
      */
     @ApiModelProperty(value = "总共有多少条记录", dataType = "Integer")
-    private Integer count;
+    private Long count;
     /**
      * 每页多少数据
      */
@@ -29,7 +29,7 @@ public class PageInfo {
     private Integer limit;
 
 
-    public PageInfo(Integer page, Integer count, Integer limit) {
+    public PageInfo(Integer page, Long count, Integer limit) {
         this.page = page;
         this.count = count;
         this.limit = limit;
@@ -61,11 +61,11 @@ public class PageInfo {
         return  this;
     }
 
-    public Integer getCount() {
+    public Long getCount() {
         return count;
     }
 
-    public PageInfo setCount(Integer count) {
+    public PageInfo setCount(Long count) {
         this.count = count;
         return this;
     }

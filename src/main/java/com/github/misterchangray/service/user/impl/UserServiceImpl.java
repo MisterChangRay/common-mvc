@@ -161,7 +161,8 @@ public class UserServiceImpl implements UserService{
             if(null != user.getSex())criteria.andSexEqualTo(user.getSex());
         }
 
-        return NormalResponse.newInstance().setData(userMapper.selectByQuery(userQuery));
+        pageInfo.setCount(userMapper.countByQuery(userQuery));
+        return NormalResponse.newInstance().setData(userMapper.selectByQuery(userQuery)).setPageInfo(pageInfo);
     }
 
     /**

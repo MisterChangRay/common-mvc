@@ -98,7 +98,8 @@ public class RoleServiceImpl implements RoleService {
             if(null != role.getName())criteria.andNameLike(role.getName());
         }
 
-        return NormalResponse.newInstance().setData(roleMapper.selectByQuery(roleQuery));
+        pageInfo.setCount(roleMapper.countByQuery(roleQuery));
+        return NormalResponse.newInstance().setData(roleMapper.selectByQuery(roleQuery)).setPageInfo(pageInfo);
     }
 
     /**

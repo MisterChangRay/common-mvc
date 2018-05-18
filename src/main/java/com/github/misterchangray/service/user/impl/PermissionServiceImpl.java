@@ -90,7 +90,8 @@ public class PermissionServiceImpl implements PermissionService{
             if(null != permission.getName())criteria.andNameLike(permission.getName());
         }
 
-        return NormalResponse.newInstance().setData(permissionMapper.selectByQuery(permissionQuery));
+        pageInfo.setCount(permissionMapper.countByQuery(permissionQuery));
+        return NormalResponse.newInstance().setData(permissionMapper.selectByQuery(permissionQuery)).setPageInfo(pageInfo);
     }
 
     /**
