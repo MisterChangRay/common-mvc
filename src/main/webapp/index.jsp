@@ -2,7 +2,6 @@
 
 
 
-
 <html lang="en"><head>
     <meta charset="UTF-8">
     <title></title>
@@ -35,33 +34,36 @@
 <h3>目前表单,详细信息在"/resources/archives"目录下</h3>
 <pre><code class="lang-sql">drop database common_core;
 
-create database common_core;
+    create database common_core;
 
-use common_core;
+    use common_core;
 
-create table user;
+    create table user;
 
-create table role;
+    create table role;
 
-create table permission;
+    create table permission;
 
-create table role_permission_map;
+    create table role_permission_map;
 
-create table user_role_map;
+    create table user_role_map;
 
-create table constant;
+    create table constant;
 
-create table operation_log;</code></pre>
+    create table operation_log;</code></pre>
 <h3>开发者建议</h3>
 <ul>
     <li>表名，建议使用小写，多个单词使用下划线拼接</li>
-    <li>entity内成员变量建议与表字段数量对应,<code>controller</code>层使用<code>application/json</code>传参,参数可以考虑封装成DTO对象</li>
+    <li>entity内成员变量建议与表字段数量对应</li>
+    <li>前端统一使用<code>Content-Type=application/json</code>传参;<code>controller</code>层统一使用<code>@RequestBody</code>入参,参数可以使用Map接收,也可考虑封装成VO对象(推荐)</li>
     <li>需要工具类的话建议先从<code>common/utils</code>中找，实在没有再造轮子或引入类库，尽量精简项目</li>
     <li>开发规范建议遵循阿里巴巴Java开发手册（<a href="https://github.com/lihengming/java-codes/blob/master/shared-resources/%E9%98%BF%E9%87%8C%E5%B7%B4%E5%B7%B4Java%E5%BC%80%E5%8F%91%E6%89%8B%E5%86%8CV1.2.0.pdf">最新版下载</a>)</li>
     <li>建议在公司内部使用ShowDoc、Swagger2 、RAP等开源项目来编写、管理API文档</li>
     <li>页面常量信息建议放在<code>constants</code>表;如民族/地址/证件类型/性别等;</li>
     <li>所有项目文档放置在<code>/resources/archives</code>目录下</li>
-    <li>建议所有DTO/BO放在相应service目录下/VO放在相应controller目录下</li>
+    <li>建议所有DTO/BO放在相应service目录下;VO放在相应controller目录下</li>
+    <li>修改已有表结构时,不建议修改以下字段(id,enabled,deleted);因为这些字段已在开发中用到</li>
+    <li>增删改方法命名分别以<code>insert/delete/update</code>打头</li>
 </ul>
 <h3>相关环境(推荐使用环境)</h3>
 <ul>
@@ -79,14 +81,6 @@ create table operation_log;</code></pre>
 </ul>
 <h3>注意事项</h3>
 <ul>
-    <li>下载后请修改<code>pom.xml</code>里面的,这里需要引入你的tomcat下的servlet.api.jar<pre><code class="lang-xml">&lt;!-- 添加tomcat/bin下servlet-api.jar 注意你tomcat下这个jar包版本--&gt;
-  &lt;dependency&gt;
-    &lt;groupId&gt;javax.servlet&lt;/groupId&gt;
-    &lt;artifactId&gt;servlet-api&lt;/artifactId&gt;
-    &lt;version&gt;2.5&lt;/version&gt;
-    &lt;scope&gt;provided&lt;/scope&gt;
-  &lt;/dependency&gt;</code></pre>
-    </li>
     <li>使用mybaitis-generator插件生成dao层时请先删除原来的文件,不然生的的内容会追加到源文件中,出现代码重复</li>
     <li>下载后如打不开swagger2文档，可能需要修改<code>webapp/common-core-swagger-ui/config.js</code>文件中得地址</li>
 </ul>
