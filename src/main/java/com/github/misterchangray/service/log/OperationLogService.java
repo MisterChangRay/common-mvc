@@ -18,5 +18,5 @@ public interface OperationLogService {
      * @param data 更新数据
      * @return
      */
-    int addLog(String signature, String businessName, Integer userId, String userName, String data);
+    int insertLog(String signature, String businessName, Integer userId, String userName, String data);
 }

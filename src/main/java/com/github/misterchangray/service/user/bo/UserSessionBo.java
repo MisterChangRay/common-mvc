@@ -3,6 +3,7 @@ package com.github.misterchangray.service.user.bo;
 import com.github.misterchangray.common.NormalResponse;
 import com.github.misterchangray.dao.entity.User;
 import com.github.misterchangray.service.common.GlobalCacheService;
+import com.github.misterchangray.service.user.LoginService;
 import com.github.misterchangray.service.user.UserService;
 import com.github.misterchangray.service.user.vo.UserSessionVO;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -25,7 +26,8 @@ public class UserSessionBo {
     private GlobalCacheService globalCacheService;
     @Autowired
     private UserService userService;
-
+    @Autowired
+    private LoginService loginService;
 
     /**
      * 初始化session環境
@@ -137,7 +139,8 @@ public class UserSessionBo {
             userSessionVO = entry.getValue();
             //三分钟没有心跳则该session失效
             if(threeMinutes < currentTimeMillis - userSessionVO.getHeartBeatDate()) {
-                this.destroySession(userSessionVO.getSession());
+//                this.destroySession(userSessionVO.getSession());
+                loginService.signOut(userSessionVO.getSession());
             }
         }
     }

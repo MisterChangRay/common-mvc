@@ -24,7 +24,7 @@ public interface LoginLogService {
      * @param detailsOfFail   失败原因
      * @return
      */
-    int addLog(String userId, String loginIp, String deviceInfo, Long signInTime, Boolean success, String detailsOfFail);
+    int insertLog(String userId, String loginIp, String deviceInfo, Long signInTime, Boolean success, String detailsOfFail);
 
 
     /**
@@ -32,12 +32,12 @@ public interface LoginLogService {
      * @param loginLog
      * @return
      */
-    int addLog(LoginLog loginLog);
+    int insertLog(LoginLog loginLog);
 
     /**
      * 更新登录日志的登出时间
      * @param id 待更新记录的Id
      * @return
      */
-    int addSignOutTime(int id);
+    int updateSignOutTime(int id);
 }

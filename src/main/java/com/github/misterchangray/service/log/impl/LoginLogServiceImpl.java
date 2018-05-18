@@ -31,7 +31,7 @@ public class LoginLogServiceImpl implements LoginLogService {
      * @param detailsOfFail   失败原因
      * @return
      */
-    public int addLog(String userId, String loginIp, String deviceInfo, Long signInTime, Boolean success, String detailsOfFail){
+    public int insertLog(String userId, String loginIp, String deviceInfo, Long signInTime, Boolean success, String detailsOfFail){
         LoginLog loginLog = new LoginLog();
         loginLog.setUserId(Integer.parseInt(userId));
         loginLog.setSignInIp(loginIp);
@@ -40,7 +40,7 @@ public class LoginLogServiceImpl implements LoginLogService {
         loginLog.setSuccess(success ? DBEnum.TRUE.getCode() : DBEnum.DELETE.getCode());
         loginLog.setDeviceInfo(detailsOfFail);
 
-        return this.addLog(loginLog);
+        return this.insertLog(loginLog);
     }
 
     /**
@@ -48,7 +48,7 @@ public class LoginLogServiceImpl implements LoginLogService {
      * @param id 待更新记录的Id
      * @return
      */
-    public int addSignOutTime(int id) {
+    public int updateSignOutTime(int id) {
         LoginLog loginLog = new LoginLog();
         loginLog.setId(id);
         loginLog.setSignOutTime(new Date(System.currentTimeMillis()));
@@ -62,7 +62,7 @@ public class LoginLogServiceImpl implements LoginLogService {
 
 
 
-    public int addLog(LoginLog loginLog) {
+    public int insertLog(LoginLog loginLog) {
         return loginLogMapper.insert(loginLog);
     }
 }

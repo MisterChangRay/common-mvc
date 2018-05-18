@@ -91,7 +91,7 @@ public class UserLoginLogAop {
             loginLog.setDetailsOfFail(normalResponse.getErrorMsg());
         }
         loginLog.setSignInParam(JSONUtils.obj2json(point.getArgs()));
-        int id =loginLogService.addLog(loginLog);
+        int id =loginLogService.insertLog(loginLog);
 
         //如果登录成功则更日志ID到缓存中
         if(normalResponse.isSuccess()) {
@@ -111,7 +111,7 @@ public class UserLoginLogAop {
         Object res;
 
         UserSessionVO userSessionVO = userSessionBo.getSession((String) point.getArgs()[0]);
-        loginLogService.addSignOutTime(userSessionVO.getLoginLogId());
+        loginLogService.updateSignOutTime(userSessionVO.getLoginLogId());
 
         try {
             res = point.proceed();

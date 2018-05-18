@@ -104,7 +104,7 @@
     </tx:advice>
 
     <aop:config>
-        <aop:pointcut id="serviceMethods" expression="execution(* com.github.misterchangray.service..*(..))"/>
+        <aop:pointcut id="serviceMethods" expression="execution(* com.github.misterchangray.service..*.*(..))"/>
         <aop:advisor advice-ref="txAdvice" pointcut-ref="serviceMethods"/>
     </aop:config>
 
@@ -119,5 +119,7 @@
     <tx:annotation-driven transaction-manager="transactionManager"/>
 
     <!-- 使用annotation注解方式配置轮询任务,启用对轮询任务注解的支持 -->
-    <task:annotation-driven></task:annotation-driven>
+    <task:annotation-driven scheduler="myScheduler"/>
+    <!-- 配置轮询任务线程池;避免多任务问题 -->
+    <task:scheduler id="myScheduler" pool-size="10"/>
 </beans>

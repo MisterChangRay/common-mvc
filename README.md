@@ -47,14 +47,16 @@ create table operation_log;
 
 ### 开发者建议
 - 表名，建议使用小写，多个单词使用下划线拼接
-- entity内成员变量建议与表字段数量对应,`controller`层使用`application/json`传参,参数可以考虑封装成DTO对象
+- entity内成员变量建议与表字段数量对应
+- 前端统一使用`Content-Type=application/json`传参;`controller`层统一使用`@RequestBody`入参,参数可以使用Map接收,也可考虑封装成VO对象(推荐)
 - 需要工具类的话建议先从`common/utils`中找，实在没有再造轮子或引入类库，尽量精简项目
 - 开发规范建议遵循阿里巴巴Java开发手册（[最新版下载](https://github.com/lihengming/java-codes/blob/master/shared-resources/%E9%98%BF%E9%87%8C%E5%B7%B4%E5%B7%B4Java%E5%BC%80%E5%8F%91%E6%89%8B%E5%86%8CV1.2.0.pdf))
 - 建议在公司内部使用ShowDoc、Swagger2 、RAP等开源项目来编写、管理API文档
 - 页面常量信息建议放在`constants`表;如民族/地址/证件类型/性别等;
 - 所有项目文档放置在`/resources/archives`目录下
-- 建议所有DTO/BO放在相应service目录下/VO放在相应controller目录下
+- 建议所有DTO/BO放在相应service目录下;VO放在相应controller目录下
 - 修改已有表结构时,不建议修改以下字段(id,enabled,deleted);因为这些字段已在开发中用到
+- 增删改方法命名分别以`insert/delete/update`打头
 
 
 ### 相关环境(推荐使用环境)

@@ -35,10 +35,14 @@ public class HeartBeatQuartz {
      * ? 你不想设置那个字段
      *
      * 心跳检测;每分钟一次
+     *
+     *
      */
-    @Scheduled(cron = "0 0/1 * * * ?")
+//    @Scheduled(cron = "0 0/1 * * * ?")
+    @Scheduled(fixedDelayString = "60000")
     public void HeartBeatQuartz() {
         //每分钟清除一次死亡的session
         userSessionBo.clearInvalid(3);
+
     }
 }

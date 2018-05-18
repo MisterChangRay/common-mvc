@@ -18,7 +18,7 @@ public class OperationLogServiceImpl implements OperationLogService {
     @Autowired
     OperationLogMapper operationLogMapper;
 
-    public int addLog(String signature, String businessName, Integer userId, String userName, String data) {
+    public int insertLog(String signature, String businessName, Integer userId, String userName, String data) {
         OperationLog operationLog = new OperationLog();
         operationLog.setBusinessName(businessName);
         operationLog.setUserId(userId);

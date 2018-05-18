@@ -9,6 +9,7 @@ import com.github.misterchangray.service.user.UserService;
 import com.github.misterchangray.service.user.bo.UserSessionBo;
 import com.github.misterchangray.service.user.vo.UserSessionVO;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 import org.springframework.web.method.HandlerMethod;
 import org.springframework.web.servlet.handler.HandlerInterceptorAdapter;
 

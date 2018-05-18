@@ -57,7 +57,7 @@ public class OperationLogAop {
         userName = user.getUsername();
         data = JSONUtils.obj2json(point.getArgs());
 
-        this.operationLogService.addLog(signature, businessName, userId, userName, data);
+        this.operationLogService.insertLog(signature, businessName, userId, userName, data);
         return  res;
     }
 }
