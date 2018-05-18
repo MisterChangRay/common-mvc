@@ -1,10 +1,14 @@
 package com.github.misterchangray.common.quartz;
 
+import com.github.misterchangray.service.common.GlobalCacheService;
 import com.github.misterchangray.service.user.LoginService;
-import com.github.misterchangray.service.user.bo.UserSessionBo;
+import com.github.misterchangray.service.user.vo.UserSessionVO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;
+
+import java.util.Iterator;
+import java.util.Map;
 
 /**
  * 心跳检测;每分钟检测一次;超过三分钟未更新心跳时间则判定为死亡
@@ -15,9 +19,9 @@ import org.springframework.stereotype.Component;
 @Component("HeartBeatQuartz")
 public class HeartBeatQuartz {
     @Autowired
-    UserSessionBo userSessionBo;
-    @Autowired
     LoginService loginService;
+    @Autowired
+    GlobalCacheService globalCacheService;
 
 
     /**
@@ -36,13 +40,30 @@ public class HeartBeatQuartz {
      *
      * 心跳检测;每分钟一次
      *
-     *
+     * 根据心跳时间;清除无效的session
+     * 计算公式：
+     * 时间差 = 当前时间 - 最近心跳时间
+     * 当时间差大于 3分钟 时;该 session 判定为死亡
      */
-//    @Scheduled(cron = "0 0/1 * * * ?")
     @Scheduled(fixedDelayString = "60000")
     public void HeartBeatQuartz() {
-        //每分钟清除一次死亡的session
-        userSessionBo.clearInvalid(3);
+        //每分钟执行一次;清除死亡的session
+        Map<String, UserSessionVO> onLineUsers = (Map<String, UserSessionVO>) globalCacheService.get("onLineUsers");
+        UserSessionVO userSessionVO = null;
+        int threeMinutes = 3 * 60 * 1000;
+        long currentTimeMillis = System.currentTimeMillis();
+
+
+        Iterator<Map.Entry<String, UserSessionVO>> it = onLineUsers.entrySet().iterator();
+        while(it.hasNext()){
+            Map.Entry<String, UserSessionVO> entry = it.next();
+            userSessionVO = entry.getValue();
+            //三分钟没有心跳则注销该session;
+            if(threeMinutes < currentTimeMillis - userSessionVO.getHeartBeatDate()) {
+                loginService.signOut(userSessionVO.getSession());
+            }
+        }
+
 
     }
 }

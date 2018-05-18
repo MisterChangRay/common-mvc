@@ -3,14 +3,12 @@ package com.github.misterchangray.service.user.bo;
 import com.github.misterchangray.common.NormalResponse;
 import com.github.misterchangray.dao.entity.User;
 import com.github.misterchangray.service.common.GlobalCacheService;
-import com.github.misterchangray.service.user.LoginService;
 import com.github.misterchangray.service.user.UserService;
 import com.github.misterchangray.service.user.vo.UserSessionVO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 import java.util.HashMap;
-import java.util.Iterator;
 import java.util.Map;
 import java.util.UUID;
 
@@ -26,8 +24,7 @@ public class UserSessionBo {
     private GlobalCacheService globalCacheService;
     @Autowired
     private UserService userService;
-    @Autowired
-    private LoginService loginService;
+
 
     /**
      * 初始化session環境
@@ -115,35 +112,6 @@ public class UserSessionBo {
         return true;
     }
 
-
-    /**
-     * 根据心跳时间;清除无效的session
-     * 计算公式：
-     * 时间差 = 当前时间 - 最近心跳时间
-     * 当时间差大于 timeout 时;该 session 判定为死亡
-     * timeout 应该大于等于 3
-     * @param timeout 超过多少分钟更新心跳时间判定未失效 单位分钟
-     */
-    public void clearInvalid(int timeout) {
-        if(3 < timeout) timeout = 3;
-
-        Map<String, UserSessionVO> onLineUsers = (Map<String, UserSessionVO>) globalCacheService.get("onLineUsers");
-        UserSessionVO userSessionVO = null;
-        int threeMinutes = timeout * 60 * 1000;
-        long currentTimeMillis = System.currentTimeMillis();
-
-
-        Iterator<Map.Entry<String, UserSessionVO>> it = onLineUsers.entrySet().iterator();
-        while(it.hasNext()){
-            Map.Entry<String, UserSessionVO> entry = it.next();
-            userSessionVO = entry.getValue();
-            //三分钟没有心跳则该session失效
-            if(threeMinutes < currentTimeMillis - userSessionVO.getHeartBeatDate()) {
-//                this.destroySession(userSessionVO.getSession());
-                loginService.signOut(userSessionVO.getSession());
-            }
-        }
-    }
 
     /**
      * 更新session心跳時間
