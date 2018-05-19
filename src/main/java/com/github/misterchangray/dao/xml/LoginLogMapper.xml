@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.github.misterchangray.dao.mapper.LoginLogMapper">
+  <resultMap id="BaseResultMap" type="com.github.misterchangray.dao.entity.LoginLog">
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="user_id" jdbcType="INTEGER" property="userId" />
+    <result column="sign_in_ip" jdbcType="VARCHAR" property="signInIp" />
+    <result column="device_info" jdbcType="VARCHAR" property="deviceInfo" />
+    <result column="sign_in_time" jdbcType="TIMESTAMP" property="signInTime" />
+    <result column="sign_out_time" jdbcType="TIMESTAMP" property="signOutTime" />
+    <result column="success" jdbcType="INTEGER" property="success" />
+    <result column="details_of_fail" jdbcType="VARCHAR" property="detailsOfFail" />
+    <result column="sign_in_param" jdbcType="VARCHAR" property="signInParam" />
+  </resultMap>
+  <sql id="Example_Where_Clause">
+    <where>
+      <foreach collection="oredCriteria" item="criteria" separator="or">
+        <if test="criteria.valid">
+          <trim prefix="(" prefixOverrides="and" suffix=")">
+            <foreach collection="criteria.criteria" item="criterion">
+              <choose>
+                <when test="criterion.noValue">
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue">
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue">
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue">
+                  and ${criterion.condition}
+                  <foreach close=")" collection="criterion.value" item="listItem" open="(" separator=",">
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Update_By_Example_Where_Clause">
+    <where>
+      <foreach collection="example.oredCriteria" item="criteria" separator="or">
+        <if test="criteria.valid">
+          <trim prefix="(" prefixOverrides="and" suffix=")">
+            <foreach collection="criteria.criteria" item="criterion">
+              <choose>
+                <when test="criterion.noValue">
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue">
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue">
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue">
+                  and ${criterion.condition}
+                  <foreach close=")" collection="criterion.value" item="listItem" open="(" separator=",">
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Base_Column_List">
+    id, user_id, sign_in_ip, device_info, sign_in_time, sign_out_time, success, details_of_fail, 
+    sign_in_param
+  </sql>
+  <select id="selectByQuery" parameterType="com.github.misterchangray.dao.entity.LoginLogQuery" resultMap="BaseResultMap">
+    select
+    <if test="distinct">
+      distinct
+    </if>
+    <include refid="Base_Column_List" />
+    from login_log
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+    <if test="orderByClause != null">
+      order by ${orderByClause}
+    </if>
+    <if test="rows != null">
+      <if test="offset != null">
+        limit ${offset}, ${rows}
+      </if>
+      <if test="offset == null">
+        limit ${rows}
+      </if>
+    </if>
+  </select>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from login_log
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from login_log
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <delete id="deleteByQuery" parameterType="com.github.misterchangray.dao.entity.LoginLogQuery">
+    delete from login_log
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+  </delete>
+  <insert id="insert" parameterType="com.github.misterchangray.dao.entity.LoginLog">
+    <selectKey keyProperty="id" order="AFTER" resultType="java.lang.Integer">
+      SELECT LAST_INSERT_ID()
+    </selectKey>
+    insert into login_log (user_id, sign_in_ip, device_info, 
+      sign_in_time, sign_out_time, success, 
+      details_of_fail, sign_in_param)
+    values (#{userId,jdbcType=INTEGER}, #{signInIp,jdbcType=VARCHAR}, #{deviceInfo,jdbcType=VARCHAR}, 
+      #{signInTime,jdbcType=TIMESTAMP}, #{signOutTime,jdbcType=TIMESTAMP}, #{success,jdbcType=INTEGER}, 
+      #{detailsOfFail,jdbcType=VARCHAR}, #{signInParam,jdbcType=VARCHAR})
+  </insert>
+  <insert id="insertSelective" parameterType="com.github.misterchangray.dao.entity.LoginLog">
+    <selectKey keyProperty="id" order="AFTER" resultType="java.lang.Integer">
+      SELECT LAST_INSERT_ID()
+    </selectKey>
+    insert into login_log
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="userId != null">
+        user_id,
+      </if>
+      <if test="signInIp != null">
+        sign_in_ip,
+      </if>
+      <if test="deviceInfo != null">
+        device_info,
+      </if>
+      <if test="signInTime != null">
+        sign_in_time,
+      </if>
+      <if test="signOutTime != null">
+        sign_out_time,
+      </if>
+      <if test="success != null">
+        success,
+      </if>
+      <if test="detailsOfFail != null">
+        details_of_fail,
+      </if>
+      <if test="signInParam != null">
+        sign_in_param,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="userId != null">
+        #{userId,jdbcType=INTEGER},
+      </if>
+      <if test="signInIp != null">
+        #{signInIp,jdbcType=VARCHAR},
+      </if>
+      <if test="deviceInfo != null">
+        #{deviceInfo,jdbcType=VARCHAR},
+      </if>
+      <if test="signInTime != null">
+        #{signInTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="signOutTime != null">
+        #{signOutTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="success != null">
+        #{success,jdbcType=INTEGER},
+      </if>
+      <if test="detailsOfFail != null">
+        #{detailsOfFail,jdbcType=VARCHAR},
+      </if>
+      <if test="signInParam != null">
+        #{signInParam,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <select id="countByQuery" parameterType="com.github.misterchangray.dao.entity.LoginLogQuery" resultType="java.lang.Long">
+    select count(*) from login_log
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+  </select>
+  <update id="updateByQuerySelective" parameterType="map">
+    update login_log
+    <set>
+      <if test="record.id != null">
+        
+      </if>
+      <if test="record.userId != null">
+        user_id = #{record.userId,jdbcType=INTEGER},
+      </if>
+      <if test="record.signInIp != null">
+        sign_in_ip = #{record.signInIp,jdbcType=VARCHAR},
+      </if>
+      <if test="record.deviceInfo != null">
+        device_info = #{record.deviceInfo,jdbcType=VARCHAR},
+      </if>
+      <if test="record.signInTime != null">
+        sign_in_time = #{record.signInTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="record.signOutTime != null">
+        sign_out_time = #{record.signOutTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="record.success != null">
+        success = #{record.success,jdbcType=INTEGER},
+      </if>
+      <if test="record.detailsOfFail != null">
+        details_of_fail = #{record.detailsOfFail,jdbcType=VARCHAR},
+      </if>
+      <if test="record.signInParam != null">
+        sign_in_param = #{record.signInParam,jdbcType=VARCHAR},
+      </if>
+    </set>
+    <if test="_parameter != null">
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByQuery" parameterType="map">
+    update login_log
+    set 
+      user_id = #{record.userId,jdbcType=INTEGER},
+      sign_in_ip = #{record.signInIp,jdbcType=VARCHAR},
+      device_info = #{record.deviceInfo,jdbcType=VARCHAR},
+      sign_in_time = #{record.signInTime,jdbcType=TIMESTAMP},
+      sign_out_time = #{record.signOutTime,jdbcType=TIMESTAMP},
+      success = #{record.success,jdbcType=INTEGER},
+      details_of_fail = #{record.detailsOfFail,jdbcType=VARCHAR},
+      sign_in_param = #{record.signInParam,jdbcType=VARCHAR}
+    <if test="_parameter != null">
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByPrimaryKeySelective" parameterType="com.github.misterchangray.dao.entity.LoginLog">
+    update login_log
+    <set>
+      <if test="userId != null">
+        user_id = #{userId,jdbcType=INTEGER},
+      </if>
+      <if test="signInIp != null">
+        sign_in_ip = #{signInIp,jdbcType=VARCHAR},
+      </if>
+      <if test="deviceInfo != null">
+        device_info = #{deviceInfo,jdbcType=VARCHAR},
+      </if>
+      <if test="signInTime != null">
+        sign_in_time = #{signInTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="signOutTime != null">
+        sign_out_time = #{signOutTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="success != null">
+        success = #{success,jdbcType=INTEGER},
+      </if>
+      <if test="detailsOfFail != null">
+        details_of_fail = #{detailsOfFail,jdbcType=VARCHAR},
+      </if>
+      <if test="signInParam != null">
+        sign_in_param = #{signInParam,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.github.misterchangray.dao.entity.LoginLog">
+    update login_log
+    set user_id = #{userId,jdbcType=INTEGER},
+      sign_in_ip = #{signInIp,jdbcType=VARCHAR},
+      device_info = #{deviceInfo,jdbcType=VARCHAR},
+      sign_in_time = #{signInTime,jdbcType=TIMESTAMP},
+      sign_out_time = #{signOutTime,jdbcType=TIMESTAMP},
+      success = #{success,jdbcType=INTEGER},
+      details_of_fail = #{detailsOfFail,jdbcType=VARCHAR},
+      sign_in_param = #{signInParam,jdbcType=VARCHAR}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <insert id="batchInsert" keyColumn="id" keyProperty="id" parameterType="map" useGeneratedKeys="true">
+    <!--
+      WARNING - @mbg.generated
+      This element is automatically generated by MyBatis Generator, do not modify.
+      @project https://github.com/itfsw/mybatis-generator-plugin
+    -->
+    insert into login_log
+    (user_id, sign_in_ip, device_info, sign_in_time, sign_out_time, success, details_of_fail, 
+      sign_in_param)
+    values
+    <foreach collection="list" item="item" separator=",">
+      (#{item.userId,jdbcType=INTEGER}, #{item.signInIp,jdbcType=VARCHAR}, #{item.deviceInfo,jdbcType=VARCHAR}, 
+        #{item.signInTime,jdbcType=TIMESTAMP}, #{item.signOutTime,jdbcType=TIMESTAMP}, 
+        #{item.success,jdbcType=INTEGER}, #{item.detailsOfFail,jdbcType=VARCHAR}, #{item.signInParam,jdbcType=VARCHAR}
+        )
+    </foreach>
+  </insert>
+  <insert id="batchInsertSelective" keyColumn="id" keyProperty="id" parameterType="map" useGeneratedKeys="true">
+    <!--
+      WARNING - @mbg.generated
+      This element is automatically generated by MyBatis Generator, do not modify.
+      @project https://github.com/itfsw/mybatis-generator-plugin
+    -->
+    insert into login_log (
+    <foreach collection="selective" item="column" separator=",">
+      ${column.value}
+    </foreach>
+    )
+    values
+    <foreach collection="list" item="item" separator=",">
+      (
+      <foreach collection="selective" item="column" separator=",">
+        <if test="'user_id' == column.value">
+          #{item.userId,jdbcType=INTEGER}
+        </if>
+        <if test="'sign_in_ip' == column.value">
+          #{item.signInIp,jdbcType=VARCHAR}
+        </if>
+        <if test="'device_info' == column.value">
+          #{item.deviceInfo,jdbcType=VARCHAR}
+        </if>
+        <if test="'sign_in_time' == column.value">
+          #{item.signInTime,jdbcType=TIMESTAMP}
+        </if>
+        <if test="'sign_out_time' == column.value">
+          #{item.signOutTime,jdbcType=TIMESTAMP}
+        </if>
+        <if test="'success' == column.value">
+          #{item.success,jdbcType=INTEGER}
+        </if>
+        <if test="'details_of_fail' == column.value">
+          #{item.detailsOfFail,jdbcType=VARCHAR}
+        </if>
+        <if test="'sign_in_param' == column.value">
+          #{item.signInParam,jdbcType=VARCHAR}
+        </if>
+      </foreach>
+      )
+    </foreach>
+  </insert>
+</mapper>
