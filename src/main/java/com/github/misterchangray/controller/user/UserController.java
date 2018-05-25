@@ -35,6 +35,7 @@ import java.util.List;
 @Api(tags ="用户管理", description = "UserController")
 @Controller
 @RequestMapping("/v1/user")
+@Authentication
 public class UserController {
     @Autowired
     UserService userService;
@@ -56,7 +57,6 @@ public class UserController {
             @ApiImplicitParam(name="idcard", value = "身份证", required = false, paramType = "query", dataType = "string"),
             @ApiImplicitParam(name="email", value = "邮箱", required = false, paramType = "query", dataType = "string"),
     })
-    @Authentication
     @RequestMapping(value = "/checkUserInfo", method = RequestMethod.POST)
     @ResponseBody
     public NormalResponse checkUser(@RequestParam(required = false) String username,
@@ -78,7 +78,6 @@ public class UserController {
             @ApiImplicitParam(name="userId", value = "用户ID", required = true, paramType = "path", dataType = "int"),
             @ApiImplicitParam(name="roleIds", value = "角色ID", required = true, paramType = "query", dataType = "int", allowMultiple = true),
     })
-    @Authentication
     @RequestMapping(value="/{userId}/role", method = RequestMethod.PATCH)
     @ResponseBody
     public NormalResponse editUserRole(@PathVariable Integer userId, @RequestParam List<Integer> roleIds) {
@@ -94,7 +93,6 @@ public class UserController {
     @ApiImplicitParams({
             @ApiImplicitParam(name="userId", value = "用户ID", required = true, paramType = "path", dataType = "int"),
     })
-    @Authentication
     @RequestMapping(value="/{userId}", method = RequestMethod.GET)
     @ResponseBody
     public NormalResponse getById(@PathVariable Integer userId) {
@@ -112,7 +110,6 @@ public class UserController {
             @ApiImplicitParam(name="page", value = "页码", required = true, paramType = "query", dataType = "int"),
             @ApiImplicitParam(name="limit", value = "每页条数", required = true, paramType = "query", dataType = "int"),
     })
-    @Authentication
     @RequestMapping(method = RequestMethod.GET)
     @ResponseBody
     public NormalResponse list(@RequestParam(required =  false) Integer page, @RequestParam(required = false) Integer limit) {
@@ -130,7 +127,6 @@ public class UserController {
     @ApiImplicitParams({
             @ApiImplicitParam(name="user", value = "用户实体JSON对象", required = true, paramType = "body", dataType = "com.github.misterchangray.dao.entity.User"),
     })
-    @Authentication
     @OperationLog(businessName = "新增用户")
     @RequestMapping(method = RequestMethod.POST)
     @ResponseBody
@@ -148,7 +144,6 @@ public class UserController {
     @ApiImplicitParams({
             @ApiImplicitParam(name="id", value = "根据ID删除用户", required = true, paramType = "path", dataType = "int"),
     })
-    @Authentication
     @RequestMapping(value = "{id}", method = RequestMethod.DELETE)
     @ResponseBody
     public NormalResponse delete(@PathVariable(value = "id") Integer id) {
@@ -167,7 +162,6 @@ public class UserController {
     @ApiImplicitParams({
             @ApiImplicitParam(name="user", value = "用户实体JSON对象", required = true, paramType = "body", dataType = "com.github.misterchangray.dao.entity.User"),
     })
-    @Authentication
     @RequestMapping(method = RequestMethod.PUT)
     @ResponseBody
     public NormalResponse edit(@RequestBody User user) {

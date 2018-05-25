@@ -31,6 +31,16 @@
     <mvc:resources mapping="/js/**" location="/js/"/>
     <mvc:resources mapping="/image/**" location="/image/"/>
 
+    <!-- 跨域请求配置 允许任何跨域访问后台地址 -->
+    <mvc:cors>
+        <mvc:mapping path="/**/**"
+                     allowed-origins="*"
+                     allowed-methods="GET, HEAD, POST, PUT, DELETE, TRACE, OPTIONS, PATCH"
+                     allowed-headers="Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With, Authentication"
+                     allow-credentials="true"
+                     max-age="180" />
+    </mvc:cors>
+
     <!-- 映射docs路径到swagger-ui中 -->
     <mvc:resources mapping="/docs/**" location="/common-core-swagger-ui/" />
 

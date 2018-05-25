@@ -68,8 +68,7 @@ public class LoginController {
     public NormalResponse signIn(@RequestParam(required = false) String username,
                                 @RequestParam(required = false) String email,
                                 @RequestParam(required = false) String phone,
-                                @RequestParam String password,
-                                HttpServletRequest httpServletRequest) {
+                                @RequestParam String password) {
 
         NormalResponse res = NormalResponse.newInstance();
         if((null == username && null == email && null == phone) || null == password) {

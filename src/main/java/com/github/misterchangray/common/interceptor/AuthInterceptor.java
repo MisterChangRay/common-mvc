@@ -40,13 +40,19 @@ public class AuthInterceptor extends HandlerInterceptorAdapter {
         if (!(handler instanceof HandlerMethod)) {
             return true;
         }
+        //如果是OPTIONS请求则跳过
+        if( null != request.getMethod() && "options".equals(request.getMethod().toLowerCase())) {
+            return true;
+        }
+
         HandlerMethod handlerMethod = (HandlerMethod) handler;
         Method method = handlerMethod.getMethod();
 
         // 通过注解判断接口是否需要权限认证
+        Authentication classAnnotation = method.getDeclaringClass().getAnnotation(Authentication.class);
         Authentication methodAnnotation = method.getAnnotation(Authentication.class);
-        // 有 @LoginRequired 注解，需要认证
-        if (methodAnnotation != null) {
+        // 有 @Authentication 注解，需要认证
+        if (null != classAnnotation || methodAnnotation != null) {
             // 执行认证
             String token = request.getHeader("Authentication");  // 从 http 请求头中取出 Authentication
             UserSessionVO userSessionVO = userSessionBo.getSession(token);
