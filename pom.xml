@@ -9,6 +9,13 @@
   <url>http://maven.apache.org</url>
   <dependencies>
 
+    <!-- redis -->
+    <dependency>
+      <groupId>redis.clients</groupId>
+      <artifactId>jedis</artifactId>
+      <version>2.9.0</version>
+    </dependency>
+
     <!-- java ee包 -->
     <dependency>
       <groupId>javax</groupId>
@@ -96,6 +103,12 @@
       <groupId>org.aspectj</groupId>
       <artifactId>aspectjrt</artifactId>
       <version>1.8.10</version>
+    </dependency>
+    <!-- spring-data -->
+    <dependency>
+      <groupId>org.springframework.data</groupId>
+      <artifactId>spring-data-redis</artifactId>
+      <version>1.8.12.RELEASE</version>
     </dependency>
     <!--spring相关包 end-->
 
