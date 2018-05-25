@@ -36,7 +36,7 @@
         <mvc:mapping path="/**/**"
                      allowed-origins="*"
                      allowed-methods="GET, HEAD, POST, PUT, DELETE, TRACE, OPTIONS, PATCH"
-                     allowed-headers="Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With, Authentication"
+                     allowed-headers="Content-Type, Authorization, Access-Control-Allow-Origin, Access-Control-Allow-Headers, X-Requested-With, Authentication"
                      allow-credentials="true"
                      max-age="180" />
     </mvc:cors>

@@ -36,12 +36,13 @@ public class AuthInterceptor extends HandlerInterceptorAdapter {
 
     @Override
     public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception {
-        // 如果不是映射到方法直接通过
-        if (!(handler instanceof HandlerMethod)) {
-            return true;
-        }
         //如果是OPTIONS请求则跳过
         if( null != request.getMethod() && "options".equals(request.getMethod().toLowerCase())) {
+            return true;
+        }
+
+        // 如果不是映射到方法直接通过
+        if (!(handler instanceof HandlerMethod)) {
             return true;
         }
 
