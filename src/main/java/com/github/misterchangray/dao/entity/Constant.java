@@ -8,28 +8,28 @@ public class Constant {
     @ApiModelProperty(value="id")
     private Integer id;
 
-    @ApiModelProperty(value="nameå¸¸é‡åç§°")
+    @ApiModelProperty(value="name³£Á¿Ãû³Æ")
     private String name;
 
-    @ApiModelProperty(value="shortcutå¸¸é‡ç®€ç§°,ç”¨äºå¿«é€Ÿå®šä½")
+    @ApiModelProperty(value="shortcut³£Á¿¼ò³Æ,ÓÃÓÚ¿ìËÙ¶¨Î»")
     private String shortcut;
 
-    @ApiModelProperty(value="pidçˆ¶ID,nullä¸ºæ ¹èŠ‚ç‚¹")
+    @ApiModelProperty(value="pid¸¸ID,nullÎª¸ù½Úµã")
     private Integer pid;
 
-    @ApiModelProperty(value="levelå½“å‰å±‚çº§;pid=nullæ—¶ä¸º1çº§")
+    @ApiModelProperty(value="levelµ±Ç°²ã¼¶;pid=nullÊ±Îª1¼¶")
     private Integer level;
 
-    @ApiModelProperty(value="hasChildæ˜¯å¦æœ‰å­èŠ‚ç‚¹0false,1true")
+    @ApiModelProperty(value="hasChildÊÇ·ñÓĞ×Ó½Úµã0false,1true")
     private Integer hasChild;
 
-    @ApiModelProperty(value="enabledæ˜¯å¦å¯ç”¨0false,1true")
+    @ApiModelProperty(value="enabledÊÇ·ñÆôÓÃ0false,1true")
     private Integer enabled;
 
-    @ApiModelProperty(value="deletedæ˜¯å¦åˆ é™¤0false, 1true")
+    @ApiModelProperty(value="deletedÊÇ·ñÉ¾³ı0false, 1true")
     private Integer deleted;
 
-    @ApiModelProperty(value="extraé™„åŠ æ•°æ®;æ¨èå­˜JSON")
+    @ApiModelProperty(value="extra¸½¼ÓÊı¾İ;ÍÆ¼ö´æJSON")
     private Integer extra;
 
     public Integer getId() {

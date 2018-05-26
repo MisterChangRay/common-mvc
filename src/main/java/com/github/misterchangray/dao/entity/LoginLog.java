@@ -9,7 +9,7 @@ public class LoginLog {
     @ApiModelProperty(value="id")
     private Integer id;
 
-    @ApiModelProperty(value="userId鎴愬姛鐧诲叆鏈夋鏁版嵁")
+    @ApiModelProperty(value="userId成功登入有此数据")
     private Integer userId;
 
     @ApiModelProperty(value="signInIp")
@@ -21,7 +21,7 @@ public class LoginLog {
     @ApiModelProperty(value="signInTime")
     private Date signInTime;
 
-    @ApiModelProperty(value="signOutTime鎴愬姛鐧诲叆鏈夋鏁版嵁")
+    @ApiModelProperty(value="signOutTime成功登入有此数据")
     private Date signOutTime;
 
     @ApiModelProperty(value="success")

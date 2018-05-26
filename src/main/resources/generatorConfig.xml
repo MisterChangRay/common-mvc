@@ -33,9 +33,9 @@
         </commentGenerator>
         <!--数据库连接的信息：驱动类、连接地址、用户名、密码 -->
         <jdbcConnection driverClass="com.mysql.jdbc.Driver"
-                        connectionURL="jdbc:mysql://localhost:3306/common_core?characterEncoding=UTF-8&amp;useSSL=true&amp;serverTimezone=GMT%2B8"
-                        userId="root"
-                        password="Zr12356789">
+                        connectionURL="jdbc:mysql://47.98.188.65:18300/common_core?characterEncoding=UTF-8&amp;useSSL=false&amp;serverTimezone=GMT%2B8"
+                        userId="zr"
+                        password="isx932mes">
         </jdbcConnection>
         <!-- 默认false，把JDBC DECIMAL 和 NUMERIC 类型解析为 Integer，为 true时把JDBC DECIMAL 和
             NUMERIC 类型解析为java.math.BigDecimal -->

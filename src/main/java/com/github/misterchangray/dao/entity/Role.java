@@ -11,10 +11,10 @@ public class Role {
     @ApiModelProperty(value="name")
     private String name;
 
-    @ApiModelProperty(value="enabledæ˜¯å¦å¯ç”¨0false, 1true")
+    @ApiModelProperty(value="enabledÊÇ·ñÆôÓÃ0false, 1true")
     private Integer enabled;
 
-    @ApiModelProperty(value="deletedæ˜¯å¦åˆ é™¤0false, 1true")
+    @ApiModelProperty(value="deletedÊÇ·ñÉ¾³ı0false, 1true")
     private Integer deleted;
 
     public Integer getId() {

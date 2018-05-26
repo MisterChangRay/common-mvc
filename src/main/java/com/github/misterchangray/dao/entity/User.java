@@ -8,31 +8,31 @@ public class User {
     @ApiModelProperty(value="id")
     private Integer id;
 
-    @ApiModelProperty(value="usernameç”¨æˆ·å")
+    @ApiModelProperty(value="usernameÓÃ»§Ãû")
     private String username;
 
-    @ApiModelProperty(value="passwordå¯†ç ")
+    @ApiModelProperty(value="passwordÃÜÂë")
     private String password;
 
-    @ApiModelProperty(value="idcardèº«ä»½è¯")
+    @ApiModelProperty(value="idcardÉí·İÖ¤")
     private String idcard;
 
-    @ApiModelProperty(value="emailé‚®ç®±")
+    @ApiModelProperty(value="emailÓÊÏä")
     private String email;
 
-    @ApiModelProperty(value="nameå§“å")
+    @ApiModelProperty(value="nameĞÕÃû")
     private String name;
 
-    @ApiModelProperty(value="sexæ€§åˆ«")
+    @ApiModelProperty(value="sexĞÔ±ğ")
     private Integer sex;
 
-    @ApiModelProperty(value="phoneæ‰‹æœºå·")
+    @ApiModelProperty(value="phoneÊÖ»úºÅ")
     private String phone;
 
-    @ApiModelProperty(value="enabledæ˜¯å¦å¯ç”¨0falseï¼Œ1true")
+    @ApiModelProperty(value="enabledÊÇ·ñÆôÓÃ0false£¬1true")
     private Integer enabled;
 
-    @ApiModelProperty(value="deletedæ˜¯å¦åˆ é™¤0falseï¼Œ1true")
+    @ApiModelProperty(value="deletedÊÇ·ñÉ¾³ı0false£¬1true")
     private Integer deleted;
 
     public Integer getId() {
