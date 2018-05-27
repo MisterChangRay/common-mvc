@@ -7,10 +7,9 @@ import com.github.misterchangray.common.utils.JSONUtils;
 import com.github.misterchangray.common.utils.MapBuilder;
 import com.github.misterchangray.dao.entity.LoginLog;
 import com.github.misterchangray.dao.entity.User;
-import com.github.misterchangray.service.common.GlobalCacheService;
+import com.github.misterchangray.service.common.RedisCacheService;
 import com.github.misterchangray.service.log.LoginLogService;
 import com.github.misterchangray.service.user.bo.UserSessionBo;
-import com.github.misterchangray.service.user.vo.UserSessionVO;
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.Around;
 import org.aspectj.lang.annotation.Aspect;
@@ -20,7 +19,6 @@ import org.springframework.stereotype.Component;
 
 import javax.servlet.http.HttpServletRequest;
 import java.util.Date;
-import java.util.Map;
 
 
 /**
@@ -43,7 +41,7 @@ public class UserLoginLogAop {
     @Autowired
     UserSessionBo userSessionBo;
     @Autowired
-    GlobalCacheService globalCacheService;
+    RedisCacheService redisCacheService;
 
     //創建用戶session時;創建日志
     @Pointcut(value = "execution(com.github.misterchangray.common.NormalResponse com.github.misterchangray.service.user.LoginService.signInBy*(..))")
@@ -70,11 +68,13 @@ public class UserLoginLogAop {
 //        if(false == normalResponse.isSuccess()) return res; //打开此行则只记录登录成功的用户
 
         User user = null;
+        String session = null;
         MapBuilder mapBuilder = null;
         if(null != normalResponse.getData()) {
             mapBuilder = (MapBuilder) normalResponse.getData();
             if(null != mapBuilder) {
                 user = (User) mapBuilder.get("user");
+                session = (String) mapBuilder.get("Authentication");
             }
         }
 
@@ -91,16 +91,8 @@ public class UserLoginLogAop {
             loginLog.setDetailsOfFail(normalResponse.getErrorMsg());
         }
         loginLog.setSignInParam(JSONUtils.obj2json(point.getArgs()));
-        int id =loginLogService.insertLog(loginLog);
-
-        //如果登录成功则更日志ID到缓存中
-        if(normalResponse.isSuccess()) {
-            Map<String, UserSessionVO> userSessionVOMap = (Map<String, UserSessionVO>) globalCacheService.get("onLineUsers");
-            UserSessionVO userSessionVO = userSessionVOMap.get(String.valueOf(user.getId()));
-            if(0 != id && null != userSessionVO && null != loginLog.getId()) {
-                userSessionVO.setLoginLogId(loginLog.getId());
-            }
-        }
+        loginLog.setSession(session);
+        loginLogService.insertLog(loginLog);
 
         return res;
     }
@@ -110,8 +102,11 @@ public class UserLoginLogAop {
     public Object destroySessionAround(ProceedingJoinPoint point) {
         Object res;
 
-        UserSessionVO userSessionVO = userSessionBo.getSession((String) point.getArgs()[0]);
-        loginLogService.updateSignOutTime(userSessionVO.getLoginLogId());
+        String session = (String) point.getArgs()[0];
+
+        if(null != session) {
+            loginLogService.updateSignOutTime(session);
+        }
 
         try {
             res = point.proceed();

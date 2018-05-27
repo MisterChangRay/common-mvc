@@ -12,6 +12,9 @@ public class LoginLog {
     @ApiModelProperty(value="userId成功登入有此数据")
     private Integer userId;
 
+    @ApiModelProperty(value="session")
+    private String session;
+
     @ApiModelProperty(value="signInIp")
     private String signInIp;
 
@@ -48,6 +51,15 @@ public class LoginLog {
 
     public LoginLog setUserId(Integer userId) {
         this.userId = userId;
+        return this;
+    }
+
+    public String getSession() {
+        return session;
+    }
+
+    public LoginLog setSession(String session) {
+        this.session = session == null ? null : session.trim();
         return this;
     }
 
@@ -122,6 +134,7 @@ public class LoginLog {
         sb.append("Hash = ").append(hashCode());
         sb.append(", id=").append(id);
         sb.append(", userId=").append(userId);
+        sb.append(", session=").append(session);
         sb.append(", signInIp=").append(signInIp);
         sb.append(", deviceInfo=").append(deviceInfo);
         sb.append(", signInTime=").append(signInTime);
@@ -143,6 +156,7 @@ public class LoginLog {
     public enum Column {
         id("id"),
         userId("user_id"),
+        session("session"),
         signInIp("sign_in_ip"),
         deviceInfo("device_info"),
         signInTime("sign_in_time"),

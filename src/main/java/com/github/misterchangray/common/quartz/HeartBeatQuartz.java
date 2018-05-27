@@ -1,6 +1,6 @@
 package com.github.misterchangray.common.quartz;
 
-import com.github.misterchangray.service.common.GlobalCacheService;
+import com.github.misterchangray.service.common.SessionCacheService;
 import com.github.misterchangray.service.user.LoginService;
 import com.github.misterchangray.service.user.vo.UserSessionVO;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -21,7 +21,7 @@ public class HeartBeatQuartz {
     @Autowired
     LoginService loginService;
     @Autowired
-    GlobalCacheService globalCacheService;
+    SessionCacheService sessionCacheService;
 
 
     /**
@@ -48,7 +48,7 @@ public class HeartBeatQuartz {
     @Scheduled(fixedDelayString = "60000")
     public void HeartBeatQuartz() {
         //每分钟执行一次;清除死亡的session
-        Map<String, UserSessionVO> onLineUsers = (Map<String, UserSessionVO>) globalCacheService.get("onLineUsers");
+        Map<String, UserSessionVO> onLineUsers = (Map<String, UserSessionVO>) sessionCacheService.get("onLineUsers");
         UserSessionVO userSessionVO = null;
         int threeMinutes = 3 * 60 * 1000;
         long currentTimeMillis = System.currentTimeMillis();

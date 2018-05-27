@@ -24,7 +24,7 @@ import org.springframework.util.CollectionUtils;
  * @description
  */
 @Component
-public class CacheService {
+public class RedisCacheService {
     @Autowired
     private RedisTemplate<String, Object> redisTemplate;
 

@@ -38,9 +38,9 @@ public interface LoginService {
 
     /**
      * 登出用户
-     * @param session
+     * @param userId
      * @return
      */
-    NormalResponse signOut(String session);
+    NormalResponse signOut(String userId);
 
 }

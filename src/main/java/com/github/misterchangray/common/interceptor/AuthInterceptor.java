@@ -7,9 +7,7 @@ import com.github.misterchangray.common.enums.ErrorEnum;
 import com.github.misterchangray.common.utils.JSONUtils;
 import com.github.misterchangray.service.user.UserService;
 import com.github.misterchangray.service.user.bo.UserSessionBo;
-import com.github.misterchangray.service.user.vo.UserSessionVO;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Component;
 import org.springframework.web.method.HandlerMethod;
 import org.springframework.web.servlet.handler.HandlerInterceptorAdapter;
 
@@ -56,17 +54,16 @@ public class AuthInterceptor extends HandlerInterceptorAdapter {
         if (null != classAnnotation || methodAnnotation != null) {
             // 执行认证
             String token = request.getHeader("Authentication");  // 从 http 请求头中取出 Authentication
-            UserSessionVO userSessionVO = userSessionBo.getSession(token);
 
             NormalResponse normalResponse = NormalResponse.newInstance();
-            if (null == token || null == userSessionVO) {
+            if (null == token) {
                 normalResponse.setErrorCode(ErrorEnum.NEED_AUTH);
                 normalResponse.setErrorMsg("无token，请先登录");
                 response.getWriter().append(JSONUtils.obj2json(normalResponse));
                 response.setContentType("application/json");
                 return false;
             }
-            if(!token.equals(userSessionVO.getSession())) {
+            if(userSessionBo.exist(token)) {
                 normalResponse.setErrorCode(ErrorEnum.NEED_AUTH);
                 normalResponse.setErrorMsg("token异常，请重新登录");
                 response.getWriter().append(JSONUtils.obj2json(normalResponse));

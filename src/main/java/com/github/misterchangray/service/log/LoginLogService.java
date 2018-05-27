@@ -36,8 +36,8 @@ public interface LoginLogService {
 
     /**
      * 更新登录日志的登出时间
-     * @param id 待更新记录的Id
+     * @param session 待更新记录的session
      * @return
      */
-    int updateSignOutTime(int id);
+    int updateSignOutTime(String session);
 }

@@ -45,17 +45,16 @@ public class LoginLogServiceImpl implements LoginLogService {
 
     /**
      * 更新登录日志的登出时间
-     * @param id 待更新记录的Id
+     * @param session 待更新记录的session
      * @return
      */
-    public int updateSignOutTime(int id) {
+    public int updateSignOutTime(String session) {
         LoginLog loginLog = new LoginLog();
-        loginLog.setId(id);
         loginLog.setSignOutTime(new Date(System.currentTimeMillis()));
 
         LoginLogQuery loginLogQuery = new LoginLogQuery();
         LoginLogQuery.Criteria criteria =  loginLogQuery.createCriteria();
-        criteria.andIdEqualTo(id);
+        criteria.andSessionEqualTo(session);
 
         return loginLogMapper.updateByQuerySelective(loginLog, loginLogQuery);
     }

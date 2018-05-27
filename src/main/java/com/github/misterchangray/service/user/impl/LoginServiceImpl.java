@@ -9,7 +9,6 @@ import com.github.misterchangray.dao.entity.UserQuery;
 import com.github.misterchangray.dao.mapper.UserMapper;
 import com.github.misterchangray.service.user.LoginService;
 import com.github.misterchangray.service.user.bo.UserSessionBo;
-import com.github.misterchangray.service.user.vo.UserSessionVO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -31,6 +30,10 @@ public class LoginServiceImpl implements LoginService {
     HttpSession httpSession;
     @Autowired
     UserSessionBo userSessionBo;
+
+    private String createSession() {
+        return null;
+    }
 
     public NormalResponse signInByUserName(String username, String password) {
         NormalResponse res = NormalResponse.newInstance();
@@ -55,11 +58,16 @@ public class LoginServiceImpl implements LoginService {
         }
 
 
-        UserSessionVO userSessionVO = userSessionBo.createSession(user.getId().toString());
-        httpSession.setAttribute("Authentication", userSessionVO.getSession());
+
+        String session = userSessionBo.createSession(String.valueOf(user.getId()));
+        httpSession.setAttribute("Authentication", session);
         httpSession.setAttribute("user", user);
 
-        Map data = MapBuilder.build().put("Authentication", userSessionVO.getSession()).put("user", user);
+        /**
+         * 请注意:
+         * 此返回结构在操作日志中有用到;故如果修改返回结构应该同步修改操作日志文件
+         */
+        Map data = MapBuilder.build().put("Authentication", session).put("user", user);
         res.setData(data);
         return res;
     }
@@ -74,8 +82,8 @@ public class LoginServiceImpl implements LoginService {
 
 
 
-    public NormalResponse signOut(String session) {
-        userSessionBo.destroySession(session);
+    public NormalResponse signOut(String userId) {
+       userSessionBo.destroySession(userId);
         return NormalResponse.newInstance();
     }
 }

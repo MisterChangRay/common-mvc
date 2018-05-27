@@ -7,6 +7,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.UnsupportedEncodingException;
 import java.net.URL;
+import java.util.UUID;
 import java.util.zip.CRC32;
 import java.util.zip.CheckedInputStream;
 import org.apache.commons.codec.binary.Base64;
@@ -21,6 +22,7 @@ import org.apache.commons.io.IOUtils;
 public class CryptoUtils {
 
     private static final String DEFAULT_CHARSET = "UTF-8";
+
 
     /**
      * MD5加密

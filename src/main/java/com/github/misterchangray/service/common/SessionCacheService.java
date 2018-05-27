@@ -7,13 +7,13 @@ import javax.servlet.ServletContext;
 
 /**
  *
- * 用于全局缓存;目前采用ServletContext;推荐使用redis
+ * 用于全局缓存;目前采用ServletContext;大量数据推荐使用redis
  *
  * @author Rui.Zhang/misterchangray@hotmail.com
  * @author Created on 4/29/2018.
  */
 @Service
-public class GlobalCacheService {
+public class SessionCacheService {
     @Autowired
     ServletContext servletContext;
 

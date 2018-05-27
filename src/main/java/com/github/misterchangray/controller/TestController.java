@@ -1,7 +1,7 @@
 package com.github.misterchangray.controller;
 
 import com.github.misterchangray.common.NormalResponse;
-import com.github.misterchangray.service.common.CacheService;
+import com.github.misterchangray.service.common.RedisCacheService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -20,14 +20,14 @@ import org.springframework.web.bind.annotation.ResponseBody;
 @RequestMapping("/v1/test")
 public class TestController {
     @Autowired
-    CacheService cacheService;
+    RedisCacheService redisCacheService;
 
     @RequestMapping(method = RequestMethod.GET)
     @ResponseBody
     public NormalResponse constant(@RequestParam(required = false) Integer pid) {
         NormalResponse res = NormalResponse.newInstance();
 
-        cacheService.set("asdf", "123123123123");
+        redisCacheService.set("asdf", "123123123123");
         return res;
     }
 }
