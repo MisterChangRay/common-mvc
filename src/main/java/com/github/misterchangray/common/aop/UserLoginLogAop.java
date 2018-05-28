@@ -65,7 +65,7 @@ public class UserLoginLogAop {
         NormalResponse normalResponse = (NormalResponse) res;
         if(null == normalResponse) return res;
 
-//        if(false == normalResponse.isSuccess()) return res; //打开此行则只记录登录成功的用户
+        if(false == normalResponse.isSuccess()) return res; //打开此行则只记录登录成功的用户
 
         User user = null;
         String session = null;
