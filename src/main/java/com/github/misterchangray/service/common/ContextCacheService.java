@@ -13,7 +13,7 @@ import javax.servlet.ServletContext;
  * @author Created on 4/29/2018.
  */
 @Service
-public class SessionCacheService {
+public class ContextCacheService {
     @Autowired
     ServletContext servletContext;
 

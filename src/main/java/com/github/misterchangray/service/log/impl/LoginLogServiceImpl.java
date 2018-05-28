@@ -50,7 +50,7 @@ public class LoginLogServiceImpl implements LoginLogService {
      */
     public int updateSignOutTime(String session) {
         LoginLog loginLog = new LoginLog();
-        loginLog.setSignOutTime(new Date(System.currentTimeMillis()));
+        loginLog.setSignOutTime(new Date());
 
         LoginLogQuery loginLogQuery = new LoginLogQuery();
         LoginLogQuery.Criteria criteria =  loginLogQuery.createCriteria();

@@ -35,7 +35,8 @@ public interface LoginLogService {
     int insertLog(LoginLog loginLog);
 
     /**
-     * 更新登录日志的登出时间
+     * 更新登录日志的 登出时间
+     * 此函数在每次发起心跳时更新;即刚登录时此值应该为null
      * @param session 待更新记录的session
      * @return
      */

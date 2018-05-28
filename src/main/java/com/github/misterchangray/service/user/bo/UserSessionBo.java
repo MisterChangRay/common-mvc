@@ -1,8 +1,10 @@
 package com.github.misterchangray.service.user.bo;
 
 import com.github.misterchangray.common.NormalResponse;
+import com.github.misterchangray.dao.entity.LoginLog;
 import com.github.misterchangray.dao.entity.User;
 import com.github.misterchangray.service.common.RedisCacheService;
+import com.github.misterchangray.service.log.LoginLogService;
 import com.github.misterchangray.service.user.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
@@ -21,6 +23,8 @@ public class UserSessionBo {
     private UserService userService;
     @Autowired
     private RedisCacheService redisCacheService;
+    @Autowired
+    private LoginLogService loginLogService;
 
     //心跳过期时间;统为3分钟
     private Integer timeout = 3 * 60 * 1000;
@@ -40,6 +44,8 @@ public class UserSessionBo {
     /**
      * 根据用户ID创建session
      * 一个用户只能创建一个session;多次创建会覆盖
+     * redis中的session用于判断登录状态
+     *
      * @param userId
      */
     public String createSession(String userId) {
@@ -51,8 +57,8 @@ public class UserSessionBo {
 
         //构造session
         String token = UUID.randomUUID().toString().replace("-", "");
-
         redisCacheService.set(token, user, timeout);
+
 
         return token;
     }
@@ -82,6 +88,8 @@ public class UserSessionBo {
      */
     public void heartbeat(String session) {
         redisCacheService.expire(session, timeout);
+
+        loginLogService.updateSignOutTime(session);
     }
 
 }
