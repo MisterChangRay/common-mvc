@@ -63,7 +63,7 @@ public class AuthInterceptor extends HandlerInterceptorAdapter {
                 response.setContentType("application/json");
                 return false;
             }
-            if(userSessionBo.exist(token)) {
+            if(false == userSessionBo.exist(token)) {
                 normalResponse.setErrorCode(ErrorEnum.NEED_AUTH);
                 normalResponse.setErrorMsg("token异常，请重新登录");
                 response.getWriter().append(JSONUtils.obj2json(normalResponse));

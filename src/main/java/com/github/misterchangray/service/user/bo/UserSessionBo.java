@@ -1,6 +1,7 @@
 package com.github.misterchangray.service.user.bo;
 
 import com.github.misterchangray.common.NormalResponse;
+import com.github.misterchangray.common.utils.JSONUtils;
 import com.github.misterchangray.dao.entity.LoginLog;
 import com.github.misterchangray.dao.entity.User;
 import com.github.misterchangray.service.common.RedisCacheService;
@@ -27,7 +28,7 @@ public class UserSessionBo {
     private LoginLogService loginLogService;
 
     //心跳过期时间;统为3分钟
-    private Integer timeout = 3 * 60 * 1000;
+    private Integer timeout = 3 * 60;
 
 
 
@@ -57,7 +58,7 @@ public class UserSessionBo {
 
         //构造session
         String token = UUID.randomUUID().toString().replace("-", "");
-        redisCacheService.set(token, user, timeout);
+        redisCacheService.set(token, JSONUtils.obj2json(user), timeout);
 
 
         return token;
