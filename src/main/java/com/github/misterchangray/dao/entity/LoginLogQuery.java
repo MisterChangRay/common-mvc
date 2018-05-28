@@ -327,76 +327,6 @@ public class LoginLogQuery {
             return (Criteria) this;
         }
 
-        public Criteria andSessionIsNull() {
-            addCriterion("session is null");
-            return (Criteria) this;
-        }
-
-        public Criteria andSessionIsNotNull() {
-            addCriterion("session is not null");
-            return (Criteria) this;
-        }
-
-        public Criteria andSessionEqualTo(String value) {
-            addCriterion("session =", value, "session");
-            return (Criteria) this;
-        }
-
-        public Criteria andSessionNotEqualTo(String value) {
-            addCriterion("session <>", value, "session");
-            return (Criteria) this;
-        }
-
-        public Criteria andSessionGreaterThan(String value) {
-            addCriterion("session >", value, "session");
-            return (Criteria) this;
-        }
-
-        public Criteria andSessionGreaterThanOrEqualTo(String value) {
-            addCriterion("session >=", value, "session");
-            return (Criteria) this;
-        }
-
-        public Criteria andSessionLessThan(String value) {
-            addCriterion("session <", value, "session");
-            return (Criteria) this;
-        }
-
-        public Criteria andSessionLessThanOrEqualTo(String value) {
-            addCriterion("session <=", value, "session");
-            return (Criteria) this;
-        }
-
-        public Criteria andSessionLike(String value) {
-            addCriterion("session like", value, "session");
-            return (Criteria) this;
-        }
-
-        public Criteria andSessionNotLike(String value) {
-            addCriterion("session not like", value, "session");
-            return (Criteria) this;
-        }
-
-        public Criteria andSessionIn(List<String> values) {
-            addCriterion("session in", values, "session");
-            return (Criteria) this;
-        }
-
-        public Criteria andSessionNotIn(List<String> values) {
-            addCriterion("session not in", values, "session");
-            return (Criteria) this;
-        }
-
-        public Criteria andSessionBetween(String value1, String value2) {
-            addCriterion("session between", value1, value2, "session");
-            return (Criteria) this;
-        }
-
-        public Criteria andSessionNotBetween(String value1, String value2) {
-            addCriterion("session not between", value1, value2, "session");
-            return (Criteria) this;
-        }
-
         public Criteria andSignInIpIsNull() {
             addCriterion("sign_in_ip is null");
             return (Criteria) this;
@@ -854,6 +784,76 @@ public class LoginLogQuery {
 
         public Criteria andSignInParamNotBetween(String value1, String value2) {
             addCriterion("sign_in_param not between", value1, value2, "signInParam");
+            return (Criteria) this;
+        }
+
+        public Criteria andSessionIsNull() {
+            addCriterion("session is null");
+            return (Criteria) this;
+        }
+
+        public Criteria andSessionIsNotNull() {
+            addCriterion("session is not null");
+            return (Criteria) this;
+        }
+
+        public Criteria andSessionEqualTo(String value) {
+            addCriterion("session =", value, "session");
+            return (Criteria) this;
+        }
+
+        public Criteria andSessionNotEqualTo(String value) {
+            addCriterion("session <>", value, "session");
+            return (Criteria) this;
+        }
+
+        public Criteria andSessionGreaterThan(String value) {
+            addCriterion("session >", value, "session");
+            return (Criteria) this;
+        }
+
+        public Criteria andSessionGreaterThanOrEqualTo(String value) {
+            addCriterion("session >=", value, "session");
+            return (Criteria) this;
+        }
+
+        public Criteria andSessionLessThan(String value) {
+            addCriterion("session <", value, "session");
+            return (Criteria) this;
+        }
+
+        public Criteria andSessionLessThanOrEqualTo(String value) {
+            addCriterion("session <=", value, "session");
+            return (Criteria) this;
+        }
+
+        public Criteria andSessionLike(String value) {
+            addCriterion("session like", value, "session");
+            return (Criteria) this;
+        }
+
+        public Criteria andSessionNotLike(String value) {
+            addCriterion("session not like", value, "session");
+            return (Criteria) this;
+        }
+
+        public Criteria andSessionIn(List<String> values) {
+            addCriterion("session in", values, "session");
+            return (Criteria) this;
+        }
+
+        public Criteria andSessionNotIn(List<String> values) {
+            addCriterion("session not in", values, "session");
+            return (Criteria) this;
+        }
+
+        public Criteria andSessionBetween(String value1, String value2) {
+            addCriterion("session between", value1, value2, "session");
+            return (Criteria) this;
+        }
+
+        public Criteria andSessionNotBetween(String value1, String value2) {
+            addCriterion("session not between", value1, value2, "session");
             return (Criteria) this;
         }
     }

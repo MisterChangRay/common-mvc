@@ -10,7 +10,7 @@ public interface ConstantMapper {
 
     int deleteByQuery(ConstantQuery query);
 
-    int deleteByPrimaryKey(Integer id);
+    int deleteByPrimaryKey(String id);
 
     int insert(Constant record);
 
@@ -18,7 +18,7 @@ public interface ConstantMapper {
 
     List<Constant> selectByQuery(ConstantQuery query);
 
-    Constant selectByPrimaryKey(Integer id);
+    Constant selectByPrimaryKey(String id);
 
     int updateByQuerySelective(@Param("record") Constant record, @Param("example") ConstantQuery query);
 

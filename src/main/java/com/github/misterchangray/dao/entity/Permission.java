@@ -11,13 +11,13 @@ public class Permission {
     @ApiModelProperty(value="name")
     private String name;
 
-    @ApiModelProperty(value="deletedÊÇ·ñÉ¾³ı0false, 1true")
+    @ApiModelProperty(value="deletedæ˜¯å¦åˆ é™¤0false, 1true")
     private Integer deleted;
 
     @ApiModelProperty(value="uri")
     private String uri;
 
-    @ApiModelProperty(value="type1²Ëµ¥2°´Å¥")
+    @ApiModelProperty(value="type1èœå•2æŒ‰é’®")
     private Integer type;
 
     @ApiModelProperty(value="puri")

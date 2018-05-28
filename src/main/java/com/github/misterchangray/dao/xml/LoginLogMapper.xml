@@ -4,7 +4,6 @@
   <resultMap id="BaseResultMap" type="com.github.misterchangray.dao.entity.LoginLog">
     <id column="id" jdbcType="INTEGER" property="id" />
     <result column="user_id" jdbcType="INTEGER" property="userId" />
-    <result column="session" jdbcType="VARCHAR" property="session" />
     <result column="sign_in_ip" jdbcType="VARCHAR" property="signInIp" />
     <result column="device_info" jdbcType="VARCHAR" property="deviceInfo" />
     <result column="sign_in_time" jdbcType="TIMESTAMP" property="signInTime" />
@@ -12,6 +11,7 @@
     <result column="success" jdbcType="INTEGER" property="success" />
     <result column="details_of_fail" jdbcType="VARCHAR" property="detailsOfFail" />
     <result column="sign_in_param" jdbcType="VARCHAR" property="signInParam" />
+    <result column="session" jdbcType="VARCHAR" property="session" />
   </resultMap>
   <sql id="Example_Where_Clause">
     <where>
@@ -72,8 +72,8 @@
     </where>
   </sql>
   <sql id="Base_Column_List">
-    id, user_id, session, sign_in_ip, device_info, sign_in_time, sign_out_time, success, 
-    details_of_fail, sign_in_param
+    id, user_id, sign_in_ip, device_info, sign_in_time, sign_out_time, success, details_of_fail, 
+    sign_in_param, session
   </sql>
   <select id="selectByQuery" parameterType="com.github.misterchangray.dao.entity.LoginLogQuery" resultMap="BaseResultMap">
     select
@@ -117,13 +117,13 @@
     <selectKey keyProperty="id" order="AFTER" resultType="java.lang.Integer">
       SELECT LAST_INSERT_ID()
     </selectKey>
-    insert into login_log (user_id, session, sign_in_ip, 
-      device_info, sign_in_time, sign_out_time, 
-      success, details_of_fail, sign_in_param
+    insert into login_log (user_id, sign_in_ip, device_info, 
+      sign_in_time, sign_out_time, success, 
+      details_of_fail, sign_in_param, session
       )
-    values (#{userId,jdbcType=INTEGER}, #{session,jdbcType=VARCHAR}, #{signInIp,jdbcType=VARCHAR}, 
-      #{deviceInfo,jdbcType=VARCHAR}, #{signInTime,jdbcType=TIMESTAMP}, #{signOutTime,jdbcType=TIMESTAMP}, 
-      #{success,jdbcType=INTEGER}, #{detailsOfFail,jdbcType=VARCHAR}, #{signInParam,jdbcType=VARCHAR}
+    values (#{userId,jdbcType=INTEGER}, #{signInIp,jdbcType=VARCHAR}, #{deviceInfo,jdbcType=VARCHAR}, 
+      #{signInTime,jdbcType=TIMESTAMP}, #{signOutTime,jdbcType=TIMESTAMP}, #{success,jdbcType=INTEGER}, 
+      #{detailsOfFail,jdbcType=VARCHAR}, #{signInParam,jdbcType=VARCHAR}, #{session,jdbcType=VARCHAR}
       )
   </insert>
   <insert id="insertSelective" parameterType="com.github.misterchangray.dao.entity.LoginLog">
@@ -134,9 +134,6 @@
     <trim prefix="(" suffix=")" suffixOverrides=",">
       <if test="userId != null">
         user_id,
-      </if>
-      <if test="session != null">
-        session,
       </if>
       <if test="signInIp != null">
         sign_in_ip,
@@ -159,13 +156,13 @@
       <if test="signInParam != null">
         sign_in_param,
       </if>
+      <if test="session != null">
+        session,
+      </if>
     </trim>
     <trim prefix="values (" suffix=")" suffixOverrides=",">
       <if test="userId != null">
         #{userId,jdbcType=INTEGER},
-      </if>
-      <if test="session != null">
-        #{session,jdbcType=VARCHAR},
       </if>
       <if test="signInIp != null">
         #{signInIp,jdbcType=VARCHAR},
@@ -188,6 +185,9 @@
       <if test="signInParam != null">
         #{signInParam,jdbcType=VARCHAR},
       </if>
+      <if test="session != null">
+        #{session,jdbcType=VARCHAR},
+      </if>
     </trim>
   </insert>
   <select id="countByQuery" parameterType="com.github.misterchangray.dao.entity.LoginLogQuery" resultType="java.lang.Long">
@@ -204,9 +204,6 @@
       </if>
       <if test="record.userId != null">
         user_id = #{record.userId,jdbcType=INTEGER},
-      </if>
-      <if test="record.session != null">
-        session = #{record.session,jdbcType=VARCHAR},
       </if>
       <if test="record.signInIp != null">
         sign_in_ip = #{record.signInIp,jdbcType=VARCHAR},
@@ -229,6 +226,9 @@
       <if test="record.signInParam != null">
         sign_in_param = #{record.signInParam,jdbcType=VARCHAR},
       </if>
+      <if test="record.session != null">
+        session = #{record.session,jdbcType=VARCHAR},
+      </if>
     </set>
     <if test="_parameter != null">
       <include refid="Update_By_Example_Where_Clause" />
@@ -238,14 +238,14 @@
     update login_log
     set 
       user_id = #{record.userId,jdbcType=INTEGER},
-      session = #{record.session,jdbcType=VARCHAR},
       sign_in_ip = #{record.signInIp,jdbcType=VARCHAR},
       device_info = #{record.deviceInfo,jdbcType=VARCHAR},
       sign_in_time = #{record.signInTime,jdbcType=TIMESTAMP},
       sign_out_time = #{record.signOutTime,jdbcType=TIMESTAMP},
       success = #{record.success,jdbcType=INTEGER},
       details_of_fail = #{record.detailsOfFail,jdbcType=VARCHAR},
-      sign_in_param = #{record.signInParam,jdbcType=VARCHAR}
+      sign_in_param = #{record.signInParam,jdbcType=VARCHAR},
+      session = #{record.session,jdbcType=VARCHAR}
     <if test="_parameter != null">
       <include refid="Update_By_Example_Where_Clause" />
     </if>
@@ -255,9 +255,6 @@
     <set>
       <if test="userId != null">
         user_id = #{userId,jdbcType=INTEGER},
-      </if>
-      <if test="session != null">
-        session = #{session,jdbcType=VARCHAR},
       </if>
       <if test="signInIp != null">
         sign_in_ip = #{signInIp,jdbcType=VARCHAR},
@@ -280,20 +277,23 @@
       <if test="signInParam != null">
         sign_in_param = #{signInParam,jdbcType=VARCHAR},
       </if>
+      <if test="session != null">
+        session = #{session,jdbcType=VARCHAR},
+      </if>
     </set>
     where id = #{id,jdbcType=INTEGER}
   </update>
   <update id="updateByPrimaryKey" parameterType="com.github.misterchangray.dao.entity.LoginLog">
     update login_log
     set user_id = #{userId,jdbcType=INTEGER},
-      session = #{session,jdbcType=VARCHAR},
       sign_in_ip = #{signInIp,jdbcType=VARCHAR},
       device_info = #{deviceInfo,jdbcType=VARCHAR},
       sign_in_time = #{signInTime,jdbcType=TIMESTAMP},
       sign_out_time = #{signOutTime,jdbcType=TIMESTAMP},
       success = #{success,jdbcType=INTEGER},
       details_of_fail = #{detailsOfFail,jdbcType=VARCHAR},
-      sign_in_param = #{signInParam,jdbcType=VARCHAR}
+      sign_in_param = #{signInParam,jdbcType=VARCHAR},
+      session = #{session,jdbcType=VARCHAR}
     where id = #{id,jdbcType=INTEGER}
   </update>
   <insert id="batchInsert" keyColumn="id" keyProperty="id" parameterType="map" useGeneratedKeys="true">
@@ -303,14 +303,14 @@
       @project https://github.com/itfsw/mybatis-generator-plugin
     -->
     insert into login_log
-    (user_id, session, sign_in_ip, device_info, sign_in_time, sign_out_time, success, 
-      details_of_fail, sign_in_param)
+    (user_id, sign_in_ip, device_info, sign_in_time, sign_out_time, success, details_of_fail, 
+      sign_in_param, session)
     values
     <foreach collection="list" item="item" separator=",">
-      (#{item.userId,jdbcType=INTEGER}, #{item.session,jdbcType=VARCHAR}, #{item.signInIp,jdbcType=VARCHAR}, 
-        #{item.deviceInfo,jdbcType=VARCHAR}, #{item.signInTime,jdbcType=TIMESTAMP}, #{item.signOutTime,jdbcType=TIMESTAMP}, 
-        #{item.success,jdbcType=INTEGER}, #{item.detailsOfFail,jdbcType=VARCHAR}, #{item.signInParam,jdbcType=VARCHAR}
-        )
+      (#{item.userId,jdbcType=INTEGER}, #{item.signInIp,jdbcType=VARCHAR}, #{item.deviceInfo,jdbcType=VARCHAR}, 
+        #{item.signInTime,jdbcType=TIMESTAMP}, #{item.signOutTime,jdbcType=TIMESTAMP}, 
+        #{item.success,jdbcType=INTEGER}, #{item.detailsOfFail,jdbcType=VARCHAR}, #{item.signInParam,jdbcType=VARCHAR}, 
+        #{item.session,jdbcType=VARCHAR})
     </foreach>
   </insert>
   <insert id="batchInsertSelective" keyColumn="id" keyProperty="id" parameterType="map" useGeneratedKeys="true">
@@ -330,9 +330,6 @@
       <foreach collection="selective" item="column" separator=",">
         <if test="'user_id' == column.value">
           #{item.userId,jdbcType=INTEGER}
-        </if>
-        <if test="'session' == column.value">
-          #{item.session,jdbcType=VARCHAR}
         </if>
         <if test="'sign_in_ip' == column.value">
           #{item.signInIp,jdbcType=VARCHAR}
@@ -354,6 +351,9 @@
         </if>
         <if test="'sign_in_param' == column.value">
           #{item.signInParam,jdbcType=VARCHAR}
+        </if>
+        <if test="'session' == column.value">
+          #{item.session,jdbcType=VARCHAR}
         </if>
       </foreach>
       )

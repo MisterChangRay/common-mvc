@@ -2,15 +2,15 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.github.misterchangray.dao.mapper.ConstantMapper">
   <resultMap id="BaseResultMap" type="com.github.misterchangray.dao.entity.Constant">
-    <id column="id" jdbcType="INTEGER" property="id" />
+    <id column="id" jdbcType="VARCHAR" property="id" />
     <result column="name" jdbcType="VARCHAR" property="name" />
     <result column="shortcut" jdbcType="VARCHAR" property="shortcut" />
-    <result column="pid" jdbcType="INTEGER" property="pid" />
-    <result column="level" jdbcType="INTEGER" property="level" />
+    <result column="pid" jdbcType="VARCHAR" property="pid" />
     <result column="has_child" jdbcType="INTEGER" property="hasChild" />
     <result column="enabled" jdbcType="INTEGER" property="enabled" />
     <result column="deleted" jdbcType="INTEGER" property="deleted" />
-    <result column="extra" jdbcType="INTEGER" property="extra" />
+    <result column="extra" jdbcType="VARCHAR" property="extra" />
+    <result column="priority" jdbcType="INTEGER" property="priority" />
   </resultMap>
   <sql id="Example_Where_Clause">
     <where>
@@ -71,7 +71,7 @@
     </where>
   </sql>
   <sql id="Base_Column_List">
-    id, name, shortcut, pid, level, has_child, enabled, deleted, extra
+    id, name, shortcut, pid, has_child, enabled, deleted, extra, priority
   </sql>
   <select id="selectByQuery" parameterType="com.github.misterchangray.dao.entity.ConstantQuery" resultMap="BaseResultMap">
     select
@@ -95,15 +95,15 @@
       </if>
     </if>
   </select>
-  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+  <select id="selectByPrimaryKey" parameterType="java.lang.String" resultMap="BaseResultMap">
     select 
     <include refid="Base_Column_List" />
     from constant
-    where id = #{id,jdbcType=INTEGER}
+    where id = #{id,jdbcType=VARCHAR}
   </select>
-  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.String">
     delete from constant
-    where id = #{id,jdbcType=INTEGER}
+    where id = #{id,jdbcType=VARCHAR}
   </delete>
   <delete id="deleteByQuery" parameterType="com.github.misterchangray.dao.entity.ConstantQuery">
     delete from constant
@@ -112,18 +112,18 @@
     </if>
   </delete>
   <insert id="insert" parameterType="com.github.misterchangray.dao.entity.Constant">
-    <selectKey keyProperty="id" order="AFTER" resultType="java.lang.Integer">
+    <selectKey keyProperty="id" order="AFTER" resultType="java.lang.String">
       SELECT LAST_INSERT_ID()
     </selectKey>
     insert into constant (name, shortcut, pid, 
-      level, has_child, enabled, 
-      deleted, extra)
-    values (#{name,jdbcType=VARCHAR}, #{shortcut,jdbcType=VARCHAR}, #{pid,jdbcType=INTEGER}, 
-      #{level,jdbcType=INTEGER}, #{hasChild,jdbcType=INTEGER}, #{enabled,jdbcType=INTEGER}, 
-      #{deleted,jdbcType=INTEGER}, #{extra,jdbcType=INTEGER})
+      has_child, enabled, deleted, 
+      extra, priority)
+    values (#{name,jdbcType=VARCHAR}, #{shortcut,jdbcType=VARCHAR}, #{pid,jdbcType=VARCHAR}, 
+      #{hasChild,jdbcType=INTEGER}, #{enabled,jdbcType=INTEGER}, #{deleted,jdbcType=INTEGER}, 
+      #{extra,jdbcType=VARCHAR}, #{priority,jdbcType=INTEGER})
   </insert>
   <insert id="insertSelective" parameterType="com.github.misterchangray.dao.entity.Constant">
-    <selectKey keyProperty="id" order="AFTER" resultType="java.lang.Integer">
+    <selectKey keyProperty="id" order="AFTER" resultType="java.lang.String">
       SELECT LAST_INSERT_ID()
     </selectKey>
     insert into constant
@@ -137,9 +137,6 @@
       <if test="pid != null">
         pid,
       </if>
-      <if test="level != null">
-        level,
-      </if>
       <if test="hasChild != null">
         has_child,
       </if>
@@ -152,6 +149,9 @@
       <if test="extra != null">
         extra,
       </if>
+      <if test="priority != null">
+        priority,
+      </if>
     </trim>
     <trim prefix="values (" suffix=")" suffixOverrides=",">
       <if test="name != null">
@@ -161,10 +161,7 @@
         #{shortcut,jdbcType=VARCHAR},
       </if>
       <if test="pid != null">
-        #{pid,jdbcType=INTEGER},
-      </if>
-      <if test="level != null">
-        #{level,jdbcType=INTEGER},
+        #{pid,jdbcType=VARCHAR},
       </if>
       <if test="hasChild != null">
         #{hasChild,jdbcType=INTEGER},
@@ -176,7 +173,10 @@
         #{deleted,jdbcType=INTEGER},
       </if>
       <if test="extra != null">
-        #{extra,jdbcType=INTEGER},
+        #{extra,jdbcType=VARCHAR},
+      </if>
+      <if test="priority != null">
+        #{priority,jdbcType=INTEGER},
       </if>
     </trim>
   </insert>
@@ -199,10 +199,7 @@
         shortcut = #{record.shortcut,jdbcType=VARCHAR},
       </if>
       <if test="record.pid != null">
-        pid = #{record.pid,jdbcType=INTEGER},
-      </if>
-      <if test="record.level != null">
-        level = #{record.level,jdbcType=INTEGER},
+        pid = #{record.pid,jdbcType=VARCHAR},
       </if>
       <if test="record.hasChild != null">
         has_child = #{record.hasChild,jdbcType=INTEGER},
@@ -214,7 +211,10 @@
         deleted = #{record.deleted,jdbcType=INTEGER},
       </if>
       <if test="record.extra != null">
-        extra = #{record.extra,jdbcType=INTEGER},
+        extra = #{record.extra,jdbcType=VARCHAR},
+      </if>
+      <if test="record.priority != null">
+        priority = #{record.priority,jdbcType=INTEGER},
       </if>
     </set>
     <if test="_parameter != null">
@@ -226,12 +226,12 @@
     set 
       name = #{record.name,jdbcType=VARCHAR},
       shortcut = #{record.shortcut,jdbcType=VARCHAR},
-      pid = #{record.pid,jdbcType=INTEGER},
-      level = #{record.level,jdbcType=INTEGER},
+      pid = #{record.pid,jdbcType=VARCHAR},
       has_child = #{record.hasChild,jdbcType=INTEGER},
       enabled = #{record.enabled,jdbcType=INTEGER},
       deleted = #{record.deleted,jdbcType=INTEGER},
-      extra = #{record.extra,jdbcType=INTEGER}
+      extra = #{record.extra,jdbcType=VARCHAR},
+      priority = #{record.priority,jdbcType=INTEGER}
     <if test="_parameter != null">
       <include refid="Update_By_Example_Where_Clause" />
     </if>
@@ -246,10 +246,7 @@
         shortcut = #{shortcut,jdbcType=VARCHAR},
       </if>
       <if test="pid != null">
-        pid = #{pid,jdbcType=INTEGER},
-      </if>
-      <if test="level != null">
-        level = #{level,jdbcType=INTEGER},
+        pid = #{pid,jdbcType=VARCHAR},
       </if>
       <if test="hasChild != null">
         has_child = #{hasChild,jdbcType=INTEGER},
@@ -261,22 +258,25 @@
         deleted = #{deleted,jdbcType=INTEGER},
       </if>
       <if test="extra != null">
-        extra = #{extra,jdbcType=INTEGER},
+        extra = #{extra,jdbcType=VARCHAR},
+      </if>
+      <if test="priority != null">
+        priority = #{priority,jdbcType=INTEGER},
       </if>
     </set>
-    where id = #{id,jdbcType=INTEGER}
+    where id = #{id,jdbcType=VARCHAR}
   </update>
   <update id="updateByPrimaryKey" parameterType="com.github.misterchangray.dao.entity.Constant">
     update constant
     set name = #{name,jdbcType=VARCHAR},
       shortcut = #{shortcut,jdbcType=VARCHAR},
-      pid = #{pid,jdbcType=INTEGER},
-      level = #{level,jdbcType=INTEGER},
+      pid = #{pid,jdbcType=VARCHAR},
       has_child = #{hasChild,jdbcType=INTEGER},
       enabled = #{enabled,jdbcType=INTEGER},
       deleted = #{deleted,jdbcType=INTEGER},
-      extra = #{extra,jdbcType=INTEGER}
-    where id = #{id,jdbcType=INTEGER}
+      extra = #{extra,jdbcType=VARCHAR},
+      priority = #{priority,jdbcType=INTEGER}
+    where id = #{id,jdbcType=VARCHAR}
   </update>
   <insert id="batchInsert" keyColumn="id" keyProperty="id" parameterType="map" useGeneratedKeys="true">
     <!--
@@ -285,12 +285,12 @@
       @project https://github.com/itfsw/mybatis-generator-plugin
     -->
     insert into constant
-    (name, shortcut, pid, level, has_child, enabled, deleted, extra)
+    (name, shortcut, pid, has_child, enabled, deleted, extra, priority)
     values
     <foreach collection="list" item="item" separator=",">
-      (#{item.name,jdbcType=VARCHAR}, #{item.shortcut,jdbcType=VARCHAR}, #{item.pid,jdbcType=INTEGER}, 
-        #{item.level,jdbcType=INTEGER}, #{item.hasChild,jdbcType=INTEGER}, #{item.enabled,jdbcType=INTEGER}, 
-        #{item.deleted,jdbcType=INTEGER}, #{item.extra,jdbcType=INTEGER})
+      (#{item.name,jdbcType=VARCHAR}, #{item.shortcut,jdbcType=VARCHAR}, #{item.pid,jdbcType=VARCHAR}, 
+        #{item.hasChild,jdbcType=INTEGER}, #{item.enabled,jdbcType=INTEGER}, #{item.deleted,jdbcType=INTEGER}, 
+        #{item.extra,jdbcType=VARCHAR}, #{item.priority,jdbcType=INTEGER})
     </foreach>
   </insert>
   <insert id="batchInsertSelective" keyColumn="id" keyProperty="id" parameterType="map" useGeneratedKeys="true">
@@ -315,10 +315,7 @@
           #{item.shortcut,jdbcType=VARCHAR}
         </if>
         <if test="'pid' == column.value">
-          #{item.pid,jdbcType=INTEGER}
-        </if>
-        <if test="'level' == column.value">
-          #{item.level,jdbcType=INTEGER}
+          #{item.pid,jdbcType=VARCHAR}
         </if>
         <if test="'has_child' == column.value">
           #{item.hasChild,jdbcType=INTEGER}
@@ -330,7 +327,10 @@
           #{item.deleted,jdbcType=INTEGER}
         </if>
         <if test="'extra' == column.value">
-          #{item.extra,jdbcType=INTEGER}
+          #{item.extra,jdbcType=VARCHAR}
+        </if>
+        <if test="'priority' == column.value">
+          #{item.priority,jdbcType=INTEGER}
         </if>
       </foreach>
       )

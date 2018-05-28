@@ -9,16 +9,16 @@ public class OperationLog {
     @ApiModelProperty(value="id")
     private Integer id;
 
-    @ApiModelProperty(value="signatureµ÷ÓÃ·½·¨µÄÏŞ¶¨Ãû")
+    @ApiModelProperty(value="signatureè°ƒç”¨æ–¹æ³•çš„é™å®šå")
     private String signature;
 
-    @ApiModelProperty(value="businessName·½·¨µÄÒµÎñÃû³Æ")
+    @ApiModelProperty(value="businessNameæ–¹æ³•çš„ä¸šåŠ¡åç§°")
     private String businessName;
 
-    @ApiModelProperty(value="userId²Ù×÷ÈËÓÃ»§±íID")
+    @ApiModelProperty(value="userIdæ“ä½œäººç”¨æˆ·è¡¨ID")
     private Integer userId;
 
-    @ApiModelProperty(value="userName²Ù×÷ÈËÃû³Æ")
+    @ApiModelProperty(value="userNameæ“ä½œäººåç§°")
     private String userName;
 
     @ApiModelProperty(value="createDate")

@@ -33,7 +33,7 @@ public class ConstantController {
     @ApiOperation(value = "获取所有常量枚举", notes = "返回所有页面常量枚举，前端做缓存")
     @RequestMapping(method = RequestMethod.GET)
     @ResponseBody
-    public NormalResponse constant(@RequestParam(required = false) Integer pid, @RequestParam(required = false) String shortcut) {
+    public NormalResponse constant(@RequestParam(required = false) String pid, @RequestParam(required = false) String shortcut) {
         NormalResponse res = NormalResponse.newInstance();
 
         ConstantQuery constantQuery = new ConstantQuery();

@@ -14,7 +14,7 @@ public class RolePermissionMap {
     @ApiModelProperty(value="permissionId")
     private Integer permissionId;
 
-    @ApiModelProperty(value="deletedÊÇ·ñÉ¾³ı0false, 1true")
+    @ApiModelProperty(value="deletedæ˜¯å¦åˆ é™¤0false, 1true")
     private Integer deleted;
 
     public Integer getId() {

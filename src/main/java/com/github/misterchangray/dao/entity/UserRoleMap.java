@@ -14,7 +14,7 @@ public class UserRoleMap {
     @ApiModelProperty(value="roleId")
     private Integer roleId;
 
-    @ApiModelProperty(value="deletedÊÇ·ñÉ¾³ı0false, 1true")
+    @ApiModelProperty(value="deletedæ˜¯å¦åˆ é™¤0false, 1true")
     private Integer deleted;
 
     public Integer getId() {
