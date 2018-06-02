@@ -1,6 +1,7 @@
 package com.github.misterchangray.controller;
 
 import com.github.misterchangray.common.NormalResponse;
+import com.github.misterchangray.common.utils.EmailBuilder;
 import com.github.misterchangray.service.common.RedisCacheService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -27,7 +28,7 @@ public class TestController {
     public NormalResponse constant(@RequestParam(required = false) Integer pid) {
         NormalResponse res = NormalResponse.newInstance();
 
-        redisCacheService.set("asdf", "123123123123");
+        EmailBuilder.build().sendSimpleEmail("jioulongzi@qq.com", " 914590431@qq.com", "wocao", "dajia 快看啊 阿道夫为");
         return res;
     }
 }
