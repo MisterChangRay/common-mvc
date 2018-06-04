@@ -1,9 +1,9 @@
 package com.github.misterchangray.controller;
 
-import com.github.misterchangray.common.NormalResponse;
+import com.github.misterchangray.common.ResultSet;
+import com.github.misterchangray.common.annotation.Authentication;
 import com.github.misterchangray.common.enums.ResultEnum;
 import com.github.misterchangray.common.exception.ServiceException;
-import com.github.misterchangray.common.utils.EmailBuilder;
 import com.github.misterchangray.service.common.RedisCacheService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -20,6 +20,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
  * @description
  */
 @Controller
+@Authentication
 @RequestMapping("/v1/test")
 public class TestController {
     @Autowired
@@ -27,8 +28,8 @@ public class TestController {
 
     @RequestMapping(value = "test1",method = RequestMethod.GET)
     @ResponseBody
-    public NormalResponse constant(@RequestParam(required = false) Integer pid) throws Exception {
-        NormalResponse res = NormalResponse.build();
+    public ResultSet constant(@RequestParam(required = false) Integer pid) throws Exception {
+        ResultSet res = ResultSet.build();
 
 //        EmailBuilder.build().sendSimpleEmail("jioulongzi@qq.com", " 914590431@qq.com", "wocao", "dajia 快看啊 阿道夫为");
 //        res.getData().toString();
@@ -38,8 +39,8 @@ public class TestController {
 
     @RequestMapping(value = "test2",method = RequestMethod.GET)
     @ResponseBody
-    public NormalResponse constant2(@RequestParam(required = false) Integer pid) throws Exception {
-        NormalResponse res = NormalResponse.build();
+    public ResultSet constant2(@RequestParam(required = false) Integer pid) throws Exception {
+        ResultSet res = ResultSet.build();
 
 //        EmailBuilder.build().sendSimpleEmail("jioulongzi@qq.com", " 914590431@qq.com", "wocao", "dajia 快看啊 阿道夫为");
         res.getData().toString();

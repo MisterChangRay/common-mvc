@@ -1,6 +1,6 @@
 package com.github.misterchangray.controller.user;
 
-import com.github.misterchangray.common.NormalResponse;
+import com.github.misterchangray.common.ResultSet;
 import com.github.misterchangray.common.PageInfo;
 import com.github.misterchangray.dao.entity.Permission;
 import com.github.misterchangray.common.annotation.Authentication;
@@ -45,8 +45,8 @@ public class PermissionController {
     @Authentication
     @RequestMapping(value="/{permissionId}", method = RequestMethod.GET)
     @ResponseBody
-    public NormalResponse getById(@PathVariable Integer permissionId) {
-        NormalResponse res = permissionService.getById(permissionId);
+    public ResultSet getById(@PathVariable Integer permissionId) {
+        ResultSet res = permissionService.getById(permissionId);
         return res;
     }
 
@@ -65,7 +65,7 @@ public class PermissionController {
     @Authentication
     @RequestMapping(method = RequestMethod.GET)
     @ResponseBody
-    public NormalResponse list(@RequestParam() Integer page, @RequestParam() Integer limit) {
+    public ResultSet list(@RequestParam() Integer page, @RequestParam() Integer limit) {
         Permission permission = new Permission();
         return permissionService.list(permission, PageInfo.newInstance(page, limit));
     }
@@ -82,7 +82,7 @@ public class PermissionController {
     @Authentication
     @RequestMapping(method = RequestMethod.POST)
     @ResponseBody
-    public NormalResponse add(@RequestBody Permission permission) {
+    public ResultSet add(@RequestBody Permission permission) {
        return permissionService.insert(permission);
     }
 
@@ -99,7 +99,7 @@ public class PermissionController {
     @Authentication
     @RequestMapping(value = "/{id}", method = RequestMethod.DELETE)
     @ResponseBody
-    public NormalResponse delete(@PathVariable Integer id) {
+    public ResultSet delete(@PathVariable Integer id) {
         Permission permission = new Permission();
         permission.setId(id);
         return permissionService.delete(permission);
@@ -118,7 +118,7 @@ public class PermissionController {
     @Authentication
     @RequestMapping(method = RequestMethod.PUT)
     @ResponseBody
-    public NormalResponse edit(@RequestBody Permission permission) {
+    public ResultSet edit(@RequestBody Permission permission) {
         return permissionService.update(permission);
     }
 

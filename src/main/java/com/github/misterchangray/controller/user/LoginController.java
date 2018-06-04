@@ -1,9 +1,8 @@
 package com.github.misterchangray.controller.user;
 
-import com.github.misterchangray.common.NormalResponse;
+import com.github.misterchangray.common.ResultSet;
 import com.github.misterchangray.common.annotation.Authentication;
 import com.github.misterchangray.common.enums.ResultEnum;
-import com.github.misterchangray.common.exception.ServiceException;
 import com.github.misterchangray.service.user.LoginService;
 import com.github.misterchangray.service.user.UserService;
 import com.github.misterchangray.service.user.bo.UserSessionBo;
@@ -65,12 +64,12 @@ public class LoginController {
     })
     @RequestMapping(value = "/signIn", method = RequestMethod.POST)
     @ResponseBody
-    public NormalResponse signIn(@RequestParam(required = false) String username,
+    public ResultSet signIn(@RequestParam(required = false) String username,
                                 @RequestParam(required = false) String email,
                                 @RequestParam(required = false) String phone,
                                 @RequestParam String password) throws Exception {
 
-        NormalResponse res = NormalResponse.build();
+        ResultSet res = ResultSet.build();
         if((null == username && null == email && null == phone) || null == password) {
             res.setCode(ResultEnum.INVALID_REQUEST);
             return res;
@@ -94,7 +93,7 @@ public class LoginController {
     @Authentication
     @RequestMapping(value = "/signOut", method = RequestMethod.POST)
     @ResponseBody
-    public NormalResponse signOut(@RequestHeader(value = "Authentication") String token) {
+    public ResultSet signOut(@RequestHeader(value = "Authentication") String token) {
         return  loginService.signOut(token);
     }
 
@@ -108,9 +107,9 @@ public class LoginController {
     @Authentication
     @RequestMapping(value = "/heartbeat", method = RequestMethod.GET)
     @ResponseBody
-    public NormalResponse heartbeat(@RequestHeader("Authentication") String authentication) {
+    public ResultSet heartbeat(@RequestHeader("Authentication") String authentication) {
         userSessionBo.heartbeat(authentication);
-        return NormalResponse.build();
+        return ResultSet.build();
     }
 
 

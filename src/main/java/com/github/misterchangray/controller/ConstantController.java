@@ -1,6 +1,6 @@
 package com.github.misterchangray.controller;
 
-import com.github.misterchangray.common.NormalResponse;
+import com.github.misterchangray.common.ResultSet;
 import com.github.misterchangray.common.enums.DBEnum;
 import com.github.misterchangray.dao.entity.Constant;
 import com.github.misterchangray.dao.entity.ConstantQuery;
@@ -39,8 +39,8 @@ public class ConstantController {
     })
     @RequestMapping(method = RequestMethod.GET)
     @ResponseBody
-    public NormalResponse constant(@RequestParam(required = false) String pid, @RequestParam(required = false) String shortcut) {
-        NormalResponse res = NormalResponse.build();
+    public ResultSet constant(@RequestParam(required = false) String pid, @RequestParam(required = false) String shortcut) {
+        ResultSet res = ResultSet.build();
 
         ConstantQuery constantQuery = new ConstantQuery();
         ConstantQuery.Criteria criteria = constantQuery.createCriteria();

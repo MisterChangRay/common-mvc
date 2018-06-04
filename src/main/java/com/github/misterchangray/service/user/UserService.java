@@ -1,11 +1,7 @@
 package com.github.misterchangray.service.user;
 
-import com.github.misterchangray.common.NormalResponse;
-import com.github.misterchangray.common.exception.ServiceException;
+import com.github.misterchangray.common.ResultSet;
 import com.github.misterchangray.dao.entity.User;
-import com.github.misterchangray.common.NormalResponse;
-import com.github.misterchangray.dao.entity.User;
-import com.github.misterchangray.dao.entity.UserQuery;
 import com.github.misterchangray.service.BaseService;
 
 import java.util.List;
@@ -23,7 +19,7 @@ public interface UserService extends BaseService<User> {
      * @param roles 角色id集合
      * @return
      */
-    NormalResponse updateRole(Integer userId, List<Integer> roles);
+    ResultSet updateRole(Integer userId, List<Integer> roles);
 
 
     /**
@@ -34,6 +30,6 @@ public interface UserService extends BaseService<User> {
      * @param idcard
      * @return
      */
-    NormalResponse checkUserInfo(String username, String email, String phone, String idcard);
+    ResultSet checkUserInfo(String username, String email, String phone, String idcard);
 
 }

@@ -1,10 +1,9 @@
 package com.github.misterchangray.service.user.impl;
 
-import com.github.misterchangray.common.NormalResponse;
+import com.github.misterchangray.common.ResultSet;
 import com.github.misterchangray.common.annotation.OperationLog;
 import com.github.misterchangray.common.enums.DBEnum;
 import com.github.misterchangray.common.enums.ResultEnum;
-import com.github.misterchangray.common.exception.ServiceException;
 import com.github.misterchangray.dao.entity.Permission;
 import com.github.misterchangray.common.PageInfo;
 import com.github.misterchangray.dao.entity.PermissionQuery;
@@ -34,17 +33,17 @@ public class PermissionServiceImpl implements PermissionService{
      * @param ids 待检测的ID集合
      * @return false有部分不存在/true全都存在
      */
-    public NormalResponse exist(List<Integer> ids) {
-        if(null == ids) return NormalResponse.build(ResultEnum.INVALID_REQUEST);
+    public ResultSet exist(List<Integer> ids) {
+        if(null == ids) return ResultSet.build(ResultEnum.INVALID_REQUEST);
 
         PermissionQuery permissionQuery = new PermissionQuery();
         PermissionQuery.Criteria criteria = permissionQuery.createCriteria();
         criteria.andIdIn(ids);
         criteria.andDeletedEqualTo(DBEnum.FALSE.getCode());
         if(ids.size() == permissionMapper.countByQuery(permissionQuery)) {
-            return NormalResponse.build().setData(true);
+            return ResultSet.build().setData(true);
         } else {
-            return NormalResponse.build().setData(false);
+            return ResultSet.build().setData(false);
         }
     }
 
@@ -53,11 +52,11 @@ public class PermissionServiceImpl implements PermissionService{
      * @param id 待获取的id
      * @return Permission
      */
-    public NormalResponse getById(Integer id) {
-        if(null == id) return NormalResponse.build(ResultEnum.INVALID_REQUEST);
+    public ResultSet getById(Integer id) {
+        if(null == id) return ResultSet.build(ResultEnum.INVALID_REQUEST);
         Permission permission = permissionMapper.selectByPrimaryKey(id);
-        if(permission.getDeleted().equals(DBEnum.TRUE.getCode())) return NormalResponse.build().setCode(ResultEnum.GONE);
-        return NormalResponse.build().setData(permission);
+        if(permission.getDeleted().equals(DBEnum.TRUE.getCode())) return ResultSet.build().setCode(ResultEnum.GONE);
+        return ResultSet.build().setData(permission);
     }
 
     /**
@@ -65,12 +64,12 @@ public class PermissionServiceImpl implements PermissionService{
      * @param ids 待获取的ID集合
      * @return List[Permission]
      */
-    public NormalResponse getByIds(List<Integer> ids) {
-        if(null == ids) NormalResponse.build().setCode(ResultEnum.INVALID_REQUEST);
+    public ResultSet getByIds(List<Integer> ids) {
+        if(null == ids) ResultSet.build().setCode(ResultEnum.INVALID_REQUEST);
 
         PermissionQuery permissionQuery = new PermissionQuery();
         permissionQuery.createCriteria().andIdIn(ids).andDeletedEqualTo(DBEnum.FALSE.getCode());
-        return NormalResponse.build().setData(permissionMapper.selectByQuery(permissionQuery));
+        return ResultSet.build().setData(permissionMapper.selectByQuery(permissionQuery));
     }
 
     /**
@@ -79,7 +78,7 @@ public class PermissionServiceImpl implements PermissionService{
      * @param pageInfo 分页信息
      * @return List[Permission]
      */
-    public NormalResponse list(Permission permission, PageInfo pageInfo) {
+    public ResultSet list(Permission permission, PageInfo pageInfo) {
         if(null == pageInfo) pageInfo = new PageInfo();
 
         PermissionQuery permissionQuery = new PermissionQuery();
@@ -92,7 +91,7 @@ public class PermissionServiceImpl implements PermissionService{
         }
 
         pageInfo.setCount(permissionMapper.countByQuery(permissionQuery));
-        return NormalResponse.build().setData(permissionMapper.selectByQuery(permissionQuery)).setPageInfo(pageInfo);
+        return ResultSet.build().setData(permissionMapper.selectByQuery(permissionQuery)).setPageInfo(pageInfo);
     }
 
     /**
@@ -101,11 +100,11 @@ public class PermissionServiceImpl implements PermissionService{
      * @return Permission
      */
     @OperationLog(businessName = "增加权限")
-    public NormalResponse insert(Permission permission) {
+    public ResultSet insert(Permission permission) {
         permission.setId(null);
         permission.setDeleted(DBEnum.FALSE.getCode());
         permissionMapper.insert(permission);
-        return NormalResponse.build().setData(permission);
+        return ResultSet.build().setData(permission);
     }
 
     /**
@@ -114,10 +113,10 @@ public class PermissionServiceImpl implements PermissionService{
      * @return list[Permission]
      */
     @OperationLog(businessName = "批量增加权限")
-    public NormalResponse batchInsert(List<Permission> permissions) {
-        if(null == permissions) return NormalResponse.build().setCode(ResultEnum.INVALID_REQUEST);
+    public ResultSet batchInsert(List<Permission> permissions) {
+        if(null == permissions) return ResultSet.build().setCode(ResultEnum.INVALID_REQUEST);
 
-        return NormalResponse.build().setData(permissionMapper.batchInsert(permissions));
+        return ResultSet.build().setData(permissionMapper.batchInsert(permissions));
     }
 
     /**
@@ -126,8 +125,8 @@ public class PermissionServiceImpl implements PermissionService{
      * @return Permission
      */
     @OperationLog(businessName = "更新权限")
-    public NormalResponse update(Permission permission) {
-        if(null == permission || null == permission.getId()) return NormalResponse.build().setCode(ResultEnum.INVALID_REQUEST);
+    public ResultSet update(Permission permission) {
+        if(null == permission || null == permission.getId()) return ResultSet.build().setCode(ResultEnum.INVALID_REQUEST);
 
         Permission dbPermission = permissionMapper.selectByPrimaryKey(permission.getId());
         if(DBEnum.FALSE.getCode().equals(dbPermission.getDeleted())) {
@@ -135,7 +134,7 @@ public class PermissionServiceImpl implements PermissionService{
             permission = permissionMapper.selectByPrimaryKey(permission.getId());
         }
 
-        return NormalResponse.build().setData(permission);
+        return ResultSet.build().setData(permission);
     }
 
     /**
@@ -144,11 +143,11 @@ public class PermissionServiceImpl implements PermissionService{
      * @return null
      */
     @OperationLog(businessName = "删除权限")
-    public NormalResponse delete(Permission permission) {
-        if(null == permission || null == permission.getId()) return NormalResponse.build().setCode(ResultEnum.INVALID_REQUEST);
+    public ResultSet delete(Permission permission) {
+        if(null == permission || null == permission.getId()) return ResultSet.build().setCode(ResultEnum.INVALID_REQUEST);
 
         permission.setDeleted(DBEnum.TRUE.getCode());
         permissionMapper.updateByPrimaryKeySelective(permission);
-        return NormalResponse.build().setData(null);
+        return ResultSet.build().setData(null);
     }
 }

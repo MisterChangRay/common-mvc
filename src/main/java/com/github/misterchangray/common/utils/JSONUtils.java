@@ -3,7 +3,7 @@ package com.github.misterchangray.common.utils;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.github.misterchangray.common.NormalResponse;
+import com.github.misterchangray.common.ResultSet;
 import com.github.misterchangray.dao.entity.User;
 import org.aspectj.weaver.BCException;
 
@@ -31,7 +31,7 @@ public class JSONUtils {
         User u = new User();
         u.setId(123123);
 
-        NormalResponse<User> n = NormalResponse.build().setData(u);
+        ResultSet<User> n = ResultSet.build().setData(u);
         User u2 = n.getData();
         System.out.println(u2);
 //        System.out.println("1a1".split("\\.").length);

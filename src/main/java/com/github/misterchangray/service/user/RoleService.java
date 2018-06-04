@@ -1,9 +1,7 @@
 package com.github.misterchangray.service.user;
 
-import com.github.misterchangray.common.NormalResponse;
-import com.github.misterchangray.common.NormalResponse;
+import com.github.misterchangray.common.ResultSet;
 import com.github.misterchangray.dao.entity.Role;
-import com.github.misterchangray.dao.entity.RoleQuery;
 import com.github.misterchangray.service.BaseService;
 
 import java.util.List;
@@ -21,6 +19,6 @@ public interface RoleService extends BaseService<Role> {
      * @param permissions 更新权限id集合
      * @return
      */
-    NormalResponse updatePermission(Integer roleId, List<Integer> permissions) ;
+    ResultSet updatePermission(Integer roleId, List<Integer> permissions) ;
 
 }

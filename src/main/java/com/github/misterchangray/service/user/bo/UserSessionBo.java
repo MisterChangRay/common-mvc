@@ -1,9 +1,8 @@
 package com.github.misterchangray.service.user.bo;
 
-import com.github.misterchangray.common.NormalResponse;
+import com.github.misterchangray.common.ResultSet;
 import com.github.misterchangray.common.exception.ServiceException;
 import com.github.misterchangray.common.utils.JSONUtils;
-import com.github.misterchangray.dao.entity.LoginLog;
 import com.github.misterchangray.dao.entity.User;
 import com.github.misterchangray.service.common.RedisCacheService;
 import com.github.misterchangray.service.log.LoginLogService;
@@ -53,7 +52,7 @@ public class UserSessionBo {
     public String createSession(String userId) throws ServiceException {
         if(null == userId) return null;
 
-        NormalResponse response = userService.getById(Integer.parseInt(userId));
+        ResultSet response = userService.getById(Integer.parseInt(userId));
         if(0 != response.getCode()) return null;
         User user = (User) response.getData();
 

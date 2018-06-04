@@ -1,13 +1,9 @@
 package com.github.misterchangray.service;
 
 
-import com.github.misterchangray.common.NormalResponse;
+import com.github.misterchangray.common.ResultSet;
 import com.github.misterchangray.common.PageInfo;
-import com.github.misterchangray.common.NormalResponse;
-import com.github.misterchangray.common.PageInfo;
-import com.github.misterchangray.common.exception.ServiceException;
 
-import javax.management.Query;
 import java.util.List;
 
 /**
@@ -23,14 +19,14 @@ public interface BaseService<Entity> {
      * @param ids
      * @return
      */
-    NormalResponse exist(List<Integer> ids);
+    ResultSet exist(List<Integer> ids);
 
     /**
      * 根据实体ID获取对象
      * @param id
      * @return
      */
-    NormalResponse getById(Integer id);
+    ResultSet getById(Integer id);
 
 
     /**
@@ -38,35 +34,35 @@ public interface BaseService<Entity> {
      * @param ids
      * @return
      */
-    NormalResponse getByIds(List<Integer> ids);
+    ResultSet getByIds(List<Integer> ids);
 
     /**
      * 简单列表
      * @param entity
      * @return
      */
-    NormalResponse list(Entity entity, PageInfo pageInfo);
+    ResultSet list(Entity entity, PageInfo pageInfo);
 
     /**
      * 新增
      * @param entity
      * @return
      */
-    NormalResponse insert(Entity entity);
+    ResultSet insert(Entity entity);
 
     /**
      * 批量新增
      * @param entities
      * @return
      */
-    NormalResponse batchInsert(List<Entity> entities);
+    ResultSet batchInsert(List<Entity> entities);
 
     /**
      * 编辑
      * @param entity
      * @return
      */
-    NormalResponse update(Entity entity);
+    ResultSet update(Entity entity);
 
 
     /**
@@ -74,6 +70,6 @@ public interface BaseService<Entity> {
      * @param entity
      * @return
      */
-    NormalResponse delete(Entity entity);
+    ResultSet delete(Entity entity);
 
 }

@@ -1,12 +1,14 @@
 package com.github.misterchangray.common.interceptor;
 
-import com.github.misterchangray.common.NormalResponse;
+import com.github.misterchangray.common.ResultSet;
 import com.github.misterchangray.common.enums.ResultEnum;
 import com.github.misterchangray.common.exception.ServiceException;
 import org.apache.log4j.Logger;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.ResponseBody;
+
+import javax.servlet.http.HttpServletResponse;
 
 /**
  * 提供全局统一异常处理
@@ -24,7 +26,10 @@ public class GlobalExceptionHandler {
 
     @ExceptionHandler(Exception.class)
     @ResponseBody
-    public NormalResponse serviceExceptionHandler(Exception ex) {
+    public ResultSet serviceExceptionHandler(Exception ex, HttpServletResponse httpServletResponse) {
+        //允许跨域访问
+        httpServletResponse.setHeader("Access-Control-Allow-Origin","*");
+
         //对捕获的异常进行处理并打印日志等，之后返回json数据，方式与Controller相同
         ex.printStackTrace();
         ServiceException serviceException = null;
@@ -40,10 +45,10 @@ public class GlobalExceptionHandler {
 
         }
 
-        NormalResponse normalResponse = NormalResponse.build(serviceException.getResultEnum());
-        if(null != serviceException.getMsg()) normalResponse.setMsg(serviceException.getMsg());
+        ResultSet resultSet = ResultSet.build(serviceException.getResultEnum());
+        if(null != serviceException.getMsg()) resultSet.setMsg(serviceException.getMsg());
 
-        return normalResponse;
+        return resultSet;
     }
 
 

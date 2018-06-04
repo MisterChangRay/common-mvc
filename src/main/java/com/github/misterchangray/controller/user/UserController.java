@@ -1,6 +1,6 @@
 package com.github.misterchangray.controller.user;
 
-import com.github.misterchangray.common.NormalResponse;
+import com.github.misterchangray.common.ResultSet;
 import com.github.misterchangray.common.PageInfo;
 import com.github.misterchangray.common.annotation.Authentication;
 import com.github.misterchangray.common.annotation.OperationLog;
@@ -59,7 +59,7 @@ public class UserController {
     })
     @RequestMapping(value = "/checkUserInfo", method = RequestMethod.POST)
     @ResponseBody
-    public NormalResponse checkUser(@RequestParam(required = false) String username,
+    public ResultSet checkUser(@RequestParam(required = false) String username,
                                     @RequestParam(required = false) String phone,
                                     @RequestParam(required = false) String idcard,
                                     @RequestParam(required = false) String email) {
@@ -80,7 +80,7 @@ public class UserController {
     })
     @RequestMapping(value="/{userId}/role", method = RequestMethod.PATCH)
     @ResponseBody
-    public NormalResponse editUserRole(@PathVariable Integer userId, @RequestParam List<Integer> roleIds) {
+    public ResultSet editUserRole(@PathVariable Integer userId, @RequestParam List<Integer> roleIds) {
         return userService.updateRole(userId, roleIds);
     }
 
@@ -95,7 +95,7 @@ public class UserController {
     })
     @RequestMapping(value="/{userId}", method = RequestMethod.GET)
     @ResponseBody
-    public NormalResponse getById(@PathVariable Integer userId) {
+    public ResultSet getById(@PathVariable Integer userId) {
         return userService.getById(userId);
     }
 
@@ -112,7 +112,7 @@ public class UserController {
     })
     @RequestMapping(method = RequestMethod.GET)
     @ResponseBody
-    public NormalResponse list(@RequestParam(required =  false) Integer page, @RequestParam(required = false) Integer limit) {
+    public ResultSet list(@RequestParam(required =  false) Integer page, @RequestParam(required = false) Integer limit) {
         User user = new User();
 
         return userService.list(user, PageInfo.newInstance(page, limit));
@@ -130,7 +130,7 @@ public class UserController {
     @OperationLog(businessName = "新增用户")
     @RequestMapping(method = RequestMethod.POST)
     @ResponseBody
-    public NormalResponse add(@RequestBody User user) {
+    public ResultSet add(@RequestBody User user) {
         return userService.insert(user);
     }
 
@@ -146,7 +146,7 @@ public class UserController {
     })
     @RequestMapping(value = "{id}", method = RequestMethod.DELETE)
     @ResponseBody
-    public NormalResponse delete(@PathVariable(value = "id") Integer id) {
+    public ResultSet delete(@PathVariable(value = "id") Integer id) {
         User user = new User();
         user.setId(id);
         return userService.delete(user);
@@ -164,7 +164,7 @@ public class UserController {
     })
     @RequestMapping(method = RequestMethod.PUT)
     @ResponseBody
-    public NormalResponse edit(@RequestBody User user) {
+    public ResultSet edit(@RequestBody User user) {
        return userService.update(user);
     }
 

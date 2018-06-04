@@ -1,10 +1,9 @@
 package com.github.misterchangray.service.user.impl;
 
+import com.github.misterchangray.common.ResultSet;
 import com.github.misterchangray.common.annotation.OperationLog;
 import com.github.misterchangray.common.enums.ResultEnum;
-import com.github.misterchangray.common.NormalResponse;
 import com.github.misterchangray.common.PageInfo;
-import com.github.misterchangray.common.exception.ServiceException;
 import com.github.misterchangray.dao.entity.User;
 import com.github.misterchangray.dao.entity.UserQuery;
 import com.github.misterchangray.dao.entity.UserRoleMap;
@@ -42,12 +41,12 @@ public class UserServiceImpl implements UserService{
      * @return
      */
     @OperationLog(businessName = "更新用户角色")
-    public NormalResponse updateRole(Integer userId, List<Integer> roles){
-        NormalResponse normalResponse = NormalResponse.build();
-        if(null == userId) return normalResponse.setCode(ResultEnum.INVALID_REQUEST);
-        if(null == roles) return normalResponse.setCode(ResultEnum.INVALID_REQUEST);
+    public ResultSet updateRole(Integer userId, List<Integer> roles){
+        ResultSet resultSet = ResultSet.build();
+        if(null == userId) return resultSet.setCode(ResultEnum.INVALID_REQUEST);
+        if(null == roles) return resultSet.setCode(ResultEnum.INVALID_REQUEST);
 
-        NormalResponse<Boolean> result = roleService.exist(roles);
+        ResultSet<Boolean> result = roleService.exist(roles);
         //判断ID是否都存在
         if(result.getData()) {
             //老数据标记为无效
@@ -69,9 +68,9 @@ public class UserServiceImpl implements UserService{
                 userRoleMaps.add(tmp);
             }
             userRoleMapMapper.batchInsert(userRoleMaps);
-            return normalResponse;
+            return resultSet;
         }
-        return normalResponse.setCode(ResultEnum.INVALID);
+        return resultSet.setCode(ResultEnum.INVALID);
     }
 
     /**
@@ -82,7 +81,7 @@ public class UserServiceImpl implements UserService{
      * @param idcard    身份证
      * @return true/false
      */
-    public NormalResponse checkUserInfo(String username, String email, String phone, String idcard) {
+    public ResultSet checkUserInfo(String username, String email, String phone, String idcard) {
         UserQuery userQuery = new UserQuery();
         UserQuery.Criteria criteria = userQuery.createCriteria();
 
@@ -91,7 +90,7 @@ public class UserServiceImpl implements UserService{
         if(null != idcard) userQuery.or(criteria.andIdcardEqualTo(idcard));
         if(null != username) userQuery.or(criteria.andUsernameEqualTo(username));
 
-        return NormalResponse.build().setData(userMapper.selectByQuery(userQuery));
+        return ResultSet.build().setData(userMapper.selectByQuery(userQuery));
     }
 
 
@@ -100,16 +99,16 @@ public class UserServiceImpl implements UserService{
      * @param ids 待检查ID集合
      * @return true/false
      */
-    public NormalResponse exist(List<Integer> ids) {
-        if(null == ids) NormalResponse.build().setCode(ResultEnum.INVALID_REQUEST);
+    public ResultSet exist(List<Integer> ids) {
+        if(null == ids) ResultSet.build().setCode(ResultEnum.INVALID_REQUEST);
 
         UserQuery userQuery = new UserQuery();
         UserQuery.Criteria criteria = userQuery.createCriteria();
         criteria.andIdIn(ids);
         if(ids.size() == userMapper.countByQuery(userQuery)) {
-           return NormalResponse.build().setData(true);
+           return ResultSet.build().setData(true);
         } else {
-           return NormalResponse.build().setData(false);
+           return ResultSet.build().setData(false);
         }
     }
 
@@ -119,12 +118,12 @@ public class UserServiceImpl implements UserService{
      * @param id 待获取ID
      * @return  User
      */
-    public NormalResponse getById(Integer id) {
-        if(null == id) return NormalResponse.build().setCode(ResultEnum.INVALID_REQUEST);
+    public ResultSet getById(Integer id) {
+        if(null == id) return ResultSet.build().setCode(ResultEnum.INVALID_REQUEST);
         User user = userMapper.selectByPrimaryKey(id);
 
-        if(user.getDeleted().equals(DBEnum.TRUE.getCode()))  return NormalResponse.build().setCode(ResultEnum.GONE);
-        return NormalResponse.build().setData(user);
+        if(user.getDeleted().equals(DBEnum.TRUE.getCode()))  return ResultSet.build().setCode(ResultEnum.GONE);
+        return ResultSet.build().setData(user);
     }
 
     /**
@@ -132,13 +131,13 @@ public class UserServiceImpl implements UserService{
      * @param ids 待获取的ID集合
      * @return  List[User]
      */
-    public NormalResponse getByIds(List<Integer> ids) {
-        if(null == ids) NormalResponse.build().setCode(ResultEnum.INVALID_REQUEST);
+    public ResultSet getByIds(List<Integer> ids) {
+        if(null == ids) ResultSet.build().setCode(ResultEnum.INVALID_REQUEST);
 
         UserQuery userQuery = new UserQuery();
         userQuery.createCriteria().andIdIn(ids).andDeletedEqualTo(DBEnum.FALSE.getCode());
 
-        return NormalResponse.build().setData(userMapper.selectByQuery(userQuery));
+        return ResultSet.build().setData(userMapper.selectByQuery(userQuery));
     }
 
     /**
@@ -147,7 +146,7 @@ public class UserServiceImpl implements UserService{
      * @param pageInfo 分页信息
      * @return List[User]
      */
-    public NormalResponse list(User user, PageInfo pageInfo) {
+    public ResultSet list(User user, PageInfo pageInfo) {
         if(null == pageInfo) pageInfo = new PageInfo();
 
         UserQuery userQuery = new UserQuery();
@@ -164,7 +163,7 @@ public class UserServiceImpl implements UserService{
         }
 
         pageInfo.setCount(userMapper.countByQuery(userQuery));
-        return NormalResponse.build().setData(userMapper.selectByQuery(userQuery)).setPageInfo(pageInfo);
+        return ResultSet.build().setData(userMapper.selectByQuery(userQuery)).setPageInfo(pageInfo);
     }
 
     /**
@@ -173,14 +172,14 @@ public class UserServiceImpl implements UserService{
      * @return User
      */
     @OperationLog(businessName = "增加用户")
-    public NormalResponse insert(User user) {
-        if(null == user) return NormalResponse.build().setCode(ResultEnum.INVALID_REQUEST);
+    public ResultSet insert(User user) {
+        if(null == user) return ResultSet.build().setCode(ResultEnum.INVALID_REQUEST);
 
         user.setId(null);
         user.setEnabled(DBEnum.TRUE.getCode());
         user.setDeleted(DBEnum.FALSE.getCode());
         userMapper.insert(user);
-        return NormalResponse.build().setData(user);
+        return ResultSet.build().setData(user);
     }
 
     /**
@@ -189,10 +188,10 @@ public class UserServiceImpl implements UserService{
      * @return
      */
     @OperationLog(businessName = "批量增加用户")
-    public NormalResponse batchInsert(List<User> users) {
-        if(null == users) return NormalResponse.build().setCode(ResultEnum.INVALID_REQUEST);
+    public ResultSet batchInsert(List<User> users) {
+        if(null == users) return ResultSet.build().setCode(ResultEnum.INVALID_REQUEST);
 
-        return NormalResponse.build().setData(userMapper.batchInsert(users));
+        return ResultSet.build().setData(userMapper.batchInsert(users));
     }
 
     /**
@@ -201,8 +200,8 @@ public class UserServiceImpl implements UserService{
      * @return User
      */
     @OperationLog(businessName = "更新用户")
-    public NormalResponse update(User user) {
-        if(null == user || null == user.getId()) return NormalResponse.build().setCode(ResultEnum.INVALID_REQUEST);
+    public ResultSet update(User user) {
+        if(null == user || null == user.getId()) return ResultSet.build().setCode(ResultEnum.INVALID_REQUEST);
 
         User dbUser = userMapper.selectByPrimaryKey(user.getId());
         if(dbUser.getDeleted().equals(DBEnum.FALSE.getCode())) {
@@ -210,7 +209,7 @@ public class UserServiceImpl implements UserService{
             user = userMapper.selectByPrimaryKey(user.getId());
         }
 
-        return NormalResponse.build().setData(user);
+        return ResultSet.build().setData(user);
     }
 
 
@@ -220,11 +219,11 @@ public class UserServiceImpl implements UserService{
      * @return null
      */
     @OperationLog(businessName = "删除用户角色")
-    public NormalResponse delete(User user) {
-        if(null == user || null == user.getId()) return NormalResponse.build().setCode(ResultEnum.INVALID_REQUEST);
+    public ResultSet delete(User user) {
+        if(null == user || null == user.getId()) return ResultSet.build().setCode(ResultEnum.INVALID_REQUEST);
 
         user.setDeleted(DBEnum.TRUE.getCode());
         userMapper.updateByPrimaryKeySelective(user);
-        return NormalResponse.build().setData(null);
+        return ResultSet.build().setData(null);
     }
 }

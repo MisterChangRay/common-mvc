@@ -1,8 +1,8 @@
 package com.github.misterchangray.controller.user;
 
 import com.github.misterchangray.common.PageInfo;
+import com.github.misterchangray.common.ResultSet;
 import com.github.misterchangray.common.enums.ResultEnum;
-import com.github.misterchangray.common.NormalResponse;
 import com.github.misterchangray.service.user.PermissionService;
 import com.github.misterchangray.service.user.RoleService;
 import com.github.misterchangray.common.annotation.Authentication;
@@ -53,12 +53,12 @@ public class RoleController {
     @Authentication
     @RequestMapping(value="/{roleId}/permission", method = RequestMethod.PATCH)
     @ResponseBody
-    public NormalResponse editRolePermission(@PathVariable Integer roleId, @RequestParam List permissionIds) {
-        NormalResponse normalResponse = NormalResponse.build();
+    public ResultSet editRolePermission(@PathVariable Integer roleId, @RequestParam List permissionIds) {
+        ResultSet resultSet = ResultSet.build();
         if(null != roleId && null != permissionIds && 0 < permissionIds.size()) {
             return roleService.updatePermission(roleId, permissionIds);
         }
-        return normalResponse.setCode(ResultEnum.INVALID_REQUEST);
+        return resultSet.setCode(ResultEnum.INVALID_REQUEST);
     }
 
 
@@ -75,7 +75,7 @@ public class RoleController {
     @Authentication
     @RequestMapping(method = RequestMethod.GET)
     @ResponseBody
-    public NormalResponse list(@RequestParam Integer page, @RequestParam Integer limit) {
+    public ResultSet list(@RequestParam Integer page, @RequestParam Integer limit) {
         Role role = new Role();
         return roleService.list(role, PageInfo.newInstance(page, limit));
     }
@@ -92,7 +92,7 @@ public class RoleController {
     @Authentication
     @RequestMapping(method = RequestMethod.POST)
     @ResponseBody
-    public NormalResponse add(@RequestBody Role role) {
+    public ResultSet add(@RequestBody Role role) {
        return roleService.insert(role);
     }
 
@@ -109,7 +109,7 @@ public class RoleController {
     @Authentication
     @RequestMapping(value = "/{id}", method = RequestMethod.DELETE)
     @ResponseBody
-    public NormalResponse delete(@PathVariable("id") Integer id) {
+    public ResultSet delete(@PathVariable("id") Integer id) {
         Role role = new Role();
         role.setId(id);
         return roleService.delete(role);
@@ -128,7 +128,7 @@ public class RoleController {
     @Authentication
     @RequestMapping(method = RequestMethod.PUT)
     @ResponseBody
-    public NormalResponse edit(@RequestBody Role role) {
+    public ResultSet edit(@RequestBody Role role) {
         return roleService.update(role);
     }
 

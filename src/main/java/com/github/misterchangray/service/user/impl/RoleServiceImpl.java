@@ -1,9 +1,9 @@
 package com.github.misterchangray.service.user.impl;
 
+import com.github.misterchangray.common.ResultSet;
 import com.github.misterchangray.common.annotation.OperationLog;
 import com.github.misterchangray.common.enums.DBEnum;
 import com.github.misterchangray.common.enums.ResultEnum;
-import com.github.misterchangray.common.NormalResponse;
 import com.github.misterchangray.common.PageInfo;
 import com.github.misterchangray.dao.entity.*;
 import com.github.misterchangray.service.user.PermissionService;
@@ -38,17 +38,17 @@ public class RoleServiceImpl implements RoleService {
      * @param ids 待检测ID集合
      * @return true/id都存在,false/有部分id不存在
      */
-    public NormalResponse exist(List<Integer> ids) {
-        if(null == ids) NormalResponse.build().setCode(ResultEnum.INVALID_REQUEST);
+    public ResultSet exist(List<Integer> ids) {
+        if(null == ids) ResultSet.build().setCode(ResultEnum.INVALID_REQUEST);
 
         RoleQuery roleQuery = new RoleQuery();
         RoleQuery.Criteria criteria = roleQuery.createCriteria();
         criteria.andDeletedEqualTo(DBEnum.FALSE.getCode());
         criteria.andIdIn(ids);
         if(ids.size() == roleMapper.countByQuery(roleQuery)) {
-            return NormalResponse.build().setData(true);
+            return ResultSet.build().setData(true);
         } else {
-            return NormalResponse.build().setData(false);
+            return ResultSet.build().setData(false);
         }
     }
 
@@ -58,11 +58,11 @@ public class RoleServiceImpl implements RoleService {
      * @param id 带获取角色id
      * @return Role
      */
-    public NormalResponse getById(Integer id) {
-        if(null == id) return NormalResponse.build().setCode(ResultEnum.INVALID_REQUEST);
+    public ResultSet getById(Integer id) {
+        if(null == id) return ResultSet.build().setCode(ResultEnum.INVALID_REQUEST);
         Role role = roleMapper.selectByPrimaryKey(id);
-        if(role.getDeleted().equals(DBEnum.TRUE.getCode())) return NormalResponse.build().setCode(ResultEnum.GONE);
-        return NormalResponse.build().setData(role);
+        if(role.getDeleted().equals(DBEnum.TRUE.getCode())) return ResultSet.build().setCode(ResultEnum.GONE);
+        return ResultSet.build().setData(role);
     }
 
     /**
@@ -70,12 +70,12 @@ public class RoleServiceImpl implements RoleService {
      * @param ids  待获取对象的id集合
      * @return List[Role]
      */
-    public NormalResponse getByIds(List<Integer> ids) {
-        if(null == ids) NormalResponse.build().setCode(ResultEnum.INVALID_REQUEST);
+    public ResultSet getByIds(List<Integer> ids) {
+        if(null == ids) ResultSet.build().setCode(ResultEnum.INVALID_REQUEST);
 
         RoleQuery roleQuery = new RoleQuery();
         roleQuery.createCriteria().andIdIn(ids).andDeletedEqualTo(DBEnum.FALSE.getCode());
-        return NormalResponse.build().setData(roleMapper.selectByQuery(roleQuery));
+        return ResultSet.build().setData(roleMapper.selectByQuery(roleQuery));
     }
 
     /**
@@ -84,7 +84,7 @@ public class RoleServiceImpl implements RoleService {
      * @param pageInfo 分页信息
      * @return  List[Role]
      */
-    public NormalResponse list(Role role, PageInfo pageInfo) {
+    public ResultSet list(Role role, PageInfo pageInfo) {
         if(null == pageInfo) pageInfo = new PageInfo();
 
         RoleQuery roleQuery = new RoleQuery();
@@ -98,7 +98,7 @@ public class RoleServiceImpl implements RoleService {
         }
 
         pageInfo.setCount(roleMapper.countByQuery(roleQuery));
-        return NormalResponse.build().setData(roleMapper.selectByQuery(roleQuery)).setPageInfo(pageInfo);
+        return ResultSet.build().setData(roleMapper.selectByQuery(roleQuery)).setPageInfo(pageInfo);
     }
 
     /**
@@ -107,12 +107,12 @@ public class RoleServiceImpl implements RoleService {
      * @return  Role
      */
     @OperationLog(businessName = "增加角色")
-    public NormalResponse insert(Role role) {
+    public ResultSet insert(Role role) {
         role.setId(null);
         role.setEnabled(DBEnum.TRUE.getCode());
         role.setDeleted(DBEnum.FALSE.getCode());
         roleMapper.insert(role);
-        return NormalResponse.build().setData(role);
+        return ResultSet.build().setData(role);
     }
 
     /**
@@ -121,10 +121,10 @@ public class RoleServiceImpl implements RoleService {
      * @return
      */
     @OperationLog(businessName = "批量增加角色")
-    public NormalResponse batchInsert(List<Role> roles) {
-        if(null == roles) return NormalResponse.build().setCode(ResultEnum.INVALID_REQUEST);
+    public ResultSet batchInsert(List<Role> roles) {
+        if(null == roles) return ResultSet.build().setCode(ResultEnum.INVALID_REQUEST);
 
-        return NormalResponse.build().setData(roleMapper.batchInsert(roles));
+        return ResultSet.build().setData(roleMapper.batchInsert(roles));
     }
 
     /**
@@ -133,8 +133,8 @@ public class RoleServiceImpl implements RoleService {
      * @return Role
      */
     @OperationLog(businessName = "修改角色")
-    public NormalResponse update(Role role) {
-        if(null == role || null == role.getId()) return NormalResponse.build().setCode(ResultEnum.INVALID_REQUEST);
+    public ResultSet update(Role role) {
+        if(null == role || null == role.getId()) return ResultSet.build().setCode(ResultEnum.INVALID_REQUEST);
 
         Role dbRole = roleMapper.selectByPrimaryKey(role.getId());
         if(DBEnum.FALSE.getCode().equals(dbRole.getDeleted())) {
@@ -142,7 +142,7 @@ public class RoleServiceImpl implements RoleService {
             role = roleMapper.selectByPrimaryKey(role.getId());
         }
 
-        return NormalResponse.build().setData(role);
+        return ResultSet.build().setData(role);
     }
 
     /**
@@ -151,12 +151,12 @@ public class RoleServiceImpl implements RoleService {
      * @return null
      */
     @OperationLog(businessName = "删除角色")
-    public NormalResponse delete(Role role) {
-        if(null == role || null == role.getId()) return NormalResponse.build().setCode(ResultEnum.INVALID_REQUEST);
+    public ResultSet delete(Role role) {
+        if(null == role || null == role.getId()) return ResultSet.build().setCode(ResultEnum.INVALID_REQUEST);
 
         role.setDeleted(DBEnum.TRUE.getCode());
         roleMapper.updateByPrimaryKeySelective(role);
-        return NormalResponse.build().setData(null);
+        return ResultSet.build().setData(null);
     }
 
 
@@ -167,10 +167,10 @@ public class RoleServiceImpl implements RoleService {
      * @return
      */
     @OperationLog(businessName = "更新角色权限")
-    public NormalResponse updatePermission(Integer roleId, List<Integer> permissions) {
-        NormalResponse normalResponse = NormalResponse.build();
-        if(null == roleId) return normalResponse.setCode(ResultEnum.INVALID_REQUEST);
-        if(null == permissions) return normalResponse.setCode(ResultEnum.INVALID_REQUEST);
+    public ResultSet updatePermission(Integer roleId, List<Integer> permissions) {
+        ResultSet resultSet = ResultSet.build();
+        if(null == roleId) return resultSet.setCode(ResultEnum.INVALID_REQUEST);
+        if(null == permissions) return resultSet.setCode(ResultEnum.INVALID_REQUEST);
 
         //判断ID是否都存在
         if(permissions.size() == ((List<Permission>)permissionService.getByIds(permissions)).size()) {
@@ -193,9 +193,9 @@ public class RoleServiceImpl implements RoleService {
                 rolePermissionMaps.add(tmp);
             }
             rolePermissionMapMapper.batchInsert(rolePermissionMaps);
-            return normalResponse;
+            return resultSet;
         }
-        return normalResponse.setCode(ResultEnum.INVALID);
+        return resultSet.setCode(ResultEnum.INVALID);
     }
 
 }
