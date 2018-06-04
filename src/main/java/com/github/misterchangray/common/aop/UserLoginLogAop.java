@@ -53,14 +53,10 @@ public class UserLoginLogAop {
 
 
     @Around(value = "createSession()")
-    public Object createSessionAround(ProceedingJoinPoint point) {
+    public Object createSessionAround(ProceedingJoinPoint point) throws Throwable {
         Object res;
-        try {
-            res = point.proceed();
-        } catch (Throwable throwable) {
-            throwable.printStackTrace();
-            return throwable.getMessage();
-        }
+        res = point.proceed();
+
 
         NormalResponse normalResponse = (NormalResponse) res;
         if(null == normalResponse) return res;

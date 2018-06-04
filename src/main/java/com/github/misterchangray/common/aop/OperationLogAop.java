@@ -37,14 +37,10 @@ public class OperationLogAop {
 
 
     @Around(value = "OperationLog()")
-    public Object around(ProceedingJoinPoint point) {
-       Object res;
-       try {
-            res = point.proceed();
-       } catch (Throwable throwable) {
-            throwable.printStackTrace();
-            return throwable.getMessage();
-       }
+    public Object around(ProceedingJoinPoint point) throws Throwable {
+        Object res;
+        res = point.proceed();
+
         HttpServletRequest request = ((ServletRequestAttributes) RequestContextHolder.getRequestAttributes()).getRequest();
         User user = (User) request.getSession().getAttribute("user");
 

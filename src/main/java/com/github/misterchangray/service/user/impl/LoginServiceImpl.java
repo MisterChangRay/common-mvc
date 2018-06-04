@@ -33,7 +33,7 @@ public class LoginServiceImpl implements LoginService {
     UserSessionBo userSessionBo;
 
 
-    public NormalResponse signInByUserName(String username, String password) throws Exception {
+    public NormalResponse signInByUserName(String username, String password) throws ServiceException {
         NormalResponse res = NormalResponse.build();
 
         UserQuery userQuery = new UserQuery();

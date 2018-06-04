@@ -17,7 +17,7 @@ public interface LoginService {
      * @param password
      * @return
      */
-    NormalResponse signInByUserName(String username, String password) throws Exception;
+    NormalResponse signInByUserName(String username, String password) throws ServiceException;
 
     /**
      * 通过邮箱+密码登录
