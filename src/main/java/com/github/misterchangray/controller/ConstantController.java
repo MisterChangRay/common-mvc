@@ -40,7 +40,7 @@ public class ConstantController {
     @RequestMapping(method = RequestMethod.GET)
     @ResponseBody
     public NormalResponse constant(@RequestParam(required = false) String pid, @RequestParam(required = false) String shortcut) {
-        NormalResponse res = NormalResponse.newInstance();
+        NormalResponse res = NormalResponse.build();
 
         ConstantQuery constantQuery = new ConstantQuery();
         ConstantQuery.Criteria criteria = constantQuery.createCriteria();

@@ -1,6 +1,7 @@
 package com.github.misterchangray.service.user;
 
 import com.github.misterchangray.common.NormalResponse;
+import com.github.misterchangray.common.exception.ServiceException;
 
 /**
  * LoginService
@@ -16,7 +17,7 @@ public interface LoginService {
      * @param password
      * @return
      */
-    NormalResponse signInByUserName(String username, String password);
+    NormalResponse signInByUserName(String username, String password) throws ServiceException;
 
     /**
      * 通过邮箱+密码登录

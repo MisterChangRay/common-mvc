@@ -3,7 +3,8 @@ package com.github.misterchangray.service.user.impl;
 import com.github.misterchangray.common.NormalResponse;
 import com.github.misterchangray.common.annotation.OperationLog;
 import com.github.misterchangray.common.enums.DBEnum;
-import com.github.misterchangray.common.enums.ErrorEnum;
+import com.github.misterchangray.common.enums.ResultEnum;
+import com.github.misterchangray.common.exception.ServiceException;
 import com.github.misterchangray.dao.entity.Permission;
 import com.github.misterchangray.common.PageInfo;
 import com.github.misterchangray.dao.entity.PermissionQuery;
@@ -34,16 +35,16 @@ public class PermissionServiceImpl implements PermissionService{
      * @return false有部分不存在/true全都存在
      */
     public NormalResponse exist(List<Integer> ids) {
-        if(null == ids) NormalResponse.newInstance().setErrorCode(ErrorEnum.INVALID_REQUEST);
+        if(null == ids) return NormalResponse.build(ResultEnum.INVALID_REQUEST);
 
         PermissionQuery permissionQuery = new PermissionQuery();
         PermissionQuery.Criteria criteria = permissionQuery.createCriteria();
         criteria.andIdIn(ids);
         criteria.andDeletedEqualTo(DBEnum.FALSE.getCode());
         if(ids.size() == permissionMapper.countByQuery(permissionQuery)) {
-            return NormalResponse.newInstance().setData(true);
+            return NormalResponse.build().setData(true);
         } else {
-            return NormalResponse.newInstance().setData(false);
+            return NormalResponse.build().setData(false);
         }
     }
 
@@ -53,10 +54,10 @@ public class PermissionServiceImpl implements PermissionService{
      * @return Permission
      */
     public NormalResponse getById(Integer id) {
-        if(null == id) return NormalResponse.newInstance().setErrorCode(ErrorEnum.INVALID_REQUEST);
+        if(null == id) return NormalResponse.build(ResultEnum.INVALID_REQUEST);
         Permission permission = permissionMapper.selectByPrimaryKey(id);
-        if(permission.getDeleted().equals(DBEnum.TRUE.getCode())) return NormalResponse.newInstance().setErrorCode(ErrorEnum.GONE);
-        return NormalResponse.newInstance().setData(permission);
+        if(permission.getDeleted().equals(DBEnum.TRUE.getCode())) return NormalResponse.build().setCode(ResultEnum.GONE);
+        return NormalResponse.build().setData(permission);
     }
 
     /**
@@ -65,11 +66,11 @@ public class PermissionServiceImpl implements PermissionService{
      * @return List[Permission]
      */
     public NormalResponse getByIds(List<Integer> ids) {
-        if(null == ids) NormalResponse.newInstance().setErrorCode(ErrorEnum.INVALID_REQUEST);
+        if(null == ids) NormalResponse.build().setCode(ResultEnum.INVALID_REQUEST);
 
         PermissionQuery permissionQuery = new PermissionQuery();
         permissionQuery.createCriteria().andIdIn(ids).andDeletedEqualTo(DBEnum.FALSE.getCode());
-        return NormalResponse.newInstance().setData(permissionMapper.selectByQuery(permissionQuery));
+        return NormalResponse.build().setData(permissionMapper.selectByQuery(permissionQuery));
     }
 
     /**
@@ -91,7 +92,7 @@ public class PermissionServiceImpl implements PermissionService{
         }
 
         pageInfo.setCount(permissionMapper.countByQuery(permissionQuery));
-        return NormalResponse.newInstance().setData(permissionMapper.selectByQuery(permissionQuery)).setPageInfo(pageInfo);
+        return NormalResponse.build().setData(permissionMapper.selectByQuery(permissionQuery)).setPageInfo(pageInfo);
     }
 
     /**
@@ -104,7 +105,7 @@ public class PermissionServiceImpl implements PermissionService{
         permission.setId(null);
         permission.setDeleted(DBEnum.FALSE.getCode());
         permissionMapper.insert(permission);
-        return NormalResponse.newInstance().setData(permission);
+        return NormalResponse.build().setData(permission);
     }
 
     /**
@@ -114,9 +115,9 @@ public class PermissionServiceImpl implements PermissionService{
      */
     @OperationLog(businessName = "批量增加权限")
     public NormalResponse batchInsert(List<Permission> permissions) {
-        if(null == permissions) return NormalResponse.newInstance().setErrorCode(ErrorEnum.INVALID_REQUEST);
+        if(null == permissions) return NormalResponse.build().setCode(ResultEnum.INVALID_REQUEST);
 
-        return NormalResponse.newInstance().setData(permissionMapper.batchInsert(permissions));
+        return NormalResponse.build().setData(permissionMapper.batchInsert(permissions));
     }
 
     /**
@@ -126,7 +127,7 @@ public class PermissionServiceImpl implements PermissionService{
      */
     @OperationLog(businessName = "更新权限")
     public NormalResponse update(Permission permission) {
-        if(null == permission || null == permission.getId()) return NormalResponse.newInstance().setErrorCode(ErrorEnum.INVALID_REQUEST);
+        if(null == permission || null == permission.getId()) return NormalResponse.build().setCode(ResultEnum.INVALID_REQUEST);
 
         Permission dbPermission = permissionMapper.selectByPrimaryKey(permission.getId());
         if(DBEnum.FALSE.getCode().equals(dbPermission.getDeleted())) {
@@ -134,7 +135,7 @@ public class PermissionServiceImpl implements PermissionService{
             permission = permissionMapper.selectByPrimaryKey(permission.getId());
         }
 
-        return NormalResponse.newInstance().setData(permission);
+        return NormalResponse.build().setData(permission);
     }
 
     /**
@@ -144,10 +145,10 @@ public class PermissionServiceImpl implements PermissionService{
      */
     @OperationLog(businessName = "删除权限")
     public NormalResponse delete(Permission permission) {
-        if(null == permission || null == permission.getId()) return NormalResponse.newInstance().setErrorCode(ErrorEnum.INVALID_REQUEST);
+        if(null == permission || null == permission.getId()) return NormalResponse.build().setCode(ResultEnum.INVALID_REQUEST);
 
         permission.setDeleted(DBEnum.TRUE.getCode());
         permissionMapper.updateByPrimaryKeySelective(permission);
-        return NormalResponse.newInstance().setData(null);
+        return NormalResponse.build().setData(null);
     }
 }

@@ -5,6 +5,7 @@ import com.github.misterchangray.common.NormalResponse;
 import com.github.misterchangray.common.PageInfo;
 import com.github.misterchangray.common.NormalResponse;
 import com.github.misterchangray.common.PageInfo;
+import com.github.misterchangray.common.exception.ServiceException;
 
 import javax.management.Query;
 import java.util.List;

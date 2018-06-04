@@ -2,7 +2,8 @@ package com.github.misterchangray.controller.user;
 
 import com.github.misterchangray.common.NormalResponse;
 import com.github.misterchangray.common.annotation.Authentication;
-import com.github.misterchangray.common.enums.ErrorEnum;
+import com.github.misterchangray.common.enums.ResultEnum;
+import com.github.misterchangray.common.exception.ServiceException;
 import com.github.misterchangray.service.user.LoginService;
 import com.github.misterchangray.service.user.UserService;
 import com.github.misterchangray.service.user.bo.UserSessionBo;
@@ -67,11 +68,11 @@ public class LoginController {
     public NormalResponse signIn(@RequestParam(required = false) String username,
                                 @RequestParam(required = false) String email,
                                 @RequestParam(required = false) String phone,
-                                @RequestParam String password) {
+                                @RequestParam String password) throws Exception {
 
-        NormalResponse res = NormalResponse.newInstance();
+        NormalResponse res = NormalResponse.build();
         if((null == username && null == email && null == phone) || null == password) {
-            res.setErrorCode(ErrorEnum.INVALID_REQUEST);
+            res.setCode(ResultEnum.INVALID_REQUEST);
             return res;
         }
         if(null != username && null != password) {
@@ -109,7 +110,7 @@ public class LoginController {
     @ResponseBody
     public NormalResponse heartbeat(@RequestHeader("Authentication") String authentication) {
         userSessionBo.heartbeat(authentication);
-        return NormalResponse.newInstance();
+        return NormalResponse.build();
     }
 
 

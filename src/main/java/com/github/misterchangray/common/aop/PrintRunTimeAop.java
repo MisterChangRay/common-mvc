@@ -26,16 +26,12 @@ public class PrintRunTimeAop {
     private void pointcut() {}
 
     @Around(value = "pointcut() && @annotation(com.github.misterchangray.common.annotation.PrintRunTime)")
-    public Object around(ProceedingJoinPoint point) {
+    public Object around(ProceedingJoinPoint point) throws Throwable {
         Long time, time2;
         Object res;
         time = new Date().getTime();
-        try {
-            res = point.proceed();
-        } catch (Throwable throwable) {
-            throwable.printStackTrace();
-            return throwable.getMessage();
-        }
+        res = point.proceed();
+
         time2 = new Date().getTime();
         MethodSignature signature = (MethodSignature) point.getSignature();
         Method method = signature.getMethod();

@@ -1,9 +1,10 @@
 package com.github.misterchangray.service.user.impl;
 
 import com.github.misterchangray.common.annotation.OperationLog;
-import com.github.misterchangray.common.enums.ErrorEnum;
+import com.github.misterchangray.common.enums.ResultEnum;
 import com.github.misterchangray.common.NormalResponse;
 import com.github.misterchangray.common.PageInfo;
+import com.github.misterchangray.common.exception.ServiceException;
 import com.github.misterchangray.dao.entity.User;
 import com.github.misterchangray.dao.entity.UserQuery;
 import com.github.misterchangray.dao.entity.UserRoleMap;
@@ -41,13 +42,14 @@ public class UserServiceImpl implements UserService{
      * @return
      */
     @OperationLog(businessName = "更新用户角色")
-    public NormalResponse updateRole(Integer userId, List<Integer> roles) {
-        NormalResponse normalResponse = NormalResponse.newInstance();
-        if(null == userId) return normalResponse.setErrorCode(ErrorEnum.INVALID_REQUEST);
-        if(null == roles) return normalResponse.setErrorCode(ErrorEnum.INVALID_REQUEST);
+    public NormalResponse updateRole(Integer userId, List<Integer> roles){
+        NormalResponse normalResponse = NormalResponse.build();
+        if(null == userId) return normalResponse.setCode(ResultEnum.INVALID_REQUEST);
+        if(null == roles) return normalResponse.setCode(ResultEnum.INVALID_REQUEST);
 
+        NormalResponse<Boolean> result = roleService.exist(roles);
         //判断ID是否都存在
-        if(((Boolean)roleService.exist(roles).getData())) {
+        if(result.getData()) {
             //老数据标记为无效
             UserRoleMap userRoleMap= new UserRoleMap();
             userRoleMap.setDeleted(DBEnum.TRUE.getCode());
@@ -69,7 +71,7 @@ public class UserServiceImpl implements UserService{
             userRoleMapMapper.batchInsert(userRoleMaps);
             return normalResponse;
         }
-        return normalResponse.setErrorCode(ErrorEnum.INVALID);
+        return normalResponse.setCode(ResultEnum.INVALID);
     }
 
     /**
@@ -89,7 +91,7 @@ public class UserServiceImpl implements UserService{
         if(null != idcard) userQuery.or(criteria.andIdcardEqualTo(idcard));
         if(null != username) userQuery.or(criteria.andUsernameEqualTo(username));
 
-        return NormalResponse.newInstance().setData(userMapper.selectByQuery(userQuery));
+        return NormalResponse.build().setData(userMapper.selectByQuery(userQuery));
     }
 
 
@@ -99,15 +101,15 @@ public class UserServiceImpl implements UserService{
      * @return true/false
      */
     public NormalResponse exist(List<Integer> ids) {
-        if(null == ids) NormalResponse.newInstance().setErrorCode(ErrorEnum.INVALID_REQUEST);
+        if(null == ids) NormalResponse.build().setCode(ResultEnum.INVALID_REQUEST);
 
         UserQuery userQuery = new UserQuery();
         UserQuery.Criteria criteria = userQuery.createCriteria();
         criteria.andIdIn(ids);
         if(ids.size() == userMapper.countByQuery(userQuery)) {
-           return NormalResponse.newInstance().setData(true);
+           return NormalResponse.build().setData(true);
         } else {
-           return NormalResponse.newInstance().setData(false);
+           return NormalResponse.build().setData(false);
         }
     }
 
@@ -118,11 +120,11 @@ public class UserServiceImpl implements UserService{
      * @return  User
      */
     public NormalResponse getById(Integer id) {
-        if(null == id) return NormalResponse.newInstance().setErrorCode(ErrorEnum.INVALID_REQUEST);
+        if(null == id) return NormalResponse.build().setCode(ResultEnum.INVALID_REQUEST);
         User user = userMapper.selectByPrimaryKey(id);
 
-        if(user.getDeleted().equals(DBEnum.TRUE.getCode()))  return NormalResponse.newInstance().setErrorCode(ErrorEnum.GONE);
-        return NormalResponse.newInstance().setData(user);
+        if(user.getDeleted().equals(DBEnum.TRUE.getCode()))  return NormalResponse.build().setCode(ResultEnum.GONE);
+        return NormalResponse.build().setData(user);
     }
 
     /**
@@ -131,12 +133,12 @@ public class UserServiceImpl implements UserService{
      * @return  List[User]
      */
     public NormalResponse getByIds(List<Integer> ids) {
-        if(null == ids) NormalResponse.newInstance().setErrorCode(ErrorEnum.INVALID_REQUEST);
+        if(null == ids) NormalResponse.build().setCode(ResultEnum.INVALID_REQUEST);
 
         UserQuery userQuery = new UserQuery();
         userQuery.createCriteria().andIdIn(ids).andDeletedEqualTo(DBEnum.FALSE.getCode());
 
-        return NormalResponse.newInstance().setData(userMapper.selectByQuery(userQuery));
+        return NormalResponse.build().setData(userMapper.selectByQuery(userQuery));
     }
 
     /**
@@ -162,7 +164,7 @@ public class UserServiceImpl implements UserService{
         }
 
         pageInfo.setCount(userMapper.countByQuery(userQuery));
-        return NormalResponse.newInstance().setData(userMapper.selectByQuery(userQuery)).setPageInfo(pageInfo);
+        return NormalResponse.build().setData(userMapper.selectByQuery(userQuery)).setPageInfo(pageInfo);
     }
 
     /**
@@ -172,13 +174,13 @@ public class UserServiceImpl implements UserService{
      */
     @OperationLog(businessName = "增加用户")
     public NormalResponse insert(User user) {
-        if(null == user) return NormalResponse.newInstance().setErrorCode(ErrorEnum.INVALID_REQUEST);
+        if(null == user) return NormalResponse.build().setCode(ResultEnum.INVALID_REQUEST);
 
         user.setId(null);
         user.setEnabled(DBEnum.TRUE.getCode());
         user.setDeleted(DBEnum.FALSE.getCode());
         userMapper.insert(user);
-        return NormalResponse.newInstance().setData(user);
+        return NormalResponse.build().setData(user);
     }
 
     /**
@@ -188,9 +190,9 @@ public class UserServiceImpl implements UserService{
      */
     @OperationLog(businessName = "批量增加用户")
     public NormalResponse batchInsert(List<User> users) {
-        if(null == users) return NormalResponse.newInstance().setErrorCode(ErrorEnum.INVALID_REQUEST);
+        if(null == users) return NormalResponse.build().setCode(ResultEnum.INVALID_REQUEST);
 
-        return NormalResponse.newInstance().setData(userMapper.batchInsert(users));
+        return NormalResponse.build().setData(userMapper.batchInsert(users));
     }
 
     /**
@@ -200,7 +202,7 @@ public class UserServiceImpl implements UserService{
      */
     @OperationLog(businessName = "更新用户")
     public NormalResponse update(User user) {
-        if(null == user || null == user.getId()) return NormalResponse.newInstance().setErrorCode(ErrorEnum.INVALID_REQUEST);
+        if(null == user || null == user.getId()) return NormalResponse.build().setCode(ResultEnum.INVALID_REQUEST);
 
         User dbUser = userMapper.selectByPrimaryKey(user.getId());
         if(dbUser.getDeleted().equals(DBEnum.FALSE.getCode())) {
@@ -208,7 +210,7 @@ public class UserServiceImpl implements UserService{
             user = userMapper.selectByPrimaryKey(user.getId());
         }
 
-        return NormalResponse.newInstance().setData(user);
+        return NormalResponse.build().setData(user);
     }
 
 
@@ -219,10 +221,10 @@ public class UserServiceImpl implements UserService{
      */
     @OperationLog(businessName = "删除用户角色")
     public NormalResponse delete(User user) {
-        if(null == user || null == user.getId()) return NormalResponse.newInstance().setErrorCode(ErrorEnum.INVALID_REQUEST);
+        if(null == user || null == user.getId()) return NormalResponse.build().setCode(ResultEnum.INVALID_REQUEST);
 
         user.setDeleted(DBEnum.TRUE.getCode());
         userMapper.updateByPrimaryKeySelective(user);
-        return NormalResponse.newInstance().setData(null);
+        return NormalResponse.build().setData(null);
     }
 }
