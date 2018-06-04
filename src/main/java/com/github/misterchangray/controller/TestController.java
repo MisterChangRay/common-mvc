@@ -1,6 +1,8 @@
 package com.github.misterchangray.controller;
 
 import com.github.misterchangray.common.NormalResponse;
+import com.github.misterchangray.common.enums.ResultEnum;
+import com.github.misterchangray.common.exception.ServiceException;
 import com.github.misterchangray.common.utils.EmailBuilder;
 import com.github.misterchangray.service.common.RedisCacheService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -23,12 +25,25 @@ public class TestController {
     @Autowired
     RedisCacheService redisCacheService;
 
-    @RequestMapping(method = RequestMethod.GET)
+    @RequestMapping(value = "test1",method = RequestMethod.GET)
     @ResponseBody
-    public NormalResponse constant(@RequestParam(required = false) Integer pid) {
-        NormalResponse res = NormalResponse.newInstance();
+    public NormalResponse constant(@RequestParam(required = false) Integer pid) throws Exception {
+        NormalResponse res = NormalResponse.build();
 
-        EmailBuilder.build().sendSimpleEmail("jioulongzi@qq.com", " 914590431@qq.com", "wocao", "dajia 快看啊 阿道夫为");
+//        EmailBuilder.build().sendSimpleEmail("jioulongzi@qq.com", " 914590431@qq.com", "wocao", "dajia 快看啊 阿道夫为");
+//        res.getData().toString();
+        throw new ServiceException(ResultEnum.EXIST);
+//        return res;
+    }
+
+    @RequestMapping(value = "test2",method = RequestMethod.GET)
+    @ResponseBody
+    public NormalResponse constant2(@RequestParam(required = false) Integer pid) throws Exception {
+        NormalResponse res = NormalResponse.build();
+
+//        EmailBuilder.build().sendSimpleEmail("jioulongzi@qq.com", " 914590431@qq.com", "wocao", "dajia 快看啊 阿道夫为");
+        res.getData().toString();
+//        throw new ServiceException(ResultEnum.EXIST);
         return res;
     }
 }

@@ -31,7 +31,7 @@ public class JSONUtils {
         User u = new User();
         u.setId(123123);
 
-        NormalResponse<User> n = NormalResponse.newInstance().setData(u);
+        NormalResponse<User> n = NormalResponse.build().setData(u);
         User u2 = n.getData();
         System.out.println(u2);
 //        System.out.println("1a1".split("\\.").length);

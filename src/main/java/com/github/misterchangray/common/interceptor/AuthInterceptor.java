@@ -3,7 +3,7 @@ package com.github.misterchangray.common.interceptor;
 
 import com.github.misterchangray.common.NormalResponse;
 import com.github.misterchangray.common.annotation.Authentication;
-import com.github.misterchangray.common.enums.ErrorEnum;
+import com.github.misterchangray.common.enums.ResultEnum;
 import com.github.misterchangray.common.utils.JSONUtils;
 import com.github.misterchangray.service.user.UserService;
 import com.github.misterchangray.service.user.bo.UserSessionBo;
@@ -55,17 +55,17 @@ public class AuthInterceptor extends HandlerInterceptorAdapter {
             // 执行认证
             String token = request.getHeader("Authentication");  // 从 http 请求头中取出 Authentication
 
-            NormalResponse normalResponse = NormalResponse.newInstance();
+            NormalResponse normalResponse = NormalResponse.build();
             if (null == token) {
-                normalResponse.setErrorCode(ErrorEnum.NEED_AUTH);
-                normalResponse.setErrorMsg("无token，请先登录");
+                normalResponse.setCode(ResultEnum.NEED_AUTH);
+                normalResponse.setMsg("无token，请先登录");
                 response.getWriter().append(JSONUtils.obj2json(normalResponse));
                 response.setContentType("application/json");
                 return false;
             }
             if(false == userSessionBo.exist(token)) {
-                normalResponse.setErrorCode(ErrorEnum.NEED_AUTH);
-                normalResponse.setErrorMsg("token异常，请重新登录");
+                normalResponse.setCode(ResultEnum.NEED_AUTH);
+                normalResponse.setMsg("token异常，请重新登录");
                 response.getWriter().append(JSONUtils.obj2json(normalResponse));
                 response.setContentType("application/json");
                 return false;

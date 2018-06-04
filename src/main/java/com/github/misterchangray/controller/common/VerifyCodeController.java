@@ -52,7 +52,7 @@ public class VerifyCodeController {
 
         StringBuilder imgBase64 = new StringBuilder("data:image/jpg;base64,");
         imgBase64.append(mapBuilder.get("imgData"));
-        return NormalResponse.newInstance().setData(imgBase64.toString());
+        return NormalResponse.build().setData(imgBase64.toString());
     }
 
 

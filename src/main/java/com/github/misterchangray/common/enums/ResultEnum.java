@@ -12,7 +12,8 @@ package com.github.misterchangray.common.enums;
  * @author Rui.Zhang/misterchangray@hotmail.com
  * @author Created on 3/20/2018.
  */
-public enum ErrorEnum {
+public enum ResultEnum {
+    SUCCESS(0, "成功"), //成功
     INVALID_REQUEST(101001, "参数字段错误或参数格式错误"), //无效请求,请求有格式或数据错误
     NEED_AUTH(101002, "需要权限认证"), //需要认证,没有权限
     DISABLED(101003, "资源已被禁用"),//资源已被禁用
@@ -20,7 +21,7 @@ public enum ErrorEnum {
     NOT_FOUND(101005, "资源不存在"),//资源不存在
     EXIST(101006, "资源已存在"),//资源已存在
     GONE(1001007, "资源已被删除"), //资源已经被删除
-    SERVER_ERROR(101008, "服务器错误"); //服务器错误
+    SERVER_ERROR(101008, "系统未知错误"); //服务器错误
 
 
 
@@ -34,7 +35,7 @@ public enum ErrorEnum {
     public String getMsg() {
         return msg;
     }
-    private ErrorEnum(Integer code, String msg) {
+    private ResultEnum(Integer code, String msg) {
         this.code = code;
         this.msg = msg;
     }

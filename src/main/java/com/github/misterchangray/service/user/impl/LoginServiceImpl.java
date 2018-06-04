@@ -2,7 +2,8 @@ package com.github.misterchangray.service.user.impl;
 
 import com.github.misterchangray.common.NormalResponse;
 import com.github.misterchangray.common.enums.DBEnum;
-import com.github.misterchangray.common.enums.ErrorEnum;
+import com.github.misterchangray.common.enums.ResultEnum;
+import com.github.misterchangray.common.exception.ServiceException;
 import com.github.misterchangray.common.utils.MapBuilder;
 import com.github.misterchangray.dao.entity.User;
 import com.github.misterchangray.dao.entity.UserQuery;
@@ -31,32 +32,19 @@ public class LoginServiceImpl implements LoginService {
     @Autowired
     UserSessionBo userSessionBo;
 
-    private String createSession() {
-        return null;
-    }
 
-    public NormalResponse signInByUserName(String username, String password) {
-        NormalResponse res = NormalResponse.newInstance();
+    public NormalResponse signInByUserName(String username, String password) throws Exception {
+        NormalResponse res = NormalResponse.build();
 
         UserQuery userQuery = new UserQuery();
         UserQuery.Criteria criteria = userQuery.createCriteria();
         criteria.andUsernameEqualTo(username).andPasswordEqualTo(password);
 
         List<User> userList = userMapper.selectByQuery(userQuery);
-        if(0 == userList.size()) {
-            res.setErrorCode(ErrorEnum.INVALID).setErrorMsg("无效用户名或密码");
-            return res;
-        }
+        if(0 == userList.size()) throw new ServiceException(ResultEnum.INVALID, "无效用户名或密码");
         User user = userList.get(0);
-        if(DBEnum.TRUE.getCode().equals(user.getDeleted())) {
-            res.setErrorCode(ErrorEnum.GONE).setErrorMsg("该用户已被删除");
-            return  res;
-        }
-        if(DBEnum.FALSE.getCode().equals(user.getEnabled())) {
-            res.setErrorCode(ErrorEnum.DISABLED).setErrorMsg("该用户已被禁用");
-            return  res;
-        }
-
+        if(DBEnum.TRUE.getCode().equals(user.getDeleted())) throw new ServiceException(ResultEnum.GONE, "该用户已被删除");
+        if(DBEnum.FALSE.getCode().equals(user.getEnabled())) throw new ServiceException(ResultEnum.DISABLED, "该用户已被禁用");
 
 
         String session = userSessionBo.createSession(String.valueOf(user.getId()));
@@ -84,6 +72,6 @@ public class LoginServiceImpl implements LoginService {
 
     public NormalResponse signOut(String userId) {
        userSessionBo.destroySession(userId);
-        return NormalResponse.newInstance();
+        return NormalResponse.build();
     }
 }

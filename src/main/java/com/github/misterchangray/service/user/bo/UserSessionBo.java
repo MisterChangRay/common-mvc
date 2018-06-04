@@ -1,6 +1,7 @@
 package com.github.misterchangray.service.user.bo;
 
 import com.github.misterchangray.common.NormalResponse;
+import com.github.misterchangray.common.exception.ServiceException;
 import com.github.misterchangray.common.utils.JSONUtils;
 import com.github.misterchangray.dao.entity.LoginLog;
 import com.github.misterchangray.dao.entity.User;
@@ -49,11 +50,11 @@ public class UserSessionBo {
      *
      * @param userId
      */
-    public String createSession(String userId) {
+    public String createSession(String userId) throws ServiceException {
         if(null == userId) return null;
 
         NormalResponse response = userService.getById(Integer.parseInt(userId));
-        if(false == response.isSuccess()) return null;
+        if(0 != response.getCode()) return null;
         User user = (User) response.getData();
 
         //构造session

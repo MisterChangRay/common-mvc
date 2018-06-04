@@ -1,7 +1,7 @@
 package com.github.misterchangray.controller.user;
 
 import com.github.misterchangray.common.PageInfo;
-import com.github.misterchangray.common.enums.ErrorEnum;
+import com.github.misterchangray.common.enums.ResultEnum;
 import com.github.misterchangray.common.NormalResponse;
 import com.github.misterchangray.service.user.PermissionService;
 import com.github.misterchangray.service.user.RoleService;
@@ -54,11 +54,11 @@ public class RoleController {
     @RequestMapping(value="/{roleId}/permission", method = RequestMethod.PATCH)
     @ResponseBody
     public NormalResponse editRolePermission(@PathVariable Integer roleId, @RequestParam List permissionIds) {
-        NormalResponse normalResponse = NormalResponse.newInstance();
+        NormalResponse normalResponse = NormalResponse.build();
         if(null != roleId && null != permissionIds && 0 < permissionIds.size()) {
             return roleService.updatePermission(roleId, permissionIds);
         }
-        return normalResponse.setErrorCode(ErrorEnum.INVALID_REQUEST);
+        return normalResponse.setCode(ResultEnum.INVALID_REQUEST);
     }
 
 

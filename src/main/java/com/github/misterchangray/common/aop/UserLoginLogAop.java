@@ -65,7 +65,7 @@ public class UserLoginLogAop {
         NormalResponse normalResponse = (NormalResponse) res;
         if(null == normalResponse) return res;
 
-        if(false == normalResponse.isSuccess()) return res; //打开此行则只记录登录成功的用户
+        if(0 != normalResponse.getCode()) return res; //打开此行则只记录登录成功的用户
 
         User user = null;
         String session = null;
@@ -86,9 +86,9 @@ public class UserLoginLogAop {
         loginLog.setSignInIp(HttpRequestParserUtils.getUserIpAddr(httpServletRequest));
         loginLog.setDeviceInfo(HttpRequestParserUtils.getUserAgent(httpServletRequest));
         loginLog.setSignInTime(new Date());
-        loginLog.setSuccess(normalResponse.isSuccess() ? DBEnum.TRUE.getCode() : DBEnum.FALSE.getCode());
-        if(false == normalResponse.isSuccess()) {
-            loginLog.setDetailsOfFail(normalResponse.getErrorMsg());
+        loginLog.setSuccess(0 == normalResponse.getCode() ? DBEnum.TRUE.getCode() : DBEnum.FALSE.getCode());
+        if(0 != normalResponse.getCode()) {
+            loginLog.setDetailsOfFail(normalResponse.getMsg());
         }
         loginLog.setSignInParam(JSONUtils.obj2json(point.getArgs()));
         loginLog.setSession(session);
