@@ -8,7 +8,9 @@ import com.github.misterchangray.common.enums.ResultEnum;
  * @version ver1.0
  * @email misterchangray@hotmail.com
  * @description
- * 封装全局统一异常返回
+ * 封装全局统一异常返回；
+ * 此类作为业务异常返回封装
+ * 你可以在代码中任何地方返回错误信息到前端
  */
 public class ServiceException extends Exception {
     private String msg;

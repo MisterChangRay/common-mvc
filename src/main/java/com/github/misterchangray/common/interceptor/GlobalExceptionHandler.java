@@ -15,6 +15,8 @@ import org.springframework.web.bind.annotation.ResponseBody;
  * @version ver1.0
  * @email misterchangray@hotmail.com
  * @description
+ * 注意：
+ * 如果你使用异常方式返回信息;请不要将错误信息try-catch进行处理;应该逐级上抛并统一到此处处理
  */
 @ControllerAdvice()
 public class GlobalExceptionHandler {
