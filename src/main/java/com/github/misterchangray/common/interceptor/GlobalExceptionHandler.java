@@ -3,6 +3,7 @@ package com.github.misterchangray.common.interceptor;
 import com.github.misterchangray.common.NormalResponse;
 import com.github.misterchangray.common.enums.ResultEnum;
 import com.github.misterchangray.common.exception.ServiceException;
+import org.apache.log4j.Logger;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.ResponseBody;
@@ -17,6 +18,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
  */
 @ControllerAdvice()
 public class GlobalExceptionHandler {
+    Logger logger = Logger.getLogger(GlobalExceptionHandler.class);
 
     @ExceptionHandler(Exception.class)
     @ResponseBody
@@ -28,9 +30,12 @@ public class GlobalExceptionHandler {
         //如果抛出的是系统自定义的异常则直接转换
         if(ex instanceof ServiceException) {
             serviceException = (ServiceException) ex;
+            logger.info(ex.getMessage(), ex);
         } else {
             //如果抛出的不是系统自定义的异常则重新构造一个未知错误异常
             serviceException = new ServiceException(ResultEnum.SERVER_ERROR);
+            logger.error(ex.getMessage(), ex);
+
         }
 
         NormalResponse normalResponse = NormalResponse.build(serviceException.getResultEnum());
