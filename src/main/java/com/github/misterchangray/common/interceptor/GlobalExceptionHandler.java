@@ -3,7 +3,7 @@ package com.github.misterchangray.common.interceptor;
 import com.github.misterchangray.common.ResultSet;
 import com.github.misterchangray.common.enums.ResultEnum;
 import com.github.misterchangray.common.exception.ServiceException;
-import org.apache.log4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.ResponseBody;
@@ -22,7 +22,7 @@ import javax.servlet.http.HttpServletResponse;
  */
 @ControllerAdvice()
 public class GlobalExceptionHandler {
-    Logger logger = Logger.getLogger(GlobalExceptionHandler.class);
+    org.slf4j.Logger logger = LoggerFactory.getLogger(GlobalExceptionHandler.class);
 
     @ExceptionHandler(Exception.class)
     @ResponseBody
