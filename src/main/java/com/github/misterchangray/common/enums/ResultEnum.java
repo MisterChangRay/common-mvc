@@ -14,6 +14,7 @@ package com.github.misterchangray.common.enums;
  */
 public enum ResultEnum {
     SUCCESS(0, "成功"), //成功
+    FAILURE(1, "失败"), //失败
     INVALID_REQUEST(101001, "参数字段错误或参数格式错误"), //无效请求,请求有格式或数据错误
     NEED_AUTH(101002, "需要权限认证"), //需要认证,没有权限
     DISABLED(101003, "资源已被禁用"),//资源已被禁用
