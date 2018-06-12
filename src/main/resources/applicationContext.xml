@@ -144,9 +144,9 @@
     <!-- 事务管理 通知 -->
     <tx:advice id="txAdvice" transaction-manager="transactionManager">
         <tx:attributes>
-            <!-- 对insert,update,delete 开头的方法进行事务管理,只要有异常就回滚 -->
-            <tx:method name="insert*" propagation="REQUIRED" rollback-for="java.lang.Throwable"/>
-            <tx:method name="update*" propagation="REQUIRED" rollback-for="java.lang.Throwable"/>
+            <!-- 对 save,edit,delete 开头的方法进行事务管理,只要有异常就回滚 -->
+            <tx:method name="save*" propagation="REQUIRED" rollback-for="java.lang.Throwable"/>
+            <tx:method name="edit*" propagation="REQUIRED" rollback-for="java.lang.Throwable"/>
             <tx:method name="delete*" propagation="REQUIRED" rollback-for="java.lang.Throwable"/>
             <!-- select,count开头的方法,开启只读,提高数据库访问性能 -->
             <tx:method name="select*" read-only="true"/>

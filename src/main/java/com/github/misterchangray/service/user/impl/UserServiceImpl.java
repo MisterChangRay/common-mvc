@@ -172,7 +172,7 @@ public class UserServiceImpl implements UserService{
      * @return User
      */
     @OperationLog(businessName = "增加用户")
-    public ResultSet insert(User user) {
+    public ResultSet save(User user) {
         if(null == user) return ResultSet.build().setCode(ResultEnum.INVALID_REQUEST);
 
         user.setId(null);
@@ -188,7 +188,7 @@ public class UserServiceImpl implements UserService{
      * @return
      */
     @OperationLog(businessName = "批量增加用户")
-    public ResultSet batchInsert(List<User> users) {
+    public ResultSet saveAll(List<User> users) {
         if(null == users) return ResultSet.build().setCode(ResultEnum.INVALID_REQUEST);
 
         return ResultSet.build().setData(userMapper.batchInsert(users));
@@ -200,7 +200,7 @@ public class UserServiceImpl implements UserService{
      * @return User
      */
     @OperationLog(businessName = "更新用户")
-    public ResultSet update(User user) {
+    public ResultSet edit(User user) {
         if(null == user || null == user.getId()) return ResultSet.build().setCode(ResultEnum.INVALID_REQUEST);
 
         User dbUser = userMapper.selectByPrimaryKey(user.getId());

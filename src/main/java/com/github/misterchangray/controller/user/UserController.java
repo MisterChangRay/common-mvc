@@ -131,7 +131,7 @@ public class UserController {
     @RequestMapping(method = RequestMethod.POST)
     @ResponseBody
     public ResultSet add(@RequestBody User user) {
-        return userService.insert(user);
+        return userService.save(user);
     }
 
 
@@ -165,7 +165,7 @@ public class UserController {
     @RequestMapping(method = RequestMethod.PUT)
     @ResponseBody
     public ResultSet edit(@RequestBody User user) {
-       return userService.update(user);
+       return userService.edit(user);
     }
 
 

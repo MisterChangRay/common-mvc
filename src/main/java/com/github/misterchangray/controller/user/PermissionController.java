@@ -83,7 +83,7 @@ public class PermissionController {
     @RequestMapping(method = RequestMethod.POST)
     @ResponseBody
     public ResultSet add(@RequestBody Permission permission) {
-       return permissionService.insert(permission);
+       return permissionService.save(permission);
     }
 
 
@@ -119,7 +119,7 @@ public class PermissionController {
     @RequestMapping(method = RequestMethod.PUT)
     @ResponseBody
     public ResultSet edit(@RequestBody Permission permission) {
-        return permissionService.update(permission);
+        return permissionService.edit(permission);
     }
 
 }

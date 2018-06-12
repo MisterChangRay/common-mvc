@@ -107,7 +107,7 @@ public class RoleServiceImpl implements RoleService {
      * @return  Role
      */
     @OperationLog(businessName = "增加角色")
-    public ResultSet insert(Role role) {
+    public ResultSet save(Role role) {
         role.setId(null);
         role.setEnabled(DBEnum.TRUE.getCode());
         role.setDeleted(DBEnum.FALSE.getCode());
@@ -121,7 +121,7 @@ public class RoleServiceImpl implements RoleService {
      * @return
      */
     @OperationLog(businessName = "批量增加角色")
-    public ResultSet batchInsert(List<Role> roles) {
+    public ResultSet saveAll(List<Role> roles) {
         if(null == roles) return ResultSet.build().setCode(ResultEnum.INVALID_REQUEST);
 
         return ResultSet.build().setData(roleMapper.batchInsert(roles));
@@ -133,7 +133,7 @@ public class RoleServiceImpl implements RoleService {
      * @return Role
      */
     @OperationLog(businessName = "修改角色")
-    public ResultSet update(Role role) {
+    public ResultSet edit(Role role) {
         if(null == role || null == role.getId()) return ResultSet.build().setCode(ResultEnum.INVALID_REQUEST);
 
         Role dbRole = roleMapper.selectByPrimaryKey(role.getId());

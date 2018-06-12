@@ -15,14 +15,14 @@ import java.util.List;
 public interface BaseService<Entity> {
 
     /**
-     * 查询id是否存在
+     * 查询 Id 是否存在
      * @param ids
      * @return
      */
     ResultSet exist(List<Integer> ids);
 
     /**
-     * 根据实体ID获取对象
+     * 根据 Id 获取对象
      * @param id
      * @return
      */
@@ -30,39 +30,39 @@ public interface BaseService<Entity> {
 
 
     /**
-     * 根据实体ID获取对象
+     * 根据 Id 获取多个对象
      * @param ids
      * @return
      */
     ResultSet getByIds(List<Integer> ids);
 
     /**
-     * 简单列表
+     * 列表
      * @param entity
      * @return
      */
     ResultSet list(Entity entity, PageInfo pageInfo);
 
     /**
-     * 新增
+     * 保存
      * @param entity
      * @return
      */
-    ResultSet insert(Entity entity);
+    ResultSet save(Entity entity);
 
     /**
-     * 批量新增
+     * 批量保存
      * @param entities
      * @return
      */
-    ResultSet batchInsert(List<Entity> entities);
+    ResultSet saveAll(List<Entity> entities);
 
     /**
      * 编辑
      * @param entity
      * @return
      */
-    ResultSet update(Entity entity);
+    ResultSet edit(Entity entity);
 
 
     /**

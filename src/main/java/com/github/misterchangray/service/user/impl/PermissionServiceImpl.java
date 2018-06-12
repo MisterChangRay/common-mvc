@@ -100,7 +100,7 @@ public class PermissionServiceImpl implements PermissionService{
      * @return Permission
      */
     @OperationLog(businessName = "增加权限")
-    public ResultSet insert(Permission permission) {
+    public ResultSet save(Permission permission) {
         permission.setId(null);
         permission.setDeleted(DBEnum.FALSE.getCode());
         permissionMapper.insert(permission);
@@ -113,7 +113,7 @@ public class PermissionServiceImpl implements PermissionService{
      * @return list[Permission]
      */
     @OperationLog(businessName = "批量增加权限")
-    public ResultSet batchInsert(List<Permission> permissions) {
+    public ResultSet saveAll(List<Permission> permissions) {
         if(null == permissions) return ResultSet.build().setCode(ResultEnum.INVALID_REQUEST);
 
         return ResultSet.build().setData(permissionMapper.batchInsert(permissions));
@@ -125,7 +125,7 @@ public class PermissionServiceImpl implements PermissionService{
      * @return Permission
      */
     @OperationLog(businessName = "更新权限")
-    public ResultSet update(Permission permission) {
+    public ResultSet edit(Permission permission) {
         if(null == permission || null == permission.getId()) return ResultSet.build().setCode(ResultEnum.INVALID_REQUEST);
 
         Permission dbPermission = permissionMapper.selectByPrimaryKey(permission.getId());

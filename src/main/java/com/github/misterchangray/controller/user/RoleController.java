@@ -93,7 +93,7 @@ public class RoleController {
     @RequestMapping(method = RequestMethod.POST)
     @ResponseBody
     public ResultSet add(@RequestBody Role role) {
-       return roleService.insert(role);
+       return roleService.save(role);
     }
 
 
@@ -129,7 +129,7 @@ public class RoleController {
     @RequestMapping(method = RequestMethod.PUT)
     @ResponseBody
     public ResultSet edit(@RequestBody Role role) {
-        return roleService.update(role);
+        return roleService.edit(role);
     }
 
 }
