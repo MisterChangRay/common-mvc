@@ -1,7 +1,7 @@
 package com.github.misterchangray.controller.user;
 
 import com.github.misterchangray.common.ResultSet;
-import com.github.misterchangray.common.annotation.Authentication;
+import com.github.misterchangray.common.annotation.Authorization;
 import com.github.misterchangray.common.enums.ResultEnum;
 import com.github.misterchangray.service.user.LoginService;
 import com.github.misterchangray.service.user.UserService;
@@ -55,7 +55,7 @@ public class LoginController {
      * @param password
      * @return
      */
-    @ApiOperation(value = "用户登陆", notes = "提供用户登陆接口,登陆成功后返回 Authentication ,在以后的请求中应该把此字段增加到请求头中,这里可以使用(手机号,帐号,邮箱)+密码进行登录")
+    @ApiOperation(value = "用户登陆", notes = "提供用户登陆接口,登陆成功后返回 Authorization ,在以后的请求中应该把此字段增加到请求头中,这里可以使用(手机号,帐号,邮箱)+密码进行登录")
     @ApiImplicitParams({
         @ApiImplicitParam(name="username", value = "用户名", required = false, paramType = "query", dataType = "string"),
         @ApiImplicitParam(name="email", value = "邮箱", required = false, paramType = "query", dataType = "string"),
@@ -88,9 +88,9 @@ public class LoginController {
      */
     @ApiOperation(value = "用户登出", notes = "提供用户用户登出")
     @ApiImplicitParams({
-            @ApiImplicitParam(name="Authentication", value = "用户session", required = false, paramType = "header", dataType = "string"),
+            @ApiImplicitParam(name="Authorization", value = "用户session", required = false, paramType = "header", dataType = "string"),
     })
-    @Authentication
+    @Authorization
     @RequestMapping(value = "/signOut", method = RequestMethod.POST)
     @ResponseBody
     public ResultSet signOut(@RequestHeader(value = "Authentication") String token) {
@@ -104,7 +104,7 @@ public class LoginController {
      * @return
      */
     @ApiOperation(value = "心跳检测", notes = "更新心跳,每隔1分钟访问一次;如3分钟后未访问断定位离线")
-    @Authentication
+    @Authorization
     @RequestMapping(value = "/heartbeat", method = RequestMethod.GET)
     @ResponseBody
     public ResultSet heartbeat(@RequestHeader("Authentication") String authentication) {

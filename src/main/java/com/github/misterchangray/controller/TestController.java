@@ -1,7 +1,7 @@
 package com.github.misterchangray.controller;
 
 import com.github.misterchangray.common.ResultSet;
-import com.github.misterchangray.common.annotation.Authentication;
+import com.github.misterchangray.common.annotation.Authorization;
 import com.github.misterchangray.common.enums.ResultEnum;
 import com.github.misterchangray.common.exception.ServiceException;
 import com.github.misterchangray.service.common.RedisCacheService;
@@ -20,7 +20,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
  * @description
  */
 @Controller
-@Authentication
+@Authorization
 @RequestMapping("/v1/test")
 public class TestController {
     @Autowired

@@ -55,7 +55,7 @@ public class LoginServiceImpl implements LoginService {
          * 请注意:
          * 此返回结构在操作日志中有用到;故如果修改返回结构应该同步修改操作日志文件
          */
-        Map data = MapBuilder.build().put("Authentication", session).put("user", user);
+        Map data = MapBuilder.build().put("Authorization", session).put("user", user);
         res.setData(data);
         return res;
     }

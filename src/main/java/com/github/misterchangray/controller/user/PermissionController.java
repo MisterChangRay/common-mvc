@@ -2,8 +2,8 @@ package com.github.misterchangray.controller.user;
 
 import com.github.misterchangray.common.ResultSet;
 import com.github.misterchangray.common.PageInfo;
+import com.github.misterchangray.common.annotation.Authorization;
 import com.github.misterchangray.dao.entity.Permission;
-import com.github.misterchangray.common.annotation.Authentication;
 import com.github.misterchangray.service.user.PermissionService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiImplicitParam;
@@ -42,7 +42,7 @@ public class PermissionController {
     @ApiImplicitParams({
             @ApiImplicitParam(name="permissionId", value = "权限ID", required = true, paramType = "path", dataType = "int"),
     })
-    @Authentication
+    @Authorization
     @RequestMapping(value="/{permissionId}", method = RequestMethod.GET)
     @ResponseBody
     public ResultSet getById(@PathVariable Integer permissionId) {
@@ -62,7 +62,7 @@ public class PermissionController {
             @ApiImplicitParam(name="page", value = "页码", required = true, paramType = "query", dataType = "int"),
             @ApiImplicitParam(name="limit", value = "每页条数", required = true, paramType = "query", dataType = "int"),
     })
-    @Authentication
+    @Authorization
     @RequestMapping(method = RequestMethod.GET)
     @ResponseBody
     public ResultSet list(@RequestParam() Integer page, @RequestParam() Integer limit) {
@@ -79,7 +79,7 @@ public class PermissionController {
     @ApiImplicitParams({
             @ApiImplicitParam(name="permission", value = "权限实体JSON对象", required = true, paramType = "body", dataType = "com.github.misterchangray.dao.entity.Permission"),
     })
-    @Authentication
+    @Authorization
     @RequestMapping(method = RequestMethod.POST)
     @ResponseBody
     public ResultSet add(@RequestBody Permission permission) {
@@ -96,7 +96,7 @@ public class PermissionController {
     @ApiImplicitParams({
             @ApiImplicitParam(name="id", value = "权限ID", required = true, paramType = "path", dataType = "int"),
     })
-    @Authentication
+    @Authorization
     @RequestMapping(value = "/{id}", method = RequestMethod.DELETE)
     @ResponseBody
     public ResultSet delete(@PathVariable Integer id) {
@@ -115,7 +115,7 @@ public class PermissionController {
     @ApiImplicitParams({
             @ApiImplicitParam(name="permission", value = "权限实体JSON对象", required = true, paramType = "body", dataType = "com.github.misterchangray.dao.entity.Permission"),
     })
-    @Authentication
+    @Authorization
     @RequestMapping(method = RequestMethod.PUT)
     @ResponseBody
     public ResultSet edit(@RequestBody Permission permission) {

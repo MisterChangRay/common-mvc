@@ -70,7 +70,7 @@ public class UserLoginLogAop {
             mapBuilder = (MapBuilder) resultSet.getData();
             if(null != mapBuilder) {
                 user = (User) mapBuilder.get("user");
-                session = (String) mapBuilder.get("Authentication");
+                session = (String) mapBuilder.get("Authorization");
             }
         }
 

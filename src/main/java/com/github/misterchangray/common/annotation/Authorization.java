@@ -17,6 +17,6 @@ import java.lang.annotation.*;
 @Documented
 @Inherited
 @Component
-public @interface Authentication {
+public @interface Authorization {
     String value() default "";
 }

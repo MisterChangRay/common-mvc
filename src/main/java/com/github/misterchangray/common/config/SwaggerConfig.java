@@ -39,7 +39,7 @@ public class SwaggerConfig {
         //统一增加权限验证字段
         List<Parameter> params = new ArrayList<Parameter>();
         ParameterBuilder tokenParam = new ParameterBuilder();
-        tokenParam.name("Authentication").description("令牌").modelRef(new ModelRef("string")).parameterType("header").required(true).build();
+        tokenParam.name("Authorization").description("令牌").modelRef(new ModelRef("string")).parameterType("header").required(true).build();
         params.add(tokenParam.build());
 
         return new Docket(DocumentationType.SWAGGER_2)

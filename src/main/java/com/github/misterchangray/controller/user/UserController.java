@@ -2,7 +2,7 @@ package com.github.misterchangray.controller.user;
 
 import com.github.misterchangray.common.ResultSet;
 import com.github.misterchangray.common.PageInfo;
-import com.github.misterchangray.common.annotation.Authentication;
+import com.github.misterchangray.common.annotation.Authorization;
 import com.github.misterchangray.common.annotation.OperationLog;
 import com.github.misterchangray.dao.entity.User;
 import com.github.misterchangray.service.user.UserService;
@@ -35,7 +35,7 @@ import java.util.List;
 @Api(tags ="用户管理", description = "UserController")
 @Controller
 @RequestMapping("/v1/user")
-@Authentication
+@Authorization
 public class UserController {
     @Autowired
     UserService userService;

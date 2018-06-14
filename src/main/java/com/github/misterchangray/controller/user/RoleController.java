@@ -5,7 +5,7 @@ import com.github.misterchangray.common.ResultSet;
 import com.github.misterchangray.common.enums.ResultEnum;
 import com.github.misterchangray.service.user.PermissionService;
 import com.github.misterchangray.service.user.RoleService;
-import com.github.misterchangray.common.annotation.Authentication;
+import com.github.misterchangray.common.annotation.Authorization;
 import com.github.misterchangray.dao.entity.Role;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiImplicitParam;
@@ -50,7 +50,7 @@ public class RoleController {
             @ApiImplicitParam(name="roleId", value = "角色ID", required = true, paramType = "query", dataType = "int"),
             @ApiImplicitParam(name="permissionIds", value = "权限ID", required = true, paramType = "form", dataType = "int"),
     })
-    @Authentication
+    @Authorization
     @RequestMapping(value="/{roleId}/permission", method = RequestMethod.PATCH)
     @ResponseBody
     public ResultSet editRolePermission(@PathVariable Integer roleId, @RequestParam List permissionIds) {
@@ -72,7 +72,7 @@ public class RoleController {
             @ApiImplicitParam(name="page", value = "页码", required = true, paramType = "query", dataType = "int"),
             @ApiImplicitParam(name="limit", value = "每页条数", required = true, paramType = "query", dataType = "int"),
     })
-    @Authentication
+    @Authorization
     @RequestMapping(method = RequestMethod.GET)
     @ResponseBody
     public ResultSet list(@RequestParam Integer page, @RequestParam Integer limit) {
@@ -89,7 +89,7 @@ public class RoleController {
     @ApiImplicitParams({
             @ApiImplicitParam(name="role", value = "角色实体对象", required = true, paramType = "body",  dataType = "com.github.misterchangray.dao.entity.Role"),
     })
-    @Authentication
+    @Authorization
     @RequestMapping(method = RequestMethod.POST)
     @ResponseBody
     public ResultSet add(@RequestBody Role role) {
@@ -106,7 +106,7 @@ public class RoleController {
     @ApiImplicitParams({
             @ApiImplicitParam(name="id", value = "角色ID", required = true, paramType = "path", dataType = "int"),
     })
-    @Authentication
+    @Authorization
     @RequestMapping(value = "/{id}", method = RequestMethod.DELETE)
     @ResponseBody
     public ResultSet delete(@PathVariable("id") Integer id) {
@@ -125,7 +125,7 @@ public class RoleController {
     @ApiImplicitParams({
             @ApiImplicitParam(name="role", value = "角色实体对象", required = true, paramType = "body", dataType = "com.github.misterchangray.dao.entity.Role"),
     })
-    @Authentication
+    @Authorization
     @RequestMapping(method = RequestMethod.PUT)
     @ResponseBody
     public ResultSet edit(@RequestBody Role role) {
