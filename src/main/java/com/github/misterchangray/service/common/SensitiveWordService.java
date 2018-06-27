@@ -22,6 +22,7 @@ public class SensitiveWordService {
     private static final String ENCODING = "utf-8"; //字符编码
     private Logger logger = LoggerFactory.getLogger(GlobalQuartz.class);
 
+
     public static void main(String args[]) {
         SensitiveWordService sensitiveWordService = new SensitiveWordService();
         sensitiveWordService.initKeyWord();
@@ -30,12 +31,9 @@ public class SensitiveWordService {
         String string = "太多的伤感情怀也许只局限于饲养基地 荧幕中的情节，主人公尝试着去用某种方式渐渐的很潇洒地释自杀指南怀那些自己经历的伤感。"
                 + "然后法轮功 我们的扮演的角色就是跟随着主人公的喜红客联盟 怒哀乐而过于牵强的把自己的情感也附加于银幕情节中，然后感动就流泪，"
                 + "难过就躺在某一个人的怀里尽情的阐述心扉或者手机卡复制器一个人一杯红酒一部电影在夜三级片 深人静的晚上，关上电话静静的发呆着。";
-        System.out.println(sensitiveWordService.getSensitiveWord(string, 0));
-
+        System.out.println(sensitiveWordService.replaceSensitiveWord(string, 0, "*"));
         System.out.println("time--" + ( System.currentTimeMillis() - start));
     }
-
-
 
 
     /**
@@ -58,6 +56,7 @@ public class SensitiveWordService {
 
 
     /**
+     * 目前从文件中初始化词库;可以替换为数据库中初始化
      * 从文件中读取敏感词库
      * @return
      * @throws Exception
@@ -78,7 +77,7 @@ public class SensitiveWordService {
             } else {
                 throw new Exception("敏感词库文件不存在");
             }
-            logger.info("初始化敏感词库,总初始化 {} 个词条", set.size());
+            logger.info("初始化敏感词库成功,共初始化 {} 个敏感词条", set.size());
         } catch (Exception e) {
             e.printStackTrace();
             throw e;
@@ -86,6 +85,49 @@ public class SensitiveWordService {
         return set;
 
     }
+
+
+    /**
+     * 替换内容中那些敏感词汇
+     * @param text 待替换内容
+     * @param startIndex    开始替换索引
+     * @param replaceStr    被替换符号
+     * @return
+     */
+    public String replaceSensitiveWord(String text, Integer startIndex, String replaceStr) {
+        if(null == startIndex) startIndex = 0;
+        if(null == replaceStr) replaceStr = "*";
+
+        StringBuilder stringBuilder = new StringBuilder();
+        Map sensitiveMap = sensitiveWordMap;
+        if(null != text &&  startIndex < text.length()) {
+            String sensitiveWord = "";
+            char tmp;
+            for(int i=startIndex, j=text.length(); i<j; i++) {//从指定位置开始遍历字符串
+                tmp = text.charAt(i);
+
+                if(null != sensitiveMap.get(tmp)) { //如果包含敏感词则利用 sensitiveMap 进一步的匹配
+                    sensitiveMap = (Map) sensitiveMap.get(tmp);
+                    sensitiveWord += tmp;
+                    if(isWordEnd(sensitiveMap)) { //已遍历一个完整词汇则添加
+                        sensitiveWord = "";
+                        stringBuilder.append(replaceStr);
+                    }
+                } else {
+                    if(0 != sensitiveWord.length()){
+                        i--; //如果在子集中未找到敏感词;则在根集合中重新查找此字符
+                        stringBuilder.append(sensitiveWord);
+                    } else {
+                        stringBuilder.append(tmp);
+                    }
+                    sensitiveWord = "";
+                    sensitiveMap = sensitiveWordMap;
+                }
+            }
+        }
+        return stringBuilder.toString();
+    }
+
 
     /**
      * 获取内容中有那些敏感词汇
@@ -118,8 +160,6 @@ public class SensitiveWordService {
         }
         return sensitiveWords;
     }
-
-
 
 
     private boolean isWordEnd(Map map) {
