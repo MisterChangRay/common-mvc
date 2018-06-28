@@ -22,7 +22,6 @@ public class SensitiveWordService {
     private static final String ENCODING = "utf-8"; //字符编码
     private Logger logger = LoggerFactory.getLogger(GlobalQuartz.class);
 
-
     public static void main(String args[]) {
         SensitiveWordService sensitiveWordService = new SensitiveWordService();
         sensitiveWordService.initKeyWord();
@@ -31,6 +30,11 @@ public class SensitiveWordService {
         String string = "太多的伤感情怀也许只局限于饲养基地 荧幕中的情节，主人公尝试着去用某种方式渐渐的很潇洒地释自杀指南怀那些自己经历的伤感。"
                 + "然后法轮功 我们的扮演的角色就是跟随着主人公的喜红客联盟 怒哀乐而过于牵强的把自己的情感也附加于银幕情节中，然后感动就流泪，"
                 + "难过就躺在某一个人的怀里尽情的阐述心扉或者手机卡复制器一个人一杯红酒一部电影在夜三级片 深人静的晚上，关上电话静静的发呆着。";
+        string = "计算机（computer）俗称电脑，是现代一种用于高速计算的电子计算机器，三级片通常指含有色情" +
+                "暴露镜头的电影，源自香港在八十年代末起进行的电影分级制。自1988年底香港实行电影分级制度以来，对第三级影片的" +
+                "划分标准除了裸露镜头外又可以进行逻辑计算，还具有自杀功能。是能够按照法轮功程序运行，自动、高速处理海量黄色电影";
+
+        System.out.println(sensitiveWordService.getSensitiveWord(string, 0));
         System.out.println(sensitiveWordService.replaceSensitiveWord(string, 0, "*"));
         System.out.println("time--" + ( System.currentTimeMillis() - start));
     }
@@ -78,6 +82,22 @@ public class SensitiveWordService {
                 throw new Exception("敏感词库文件不存在");
             }
             logger.info("初始化敏感词库成功,共初始化 {} 个敏感词条", set.size());
+// 将去重的敏感词再写入文件
+//
+//                try {
+//                    File file2 = new File("D:\\workspace\\common-mvc\\src\\main\\resources\\sensitiveWord2.txt");
+//                    PrintStream ps = new PrintStream(new FileOutputStream(file2));
+//                    Iterator<String> iterator = set.iterator();
+//                    while (iterator.hasNext()) {
+//                      ps.println(iterator.next());
+//                    }
+//                    ps.flush();
+//                    ps.close();
+//                } catch (FileNotFoundException e) {
+//                    // TODO Auto-generated catch block
+//                    e.printStackTrace();
+//                }
+
         } catch (Exception e) {
             e.printStackTrace();
             throw e;
