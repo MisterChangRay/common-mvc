@@ -1,6 +1,6 @@
 package com.github.misterchangray.service.user.impl;
 
-import com.github.misterchangray.common.ResultSet;
+import com.github.misterchangray.common.AjaxResultSet;
 import com.github.misterchangray.common.annotation.OperationLog;
 import com.github.misterchangray.common.enums.ResultEnum;
 import com.github.misterchangray.common.PageInfo;
@@ -41,12 +41,12 @@ public class UserServiceImpl implements UserService{
      * @return
      */
     @OperationLog(businessName = "更新用户角色")
-    public ResultSet updateRole(Integer userId, List<Integer> roles){
-        ResultSet resultSet = ResultSet.build();
-        if(null == userId) return resultSet.setCode(ResultEnum.INVALID_REQUEST);
-        if(null == roles) return resultSet.setCode(ResultEnum.INVALID_REQUEST);
+    public AjaxResultSet updateRole(Integer userId, List<Integer> roles){
+        AjaxResultSet ajaxResultSet = AjaxResultSet.build();
+        if(null == userId) return ajaxResultSet.setCode(ResultEnum.INVALID_REQUEST);
+        if(null == roles) return ajaxResultSet.setCode(ResultEnum.INVALID_REQUEST);
 
-        ResultSet<Boolean> result = roleService.exist(roles);
+        AjaxResultSet<Boolean> result = roleService.exist(roles);
         //判断ID是否都存在
         if(result.getData()) {
             //老数据标记为无效
@@ -68,9 +68,9 @@ public class UserServiceImpl implements UserService{
                 userRoleMaps.add(tmp);
             }
             userRoleMapMapper.batchInsert(userRoleMaps);
-            return resultSet;
+            return ajaxResultSet;
         }
-        return resultSet.setCode(ResultEnum.INVALID);
+        return ajaxResultSet.setCode(ResultEnum.INVALID);
     }
 
     /**
@@ -81,7 +81,7 @@ public class UserServiceImpl implements UserService{
      * @param idcard    身份证
      * @return true/false
      */
-    public ResultSet checkUserInfo(String username, String email, String phone, String idcard) {
+    public AjaxResultSet checkUserInfo(String username, String email, String phone, String idcard) {
         UserQuery userQuery = new UserQuery();
         UserQuery.Criteria criteria = userQuery.createCriteria();
 
@@ -90,7 +90,7 @@ public class UserServiceImpl implements UserService{
         if(null != idcard) userQuery.or(criteria.andIdcardEqualTo(idcard));
         if(null != username) userQuery.or(criteria.andUsernameEqualTo(username));
 
-        return ResultSet.build().setData(userMapper.selectByQuery(userQuery));
+        return AjaxResultSet.build().setData(userMapper.selectByQuery(userQuery));
     }
 
 
@@ -99,16 +99,16 @@ public class UserServiceImpl implements UserService{
      * @param ids 待检查ID集合
      * @return true/false
      */
-    public ResultSet exist(List<Integer> ids) {
-        if(null == ids) ResultSet.build().setCode(ResultEnum.INVALID_REQUEST);
+    public AjaxResultSet exist(List<Integer> ids) {
+        if(null == ids) AjaxResultSet.build().setCode(ResultEnum.INVALID_REQUEST);
 
         UserQuery userQuery = new UserQuery();
         UserQuery.Criteria criteria = userQuery.createCriteria();
         criteria.andIdIn(ids);
         if(ids.size() == userMapper.countByQuery(userQuery)) {
-           return ResultSet.build().setData(true);
+           return AjaxResultSet.build().setData(true);
         } else {
-           return ResultSet.build().setData(false);
+           return AjaxResultSet.build().setData(false);
         }
     }
 
@@ -118,12 +118,12 @@ public class UserServiceImpl implements UserService{
      * @param id 待获取ID
      * @return  User
      */
-    public ResultSet getById(Integer id) {
-        if(null == id) return ResultSet.build().setCode(ResultEnum.INVALID_REQUEST);
+    public AjaxResultSet getById(Integer id) {
+        if(null == id) return AjaxResultSet.build().setCode(ResultEnum.INVALID_REQUEST);
         User user = userMapper.selectByPrimaryKey(id);
 
-        if(user.getDeleted().equals(DBEnum.TRUE.getCode()))  return ResultSet.build().setCode(ResultEnum.GONE);
-        return ResultSet.build().setData(user);
+        if(user.getDeleted().equals(DBEnum.TRUE.getCode()))  return AjaxResultSet.build().setCode(ResultEnum.GONE);
+        return AjaxResultSet.build().setData(user);
     }
 
     /**
@@ -131,13 +131,13 @@ public class UserServiceImpl implements UserService{
      * @param ids 待获取的ID集合
      * @return  List[User]
      */
-    public ResultSet getByIds(List<Integer> ids) {
-        if(null == ids) ResultSet.build().setCode(ResultEnum.INVALID_REQUEST);
+    public AjaxResultSet getByIds(List<Integer> ids) {
+        if(null == ids) AjaxResultSet.build().setCode(ResultEnum.INVALID_REQUEST);
 
         UserQuery userQuery = new UserQuery();
         userQuery.createCriteria().andIdIn(ids).andDeletedEqualTo(DBEnum.FALSE.getCode());
 
-        return ResultSet.build().setData(userMapper.selectByQuery(userQuery));
+        return AjaxResultSet.build().setData(userMapper.selectByQuery(userQuery));
     }
 
     /**
@@ -146,7 +146,7 @@ public class UserServiceImpl implements UserService{
      * @param pageInfo 分页信息
      * @return List[User]
      */
-    public ResultSet list(User user, PageInfo pageInfo) {
+    public AjaxResultSet list(User user, PageInfo pageInfo) {
         if(null == pageInfo) pageInfo = new PageInfo();
 
         UserQuery userQuery = new UserQuery();
@@ -163,7 +163,7 @@ public class UserServiceImpl implements UserService{
         }
 
         pageInfo.setCount(userMapper.countByQuery(userQuery));
-        return ResultSet.build().setData(userMapper.selectByQuery(userQuery)).setPageInfo(pageInfo);
+        return AjaxResultSet.build().setData(userMapper.selectByQuery(userQuery)).setPageInfo(pageInfo);
     }
 
     /**
@@ -172,14 +172,14 @@ public class UserServiceImpl implements UserService{
      * @return User
      */
     @OperationLog(businessName = "增加用户")
-    public ResultSet save(User user) {
-        if(null == user) return ResultSet.build().setCode(ResultEnum.INVALID_REQUEST);
+    public AjaxResultSet save(User user) {
+        if(null == user) return AjaxResultSet.build().setCode(ResultEnum.INVALID_REQUEST);
 
         user.setId(null);
         user.setEnabled(DBEnum.TRUE.getCode());
         user.setDeleted(DBEnum.FALSE.getCode());
         userMapper.insert(user);
-        return ResultSet.build().setData(user);
+        return AjaxResultSet.build().setData(user);
     }
 
     /**
@@ -188,10 +188,10 @@ public class UserServiceImpl implements UserService{
      * @return
      */
     @OperationLog(businessName = "批量增加用户")
-    public ResultSet saveAll(List<User> users) {
-        if(null == users) return ResultSet.build().setCode(ResultEnum.INVALID_REQUEST);
+    public AjaxResultSet saveAll(List<User> users) {
+        if(null == users) return AjaxResultSet.build().setCode(ResultEnum.INVALID_REQUEST);
 
-        return ResultSet.build().setData(userMapper.batchInsert(users));
+        return AjaxResultSet.build().setData(userMapper.batchInsert(users));
     }
 
     /**
@@ -200,8 +200,8 @@ public class UserServiceImpl implements UserService{
      * @return User
      */
     @OperationLog(businessName = "更新用户")
-    public ResultSet edit(User user) {
-        if(null == user || null == user.getId()) return ResultSet.build().setCode(ResultEnum.INVALID_REQUEST);
+    public AjaxResultSet edit(User user) {
+        if(null == user || null == user.getId()) return AjaxResultSet.build().setCode(ResultEnum.INVALID_REQUEST);
 
         User dbUser = userMapper.selectByPrimaryKey(user.getId());
         if(dbUser.getDeleted().equals(DBEnum.FALSE.getCode())) {
@@ -209,7 +209,7 @@ public class UserServiceImpl implements UserService{
             user = userMapper.selectByPrimaryKey(user.getId());
         }
 
-        return ResultSet.build().setData(user);
+        return AjaxResultSet.build().setData(user);
     }
 
 
@@ -219,11 +219,11 @@ public class UserServiceImpl implements UserService{
      * @return null
      */
     @OperationLog(businessName = "删除用户角色")
-    public ResultSet delete(User user) {
-        if(null == user || null == user.getId()) return ResultSet.build().setCode(ResultEnum.INVALID_REQUEST);
+    public AjaxResultSet delete(User user) {
+        if(null == user || null == user.getId()) return AjaxResultSet.build().setCode(ResultEnum.INVALID_REQUEST);
 
         user.setDeleted(DBEnum.TRUE.getCode());
         userMapper.updateByPrimaryKeySelective(user);
-        return ResultSet.build().setData(null);
+        return AjaxResultSet.build().setData(null);
     }
 }

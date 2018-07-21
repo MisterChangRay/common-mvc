@@ -1,6 +1,6 @@
 package com.github.misterchangray.common.aop;
 
-import com.github.misterchangray.common.ResultSet;
+import com.github.misterchangray.common.AjaxResultSet;
 import com.github.misterchangray.common.enums.DBEnum;
 import com.github.misterchangray.common.utils.HttpRequestParserUtils;
 import com.github.misterchangray.common.utils.JSONUtils;
@@ -44,7 +44,7 @@ public class UserLoginLogAop {
     RedisCacheService redisCacheService;
 
     //創建用戶session時;創建日志
-    @Pointcut(value = "execution(com.github.misterchangray.common.ResultSet com.github.misterchangray.service.user.LoginService.signInBy*(..))")
+    @Pointcut(value = "execution(com.github.misterchangray.common.AjaxResultSet com.github.misterchangray.service.user.LoginService.signInBy*(..))")
     private void createSession() {}
 
     //銷毀用戶session時;更新用戶登出時間
@@ -58,16 +58,16 @@ public class UserLoginLogAop {
         res = point.proceed();
 
 
-        ResultSet resultSet = (ResultSet) res;
-        if(null == resultSet) return res;
+        AjaxResultSet ajaxResultSet = (AjaxResultSet) res;
+        if(null == ajaxResultSet) return res;
 
-        if(0 != resultSet.getCode()) return res; //打开此行则只记录登录成功的用户
+        if(0 != ajaxResultSet.getCode()) return res; //打开此行则只记录登录成功的用户
 
         User user = null;
         String session = null;
         MapBuilder mapBuilder = null;
-        if(null != resultSet.getData()) {
-            mapBuilder = (MapBuilder) resultSet.getData();
+        if(null != ajaxResultSet.getData()) {
+            mapBuilder = (MapBuilder) ajaxResultSet.getData();
             if(null != mapBuilder) {
                 user = (User) mapBuilder.get("user");
                 session = (String) mapBuilder.get("Authorization");
@@ -82,9 +82,9 @@ public class UserLoginLogAop {
         loginLog.setSignInIp(HttpRequestParserUtils.getUserIpAddr(httpServletRequest));
         loginLog.setDeviceInfo(HttpRequestParserUtils.getUserAgent(httpServletRequest));
         loginLog.setSignInTime(new Date());
-        loginLog.setSuccess(0 == resultSet.getCode() ? DBEnum.TRUE.getCode() : DBEnum.FALSE.getCode());
-        if(0 != resultSet.getCode()) {
-            loginLog.setDetailsOfFail(resultSet.getMsg());
+        loginLog.setSuccess(0 == ajaxResultSet.getCode() ? DBEnum.TRUE.getCode() : DBEnum.FALSE.getCode());
+        if(0 != ajaxResultSet.getCode()) {
+            loginLog.setDetailsOfFail(ajaxResultSet.getMsg());
         }
         loginLog.setSignInParam(JSONUtils.obj2json(point.getArgs()));
         loginLog.setSession(session);

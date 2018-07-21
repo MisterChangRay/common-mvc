@@ -1,6 +1,6 @@
 package com.github.misterchangray.service.user.bo;
 
-import com.github.misterchangray.common.ResultSet;
+import com.github.misterchangray.common.AjaxResultSet;
 import com.github.misterchangray.common.exception.ServiceException;
 import com.github.misterchangray.common.utils.JSONUtils;
 import com.github.misterchangray.dao.entity.User;
@@ -52,7 +52,7 @@ public class UserSessionBo {
     public String createSession(String userId) throws ServiceException {
         if(null == userId) return null;
 
-        ResultSet response = userService.getById(Integer.parseInt(userId));
+        AjaxResultSet response = userService.getById(Integer.parseInt(userId));
         if(0 != response.getCode()) return null;
         User user = (User) response.getData();
 

@@ -1,7 +1,7 @@
 package com.github.misterchangray.controller.user;
 
+import com.github.misterchangray.common.AjaxResultSet;
 import com.github.misterchangray.common.PageInfo;
-import com.github.misterchangray.common.ResultSet;
 import com.github.misterchangray.common.enums.ResultEnum;
 import com.github.misterchangray.service.user.PermissionService;
 import com.github.misterchangray.service.user.RoleService;
@@ -53,12 +53,12 @@ public class RoleController {
     @Authorization
     @RequestMapping(value="/{roleId}/permission", method = RequestMethod.PATCH)
     @ResponseBody
-    public ResultSet editRolePermission(@PathVariable Integer roleId, @RequestParam List permissionIds) {
-        ResultSet resultSet = ResultSet.build();
+    public AjaxResultSet editRolePermission(@PathVariable Integer roleId, @RequestParam List permissionIds) {
+        AjaxResultSet ajaxResultSet = AjaxResultSet.build();
         if(null != roleId && null != permissionIds && 0 < permissionIds.size()) {
             return roleService.updatePermission(roleId, permissionIds);
         }
-        return resultSet.setCode(ResultEnum.INVALID_REQUEST);
+        return ajaxResultSet.setCode(ResultEnum.INVALID_REQUEST);
     }
 
 
@@ -75,7 +75,7 @@ public class RoleController {
     @Authorization
     @RequestMapping(method = RequestMethod.GET)
     @ResponseBody
-    public ResultSet list(@RequestParam Integer page, @RequestParam Integer limit) {
+    public AjaxResultSet list(@RequestParam Integer page, @RequestParam Integer limit) {
         Role role = new Role();
         return roleService.list(role, PageInfo.newInstance(page, limit));
     }
@@ -92,7 +92,7 @@ public class RoleController {
     @Authorization
     @RequestMapping(method = RequestMethod.POST)
     @ResponseBody
-    public ResultSet add(@RequestBody Role role) {
+    public AjaxResultSet add(@RequestBody Role role) {
        return roleService.save(role);
     }
 
@@ -109,7 +109,7 @@ public class RoleController {
     @Authorization
     @RequestMapping(value = "/{id}", method = RequestMethod.DELETE)
     @ResponseBody
-    public ResultSet delete(@PathVariable("id") Integer id) {
+    public AjaxResultSet delete(@PathVariable("id") Integer id) {
         Role role = new Role();
         role.setId(id);
         return roleService.delete(role);
@@ -128,7 +128,7 @@ public class RoleController {
     @Authorization
     @RequestMapping(method = RequestMethod.PUT)
     @ResponseBody
-    public ResultSet edit(@RequestBody Role role) {
+    public AjaxResultSet edit(@RequestBody Role role) {
         return roleService.edit(role);
     }
 

@@ -12,8 +12,8 @@ import io.swagger.annotations.ApiModelProperty;
  * @author Rui.Zhang/misterchangray@hotmail.com
  * @author Created on 3/20/2018.
  */
-@ApiModel(description = "标准返回封装-ResultSet")
-public class ResultSet<T> {
+@ApiModel(description = "标准返回封装-AjaxResultSet")
+public class AjaxResultSet<T> {
     /**
      * 返回消息
      */
@@ -42,12 +42,12 @@ public class ResultSet<T> {
     }
 
 
-    public ResultSet setPageInfo(PageInfo pageInfo) {
+    public AjaxResultSet setPageInfo(PageInfo pageInfo) {
         this.pageInfo = pageInfo;
         return this;
     }
 
-    public ResultSet setMsg(String msg) {
+    public AjaxResultSet setMsg(String msg) {
         this.msg = msg;
         return this;
     }
@@ -56,12 +56,12 @@ public class ResultSet<T> {
         return msg;
     }
 
-    public ResultSet setCode(Integer code) {
+    public AjaxResultSet setCode(Integer code) {
         this.code = code;
         return this;
     }
 
-    public ResultSet setCode(ResultEnum resultEnum) {
+    public AjaxResultSet setCode(ResultEnum resultEnum) {
         this.code = resultEnum.getCode();
         return this;
     }
@@ -70,7 +70,7 @@ public class ResultSet<T> {
         return code;
     }
 
-    public ResultSet setData(T data) {
+    public AjaxResultSet setData(T data) {
         this.data = data;
         return this;
     }
@@ -80,23 +80,23 @@ public class ResultSet<T> {
     }
 
 
-    public static ResultSet build() {
-        ResultSet resultSet = new ResultSet();
-        resultSet.setCode(ResultEnum.SUCCESS.getCode());
-        resultSet.setMsg(ResultEnum.SUCCESS.getMsg());
-        return resultSet;
+    public static AjaxResultSet build() {
+        AjaxResultSet ajaxResultSet = new AjaxResultSet();
+        ajaxResultSet.setCode(ResultEnum.SUCCESS.getCode());
+        ajaxResultSet.setMsg(ResultEnum.SUCCESS.getMsg());
+        return ajaxResultSet;
     }
 
-    public static ResultSet build(ResultEnum resultEnum) {
-        ResultSet resultSet = new ResultSet();
+    public static AjaxResultSet build(ResultEnum resultEnum) {
+        AjaxResultSet ajaxResultSet = new AjaxResultSet();
         if(null != resultEnum) {
-            resultSet.setCode(resultEnum.getCode());
-            resultSet.setMsg(resultEnum.getMsg());
+            ajaxResultSet.setCode(resultEnum.getCode());
+            ajaxResultSet.setMsg(resultEnum.getMsg());
         } else {
-            resultSet.setCode(ResultEnum.SERVER_ERROR.getCode());
-            resultSet.setMsg(ResultEnum.SERVER_ERROR.getMsg());
+            ajaxResultSet.setCode(ResultEnum.SERVER_ERROR.getCode());
+            ajaxResultSet.setMsg(ResultEnum.SERVER_ERROR.getMsg());
         }
-        return resultSet;
+        return ajaxResultSet;
     }
 
     @Override
@@ -104,7 +104,7 @@ public class ResultSet<T> {
         return JSONUtils.obj2json(this);
     }
 
-    private ResultSet() {}
+    private AjaxResultSet() {}
 }
 
 

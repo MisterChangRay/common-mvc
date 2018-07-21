@@ -1,7 +1,6 @@
 package com.github.misterchangray.common.utils;
 
-import com.github.misterchangray.dao.entity.User;
-
+import javax.net.ssl.*;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
@@ -9,7 +8,10 @@ import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.net.URLConnection;
+import java.security.cert.CertificateException;
+import java.security.cert.X509Certificate;
 import java.util.Map;
+
 
 /**
  *
@@ -18,26 +20,24 @@ import java.util.Map;
  * @author Created on 4/29/2018.
  */
 public class HttpUtils {
-
-
     public static void main(String[] a) {
-//        InputStream inputStream = http("http://192.168.0.194:8080/v1/session/login", "POST", MapBuilder.build().add("token", "123").add("Content-Type", "application/x-www-form-urlencoded"), "username=zr&password=zr");
-//        String s= "";
-//        try {
-//            int i;
-//            while(-1 != (i = inputStream.read())) {
-//                s += (char) i;
-//            }
-//        } catch (IOException e) {
-//            e.printStackTrace();
-//        }
-//        Map m = JSONUtils.json2map(s);
-//        System.out.println("---" + m);
-//        System.out.println(MapBuilder.build().add("a","b"));
-//        JSONUtils.json2obj("\\\\", User.class);
-        User user = (User) JSONUtils.json2obj("{\"id\":\"12\"}", User.class);
-        System.out.println(user.getId());
+        String proxyHost = "127.0.0.1";
+        String proxyPort = "1080";
 
+        //启用代理
+        System.setProperty("http.proxyHost", proxyHost);
+        System.setProperty("http.proxyPort", proxyPort);
+        // 对https也开启代理
+        System.setProperty("https.proxyHost", proxyHost);
+        System.setProperty("https.proxyPort", proxyPort);
+
+
+
+//        secPrice.removeFirst();
+//        System.out.println(secPrice.getLast());
+//        secPrice.removeFirst();
+//        System.out.println(secPrice.getLast());
+//        secPrice.removeFirst();
     }
 
     /**
@@ -47,11 +47,11 @@ public class HttpUtils {
      * @param data
      * @return
      */
-    public static String jsonPost(String urlPath,  Map<String, String> header, String data) {
+    public static String jsonPost(String urlPath,  Map<String, String> header, String data) throws IOException {
         if(null == header) header = MapBuilder.build();
         header.put("Content-Type", "application/json");
 
-        return readStringFormInputStream(http(urlPath, "POST", header, data));
+        return readStringFormInputStream(http(urlPath, "POST", header, data).getInputStream());
     }
 
 
@@ -62,11 +62,11 @@ public class HttpUtils {
      * @param data
      * @return
      */
-    public static String formPost(String urlPath,  Map<String, String> header, String data) {
+    public static String formPost(String urlPath,  Map<String, String> header, String data) throws IOException {
         if(null == header) header = MapBuilder.build();
         header.put("Content-Type", "application/x-www-form-urlencoded");
 
-        return readStringFormInputStream(http(urlPath, "POST", header, data));
+        return readStringFormInputStream(http(urlPath, "POST", header, data).getInputStream());
     }
 
 
@@ -78,7 +78,7 @@ public class HttpUtils {
      * @param data  请求数据;根据不同请求格式组织不同的数据格式
      * @return
      */
-    public static InputStream http(String urlPath, String method, Map<String, String> header, String data) {
+    public static HttpURLConnection http(String urlPath, String method, Map<String, String> header, String data) {
         if(null == method) method = "GET";
         try {
             // 统一资源
@@ -106,7 +106,7 @@ public class HttpUtils {
             }
             // 打开到此 URL 引用的资源的通信链接（如果尚未建立这样的连接）。
             httpURLConnection.connect();
-            return httpURLConnection.getInputStream();
+            return httpURLConnection;
 
         } catch (MalformedURLException e) {
             e.printStackTrace();
@@ -121,7 +121,7 @@ public class HttpUtils {
      * @param inputStream
      * @return
      */
-    private static String readStringFormInputStream(InputStream inputStream) {
+    public static String readStringFormInputStream(InputStream inputStream) {
         if(null == inputStream) return null;
 
         StringBuilder stringBuilder = new StringBuilder();
@@ -130,6 +130,7 @@ public class HttpUtils {
             while(-1 != (i = inputStream.read())) {
                 stringBuilder.append((char) i);
             }
+            inputStream.close();
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -137,8 +138,76 @@ public class HttpUtils {
     }
 
 
+    private static SSLContext sslContext = null;
+    /*
+     * 处理https GET/POST请求
+     * 请求地址、请求方法、参数
+     * */
+    public static HttpsURLConnection httpsRequest(String requestUrl,String requestMethod,String params, Map<String, String> header){
+        StringBuffer buffer=null;
+        System.setProperty("https.protocols", "TLSv1.2,TLSv1.1,SSLv3");
+        try{
+            if(null == sslContext) {
+                //创建SSLContext
+                HttpUtils.sslContext=SSLContext.getInstance("SSL");
+                TrustManager[] tm={new HttpsProtocol()};
+                //初始化
+                sslContext.init(null, tm, new java.security.SecureRandom());;
+            }
+
+            //获取SSLSocketFactory对象
+            SSLSocketFactory ssf=sslContext.getSocketFactory();
+            URL url= new URL(requestUrl);
+            HttpsURLConnection conn=(HttpsURLConnection)url.openConnection();
+            conn.setDoOutput(true);
+            conn.setDoInput(true);
+            conn.setUseCaches(false);
+            //设置header
+            if(null != header) {
+                for(String key : header.keySet()) {
+                    conn.setRequestProperty(key, header.get(key));
+                }
+            }
+            conn.setRequestMethod(requestMethod);
+            //设置当前实例使用的SSLSoctetFactory
+            conn.setSSLSocketFactory(ssf);
+            //往服务器端写内容
+            if(null!=params){
+                OutputStream os=conn.getOutputStream();
+                os.write(params.getBytes("utf-8"));
+                os.flush();
+                os.close();
+            }
+            return conn;
+        }catch(Exception e){
+            e.printStackTrace();
+        }
+        return null;
+    }
+
 
 
 
 }
 
+
+/**
+ * 自定义一个协议;相信所有证书
+ */
+class HttpsProtocol implements X509TrustManager {
+    @Override
+    public void checkClientTrusted(X509Certificate[] chain, String authType)
+            throws CertificateException {
+    }
+
+    @Override
+    public void checkServerTrusted(X509Certificate[] chain, String authType)
+            throws CertificateException {
+    }
+
+    @Override
+    public X509Certificate[] getAcceptedIssuers() {
+        return null;
+    }
+
+}

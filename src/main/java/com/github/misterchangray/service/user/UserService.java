@@ -1,6 +1,6 @@
 package com.github.misterchangray.service.user;
 
-import com.github.misterchangray.common.ResultSet;
+import com.github.misterchangray.common.AjaxResultSet;
 import com.github.misterchangray.dao.entity.User;
 import com.github.misterchangray.service.BaseService;
 
@@ -19,7 +19,7 @@ public interface UserService extends BaseService<User> {
      * @param roles 角色id集合
      * @return
      */
-    ResultSet updateRole(Integer userId, List<Integer> roles);
+    AjaxResultSet updateRole(Integer userId, List<Integer> roles);
 
 
     /**
@@ -30,6 +30,6 @@ public interface UserService extends BaseService<User> {
      * @param idcard
      * @return
      */
-    ResultSet checkUserInfo(String username, String email, String phone, String idcard);
+    AjaxResultSet checkUserInfo(String username, String email, String phone, String idcard);
 
 }

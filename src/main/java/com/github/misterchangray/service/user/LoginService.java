@@ -1,6 +1,6 @@
 package com.github.misterchangray.service.user;
 
-import com.github.misterchangray.common.ResultSet;
+import com.github.misterchangray.common.AjaxResultSet;
 import com.github.misterchangray.common.exception.ServiceException;
 
 /**
@@ -17,7 +17,7 @@ public interface LoginService {
      * @param password
      * @return
      */
-    ResultSet signInByUserName(String username, String password) throws ServiceException;
+    AjaxResultSet signInByUserName(String username, String password) throws ServiceException;
 
     /**
      * 通过邮箱+密码登录
@@ -25,7 +25,7 @@ public interface LoginService {
      * @param password
      * @return
      */
-    ResultSet signInByEmail(String email, String password);
+    AjaxResultSet signInByEmail(String email, String password);
 
     /**
      * 通过短信+验证码登录
@@ -33,7 +33,7 @@ public interface LoginService {
      * @param verificationCode
      * @return
      */
-    ResultSet signInByPhone(String phone, String verificationCode);
+    AjaxResultSet signInByPhone(String phone, String verificationCode);
 
 
 
@@ -42,6 +42,6 @@ public interface LoginService {
      * @param userId
      * @return
      */
-    ResultSet signOut(String userId);
+    AjaxResultSet signOut(String userId);
 
 }
