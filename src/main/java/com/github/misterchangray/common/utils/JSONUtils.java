@@ -1,6 +1,8 @@
 package com.github.misterchangray.common.utils;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.DeserializationFeature;
+import com.fasterxml.jackson.databind.JavaType;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.github.misterchangray.common.AjaxResultSet;
@@ -8,9 +10,40 @@ import com.github.misterchangray.dao.entity.User;
 import org.aspectj.weaver.BCException;
 
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
+
+class User2 {
+    int id;
+    String name;
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    @Override
+    public String toString() {
+        return "User2{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                '}';
+    }
+}
 
 /**
  * 常用静态工具类
@@ -27,19 +60,28 @@ public class JSONUtils {
 
     public static void main(String[] a) {
 
-        System.out.print(JSONUtils.json2obj("{\"id\":\"123\"}", User.class));;
-        User u = new User();
-        u.setId(123123);
+        String  json = "[{\"id\":1,\"name\":\"zr\"},{\"id\":2,\"nam2e\":\"zr2\"}]";;
+        List<User2> u = json2list(json, User2.class);
+        System.out.println(u);
 
-        AjaxResultSet<User> n = AjaxResultSet.build().setData(u);
-        User u2 = n.getData();
-        System.out.println(u2);
+        User2 u2 = new User2();
+        u2.setId(2);
+        System.out.println(obj2json(u2));
+
+//
+//        System.out.print(JSONUtils.json2obj("{\"id\":\"123\"}", User.class));;
+//        User u = new User();
+//        u.setId(123123);
+//
+//        AjaxResultSet<User> n = AjaxResultSet.build().setData(u);
+//        User u2 = n.getData();
+//        System.out.println(u2);
 //        System.out.println("1a1".split("\\.").length);
         //{a:1,b:{e:[{},{t:"asd"}]}}
 //
 //
 //        String json = "{\"a\":1,\"b\":{\"e\":[{},{\"t\":\"asd\"}]}}";
-////        json = "[{\"id\":1,\"username\":\"zr\"},{\"id\":2,\"username\":\"zr2\"}]";
+//        json = "[{\"id\":1,\"username\":\"zr\"},{\"id\":2,\"username\":\"zr2\"}]";
 //        Long start = System.currentTimeMillis();
 //        JsonNode jsonNode2 = getJsonPathVal(json, "a.h", "");
 //        System.out.println(jsonNode2.isNull());
@@ -157,6 +199,9 @@ public class JSONUtils {
     public static Map json2map(String json) {
         Map res = null;
         try {
+            //忽略不存在的字段
+            mapper.configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
+
             res = mapper.readValue(json, HashMap.class);
         } catch (JsonProcessingException e) {
             e.printStackTrace();
@@ -164,6 +209,28 @@ public class JSONUtils {
             e.printStackTrace();
         }
         return res;
+    }
+
+    /**
+     * json转List<T>
+     * @param json
+     * @return
+     * @throws BCException
+     */
+    public static <T> List<T> json2list(String json, Class clazz) {
+        List<T> configList = null;
+        try {
+            //忽略不存在的字段
+            mapper.configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
+
+            JavaType javaType = mapper.getTypeFactory().constructParametricType(ArrayList.class, clazz);
+            configList =  mapper.readValue(json, javaType);   //这里不需要强制转换
+        } catch (JsonProcessingException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return configList;
     }
 
     /**
@@ -175,6 +242,9 @@ public class JSONUtils {
     public static <T> T json2obj(String json, Class<T> t) {
         T res = null;
         try {
+            //忽略不存在的字段
+            mapper.configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
+
             res = (T) mapper.readValue(json, t);
         } catch (JsonProcessingException e) {
             e.printStackTrace();
