@@ -1,6 +1,6 @@
 package com.github.misterchangray.service.user.impl;
 
-import com.github.misterchangray.common.AjaxResultSet;
+import com.github.misterchangray.common.ResultSet;
 import com.github.misterchangray.common.enums.DBEnum;
 import com.github.misterchangray.common.enums.ResultEnum;
 import com.github.misterchangray.common.exception.ServiceException;
@@ -33,8 +33,8 @@ public class LoginServiceImpl implements LoginService {
     UserSessionBo userSessionBo;
 
 
-    public AjaxResultSet signInByUserName(String username, String password) throws ServiceException {
-        AjaxResultSet res = AjaxResultSet.build();
+    public ResultSet signInByUserName(String username, String password) throws ServiceException {
+        ResultSet res = ResultSet.build();
 
         UserQuery userQuery = new UserQuery();
         UserQuery.Criteria criteria = userQuery.createCriteria();
@@ -60,18 +60,18 @@ public class LoginServiceImpl implements LoginService {
         return res;
     }
 
-    public AjaxResultSet signInByEmail(String email, String password) {
+    public ResultSet signInByEmail(String email, String password) {
         return null;
     }
 
-    public AjaxResultSet signInByPhone(String phone, String verificationCode) {
+    public ResultSet signInByPhone(String phone, String verificationCode) {
         return null;
     }
 
 
 
-    public AjaxResultSet signOut(String userId) {
+    public ResultSet signOut(String userId) {
        userSessionBo.destroySession(userId);
-        return AjaxResultSet.build();
+        return ResultSet.build();
     }
 }

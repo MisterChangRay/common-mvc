@@ -1,6 +1,6 @@
 package com.github.misterchangray.common.interceptor;
 
-import com.github.misterchangray.common.AjaxResultSet;
+import com.github.misterchangray.common.ResultSet;
 import com.github.misterchangray.common.enums.ResultEnum;
 import com.github.misterchangray.common.exception.ServiceException;
 import org.slf4j.LoggerFactory;
@@ -26,7 +26,7 @@ public class GlobalExceptionHandler {
 
     @ExceptionHandler(Exception.class)
     @ResponseBody
-    public AjaxResultSet serviceExceptionHandler(Exception ex, HttpServletResponse httpServletResponse) {
+    public ResultSet serviceExceptionHandler(Exception ex, HttpServletResponse httpServletResponse) {
         //允许跨域访问
         httpServletResponse.setHeader("Access-Control-Allow-Origin","*");
 
@@ -45,10 +45,10 @@ public class GlobalExceptionHandler {
 
         }
 
-        AjaxResultSet ajaxResultSet = AjaxResultSet.build(serviceException.getResultEnum());
-        if(null != serviceException.getMsg()) ajaxResultSet.setMsg(serviceException.getMsg());
+        ResultSet resultSet = ResultSet.build(serviceException.getResultEnum());
+        if(null != serviceException.getMsg()) resultSet.setMsg(serviceException.getMsg());
 
-        return ajaxResultSet;
+        return resultSet;
     }
 
 

@@ -1,11 +1,11 @@
 package com.github.misterchangray.common.interceptor;
 
 
+import com.github.misterchangray.common.ResultSet;
 import com.github.misterchangray.common.annotation.Authorization;
 import com.github.misterchangray.common.enums.ResultEnum;
-import com.github.misterchangray.common.exception.ServiceException;
-import com.github.misterchangray.service.user.UserService;
-import com.github.misterchangray.service.user.bo.UserSessionBo;
+import com.github.misterchangray.common.utils.JSONUtils;
+import com.github.misterchangray.service.common.ContextCacheService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.method.HandlerMethod;
 import org.springframework.web.servlet.handler.HandlerInterceptorAdapter;
@@ -27,9 +27,7 @@ import java.lang.reflect.Method;
  */
 public class AuthInterceptor extends HandlerInterceptorAdapter {
     @Autowired
-    UserService userService;
-    @Autowired
-    UserSessionBo userSessionBo;
+    ContextCacheService contextCacheService;
 
     /**
      * 在这个方法里实现你的权限验证逻辑
@@ -37,7 +35,15 @@ public class AuthInterceptor extends HandlerInterceptorAdapter {
      * @return
      */
     private boolean tokenValidate(String token) {
-        return userSessionBo.exist(token);
+        if(null != contextCacheService.get(token)) {
+            Long t = System.currentTimeMillis() -  (Long)contextCacheService.get(token);
+            if(t > 24 * 60 * 60 * 1000) {
+                contextCacheService.remove(token);
+                return false;
+            }
+            return true;
+        }
+        return false;
     }
 
 
@@ -64,9 +70,19 @@ public class AuthInterceptor extends HandlerInterceptorAdapter {
             // 执行权限认证
             String token = request.getHeader("Authorization");  // 从 http 请求头中取出 Authorization
 
-            if (null == token) throw new ServiceException(ResultEnum.NEED_AUTH, "无token，请先登录");
+            if (null == token) {
+                response.setHeader("content-type", "application/json; charset=UTF-8");
+                response.getOutputStream().write(JSONUtils.obj2json(ResultSet.build(ResultEnum.NEED_AUTH).setMsg("无token，请先登录")).getBytes("utf8"));
+                response.getOutputStream().flush();
+                return false;
+            }
 
-            if(tokenValidate(token)) throw new ServiceException(ResultEnum.NEED_AUTH, "token异常，请重新登录");
+            if(false == tokenValidate(token)){
+                response.setHeader("content-type", "application/json; charset=UTF-8");
+                response.getOutputStream().write(JSONUtils.obj2json(ResultSet.build(ResultEnum.NEED_AUTH).setMsg("token异常，请重新登录")).getBytes("utf8"));
+                response.getOutputStream().flush();
+                return false;
+            }
             return true;
         }
         return true;

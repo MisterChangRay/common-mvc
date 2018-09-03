@@ -1,6 +1,6 @@
 package com.github.misterchangray.controller.common;
 
-import com.github.misterchangray.common.AjaxResultSet;
+import com.github.misterchangray.common.ResultSet;
 import com.github.misterchangray.common.utils.MapBuilder;
 import com.github.misterchangray.common.utils.VerifyCodeUtils;
 import io.swagger.annotations.Api;
@@ -37,7 +37,7 @@ public class VerifyCodeController {
     @ApiOperation(value = "获取图片验证码", notes = "返回图片验证码的Base64编码")
     @RequestMapping(value = "/img", method = RequestMethod.GET)
     @ResponseBody
-    public AjaxResultSet verifyCodeForImg(HttpServletResponse response) {
+    public ResultSet verifyCodeForImg(HttpServletResponse response) {
         int w = 200, h = 80; //图片宽高
         int limit = 4; //验证码长度
 
@@ -52,7 +52,7 @@ public class VerifyCodeController {
 
         StringBuilder imgBase64 = new StringBuilder("data:image/jpg;base64,");
         imgBase64.append(mapBuilder.get("imgData"));
-        return AjaxResultSet.build().setData(imgBase64.toString());
+        return ResultSet.build().setData(imgBase64.toString());
     }
 
 

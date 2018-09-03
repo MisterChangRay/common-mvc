@@ -5,8 +5,6 @@ import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.JavaType;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.github.misterchangray.common.AjaxResultSet;
-import com.github.misterchangray.dao.entity.User;
 import org.aspectj.weaver.BCException;
 
 import java.io.IOException;
@@ -14,36 +12,6 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-
-
-class User2 {
-    int id;
-    String name;
-
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    @Override
-    public String toString() {
-        return "User2{" +
-                "id=" + id +
-                ", name='" + name + '\'' +
-                '}';
-    }
-}
 
 /**
  * 常用静态工具类
@@ -60,44 +28,6 @@ public class JSONUtils {
 
     public static void main(String[] a) {
 
-        String  json = "[{\"id\":1,\"name\":\"zr\"},{\"id\":2,\"nam2e\":\"zr2\"}]";;
-        List<User2> u = json2list(json, User2.class);
-        System.out.println(u);
-
-        User2 u2 = new User2();
-        u2.setId(2);
-        System.out.println(obj2json(u2));
-
-//
-//        System.out.print(JSONUtils.json2obj("{\"id\":\"123\"}", User.class));;
-//        User u = new User();
-//        u.setId(123123);
-//
-//        AjaxResultSet<User> n = AjaxResultSet.build().setData(u);
-//        User u2 = n.getData();
-//        System.out.println(u2);
-//        System.out.println("1a1".split("\\.").length);
-        //{a:1,b:{e:[{},{t:"asd"}]}}
-//
-//
-//        String json = "{\"a\":1,\"b\":{\"e\":[{},{\"t\":\"asd\"}]}}";
-//        json = "[{\"id\":1,\"username\":\"zr\"},{\"id\":2,\"username\":\"zr2\"}]";
-//        Long start = System.currentTimeMillis();
-//        JsonNode jsonNode2 = getJsonPathVal(json, "a.h", "");
-//        System.out.println(jsonNode2.isNull());
-//        System.out.println(getJsonPathVal(json, "b", "e"));
-//        System.out.println(getJsonPathVal(json, "b.e", "e"));
-//        System.out.println(getJsonPathVal(json, "b.e.t", "e"));
-//        System.out.println("-1-----------" + (System.currentTimeMillis() - start));
-//
-//        start = System.currentTimeMillis();
-//        JsonNode jsonNode = buildJsonNode(json);
-////        System.out.println(getJsonPathVal(jsonNode, "[1].username2", "e"));
-//        System.out.println(getJsonPathVal(jsonNode, "b", "e"));
-//        System.out.println(getJsonPathVal(jsonNode, "b.e", "e"));
-//        System.out.println(getJsonPathVal(jsonNode, "b.e[1].t", false));
-//        System.out.println("-2-----------" + (System.currentTimeMillis() - start));
-
 
     }
 
@@ -111,7 +41,7 @@ public class JSONUtils {
         try {
             return mapper.readTree(json);
         } catch (IOException e) {
-            e.printStackTrace();
+//            e.printStackTrace();
         }
         return null;
     }

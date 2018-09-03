@@ -1,7 +1,7 @@
 package com.github.misterchangray.service;
 
 
-import com.github.misterchangray.common.AjaxResultSet;
+import com.github.misterchangray.common.ResultSet;
 import com.github.misterchangray.common.PageInfo;
 
 import java.util.List;
@@ -19,14 +19,14 @@ public interface BaseService<Entity> {
      * @param ids
      * @return
      */
-    AjaxResultSet exist(List<Integer> ids);
+    ResultSet exist(List<Integer> ids);
 
     /**
      * 根据 Id 获取对象
      * @param id
      * @return
      */
-    AjaxResultSet getById(Integer id);
+    ResultSet getById(Integer id);
 
 
     /**
@@ -34,35 +34,35 @@ public interface BaseService<Entity> {
      * @param ids
      * @return
      */
-    AjaxResultSet getByIds(List<Integer> ids);
+    ResultSet getByIds(List<Integer> ids);
 
     /**
      * 列表
      * @param entity
      * @return
      */
-    AjaxResultSet list(Entity entity, PageInfo pageInfo);
+    ResultSet list(Entity entity, PageInfo pageInfo);
 
     /**
      * 保存
      * @param entity
      * @return
      */
-    AjaxResultSet save(Entity entity);
+    ResultSet save(Entity entity);
 
     /**
      * 批量保存
      * @param entities
      * @return
      */
-    AjaxResultSet saveAll(List<Entity> entities);
+    ResultSet saveAll(List<Entity> entities);
 
     /**
      * 编辑
      * @param entity
      * @return
      */
-    AjaxResultSet edit(Entity entity);
+    ResultSet edit(Entity entity);
 
 
     /**
@@ -70,6 +70,6 @@ public interface BaseService<Entity> {
      * @param entity
      * @return
      */
-    AjaxResultSet delete(Entity entity);
+    ResultSet delete(Entity entity);
 
 }

@@ -1,6 +1,6 @@
 package com.github.misterchangray.controller;
 
-import com.github.misterchangray.common.AjaxResultSet;
+import com.github.misterchangray.common.ResultSet;
 import com.github.misterchangray.common.annotation.Authorization;
 import com.github.misterchangray.common.enums.ResultEnum;
 import com.github.misterchangray.common.exception.ServiceException;
@@ -28,8 +28,8 @@ public class TestController {
 
     @RequestMapping(value = "test1",method = RequestMethod.GET)
     @ResponseBody
-    public AjaxResultSet constant(@RequestParam(required = false) Integer pid) throws Exception {
-        AjaxResultSet res = AjaxResultSet.build();
+    public ResultSet constant(@RequestParam(required = false) Integer pid) throws Exception {
+        ResultSet res = ResultSet.build();
 
 //        EmailBuilder.build().sendSimpleEmail("jioulongzi@qq.com", " 914590431@qq.com", "wocao", "dajia 快看啊 阿道夫为");
 //        res.getData().toString();
@@ -39,8 +39,8 @@ public class TestController {
 
     @RequestMapping(value = "test2",method = RequestMethod.GET)
     @ResponseBody
-    public AjaxResultSet constant2(@RequestParam(required = false) Integer pid) throws Exception {
-        AjaxResultSet res = AjaxResultSet.build();
+    public ResultSet constant2(@RequestParam(required = false) Integer pid) throws Exception {
+        ResultSet res = ResultSet.build();
 
 //        EmailBuilder.build().sendSimpleEmail("jioulongzi@qq.com", " 914590431@qq.com", "wocao", "dajia 快看啊 阿道夫为");
         res.getData().toString();

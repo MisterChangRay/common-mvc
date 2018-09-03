@@ -1,6 +1,6 @@
 package com.github.misterchangray.controller.user;
 
-import com.github.misterchangray.common.AjaxResultSet;
+import com.github.misterchangray.common.ResultSet;
 import com.github.misterchangray.common.PageInfo;
 import com.github.misterchangray.common.annotation.Authorization;
 import com.github.misterchangray.dao.entity.Permission;
@@ -45,8 +45,8 @@ public class PermissionController {
     @Authorization
     @RequestMapping(value="/{permissionId}", method = RequestMethod.GET)
     @ResponseBody
-    public AjaxResultSet getById(@PathVariable Integer permissionId) {
-        AjaxResultSet res = permissionService.getById(permissionId);
+    public ResultSet getById(@PathVariable Integer permissionId) {
+        ResultSet res = permissionService.getById(permissionId);
         return res;
     }
 
@@ -65,7 +65,7 @@ public class PermissionController {
     @Authorization
     @RequestMapping(method = RequestMethod.GET)
     @ResponseBody
-    public AjaxResultSet list(@RequestParam() Integer page, @RequestParam() Integer limit) {
+    public ResultSet list(@RequestParam() Integer page, @RequestParam() Integer limit) {
         Permission permission = new Permission();
         return permissionService.list(permission, PageInfo.newInstance(page, limit));
     }
@@ -82,7 +82,7 @@ public class PermissionController {
     @Authorization
     @RequestMapping(method = RequestMethod.POST)
     @ResponseBody
-    public AjaxResultSet add(@RequestBody Permission permission) {
+    public ResultSet add(@RequestBody Permission permission) {
        return permissionService.save(permission);
     }
 
@@ -99,7 +99,7 @@ public class PermissionController {
     @Authorization
     @RequestMapping(value = "/{id}", method = RequestMethod.DELETE)
     @ResponseBody
-    public AjaxResultSet delete(@PathVariable Integer id) {
+    public ResultSet delete(@PathVariable Integer id) {
         Permission permission = new Permission();
         permission.setId(id);
         return permissionService.delete(permission);
@@ -118,7 +118,7 @@ public class PermissionController {
     @Authorization
     @RequestMapping(method = RequestMethod.PUT)
     @ResponseBody
-    public AjaxResultSet edit(@RequestBody Permission permission) {
+    public ResultSet edit(@RequestBody Permission permission) {
         return permissionService.edit(permission);
     }
 

@@ -1,6 +1,6 @@
 package com.github.misterchangray.service.user;
 
-import com.github.misterchangray.common.AjaxResultSet;
+import com.github.misterchangray.common.ResultSet;
 import com.github.misterchangray.dao.entity.Role;
 import com.github.misterchangray.service.BaseService;
 
@@ -19,6 +19,6 @@ public interface RoleService extends BaseService<Role> {
      * @param permissions 更新权限id集合
      * @return
      */
-    AjaxResultSet updatePermission(Integer roleId, List<Integer> permissions) ;
+    ResultSet updatePermission(Integer roleId, List<Integer> permissions) ;
 
 }

@@ -1,6 +1,6 @@
 package com.github.misterchangray.controller.user;
 
-import com.github.misterchangray.common.AjaxResultSet;
+import com.github.misterchangray.common.ResultSet;
 import com.github.misterchangray.common.annotation.Authorization;
 import com.github.misterchangray.common.enums.ResultEnum;
 import com.github.misterchangray.service.user.LoginService;
@@ -64,12 +64,12 @@ public class LoginController {
     })
     @RequestMapping(value = "/signIn", method = RequestMethod.POST)
     @ResponseBody
-    public AjaxResultSet signIn(@RequestParam(required = false) String username,
-                                @RequestParam(required = false) String email,
-                                @RequestParam(required = false) String phone,
-                                @RequestParam String password) throws Exception {
+    public ResultSet signIn(@RequestParam(required = false) String username,
+                            @RequestParam(required = false) String email,
+                            @RequestParam(required = false) String phone,
+                            @RequestParam String password) throws Exception {
 
-        AjaxResultSet res = AjaxResultSet.build();
+        ResultSet res = ResultSet.build();
         if((null == username && null == email && null == phone) || null == password) {
             res.setCode(ResultEnum.INVALID_REQUEST);
             return res;
@@ -93,7 +93,7 @@ public class LoginController {
     @Authorization
     @RequestMapping(value = "/signOut", method = RequestMethod.POST)
     @ResponseBody
-    public AjaxResultSet signOut(@RequestHeader(value = "Authentication") String token) {
+    public ResultSet signOut(@RequestHeader(value = "Authentication") String token) {
         return  loginService.signOut(token);
     }
 
@@ -107,9 +107,9 @@ public class LoginController {
     @Authorization
     @RequestMapping(value = "/heartbeat", method = RequestMethod.GET)
     @ResponseBody
-    public AjaxResultSet heartbeat(@RequestHeader("Authentication") String authentication) {
+    public ResultSet heartbeat(@RequestHeader("Authentication") String authentication) {
         userSessionBo.heartbeat(authentication);
-        return AjaxResultSet.build();
+        return ResultSet.build();
     }
 
 
