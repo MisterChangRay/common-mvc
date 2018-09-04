@@ -28,7 +28,7 @@ public class JSONUtils {
 
     public static void main(String[] a) {
 
-
+        buildJsonNode(null);
     }
 
 
@@ -40,7 +40,7 @@ public class JSONUtils {
     public static JsonNode buildJsonNode(String json) {
         try {
             return mapper.readTree(json);
-        } catch (IOException e) {
+        } catch (Exception e) {
 //            e.printStackTrace();
         }
         return null;

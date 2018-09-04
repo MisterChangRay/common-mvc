@@ -1,7 +1,6 @@
 package com.github.misterchangray.common.utils;
 
-import java.util.HashMap;
-import java.util.Map;
+import java.util.concurrent.ConcurrentHashMap;
 
 /**
  * 返回对象为Map子类,可直接当Map使用
@@ -12,7 +11,7 @@ import java.util.Map;
  * @author Rui.Zhang/misterchangray@hotmail.com
  * @author Created on 4/19/2018.
  */
-public class MapBuilder extends HashMap {
+public class MapBuilder extends ConcurrentHashMap {
 
     private MapBuilder() {}
 
@@ -27,6 +26,7 @@ public class MapBuilder extends HashMap {
      * @return MapBuilder
      */
     public MapBuilder add(String key, Object value) {
+        if(null == value) return this;
         super.put(key, value);
         return  this;
     }
@@ -38,6 +38,7 @@ public class MapBuilder extends HashMap {
      * @return MapBuilder
      */
     public MapBuilder put(String key, Object value) {
+        if(null == value) return this;
         this.add(key, value);
         return  this;
     }
