@@ -56,7 +56,17 @@
       <version>1.11</version>
     </dependency>
 
-
+    <!-- 使用spring websocket依赖的jar包 -->
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-websocket</artifactId>
+      <version>4.3.8.RELEASE</version>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-messaging</artifactId>
+      <version>4.3.8.RELEASE</version>
+    </dependency>
     <!--spring相关包 start-->
     <dependency>
       <groupId>org.springframework</groupId>
