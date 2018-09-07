@@ -176,4 +176,21 @@
     <!-- 配置轮询任务线程池;避免多任务问题 -->
     <task:scheduler id="myScheduler" pool-size="10"/>
 
+
+    <!-- 异步线程池 -->
+    <bean id="taskExecutor"
+          class="org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor">
+        <!-- 核心线程数 -->
+        <property name="corePoolSize" value="100" />
+        <!-- 最大线程数 -->
+        <property name="maxPoolSize" value="300" />
+        <!-- 队列最大长度 >=mainExecutor.maxSize -->
+        <property name="queueCapacity" value="1000" />
+        <!-- 线程池维护线程所允许的空闲时间 -->
+        <property name="keepAliveSeconds" value="3000" />
+        <!-- 线程池对拒绝任务(无线程可用)的处理 策略 -->
+        <!-- 若不作该处理，当线程满了，队列满了之后，继续往下增加任务，则抛出异常，拒绝该任务 -->
+        <!-- <property name="rejectedExecutionHandler"> <bean class="java.util.concurrent.ThreadPoolExecutor$CallerRunsPolicy" /> </property> -->
+    </bean>
+
 </beans>
