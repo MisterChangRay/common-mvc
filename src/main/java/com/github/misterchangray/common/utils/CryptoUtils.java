@@ -1,18 +1,17 @@
 package com.github.misterchangray.common.utils;
-import java.io.BufferedInputStream;
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.UnsupportedEncodingException;
-import java.net.URL;
-import java.util.UUID;
-import java.util.zip.CRC32;
-import java.util.zip.CheckedInputStream;
+
 import org.apache.commons.codec.binary.Base64;
 import org.apache.commons.codec.digest.DigestUtils;
 import org.apache.commons.io.IOUtils;
+
+import javax.crypto.Mac;
+import javax.crypto.spec.SecretKeySpec;
+import java.io.*;
+import java.net.URL;
+import java.security.InvalidKeyException;
+import java.security.NoSuchAlgorithmException;
+import java.util.zip.CRC32;
+import java.util.zip.CheckedInputStream;
 
 /**
  *  加密工具类，包含MD5,BASE64,SHA,CRC32
@@ -23,13 +22,32 @@ public class CryptoUtils {
 
     private static final String DEFAULT_CHARSET = "UTF-8";
 
+    /**
+     * HMAC-SHA1 加密;使用密钥
+     * @param data 加密数据
+     * @param key 密钥
+     * @return
+     */
+    public static byte[] hamcsha1(byte[] data, byte[] key) {
+        try {
+            SecretKeySpec signingKey = new SecretKeySpec(key, "HmacSHA1");
+            Mac mac = Mac.getInstance("HmacSHA1");
+            mac.init(signingKey);
+            return mac.doFinal(data);
+        } catch (NoSuchAlgorithmException e) {
+            e.printStackTrace();
+        } catch (InvalidKeyException e) {
+            e.printStackTrace();
+        }
+        return null;
+    }
 
     /**
      * MD5加密
      *
      * @param bytes
      *            an array of byte.
-     * @return a {@link java.lang.String} object.
+     * @return a {@link String} object.
      */
     public static String encodeMD5(final byte[] bytes) {
         return DigestUtils.md5Hex(bytes);
@@ -39,8 +57,8 @@ public class CryptoUtils {
      * MD5加密，默认UTF-8
      *
      * @param str
-     *            a {@link java.lang.String} object.
-     * @return a {@link java.lang.String} object.
+     *            a {@link String} object.
+     * @return a {@link String} object.
      */
     public static String encodeMD5(final String str) {
         return encodeMD5(str, DEFAULT_CHARSET);
@@ -50,10 +68,10 @@ public class CryptoUtils {
      * MD5加密
      *
      * @param str
-     *            a {@link java.lang.String} object.
+     *            a {@link String} object.
      * @param charset
-     *            a {@link java.lang.String} object.
-     * @return a {@link java.lang.String} object.
+     *            a {@link String} object.
+     * @return a {@link String} object.
      */
     public static String encodeMD5(final String str, final String charset) {
         if (str == null) {
@@ -72,7 +90,7 @@ public class CryptoUtils {
      *
      * @param bytes
      *            an array of byte.
-     * @return a {@link java.lang.String} object.
+     * @return a {@link String} object.
      */
     public static String encodeSHA(final byte[] bytes) {
         return DigestUtils.sha512Hex(bytes);
@@ -82,10 +100,10 @@ public class CryptoUtils {
      * SHA加密
      *
      * @param str
-     *            a {@link java.lang.String} object.
+     *            a {@link String} object.
      * @param charset
-     *            a {@link java.lang.String} object.
-     * @return a {@link java.lang.String} object.
+     *            a {@link String} object.
+     * @return a {@link String} object.
      */
     public static String encodeSHA(final String str, final String charset) {
         if (str == null) {
@@ -103,8 +121,8 @@ public class CryptoUtils {
      * SHA加密,默认utf-8
      *
      * @param str
-     *            a {@link java.lang.String} object.
-     * @return a {@link java.lang.String} object.
+     *            a {@link String} object.
+     * @return a {@link String} object.
      */
     public static String encodeSHA(final String str) {
         return encodeSHA(str, DEFAULT_CHARSET);
@@ -115,7 +133,7 @@ public class CryptoUtils {
      *
      * @param bytes
      *            an array of byte.
-     * @return a {@link java.lang.String} object.
+     * @return a {@link String} object.
      */
     public static String encodeBASE64(final byte[] bytes) {
         return new String(Base64.encodeBase64String(bytes));
@@ -125,10 +143,10 @@ public class CryptoUtils {
      * BASE64加密
      *
      * @param str
-     *            a {@link java.lang.String} object.
+     *            a {@link String} object.
      * @param charset
-     *            a {@link java.lang.String} object.
-     * @return a {@link java.lang.String} object.
+     *            a {@link String} object.
+     * @return a {@link String} object.
      */
     public static String encodeBASE64(final String str, String charset) {
         if (str == null) {
@@ -146,8 +164,8 @@ public class CryptoUtils {
      * BASE64加密,默认UTF-8
      *
      * @param str
-     *            a {@link java.lang.String} object.
-     * @return a {@link java.lang.String} object.
+     *            a {@link String} object.
+     * @return a {@link String} object.
      */
     public static String encodeBASE64(final String str) {
         return encodeBASE64(str, DEFAULT_CHARSET);
@@ -157,8 +175,8 @@ public class CryptoUtils {
      * BASE64解密,默认UTF-8
      *
      * @param str
-     *            a {@link java.lang.String} object.
-     * @return a {@link java.lang.String} object.
+     *            a {@link String} object.
+     * @return a {@link String} object.
      */
     public static String decodeBASE64(String str) {
         return decodeBASE64(str, DEFAULT_CHARSET);
@@ -168,15 +186,14 @@ public class CryptoUtils {
      * BASE64解密
      *
      * @param str
-     *            a {@link java.lang.String} object.
+     *            a {@link String} object.
      * @param charset
      *            字符编码
-     * @return a {@link java.lang.String} object.
+     * @return a {@link String} object.
      */
     public static String decodeBASE64(String str, String charset) {
         try {
-            byte[] bytes = str.getBytes(charset);
-            return new String(Base64.decodeBase64(bytes));
+            return new String(Base64.decodeBase64(str.getBytes()), charset);
         } catch (UnsupportedEncodingException e) {
             throw new RuntimeException(e);
         }
@@ -187,7 +204,7 @@ public class CryptoUtils {
      *
      * @param bytes
      *            an array of byte.
-     * @return a {@link java.lang.String} object.
+     * @return a {@link String} object.
      */
     public static String crc32(byte[] bytes) {
         CRC32 crc32 = new CRC32();
@@ -199,10 +216,10 @@ public class CryptoUtils {
      * CRC32字符串校验
      *
      * @param str
-     *            a {@link java.lang.String} object.
+     *            a {@link String} object.
      * @param charset
-     *            a {@link java.lang.String} object.
-     * @return a {@link java.lang.String} object.
+     *            a {@link String} object.
+     * @return a {@link String} object.
      */
     public static String crc32(final String str, String charset) {
         try {
@@ -217,8 +234,8 @@ public class CryptoUtils {
      * CRC32字符串校验,默认UTF-8编码读取
      *
      * @param str
-     *            a {@link java.lang.String} object.
-     * @return a {@link java.lang.String} object.
+     *            a {@link String} object.
+     * @return a {@link String} object.
      */
     public static String crc32(final String str) {
         return crc32(str, DEFAULT_CHARSET);
@@ -228,8 +245,8 @@ public class CryptoUtils {
      * CRC32流校验
      *
      * @param input
-     *            a {@link java.io.InputStream} object.
-     * @return a {@link java.lang.String} object.
+     *            a {@link InputStream} object.
+     * @return a {@link String} object.
      */
     public static String crc32(InputStream input) {
         CRC32 crc32 = new CRC32();
@@ -251,8 +268,8 @@ public class CryptoUtils {
      * CRC32文件唯一校验
      *
      * @param file
-     *            a {@link java.io.File} object.
-     * @return a {@link java.lang.String} object.
+     *            a {@link File} object.
+     * @return a {@link String} object.
      */
     public static String crc32(File file) {
         InputStream input = null;
@@ -271,8 +288,8 @@ public class CryptoUtils {
      * CRC32文件唯一校验
      *
      * @param url
-     *            a {@link java.net.URL} object.
-     * @return a {@link java.lang.String} object.
+     *            a {@link URL} object.
+     * @return a {@link String} object.
      */
     public static String crc32(URL url) {
         InputStream input = null;
